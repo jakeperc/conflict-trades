@@ -1,0 +1,38 @@
+{
+  "key": "korea",
+  "title": "Korea / DPRK / Yellow Sea",
+  "subtitle": "DPRK provocations, Korean memory knock-ons, Pacific defense pull",
+  "color": "#b794f4",
+  "query": "North Korea DPRK Kim Jong Un ICBM missile test Yellow Sea provocation South Korea US defense alliance",
+  "newsFallbackQueries": [
+    "North Korea missile launch ICBM Pyongyang",
+    "South Korea defense THAAD Patriot procurement",
+    "Samsung SK Hynix Korea semiconductor risk",
+    "Yellow Sea NLL DPRK provocation"
+  ],
+  "heatBase": 55,
+  "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
+  "secondOrderEffects": [
+    "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",
+    "Memory and foundry concentration in Korea makes Samsung and SK Hynix the cleanest single-name Korea-binary expressions; the EWY country ETF is a faster proxy than ADRs.",
+    "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
+  ],
+  "indicatorBlueprints": [
+    { "label": "DPRK launch cadence", "unit": "pts", "mode": "risk-on-disruption", "base": 60, "sensitivity": 0.95 },
+    { "label": "USD/KRW stress", "unit": "%", "mode": "risk-on-disruption", "base": 100, "sensitivity": 0.6 },
+    { "label": "Korean memory drawdown", "unit": "%", "mode": "risk-on-disruption", "base": 8, "sensitivity": 0.7 },
+    { "label": "Pacific defense bid", "unit": "%", "mode": "risk-on-disruption", "base": 100, "sensitivity": 0.5 }
+  ],
+  "trades": [
+    { "ticker": "LMT", "direction": "LONG", "conviction": 4, "sector": "Defense", "horizon": "1-6 months", "pairTrade": "Long LMT / Short EWY", "thesisBreaker": "DPRK launches stay rhetorical without procurement pull-through.", "catalyst": "THAAD upgrades and Patriot replenishment for Korean theater.", "riskLevel": "Medium", "thesis": "Lockheed sits on the heaviest Korea-specific defense pulls (THAAD, PAC-3 MSE) when provocations accelerate." },
+    { "ticker": "RTX", "direction": "LONG", "conviction": 4, "sector": "Defense", "horizon": "1-6 months", "pairTrade": "Long RTX / Short AAPL", "thesisBreaker": "Patriot demand fully baked into the backlog already.", "catalyst": "Air-defense reload demand from US Pacific posture and ROK programs.", "riskLevel": "Medium", "thesis": "Patriot and air-defense interceptor demand fits a higher-cadence DPRK launch regime." },
+    { "ticker": "NOC", "direction": "LONG", "conviction": 3, "sector": "Defense", "horizon": "1-6 months", "pairTrade": "Long NOC / Short consumer tech", "thesisBreaker": "B-21 timeline slips on Pacific posture.", "catalyst": "B-21, Triton, and Pacific ISR programs accelerate with Korea risk.", "riskLevel": "Medium", "thesis": "Strategic ISR and bomber programs benefit from a sustained Pacific-readiness footing." },
+    { "ticker": "GD", "direction": "LONG", "conviction": 3, "sector": "Defense", "horizon": "1-6 months", "pairTrade": "Long GD / Short EWY", "thesisBreaker": "Munitions ramp lags rhetoric.", "catalyst": "Munitions and combat vehicle demand from Korea theater rotation.", "riskLevel": "Medium", "thesis": "Munitions, armored systems, and combat-comms benefit from US Korea-theater rotation cadence." },
+    { "ticker": "AVAV", "direction": "LONG", "conviction": 3, "sector": "Drones / ISR", "horizon": "1-8 weeks", "pairTrade": "Long AVAV / Short EWY", "thesisBreaker": "ISR procurement stays Pacific-fleet centric, not land.", "catalyst": "Loitering munitions and tactical ISR drone demand rises with peninsular threat.", "riskLevel": "High", "thesis": "Switchblade / Puma demand often spikes with peninsular threat as ROK and US Army drone budgets reload." },
+    { "ticker": "INTC", "direction": "LONG", "conviction": 3, "sector": "Semiconductor onshoring", "horizon": "1-6 months", "pairTrade": "Long INTC / Short EWY", "thesisBreaker": "Customers shrug off Korean concentration risk.", "catalyst": "Onshoring narrative widens to include Korean memory exposure, not just Taiwan foundry.", "riskLevel": "High", "thesis": "Korean DRAM concentration widens the onshoring trade beyond Taiwan foundry to memory and logic alternatives." },
+    { "ticker": "GFS", "direction": "LONG", "conviction": 3, "sector": "Foundry alternatives", "horizon": "1-3 months", "pairTrade": "Long GFS / Short EWY", "thesisBreaker": "No diversification spend follows headlines.", "catalyst": "Resilience demand spans Korea+Taiwan, not just Taiwan.", "riskLevel": "High", "thesis": "Diversified foundry capacity gets revalued when both Korean memory and Taiwanese logic look concentrated." },
+    { "ticker": "EWY", "direction": "SHORT", "conviction": 4, "sector": "Korea equity", "horizon": "1-4 weeks", "pairTrade": "Short EWY / Long LMT", "thesisBreaker": "Provocation fizzles within days.", "catalyst": "Korean equity index draws down on DPRK cadence and won weakness.", "riskLevel": "High", "thesis": "Direct country-ETF short captures KRW weakness, memory drawdown, and risk-premium reset in one expression." },
+    { "ticker": "AAPL", "direction": "SHORT", "conviction": 3, "sector": "Consumer hardware", "horizon": "1-4 weeks", "pairTrade": "Short AAPL / Long RTX", "thesisBreaker": "Supply chain shrugs off Korea risk; pricing stays intact.", "catalyst": "Display and memory exposure from Korean suppliers compresses multiple.", "riskLevel": "High", "thesis": "Display + memory dependence on Korean suppliers makes Apple a secondary expression of Korea concentration risk." },
+    { "ticker": "NVDA", "direction": "SHORT", "conviction": 3, "sector": "AI / Semis", "horizon": "1-3 weeks", "pairTrade": "Short NVDA / Long NOC", "thesisBreaker": "AI demand absorbs all geopolitical risk premium.", "catalyst": "HBM supply chain centered on Korean memory tightens.", "riskLevel": "High", "thesis": "HBM concentration in Korean memory (SK Hynix, Samsung) makes Nvidia's AI growth a Korea-binary trade at the margin." }
+  ]
+}

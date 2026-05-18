@@ -168,6 +168,42 @@
           "catalyst": "Jet fuel inflation and route changes pressure margins first.",
           "riskLevel": "High",
           "thesis": "Jet fuel inflation and route disruptions pressure airline margins."
+        },
+        {
+          "ticker": "USO",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Oil ETF",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Long USO / Short UAL",
+          "thesisBreaker": "OPEC+ supply lift offsets Hormuz risk premium.",
+          "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+          "riskLevel": "Medium",
+          "thesis": "Cleanest direct-oil expression of Hormuz disruption without single-stock idiosyncratic risk."
+        },
+        {
+          "ticker": "UCO",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Oil ETF (2x)",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Long UCO / Short CCL",
+          "thesisBreaker": "Daily roll decay outpaces price move on a quick reversal.",
+          "catalyst": "Geared upside if Brent stays bid for sustained period.",
+          "riskLevel": "Very high",
+          "thesis": "Two-times geared WTI exposure for short-duration views with crisp invalidation."
+        },
+        {
+          "ticker": "BNO",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Brent ETF",
+          "horizon": "1-6 weeks",
+          "pairTrade": "Long BNO / Short XLY proxy",
+          "thesisBreaker": "Brent-WTI spread compresses on US export pickup.",
+          "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+          "riskLevel": "Medium",
+          "thesis": "Brent benchmark moves before WTI on shipping/insurance stress in the Gulf."
         }
       ]
     },
@@ -339,6 +375,42 @@
           "catalyst": "Direct center-of-gravity risk in any severe cross-strait escalation.",
           "riskLevel": "Very high",
           "thesis": "Direct center-of-gravity risk in any severe cross-strait escalation."
+        },
+        {
+          "ticker": "COPX",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Copper miners",
+          "horizon": "1-3 months",
+          "pairTrade": "Long COPX / Short TSM",
+          "thesisBreaker": "China demand drag overrides supply-chain resilience bid.",
+          "catalyst": "Strategic copper bid on supply-chain resilience and grid buildout.",
+          "riskLevel": "High",
+          "thesis": "Copper miners get a strategic-stockpile bid when supply chain resilience becomes a national priority."
+        },
+        {
+          "ticker": "REMX",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Rare earth miners",
+          "horizon": "1-3 months",
+          "pairTrade": "Long REMX / Short AAPL",
+          "thesisBreaker": "China releases export controls before alternative supply scales.",
+          "catalyst": "China export-control escalation lifts ex-China rare earth producers.",
+          "riskLevel": "High",
+          "thesis": "China REE export controls force a rerating of ex-China producers as defense and EV inputs."
+        },
+        {
+          "ticker": "URA",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Uranium / nuclear",
+          "horizon": "1-6 months",
+          "pairTrade": "Long URA / Short TSM",
+          "thesisBreaker": "Nuclear narrative falters on a single accident or policy reversal.",
+          "catalyst": "Asia nuclear restart and AI-power-demand bid combine with geopolitical risk.",
+          "riskLevel": "High",
+          "thesis": "Uranium gets both an energy-security and an AI-power-demand bid in any Asia tension scenario."
         }
       ]
     },
@@ -510,6 +582,250 @@
           "catalyst": "Travel-discretionary exposure is vulnerable to European headline risk.",
           "riskLevel": "High",
           "thesis": "Travel-discretionary exposure is vulnerable to European headline risk."
+        },
+        {
+          "ticker": "UNG",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Gas ETF",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long UNG / Short CCL",
+          "thesisBreaker": "Mild weather and full European storage mute gas response.",
+          "catalyst": "Russian LNG ban + cold-snap risk lifts US Henry Hub.",
+          "riskLevel": "High",
+          "thesis": "US Henry Hub gas tightens when Europe leans harder on US LNG cargoes."
+        },
+        {
+          "ticker": "URA",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Uranium / nuclear",
+          "horizon": "1-6 months",
+          "pairTrade": "Long URA / Short CCL",
+          "thesisBreaker": "EU nuclear permitting drags.",
+          "catalyst": "European nuclear restart and decoupling from Russian fuel.",
+          "riskLevel": "High",
+          "thesis": "European nuclear restart and Rosatom decoupling support uranium supply tightness."
+        },
+        {
+          "ticker": "GLD",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Gold",
+          "horizon": "1-6 months",
+          "pairTrade": "Long GLD / Short CCL",
+          "thesisBreaker": "Rapid Fed hawkish pivot.",
+          "catalyst": "Sustained geopolitical risk bid and central bank diversification.",
+          "riskLevel": "Medium",
+          "thesis": "Gold absorbs the geopolitical risk bid that doesn't make it into specific defense names."
+        },
+        {
+          "ticker": "DBA",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Agriculture ETF",
+          "horizon": "1-3 months",
+          "pairTrade": "Long DBA / Short CCL",
+          "thesisBreaker": "Black Sea corridor stays open and harvest is intact.",
+          "catalyst": "Russian attacks on Ukrainian grain ports tighten ag pricing.",
+          "riskLevel": "High",
+          "thesis": "Ag prices typically retighten when Black Sea grain corridor faces escalating attacks."
+        }
+      ]
+    },
+    "korea": {
+      "key": "korea",
+      "title": "Korea / DPRK / Yellow Sea",
+      "subtitle": "DPRK provocations, Korean memory knock-ons, Pacific defense pull",
+      "color": "#b794f4",
+      "query": "North Korea DPRK Kim Jong Un ICBM missile test Yellow Sea provocation South Korea US defense alliance",
+      "newsFallbackQueries": [
+        "North Korea missile launch ICBM Pyongyang",
+        "South Korea defense THAAD Patriot procurement",
+        "Samsung SK Hynix Korea semiconductor risk",
+        "Yellow Sea NLL DPRK provocation"
+      ],
+      "heatBase": 55,
+      "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
+      "secondOrderEffects": [
+        "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",
+        "Memory and foundry concentration in Korea makes Samsung and SK Hynix the cleanest single-name Korea-binary expressions; the EWY country ETF is a faster proxy than ADRs.",
+        "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
+      ],
+      "indicatorBlueprints": [
+        {
+          "label": "DPRK launch cadence",
+          "unit": "pts",
+          "mode": "risk-on-disruption",
+          "base": 60,
+          "sensitivity": 0.95
+        },
+        {
+          "label": "USD/KRW stress",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.6
+        },
+        {
+          "label": "Korean memory drawdown",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 8,
+          "sensitivity": 0.7
+        },
+        {
+          "label": "Pacific defense bid",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.5
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long LMT / Short EWY",
+          "thesisBreaker": "DPRK launches stay rhetorical without procurement pull-through.",
+          "catalyst": "THAAD upgrades and Patriot replenishment for Korean theater.",
+          "riskLevel": "Medium",
+          "thesis": "Lockheed sits on the heaviest Korea-specific defense pulls (THAAD, PAC-3 MSE) when provocations accelerate."
+        },
+        {
+          "ticker": "RTX",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long RTX / Short AAPL",
+          "thesisBreaker": "Patriot demand fully baked into the backlog already.",
+          "catalyst": "Air-defense reload demand from US Pacific posture and ROK programs.",
+          "riskLevel": "Medium",
+          "thesis": "Patriot and air-defense interceptor demand fits a higher-cadence DPRK launch regime."
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short consumer tech",
+          "thesisBreaker": "B-21 timeline slips on Pacific posture.",
+          "catalyst": "B-21, Triton, and Pacific ISR programs accelerate with Korea risk.",
+          "riskLevel": "Medium",
+          "thesis": "Strategic ISR and bomber programs benefit from a sustained Pacific-readiness footing."
+        },
+        {
+          "ticker": "GD",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long GD / Short EWY",
+          "thesisBreaker": "Munitions ramp lags rhetoric.",
+          "catalyst": "Munitions and combat vehicle demand from Korea theater rotation.",
+          "riskLevel": "Medium",
+          "thesis": "Munitions, armored systems, and combat-comms benefit from US Korea-theater rotation cadence."
+        },
+        {
+          "ticker": "AVAV",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Drones / ISR",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long AVAV / Short EWY",
+          "thesisBreaker": "ISR procurement stays Pacific-fleet centric, not land.",
+          "catalyst": "Loitering munitions and tactical ISR drone demand rises with peninsular threat.",
+          "riskLevel": "High",
+          "thesis": "Switchblade / Puma demand often spikes with peninsular threat as ROK and US Army drone budgets reload."
+        },
+        {
+          "ticker": "INTC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Semiconductor onshoring",
+          "horizon": "1-6 months",
+          "pairTrade": "Long INTC / Short EWY",
+          "thesisBreaker": "Customers shrug off Korean concentration risk.",
+          "catalyst": "Onshoring narrative widens to include Korean memory exposure, not just Taiwan foundry.",
+          "riskLevel": "High",
+          "thesis": "Korean DRAM concentration widens the onshoring trade beyond Taiwan foundry to memory and logic alternatives."
+        },
+        {
+          "ticker": "GFS",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Foundry alternatives",
+          "horizon": "1-3 months",
+          "pairTrade": "Long GFS / Short EWY",
+          "thesisBreaker": "No diversification spend follows headlines.",
+          "catalyst": "Resilience demand spans Korea+Taiwan, not just Taiwan.",
+          "riskLevel": "High",
+          "thesis": "Diversified foundry capacity gets revalued when both Korean memory and Taiwanese logic look concentrated."
+        },
+        {
+          "ticker": "EWY",
+          "direction": "SHORT",
+          "conviction": 4,
+          "sector": "Korea equity",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short EWY / Long LMT",
+          "thesisBreaker": "Provocation fizzles within days.",
+          "catalyst": "Korean equity index draws down on DPRK cadence and won weakness.",
+          "riskLevel": "High",
+          "thesis": "Direct country-ETF short captures KRW weakness, memory drawdown, and risk-premium reset in one expression."
+        },
+        {
+          "ticker": "AAPL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Consumer hardware",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short AAPL / Long RTX",
+          "thesisBreaker": "Supply chain shrugs off Korea risk; pricing stays intact.",
+          "catalyst": "Display and memory exposure from Korean suppliers compresses multiple.",
+          "riskLevel": "High",
+          "thesis": "Display + memory dependence on Korean suppliers makes Apple a secondary expression of Korea concentration risk."
+        },
+        {
+          "ticker": "NVDA",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "AI / Semis",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Short NVDA / Long NOC",
+          "thesisBreaker": "AI demand absorbs all geopolitical risk premium.",
+          "catalyst": "HBM supply chain centered on Korean memory tightens.",
+          "riskLevel": "High",
+          "thesis": "HBM concentration in Korean memory (SK Hynix, Samsung) makes Nvidia's AI growth a Korea-binary trade at the margin."
+        },
+        {
+          "ticker": "URA",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Uranium / nuclear",
+          "horizon": "1-6 months",
+          "pairTrade": "Long URA / Short EWY",
+          "thesisBreaker": "Korean reactor restart timeline slips.",
+          "catalyst": "KEPCO nuclear restart push and Pacific AI power demand.",
+          "riskLevel": "High",
+          "thesis": "Korea's nuclear-heavy power mix and KEPCO restart push tighten Asia uranium balances."
+        },
+        {
+          "ticker": "GLD",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Gold",
+          "horizon": "1-3 months",
+          "pairTrade": "Long GLD / Short EWY",
+          "thesisBreaker": "Risk-off fades fast on diplomatic de-escalation.",
+          "catalyst": "Asia risk-off bid and central-bank diversification.",
+          "riskLevel": "Medium",
+          "thesis": "Gold captures USD risk-off and KRW weakness in a single instrument."
         }
       ]
     }
@@ -606,6 +922,46 @@
     "CCL": {
       "price": 24.64,
       "annualizedVol": 0.581
+    },
+    "EWY": {
+      "price": 178.86,
+      "annualizedVol": 0.605
+    },
+    "BNO": {
+      "price": 57.69,
+      "annualizedVol": 0.595
+    },
+    "USO": {
+      "price": 148.23,
+      "annualizedVol": 0.627
+    },
+    "REMX": {
+      "price": 96.57,
+      "annualizedVol": 0.551
+    },
+    "UNG": {
+      "price": 11.33,
+      "annualizedVol": 0.704
+    },
+    "UCO": {
+      "price": 50.2,
+      "annualizedVol": 0.734
+    },
+    "DBA": {
+      "price": 27.83,
+      "annualizedVol": 0.094
+    },
+    "GLD": {
+      "price": 417.29,
+      "annualizedVol": 0.383
+    },
+    "URA": {
+      "price": 49.93,
+      "annualizedVol": 0.584
+    },
+    "COPX": {
+      "price": 83.05,
+      "annualizedVol": 0.577
     }
   }
 }
