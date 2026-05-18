@@ -1,0 +1,36 @@
+{
+  "topic": "hormuz",
+  "scenarioKey": "iran",
+  "queries": [
+    "Strait of Hormuz tanker transit blockade IRGC",
+    "Hormuz vessel seizure UKMTO bulletin",
+    "CENTCOM Iran Gulf maritime security incident",
+    "Iran navy Hormuz interception sea mine"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["seizure", 8],
+    ["seized", 8],
+    ["mine", 6],
+    ["limpet", 7],
+    ["blockade", 9],
+    ["closed", 5],
+    ["transit halted", 9],
+    ["vessel attacked", 8],
+    ["irgc", 5],
+    ["intercepted", 5],
+    ["centcom", 4],
+    ["tanker", 3],
+    ["hormuz", 3],
+    ["strait", 2],
+    ["oil price", 2],
+    ["insurance", 3]
+  ],
+  "bands": {
+    "high": [40, 92],
+    "mid": [20, 82],
+    "low": [8, 72],
+    "baseline": 60
+  },
+  "maxHeatDelta": 6
+}

@@ -1,0 +1,36 @@
+{
+  "topic": "taiwan-strait",
+  "scenarioKey": "taiwan",
+  "queries": [
+    "Taiwan Ministry of Defense ADIZ PLA aircraft incursion daily",
+    "PLA warship Taiwan Strait median line crossing",
+    "Taiwan strait drill exercise blockade rehearsal",
+    "Chinese coast guard Taiwan Kinmen Matsu boarding"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["adiz", 6],
+    ["incursion", 5],
+    ["median line", 6],
+    ["sortie", 4],
+    ["drill", 4],
+    ["exercise", 3],
+    ["blockade", 8],
+    ["rehearsal", 5],
+    ["pla warship", 5],
+    ["pla aircraft", 4],
+    ["coast guard", 4],
+    ["boarding", 6],
+    ["quarantine", 7],
+    ["customs inspection", 6],
+    ["pla", 2],
+    ["taiwan strait", 3]
+  ],
+  "bands": {
+    "high": [40, 88],
+    "mid": [20, 75],
+    "low": [8, 65],
+    "baseline": 55
+  },
+  "maxHeatDelta": 6
+}

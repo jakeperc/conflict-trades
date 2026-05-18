@@ -1,0 +1,38 @@
+{
+  "topic": "baltic",
+  "scenarioKey": "europe",
+  "queries": [
+    "NATO Baltic Sea Russian drone intercept Latvia Estonia",
+    "Undersea cable damage Baltic Sea NATO investigation",
+    "Russian shadow fleet Danish straits sanctions",
+    "Baltic air policing Russia airspace incursion"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["intercept", 4],
+    ["drone", 3],
+    ["airspace", 4],
+    ["incursion", 5],
+    ["scrambled", 4],
+    ["undersea cable", 7],
+    ["pipeline damage", 7],
+    ["sabotage", 6],
+    ["shadow fleet", 5],
+    ["dark fleet", 5],
+    ["denmark", 2],
+    ["latvia", 3],
+    ["estonia", 3],
+    ["lithuania", 3],
+    ["finland", 3],
+    ["baltic", 3],
+    ["sweden", 2],
+    ["nato", 3]
+  ],
+  "bands": {
+    "high": [35, 86],
+    "mid": [18, 76],
+    "low": [7, 68],
+    "baseline": 58
+  },
+  "maxHeatDelta": 5
+}

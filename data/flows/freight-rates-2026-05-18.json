@@ -1,0 +1,68 @@
+{
+  "topic": "freight-rates",
+  "fetchedAt": "2026-05-18T05:09:25.919Z",
+  "readings": {
+    "FRO": {
+      "category": "VLCC/Suezmax tankers",
+      "price": 36.66,
+      "date": "2026-05-15",
+      "change5d": -0.072133601498227,
+      "change22d": 0.032966979814351406
+    },
+    "TNK": {
+      "category": "Product tankers",
+      "price": 77.19,
+      "date": "2026-05-15",
+      "change5d": -0.0703359800523904,
+      "change22d": 0.0329184928939845
+    },
+    "DHT": {
+      "category": "Crude tankers",
+      "price": 17.64,
+      "date": "2026-05-15",
+      "change5d": -0.0715789794921875,
+      "change22d": -0.001132528761975201
+    },
+    "INSW": {
+      "category": "Mixed tankers",
+      "price": 84.58,
+      "date": "2026-05-15",
+      "change5d": -0.07683912578566232,
+      "change22d": 0.1354544805564122
+    },
+    "EURN": {
+      "category": "Crude tankers (Belgian)",
+      "error": "Request failed: 404"
+    },
+    "STNG": {
+      "category": "Product tankers",
+      "price": 82.12,
+      "date": "2026-05-15",
+      "change5d": -0.02712949669679137,
+      "change22d": 0.1103299589388787
+    },
+    "BDRY": {
+      "category": "Dry bulk shipping ETF",
+      "price": 13.18,
+      "date": "2026-05-15",
+      "change5d": 0.08871636901697573,
+      "change22d": 0.15614041633406578
+    },
+    "ZIM": {
+      "category": "Container shipping",
+      "price": 25.57,
+      "date": "2026-05-15",
+      "change5d": -0.039083084993345424,
+      "change22d": -0.04232213617325869
+    },
+    "FDX": {
+      "category": "Air freight (FedEx proxy)",
+      "price": 375.78,
+      "date": "2026-05-15",
+      "change5d": -0.007396026975224882,
+      "change22d": 0.029759906149167997
+    }
+  },
+  "tankerAvg5d": -0.06360343670505172,
+  "interpretation": "Tanker proxies -6.4% over 5d — freight loosening, trim shipping exposure"
+}

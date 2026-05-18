@@ -1,0 +1,37 @@
+{
+  "topic": "korea-launches",
+  "scenarioKey": "korea",
+  "queries": [
+    "North Korea missile launch JCS Joint Chiefs ROK",
+    "DPRK ICBM SLBM hypersonic test Pyongyang",
+    "Kim Jong Un weapons test Yellow Sea",
+    "Japan MOD North Korea ballistic missile detection"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["icbm", 9],
+    ["slbm", 8],
+    ["hypersonic", 7],
+    ["nuclear test", 10],
+    ["satellite launch", 6],
+    ["missile launch", 5],
+    ["fired", 4],
+    ["projectile", 3],
+    ["test", 2],
+    ["kim jong un", 3],
+    ["dprk", 3],
+    ["pyongyang", 3],
+    ["jcs", 4],
+    ["mod japan", 3],
+    ["yellow sea", 4],
+    ["nll", 5],
+    ["provocation", 4]
+  ],
+  "bands": {
+    "high": [40, 88],
+    "mid": [20, 75],
+    "low": [8, 65],
+    "baseline": 50
+  },
+  "maxHeatDelta": 7
+}

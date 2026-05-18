@@ -1,0 +1,35 @@
+{
+  "topic": "bab-el-mandeb",
+  "scenarioKey": "iran",
+  "queries": [
+    "Bab el-Mandeb Houthi attack Red Sea vessel",
+    "Red Sea Suez transit drop Houthi missile",
+    "CENTCOM Houthi strike Red Sea shipping",
+    "Yemen Houthi anti-ship missile drone"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["houthi", 4],
+    ["attack", 5],
+    ["missile", 4],
+    ["drone strike", 5],
+    ["anti-ship", 6],
+    ["sunk", 8],
+    ["damaged", 5],
+    ["red sea", 3],
+    ["bab", 4],
+    ["mandeb", 4],
+    ["suez", 3],
+    ["rerouting", 4],
+    ["risk premium", 3],
+    ["war risk", 4],
+    ["insurance", 3]
+  ],
+  "bands": {
+    "high": [40, 90],
+    "mid": [20, 80],
+    "low": [8, 72],
+    "baseline": 60
+  },
+  "maxHeatDelta": 5
+}

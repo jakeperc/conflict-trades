@@ -1,0 +1,50 @@
+{
+  "topic": "oil-curve",
+  "fetchedAt": "2026-05-18T05:08:56.025Z",
+  "readings": {
+    "BZ=F": {
+      "label": "Brent",
+      "price": 111.2,
+      "date": "2026-05-18",
+      "change7d": 0.06707607643392681,
+      "change22d": 0.11882480763777702
+    },
+    "CL=F": {
+      "label": "WTI",
+      "price": 103.18,
+      "date": "2026-05-18",
+      "change7d": 0.052105645215182454,
+      "change22d": 0.08966097417753373
+    },
+    "NG=F": {
+      "label": "Henry Hub",
+      "price": 3.03,
+      "date": "2026-05-18",
+      "change7d": 0.042268007873548036,
+      "change22d": 0.14582542770553514
+    },
+    "USO": {
+      "label": "USO ETF",
+      "price": 148.23,
+      "date": "2026-05-15",
+      "change7d": 0.10958903953121855,
+      "change22d": 0.20915246068674137
+    },
+    "BNO": {
+      "label": "BNO ETF (Brent)",
+      "price": 57.69,
+      "date": "2026-05-15",
+      "change7d": 0.08623607538548482,
+      "change22d": 0.21914621721815053
+    },
+    "UNG": {
+      "label": "UNG ETF",
+      "price": 11.33,
+      "date": "2026-05-15",
+      "change7d": 0.07190163205529543,
+      "change22d": 0.07088846932026097
+    }
+  },
+  "brentWtiSpread": 8.02,
+  "interpretation": "Brent ≥ $95 — supply-tight regime, energy longs favored | Brent-WTI spread ≥ $6 — international risk premium elevated (Hormuz/Red Sea bias) | 7d momentum +6.7% — energy trades have running room"
+}

@@ -1,0 +1,36 @@
+{
+  "topic": "black-sea",
+  "scenarioKey": "europe",
+  "queries": [
+    "Russia attack Ukrainian Odessa port grain corridor",
+    "Black Sea corridor vessel attacked drone Ukraine",
+    "Bosphorus transit Ukraine grain wheat export",
+    "Russian naval action Black Sea Crimea"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["odessa", 5],
+    ["odesa", 5],
+    ["mykolaiv", 4],
+    ["grain corridor", 6],
+    ["wheat", 3],
+    ["corn", 3],
+    ["sunflower", 3],
+    ["port attack", 6],
+    ["drone strike", 5],
+    ["vessel attacked", 7],
+    ["vessel sunk", 8],
+    ["damaged", 4],
+    ["bosphorus", 4],
+    ["black sea", 3],
+    ["crimea", 3],
+    ["sevastopol", 4]
+  ],
+  "bands": {
+    "high": [35, 88],
+    "mid": [18, 78],
+    "low": [7, 70],
+    "baseline": 60
+  },
+  "maxHeatDelta": 5
+}

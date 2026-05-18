@@ -1,0 +1,85 @@
+{
+  "topic": "korea-launches",
+  "scenarioKey": "korea",
+  "fetchedAt": "2026-05-18T05:08:59.599Z",
+  "aggregateScore": 17,
+  "targetHeat": 65,
+  "oldHeatBase": 55,
+  "newHeatBase": 62,
+  "delta": 7,
+  "itemCount": 17,
+  "topSignals": [
+    {
+      "title": "Cheong Wa Dae to convene emergency meeting over N Korea's missile launch - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxPNFBCdWxSYmx3b2ZfeWI0Z3VtYlVOSHBnVU5xMXY5TGFLQ042Vml6cm1Nb0pMcG1tTU5IR3dQaEszdVByTDlnWVhvZ285VGVWLVRValNmOFhrTTlrTHExTktEYi00UUtJSTl1Q2pHa3llbXlWNWd4aENUTFpXb19qU1N1OG5jd1BzWHI5VUVhTmNvRjFsS1lEZ0diTHlJZExEX0N2NXpfUi1PX1JoTzNubm1JQ1pUdnM4S1oyRDZCNzdYaThVdHVqUk5QS0NPVFNiekpES3QyaU13VG9EZlVpbXRweDJDYUlBaklQS0ZwQnhXSEF1OTFSZHpnZUticm0zX3VSZ09BcVpsblJ1OW5PYW1VQzZmcDl0ekhxYkFZd1RudE5fTmJDY3E0THYzX2FUYjYxb0dLSjZRTGEwWFVYWUU3dFJXZHJsWTI3d0EyMWdRWUU?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi0wJBVV95cUxPNFBCdWxSYmx3b2ZfeWI0Z3VtYlVOSHBnVU5xMXY5TGFLQ042Vml6cm1Nb0pMcG1tTU5IR3dQaEszdVByTDlnWVhvZ285VGVWLVRValNmOFhrTTlrTHExTktEYi00UUtJSTl1Q2pHa3llbXlWNWd4aENUTFpXb19qU1N1OG5jd1BzWHI5VUVhTmNvRjFsS1lEZ0diTHlJZExEX0N2NXpfUi1PX1JoTzNubm1JQ1pUdnM4S1oyRDZCNzdYaThVdHVqUk5QS0NPVFNiekpES3QyaU13VG9EZlVpbXRweDJDYUlBaklQS0ZwQnhXSEF1OTFSZHpnZUticm0zX3VSZ09BcVpsblJ1OW5PYW1VQzZmcDl0ekhxYkFZd1RudE5fTmJDY3E0THYzX2FUYjYxb0dLSjZRTGEwWFVYWUU3dFJXZHJsWTI3d0EyMWdRWUU?oc=5\" target=\"_blank\">Cheong Wa Dae to convene emergency meeting over N Korea's missile launch</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Thu, 14 May 2026 23:15:56 GMT",
+      "source": "google-news",
+      "query": "North Korea missile launch JCS Joint Chiefs ROK",
+      "score": 5
+    },
+    {
+      "title": "North Korea - Nuclear Program, Arms Race, Sanctions - Britannica",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaVpxX00zUndudmpXTkQ0RVhwM19kQlJNQjNkcVFkRU9mVmNhbG5wOV9oTXR4YkgxNnF0cnFYMXphMTRXb2JRSldOTWRuQy05VVFYbEFWd29sS0xUcmZ5d05zalB4QXF2b2pWT0pxb1h4b0xNcUdtRnlLOXZYWmlWbGJoLVQ4eC1aUERPc05Hbk1veVU?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOaVpxX00zUndudmpXTkQ0RVhwM19kQlJNQjNkcVFkRU9mVmNhbG5wOV9oTXR4YkgxNnF0cnFYMXphMTRXb2JRSldOTWRuQy05VVFYbEFWd29sS0xUcmZ5d05zalB4QXF2b2pWT0pxb1h4b0xNcUdtRnlLOXZYWmlWbGJoLVQ4eC1aUERPc05Hbk1veVU?oc=5\" target=\"_blank\">North Korea - Nuclear Program, Arms Race, Sanctions</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Britannica</font>",
+      "publishedAt": "Fri, 15 May 2026 05:00:00 GMT",
+      "source": "google-news",
+      "query": "Kim Jong Un weapons test Yellow Sea",
+      "score": 5
+    },
+    {
+      "title": "Kim Jong Un tours new warship and artillery amid policy shift - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNW9hc0d2OHR4R0hyX0NRT29HSjlQRVJHR0ZPLWtKOXVhbFN1aDhPNC1uamRhdU1Jc19XVUZ0U21kVnhMSUZNZWhwcUlnMU43cGFpdjNkOWhaZVo3dmRHTWJnRWpRbHp1VlZfWTVBNlVfcXB5alY2QlRITFEtVHJ3MVpvNDN1ZUp6TkJDc0NEbjFlcGJ6QndPNXlvMXZVX2tzQXM2b0FuaUVaS0xfYXlxd1dsbVhpMVZKV1k3SWQ4U0VpdklTVEtONFpQRVgxRzFERXg0YlVrOGdiVFhrazBqNExVczFRTHBiSUNvN25SYUwyRjVvcGVz?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxPNW9hc0d2OHR4R0hyX0NRT29HSjlQRVJHR0ZPLWtKOXVhbFN1aDhPNC1uamRhdU1Jc19XVUZ0U21kVnhMSUZNZWhwcUlnMU43cGFpdjNkOWhaZVo3dmRHTWJnRWpRbHp1VlZfWTVBNlVfcXB5alY2QlRITFEtVHJ3MVpvNDN1ZUp6TkJDc0NEbjFlcGJ6QndPNXlvMXZVX2tzQXM2b0FuaUVaS0xfYXlxd1dsbVhpMVZKV1k3SWQ4U0VpdklTVEtONFpQRVgxRzFERXg0YlVrOGdiVFhrazBqNExVczFRTHBiSUNvN25SYUwyRjVvcGVz?oc=5\" target=\"_blank\">Kim Jong Un tours new warship and artillery amid policy shift</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Sun, 10 May 2026 00:00:00 GMT",
+      "source": "google-news",
+      "query": "Kim Jong Un weapons test Yellow Sea",
+      "score": 3
+    },
+    {
+      "title": "North Korea announced the completion of tests for a new destroyer. - news.liga.net",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaDdURjdDMGhTRnJKWXIwTlZrb0NRZkpCaDlLc251eUtiZTFFcXkybUp2TTd2Z3RMcHFnY3N3ZDNFR0VFZW1jSFZOWXJfTkktNmdBczFfUDRjRjVuR1NjNUxFTWRwTXozMTc5UElqSUNGb19sYXVfWU9La09EdF9VUUNIcjNOaGt5VWM0dHR3T0hTRHB6UjFQMTZod184YXhZ0gGmAUFVX3lxTFBlbjNaTzdwZTZSTEQwTkx2MGJ3ODNmN2cwUDNzUDlYTXpRUXo3Q2k3aXpPM0tkYVcwRWRja1R3aS1DN1ZYaEM1RFdwR3lBTHRHcWpRYUM2a2ZWRlBmSXlGVHUwU21JQ3NaOXFuMllwZlNoSUpEX0hDYUVkZlBmMVpVcHQ5UFM5WmxhZFAyOWJ6b3A2VzR4MXhuSk42eUkwLXlyNGtGc3c?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxNaDdURjdDMGhTRnJKWXIwTlZrb0NRZkpCaDlLc251eUtiZTFFcXkybUp2TTd2Z3RMcHFnY3N3ZDNFR0VFZW1jSFZOWXJfTkktNmdBczFfUDRjRjVuR1NjNUxFTWRwTXozMTc5UElqSUNGb19sYXVfWU9La09EdF9VUUNIcjNOaGt5VWM0dHR3T0hTRHB6UjFQMTZod184YXhZ0gGmAUFVX3lxTFBlbjNaTzdwZTZSTEQwTkx2MGJ3ODNmN2cwUDNzUDlYTXpRUXo3Q2k3aXpPM0tkYVcwRWRja1R3aS1DN1ZYaEM1RFdwR3lBTHRHcWpRYUM2a2ZWRlBmSXlGVHUwU21JQ3NaOXFuMllwZlNoSUpEX0hDYUVkZlBmMVpVcHQ5UFM5WmxhZFAyOWJ6b3A2VzR4MXhuSk42eUkwLXlyNGtGc3c?oc=5\" target=\"_blank\">North Korea announced the completion of tests for a new destroyer.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">news.liga.net</font>",
+      "publishedAt": "Fri, 08 May 2026 05:22:00 GMT",
+      "source": "google-news",
+      "query": "Kim Jong Un weapons test Yellow Sea",
+      "score": 2
+    },
+    {
+      "title": "NK.'s test of destroyer Choe Hyon's maneuverability - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOQmZJb2JOaHFfcWFRNlpKSmM4N3c2ZXltQzZzSklROW1jZEZVQkRleEdkS3lwa1l3ekphdmdjeWhTUzR2NnYzOWFFc3RsNkpzZ2JxMVlLM21MV0Q0ckRkM3JnTHdZVzRKeWRJNTZVTmpCYVE3ZTFpZkxZd0ZfVWZzWHJWcGtYR0Vyc2NsMFhrZHJHRjBKYVpwTnhhd1FQUXlzdzl1NExpZkYtYXdXa1p3VzR3YmRFT01HUkFQdXBuMGt4VGthRjViMnJfZ3hRbGliMngyb0VnNTVsRk5feE15c3hnbnQzNDYybFZhU29adE1kWUdqdFBLclI5cWR4NDFxelJQN0tIc3ptMGRyY1dVVmxjSGNYbExWa1A4ZGZ4cXhZdTJpeS04Ry1MQnhadFZqOHptUlVYcTlGZWpJeFlIdWw0QV9sRUVPRFdralp0M1c0NG9VcWpHWmNPOTZTRFBCYU9qdlBDV3B4MVB1SUtqaTNPX21FUQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi9gJBVV95cUxOQmZJb2JOaHFfcWFRNlpKSmM4N3c2ZXltQzZzSklROW1jZEZVQkRleEdkS3lwa1l3ekphdmdjeWhTUzR2NnYzOWFFc3RsNkpzZ2JxMVlLM21MV0Q0ckRkM3JnTHdZVzRKeWRJNTZVTmpCYVE3ZTFpZkxZd0ZfVWZzWHJWcGtYR0Vyc2NsMFhrZHJHRjBKYVpwTnhhd1FQUXlzdzl1NExpZkYtYXdXa1p3VzR3YmRFT01HUkFQdXBuMGt4VGthRjViMnJfZ3hRbGliMngyb0VnNTVsRk5feE15c3hnbnQzNDYybFZhU29adE1kWUdqdFBLclI5cWR4NDFxelJQN0tIc3ptMGRyY1dVVmxjSGNYbExWa1A4ZGZ4cXhZdTJpeS04Ry1MQnhadFZqOHptUlVYcTlGZWpJeFlIdWw0QV9sRUVPRFdralp0M1c0NG9VcWpHWmNPOTZTRFBCYU9qdlBDV3B4MVB1SUtqaTNPX21FUQ?oc=5\" target=\"_blank\">NK.'s test of destroyer Choe Hyon's maneuverability</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Thu, 07 May 2026 07:00:00 GMT",
+      "source": "google-news",
+      "query": "Kim Jong Un weapons test Yellow Sea",
+      "score": 2
+    },
+    {
+      "title": "South Korea to begin Taegeuk military drills next week to strengthen North response - Korea JoongAng Daily",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQRl85dVhjZ3Rnc29EcnpVUmNmQ1RucWI5M3pqRTNpdmV5V1FNMm1vdmVIUk1LWHBTWTlTMXFyT3hMT3h2cGRrOEpIX0NyOWd0Q1A5Sy1fNkVLQUlDWmJSbUg1MjM0RDdqZGZVdUtXYnZEOFFJOWF3cFFWNm1vU1NEbmJuTS1hSVNhTFFlYnNqZ3JFSEtwNHV0ZlhXQm9HRXNJMWdOSC1sNk1jek5lWlpyWllVRmRjRDlnQVFzUDRFTlJYdlFuRGZyUTZ5OHAyS2M5d1ZwNWxWclZBRnlIMjVMWW1aa01qMnI1eVloWkpQa1B6NWt6NUQ0UWV2MA?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxQRl85dVhjZ3Rnc29EcnpVUmNmQ1RucWI5M3pqRTNpdmV5V1FNMm1vdmVIUk1LWHBTWTlTMXFyT3hMT3h2cGRrOEpIX0NyOWd0Q1A5Sy1fNkVLQUlDWmJSbUg1MjM0RDdqZGZVdUtXYnZEOFFJOWF3cFFWNm1vU1NEbmJuTS1hSVNhTFFlYnNqZ3JFSEtwNHV0ZlhXQm9HRXNJMWdOSC1sNk1jek5lWlpyWllVRmRjRDlnQVFzUDRFTlJYdlFuRGZyUTZ5OHAyS2M5d1ZwNWxWclZBRnlIMjVMWW1aa01qMnI1eVloWkpQa1B6NWt6NUQ0UWV2MA?oc=5\" target=\"_blank\">South Korea to begin Taegeuk military drills next week to strengthen North response</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Korea JoongAng Daily</font>",
+      "publishedAt": "Fri, 15 May 2026 07:20:37 GMT",
+      "source": "google-news",
+      "query": "North Korea missile launch JCS Joint Chiefs ROK",
+      "score": 0
+    },
+    {
+      "title": "South Korea Fires at 20 North Korean Soldiers Who Crossed DMZ: Report - MSN",
+      "link": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNd09TdUtpR2NJQlROcTBWODNrbVk3Vm5nN1B6c0pJdU15Ty1lQVdvOVVqM2I0LUF3eDRjLVdUUERzYlhTV1RqZFVrSGp3ME1uTmRiWFpHUlZWUk1FTXUyRE45S1BOd3BTZ3EyWG9XdWItRWFlR0dOWVNET2hxTkFKUWJtcENFUWpTdmpDSWV0V2lKcHlEUmVhc0VLTVRjUGlBTEJoV0lsSDlzaGwyMVFzbkpadk1lMGItMXF1YXRqR2xOWTYyVVZkSHRjaDI2dk8wTzlTV3E5Um5nYkhLd2dVYTlLREh6WGNocDJ4djl3a2hFbTRpSFdGTjlDeHZ4N0ZmRmsxMjJTUDdvWmlFTmQzelV1LVRuRzJZMUhERmFqRGxXbnBOU0dfSl9vT2dIX2RCWWM0TnFyZDBfNV9MdkVfZEZIZTdBOUkyN2xXM3hmN2xqY0tmTG5JUGdxWFR2Y2dZekJ1OGV1MG1CM3E5N3h1dzctbjNtMXFoNFdyUGEwd3BVVXNtWThXOGxVc2FlZzV4Uk83QTZR?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilgNBVV95cUxNd09TdUtpR2NJQlROcTBWODNrbVk3Vm5nN1B6c0pJdU15Ty1lQVdvOVVqM2I0LUF3eDRjLVdUUERzYlhTV1RqZFVrSGp3ME1uTmRiWFpHUlZWUk1FTXUyRE45S1BOd3BTZ3EyWG9XdWItRWFlR0dOWVNET2hxTkFKUWJtcENFUWpTdmpDSWV0V2lKcHlEUmVhc0VLTVRjUGlBTEJoV0lsSDlzaGwyMVFzbkpadk1lMGItMXF1YXRqR2xOWTYyVVZkSHRjaDI2dk8wTzlTV3E5Um5nYkhLd2dVYTlLREh6WGNocDJ4djl3a2hFbTRpSFdGTjlDeHZ4N0ZmRmsxMjJTUDdvWmlFTmQzelV1LVRuRzJZMUhERmFqRGxXbnBOU0dfSl9vT2dIX2RCWWM0TnFyZDBfNV9MdkVfZEZIZTdBOUkyN2xXM3hmN2xqY0tmTG5JUGdxWFR2Y2dZekJ1OGV1MG1CM3E5N3h1dzctbjNtMXFoNFdyUGEwd3BVVXNtWThXOGxVc2FlZzV4Uk83QTZR?oc=5\" target=\"_blank\">South Korea Fires at 20 North Korean Soldiers Who Crossed DMZ: Report</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Thu, 14 May 2026 23:36:29 GMT",
+      "source": "google-news",
+      "query": "North Korea missile launch JCS Joint Chiefs ROK",
+      "score": 0
+    },
+    {
+      "title": "Why Have South Korea, U.S., Japan's 'Stars' Gathered in Taiwan? - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQkp4T0pBdnNONTd2emRiMnNySVlYWTg2akt4YklUSVVwTnBMOEh2RVdpN3JVYUo1U0tPRXdrQWF0SFFoblVlTXd1SnZ6YndZWDFLajk1ZkpSSE8xX0RTcGtDajFuZk54VU81WE1qQll3ZDZnbXdScExmbEJnRFVRMHppM0RTcm8?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQQkp4T0pBdnNONTd2emRiMnNySVlYWTg2akt4YklUSVVwTnBMOEh2RVdpN3JVYUo1U0tPRXdrQWF0SFFoblVlTXd1SnZ6YndZWDFLajk1ZkpSSE8xX0RTcGtDajFuZk54VU81WE1qQll3ZDZnbXdScExmbEJnRFVRMHppM0RTcm8?oc=5\" target=\"_blank\">Why Have South Korea, U.S., Japan's 'Stars' Gathered in Taiwan?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">조선일보</font>",
+      "publishedAt": "Thu, 07 May 2026 07:00:00 GMT",
+      "source": "google-news",
+      "query": "North Korea missile launch JCS Joint Chiefs ROK",
+      "score": 0
+    }
+  ]
+}

@@ -11,7 +11,7 @@
         "Iran oil prices Hormuz shipping",
         "Yemen Houthi Red Sea shipping oil"
       ],
-      "heatBase": 88,
+      "heatBase": 92,
       "summary": "Updated for the May 2026 Hormuz blockage: crude sensitivity, trapped-vessel release attempts, tanker insurance stress, and defense restocking if Gulf transit risk stays elevated.",
       "secondOrderEffects": [
         "Marine insurance and mine-risk terms can hit delivered crude costs faster than headline oil moves.",
@@ -645,7 +645,7 @@
         "Samsung SK Hynix Korea semiconductor risk",
         "Yellow Sea NLL DPRK provocation"
       ],
-      "heatBase": 55,
+      "heatBase": 62,
       "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
       "secondOrderEffects": [
         "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",
