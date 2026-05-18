@@ -65,7 +65,83 @@ async function main() {
     return;
   }
 
-  console.error(`Unknown subcommand: ${cmd}. Use run|status|reset|backfill|simulate.`);
+  if (cmd === "tune") {
+    const fs = require("fs");
+    const path = require("path");
+    const ROOT = path.join(__dirname, "..", "..");
+
+    const args = process.argv.slice(3);
+    let candidateCount = 50;
+    let seed = 42;
+    let dryRun = false;
+    for (let i = 0; i < args.length; i++) {
+      if (args[i] === "--candidates" && args[i + 1]) { candidateCount = Number(args[++i]); }
+      else if (args[i] === "--seed" && args[i + 1]) { seed = Number(args[++i]); }
+      else if (args[i] === "--dry-run") { dryRun = true; }
+    }
+
+    console.error(`[tune] running tournament with ${candidateCount} candidates...`);
+    const tournament = await trader.runTournament({ candidateCount, seed, log: true });
+    const gate = trader.applyTournamentGate(tournament);
+
+    const summary = {
+      runAt: new Date().toISOString(),
+      candidateCount: tournament.candidateCount,
+      windows: tournament.windows,
+      baselineAvgReturn: gate.baseline?.avgReturn,
+      baselineWindows: gate.baseline?.windows.map((w) => ({ window: w.window, pctReturn: w.pctReturn })),
+      gateAccepted: gate.accepted,
+      gateReason: gate.reason || null,
+      improvement: gate.improvement || null,
+      winner: gate.accepted ? {
+        avgReturn: gate.winner.avgReturn,
+        minReturn: gate.winner.minReturn,
+        maxReturn: gate.winner.maxReturn,
+        weights: gate.winner.weights,
+        windows: gate.winner.windows
+      } : null,
+      top5: tournament.results.slice(0, 5).map((r) => ({
+        label: r.label,
+        avgReturn: r.avgReturn,
+        minReturn: r.minReturn,
+        maxReturn: r.maxReturn,
+        weights: r.weights
+      }))
+    };
+
+    fs.writeFileSync(path.join(ROOT, "data", "trader", "tournament.json"), JSON.stringify({ ...summary, allResults: tournament.results }, null, 2));
+
+    if (gate.accepted && !dryRun) {
+      const existing = trader.loadCalibration() || {};
+      const newCal = {
+        ...existing,
+        generatedAt: new Date().toISOString(),
+        globalWeights: gate.winner.weights,
+        tournamentMeta: {
+          ranAt: new Date().toISOString(),
+          baselineAvgReturn: gate.baseline.avgReturn,
+          winnerAvgReturn: gate.winner.avgReturn,
+          improvement: gate.improvement,
+          winnerWindows: gate.winner.windows,
+          candidateCount: tournament.candidateCount
+        },
+        // Per-bucket weights are kept but NOT applied by default after path 3.
+        applyBucketWeights: false
+      };
+      const path2 = path.join(ROOT, "data", "trader", "calibration.json");
+      fs.writeFileSync(path2, JSON.stringify(newCal, null, 2));
+      console.error(`[tune] gate ACCEPTED → calibration.json updated with new globalWeights`);
+    } else if (!gate.accepted) {
+      console.error(`[tune] gate REJECTED: ${gate.reason}`);
+    } else {
+      console.error(`[tune] dry-run: would have updated calibration.json`);
+    }
+
+    console.log(JSON.stringify(summary, null, 2));
+    return;
+  }
+
+  console.error(`Unknown subcommand: ${cmd}. Use run|status|reset|backfill|simulate|tune.`);
   process.exit(1);
 }
 

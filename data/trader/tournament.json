@@ -1,0 +1,3275 @@
+{
+  "runAt": "2026-05-18T18:03:55.214Z",
+  "candidateCount": 80,
+  "windows": [
+    {
+      "label": "Feb28-Mar31",
+      "start": "2026-02-28",
+      "end": "2026-03-31"
+    },
+    {
+      "label": "Mar15-Apr30",
+      "start": "2026-03-15",
+      "end": "2026-04-30"
+    },
+    {
+      "label": "Apr01-May15",
+      "start": "2026-04-01",
+      "end": "2026-05-15"
+    }
+  ],
+  "baselineAvgReturn": 0.07476666666666666,
+  "baselineWindows": [
+    {
+      "window": "Feb28-Mar31",
+      "pctReturn": 0.1774
+    },
+    {
+      "window": "Mar15-Apr30",
+      "pctReturn": 0.0367
+    },
+    {
+      "window": "Apr01-May15",
+      "pctReturn": 0.0102
+    }
+  ],
+  "gateAccepted": true,
+  "gateReason": null,
+  "improvement": 0.0058000000000000135,
+  "winner": {
+    "avgReturn": 0.08056666666666668,
+    "minReturn": 0.0102,
+    "maxReturn": 0.1774,
+    "weights": {
+      "conviction": 0.16928831342444617,
+      "scenario": 0.1316686882190137,
+      "riskReward": 0.15047850082172992,
+      "trend": 0.1316686882190137,
+      "volRegime": 0.050526887659853775,
+      "catalyst": 0.17827079562878037,
+      "memory": 0.18809812602716242
+    },
+    "windows": [
+      {
+        "window": "Feb28-Mar31",
+        "pctReturn": 0.1774,
+        "finalEquity": 11773.57,
+        "closedCount": 2,
+        "winRate": 1
+      },
+      {
+        "window": "Mar15-Apr30",
+        "pctReturn": 0.0541,
+        "finalEquity": 10541.41,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      {
+        "window": "Apr01-May15",
+        "pctReturn": 0.0102,
+        "finalEquity": 10102.1,
+        "closedCount": 6,
+        "winRate": 0.333
+      }
+    ]
+  },
+  "top5": [
+    {
+      "label": "cand_67",
+      "avgReturn": 0.0798,
+      "minReturn": 0.0253,
+      "maxReturn": 0.1774,
+      "weights": {
+        "conviction": 0.19231992626572825,
+        "scenario": 0.14228796416115522,
+        "riskReward": 0.1626148161841774,
+        "trend": 0.1165671049515179,
+        "volRegime": 0.0813074080920887,
+        "catalyst": 0.10163426011511087,
+        "memory": 0.20326852023022174
+      }
+    },
+    {
+      "label": "cand_11",
+      "avgReturn": 0.07913333333333333,
+      "minReturn": 0.0233,
+      "maxReturn": 0.1774,
+      "weights": {
+        "conviction": 0.1939613973522789,
+        "scenario": 0.168805921234014,
+        "riskReward": 0.1066517270720177,
+        "trend": 0.12110689326465639,
+        "volRegime": 0.08620506548990174,
+        "catalyst": 0.10775633186237718,
+        "memory": 0.21551266372475436
+      }
+    },
+    {
+      "label": "cand_16",
+      "avgReturn": 0.07913333333333333,
+      "minReturn": 0.0233,
+      "maxReturn": 0.1774,
+      "weights": {
+        "conviction": 0.2035637265635746,
+        "scenario": 0.15832734288278028,
+        "riskReward": 0.09272185145610547,
+        "trend": 0.11564143412999328,
+        "volRegime": 0.09047276736158871,
+        "catalyst": 0.1130909592019859,
+        "memory": 0.2261819184039718
+      }
+    },
+    {
+      "label": "cand_79",
+      "avgReturn": 0.0792,
+      "minReturn": 0.023,
+      "maxReturn": 0.1774,
+      "weights": {
+        "conviction": 0.23742853047056411,
+        "scenario": 0.1539391042288907,
+        "riskReward": 0.17593040483301792,
+        "trend": 0.1539391042288907,
+        "volRegime": 0.08796520241650896,
+        "catalyst": 0.06346836306322713,
+        "memory": 0.12732929075890062
+      }
+    },
+    {
+      "label": "cand_72",
+      "avgReturn": 0.08056666666666668,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "weights": {
+        "conviction": 0.16928831342444617,
+        "scenario": 0.1316686882190137,
+        "riskReward": 0.15047850082172992,
+        "trend": 0.1316686882190137,
+        "volRegime": 0.050526887659853775,
+        "catalyst": 0.17827079562878037,
+        "memory": 0.18809812602716242
+      }
+    }
+  ],
+  "allResults": [
+    {
+      "label": "cand_67",
+      "weights": {
+        "conviction": 0.19231992626572825,
+        "scenario": 0.14228796416115522,
+        "riskReward": 0.1626148161841774,
+        "trend": 0.1165671049515179,
+        "volRegime": 0.0813074080920887,
+        "catalyst": 0.10163426011511087,
+        "memory": 0.20326852023022174
+      },
+      "avgReturn": 0.0798,
+      "minReturn": 0.0253,
+      "maxReturn": 0.1774,
+      "composite": 0.03416999999999999,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0253,
+          "finalEquity": 10252.88,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_11",
+      "weights": {
+        "conviction": 0.1939613973522789,
+        "scenario": 0.168805921234014,
+        "riskReward": 0.1066517270720177,
+        "trend": 0.12110689326465639,
+        "volRegime": 0.08620506548990174,
+        "catalyst": 0.10775633186237718,
+        "memory": 0.21551266372475436
+      },
+      "avgReturn": 0.07913333333333333,
+      "minReturn": 0.0233,
+      "maxReturn": 0.1774,
+      "composite": 0.03290333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0233,
+          "finalEquity": 10233.3,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_16",
+      "weights": {
+        "conviction": 0.2035637265635746,
+        "scenario": 0.15832734288278028,
+        "riskReward": 0.09272185145610547,
+        "trend": 0.11564143412999328,
+        "volRegime": 0.09047276736158871,
+        "catalyst": 0.1130909592019859,
+        "memory": 0.2261819184039718
+      },
+      "avgReturn": 0.07913333333333333,
+      "minReturn": 0.0233,
+      "maxReturn": 0.1774,
+      "composite": 0.03290333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0233,
+          "finalEquity": 10233.3,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_79",
+      "weights": {
+        "conviction": 0.23742853047056411,
+        "scenario": 0.1539391042288907,
+        "riskReward": 0.17593040483301792,
+        "trend": 0.1539391042288907,
+        "volRegime": 0.08796520241650896,
+        "catalyst": 0.06346836306322713,
+        "memory": 0.12732929075890062
+      },
+      "avgReturn": 0.0792,
+      "minReturn": 0.023,
+      "maxReturn": 0.1774,
+      "composite": 0.032880000000000006,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0372,
+          "finalEquity": 10372.37,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.023,
+          "finalEquity": 10230.39,
+          "closedCount": 5,
+          "winRate": 0.4
+        }
+      ]
+    },
+    {
+      "label": "cand_72",
+      "weights": {
+        "conviction": 0.16928831342444617,
+        "scenario": 0.1316686882190137,
+        "riskReward": 0.15047850082172992,
+        "trend": 0.1316686882190137,
+        "volRegime": 0.050526887659853775,
+        "catalyst": 0.17827079562878037,
+        "memory": 0.18809812602716242
+      },
+      "avgReturn": 0.08056666666666668,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.030406666666666672,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0541,
+          "finalEquity": 10541.41,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_70",
+      "weights": {
+        "conviction": 0.16657127650757547,
+        "scenario": 0.12955543728366983,
+        "riskReward": 0.14806335689562267,
+        "trend": 0.12955543728366983,
+        "volRegime": 0.0865611610614029,
+        "catalyst": 0.09253959805976417,
+        "memory": 0.2471537329082952
+      },
+      "avgReturn": 0.07606666666666667,
+      "minReturn": 0.0239,
+      "maxReturn": 0.1774,
+      "composite": 0.03001666666666667,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0269,
+          "finalEquity": 10268.98,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_7",
+      "weights": {
+        "conviction": 0.21554808967188976,
+        "scenario": 0.1271822403835029,
+        "riskReward": 0.15465168704578997,
+        "trend": 0.13532022616506623,
+        "volRegime": 0.07732584352289498,
+        "catalyst": 0.09665730440361872,
+        "memory": 0.19331460880723744
+      },
+      "avgReturn": 0.07623333333333333,
+      "minReturn": 0.0175,
+      "maxReturn": 0.1774,
+      "composite": 0.02826333333333334,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0175,
+          "finalEquity": 10174.62,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_22",
+      "weights": {
+        "conviction": 0.2088646049565009,
+        "scenario": 0.12436926087239393,
+        "riskReward": 0.14213629813987877,
+        "trend": 0.12436926087239393,
+        "volRegime": 0.07106814906993938,
+        "catalyst": 0.1515220534140446,
+        "memory": 0.17767037267484848
+      },
+      "avgReturn": 0.0598,
+      "minReturn": 0.0175,
+      "maxReturn": 0.1252,
+      "composite": 0.02749,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0175,
+          "finalEquity": 10174.62,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_18",
+      "weights": {
+        "conviction": 0.16102130648951127,
+        "scenario": 0.16827225850685915,
+        "riskReward": 0.20553377181170812,
+        "trend": 0.12523879393628656,
+        "volRegime": 0.07156502510644946,
+        "catalyst": 0.08945628138306183,
+        "memory": 0.17891256276612366
+      },
+      "avgReturn": 0.0741,
+      "minReturn": 0.021,
+      "maxReturn": 0.1774,
+      "composite": 0.027179999999999996,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.021,
+          "finalEquity": 10210.31,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_60",
+      "weights": {
+        "conviction": 0.15080144360497133,
+        "scenario": 0.21340648526009337,
+        "riskReward": 0.2001434562761293,
+        "trend": 0.11729001169275549,
+        "volRegime": 0.0670228638244317,
+        "catalyst": 0.08377857978053962,
+        "memory": 0.16755715956107925
+      },
+      "avgReturn": 0.0741,
+      "minReturn": 0.021,
+      "maxReturn": 0.1774,
+      "composite": 0.027179999999999996,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.021,
+          "finalEquity": 10210.31,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_2",
+      "weights": {
+        "conviction": 0.17680077500240715,
+        "scenario": 0.13751171389076114,
+        "riskReward": 0.15715624444658413,
+        "trend": 0.07755032097863727,
+        "volRegime": 0.07857812222329207,
+        "catalyst": 0.09822265277911509,
+        "memory": 0.2741801706792032
+      },
+      "avgReturn": 0.0745,
+      "minReturn": 0.0194,
+      "maxReturn": 0.1774,
+      "composite": 0.0271,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0194,
+          "finalEquity": 10194.15,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0267,
+          "finalEquity": 10267.32,
+          "closedCount": 5,
+          "winRate": 0.4
+        }
+      ]
+    },
+    {
+      "label": "cand_6",
+      "weights": {
+        "conviction": 0.17007398989841363,
+        "scenario": 0.1322797699209884,
+        "riskReward": 0.151176879909701,
+        "trend": 0.1322797699209884,
+        "volRegime": 0.13832914793629486,
+        "catalyst": 0.09448554994356313,
+        "memory": 0.1813748924700507
+      },
+      "avgReturn": 0.07363333333333333,
+      "minReturn": 0.0169,
+      "maxReturn": 0.1774,
+      "composite": 0.02548333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0266,
+          "finalEquity": 10265.59,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_48",
+      "weights": {
+        "conviction": 0.16875380449950844,
+        "scenario": 0.13125295905517326,
+        "riskReward": 0.10597550757112494,
+        "trend": 0.13125295905517326,
+        "volRegime": 0.14990020677975466,
+        "catalyst": 0.101014651356573,
+        "memory": 0.21184991168269252
+      },
+      "avgReturn": 0.07363333333333333,
+      "minReturn": 0.0169,
+      "maxReturn": 0.1774,
+      "composite": 0.02548333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0266,
+          "finalEquity": 10265.59,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_56",
+      "weights": {
+        "conviction": 0.15902861551572917,
+        "scenario": 0.16746554927877746,
+        "riskReward": 0.12137369549936357,
+        "trend": 0.1471391321656474,
+        "volRegime": 0.07067938467365742,
+        "catalyst": 0.15761516118268143,
+        "memory": 0.17669846168414355
+      },
+      "avgReturn": 0.07790000000000001,
+      "minReturn": 0.0022,
+      "maxReturn": 0.1774,
+      "composite": 0.025340000000000015,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0541,
+          "finalEquity": 10541.41,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0022,
+          "finalEquity": 10022.17,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "default",
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_1",
+      "weights": {
+        "conviction": 0.1938243684239341,
+        "scenario": 0.121016812722931,
+        "riskReward": 0.1612138397301494,
+        "trend": 0.14106210976388073,
+        "volRegime": 0.0806069198650747,
+        "catalyst": 0.10075864983134337,
+        "memory": 0.20151729966268675
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_17",
+      "weights": {
+        "conviction": 0.17659019624037153,
+        "scenario": 0.15202254591282208,
+        "riskReward": 0.15295134927125695,
+        "trend": 0.13734793040917787,
+        "volRegime": 0.08677098443241907,
+        "catalyst": 0.0981056645779842,
+        "memory": 0.1962113291559684
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_21",
+      "weights": {
+        "conviction": 0.1802915528051088,
+        "scenario": 0.16459053754580258,
+        "riskReward": 0.17194306015266977,
+        "trend": 0.131388379540922,
+        "volRegime": 0.0702399423678067,
+        "catalyst": 0.09384884252923001,
+        "memory": 0.18769768505846002
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_24",
+      "weights": {
+        "conviction": 0.1793296315954689,
+        "scenario": 0.1394786023520314,
+        "riskReward": 0.17140620337564133,
+        "trend": 0.1394786023520314,
+        "volRegime": 0.07970205848687509,
+        "catalyst": 0.09962757310859385,
+        "memory": 0.19097732872935796
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_34",
+      "weights": {
+        "conviction": 0.17754004516633026,
+        "scenario": 0.13808670179603466,
+        "riskReward": 0.15781337348118246,
+        "trend": 0.13808670179603466,
+        "volRegime": 0.07890668674059123,
+        "catalyst": 0.11229977416834878,
+        "memory": 0.19726671685147806
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_38",
+      "weights": {
+        "conviction": 0.18521371414311869,
+        "scenario": 0.14405511100020343,
+        "riskReward": 0.10518769907541059,
+        "trend": 0.14405511100020343,
+        "volRegime": 0.08231720628583053,
+        "catalyst": 0.13337814278065688,
+        "memory": 0.20579301571457634
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_41",
+      "weights": {
+        "conviction": 0.17400261500791506,
+        "scenario": 0.13533536722837838,
+        "riskReward": 0.14728845796935167,
+        "trend": 0.13533536722837838,
+        "volRegime": 0.07733449555907336,
+        "catalyst": 0.0966681194488417,
+        "memory": 0.2340355775580615
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_42",
+      "weights": {
+        "conviction": 0.19522661180886453,
+        "scenario": 0.15184292029578356,
+        "riskReward": 0.14380130868436108,
+        "trend": 0.15184292029578356,
+        "volRegime": 0.08676738302616202,
+        "catalyst": 0.10845922878270253,
+        "memory": 0.16205962710634272
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_59",
+      "weights": {
+        "conviction": 0.1772941304056124,
+        "scenario": 0.1313413792200428,
+        "riskReward": 0.1501044333943346,
+        "trend": 0.1313413792200428,
+        "volRegime": 0.0750522166971673,
+        "catalyst": 0.14723591931988192,
+        "memory": 0.18763054174291827
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_61",
+      "weights": {
+        "conviction": 0.1778985572108031,
+        "scenario": 0.13836554449729133,
+        "riskReward": 0.12449827625023371,
+        "trend": 0.13836554449729133,
+        "volRegime": 0.07906602542702361,
+        "catalyst": 0.09883253178377951,
+        "memory": 0.2429735203335774
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_63",
+      "weights": {
+        "conviction": 0.19668262503836562,
+        "scenario": 0.15297537502983993,
+        "riskReward": 0.17307164622897986,
+        "trend": 0.14542598124936568,
+        "volRegime": 0.08741450001705138,
+        "catalyst": 0.10926812502131424,
+        "memory": 0.13516174741508344
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_64",
+      "weights": {
+        "conviction": 0.1910245893905125,
+        "scenario": 0.1485746806370653,
+        "riskReward": 0.1697996350137889,
+        "trend": 0.1485746806370653,
+        "volRegime": 0.08489981750689445,
+        "catalyst": 0.10612477188361807,
+        "memory": 0.15100182493105563
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_66",
+      "weights": {
+        "conviction": 0.16586117995988559,
+        "scenario": 0.15205205727518925,
+        "riskReward": 0.12903721095644236,
+        "trend": 0.15205205727518925,
+        "volRegime": 0.08688688987153671,
+        "catalyst": 0.096893379982915,
+        "memory": 0.2172172246788418
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_68",
+      "weights": {
+        "conviction": 0.18650397058236567,
+        "scenario": 0.14505864378628444,
+        "riskReward": 0.16578130718432504,
+        "trend": 0.14505864378628444,
+        "volRegime": 0.08289065359216252,
+        "catalyst": 0.10361331699020317,
+        "memory": 0.1710934640783748
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_74",
+      "weights": {
+        "conviction": 0.18550823822787235,
+        "scenario": 0.1442841852883452,
+        "riskReward": 0.15668846028269595,
+        "trend": 0.1442841852883452,
+        "volRegime": 0.08244810587905438,
+        "catalyst": 0.10306013234881799,
+        "memory": 0.18372669268486896
+      },
+      "avgReturn": 0.07476666666666666,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.02460666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_49",
+      "weights": {
+        "conviction": 0.20197761090581143,
+        "scenario": 0.13252140914536914,
+        "riskReward": 0.151453039023279,
+        "trend": 0.13252140914536914,
+        "volRegime": 0.0757265195116395,
+        "catalyst": 0.09465814938954939,
+        "memory": 0.2111418628789825
+      },
+      "avgReturn": 0.07379999999999999,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.023639999999999987,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_51",
+      "weights": {
+        "conviction": 0.21405960025173326,
+        "scenario": 0.13492892963102948,
+        "riskReward": 0.1498468743448421,
+        "trend": 0.13492892963102948,
+        "volRegime": 0.07710224550344541,
+        "catalyst": 0.09637780687930676,
+        "memory": 0.19275561375861353
+      },
+      "avgReturn": 0.07379999999999999,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.023639999999999987,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_9",
+      "weights": {
+        "conviction": 0.1627166256128568,
+        "scenario": 0.1802612427230611,
+        "riskReward": 0.14463700054476158,
+        "trend": 0.1265573754766664,
+        "volRegime": 0.04869654187313501,
+        "catalyst": 0.090398125340476,
+        "memory": 0.24673308842904307
+      },
+      "avgReturn": 0.07356666666666667,
+      "minReturn": 0.0048,
+      "maxReturn": 0.1774,
+      "composite": 0.02178666666666667,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0385,
+          "finalEquity": 10384.58,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0048,
+          "finalEquity": 10048.32,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_57",
+      "weights": {
+        "conviction": 0.2120560466987725,
+        "scenario": 0.08156242139545493,
+        "riskReward": 0.17275141581091794,
+        "trend": 0.13603356117580173,
+        "volRegime": 0.07773346352902956,
+        "catalyst": 0.12552943256744956,
+        "memory": 0.1943336588225739
+      },
+      "avgReturn": 0.05463333333333333,
+      "minReturn": 0.0154,
+      "maxReturn": 0.1252,
+      "composite": 0.02169333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0154,
+          "finalEquity": 10154.19,
+          "closedCount": 4,
+          "winRate": 0.25
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0233,
+          "finalEquity": 10233.3,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_39",
+      "weights": {
+        "conviction": 0.17795855692828794,
+        "scenario": 0.07377994332061853,
+        "riskReward": 0.15818538393625595,
+        "trend": 0.13841221094422396,
+        "volRegime": 0.07909269196812797,
+        "catalyst": 0.17483948298216567,
+        "memory": 0.19773172992031993
+      },
+      "avgReturn": 0.053666666666666675,
+      "minReturn": 0.0175,
+      "maxReturn": 0.1252,
+      "composite": 0.021356666666666677,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0183,
+          "finalEquity": 10182.54,
+          "closedCount": 4,
+          "winRate": 0.25
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0175,
+          "finalEquity": 10174.62,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_78",
+      "weights": {
+        "conviction": 0.20218166357658676,
+        "scenario": 0.15725240500401194,
+        "riskReward": 0.17971703429029934,
+        "trend": 0.15725240500401194,
+        "volRegime": 0.03369694392943113,
+        "catalyst": 0.045253255332784785,
+        "memory": 0.2246462928628742
+      },
+      "avgReturn": 0.07306666666666667,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1774,
+      "composite": 0.021226666666666665,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0372,
+          "finalEquity": 10372.37,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_15",
+      "weights": {
+        "conviction": 0.1788967997945554,
+        "scenario": 0.13914195539576532,
+        "riskReward": 0.15901937759516035,
+        "trend": 0.19336146357412334,
+        "volRegime": 0.07950968879758018,
+        "catalyst": 0.09938711099697523,
+        "memory": 0.15068360384584029
+      },
+      "avgReturn": 0.0729,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1774,
+      "composite": 0.021060000000000002,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_52",
+      "weights": {
+        "conviction": 0.17008548041870514,
+        "scenario": 0.14707760932679514,
+        "riskReward": 0.1511870937055157,
+        "trend": 0.18885240583321966,
+        "volRegime": 0.07559354685275785,
+        "catalyst": 0.07821999673111178,
+        "memory": 0.18898386713189463
+      },
+      "avgReturn": 0.0729,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1774,
+      "composite": 0.021060000000000002,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_73",
+      "weights": {
+        "conviction": 0.16897736586263368,
+        "scenario": 0.18531016775654696,
+        "riskReward": 0.127715750465995,
+        "trend": 0.16126672131593112,
+        "volRegime": 0.07510105149450386,
+        "catalyst": 0.09387631436812982,
+        "memory": 0.18775262873625964
+      },
+      "avgReturn": 0.0729,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1774,
+      "composite": 0.021060000000000002,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_10",
+      "weights": {
+        "conviction": 0.28070175438596495,
+        "scenario": 0.12280701754385967,
+        "riskReward": 0.14035087719298248,
+        "trend": 0.12280701754385967,
+        "volRegime": 0.07017543859649124,
+        "catalyst": 0.08771929824561404,
+        "memory": 0.1754385964912281
+      },
+      "avgReturn": 0.053799999999999994,
+      "minReturn": 0.0157,
+      "maxReturn": 0.1252,
+      "composite": 0.02094999999999999,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0157,
+          "finalEquity": 10156.62,
+          "closedCount": 4,
+          "winRate": 0.25
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0205,
+          "finalEquity": 10204.78,
+          "closedCount": 5,
+          "winRate": 0.4
+        }
+      ]
+    },
+    {
+      "label": "cand_31",
+      "weights": {
+        "conviction": 0.2044405819844913,
+        "scenario": 0.14163032943823417,
+        "riskReward": 0.1470287376656938,
+        "trend": 0.15770709895555815,
+        "volRegime": 0.0735143688328469,
+        "catalyst": 0.09189296104105862,
+        "memory": 0.18378592208211725
+      },
+      "avgReturn": 0.0728,
+      "minReturn": 0.0043,
+      "maxReturn": 0.1774,
+      "composite": 0.020870000000000007,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0043,
+          "finalEquity": 10043.43,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_33",
+      "weights": {
+        "conviction": 0.1885549846838843,
+        "scenario": 0.14665387697635449,
+        "riskReward": 0.1676044308301194,
+        "trend": 0.15864732622490946,
+        "volRegime": 0.0838022154150597,
+        "catalyst": 0.10475276926882462,
+        "memory": 0.14998439660084814
+      },
+      "avgReturn": 0.0728,
+      "minReturn": 0.0043,
+      "maxReturn": 0.1774,
+      "composite": 0.020870000000000007,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0043,
+          "finalEquity": 10043.43,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_47",
+      "weights": {
+        "conviction": 0.17579023852909337,
+        "scenario": 0.13672574107818375,
+        "riskReward": 0.21536729329823096,
+        "trend": 0.13672574107818375,
+        "volRegime": 0.04240725513448579,
+        "catalyst": 0.0976612436272741,
+        "memory": 0.1953224872545482
+      },
+      "avgReturn": 0.0728,
+      "minReturn": 0.0043,
+      "maxReturn": 0.1774,
+      "composite": 0.020870000000000007,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0043,
+          "finalEquity": 10043.43,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_55",
+      "weights": {
+        "conviction": 0.17582306609249698,
+        "scenario": 0.14404004956727764,
+        "riskReward": 0.172203582295234,
+        "trend": 0.13675127362749767,
+        "volRegime": 0.07814358492999866,
+        "catalyst": 0.09767948116249833,
+        "memory": 0.19535896232499667
+      },
+      "avgReturn": 0.07050000000000001,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.020340000000000004,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_71",
+      "weights": {
+        "conviction": 0.16712668046581336,
+        "scenario": 0.1323342589688746,
+        "riskReward": 0.15123915310728525,
+        "trend": 0.1323342589688746,
+        "volRegime": 0.07561957655364263,
+        "catalyst": 0.09452447069205329,
+        "memory": 0.24682160124345637
+      },
+      "avgReturn": 0.07050000000000001,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1774,
+      "composite": 0.020340000000000004,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_69",
+      "weights": {
+        "conviction": 0.19321271971044646,
+        "scenario": 0.1502765597747917,
+        "riskReward": 0.17174463974261908,
+        "trend": 0.17324036162893783,
+        "volRegime": 0.032202119951741076,
+        "catalyst": 0.06464279951319009,
+        "memory": 0.21468079967827386
+      },
+      "avgReturn": 0.07193333333333334,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1774,
+      "composite": 0.02009333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_35",
+      "weights": {
+        "conviction": 0.16124570083348036,
+        "scenario": 0.12541332287048476,
+        "riskReward": 0.14332951185198256,
+        "trend": 0.12541332287048476,
+        "volRegime": 0.07166475592599128,
+        "catalyst": 0.1425330321951897,
+        "memory": 0.23040035345238663
+      },
+      "avgReturn": 0.07200000000000001,
+      "minReturn": 0.0019,
+      "maxReturn": 0.1774,
+      "composite": 0.019350000000000013,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0019,
+          "finalEquity": 10019.14,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_65",
+      "weights": {
+        "conviction": 0.12185883486833449,
+        "scenario": 0.15437569190156789,
+        "riskReward": 0.17642936217322044,
+        "trend": 0.15437569190156789,
+        "volRegime": 0.08821468108661022,
+        "catalyst": 0.04469624484212549,
+        "memory": 0.26004949322657356
+      },
+      "avgReturn": 0.06863333333333334,
+      "minReturn": 0.0116,
+      "maxReturn": 0.1774,
+      "composite": 0.01889333333333334,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0116,
+          "finalEquity": 10115.78,
+          "closedCount": 4,
+          "winRate": 0.25
+        }
+      ]
+    },
+    {
+      "label": "cand_43",
+      "weights": {
+        "conviction": 0.22624615380256577,
+        "scenario": 0.12352045961369425,
+        "riskReward": 0.1411662395585077,
+        "trend": 0.17909954284181556,
+        "volRegime": 0.07058311977925386,
+        "catalyst": 0.08292668495602823,
+        "memory": 0.17645779944813464
+      },
+      "avgReturn": 0.0593,
+      "minReturn": 0.0046,
+      "maxReturn": 0.1395,
+      "composite": 0.018829999999999993,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1395,
+          "finalEquity": 11395.3,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0046,
+          "finalEquity": 10046.46,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_5",
+      "weights": {
+        "conviction": 0.10304326975511911,
+        "scenario": 0.13925728924885025,
+        "riskReward": 0.1591511877129717,
+        "trend": 0.1917708572726062,
+        "volRegime": 0.07957559385648585,
+        "catalyst": 0.12826281751275237,
+        "memory": 0.19893898464121462
+      },
+      "avgReturn": 0.07016666666666667,
+      "minReturn": 0.0074,
+      "maxReturn": 0.1792,
+      "composite": 0.018626666666666666,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1792,
+          "finalEquity": 11792.24,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0074,
+          "finalEquity": 10073.68,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_37",
+      "weights": {
+        "conviction": 0.17226404988096833,
+        "scenario": 0.13393198924749877,
+        "riskReward": 0.15312359989419408,
+        "trend": 0.17739117585743805,
+        "volRegime": 0.03684634057723487,
+        "catalyst": 0.13503834467492334,
+        "memory": 0.1914044998677426
+      },
+      "avgReturn": 0.07406666666666667,
+      "minReturn": -0.0093,
+      "maxReturn": 0.1774,
+      "composite": 0.018056666666666672,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0541,
+          "finalEquity": 10541.41,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0093,
+          "finalEquity": 9906.8,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_29",
+      "weights": {
+        "conviction": 0.18149512907727638,
+        "scenario": 0.14116287817121498,
+        "riskReward": 0.19852607547728393,
+        "trend": 0.14116287817121498,
+        "volRegime": 0.06877301423212707,
+        "catalyst": 0.06721877034057559,
+        "memory": 0.20166125453030712
+      },
+      "avgReturn": 0.0713,
+      "minReturn": -0.0002,
+      "maxReturn": 0.1774,
+      "composite": 0.01802,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0002,
+          "finalEquity": 9998.01,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_13",
+      "weights": {
+        "conviction": 0.18895098027417576,
+        "scenario": 0.08419492179925432,
+        "riskReward": 0.16795642691037846,
+        "trend": 0.17243620272550544,
+        "volRegime": 0.08397821345518923,
+        "catalyst": 0.10497276681898654,
+        "memory": 0.19751048801651025
+      },
+      "avgReturn": 0.053666666666666675,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1315,
+      "composite": 0.017276666666666676,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1315,
+          "finalEquity": 11314.68,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0193,
+          "finalEquity": 10192.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_50",
+      "weights": {
+        "conviction": 0.1307586126573073,
+        "scenario": 0.10115254629594486,
+        "riskReward": 0.1719194506545455,
+        "trend": 0.1924806815007946,
+        "volRegime": 0.08498709660871745,
+        "catalyst": 0.10623387076089681,
+        "memory": 0.21246774152179362
+      },
+      "avgReturn": 0.06863333333333334,
+      "minReturn": 0.0074,
+      "maxReturn": 0.1792,
+      "composite": 0.017093333333333335,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1792,
+          "finalEquity": 11792.24,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0193,
+          "finalEquity": 10192.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0074,
+          "finalEquity": 10073.68,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_75",
+      "weights": {
+        "conviction": 0.1844358982709809,
+        "scenario": 0.09815201219844905,
+        "riskReward": 0.184597272303292,
+        "trend": 0.14345014309965182,
+        "volRegime": 0.08197151034265818,
+        "catalyst": 0.10246438792832273,
+        "memory": 0.20492877585664546
+      },
+      "avgReturn": 0.05156666666666667,
+      "minReturn": 0.0102,
+      "maxReturn": 0.1252,
+      "composite": 0.017066666666666667,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0193,
+          "finalEquity": 10192.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_25",
+      "weights": {
+        "conviction": 0.11744814198079537,
+        "scenario": 0.16046397418530992,
+        "riskReward": 0.18338739906892562,
+        "trend": 0.16046397418530992,
+        "volRegime": 0.03438513732542355,
+        "catalyst": 0.11461712441807852,
+        "memory": 0.22923424883615703
+      },
+      "avgReturn": 0.0693,
+      "minReturn": 0.0048,
+      "maxReturn": 0.1792,
+      "composite": 0.016980000000000002,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1792,
+          "finalEquity": 11792.24,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0048,
+          "finalEquity": 10048.32,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_62",
+      "weights": {
+        "conviction": 0.11810899426951872,
+        "scenario": 0.15446468589864187,
+        "riskReward": 0.17653106959844783,
+        "trend": 0.15446468589864187,
+        "volRegime": 0.06543480883766002,
+        "catalyst": 0.1103319184990299,
+        "memory": 0.2206638369980598
+      },
+      "avgReturn": 0.06843333333333333,
+      "minReturn": 0.0022,
+      "maxReturn": 0.1792,
+      "composite": 0.015333333333333338,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1792,
+          "finalEquity": 11792.24,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0022,
+          "finalEquity": 10022.17,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_3",
+      "weights": {
+        "conviction": 0.11676823509173109,
+        "scenario": 0.1335218210320886,
+        "riskReward": 0.1525963668938155,
+        "trend": 0.15519064957851664,
+        "volRegime": 0.07629818344690775,
+        "catalyst": 0.0953727293086347,
+        "memory": 0.27025201464830584
+      },
+      "avgReturn": 0.06783333333333334,
+      "minReturn": 0.0022,
+      "maxReturn": 0.1774,
+      "composite": 0.015273333333333347,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0022,
+          "finalEquity": 10022.17,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_19",
+      "weights": {
+        "conviction": 0.12734160480710377,
+        "scenario": 0.12658796127664387,
+        "riskReward": 0.14467195574473582,
+        "trend": 0.18837169355108702,
+        "volRegime": 0.07233597787236791,
+        "catalyst": 0.0904199723404599,
+        "memory": 0.2502708344076019
+      },
+      "avgReturn": 0.06783333333333334,
+      "minReturn": 0.0022,
+      "maxReturn": 0.1774,
+      "composite": 0.015273333333333347,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0022,
+          "finalEquity": 10022.17,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_30",
+      "weights": {
+        "conviction": 0.15996730928762395,
+        "scenario": 0.1674722939691993,
+        "riskReward": 0.1421931638112213,
+        "trend": 0.12441901833481864,
+        "volRegime": 0.07109658190561065,
+        "catalyst": 0.1151004690800917,
+        "memory": 0.21975116361143454
+      },
+      "avgReturn": 0.06773333333333334,
+      "minReturn": 0.0019,
+      "maxReturn": 0.1774,
+      "composite": 0.015083333333333344,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0019,
+          "finalEquity": 10019.14,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_44",
+      "weights": {
+        "conviction": 0.17614091191943151,
+        "scenario": 0.19334316356039832,
+        "riskReward": 0.15656969948393915,
+        "trend": 0.13699848704844675,
+        "volRegime": 0.07828484974196957,
+        "catalyst": 0.06295076389089065,
+        "memory": 0.19571212435492394
+      },
+      "avgReturn": 0.06703333333333333,
+      "minReturn": -0.0002,
+      "maxReturn": 0.1774,
+      "composite": 0.013753333333333333,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0002,
+          "finalEquity": 9998.01,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_8",
+      "weights": {
+        "conviction": 0.15871007059488734,
+        "scenario": 0.11372985024266957,
+        "riskReward": 0.1757641394154893,
+        "trend": 0.15379362198855315,
+        "volRegime": 0.08788206970774465,
+        "catalyst": 0.09041507378129443,
+        "memory": 0.21970517426936162
+      },
+      "avgReturn": 0.06620000000000001,
+      "minReturn": 0.0019,
+      "maxReturn": 0.1774,
+      "composite": 0.013550000000000013,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0193,
+          "finalEquity": 10192.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0019,
+          "finalEquity": 10019.14,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_32",
+      "weights": {
+        "conviction": 0.16473749383706174,
+        "scenario": 0.12812916187327025,
+        "riskReward": 0.215821795145613,
+        "trend": 0.12812916187327025,
+        "volRegime": 0.08861989754234854,
+        "catalyst": 0.09152082990947874,
+        "memory": 0.18304165981895748
+      },
+      "avgReturn": 0.0672,
+      "minReturn": -0.0057,
+      "maxReturn": 0.1774,
+      "composite": 0.012269999999999996,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0299,
+          "finalEquity": 10298.88,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0057,
+          "finalEquity": 9943.22,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_76",
+      "weights": {
+        "conviction": 0.18109302696316382,
+        "scenario": 0.14085013208246075,
+        "riskReward": 0.1609715795228123,
+        "trend": 0.14085013208246075,
+        "volRegime": 0.12819008109256746,
+        "catalyst": 0.10060723720175768,
+        "memory": 0.14743781105477724
+      },
+      "avgReturn": 0.0672,
+      "minReturn": -0.0057,
+      "maxReturn": 0.1774,
+      "composite": 0.012269999999999996,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0299,
+          "finalEquity": 10298.88,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0057,
+          "finalEquity": 9943.22,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_26",
+      "weights": {
+        "conviction": 0.16579762330480036,
+        "scenario": 0.13788046487659747,
+        "riskReward": 0.14737566515982253,
+        "trend": 0.1989290419042012,
+        "volRegime": 0.07368783257991127,
+        "catalyst": 0.09210979072488909,
+        "memory": 0.18421958144977818
+      },
+      "avgReturn": 0.06826666666666667,
+      "minReturn": -0.0093,
+      "maxReturn": 0.1774,
+      "composite": 0.012256666666666673,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0367,
+          "finalEquity": 10366.82,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0093,
+          "finalEquity": 9906.8,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_27",
+      "weights": {
+        "conviction": 0.173745340681558,
+        "scenario": 0.13513526497454512,
+        "riskReward": 0.15444030282805157,
+        "trend": 0.15912664318957775,
+        "volRegime": 0.028957556780259665,
+        "catalyst": 0.09652518926753223,
+        "memory": 0.25206970227847564
+      },
+      "avgReturn": 0.06733333333333334,
+      "minReturn": -0.0139,
+      "maxReturn": 0.1774,
+      "composite": 0.009943333333333346,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0385,
+          "finalEquity": 10384.58,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0139,
+          "finalEquity": 9861.38,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_23",
+      "weights": {
+        "conviction": 0.17866803492114,
+        "scenario": 0.17822876069821433,
+        "riskReward": 0.15881603104101336,
+        "trend": 0.15736346473327498,
+        "volRegime": 0.07940801552050668,
+        "catalyst": 0.029778005820190002,
+        "memory": 0.21773768726566073
+      },
+      "avgReturn": 0.06436666666666667,
+      "minReturn": -0.007,
+      "maxReturn": 0.1774,
+      "composite": 0.009046666666666668,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0227,
+          "finalEquity": 10226.55,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.007,
+          "finalEquity": 9930.15,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_28",
+      "weights": {
+        "conviction": 0.1644746224286305,
+        "scenario": 0.10344179362414076,
+        "riskReward": 0.17002036647171195,
+        "trend": 0.19609558151822512,
+        "volRegime": 0.047179448822831864,
+        "catalyst": 0.10626272904481998,
+        "memory": 0.21252545808963996
+      },
+      "avgReturn": 0.06576666666666667,
+      "minReturn": -0.0139,
+      "maxReturn": 0.1774,
+      "composite": 0.008376666666666671,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0338,
+          "finalEquity": 10338.47,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0139,
+          "finalEquity": 9861.38,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_58",
+      "weights": {
+        "conviction": 0.1748125399661418,
+        "scenario": 0.13596530886255476,
+        "riskReward": 0.15538892441434826,
+        "trend": 0.13596530886255476,
+        "volRegime": 0.11000538693174561,
+        "catalyst": 0.09362637544471958,
+        "memory": 0.19423615551793533
+      },
+      "avgReturn": 0.06326666666666667,
+      "minReturn": -0.0115,
+      "maxReturn": 0.1774,
+      "composite": 0.006596666666666667,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0115,
+          "finalEquity": 9885.09,
+          "closedCount": 7,
+          "winRate": 0.286
+        }
+      ]
+    },
+    {
+      "label": "cand_40",
+      "weights": {
+        "conviction": 0.2378725079383784,
+        "scenario": 0.13363237657837132,
+        "riskReward": 0.16225652993436904,
+        "trend": 0.08087932695475483,
+        "volRegime": 0.08112826496718452,
+        "catalyst": 0.10141033120898064,
+        "memory": 0.2028206624179613
+      },
+      "avgReturn": 0.046933333333333334,
+      "minReturn": -0.0094,
+      "maxReturn": 0.1252,
+      "composite": 0.006553333333333335,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.025,
+          "finalEquity": 10249.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0094,
+          "finalEquity": 9906.09,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_20",
+      "weights": {
+        "conviction": 0.1518553639456543,
+        "scenario": 0.13779848790008015,
+        "riskReward": 0.15748398617152015,
+        "trend": 0.20894721303686792,
+        "volRegime": 0.07874199308576008,
+        "catalyst": 0.0683179731457174,
+        "memory": 0.1968549827144002
+      },
+      "avgReturn": 0.06246666666666667,
+      "minReturn": -0.0093,
+      "maxReturn": 0.1774,
+      "composite": 0.006456666666666673,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0193,
+          "finalEquity": 10192.66,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0093,
+          "finalEquity": 9906.8,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ]
+    },
+    {
+      "label": "cand_4",
+      "weights": {
+        "conviction": 0.17743418695623706,
+        "scenario": 0.18995626338180005,
+        "riskReward": 0.15771927729443294,
+        "trend": 0.049600086501467675,
+        "volRegime": 0.07885963864721647,
+        "catalyst": 0.0985745483090206,
+        "memory": 0.24785599890982535
+      },
+      "avgReturn": 0.058633333333333336,
+      "minReturn": -0.015,
+      "maxReturn": 0.167,
+      "composite": 0.00403333333333334,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.167,
+          "finalEquity": 11669.82,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0239,
+          "finalEquity": 10238.76,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.015,
+          "finalEquity": 9850.33,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_12",
+      "weights": {
+        "conviction": 0.16518868884765098,
+        "scenario": 0.15700753790499095,
+        "riskReward": 0.14683439008680088,
+        "trend": 0.08585028339898756,
+        "volRegime": 0.1232640679229961,
+        "catalyst": 0.09177149380425056,
+        "memory": 0.23008353803432285
+      },
+      "avgReturn": 0.0587,
+      "minReturn": -0.0182,
+      "maxReturn": 0.1774,
+      "composite": 0.000020000000000006124,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0182,
+          "finalEquity": 9817.58,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_36",
+      "weights": {
+        "conviction": 0.16650448949613192,
+        "scenario": 0.12950349183032484,
+        "riskReward": 0.14800399066322836,
+        "trend": 0.12950349183032484,
+        "volRegime": 0.14897705368643685,
+        "catalyst": 0.09250249416451774,
+        "memory": 0.18500498832903547
+      },
+      "avgReturn": 0.058499999999999996,
+      "minReturn": -0.0188,
+      "maxReturn": 0.1774,
+      "composite": -0.00036000000000000615,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0188,
+          "finalEquity": 9812.41,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_54",
+      "weights": {
+        "conviction": 0.16643439038313643,
+        "scenario": 0.12944897029799501,
+        "riskReward": 0.24652740755929367,
+        "trend": 0.12944897029799501,
+        "volRegime": 0.07397084017028285,
+        "catalyst": 0.06008526486095731,
+        "memory": 0.19408415643033985
+      },
+      "avgReturn": 0.057966666666666666,
+      "minReturn": -0.0204,
+      "maxReturn": 0.1774,
+      "composite": -0.0013733333333333306,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0169,
+          "finalEquity": 10169.06,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0204,
+          "finalEquity": 9796.3,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_14",
+      "weights": {
+        "conviction": 0.2299977417752743,
+        "scenario": 0.12074317504654729,
+        "riskReward": 0.15853987300577438,
+        "trend": 0.06667229844603471,
+        "volRegime": 0.07926993650288719,
+        "catalyst": 0.09908742062860898,
+        "memory": 0.24568955459487307
+      },
+      "avgReturn": 0.03863333333333333,
+      "minReturn": -0.0094,
+      "maxReturn": 0.1252,
+      "composite": -0.0017466666666666672,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1252,
+          "finalEquity": 11251.53,
+          "closedCount": 3,
+          "winRate": 0.667
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0001,
+          "finalEquity": 10001.26,
+          "closedCount": 4,
+          "winRate": 0.25
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0094,
+          "finalEquity": 9906.09,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_53",
+      "weights": {
+        "conviction": 0.19664999975037853,
+        "scenario": 0.15294999980584997,
+        "riskReward": 0.17479999977811425,
+        "trend": 0.060450001192636015,
+        "volRegime": 0.08739999988905713,
+        "catalyst": 0.10924999986132142,
+        "memory": 0.21849999972264283
+      },
+      "avgReturn": 0.05256666666666667,
+      "minReturn": -0.015,
+      "maxReturn": 0.167,
+      "composite": -0.0020333333333333245,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.167,
+          "finalEquity": 11669.82,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0057,
+          "finalEquity": 10057.48,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.015,
+          "finalEquity": 9850.33,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_77",
+      "weights": {
+        "conviction": 0.16902296868564984,
+        "scenario": 0.13146230897772768,
+        "riskReward": 0.1879897385771807,
+        "trend": 0.09266913628170717,
+        "volRegime": 0.13715089966831825,
+        "catalyst": 0.09390164926980547,
+        "memory": 0.18780329853961095
+      },
+      "avgReturn": 0.056633333333333334,
+      "minReturn": -0.0182,
+      "maxReturn": 0.1774,
+      "composite": -0.002046666666666662,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0107,
+          "finalEquity": 10106.69,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0182,
+          "finalEquity": 9817.58,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    },
+    {
+      "label": "cand_46",
+      "weights": {
+        "conviction": 0.1755593720249677,
+        "scenario": 0.13538148926080676,
+        "riskReward": 0.15472170201235058,
+        "trend": 0.13753082719412169,
+        "volRegime": 0.15371391127215805,
+        "catalyst": 0.04969057072015691,
+        "memory": 0.19340212751543823
+      },
+      "avgReturn": 0.05383333333333334,
+      "minReturn": -0.0282,
+      "maxReturn": 0.1774,
+      "composite": -0.007846666666666662,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0123,
+          "finalEquity": 10122.96,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0282,
+          "finalEquity": 9718.43,
+          "closedCount": 4,
+          "winRate": 0
+        }
+      ]
+    },
+    {
+      "label": "cand_45",
+      "weights": {
+        "conviction": 0.22357303763082426,
+        "scenario": 0.09482693729749188,
+        "riskReward": 0.22904879591333652,
+        "trend": 0.13527190316743787,
+        "volRegime": 0.07729823038139307,
+        "catalyst": 0.04673551965603373,
+        "memory": 0.19324557595348268
+      },
+      "avgReturn": 0.0268,
+      "minReturn": -0.0283,
+      "maxReturn": 0.0889,
+      "composite": -0.008359999999999996,
+      "windows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.0889,
+          "finalEquity": 10889.03,
+          "closedCount": 2,
+          "winRate": 0.5
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0198,
+          "finalEquity": 10198.21,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": -0.0283,
+          "finalEquity": 9716.52,
+          "closedCount": 5,
+          "winRate": 0.2
+        }
+      ]
+    }
+  ]
+}

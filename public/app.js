@@ -364,14 +364,16 @@ async function loadTrader() {
 }
 
 function renderTrader(data) {
-  const { state, memory } = data;
+  const { state, memory, live } = data;
   if (!state) return;
 
   const eqNode = document.getElementById("traderEquity");
   const deltaNode = document.getElementById("traderEquityDelta");
   const last = state.equityCurve?.[state.equityCurve.length - 1];
-  const totalEquity = last?.totalEquity ?? state.cash ?? 10000;
-  const pct = last?.pctVsStart ?? 0;
+
+  // Prefer live mark-to-market over the last cycle's equity snapshot
+  const totalEquity = live?.equity ?? last?.totalEquity ?? state.cash ?? 10000;
+  const pct = live?.pctReturn ?? last?.pctVsStart ?? 0;
 
   eqNode.textContent = formatCurrency(totalEquity);
   const deltaPct = (pct * 100).toFixed(2);
@@ -390,9 +392,13 @@ function renderTrader(data) {
     total > 0 ? `${((wins / total) * 100).toFixed(0)}% (${wins}/${total})` : "No trades yet";
 
   const lastRunNode = document.getElementById("traderLastRun");
-  lastRunNode.textContent = state.lastRunAt
-    ? `Last cycle ${formatTime(state.lastRunAt)} · cycle #${state.cycles}`
-    : "Waiting for first cycle";
+  if (live?.fetchedAt) {
+    lastRunNode.textContent = `Live · prices ${formatTime(live.fetchedAt)} · cycle #${state.cycles}`;
+  } else {
+    lastRunNode.textContent = state.lastRunAt
+      ? `Last cycle ${formatTime(state.lastRunAt)} · cycle #${state.cycles}`
+      : "Waiting for first cycle";
+  }
 
   renderTraderOpen(state.openPositions);
   renderTraderClosed(state.closedTrades.slice(-10).reverse());
@@ -459,6 +465,61 @@ function renderSimulation(sim, calibration) {
   renderFailureBar(sim.failureMode || {}, sim.closedCount);
   renderVariantStats(sim.variantStats || {});
   renderRecalibratedBuckets(calibration?.perBucket || {}, sim.topRecalibrationSignals || []);
+  renderActiveWeights(calibration);
+}
+
+function renderActiveWeights(calibration) {
+  const panel = document.getElementById("simActivePanel");
+  const grid = document.getElementById("simActiveWeights");
+  const sub = document.getElementById("simActiveSub");
+  const bucketsSub = document.getElementById("simBucketsSub");
+  if (!panel || !grid) return;
+
+  const globalWeights = calibration?.globalWeights;
+  const tournamentMeta = calibration?.tournamentMeta;
+  const applyBucket = calibration?.applyBucketWeights === true;
+
+  if (!globalWeights) {
+    panel.hidden = true;
+    if (bucketsSub) bucketsSub.textContent = "Observational — disabled by default after overfit testing";
+    return;
+  }
+
+  panel.hidden = false;
+  if (sub) {
+    const meta = tournamentMeta
+      ? `Tournament-tuned · +${(tournamentMeta.improvement * 100).toFixed(2)}pp vs baseline (${tournamentMeta.candidateCount} candidates)`
+      : `Active global weights · applied to live scoring`;
+    sub.textContent = meta;
+  }
+  if (bucketsSub) {
+    bucketsSub.textContent = applyBucket
+      ? "Active overrides applied per bucket"
+      : "Observational — disabled (using tournament global weights instead)";
+  }
+
+  grid.innerHTML = "";
+  const order = ["conviction", "scenario", "riskReward", "trend", "volRegime", "catalyst", "memory"];
+  for (const comp of order) {
+    const w = globalWeights[comp];
+    const dflt = DEFAULT_WEIGHTS[comp];
+    const delta = w - dflt;
+    const deltaClass = delta > 0.005 ? "positive" : delta < -0.005 ? "negative" : "neutral";
+    const widthPct = (w * 100).toFixed(1);
+    const cell = document.createElement("div");
+    cell.className = "active-weight";
+    cell.innerHTML = `
+      <div class="active-weight-head">
+        <span class="active-weight-label">${COMPONENT_LABELS[comp]}</span>
+        <span class="active-weight-pct mono">${widthPct}%</span>
+      </div>
+      <div class="active-weight-track">
+        <div class="active-weight-fill" style="width:${widthPct}%"></div>
+      </div>
+      <div class="active-weight-delta mono ${deltaClass}">${delta >= 0 ? "+" : ""}${(delta * 100).toFixed(1)}pp vs default</div>
+    `;
+    grid.appendChild(cell);
+  }
 }
 
 function renderFailureBar(failureMode, total) {
@@ -928,3 +989,25 @@ nodes.refreshButton.addEventListener("click", () => {
 
 loadData();
 loadTrader();
+
+// Poll trader endpoint every 60s so P&L tracks live prices.
+// Stops when tab is hidden, resumes on visibility.
+let traderPollHandle = null;
+function startTraderPoll() {
+  if (traderPollHandle) return;
+  traderPollHandle = setInterval(loadTrader, 60_000);
+}
+function stopTraderPoll() {
+  if (traderPollHandle) {
+    clearInterval(traderPollHandle);
+    traderPollHandle = null;
+  }
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) stopTraderPoll();
+  else {
+    loadTrader();
+    startTraderPoll();
+  }
+});
+if (!document.hidden) startTraderPoll();

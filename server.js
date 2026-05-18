@@ -87,11 +87,46 @@ const server = http.createServer(async (req, res) => {
       const memory = trader.loadMemory();
       const simulation = trader.loadSimulation ? trader.loadSimulation() : null;
       const calibration = trader.loadCalibration ? trader.loadCalibration() : null;
+
+      // Live mark-to-market: refresh each open position's price + unrealized P&L
+      // from the upstream quote API (with 30-second in-memory cache).
+      let liveEquity = state.cash;
+      let liveOpenMtM = 0;
+      let liveFetchedAt = null;
+      if (state.openPositions && state.openPositions.length) {
+        try {
+          const live = await trader.markToMarketLive(state.openPositions);
+          state.openPositions = live.positions;
+          liveOpenMtM = live.openMtM;
+          liveFetchedAt = live.fetchedAt;
+          liveEquity = state.cash + liveOpenMtM;
+        } catch (e) {
+          // Fall back to stale values if quote fetch fails
+          liveFetchedAt = null;
+        }
+      }
+      const livePctReturn = state.startingCash
+        ? (liveEquity - state.startingCash) / state.startingCash
+        : 0;
+
       getJson(res, 200, {
         state,
+        live: {
+          equity: Number(liveEquity.toFixed(2)),
+          openMtM: Number(liveOpenMtM.toFixed(2)),
+          pctReturn: Number(livePctReturn.toFixed(4)),
+          fetchedAt: liveFetchedAt
+        },
         memory: { ...memory, summary: trader.summarizeMemory(memory) },
         simulation,
-        calibration: calibration ? { generatedAt: calibration.generatedAt, fromTrades: calibration.fromTrades, perBucket: calibration.perBucket } : null
+        calibration: calibration ? {
+          generatedAt: calibration.generatedAt,
+          fromTrades: calibration.fromTrades,
+          perBucket: calibration.perBucket,
+          globalWeights: calibration.globalWeights,
+          tournamentMeta: calibration.tournamentMeta,
+          applyBucketWeights: calibration.applyBucketWeights
+        } : null
       });
     } catch (error) {
       getJson(res, 500, { error: "Failed to load trader state.", detail: error.message });

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-18T06:06:15.961Z",
+  "generatedAt": "2026-05-18T18:03:55.215Z",
   "fromTrades": 8004,
   "globalWeights": {
-    "conviction": 0.18,
-    "scenario": 0.14,
-    "riskReward": 0.16,
-    "trend": 0.14,
-    "volRegime": 0.08,
-    "catalyst": 0.1,
-    "memory": 0.2
+    "conviction": 0.16928831342444617,
+    "scenario": 0.1316686882190137,
+    "riskReward": 0.15047850082172992,
+    "trend": 0.1316686882190137,
+    "volRegime": 0.050526887659853775,
+    "catalyst": 0.17827079562878037,
+    "memory": 0.18809812602716242
   },
   "perBucket": {
     "scenario:iran|sector:Energy|direction:LONG": {
@@ -1857,5 +1857,36 @@
       "standardWinRate": 0,
       "standardAvgPnl": -0.1174
     }
-  }
+  },
+  "tournamentMeta": {
+    "ranAt": "2026-05-18T18:03:55.215Z",
+    "baselineAvgReturn": 0.07476666666666666,
+    "winnerAvgReturn": 0.08056666666666668,
+    "improvement": 0.0058000000000000135,
+    "winnerWindows": [
+      {
+        "window": "Feb28-Mar31",
+        "pctReturn": 0.1774,
+        "finalEquity": 11773.57,
+        "closedCount": 2,
+        "winRate": 1
+      },
+      {
+        "window": "Mar15-Apr30",
+        "pctReturn": 0.0541,
+        "finalEquity": 10541.41,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      {
+        "window": "Apr01-May15",
+        "pctReturn": 0.0102,
+        "finalEquity": 10102.1,
+        "closedCount": 6,
+        "winRate": 0.333
+      }
+    ],
+    "candidateCount": 80
+  },
+  "applyBucketWeights": false
 }

@@ -211,6 +211,14 @@
             </div>
           </div>
 
+          <section class="panel sim-section-active" id="simActivePanel" hidden>
+            <div class="panel-head">
+              <h3>Active weights</h3>
+              <span class="panel-sub" id="simActiveSub">Tournament-tuned · applied to live scoring</span>
+            </div>
+            <div id="simActiveWeights" class="active-weights"></div>
+          </section>
+
           <div class="simulation-grid">
             <section class="panel sim-section-failure">
               <div class="panel-head">
@@ -231,8 +239,8 @@
 
             <section class="panel sim-section-buckets">
               <div class="panel-head">
-                <h3>Recalibrated buckets</h3>
-                <span class="panel-sub">Live trades now use these per-bucket weights + stop/target multipliers</span>
+                <h3>Per-bucket overrides</h3>
+                <span class="panel-sub" id="simBucketsSub">Observational — disabled by default after overfit testing</span>
               </div>
               <div id="simBuckets" class="bucket-grid"></div>
             </section>
