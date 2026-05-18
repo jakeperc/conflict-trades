@@ -6,6 +6,10 @@ Thumbs.db
 # Cache from chokepoint/policy commands (raw API responses)
 data/cache/
 
+# Runtime artifacts
+data/.server.pid
+data/server.log
+
 # Local-only secrets
 .env
 .env.local
