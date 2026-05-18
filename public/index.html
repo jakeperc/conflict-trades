@@ -154,6 +154,122 @@
         </div>
       </section>
 
+      <section class="trader-card">
+        <div class="trader-header">
+          <div>
+            <p class="eyebrow">Paper AI Trader</p>
+            <h2>Autonomous Trader</h2>
+            <p class="lede trader-lede">
+              Starts at $10,000. Each cycle picks the highest-confidence scenario trades. Memory learns from every closed trade — what worked, what didn't — and re-weights future entries.
+            </p>
+          </div>
+          <div class="trader-equity">
+            <span class="meta-label">Total Equity</span>
+            <strong id="traderEquity">--</strong>
+            <span id="traderEquityDelta" class="trader-equity-delta">--</span>
+            <span class="meta-label trader-last-run" id="traderLastRun">Waiting for first cycle</span>
+          </div>
+        </div>
+
+        <div class="trader-meta-grid">
+          <div class="trader-meta-card">
+            <span class="meta-label">Cash</span>
+            <strong id="traderCash">--</strong>
+          </div>
+          <div class="trader-meta-card">
+            <span class="meta-label">Open positions</span>
+            <strong id="traderOpenCount">--</strong>
+          </div>
+          <div class="trader-meta-card">
+            <span class="meta-label">Closed trades</span>
+            <strong id="traderClosedCount">--</strong>
+          </div>
+          <div class="trader-meta-card">
+            <span class="meta-label">Cycles run</span>
+            <strong id="traderCycles">--</strong>
+          </div>
+          <div class="trader-meta-card">
+            <span class="meta-label">Memory buckets</span>
+            <strong id="traderMemoryBuckets">--</strong>
+          </div>
+          <div class="trader-meta-card">
+            <span class="meta-label">Win rate</span>
+            <strong id="traderWinRate">--</strong>
+          </div>
+        </div>
+
+        <div class="trader-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Open Positions</h3>
+              <span>Mark-to-market on each refresh</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Scenario</th>
+                    <th>Dir</th>
+                    <th>Entry</th>
+                    <th>Current</th>
+                    <th>Target</th>
+                    <th>Stop</th>
+                    <th>Unreal P&amp;L</th>
+                    <th>Conf</th>
+                  </tr>
+                </thead>
+                <tbody id="traderOpenBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Watchlist</h3>
+              <span>Highest-confidence candidates not yet held</span>
+            </div>
+            <div id="traderWatchlist" class="watchlist"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Recent Closed Trades</h3>
+              <span>Each outcome teaches the memory</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Scenario</th>
+                    <th>Dir</th>
+                    <th>Result</th>
+                    <th>P&amp;L %</th>
+                    <th>Held (d)</th>
+                    <th>Exit</th>
+                  </tr>
+                </thead>
+                <tbody id="traderClosedBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Learned Patterns</h3>
+              <span>Top + bottom buckets (≥3 trades, credibility-weighted)</span>
+            </div>
+            <div class="memory-block">
+              <h4>Top performing</h4>
+              <div id="traderMemoryTop" class="memory-list"></div>
+              <h4>Avoid</h4>
+              <div id="traderMemoryBottom" class="memory-list"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section class="method-card">
         <div>
           <p class="eyebrow">Method</p>

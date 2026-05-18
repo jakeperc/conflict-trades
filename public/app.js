@@ -351,6 +351,173 @@ function renderChanges() {
   });
 }
 
+async function loadTrader() {
+  try {
+    const response = await fetch("/api/trader", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    renderTrader(data);
+  } catch (error) {
+    const eq = document.getElementById("traderEquity");
+    if (eq) eq.textContent = `Error: ${error.message}`;
+  }
+}
+
+function renderTrader(data) {
+  const { state, memory } = data;
+  if (!state) return;
+
+  const eqNode = document.getElementById("traderEquity");
+  const deltaNode = document.getElementById("traderEquityDelta");
+  const last = state.equityCurve?.[state.equityCurve.length - 1];
+  const totalEquity = last?.totalEquity ?? state.cash ?? 10000;
+  const pct = last?.pctVsStart ?? 0;
+
+  eqNode.textContent = formatCurrency(totalEquity);
+  const deltaPct = (pct * 100).toFixed(2);
+  deltaNode.textContent = `${pct >= 0 ? "+" : ""}${deltaPct}% vs $10,000 start`;
+  deltaNode.className = `trader-equity-delta ${pct >= 0 ? "positive" : "negative"}`;
+
+  document.getElementById("traderCash").textContent = formatCurrency(state.cash);
+  document.getElementById("traderOpenCount").textContent = state.openPositions.length;
+  document.getElementById("traderClosedCount").textContent = state.closedTrades.length;
+  document.getElementById("traderCycles").textContent = state.cycles;
+  document.getElementById("traderMemoryBuckets").textContent = memory?.summary?.bucketCount ?? 0;
+
+  const wins = state.closedTrades.filter((t) => t.outcome === "win").length;
+  const total = state.closedTrades.length;
+  document.getElementById("traderWinRate").textContent =
+    total > 0 ? `${((wins / total) * 100).toFixed(0)}% (${wins}/${total})` : "No trades yet";
+
+  const lastRunNode = document.getElementById("traderLastRun");
+  lastRunNode.textContent = state.lastRunAt
+    ? `Last cycle ${formatTime(state.lastRunAt)} · cycle #${state.cycles}`
+    : "Waiting for first cycle";
+
+  renderTraderOpen(state.openPositions);
+  renderTraderClosed(state.closedTrades.slice(-10).reverse());
+  renderTraderWatchlist(state.lastWatchlist || []);
+  renderTraderMemory(memory?.summary || { top: [], bottom: [] });
+}
+
+function renderTraderOpen(positions) {
+  const body = document.getElementById("traderOpenBody");
+  body.innerHTML = "";
+  if (!positions.length) {
+    body.innerHTML = '<tr><td colspan="9" class="muted-cell">No open positions. Run /ai-trader to enter.</td></tr>';
+    return;
+  }
+  positions.forEach((pos) => {
+    const row = document.createElement("tr");
+    const pctClass = pos.unrealizedPct >= 0 ? "positive" : "negative";
+    row.innerHTML = `
+      <td><strong>${pos.ticker}</strong></td>
+      <td>${pos.scenarioTitle || pos.scenario}</td>
+      <td><span class="direction-badge ${pos.direction.toLowerCase()}">${pos.direction}</span></td>
+      <td>${formatCurrency(pos.entryPrice)}</td>
+      <td>${formatCurrency(pos.currentPrice)}</td>
+      <td>${formatCurrency(pos.targetPrice)}</td>
+      <td>${formatCurrency(pos.stopPrice)}</td>
+      <td class="${pctClass}">${formatCurrency(pos.unrealizedPnlDollar)} (${(pos.unrealizedPct * 100).toFixed(1)}%)</td>
+      <td>${(pos.confidenceAtEntry * 100).toFixed(0)}</td>
+    `;
+    body.appendChild(row);
+  });
+}
+
+function renderTraderClosed(closed) {
+  const body = document.getElementById("traderClosedBody");
+  body.innerHTML = "";
+  if (!closed.length) {
+    body.innerHTML = '<tr><td colspan="7" class="muted-cell">No closed trades yet. Memory will populate as positions exit.</td></tr>';
+    return;
+  }
+  closed.forEach((t) => {
+    const row = document.createElement("tr");
+    const cls = t.outcome === "win" ? "positive" : "negative";
+    row.innerHTML = `
+      <td><strong>${t.ticker}</strong></td>
+      <td>${t.scenarioTitle || t.scenario}</td>
+      <td><span class="direction-badge ${t.direction.toLowerCase()}">${t.direction}</span></td>
+      <td><span class="result-pill ${cls}">${t.outcome.toUpperCase()}</span></td>
+      <td class="${cls}">${(t.realizedPct * 100).toFixed(1)}%</td>
+      <td>${t.holdingDays}</td>
+      <td>${t.exitReason.replace(/_/g, " ")}</td>
+    `;
+    body.appendChild(row);
+  });
+}
+
+function renderTraderWatchlist(items) {
+  const node = document.getElementById("traderWatchlist");
+  node.innerHTML = "";
+  if (!items.length) {
+    node.innerHTML = '<p class="muted-cell">Run /ai-trader to populate the watchlist.</p>';
+    return;
+  }
+  items.forEach((c) => {
+    const card = document.createElement("article");
+    card.className = `watchlist-card${c.held ? " held" : ""}`;
+    const memTone = c.memoryMult >= 1.05 ? "positive" : c.memoryMult <= 0.95 ? "negative" : "";
+    card.innerHTML = `
+      <div class="watchlist-row">
+        <strong>${c.ticker}</strong>
+        <span class="direction-badge ${c.direction.toLowerCase()}">${c.direction}</span>
+        <span class="watchlist-conf">${(c.confidence * 100).toFixed(0)}</span>
+      </div>
+      <div class="watchlist-meta">
+        ${c.scenarioTitle || c.scenario} · ${c.sector} · ${formatCurrency(c.price)}
+      </div>
+      <div class="watchlist-detail">
+        <span>Base ${(c.baseScore * 100).toFixed(0)}</span>
+        <span class="${memTone}">Mem ×${c.memoryMult.toFixed(2)}</span>
+        <span>R/R ${c.rewardToRisk}x</span>
+        ${c.held ? '<span class="watchlist-held">held</span>' : ""}
+      </div>
+    `;
+    node.appendChild(card);
+  });
+}
+
+function renderTraderMemory(summary) {
+  const top = document.getElementById("traderMemoryTop");
+  const bottom = document.getElementById("traderMemoryBottom");
+  top.innerHTML = "";
+  bottom.innerHTML = "";
+
+  if (!summary.top?.length) {
+    top.innerHTML = '<p class="muted-cell">Need at least 3 closed trades per pattern.</p>';
+  } else {
+    summary.top.forEach((b) => {
+      const row = document.createElement("div");
+      row.className = "memory-row positive";
+      row.innerHTML = `
+        <span class="memory-key">${b.key}</span>
+        <span class="memory-stats">${(b.winRate * 100).toFixed(0)}% wins · avg ${(b.avgPnlPct * 100).toFixed(1)}% · n=${b.n}</span>
+      `;
+      top.appendChild(row);
+    });
+  }
+
+  if (!summary.bottom?.length) {
+    bottom.innerHTML = '<p class="muted-cell">No underperforming patterns yet.</p>';
+  } else {
+    summary.bottom.forEach((b) => {
+      if (b.score >= 0) return;
+      const row = document.createElement("div");
+      row.className = "memory-row negative";
+      row.innerHTML = `
+        <span class="memory-key">${b.key}</span>
+        <span class="memory-stats">${(b.winRate * 100).toFixed(0)}% wins · avg ${(b.avgPnlPct * 100).toFixed(1)}% · n=${b.n}</span>
+      `;
+      bottom.appendChild(row);
+    });
+    if (!bottom.children.length) {
+      bottom.innerHTML = '<p class="muted-cell">No underperforming patterns yet.</p>';
+    }
+  }
+}
+
 document.querySelectorAll(".filter-chip").forEach((chip) => {
   chip.addEventListener("click", () => {
     document.querySelectorAll(".filter-chip").forEach((item) => item.classList.remove("active"));
@@ -364,6 +531,8 @@ document.querySelectorAll(".filter-chip").forEach((chip) => {
 
 nodes.refreshButton.addEventListener("click", () => {
   loadData();
+  loadTrader();
 });
 
 loadData();
+loadTrader();

@@ -671,3 +671,237 @@ th {
     font-size: 2.35rem;
   }
 }
+
+/* ----- AI Trader ----- */
+
+.trader-card {
+  margin-top: 28px;
+  padding: 32px;
+  background: linear-gradient(180deg, rgba(22, 36, 58, 0.92), rgba(10, 19, 33, 0.82));
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.trader-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.trader-lede {
+  margin-top: 12px;
+  max-width: 60ch;
+}
+
+.trader-equity {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  text-align: right;
+}
+
+.trader-equity strong {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.trader-equity-delta {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.trader-equity-delta.positive { color: var(--green); }
+.trader-equity-delta.negative { color: var(--red); }
+
+.trader-last-run {
+  font-size: 0.7rem;
+  margin-top: 4px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.trader-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.trader-meta-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.trader-meta-card strong {
+  font-size: 1.25rem;
+}
+
+.trader-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
+.trader-grid .panel {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.muted-cell {
+  text-align: center;
+  color: var(--muted);
+  padding: 16px;
+  font-size: 0.9rem;
+}
+
+.result-pill {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.result-pill.positive {
+  background: rgba(201, 255, 102, 0.16);
+  color: var(--green);
+}
+
+.result-pill.negative {
+  background: rgba(255, 106, 136, 0.16);
+  color: var(--red);
+}
+
+.watchlist {
+  display: grid;
+  gap: 10px;
+}
+
+.watchlist-card {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.watchlist-card.held {
+  opacity: 0.55;
+}
+
+.watchlist-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchlist-row strong {
+  font-size: 1.05rem;
+}
+
+.watchlist-conf {
+  margin-left: auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: -0.02em;
+}
+
+.watchlist-meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.watchlist-detail {
+  display: flex;
+  gap: 14px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.watchlist-detail .positive { color: var(--green); }
+.watchlist-detail .negative { color: var(--red); }
+
+.watchlist-held {
+  margin-left: auto;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.memory-block h4 {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 12px 0 8px;
+}
+
+.memory-block h4:first-child {
+  margin-top: 0;
+}
+
+.memory-list {
+  display: grid;
+  gap: 6px;
+}
+
+.memory-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 0.82rem;
+}
+
+.memory-row.positive { border-color: rgba(201, 255, 102, 0.25); }
+.memory-row.negative { border-color: rgba(255, 106, 136, 0.25); }
+
+.memory-key {
+  font-family: "JetBrains Mono", "Consolas", monospace;
+  font-size: 0.75rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.memory-stats {
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+@media (max-width: 1100px) {
+  .trader-header,
+  .trader-grid {
+    grid-template-columns: 1fr;
+  }
+  .trader-meta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .trader-meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

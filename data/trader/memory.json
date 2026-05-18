@@ -1,0 +1,924 @@
+{
+  "buckets": {
+    "ticker:LNG": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": 0.23102396246229556,
+      "lastUpdated": "2026-03-19"
+    },
+    "sector:Gas / LNG": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": 0.23102396246229556,
+      "lastUpdated": "2026-03-19"
+    },
+    "direction:LONG": {
+      "n": 178,
+      "wins": 60,
+      "totalPnlPct": 0.7860571333756183,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:iran": {
+      "n": 62,
+      "wins": 34,
+      "totalPnlPct": 3.302789059986391,
+      "lastUpdated": "2026-03-06"
+    },
+    "conviction:4": {
+      "n": 96,
+      "wins": 24,
+      "totalPnlPct": -3.501858602253241,
+      "lastUpdated": "2026-02-25"
+    },
+    "sector:Gas / LNG|direction:LONG": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": 0.23102396246229556,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:iran|direction:LONG": {
+      "n": 58,
+      "wins": 32,
+      "totalPnlPct": 2.9561081706702175,
+      "lastUpdated": "2026-03-06"
+    },
+    "scenario:iran|sector:Gas / LNG": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": 0.11551198123114775,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:iran|sector:Gas / LNG|direction:LONG": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": 0.11551198123114775,
+      "lastUpdated": "2026-03-19"
+    },
+    "ticker:UCO": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.7648145952824628,
+      "lastUpdated": "2026-03-03"
+    },
+    "sector:Oil ETF (2x)": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.7648145952824628,
+      "lastUpdated": "2026-03-03"
+    },
+    "conviction:3": {
+      "n": 128,
+      "wins": 50,
+      "totalPnlPct": 2.824040104979531,
+      "lastUpdated": "2026-03-10"
+    },
+    "sector:Oil ETF (2x)|direction:LONG": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.7648145952824628,
+      "lastUpdated": "2026-03-03"
+    },
+    "scenario:iran|sector:Oil ETF (2x)": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.7648145952824628,
+      "lastUpdated": "2026-03-03"
+    },
+    "scenario:iran|sector:Oil ETF (2x)|direction:LONG": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.7648145952824628,
+      "lastUpdated": "2026-03-03"
+    },
+    "ticker:INTC": {
+      "n": 16,
+      "wins": 16,
+      "totalPnlPct": 5.083459479063122,
+      "lastUpdated": "2026-04-09"
+    },
+    "sector:Semiconductor onshoring": {
+      "n": 16,
+      "wins": 16,
+      "totalPnlPct": 5.083459479063122,
+      "lastUpdated": "2026-04-09"
+    },
+    "scenario:taiwan": {
+      "n": 68,
+      "wins": 22,
+      "totalPnlPct": -0.10189060543322227,
+      "lastUpdated": "2026-03-19"
+    },
+    "sector:Semiconductor onshoring|direction:LONG": {
+      "n": 16,
+      "wins": 16,
+      "totalPnlPct": 5.083459479063122,
+      "lastUpdated": "2026-04-09"
+    },
+    "scenario:taiwan|direction:LONG": {
+      "n": 40,
+      "wins": 14,
+      "totalPnlPct": 1.3093682972931697,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:taiwan|sector:Semiconductor onshoring": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5417297395315606,
+      "lastUpdated": "2026-04-09"
+    },
+    "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5417297395315606,
+      "lastUpdated": "2026-04-09"
+    },
+    "ticker:NVDA": {
+      "n": 16,
+      "wins": 4,
+      "totalPnlPct": -0.8819896335210391,
+      "lastUpdated": "2026-03-10"
+    },
+    "sector:AI / Semis": {
+      "n": 16,
+      "wins": 4,
+      "totalPnlPct": -0.8819896335210391,
+      "lastUpdated": "2026-03-10"
+    },
+    "direction:SHORT": {
+      "n": 62,
+      "wins": 18,
+      "totalPnlPct": -2.330321090212359,
+      "lastUpdated": "2026-03-10"
+    },
+    "sector:AI / Semis|direction:SHORT": {
+      "n": 16,
+      "wins": 4,
+      "totalPnlPct": -0.8819896335210391,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:taiwan|direction:SHORT": {
+      "n": 28,
+      "wins": 8,
+      "totalPnlPct": -1.411258902726392,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:AI / Semis": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.44099481676051955,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:taiwan|sector:AI / Semis|direction:SHORT": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.44099481676051955,
+      "lastUpdated": "2026-03-10"
+    },
+    "ticker:QCOM": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.2948955184072517,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Handsets": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.2948955184072517,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Handsets|direction:SHORT": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.2948955184072517,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Handsets": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.2948955184072517,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Handsets|direction:SHORT": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.2948955184072517,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:HII": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.0578968752228295,
+      "lastUpdated": "2026-04-24"
+    },
+    "sector:Naval defense": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.0578968752228295,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:europe": {
+      "n": 50,
+      "wins": 6,
+      "totalPnlPct": -3.517154740912136,
+      "lastUpdated": "2026-04-14"
+    },
+    "sector:Naval defense|direction:LONG": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.0578968752228295,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:europe|direction:LONG": {
+      "n": 42,
+      "wins": 2,
+      "totalPnlPct": -4.027618193477047,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|sector:Naval defense": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.0578968752228295,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:europe|sector:Naval defense|direction:LONG": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.0578968752228295,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:europe|sector:Gas / LNG": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": 0.11551198123114775,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:europe|sector:Gas / LNG|direction:LONG": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": 0.11551198123114775,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:korea": {
+      "n": 60,
+      "wins": 16,
+      "totalPnlPct": -1.2280076704777736,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:korea|direction:LONG": {
+      "n": 38,
+      "wins": 12,
+      "totalPnlPct": 0.5481988588892773,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:korea|sector:Semiconductor onshoring": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5417297395315606,
+      "lastUpdated": "2026-04-09"
+    },
+    "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5417297395315606,
+      "lastUpdated": "2026-04-09"
+    },
+    "ticker:EWY": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.1032256884180858,
+      "lastUpdated": "2026-02-25"
+    },
+    "sector:Korea equity": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.1032256884180858,
+      "lastUpdated": "2026-02-25"
+    },
+    "sector:Korea equity|direction:SHORT": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.1032256884180858,
+      "lastUpdated": "2026-02-25"
+    },
+    "scenario:korea|direction:SHORT": {
+      "n": 22,
+      "wins": 4,
+      "totalPnlPct": -1.7762065293670508,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:korea|sector:Korea equity": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.1032256884180858,
+      "lastUpdated": "2026-02-25"
+    },
+    "scenario:korea|sector:Korea equity|direction:SHORT": {
+      "n": 8,
+      "wins": 0,
+      "totalPnlPct": -1.1032256884180858,
+      "lastUpdated": "2026-02-25"
+    },
+    "scenario:korea|sector:AI / Semis": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.44099481676051955,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:korea|sector:AI / Semis|direction:SHORT": {
+      "n": 8,
+      "wins": 2,
+      "totalPnlPct": -0.44099481676051955,
+      "lastUpdated": "2026-03-10"
+    },
+    "ticker:FRO": {
+      "n": 6,
+      "wins": 6,
+      "totalPnlPct": 0.41788101871116934,
+      "lastUpdated": "2026-03-10"
+    },
+    "sector:Shipping": {
+      "n": 12,
+      "wins": 12,
+      "totalPnlPct": 0.7748198028188746,
+      "lastUpdated": "2026-03-10"
+    },
+    "sector:Shipping|direction:LONG": {
+      "n": 12,
+      "wins": 12,
+      "totalPnlPct": 0.7748198028188746,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:iran|sector:Shipping": {
+      "n": 12,
+      "wins": 12,
+      "totalPnlPct": 0.7748198028188746,
+      "lastUpdated": "2026-03-10"
+    },
+    "scenario:iran|sector:Shipping|direction:LONG": {
+      "n": 12,
+      "wins": 12,
+      "totalPnlPct": 0.7748198028188746,
+      "lastUpdated": "2026-03-10"
+    },
+    "ticker:TNK": {
+      "n": 6,
+      "wins": 6,
+      "totalPnlPct": 0.3569387841077054,
+      "lastUpdated": "2026-03-10"
+    },
+    "ticker:LMT": {
+      "n": 24,
+      "wins": 0,
+      "totalPnlPct": -2.447874063736196,
+      "lastUpdated": "2026-04-20"
+    },
+    "sector:Defense": {
+      "n": 70,
+      "wins": 0,
+      "totalPnlPct": -7.603471844940309,
+      "lastUpdated": "2026-04-21"
+    },
+    "sector:Defense|direction:LONG": {
+      "n": 70,
+      "wins": 0,
+      "totalPnlPct": -7.603471844940309,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:iran|sector:Defense": {
+      "n": 12,
+      "wins": 0,
+      "totalPnlPct": -1.3433996650937947,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:iran|sector:Defense|direction:LONG": {
+      "n": 12,
+      "wins": 0,
+      "totalPnlPct": -1.3433996650937947,
+      "lastUpdated": "2026-04-21"
+    },
+    "ticker:NOC": {
+      "n": 24,
+      "wins": 0,
+      "totalPnlPct": -3.0010954883643435,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:taiwan|sector:Defense": {
+      "n": 18,
+      "wins": 0,
+      "totalPnlPct": -1.730519277522813,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:taiwan|sector:Defense|direction:LONG": {
+      "n": 18,
+      "wins": 0,
+      "totalPnlPct": -1.730519277522813,
+      "lastUpdated": "2026-04-21"
+    },
+    "ticker:RTX": {
+      "n": 18,
+      "wins": 0,
+      "totalPnlPct": -1.7692949255370698,
+      "lastUpdated": "2026-04-22"
+    },
+    "ticker:AVAV": {
+      "n": 12,
+      "wins": 0,
+      "totalPnlPct": -2.101566855834319,
+      "lastUpdated": "2026-03-02"
+    },
+    "sector:Drones / ISR": {
+      "n": 12,
+      "wins": 0,
+      "totalPnlPct": -2.101566855834319,
+      "lastUpdated": "2026-03-02"
+    },
+    "sector:Drones / ISR|direction:LONG": {
+      "n": 12,
+      "wins": 0,
+      "totalPnlPct": -2.101566855834319,
+      "lastUpdated": "2026-03-02"
+    },
+    "scenario:taiwan|sector:Drones / ISR": {
+      "n": 6,
+      "wins": 0,
+      "totalPnlPct": -1.0507834279171595,
+      "lastUpdated": "2026-03-02"
+    },
+    "scenario:taiwan|sector:Drones / ISR|direction:LONG": {
+      "n": 6,
+      "wins": 0,
+      "totalPnlPct": -1.0507834279171595,
+      "lastUpdated": "2026-03-02"
+    },
+    "ticker:AAPL": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": -0.4739337105628769,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Consumer hardware": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": -0.4739337105628769,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Consumer hardware|direction:SHORT": {
+      "n": 12,
+      "wins": 4,
+      "totalPnlPct": -0.4739337105628769,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Consumer hardware": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.24194768637443162,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Consumer hardware|direction:SHORT": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.24194768637443162,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:TSM": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.4334208811841894,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Semiconductor manufacturing": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.4334208811841894,
+      "lastUpdated": "2026-03-17"
+    },
+    "conviction:5": {
+      "n": 16,
+      "wins": 4,
+      "totalPnlPct": -0.8664454595630307,
+      "lastUpdated": "2026-04-22"
+    },
+    "sector:Semiconductor manufacturing|direction:SHORT": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.4334208811841894,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Semiconductor manufacturing": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.4334208811841894,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:taiwan|sector:Semiconductor manufacturing|direction:SHORT": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.4334208811841894,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:europe|sector:Defense": {
+      "n": 20,
+      "wins": 0,
+      "totalPnlPct": -2.3136364916586265,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:europe|sector:Defense|direction:LONG": {
+      "n": 20,
+      "wins": 0,
+      "totalPnlPct": -2.3136364916586265,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:korea|sector:Defense": {
+      "n": 20,
+      "wins": 0,
+      "totalPnlPct": -2.215916410665073,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:korea|sector:Defense|direction:LONG": {
+      "n": 20,
+      "wins": 0,
+      "totalPnlPct": -2.215916410665073,
+      "lastUpdated": "2026-04-21"
+    },
+    "scenario:korea|sector:Drones / ISR": {
+      "n": 6,
+      "wins": 0,
+      "totalPnlPct": -1.0507834279171595,
+      "lastUpdated": "2026-03-02"
+    },
+    "scenario:korea|sector:Drones / ISR|direction:LONG": {
+      "n": 6,
+      "wins": 0,
+      "totalPnlPct": -1.0507834279171595,
+      "lastUpdated": "2026-03-02"
+    },
+    "scenario:korea|sector:Consumer hardware": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.2319860241884453,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:korea|sector:Consumer hardware|direction:SHORT": {
+      "n": 6,
+      "wins": 2,
+      "totalPnlPct": -0.2319860241884453,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:XOM": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.27265701545243,
+      "lastUpdated": "2026-03-31"
+    },
+    "sector:Energy": {
+      "n": 12,
+      "wins": 6,
+      "totalPnlPct": 0.5723744941655363,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Energy|direction:LONG": {
+      "n": 12,
+      "wins": 6,
+      "totalPnlPct": 0.5723744941655363,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:iran|sector:Energy": {
+      "n": 12,
+      "wins": 6,
+      "totalPnlPct": 0.5723744941655363,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:iran|sector:Energy|direction:LONG": {
+      "n": 12,
+      "wins": 6,
+      "totalPnlPct": 0.5723744941655363,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:CVX": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.11128609349442789,
+      "lastUpdated": "2026-03-31"
+    },
+    "ticker:COP": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.18843138521867844,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:UAL": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.6933617786323465,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Airlines": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.6933617786323465,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Airlines|direction:SHORT": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.6933617786323465,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:iran|direction:SHORT": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.34668088931617325,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:iran|sector:Airlines": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.34668088931617325,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:iran|sector:Airlines|direction:SHORT": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.34668088931617325,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:USO": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.0170859380159685,
+      "lastUpdated": "2026-03-06"
+    },
+    "sector:Oil ETF": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.0170859380159685,
+      "lastUpdated": "2026-03-06"
+    },
+    "sector:Oil ETF|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.0170859380159685,
+      "lastUpdated": "2026-03-06"
+    },
+    "scenario:iran|sector:Oil ETF": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.0170859380159685,
+      "lastUpdated": "2026-03-06"
+    },
+    "scenario:iran|sector:Oil ETF|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.0170859380159685,
+      "lastUpdated": "2026-03-06"
+    },
+    "ticker:BNO": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.054901024250023,
+      "lastUpdated": "2026-03-06"
+    },
+    "sector:Brent ETF": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.054901024250023,
+      "lastUpdated": "2026-03-06"
+    },
+    "sector:Brent ETF|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.054901024250023,
+      "lastUpdated": "2026-03-06"
+    },
+    "scenario:iran|sector:Brent ETF": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.054901024250023,
+      "lastUpdated": "2026-03-06"
+    },
+    "scenario:iran|sector:Brent ETF|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.054901024250023,
+      "lastUpdated": "2026-03-06"
+    },
+    "ticker:GFS": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5463379158798998,
+      "lastUpdated": "2026-04-24"
+    },
+    "sector:Foundry alternatives": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5463379158798998,
+      "lastUpdated": "2026-04-24"
+    },
+    "sector:Foundry alternatives|direction:LONG": {
+      "n": 8,
+      "wins": 8,
+      "totalPnlPct": 2.5463379158798998,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:taiwan|sector:Foundry alternatives": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.2731689579399499,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.2731689579399499,
+      "lastUpdated": "2026-04-24"
+    },
+    "ticker:REMX": {
+      "n": 2,
+      "wins": 2,
+      "totalPnlPct": 0.5682941666539434,
+      "lastUpdated": "2026-05-01"
+    },
+    "sector:Rare earth miners": {
+      "n": 2,
+      "wins": 2,
+      "totalPnlPct": 0.5682941666539434,
+      "lastUpdated": "2026-05-01"
+    },
+    "sector:Rare earth miners|direction:LONG": {
+      "n": 2,
+      "wins": 2,
+      "totalPnlPct": 0.5682941666539434,
+      "lastUpdated": "2026-05-01"
+    },
+    "scenario:taiwan|sector:Rare earth miners": {
+      "n": 2,
+      "wins": 2,
+      "totalPnlPct": 0.5682941666539434,
+      "lastUpdated": "2026-05-01"
+    },
+    "scenario:taiwan|sector:Rare earth miners|direction:LONG": {
+      "n": 2,
+      "wins": 2,
+      "totalPnlPct": 0.5682941666539434,
+      "lastUpdated": "2026-05-01"
+    },
+    "ticker:GD": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.38520736730269756,
+      "lastUpdated": "2026-04-23"
+    },
+    "ticker:EQT": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.22154610380584983,
+      "lastUpdated": "2026-04-14"
+    },
+    "sector:Natural gas": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.22154610380584983,
+      "lastUpdated": "2026-04-14"
+    },
+    "sector:Natural gas|direction:LONG": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.22154610380584983,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|sector:Natural gas": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.22154610380584983,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|sector:Natural gas|direction:LONG": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.22154610380584983,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|direction:SHORT": {
+      "n": 8,
+      "wins": 4,
+      "totalPnlPct": 0.5104634525649102,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:europe|sector:Airlines": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.34668088931617325,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:europe|sector:Airlines|direction:SHORT": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.34668088931617325,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:CCL": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.16378256324873697,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Leisure travel": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.16378256324873697,
+      "lastUpdated": "2026-03-17"
+    },
+    "sector:Leisure travel|direction:SHORT": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.16378256324873697,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:europe|sector:Leisure travel": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.16378256324873697,
+      "lastUpdated": "2026-03-17"
+    },
+    "scenario:europe|sector:Leisure travel|direction:SHORT": {
+      "n": 4,
+      "wins": 2,
+      "totalPnlPct": 0.16378256324873697,
+      "lastUpdated": "2026-03-17"
+    },
+    "ticker:UNG": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.5500507040208884,
+      "lastUpdated": "2026-04-14"
+    },
+    "sector:Gas ETF": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.5500507040208884,
+      "lastUpdated": "2026-04-14"
+    },
+    "sector:Gas ETF|direction:LONG": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.5500507040208884,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|sector:Gas ETF": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.5500507040208884,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:europe|sector:Gas ETF|direction:LONG": {
+      "n": 4,
+      "wins": 0,
+      "totalPnlPct": -0.5500507040208884,
+      "lastUpdated": "2026-04-14"
+    },
+    "scenario:korea|sector:Foundry alternatives": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.2731689579399499,
+      "lastUpdated": "2026-04-24"
+    },
+    "scenario:korea|sector:Foundry alternatives|direction:LONG": {
+      "n": 4,
+      "wins": 4,
+      "totalPnlPct": 1.2731689579399499,
+      "lastUpdated": "2026-04-24"
+    },
+    "ticker:COPX": {
+      "n": 2,
+      "wins": 0,
+      "totalPnlPct": -0.29252186139231146,
+      "lastUpdated": "2026-03-19"
+    },
+    "sector:Copper miners": {
+      "n": 2,
+      "wins": 0,
+      "totalPnlPct": -0.29252186139231146,
+      "lastUpdated": "2026-03-19"
+    },
+    "sector:Copper miners|direction:LONG": {
+      "n": 2,
+      "wins": 0,
+      "totalPnlPct": -0.29252186139231146,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:taiwan|sector:Copper miners": {
+      "n": 2,
+      "wins": 0,
+      "totalPnlPct": -0.29252186139231146,
+      "lastUpdated": "2026-03-19"
+    },
+    "scenario:taiwan|sector:Copper miners|direction:LONG": {
+      "n": 2,
+      "wins": 0,
+      "totalPnlPct": -0.29252186139231146,
+      "lastUpdated": "2026-03-19"
+    }
+  },
+  "lastUpdatedAt": "2026-05-18T05:26:20.554Z",
+  "tradesObserved": 240
+}

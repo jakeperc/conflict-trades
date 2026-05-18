@@ -4,6 +4,7 @@ const path = require("path");
 
 const { loadConfig } = require("./lib/config");
 const { buildPayload } = require("./lib/scenarios");
+const trader = require("./lib/trader");
 
 const PORT = process.env.PORT || 8787;
 const PUBLIC_DIR = path.join(__dirname, "public");
@@ -76,6 +77,20 @@ const server = http.createServer(async (req, res) => {
       getJson(res, 200, loadConfig());
     } catch (error) {
       getJson(res, 500, { error: "Failed to load config.", detail: error.message });
+    }
+    return;
+  }
+
+  if (req.url.startsWith("/api/trader")) {
+    try {
+      const state = trader.loadState();
+      const memory = trader.loadMemory();
+      getJson(res, 200, {
+        state,
+        memory: { ...memory, summary: trader.summarizeMemory(memory) }
+      });
+    } catch (error) {
+      getJson(res, 500, { error: "Failed to load trader state.", detail: error.message });
     }
     return;
   }
