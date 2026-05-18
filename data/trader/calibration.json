@@ -1,0 +1,1861 @@
+{
+  "generatedAt": "2026-05-18T06:06:15.961Z",
+  "fromTrades": 8004,
+  "globalWeights": {
+    "conviction": 0.18,
+    "scenario": 0.14,
+    "riskReward": 0.16,
+    "trend": 0.14,
+    "volRegime": 0.08,
+    "catalyst": 0.1,
+    "memory": 0.2
+  },
+  "perBucket": {
+    "scenario:iran|sector:Energy|direction:LONG": {
+      "n": 433,
+      "nStandard": 86,
+      "componentCorrelations": {
+        "conviction": -0.155,
+        "scenario": 0,
+        "riskReward": -0.024,
+        "trend": -0.087,
+        "volRegime": -0.364,
+        "catalyst": -0.155,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.174,
+      "standardAvgPnl": -0.0384
+    },
+    "sector:Energy|direction:LONG": {
+      "n": 433,
+      "nStandard": 86,
+      "componentCorrelations": {
+        "conviction": -0.155,
+        "scenario": 0,
+        "riskReward": -0.024,
+        "trend": -0.087,
+        "volRegime": -0.364,
+        "catalyst": -0.155,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.174,
+      "standardAvgPnl": -0.0384
+    },
+    "scenario:iran|direction:LONG": {
+      "n": 1879,
+      "nStandard": 370,
+      "componentCorrelations": {
+        "conviction": 0.048,
+        "scenario": 0,
+        "riskReward": -0.159,
+        "trend": 0.156,
+        "volRegime": -0.393,
+        "catalyst": 0.246,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.159,
+        "scenario": 0.084,
+        "riskReward": 0.093,
+        "trend": 0.269,
+        "volRegime": 0.057,
+        "catalyst": 0.226,
+        "memory": 0.113
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.438,
+      "standardAvgPnl": 0.0019
+    },
+    "scenario:iran|sector:Gas / LNG|direction:LONG": {
+      "n": 161,
+      "nStandard": 32,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.026,
+        "trend": 0.265,
+        "volRegime": 0.593,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.111,
+        "scenario": 0.091,
+        "riskReward": 0.118,
+        "trend": 0.265,
+        "volRegime": 0.221,
+        "catalyst": 0.071,
+        "memory": 0.123
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.25,
+      "standardAvgPnl": -0.0557
+    },
+    "sector:Gas / LNG|direction:LONG": {
+      "n": 322,
+      "nStandard": 64,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": -0.029,
+        "riskReward": -0.071,
+        "trend": 0.265,
+        "volRegime": 0.59,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.112,
+        "scenario": 0.092,
+        "riskReward": 0.102,
+        "trend": 0.274,
+        "volRegime": 0.224,
+        "catalyst": 0.072,
+        "memory": 0.124
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.25,
+      "standardAvgPnl": -0.0557
+    },
+    "scenario:iran|sector:Shipping|direction:LONG": {
+      "n": 390,
+      "nStandard": 78,
+      "componentCorrelations": {
+        "conviction": -0.059,
+        "scenario": 0,
+        "riskReward": -0.039,
+        "trend": -0.634,
+        "volRegime": -0.267,
+        "catalyst": 0.059,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.134,
+        "scenario": 0.11,
+        "riskReward": 0.122,
+        "trend": 0.11,
+        "volRegime": 0.075,
+        "catalyst": 0.299,
+        "memory": 0.149
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.731,
+      "standardAvgPnl": 0.0341
+    },
+    "sector:Shipping|direction:LONG": {
+      "n": 390,
+      "nStandard": 78,
+      "componentCorrelations": {
+        "conviction": -0.059,
+        "scenario": 0,
+        "riskReward": -0.039,
+        "trend": -0.634,
+        "volRegime": -0.267,
+        "catalyst": 0.059,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.134,
+        "scenario": 0.11,
+        "riskReward": 0.122,
+        "trend": 0.11,
+        "volRegime": 0.075,
+        "catalyst": 0.299,
+        "memory": 0.149
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.731,
+      "standardAvgPnl": 0.0341
+    },
+    "scenario:iran|sector:Defense|direction:LONG": {
+      "n": 367,
+      "nStandard": 73,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.245,
+        "trend": 0.02,
+        "volRegime": 0.192,
+        "catalyst": 0.201,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.091,
+        "scenario": 0.075,
+        "riskReward": 0.261,
+        "trend": 0.089,
+        "volRegime": 0.182,
+        "catalyst": 0.202,
+        "memory": 0.101
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.107
+    },
+    "sector:Defense|direction:LONG": {
+      "n": 2187,
+      "nStandard": 443,
+      "componentCorrelations": {
+        "conviction": -0.124,
+        "scenario": 0.01,
+        "riskReward": 0.28,
+        "trend": 0.01,
+        "volRegime": 0.268,
+        "catalyst": -0.02,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.106,
+        "scenario": 0.097,
+        "riskReward": 0.305,
+        "trend": 0.097,
+        "volRegime": 0.211,
+        "catalyst": 0.068,
+        "memory": 0.117
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1107
+    },
+    "scenario:iran|sector:Airlines|direction:SHORT": {
+      "n": 179,
+      "nStandard": 35,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.068,
+        "trend": -0.215,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.429,
+      "standardAvgPnl": -0.019
+    },
+    "sector:Airlines|direction:SHORT": {
+      "n": 358,
+      "nStandard": 70,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.068,
+        "trend": -0.215,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.429,
+      "standardAvgPnl": -0.019
+    },
+    "scenario:iran|direction:SHORT": {
+      "n": 179,
+      "nStandard": 35,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.068,
+        "trend": -0.215,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.429,
+      "standardAvgPnl": -0.019
+    },
+    "scenario:iran|sector:Oil ETF|direction:LONG": {
+      "n": 172,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.028,
+        "trend": -0.212,
+        "volRegime": 0.44,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.131,
+        "scenario": 0.108,
+        "riskReward": 0.161,
+        "trend": 0.108,
+        "volRegime": 0.262,
+        "catalyst": 0.085,
+        "memory": 0.146
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.882,
+      "standardAvgPnl": 0.1245
+    },
+    "sector:Oil ETF|direction:LONG": {
+      "n": 172,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.028,
+        "trend": -0.212,
+        "volRegime": 0.44,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.131,
+        "scenario": 0.108,
+        "riskReward": 0.161,
+        "trend": 0.108,
+        "volRegime": 0.262,
+        "catalyst": 0.085,
+        "memory": 0.146
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.882,
+      "standardAvgPnl": 0.1245
+    },
+    "scenario:iran|sector:Oil ETF (2x)|direction:LONG": {
+      "n": 200,
+      "nStandard": 40,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.012,
+        "trend": -0.348,
+        "volRegime": 0.265,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.137,
+        "scenario": 0.112,
+        "riskReward": 0.125,
+        "trend": 0.112,
+        "volRegime": 0.274,
+        "catalyst": 0.088,
+        "memory": 0.152
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.825,
+      "standardAvgPnl": 0.1125
+    },
+    "sector:Oil ETF (2x)|direction:LONG": {
+      "n": 200,
+      "nStandard": 40,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.012,
+        "trend": -0.348,
+        "volRegime": 0.265,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.137,
+        "scenario": 0.112,
+        "riskReward": 0.125,
+        "trend": 0.112,
+        "volRegime": 0.274,
+        "catalyst": 0.088,
+        "memory": 0.152
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.825,
+      "standardAvgPnl": 0.1125
+    },
+    "scenario:iran|sector:Brent ETF|direction:LONG": {
+      "n": 144,
+      "nStandard": 27,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.106,
+        "trend": -0.296,
+        "volRegime": 0.374,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.137,
+        "scenario": 0.112,
+        "riskReward": 0.125,
+        "trend": 0.112,
+        "volRegime": 0.274,
+        "catalyst": 0.088,
+        "memory": 0.152
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.704,
+      "standardAvgPnl": 0.0812
+    },
+    "sector:Brent ETF|direction:LONG": {
+      "n": 144,
+      "nStandard": 27,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.106,
+        "trend": -0.296,
+        "volRegime": 0.374,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.137,
+        "scenario": 0.112,
+        "riskReward": 0.125,
+        "trend": 0.112,
+        "volRegime": 0.274,
+        "catalyst": 0.088,
+        "memory": 0.152
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.704,
+      "standardAvgPnl": 0.0812
+    },
+    "scenario:taiwan|sector:Defense|direction:LONG": {
+      "n": 526,
+      "nStandard": 106,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.313,
+        "trend": 0.045,
+        "volRegime": 0.288,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.104,
+        "scenario": 0.085,
+        "riskReward": 0.299,
+        "trend": 0.123,
+        "volRegime": 0.207,
+        "catalyst": 0.067,
+        "memory": 0.115
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1143
+    },
+    "scenario:taiwan|direction:LONG": {
+      "n": 1335,
+      "nStandard": 259,
+      "componentCorrelations": {
+        "conviction": -0.508,
+        "scenario": 0,
+        "riskReward": -0.116,
+        "trend": 0.103,
+        "volRegime": -0.394,
+        "catalyst": -0.191,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.13,
+        "scenario": 0.107,
+        "riskReward": 0.118,
+        "trend": 0.346,
+        "volRegime": 0.072,
+        "catalyst": 0.084,
+        "memory": 0.144
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.328,
+      "standardAvgPnl": 0.0168
+    },
+    "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG": {
+      "n": 229,
+      "nStandard": 46,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.216,
+        "trend": -0.039,
+        "volRegime": 0.194,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.108,
+        "scenario": 0.089,
+        "riskReward": 0.311,
+        "trend": 0.089,
+        "volRegime": 0.215,
+        "catalyst": 0.069,
+        "memory": 0.12
+      },
+      "stopMult": 1,
+      "targetMult": 1.5,
+      "standardWinRate": 0.978,
+      "standardAvgPnl": 0.31
+    },
+    "sector:Semiconductor onshoring|direction:LONG": {
+      "n": 458,
+      "nStandard": 92,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.216,
+        "trend": -0.039,
+        "volRegime": 0.194,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.108,
+        "scenario": 0.089,
+        "riskReward": 0.311,
+        "trend": 0.089,
+        "volRegime": 0.215,
+        "catalyst": 0.069,
+        "memory": 0.12
+      },
+      "stopMult": 1,
+      "targetMult": 1.5,
+      "standardWinRate": 0.978,
+      "standardAvgPnl": 0.31
+    },
+    "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
+      "n": 177,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.094,
+        "trend": -0.454,
+        "volRegime": -0.326,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1.3,
+      "targetMult": 1.5,
+      "standardWinRate": 0.853,
+      "standardAvgPnl": 0.2522
+    },
+    "sector:Foundry alternatives|direction:LONG": {
+      "n": 354,
+      "nStandard": 68,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.094,
+        "trend": -0.454,
+        "volRegime": -0.326,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1.3,
+      "targetMult": 1.5,
+      "standardWinRate": 0.853,
+      "standardAvgPnl": 0.2522
+    },
+    "scenario:taiwan|sector:Drones / ISR|direction:LONG": {
+      "n": 164,
+      "nStandard": 33,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.381,
+        "trend": -0.102,
+        "volRegime": 0.089,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.113,
+        "scenario": 0.093,
+        "riskReward": 0.327,
+        "trend": 0.093,
+        "volRegime": 0.176,
+        "catalyst": 0.073,
+        "memory": 0.126
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1736
+    },
+    "sector:Drones / ISR|direction:LONG": {
+      "n": 328,
+      "nStandard": 66,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.381,
+        "trend": -0.102,
+        "volRegime": 0.089,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.113,
+        "scenario": 0.093,
+        "riskReward": 0.327,
+        "trend": 0.093,
+        "volRegime": 0.176,
+        "catalyst": 0.073,
+        "memory": 0.126
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1736
+    },
+    "scenario:taiwan|sector:Consumer hardware|direction:SHORT": {
+      "n": 209,
+      "nStandard": 43,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.028,
+        "trend": 0.436,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.125,
+        "scenario": 0.102,
+        "riskReward": 0.153,
+        "trend": 0.332,
+        "volRegime": 0.069,
+        "catalyst": 0.08,
+        "memory": 0.138
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.163,
+      "standardAvgPnl": -0.0634
+    },
+    "sector:Consumer hardware|direction:SHORT": {
+      "n": 420,
+      "nStandard": 86,
+      "componentCorrelations": {
+        "conviction": -0.025,
+        "scenario": 0,
+        "riskReward": 0.017,
+        "trend": 0.409,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.126,
+        "scenario": 0.104,
+        "riskReward": 0.142,
+        "trend": 0.337,
+        "volRegime": 0.07,
+        "catalyst": 0.081,
+        "memory": 0.14
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.163,
+      "standardAvgPnl": -0.0618
+    },
+    "scenario:taiwan|direction:SHORT": {
+      "n": 864,
+      "nStandard": 174,
+      "componentCorrelations": {
+        "conviction": -0.05,
+        "scenario": 0,
+        "riskReward": 0.057,
+        "trend": 0.313,
+        "volRegime": 0.108,
+        "catalyst": -0.053,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.105,
+        "scenario": 0.086,
+        "riskReward": 0.162,
+        "trend": 0.28,
+        "volRegime": 0.183,
+        "catalyst": 0.068,
+        "memory": 0.117
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.201,
+      "standardAvgPnl": -0.0724
+    },
+    "scenario:taiwan|sector:AI / Semis|direction:SHORT": {
+      "n": 235,
+      "nStandard": 47,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.032,
+        "trend": 0.351,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.123,
+        "scenario": 0.101,
+        "riskReward": 0.166,
+        "trend": 0.327,
+        "volRegime": 0.068,
+        "catalyst": 0.079,
+        "memory": 0.136
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.255,
+      "standardAvgPnl": -0.0633
+    },
+    "sector:AI / Semis|direction:SHORT": {
+      "n": 470,
+      "nStandard": 94,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.032,
+        "trend": 0.351,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.123,
+        "scenario": 0.101,
+        "riskReward": 0.166,
+        "trend": 0.327,
+        "volRegime": 0.068,
+        "catalyst": 0.079,
+        "memory": 0.136
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.255,
+      "standardAvgPnl": -0.0633
+    },
+    "scenario:taiwan|sector:Handsets|direction:SHORT": {
+      "n": 241,
+      "nStandard": 48,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.061,
+        "trend": 0.549,
+        "volRegime": 0.131,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.11,
+        "scenario": 0.091,
+        "riskReward": 0.148,
+        "trend": 0.294,
+        "volRegime": 0.164,
+        "catalyst": 0.071,
+        "memory": 0.122
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.208,
+      "standardAvgPnl": -0.0783
+    },
+    "sector:Handsets|direction:SHORT": {
+      "n": 241,
+      "nStandard": 48,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.061,
+        "trend": 0.549,
+        "volRegime": 0.131,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.11,
+        "scenario": 0.091,
+        "riskReward": 0.148,
+        "trend": 0.294,
+        "volRegime": 0.164,
+        "catalyst": 0.071,
+        "memory": 0.122
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.208,
+      "standardAvgPnl": -0.0783
+    },
+    "scenario:taiwan|sector:Semiconductor manufacturing|direction:SHORT": {
+      "n": 179,
+      "nStandard": 36,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.073,
+        "trend": -0.187,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.167,
+      "standardAvgPnl": -0.0872
+    },
+    "sector:Semiconductor manufacturing|direction:SHORT": {
+      "n": 179,
+      "nStandard": 36,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.073,
+        "trend": -0.187,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.167,
+      "standardAvgPnl": -0.0872
+    },
+    "scenario:taiwan|sector:Copper miners|direction:LONG": {
+      "n": 82,
+      "nStandard": 14,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.338,
+        "trend": -0.432,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.286,
+      "standardAvgPnl": -0.0069
+    },
+    "sector:Copper miners|direction:LONG": {
+      "n": 82,
+      "nStandard": 14,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.338,
+        "trend": -0.432,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.286,
+      "standardAvgPnl": -0.0069
+    },
+    "scenario:taiwan|sector:Rare earth miners|direction:LONG": {
+      "n": 97,
+      "nStandard": 18,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.236,
+        "trend": -0.853,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.333,
+      "standardAvgPnl": 0.0062
+    },
+    "sector:Rare earth miners|direction:LONG": {
+      "n": 97,
+      "nStandard": 18,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.236,
+        "trend": -0.853,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.333,
+      "standardAvgPnl": 0.0062
+    },
+    "scenario:taiwan|sector:Uranium / nuclear|direction:LONG": {
+      "n": 60,
+      "nStandard": 8,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.505,
+        "trend": -0.661,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.125,
+      "standardAvgPnl": -0.0825
+    },
+    "sector:Uranium / nuclear|direction:LONG": {
+      "n": 171,
+      "nStandard": 22,
+      "componentCorrelations": {
+        "conviction": 0.033,
+        "scenario": 0.033,
+        "riskReward": -0.523,
+        "trend": -0.684,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.317,
+        "scenario": 0.271,
+        "riskReward": 0.093,
+        "trend": 0.084,
+        "volRegime": 0.057,
+        "catalyst": 0.066,
+        "memory": 0.113
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.136,
+      "standardAvgPnl": -0.078
+    },
+    "scenario:europe|sector:Defense|direction:LONG": {
+      "n": 630,
+      "nStandard": 130,
+      "componentCorrelations": {
+        "conviction": 0.02,
+        "scenario": 0,
+        "riskReward": 0.325,
+        "trend": -0.031,
+        "volRegime": 0.298,
+        "catalyst": -0.051,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.123,
+        "scenario": 0.087,
+        "riskReward": 0.306,
+        "trend": 0.087,
+        "volRegime": 0.212,
+        "catalyst": 0.068,
+        "memory": 0.118
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1139
+    },
+    "scenario:europe|direction:LONG": {
+      "n": 1374,
+      "nStandard": 272,
+      "componentCorrelations": {
+        "conviction": 0.052,
+        "scenario": 0,
+        "riskReward": 0.038,
+        "trend": 0.174,
+        "volRegime": 0.147,
+        "catalyst": -0.122,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.162,
+        "scenario": 0.08,
+        "riskReward": 0.136,
+        "trend": 0.259,
+        "volRegime": 0.194,
+        "catalyst": 0.063,
+        "memory": 0.108
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.033,
+      "standardAvgPnl": -0.1083
+    },
+    "scenario:europe|sector:Naval defense|direction:LONG": {
+      "n": 219,
+      "nStandard": 45,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.291,
+        "trend": 0.146,
+        "volRegime": 0.07,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.099,
+        "scenario": 0.082,
+        "riskReward": 0.286,
+        "trend": 0.232,
+        "volRegime": 0.127,
+        "catalyst": 0.064,
+        "memory": 0.11
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1315
+    },
+    "sector:Naval defense|direction:LONG": {
+      "n": 219,
+      "nStandard": 45,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.291,
+        "trend": 0.146,
+        "volRegime": 0.07,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.099,
+        "scenario": 0.082,
+        "riskReward": 0.286,
+        "trend": 0.232,
+        "volRegime": 0.127,
+        "catalyst": 0.064,
+        "memory": 0.11
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1315
+    },
+    "scenario:europe|sector:Gas / LNG|direction:LONG": {
+      "n": 161,
+      "nStandard": 32,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.148,
+        "trend": 0.266,
+        "volRegime": 0.588,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.112,
+        "scenario": 0.092,
+        "riskReward": 0.102,
+        "trend": 0.275,
+        "volRegime": 0.223,
+        "catalyst": 0.072,
+        "memory": 0.124
+      },
+      "stopMult": 1.3,
+      "targetMult": 1,
+      "standardWinRate": 0.25,
+      "standardAvgPnl": -0.0557
+    },
+    "scenario:europe|sector:Midstream|direction:LONG": {
+      "n": 54,
+      "nStandard": 9,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.363,
+        "trend": -0.372,
+        "volRegime": -0.418,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.0871
+    },
+    "sector:Midstream|direction:LONG": {
+      "n": 54,
+      "nStandard": 9,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.363,
+        "trend": -0.372,
+        "volRegime": -0.418,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.0871
+    },
+    "scenario:europe|sector:Natural gas|direction:LONG": {
+      "n": 115,
+      "nStandard": 22,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.082,
+        "trend": -0.006,
+        "volRegime": 0.066,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.108,
+        "scenario": 0.089,
+        "riskReward": 0.311,
+        "trend": 0.089,
+        "volRegime": 0.215,
+        "catalyst": 0.069,
+        "memory": 0.12
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.083
+    },
+    "sector:Natural gas|direction:LONG": {
+      "n": 115,
+      "nStandard": 22,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.082,
+        "trend": -0.006,
+        "volRegime": 0.066,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.108,
+        "scenario": 0.089,
+        "riskReward": 0.311,
+        "trend": 0.089,
+        "volRegime": 0.215,
+        "catalyst": 0.069,
+        "memory": 0.12
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.083
+    },
+    "scenario:europe|sector:Airlines|direction:SHORT": {
+      "n": 179,
+      "nStandard": 35,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.068,
+        "trend": -0.215,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.429,
+      "standardAvgPnl": -0.019
+    },
+    "scenario:europe|direction:SHORT": {
+      "n": 349,
+      "nStandard": 69,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.034,
+        "trend": -0.48,
+        "volRegime": -0.227,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.435,
+      "standardAvgPnl": -0.0292
+    },
+    "scenario:europe|sector:Leisure travel|direction:SHORT": {
+      "n": 170,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.013,
+        "trend": -0.643,
+        "volRegime": -0.294,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.441,
+      "standardAvgPnl": -0.0396
+    },
+    "sector:Leisure travel|direction:SHORT": {
+      "n": 170,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.013,
+        "trend": -0.643,
+        "volRegime": -0.294,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.441,
+      "standardAvgPnl": -0.0396
+    },
+    "scenario:europe|sector:Gas ETF|direction:LONG": {
+      "n": 86,
+      "nStandard": 16,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.337,
+        "trend": -0.4,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1582
+    },
+    "sector:Gas ETF|direction:LONG": {
+      "n": 86,
+      "nStandard": 16,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.337,
+        "trend": -0.4,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1582
+    },
+    "scenario:europe|sector:Uranium / nuclear|direction:LONG": {
+      "n": 51,
+      "nStandard": 6,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.56,
+        "trend": -0.736,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.167,
+      "standardAvgPnl": -0.0662
+    },
+    "scenario:europe|sector:Gold|direction:LONG": {
+      "n": 58,
+      "nStandard": 12,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.352,
+        "trend": -0.307,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1174
+    },
+    "sector:Gold|direction:LONG": {
+      "n": 116,
+      "nStandard": 24,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.354,
+        "trend": -0.307,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1174
+    },
+    "scenario:korea|sector:Defense|direction:LONG": {
+      "n": 664,
+      "nStandard": 134,
+      "componentCorrelations": {
+        "conviction": -0.163,
+        "scenario": 0,
+        "riskReward": 0.254,
+        "trend": 0.02,
+        "volRegime": 0.294,
+        "catalyst": -0.217,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.106,
+        "scenario": 0.087,
+        "riskReward": 0.305,
+        "trend": 0.106,
+        "volRegime": 0.211,
+        "catalyst": 0.068,
+        "memory": 0.117
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1068
+    },
+    "scenario:korea|direction:LONG": {
+      "n": 1352,
+      "nStandard": 267,
+      "componentCorrelations": {
+        "conviction": -0.334,
+        "scenario": 0,
+        "riskReward": -0.077,
+        "trend": 0.174,
+        "volRegime": -0.45,
+        "catalyst": -0.461,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.13,
+        "scenario": 0.107,
+        "riskReward": 0.118,
+        "trend": 0.346,
+        "volRegime": 0.072,
+        "catalyst": 0.084,
+        "memory": 0.144
+      },
+      "stopMult": 1.3,
+      "targetMult": 1.3,
+      "standardWinRate": 0.281,
+      "standardAvgPnl": 0.0027
+    },
+    "scenario:korea|sector:Drones / ISR|direction:LONG": {
+      "n": 164,
+      "nStandard": 33,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.381,
+        "trend": -0.102,
+        "volRegime": 0.089,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.113,
+        "scenario": 0.093,
+        "riskReward": 0.327,
+        "trend": 0.093,
+        "volRegime": 0.176,
+        "catalyst": 0.073,
+        "memory": 0.126
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1736
+    },
+    "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
+      "n": 229,
+      "nStandard": 46,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.216,
+        "trend": -0.039,
+        "volRegime": 0.194,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.108,
+        "scenario": 0.089,
+        "riskReward": 0.311,
+        "trend": 0.089,
+        "volRegime": 0.215,
+        "catalyst": 0.069,
+        "memory": 0.12
+      },
+      "stopMult": 1,
+      "targetMult": 1.5,
+      "standardWinRate": 0.978,
+      "standardAvgPnl": 0.31
+    },
+    "scenario:korea|sector:Foundry alternatives|direction:LONG": {
+      "n": 177,
+      "nStandard": 34,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.094,
+        "trend": -0.454,
+        "volRegime": -0.326,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1.3,
+      "targetMult": 1.5,
+      "standardWinRate": 0.853,
+      "standardAvgPnl": 0.2522
+    },
+    "scenario:korea|sector:Korea equity|direction:SHORT": {
+      "n": 226,
+      "nStandard": 45,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.217,
+        "trend": -0.049,
+        "volRegime": 0.744,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.118,
+        "scenario": 0.097,
+        "riskReward": 0.247,
+        "trend": 0.097,
+        "volRegime": 0.235,
+        "catalyst": 0.076,
+        "memory": 0.131
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.156,
+      "standardAvgPnl": -0.1168
+    },
+    "sector:Korea equity|direction:SHORT": {
+      "n": 226,
+      "nStandard": 45,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.217,
+        "trend": -0.049,
+        "volRegime": 0.744,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.118,
+        "scenario": 0.097,
+        "riskReward": 0.247,
+        "trend": 0.097,
+        "volRegime": 0.235,
+        "catalyst": 0.076,
+        "memory": 0.131
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.156,
+      "standardAvgPnl": -0.1168
+    },
+    "scenario:korea|direction:SHORT": {
+      "n": 672,
+      "nStandard": 135,
+      "componentCorrelations": {
+        "conviction": -0.344,
+        "scenario": 0,
+        "riskReward": 0.127,
+        "trend": 0.235,
+        "volRegime": 0.572,
+        "catalyst": 0.163,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.102,
+        "scenario": 0.084,
+        "riskReward": 0.155,
+        "trend": 0.198,
+        "volRegime": 0.203,
+        "catalyst": 0.145,
+        "memory": 0.113
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.193,
+      "standardAvgPnl": -0.0802
+    },
+    "scenario:korea|sector:Consumer hardware|direction:SHORT": {
+      "n": 211,
+      "nStandard": 43,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.011,
+        "trend": 0.382,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.135,
+        "trend": 0.339,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.141
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.163,
+      "standardAvgPnl": -0.0603
+    },
+    "scenario:korea|sector:AI / Semis|direction:SHORT": {
+      "n": 235,
+      "nStandard": 47,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.032,
+        "trend": 0.351,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.123,
+        "scenario": 0.101,
+        "riskReward": 0.166,
+        "trend": 0.327,
+        "volRegime": 0.068,
+        "catalyst": 0.079,
+        "memory": 0.136
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.255,
+      "standardAvgPnl": -0.0633
+    },
+    "scenario:korea|sector:Uranium / nuclear|direction:LONG": {
+      "n": 60,
+      "nStandard": 8,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": -0.505,
+        "trend": -0.661,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.18,
+        "scenario": 0.14,
+        "riskReward": 0.16,
+        "trend": 0.14,
+        "volRegime": 0.08,
+        "catalyst": 0.1,
+        "memory": 0.2
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0.125,
+      "standardAvgPnl": -0.0825
+    },
+    "scenario:korea|sector:Gold|direction:LONG": {
+      "n": 58,
+      "nStandard": 12,
+      "componentCorrelations": {
+        "conviction": 0,
+        "scenario": 0,
+        "riskReward": 0.356,
+        "trend": -0.307,
+        "volRegime": 0,
+        "catalyst": 0,
+        "memory": 0
+      },
+      "weights": {
+        "conviction": 0.127,
+        "scenario": 0.105,
+        "riskReward": 0.368,
+        "trend": 0.105,
+        "volRegime": 0.071,
+        "catalyst": 0.082,
+        "memory": 0.142
+      },
+      "stopMult": 1,
+      "targetMult": 1,
+      "standardWinRate": 0,
+      "standardAvgPnl": -0.1174
+    }
+  }
+}

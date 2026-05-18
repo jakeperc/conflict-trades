@@ -53,7 +53,19 @@ async function main() {
     return;
   }
 
-  console.error(`Unknown subcommand: ${cmd}. Use run|status|reset|backfill.`);
+  if (cmd === "simulate") {
+    const args = process.argv.slice(3);
+    const opts = {};
+    for (let i = 0; i < args.length; i++) {
+      if (args[i] === "--since" && args[i + 1]) { opts.startDate = args[++i]; }
+      else if (args[i] === "--max-trades" && args[i + 1]) { opts.maxTrades = Number(args[++i]); }
+    }
+    const result = await trader.runDeepSimulation(opts);
+    console.log(JSON.stringify(result, null, 2));
+    return;
+  }
+
+  console.error(`Unknown subcommand: ${cmd}. Use run|status|reset|backfill|simulate.`);
   process.exit(1);
 }
 

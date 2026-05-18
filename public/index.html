@@ -185,6 +185,60 @@
           </div>
         </div>
 
+        <section class="simulation-panel" id="simulationPanel" hidden>
+          <div class="panel-head simulation-head">
+            <div>
+              <h3>Simulation lab</h3>
+              <span class="panel-sub" id="simulationSubtitle">—</span>
+            </div>
+            <div class="simulation-kpis">
+              <div class="kpi-mini">
+                <span>Closed</span>
+                <strong class="mono" id="simClosed">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Win rate</span>
+                <strong class="mono" id="simWinRate">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Avg P&amp;L</span>
+                <strong class="mono" id="simAvgPnl">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Recalibrated</span>
+                <strong class="mono" id="simRecalibrated">—</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulation-grid">
+            <section class="panel sim-section-failure">
+              <div class="panel-head">
+                <h3>Failure modes</h3>
+                <span class="panel-sub">Why trades ended the way they did</span>
+              </div>
+              <div id="simFailureBar" class="failure-bar"></div>
+              <div id="simFailureLegend" class="failure-legend"></div>
+            </section>
+
+            <section class="panel sim-section-variants">
+              <div class="panel-head">
+                <h3>A/B variants</h3>
+                <span class="panel-sub">What stop/target widths actually worked</span>
+              </div>
+              <div id="simVariants" class="variant-grid"></div>
+            </section>
+
+            <section class="panel sim-section-buckets">
+              <div class="panel-head">
+                <h3>Recalibrated buckets</h3>
+                <span class="panel-sub">Live trades now use these per-bucket weights + stop/target multipliers</span>
+              </div>
+              <div id="simBuckets" class="bucket-grid"></div>
+            </section>
+          </div>
+        </section>
+
         <div class="trader-grid">
           <section class="panel panel-positions">
             <div class="panel-head">

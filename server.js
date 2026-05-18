@@ -85,9 +85,13 @@ const server = http.createServer(async (req, res) => {
     try {
       const state = trader.loadState();
       const memory = trader.loadMemory();
+      const simulation = trader.loadSimulation ? trader.loadSimulation() : null;
+      const calibration = trader.loadCalibration ? trader.loadCalibration() : null;
       getJson(res, 200, {
         state,
-        memory: { ...memory, summary: trader.summarizeMemory(memory) }
+        memory: { ...memory, summary: trader.summarizeMemory(memory) },
+        simulation,
+        calibration: calibration ? { generatedAt: calibration.generatedAt, fromTrades: calibration.fromTrades, perBucket: calibration.perBucket } : null
       });
     } catch (error) {
       getJson(res, 500, { error: "Failed to load trader state.", detail: error.message });

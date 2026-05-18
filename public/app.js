@@ -398,6 +398,190 @@ function renderTrader(data) {
   renderTraderClosed(state.closedTrades.slice(-10).reverse());
   renderTraderWatchlist(state.lastWatchlist || []);
   renderTraderMemory(memory?.summary || { top: [], bottom: [] });
+  renderSimulation(data.simulation, data.calibration);
+}
+
+const FAILURE_LABELS = {
+  target_hit: "Target hit clean",
+  target_undershoot: "Target too modest",
+  stop_overshoot: "Stop too tight",
+  stop_hit_quick: "Stopped within 5d",
+  stop_hit_late: "Stopped late",
+  horizon_drift_winner: "Drifted (winner)",
+  horizon_drift_loser: "Drifted (loser)"
+};
+const FAILURE_COLORS = {
+  target_hit: "long",
+  target_undershoot: "warn",
+  stop_overshoot: "warn",
+  stop_hit_quick: "short",
+  stop_hit_late: "short",
+  horizon_drift_winner: "long-dim",
+  horizon_drift_loser: "short-dim"
+};
+
+const COMPONENT_LABELS = {
+  conviction: "Conviction",
+  scenario: "Scenario",
+  riskReward: "Risk/Reward",
+  trend: "Trend",
+  volRegime: "Vol regime",
+  catalyst: "Catalyst",
+  memory: "Memory"
+};
+
+const DEFAULT_WEIGHTS = {
+  conviction: 0.18, scenario: 0.14, riskReward: 0.16,
+  trend: 0.14, volRegime: 0.08, catalyst: 0.10, memory: 0.20
+};
+
+function renderSimulation(sim, calibration) {
+  const panel = document.getElementById("simulationPanel");
+  if (!panel) return;
+  if (!sim || !sim.closedCount) {
+    panel.hidden = true;
+    return;
+  }
+  panel.hidden = false;
+
+  const subtitle = document.getElementById("simulationSubtitle");
+  if (subtitle) {
+    const since = sim.startDate ? new Date(sim.startDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "—";
+    subtitle.textContent = `${sim.closedCount.toLocaleString()} simulated trades since ${since} · ${sim.tradingDays} trading days`;
+  }
+  document.getElementById("simClosed").textContent = sim.closedCount.toLocaleString();
+  document.getElementById("simWinRate").textContent = `${(sim.overallWinRate * 100).toFixed(1)}%`;
+  const avg = document.getElementById("simAvgPnl");
+  avg.textContent = `${(sim.overallAvgPnlPct * 100).toFixed(2)}%`;
+  avg.className = "mono " + (sim.overallAvgPnlPct >= 0 ? "positive" : "negative");
+  document.getElementById("simRecalibrated").textContent = sim.recalibratedBuckets || 0;
+
+  renderFailureBar(sim.failureMode || {}, sim.closedCount);
+  renderVariantStats(sim.variantStats || {});
+  renderRecalibratedBuckets(calibration?.perBucket || {}, sim.topRecalibrationSignals || []);
+}
+
+function renderFailureBar(failureMode, total) {
+  const bar = document.getElementById("simFailureBar");
+  const legend = document.getElementById("simFailureLegend");
+  if (!bar || !legend) return;
+  bar.innerHTML = "";
+  legend.innerHTML = "";
+  const order = [
+    "target_hit", "target_undershoot",
+    "horizon_drift_winner", "horizon_drift_loser",
+    "stop_overshoot", "stop_hit_quick", "stop_hit_late"
+  ];
+  for (const kind of order) {
+    const n = failureMode[kind] || 0;
+    if (!n) continue;
+    const pct = (n / total) * 100;
+    const seg = document.createElement("div");
+    seg.className = `failure-seg failure-${FAILURE_COLORS[kind]}`;
+    seg.style.flex = `${pct} 0 0`;
+    seg.title = `${FAILURE_LABELS[kind]}: ${n} (${pct.toFixed(1)}%)`;
+    bar.appendChild(seg);
+
+    const li = document.createElement("div");
+    li.className = "legend-item";
+    li.innerHTML = `
+      <span class="legend-dot failure-${FAILURE_COLORS[kind]}"></span>
+      <span class="legend-label">${FAILURE_LABELS[kind]}</span>
+      <span class="legend-pct mono">${pct.toFixed(1)}%</span>
+      <span class="legend-n mono">n=${n.toLocaleString()}</span>
+    `;
+    legend.appendChild(li);
+  }
+}
+
+function renderVariantStats(variants) {
+  const grid = document.getElementById("simVariants");
+  if (!grid) return;
+  grid.innerHTML = "";
+  const order = ["tight_stop", "standard", "wide_stop", "tight_target", "wide_target"];
+  const labels = {
+    standard: "Standard",
+    tight_stop: "Tight stop ×0.7",
+    wide_stop: "Wide stop ×1.3",
+    tight_target: "Tight target ×0.7",
+    wide_target: "Wide target ×1.3"
+  };
+  const stdRate = variants.standard?.winRate ?? 0;
+  for (const k of order) {
+    const v = variants[k];
+    if (!v) continue;
+    const delta = v.winRate - stdRate;
+    const deltaClass = delta > 0.02 ? "positive" : delta < -0.02 ? "negative" : "neutral";
+    const isStd = k === "standard";
+    const card = document.createElement("div");
+    card.className = `variant-card${isStd ? " variant-standard" : ""}`;
+    card.innerHTML = `
+      <div class="variant-label">${labels[k]}</div>
+      <div class="variant-stats">
+        <span class="mono variant-winrate">${(v.winRate * 100).toFixed(1)}%</span>
+        ${!isStd ? `<span class="mono variant-delta ${deltaClass}">${delta >= 0 ? "+" : ""}${(delta * 100).toFixed(1)}pp</span>` : ""}
+      </div>
+      <div class="variant-meta mono">n=${v.n.toLocaleString()} · avg ${(v.avgPnlPct * 100).toFixed(2)}%</div>
+    `;
+    grid.appendChild(card);
+  }
+}
+
+function renderRecalibratedBuckets(perBucket, topSignals) {
+  const grid = document.getElementById("simBuckets");
+  if (!grid) return;
+  grid.innerHTML = "";
+
+  const entries = Object.entries(perBucket || {})
+    .filter(([k]) => k.split("|").length === 3) // most-specific buckets only
+    .sort((a, b) => b[1].n - a[1].n)
+    .slice(0, 8);
+
+  if (!entries.length) {
+    grid.innerHTML = '<p class="muted-cell">No buckets had enough samples to recalibrate.</p>';
+    return;
+  }
+
+  entries.forEach(([key, b]) => {
+    const card = document.createElement("article");
+    card.className = "bucket-card";
+    const keyParts = key.split("|").map((p) => p.split(":")[1]).join(" · ");
+    const stopMult = b.stopMult || 1;
+    const targetMult = b.targetMult || 1;
+    const stopBadge = stopMult !== 1 ? `<span class="bucket-mult ${stopMult > 1 ? "positive" : "negative"}">stop ×${stopMult.toFixed(2)}</span>` : "";
+    const targetBadge = targetMult !== 1 ? `<span class="bucket-mult ${targetMult > 1 ? "positive" : "negative"}">target ×${targetMult.toFixed(2)}</span>` : "";
+    const weightBars = Object.entries(b.weights || {}).map(([comp, w]) => {
+      const dflt = DEFAULT_WEIGHTS[comp] || 0;
+      const delta = w - dflt;
+      const dCls = delta > 0.01 ? "positive" : delta < -0.01 ? "negative" : "neutral";
+      const widthPct = (w * 100).toFixed(1);
+      return `
+        <div class="weight-row" title="${COMPONENT_LABELS[comp]}">
+          <span class="weight-label">${comp.slice(0, 4)}</span>
+          <div class="weight-track">
+            <div class="weight-fill" style="width:${widthPct}%"></div>
+          </div>
+          <span class="weight-value mono ${dCls}">${(w * 100).toFixed(1)}${delta !== 0 ? ` (${delta > 0 ? "+" : ""}${(delta * 100).toFixed(1)})` : ""}</span>
+        </div>`;
+    }).join("");
+    const winClass = (b.standardWinRate || 0) >= 0.5 ? "positive" : "negative";
+    card.innerHTML = `
+      <div class="bucket-head">
+        <div class="bucket-key">${keyParts}</div>
+        <div class="bucket-badges">
+          ${stopBadge}
+          ${targetBadge}
+        </div>
+      </div>
+      <div class="bucket-stats mono">
+        <span>n=${b.n}</span>
+        <span class="${winClass}">${((b.standardWinRate||0)*100).toFixed(0)}% win</span>
+        <span class="${(b.standardAvgPnl||0)>=0?'positive':'negative'}">avg ${((b.standardAvgPnl||0)*100).toFixed(1)}%</span>
+      </div>
+      <div class="weight-grid">${weightBars}</div>
+    `;
+    grid.appendChild(card);
+  });
 }
 
 const expandedPositionIds = new Set();
