@@ -400,6 +400,8 @@ function renderTrader(data) {
   renderTraderMemory(memory?.summary || { top: [], bottom: [] });
 }
 
+const expandedPositionIds = new Set();
+
 function renderTraderOpen(positions) {
   const body = document.getElementById("traderOpenBody");
   body.innerHTML = "";
@@ -408,12 +410,19 @@ function renderTraderOpen(positions) {
     return;
   }
   positions.forEach((pos) => {
-    const row = document.createElement("tr");
     const pctClass = pos.unrealizedPct >= 0 ? "positive" : "negative";
     const score = pos.finalScoreAtEntry ?? Math.round((pos.confidenceAtEntry || 0) * 100);
     const scoreClass = scoreColorClass(score);
+    const wasExpanded = expandedPositionIds.has(pos.id);
+
+    const row = document.createElement("tr");
+    row.className = `position-row${wasExpanded ? " expanded" : ""}`;
+    row.dataset.positionId = pos.id;
     row.innerHTML = `
-      <td class="ticker-cell"><strong>${pos.ticker}</strong></td>
+      <td class="ticker-cell">
+        <span class="row-chevron">${wasExpanded ? "▾" : "▸"}</span>
+        <strong>${pos.ticker}</strong>
+      </td>
       <td>${pos.scenarioTitle || pos.scenario}</td>
       <td><span class="direction-badge ${pos.direction.toLowerCase()}">${pos.direction}</span></td>
       <td class="num">${formatCurrency(pos.entryPrice)}</td>
@@ -424,8 +433,157 @@ function renderTraderOpen(positions) {
       <td class="num ${pctClass}">${(pos.unrealizedPct * 100).toFixed(2)}%</td>
       <td class="num"><span class="score-cell ${scoreClass}">${score.toFixed(0)}</span></td>
     `;
+    row.addEventListener("click", () => togglePositionDetail(row, pos));
     body.appendChild(row);
+    if (wasExpanded) {
+      body.appendChild(buildPositionDetailRow(pos));
+    }
   });
+}
+
+function togglePositionDetail(row, pos) {
+  const next = row.nextElementSibling;
+  const isExpanded = next && next.classList.contains("position-detail");
+  if (isExpanded) {
+    next.remove();
+    row.classList.remove("expanded");
+    expandedPositionIds.delete(pos.id);
+    const chev = row.querySelector(".row-chevron");
+    if (chev) chev.textContent = "▸";
+    return;
+  }
+  row.classList.add("expanded");
+  expandedPositionIds.add(pos.id);
+  const chev = row.querySelector(".row-chevron");
+  if (chev) chev.textContent = "▾";
+  row.parentNode.insertBefore(buildPositionDetailRow(pos), row.nextSibling);
+}
+
+function buildPositionDetailRow(pos) {
+  const detail = document.createElement("tr");
+  detail.className = "position-detail";
+  detail.innerHTML = `<td colspan="10">${renderPositionDetail(pos)}</td>`;
+  return detail;
+}
+
+function renderPositionDetail(pos) {
+  const score = pos.finalScoreAtEntry ?? Math.round((pos.confidenceAtEntry || 0) * 100);
+  const scoreClass = scoreColorClass(score);
+  const components = pos.componentsAtEntry || {};
+  const componentsHtml = COMPONENT_ORDER.map(([key, label]) => {
+    const val = components[key] ?? 0;
+    return `
+      <div class="score-bar" title="${key}">
+        <span class="score-bar-label">${label}</span>
+        <div class="score-bar-track">
+          <div class="score-bar-fill ${fillColorClass(val)}" style="width:${val}%"></div>
+        </div>
+        <span class="score-bar-value">${val.toFixed(0)}</span>
+      </div>`;
+  }).join("");
+
+  const memAdj = pos.memoryAdjustmentsAtEntry || [];
+  const memRows = memAdj.length
+    ? memAdj
+        .sort((a, b) => Math.abs(b.factor - 1) - Math.abs(a.factor - 1))
+        .slice(0, 6)
+        .map((m) => {
+          const factorTone = m.factor >= 1.05 ? "positive" : m.factor <= 0.95 ? "negative" : "";
+          return `
+            <tr>
+              <td class="memory-key">${m.key}</td>
+              <td class="num">${m.n}</td>
+              <td class="num">${(m.winRate * 100).toFixed(0)}%</td>
+              <td class="num">${(m.avgPct * 100).toFixed(1)}%</td>
+              <td class="num ${factorTone}">×${m.factor.toFixed(2)}</td>
+            </tr>`;
+        })
+        .join("")
+    : '<tr><td colspan="5" class="muted-cell">No memory edges contributed (no patterns with n≥3 at entry time).</td></tr>';
+
+  const allocated = pos.allocatedCash != null ? formatCurrency(pos.allocatedCash) : "—";
+  const sharesStr = pos.shares != null ? pos.shares.toFixed(4) : "—";
+  const heldDays =
+    pos.entryDate != null
+      ? Math.max(0, Math.floor((Date.now() - Date.parse(pos.entryDate)) / 86400000))
+      : "—";
+  const horizonRemaining =
+    pos.horizonDays != null && heldDays !== "—"
+      ? Math.max(0, pos.horizonDays - heldDays)
+      : "—";
+  const divPenalty = pos.diversificationPenaltyAtEntry ?? 0;
+
+  return `
+    <div class="position-detail-grid">
+      <div class="detail-section detail-score">
+        <div class="detail-score-head">
+          <div>
+            <span class="detail-tag">Composite at entry</span>
+            <div class="detail-score-row">
+              <span class="watchlist-score-value ${scoreClass}">${score.toFixed(0)}</span>
+              <span class="detail-score-meta">/ 100</span>
+            </div>
+          </div>
+          <div class="detail-mem-mult">
+            <span class="detail-tag">Memory multiplier</span>
+            <strong class="mono">×${(pos.memoryMultAtEntry || 1).toFixed(2)}</strong>
+          </div>
+        </div>
+        <div class="watchlist-components detail-components">${componentsHtml}</div>
+        ${divPenalty > 0 ? `<div class="detail-penalty">Diversification penalty applied at entry: <strong class="mono negative">−${divPenalty.toFixed(0)}</strong> pts</div>` : ""}
+      </div>
+
+      <div class="detail-section detail-thesis">
+        <span class="detail-tag">Thesis</span>
+        <p class="detail-prose">${pos.thesis || "—"}</p>
+        <div class="detail-thesis-grid">
+          <div>
+            <span class="detail-sublabel">Catalyst</span>
+            <p>${pos.catalyst || "—"}</p>
+          </div>
+          <div>
+            <span class="detail-sublabel">Thesis breaker</span>
+            <p>${pos.thesisBreaker || "—"}</p>
+          </div>
+          <div>
+            <span class="detail-sublabel">Pair trade</span>
+            <p class="mono">${pos.pairTrade || "—"}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section detail-math">
+        <span class="detail-tag">Position math</span>
+        <table class="detail-math-table">
+          <tbody>
+            <tr><td>Entered</td><td class="num mono">${pos.entryDate || "—"}</td></tr>
+            <tr><td>Days held</td><td class="num mono">${heldDays}</td></tr>
+            <tr><td>Horizon left</td><td class="num mono">${horizonRemaining} / ${pos.horizonDays ?? "—"}d</td></tr>
+            <tr><td>Allocated</td><td class="num mono">${allocated}</td></tr>
+            <tr><td>Shares</td><td class="num mono">${sharesStr}</td></tr>
+            <tr><td>Heat at entry</td><td class="num mono">${pos.heatAtEntry ?? "—"}</td></tr>
+            <tr><td>Conviction</td><td class="num mono">${pos.conviction}/5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="detail-section detail-memory">
+        <span class="detail-tag">Memory edges at entry</span>
+        <table class="detail-memory-table">
+          <thead>
+            <tr>
+              <th>Pattern</th>
+              <th class="num">n</th>
+              <th class="num">Win%</th>
+              <th class="num">Avg P&L</th>
+              <th class="num">Weight</th>
+            </tr>
+          </thead>
+          <tbody>${memRows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
 }
 
 function scoreColorClass(score) {

@@ -897,6 +897,200 @@ a:hover { text-decoration: underline; }
 .score-cell.score-high { color: var(--accent); background: var(--accent-soft); }
 .score-cell.score-elite { color: var(--long); background: var(--long-soft); }
 
+/* ----- Expandable open-position rows ----- */
+
+.position-row { cursor: pointer; }
+.position-row:hover { background: var(--surface-hi); }
+.position-row.expanded {
+  background: var(--surface-elev);
+  border-left: 2px solid var(--accent);
+}
+.position-row.expanded td:first-child { padding-left: 8px; }
+
+.row-chevron {
+  display: inline-block;
+  width: 12px;
+  color: var(--text-muted);
+  font-size: 10px;
+  margin-right: 6px;
+  transition: color 0.1s;
+}
+.position-row:hover .row-chevron { color: var(--accent); }
+.position-row.expanded .row-chevron { color: var(--accent); }
+
+.position-detail > td {
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-1);
+}
+
+.position-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.7fr;
+  grid-template-areas:
+    "score thesis math"
+    "memory thesis math";
+  gap: 1px;
+  background: var(--line-soft);
+}
+
+.detail-section {
+  padding: 14px 16px;
+  background: var(--bg-1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-score { grid-area: score; }
+.detail-thesis { grid-area: thesis; }
+.detail-math { grid-area: math; }
+.detail-memory { grid-area: memory; }
+
+.detail-tag {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.detail-score-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.detail-score-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.detail-score-row .watchlist-score-value {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.detail-score-meta {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+.detail-mem-mult {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+.detail-mem-mult strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-components {
+  margin-top: 4px;
+}
+
+.detail-penalty {
+  margin-top: 4px;
+  padding: 6px 8px;
+  background: var(--short-soft);
+  border: 1px solid var(--short-line);
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.detail-prose {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.detail-thesis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 4px;
+}
+.detail-thesis-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.detail-sublabel {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.detail-thesis-grid p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.detail-math-table,
+.detail-memory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.detail-math-table td,
+.detail-memory-table td,
+.detail-memory-table th {
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.detail-math-table td:first-child,
+.detail-memory-table th:first-child,
+.detail-memory-table td:first-child {
+  color: var(--text-muted);
+  text-align: left;
+}
+.detail-memory-table th {
+  font-weight: 500;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-align: right;
+}
+.detail-memory-table th:first-child { text-align: left; }
+.detail-memory-table .memory-key {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  word-break: break-all;
+}
+
+@media (max-width: 1300px) {
+  .position-detail-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "score thesis"
+      "memory math";
+  }
+}
+@media (max-width: 900px) {
+  .position-detail-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "score"
+      "thesis"
+      "math"
+      "memory";
+  }
+  .detail-thesis-grid { grid-template-columns: 1fr; }
+}
+
 /* ----- Watchlist ----- */
 
 .watchlist {
