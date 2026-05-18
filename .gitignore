@@ -1,0 +1,11 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Cache from chokepoint/policy commands (raw API responses)
+data/cache/
+
+# Local-only secrets
+.env
+.env.local

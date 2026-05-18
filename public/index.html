@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conflict Scenario Market Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop backdrop-one"></div>
+    <div class="backdrop backdrop-two"></div>
+
+    <main class="shell">
+      <section class="command-bar">
+        <div class="command-pill">
+          <span class="meta-label">Mode</span>
+          <strong>Scenario Command Center</strong>
+        </div>
+        <div class="command-pill">
+          <span class="meta-label">Build</span>
+          <strong id="buildVersion">Waiting</strong>
+        </div>
+        <div class="command-pill">
+          <span class="meta-label">Top pair</span>
+          <strong id="topPairTrade">Waiting</strong>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Live Geopolitical Scenario Lab</p>
+          <h1>Conflict Scenario Market Dashboard</h1>
+          <p class="lede">
+            A local, refreshable research dashboard for Iran chokepoints, China /
+            Taiwan escalation, and Russia / NATO / Western Europe stress.
+          </p>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Status</span>
+              <strong id="statusText">Connecting to live feeds</strong>
+            </div>
+            <div>
+              <span class="meta-label">Last refresh</span>
+              <strong id="lastRefresh">Waiting</strong>
+            </div>
+          </div>
+
+          <div class="change-card">
+            <span class="meta-label">What Changed</span>
+            <div id="changeList" class="change-list"></div>
+          </div>
+
+          <div class="hero-actions">
+            <button id="refreshButton" class="refresh-button">Refresh Live Update</button>
+            <p class="microcopy">
+              Pulls current headlines and quote history, then recalculates risk bands.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-grid" id="overviewGrid"></section>
+
+      <section class="tabs-card">
+        <div class="tabs-header">
+          <div>
+            <p class="eyebrow">Scenario Tabs</p>
+            <h2 id="scenarioTitle">Loading</h2>
+          </div>
+          <div class="tab-strip" id="tabStrip"></div>
+        </div>
+
+        <div class="scenario-topline">
+          <div class="signal-card">
+            <span class="signal-label">Scenario heat</span>
+            <div class="signal-value-row">
+              <strong id="heatValue">--</strong>
+              <span>/ 100</span>
+            </div>
+            <div class="meter">
+              <div id="heatBar" class="meter-fill"></div>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <p id="scenarioSubtitle" class="scenario-subtitle"></p>
+            <p id="scenarioSummary" class="scenario-summary"></p>
+            <div id="subScoreGrid" class="subscore-grid"></div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Market Transmission</h3>
+              <span>Primary indicators and second-order effects</span>
+            </div>
+            <div id="indicatorGrid" class="indicator-grid"></div>
+            <div class="effects-block">
+              <h4>Second-Order Effects</h4>
+              <div id="effectsList" class="effects-list"></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Top Trades</h3>
+              <div class="trade-controls">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="LONG">Long</button>
+                <button class="filter-chip" data-filter="SHORT">Short</button>
+                <button class="filter-chip" data-filter="Defense">Defense</button>
+                <button class="filter-chip" data-filter="Energy">Energy</button>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Sector</th>
+                    <th>Direction</th>
+                    <th>Price</th>
+                    <th>Upside</th>
+                    <th>Downside</th>
+                    <th>Horizon</th>
+                    <th>Pair Trade</th>
+                    <th>Target</th>
+                    <th>Stop</th>
+                    <th>R/R</th>
+                  </tr>
+                </thead>
+                <tbody id="tradeTableBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Live Headlines</h3>
+              <span>Current scenario signal inputs</span>
+            </div>
+            <div id="headlineList" class="headline-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="method-card">
+        <div>
+          <p class="eyebrow">Method</p>
+          <p id="methodologyText"></p>
+        </div>
+        <div>
+          <p class="eyebrow">Disclaimer</p>
+          <p id="disclaimerText"></p>
+        </div>
+      </section>
+    </main>
+
+    <template id="tradeRowTemplate">
+      <tr>
+        <td class="ticker-cell">
+          <strong class="ticker"></strong>
+          <p class="thesis"></p>
+        </td>
+        <td class="sector"></td>
+        <td class="direction"></td>
+        <td class="price"></td>
+        <td class="upside"></td>
+        <td class="downside"></td>
+        <td class="horizon"></td>
+        <td class="pairTrade"></td>
+        <td class="target"></td>
+        <td class="stop"></td>
+        <td class="rr"></td>
+      </tr>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
