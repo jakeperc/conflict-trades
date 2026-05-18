@@ -1,0 +1,1286 @@
+{
+  "noCal": {
+    "useCalibration": false,
+    "startDate": "2026-02-28",
+    "endDate": "2026-05-15",
+    "tradingDays": 54,
+    "startingEquity": 10000,
+    "finalEquity": 10620.42,
+    "pctReturn": 0.062,
+    "peakEquity": 12067.37,
+    "troughEquity": 10000,
+    "maxDrawdown": -0.1713,
+    "closedCount": 10,
+    "winCount": 4,
+    "winRate": 0.4,
+    "openCount": 5,
+    "equityCurve": [
+      {
+        "date": "2026-03-02",
+        "cash": 1000,
+        "openMtM": 9000,
+        "totalEquity": 10000
+      },
+      {
+        "date": "2026-03-03",
+        "cash": 1000,
+        "openMtM": 9066.91,
+        "totalEquity": 10066.91
+      },
+      {
+        "date": "2026-03-04",
+        "cash": 1000,
+        "openMtM": 9080.53,
+        "totalEquity": 10080.53
+      },
+      {
+        "date": "2026-03-05",
+        "cash": 1000,
+        "openMtM": 9294.95,
+        "totalEquity": 10294.95
+      },
+      {
+        "date": "2026-03-06",
+        "cash": 1000,
+        "openMtM": 9777.22,
+        "totalEquity": 10777.22
+      },
+      {
+        "date": "2026-03-09",
+        "cash": 1000,
+        "openMtM": 9581.08,
+        "totalEquity": 10581.08
+      },
+      {
+        "date": "2026-03-10",
+        "cash": 1000,
+        "openMtM": 9550.69,
+        "totalEquity": 10550.69
+      },
+      {
+        "date": "2026-03-11",
+        "cash": 1000,
+        "openMtM": 9753.65,
+        "totalEquity": 10753.65
+      },
+      {
+        "date": "2026-03-12",
+        "cash": 2170.03,
+        "openMtM": 9097.42,
+        "totalEquity": 11267.45
+      },
+      {
+        "date": "2026-03-13",
+        "cash": 2170.03,
+        "openMtM": 9146.01,
+        "totalEquity": 11316.05
+      },
+      {
+        "date": "2026-03-16",
+        "cash": 2170.03,
+        "openMtM": 9122.8,
+        "totalEquity": 11292.84
+      },
+      {
+        "date": "2026-03-17",
+        "cash": 2170.03,
+        "openMtM": 9112.83,
+        "totalEquity": 11282.86
+      },
+      {
+        "date": "2026-03-18",
+        "cash": 2170.03,
+        "openMtM": 9275.57,
+        "totalEquity": 11445.6
+      },
+      {
+        "date": "2026-03-19",
+        "cash": 2170.03,
+        "openMtM": 9433.32,
+        "totalEquity": 11603.35
+      },
+      {
+        "date": "2026-03-20",
+        "cash": 2170.03,
+        "openMtM": 9504.49,
+        "totalEquity": 11674.52
+      },
+      {
+        "date": "2026-03-23",
+        "cash": 2170.03,
+        "openMtM": 9526.33,
+        "totalEquity": 11696.36
+      },
+      {
+        "date": "2026-03-24",
+        "cash": 2170.03,
+        "openMtM": 9617.58,
+        "totalEquity": 11787.61
+      },
+      {
+        "date": "2026-03-25",
+        "cash": 2170.03,
+        "openMtM": 9472.63,
+        "totalEquity": 11642.66
+      },
+      {
+        "date": "2026-03-26",
+        "cash": 2170.03,
+        "openMtM": 9687.49,
+        "totalEquity": 11857.53
+      },
+      {
+        "date": "2026-03-27",
+        "cash": 2170.03,
+        "openMtM": 9849.54,
+        "totalEquity": 12019.58
+      },
+      {
+        "date": "2026-03-30",
+        "cash": 2170.03,
+        "openMtM": 9897.34,
+        "totalEquity": 12067.37
+      },
+      {
+        "date": "2026-03-31",
+        "cash": 2170.03,
+        "openMtM": 9603.54,
+        "totalEquity": 11773.57
+      },
+      {
+        "date": "2026-04-01",
+        "cash": 2170.03,
+        "openMtM": 9320.66,
+        "totalEquity": 11490.69
+      },
+      {
+        "date": "2026-04-02",
+        "cash": 2170.03,
+        "openMtM": 9383.94,
+        "totalEquity": 11553.98
+      },
+      {
+        "date": "2026-04-06",
+        "cash": 2170.03,
+        "openMtM": 9399.84,
+        "totalEquity": 11569.88
+      },
+      {
+        "date": "2026-04-07",
+        "cash": 2170.03,
+        "openMtM": 9451.87,
+        "totalEquity": 11621.91
+      },
+      {
+        "date": "2026-04-08",
+        "cash": 2170.03,
+        "openMtM": 9066.46,
+        "totalEquity": 11236.5
+      },
+      {
+        "date": "2026-04-09",
+        "cash": 1982.89,
+        "openMtM": 9138.55,
+        "totalEquity": 11121.45
+      },
+      {
+        "date": "2026-04-10",
+        "cash": 1982.89,
+        "openMtM": 9071.37,
+        "totalEquity": 11054.26
+      },
+      {
+        "date": "2026-04-13",
+        "cash": 1385.15,
+        "openMtM": 9626.67,
+        "totalEquity": 11011.82
+      },
+      {
+        "date": "2026-04-14",
+        "cash": 1385.15,
+        "openMtM": 9457.59,
+        "totalEquity": 10842.74
+      },
+      {
+        "date": "2026-04-15",
+        "cash": 1385.15,
+        "openMtM": 9398.22,
+        "totalEquity": 10783.36
+      },
+      {
+        "date": "2026-04-16",
+        "cash": 1385.15,
+        "openMtM": 9478.91,
+        "totalEquity": 10864.05
+      },
+      {
+        "date": "2026-04-17",
+        "cash": 1385.15,
+        "openMtM": 9221.21,
+        "totalEquity": 10606.36
+      },
+      {
+        "date": "2026-04-20",
+        "cash": 1385.15,
+        "openMtM": 9192.34,
+        "totalEquity": 10577.49
+      },
+      {
+        "date": "2026-04-21",
+        "cash": 1385.15,
+        "openMtM": 9325.36,
+        "totalEquity": 10710.5
+      },
+      {
+        "date": "2026-04-22",
+        "cash": 1187.78,
+        "openMtM": 9548.1,
+        "totalEquity": 10735.88
+      },
+      {
+        "date": "2026-04-23",
+        "cash": 1187.78,
+        "openMtM": 9709.42,
+        "totalEquity": 10897.19
+      },
+      {
+        "date": "2026-04-24",
+        "cash": 2690.48,
+        "openMtM": 7946.21,
+        "totalEquity": 10636.69
+      },
+      {
+        "date": "2026-04-27",
+        "cash": 2766.18,
+        "openMtM": 7907.2,
+        "totalEquity": 10673.39
+      },
+      {
+        "date": "2026-04-28",
+        "cash": 2766.18,
+        "openMtM": 7979.63,
+        "totalEquity": 10745.81
+      },
+      {
+        "date": "2026-04-29",
+        "cash": 2766.18,
+        "openMtM": 8213.44,
+        "totalEquity": 10979.62
+      },
+      {
+        "date": "2026-04-30",
+        "cash": 2766.18,
+        "openMtM": 8251.15,
+        "totalEquity": 11017.33
+      },
+      {
+        "date": "2026-05-01",
+        "cash": 2766.18,
+        "openMtM": 8092.94,
+        "totalEquity": 10859.12
+      },
+      {
+        "date": "2026-05-04",
+        "cash": 2766.18,
+        "openMtM": 8174.19,
+        "totalEquity": 10940.38
+      },
+      {
+        "date": "2026-05-05",
+        "cash": 2766.18,
+        "openMtM": 8065.25,
+        "totalEquity": 10831.44
+      },
+      {
+        "date": "2026-05-06",
+        "cash": 2766.18,
+        "openMtM": 7904.63,
+        "totalEquity": 10670.81
+      },
+      {
+        "date": "2026-05-07",
+        "cash": 2766.18,
+        "openMtM": 7717.61,
+        "totalEquity": 10483.79
+      },
+      {
+        "date": "2026-05-08",
+        "cash": 2766.18,
+        "openMtM": 7677.62,
+        "totalEquity": 10443.8
+      },
+      {
+        "date": "2026-05-11",
+        "cash": 1409.51,
+        "openMtM": 9222.56,
+        "totalEquity": 10632.07
+      },
+      {
+        "date": "2026-05-12",
+        "cash": 1409.51,
+        "openMtM": 9355.82,
+        "totalEquity": 10765.33
+      },
+      {
+        "date": "2026-05-13",
+        "cash": 1409.51,
+        "openMtM": 9162.42,
+        "totalEquity": 10571.93
+      },
+      {
+        "date": "2026-05-14",
+        "cash": 1409.51,
+        "openMtM": 9168.76,
+        "totalEquity": 10578.27
+      },
+      {
+        "date": "2026-05-15",
+        "cash": 1409.51,
+        "openMtM": 9210.91,
+        "totalEquity": 10620.42
+      }
+    ],
+    "closedTrades": [
+      {
+        "ticker": "BNO",
+        "sector": "Brent ETF",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 37.34,
+        "exitDate": "2026-03-12",
+        "exitPrice": 48.25,
+        "exitReason": "target_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 525.92,
+        "realizedPct": 0.2922,
+        "holdingDays": 10,
+        "outcome": "win",
+        "scoreAtEntry": 72,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "USO",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 87.19,
+        "exitDate": "2026-03-12",
+        "exitPrice": 118.39,
+        "exitReason": "target_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 644.11,
+        "realizedPct": 0.3578,
+        "holdingDays": 10,
+        "outcome": "win",
+        "scoreAtEntry": 68,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "TSM",
+        "sector": "Semiconductor manufacturing",
+        "direction": "SHORT",
+        "scenario": "taiwan",
+        "conviction": 5,
+        "entryDate": "2026-03-12",
+        "entryPrice": 336.71,
+        "exitDate": "2026-04-09",
+        "exitPrice": 365.49,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -153.85,
+        "realizedPct": -0.0855,
+        "holdingDays": 28,
+        "outcome": "loss",
+        "scoreAtEntry": 72,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "AAPL",
+        "sector": "Consumer hardware",
+        "direction": "SHORT",
+        "scenario": "taiwan",
+        "conviction": 4,
+        "entryDate": "2026-03-12",
+        "entryPrice": 255.76,
+        "exitDate": "2026-04-09",
+        "exitPrice": 260.49,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -33.29,
+        "realizedPct": -0.0185,
+        "holdingDays": 28,
+        "outcome": "loss",
+        "scoreAtEntry": 67.2,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "XOM",
+        "sector": "Energy",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 5,
+        "entryDate": "2026-03-02",
+        "entryPrice": 154.22,
+        "exitDate": "2026-04-13",
+        "exitPrice": 152.64,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -18.44,
+        "realizedPct": -0.0102,
+        "holdingDays": 42,
+        "outcome": "loss",
+        "scoreAtEntry": 80.5,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "CVX",
+        "sector": "Energy",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 189.6,
+        "exitDate": "2026-04-13",
+        "exitPrice": 191.78,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 20.7,
+        "realizedPct": 0.0115,
+        "holdingDays": 42,
+        "outcome": "win",
+        "scoreAtEntry": 59.3,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "RTX",
+        "sector": "Defense",
+        "direction": "LONG",
+        "scenario": "europe",
+        "conviction": 5,
+        "entryDate": "2026-04-09",
+        "entryPrice": 203.19,
+        "exitDate": "2026-04-22",
+        "exitPrice": 180.91,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -197.37,
+        "realizedPct": -0.1097,
+        "holdingDays": 13,
+        "outcome": "loss",
+        "scoreAtEntry": 68.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "QCOM",
+        "sector": "Handsets",
+        "direction": "SHORT",
+        "scenario": "taiwan",
+        "conviction": 3,
+        "entryDate": "2026-04-09",
+        "entryPrice": 127.75,
+        "exitDate": "2026-04-24",
+        "exitPrice": 148.85,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -297.3,
+        "realizedPct": -0.1652,
+        "holdingDays": 15,
+        "outcome": "loss",
+        "scoreAtEntry": 68,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "LNG",
+        "sector": "Gas / LNG",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 248.93,
+        "exitDate": "2026-04-27",
+        "exitPrice": 259.4,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 75.71,
+        "realizedPct": 0.0421,
+        "holdingDays": 56,
+        "outcome": "win",
+        "scoreAtEntry": 61.3,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "COP",
+        "sector": "Energy",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-04-13",
+        "entryPrice": 123.62,
+        "exitDate": "2026-05-11",
+        "exitPrice": 115.55,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 2400,
+        "realizedPnlDollar": -156.67,
+        "realizedPct": -0.0653,
+        "holdingDays": 28,
+        "outcome": "loss",
+        "scoreAtEntry": 76.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      }
+    ],
+    "finalOpenPositions": [
+      {
+        "ticker": "HAL",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil services",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-04-13",
+        "entryPrice": 38.61,
+        "shares": 46.620046,
+        "allocatedCash": 1800,
+        "targetPrice": 49.39,
+        "stopPrice": 35.05,
+        "horizonDays": 90,
+        "scoreAtEntry": 71.6,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-04-22",
+        "entryPrice": 129.4,
+        "shares": 13.910356,
+        "allocatedCash": 1800,
+        "targetPrice": 165.63,
+        "stopPrice": 110.77,
+        "horizonDays": 28,
+        "scoreAtEntry": 70,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "URA",
+        "scenario": "europe",
+        "scenarioTitle": "Russia / NATO / Western Europe",
+        "sector": "Uranium / nuclear",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-04-27",
+        "entryPrice": 56.7,
+        "shares": 31.746031,
+        "allocatedCash": 1800,
+        "targetPrice": 72.58,
+        "stopPrice": 49.17,
+        "horizonDays": 180,
+        "scoreAtEntry": 68.9,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "BNO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Brent ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-05-11",
+        "entryPrice": 55.02,
+        "shares": 32.715376,
+        "allocatedCash": 1800,
+        "targetPrice": 70.43,
+        "stopPrice": 47.1,
+        "horizonDays": 42,
+        "scoreAtEntry": 70.6,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "FRO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-05-11",
+        "entryPrice": 38.15,
+        "shares": 47.182174,
+        "allocatedCash": 1800,
+        "targetPrice": 48.83,
+        "stopPrice": 33.38,
+        "horizonDays": 21,
+        "scoreAtEntry": 67.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      }
+    ],
+    "exitReasonCounts": {
+      "target_hit": 2,
+      "horizon_exceeded": 6,
+      "stop_hit": 2
+    }
+  },
+  "withCal": {
+    "useCalibration": true,
+    "startDate": "2026-02-28",
+    "endDate": "2026-05-15",
+    "tradingDays": 54,
+    "startingEquity": 10000,
+    "finalEquity": 8808.79,
+    "pctReturn": -0.1191,
+    "peakEquity": 10785.55,
+    "troughEquity": 8808.79,
+    "maxDrawdown": -0.1833,
+    "closedCount": 11,
+    "winCount": 2,
+    "winRate": 0.182,
+    "openCount": 4,
+    "equityCurve": [
+      {
+        "date": "2026-03-02",
+        "cash": 1000,
+        "openMtM": 9000,
+        "totalEquity": 10000
+      },
+      {
+        "date": "2026-03-03",
+        "cash": 1000,
+        "openMtM": 8941.17,
+        "totalEquity": 9941.17
+      },
+      {
+        "date": "2026-03-04",
+        "cash": 1000,
+        "openMtM": 8963.37,
+        "totalEquity": 9963.37
+      },
+      {
+        "date": "2026-03-05",
+        "cash": 1000,
+        "openMtM": 8975.68,
+        "totalEquity": 9975.68
+      },
+      {
+        "date": "2026-03-06",
+        "cash": 1000,
+        "openMtM": 9295.01,
+        "totalEquity": 10295.01
+      },
+      {
+        "date": "2026-03-09",
+        "cash": 1000,
+        "openMtM": 9162.02,
+        "totalEquity": 10162.02
+      },
+      {
+        "date": "2026-03-10",
+        "cash": 1000,
+        "openMtM": 9085.12,
+        "totalEquity": 10085.12
+      },
+      {
+        "date": "2026-03-11",
+        "cash": 1000,
+        "openMtM": 9188.21,
+        "totalEquity": 10188.21
+      },
+      {
+        "date": "2026-03-12",
+        "cash": 1525.92,
+        "openMtM": 8886.58,
+        "totalEquity": 10412.51
+      },
+      {
+        "date": "2026-03-13",
+        "cash": 1525.92,
+        "openMtM": 8891.29,
+        "totalEquity": 10417.22
+      },
+      {
+        "date": "2026-03-16",
+        "cash": 1525.92,
+        "openMtM": 8897.84,
+        "totalEquity": 10423.76
+      },
+      {
+        "date": "2026-03-17",
+        "cash": 1525.92,
+        "openMtM": 8840.3,
+        "totalEquity": 10366.23
+      },
+      {
+        "date": "2026-03-18",
+        "cash": 1525.92,
+        "openMtM": 8993.03,
+        "totalEquity": 10518.96
+      },
+      {
+        "date": "2026-03-19",
+        "cash": 1525.92,
+        "openMtM": 9071.84,
+        "totalEquity": 10597.76
+      },
+      {
+        "date": "2026-03-20",
+        "cash": 1525.92,
+        "openMtM": 9084.81,
+        "totalEquity": 10610.73
+      },
+      {
+        "date": "2026-03-23",
+        "cash": 1525.92,
+        "openMtM": 9040.17,
+        "totalEquity": 10566.09
+      },
+      {
+        "date": "2026-03-24",
+        "cash": 1525.92,
+        "openMtM": 9094.35,
+        "totalEquity": 10620.27
+      },
+      {
+        "date": "2026-03-25",
+        "cash": 1525.92,
+        "openMtM": 9017.67,
+        "totalEquity": 10543.59
+      },
+      {
+        "date": "2026-03-26",
+        "cash": 1525.92,
+        "openMtM": 9199.45,
+        "totalEquity": 10725.38
+      },
+      {
+        "date": "2026-03-27",
+        "cash": 1335.45,
+        "openMtM": 9434.09,
+        "totalEquity": 10769.54
+      },
+      {
+        "date": "2026-03-30",
+        "cash": 1127.63,
+        "openMtM": 9657.92,
+        "totalEquity": 10785.55
+      },
+      {
+        "date": "2026-03-31",
+        "cash": 1127.63,
+        "openMtM": 9329.16,
+        "totalEquity": 10456.79
+      },
+      {
+        "date": "2026-04-01",
+        "cash": 1127.63,
+        "openMtM": 9063.59,
+        "totalEquity": 10191.22
+      },
+      {
+        "date": "2026-04-02",
+        "cash": 1127.63,
+        "openMtM": 9057.66,
+        "totalEquity": 10185.29
+      },
+      {
+        "date": "2026-04-06",
+        "cash": 1127.63,
+        "openMtM": 9112.16,
+        "totalEquity": 10239.79
+      },
+      {
+        "date": "2026-04-07",
+        "cash": 1127.63,
+        "openMtM": 9104.18,
+        "totalEquity": 10231.81
+      },
+      {
+        "date": "2026-04-08",
+        "cash": 1127.63,
+        "openMtM": 8781.89,
+        "totalEquity": 9909.52
+      },
+      {
+        "date": "2026-04-09",
+        "cash": 2597.67,
+        "openMtM": 7192.51,
+        "totalEquity": 9790.18
+      },
+      {
+        "date": "2026-04-10",
+        "cash": 2597.67,
+        "openMtM": 7134.89,
+        "totalEquity": 9732.55
+      },
+      {
+        "date": "2026-04-13",
+        "cash": 2390.96,
+        "openMtM": 7242.44,
+        "totalEquity": 9633.4
+      },
+      {
+        "date": "2026-04-14",
+        "cash": 2390.96,
+        "openMtM": 7194.97,
+        "totalEquity": 9585.93
+      },
+      {
+        "date": "2026-04-15",
+        "cash": 2390.96,
+        "openMtM": 7129.93,
+        "totalEquity": 9520.89
+      },
+      {
+        "date": "2026-04-16",
+        "cash": 2390.96,
+        "openMtM": 7120.05,
+        "totalEquity": 9511.01
+      },
+      {
+        "date": "2026-04-17",
+        "cash": 2390.96,
+        "openMtM": 6971.94,
+        "totalEquity": 9362.9
+      },
+      {
+        "date": "2026-04-20",
+        "cash": 2390.96,
+        "openMtM": 6925.28,
+        "totalEquity": 9316.23
+      },
+      {
+        "date": "2026-04-21",
+        "cash": 2390.96,
+        "openMtM": 6888.02,
+        "totalEquity": 9278.98
+      },
+      {
+        "date": "2026-04-22",
+        "cash": 2204.3,
+        "openMtM": 6961.39,
+        "totalEquity": 9165.69
+      },
+      {
+        "date": "2026-04-23",
+        "cash": 2006.71,
+        "openMtM": 7154.92,
+        "totalEquity": 9161.62
+      },
+      {
+        "date": "2026-04-24",
+        "cash": 1709.41,
+        "openMtM": 7200.1,
+        "totalEquity": 8909.5
+      },
+      {
+        "date": "2026-04-27",
+        "cash": 1785.12,
+        "openMtM": 7107.09,
+        "totalEquity": 8892.21
+      },
+      {
+        "date": "2026-04-28",
+        "cash": 1785.12,
+        "openMtM": 7161.12,
+        "totalEquity": 8946.24
+      },
+      {
+        "date": "2026-04-29",
+        "cash": 1785.12,
+        "openMtM": 7113.32,
+        "totalEquity": 8898.44
+      },
+      {
+        "date": "2026-04-30",
+        "cash": 1785.12,
+        "openMtM": 7167.68,
+        "totalEquity": 8952.8
+      },
+      {
+        "date": "2026-05-01",
+        "cash": 1785.12,
+        "openMtM": 7182.32,
+        "totalEquity": 8967.44
+      },
+      {
+        "date": "2026-05-04",
+        "cash": 1785.12,
+        "openMtM": 7100.66,
+        "totalEquity": 8885.78
+      },
+      {
+        "date": "2026-05-05",
+        "cash": 1785.12,
+        "openMtM": 7214.69,
+        "totalEquity": 8999.81
+      },
+      {
+        "date": "2026-05-06",
+        "cash": 1785.12,
+        "openMtM": 7118.99,
+        "totalEquity": 8904.1
+      },
+      {
+        "date": "2026-05-07",
+        "cash": 1785.12,
+        "openMtM": 7190.07,
+        "totalEquity": 8975.19
+      },
+      {
+        "date": "2026-05-08",
+        "cash": 1785.12,
+        "openMtM": 7243.6,
+        "totalEquity": 9028.72
+      },
+      {
+        "date": "2026-05-11",
+        "cash": 1785.12,
+        "openMtM": 7270.43,
+        "totalEquity": 9055.54
+      },
+      {
+        "date": "2026-05-12",
+        "cash": 1785.12,
+        "openMtM": 7263.85,
+        "totalEquity": 9048.96
+      },
+      {
+        "date": "2026-05-13",
+        "cash": 1785.12,
+        "openMtM": 7177.02,
+        "totalEquity": 8962.14
+      },
+      {
+        "date": "2026-05-14",
+        "cash": 1785.12,
+        "openMtM": 7053.55,
+        "totalEquity": 8838.66
+      },
+      {
+        "date": "2026-05-15",
+        "cash": 1785.12,
+        "openMtM": 7023.67,
+        "totalEquity": 8808.79
+      }
+    ],
+    "closedTrades": [
+      {
+        "ticker": "BNO",
+        "sector": "Brent ETF",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 37.34,
+        "exitDate": "2026-03-12",
+        "exitPrice": 48.25,
+        "exitReason": "target_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 525.92,
+        "realizedPct": 0.2922,
+        "holdingDays": 10,
+        "outcome": "win",
+        "scoreAtEntry": 69.7,
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "RTX",
+        "sector": "Defense",
+        "direction": "LONG",
+        "scenario": "europe",
+        "conviction": 5,
+        "entryDate": "2026-03-02",
+        "entryPrice": 212.16,
+        "exitDate": "2026-03-27",
+        "exitPrice": 189.71,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -190.47,
+        "realizedPct": -0.1058,
+        "holdingDays": 25,
+        "outcome": "loss",
+        "scoreAtEntry": 81.3,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "LMT",
+        "sector": "Defense",
+        "direction": "LONG",
+        "scenario": "europe",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 676.7,
+        "exitDate": "2026-03-30",
+        "exitPrice": 598.57,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -207.82,
+        "realizedPct": -0.1155,
+        "holdingDays": 28,
+        "outcome": "loss",
+        "scoreAtEntry": 66.8,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "TSM",
+        "sector": "Semiconductor manufacturing",
+        "direction": "SHORT",
+        "scenario": "taiwan",
+        "conviction": 5,
+        "entryDate": "2026-03-12",
+        "entryPrice": 336.71,
+        "exitDate": "2026-04-09",
+        "exitPrice": 365.49,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -153.85,
+        "realizedPct": -0.0855,
+        "holdingDays": 28,
+        "outcome": "loss",
+        "scoreAtEntry": 76.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "NVDA",
+        "sector": "AI / Semis",
+        "direction": "SHORT",
+        "scenario": "korea",
+        "conviction": 3,
+        "entryDate": "2026-03-27",
+        "entryPrice": 167.52,
+        "exitDate": "2026-04-09",
+        "exitPrice": 183.91,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -176.11,
+        "realizedPct": -0.0978,
+        "holdingDays": 13,
+        "outcome": "loss",
+        "scoreAtEntry": 73.9,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "XOM",
+        "sector": "Energy",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 5,
+        "entryDate": "2026-03-02",
+        "entryPrice": 154.22,
+        "exitDate": "2026-04-13",
+        "exitPrice": 152.64,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -18.44,
+        "realizedPct": -0.0102,
+        "holdingDays": 42,
+        "outcome": "loss",
+        "scoreAtEntry": 76.5,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "EQT",
+        "sector": "Natural gas",
+        "direction": "LONG",
+        "scenario": "europe",
+        "conviction": 3,
+        "entryDate": "2026-03-30",
+        "entryPrice": 64.44,
+        "exitDate": "2026-04-13",
+        "exitPrice": 57.7,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -188.27,
+        "realizedPct": -0.1046,
+        "holdingDays": 14,
+        "outcome": "loss",
+        "scoreAtEntry": 76.2,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "LMT",
+        "sector": "Defense",
+        "direction": "LONG",
+        "scenario": "korea",
+        "conviction": 4,
+        "entryDate": "2026-04-13",
+        "entryPrice": 619.69,
+        "exitDate": "2026-04-22",
+        "exitPrice": 555.43,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -186.65,
+        "realizedPct": -0.1037,
+        "holdingDays": 9,
+        "outcome": "loss",
+        "scoreAtEntry": 66.2,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "RTX",
+        "sector": "Defense",
+        "direction": "LONG",
+        "scenario": "europe",
+        "conviction": 5,
+        "entryDate": "2026-04-13",
+        "entryPrice": 201.41,
+        "exitDate": "2026-04-23",
+        "exitPrice": 179.3,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -197.6,
+        "realizedPct": -0.1098,
+        "holdingDays": 10,
+        "outcome": "loss",
+        "scoreAtEntry": 75.2,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "QCOM",
+        "sector": "Handsets",
+        "direction": "SHORT",
+        "scenario": "taiwan",
+        "conviction": 3,
+        "entryDate": "2026-04-09",
+        "entryPrice": 127.75,
+        "exitDate": "2026-04-24",
+        "exitPrice": 148.85,
+        "exitReason": "stop_hit",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": -297.3,
+        "realizedPct": -0.1652,
+        "holdingDays": 15,
+        "outcome": "loss",
+        "scoreAtEntry": 73.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "LNG",
+        "sector": "Gas / LNG",
+        "direction": "LONG",
+        "scenario": "iran",
+        "conviction": 4,
+        "entryDate": "2026-03-02",
+        "entryPrice": 248.93,
+        "exitDate": "2026-04-27",
+        "exitPrice": 259.4,
+        "exitReason": "horizon_exceeded",
+        "allocatedCash": 1800,
+        "realizedPnlDollar": 75.71,
+        "realizedPct": 0.0421,
+        "holdingDays": 56,
+        "outcome": "win",
+        "scoreAtEntry": 73.1,
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1
+      }
+    ],
+    "finalOpenPositions": [
+      {
+        "ticker": "GLD",
+        "scenario": "korea",
+        "scenarioTitle": "Korea / DPRK / Yellow Sea",
+        "sector": "Gold",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-04-22",
+        "entryPrice": 435.26,
+        "shares": 4.135459,
+        "allocatedCash": 1800,
+        "targetPrice": 557.13,
+        "stopPrice": 389.07,
+        "horizonDays": 90,
+        "scoreAtEntry": 70.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "RTX",
+        "scenario": "europe",
+        "scenarioTitle": "Russia / NATO / Western Europe",
+        "sector": "Defense",
+        "direction": "LONG",
+        "conviction": 5,
+        "entryDate": "2026-04-23",
+        "entryPrice": 179.3,
+        "shares": 10.039041,
+        "allocatedCash": 1800,
+        "targetPrice": 229.5,
+        "stopPrice": 160.1,
+        "horizonDays": 84,
+        "scoreAtEntry": 68.9,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "TSM",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "sector": "Semiconductor manufacturing",
+        "direction": "SHORT",
+        "conviction": 5,
+        "entryDate": "2026-04-24",
+        "entryPrice": 402.46,
+        "shares": 4.472494,
+        "allocatedCash": 1800,
+        "targetPrice": 289.77,
+        "stopPrice": 453,
+        "horizonDays": 28,
+        "scoreAtEntry": 65.4,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      },
+      {
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-04-27",
+        "entryPrice": 77.71,
+        "shares": 23.163042,
+        "allocatedCash": 1800,
+        "targetPrice": 99.47,
+        "stopPrice": 69.48,
+        "horizonDays": 21,
+        "scoreAtEntry": 71.6,
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1
+      }
+    ],
+    "exitReasonCounts": {
+      "target_hit": 1,
+      "stop_hit": 7,
+      "horizon_exceeded": 3
+    }
+  }
+}
