@@ -1,0 +1,224 @@
+{
+  "phase1": [
+    {
+      "label": "no_calibration",
+      "finalEquity": 10620.42,
+      "pctReturn": 0.062,
+      "closedCount": 10,
+      "winRate": 0.4,
+      "maxDrawdown": -0.1713,
+      "exits": {
+        "target_hit": 2,
+        "horizon_exceeded": 6,
+        "stop_hit": 2
+      }
+    },
+    {
+      "label": "full_calibration",
+      "finalEquity": 8808.79,
+      "pctReturn": -0.1191,
+      "closedCount": 11,
+      "winRate": 0.182,
+      "maxDrawdown": -0.1833,
+      "exits": {
+        "target_hit": 1,
+        "stop_hit": 7,
+        "horizon_exceeded": 3
+      }
+    },
+    {
+      "label": "multipliers_only",
+      "finalEquity": 10620.42,
+      "pctReturn": 0.062,
+      "closedCount": 10,
+      "winRate": 0.4,
+      "maxDrawdown": -0.1713,
+      "exits": {
+        "target_hit": 2,
+        "horizon_exceeded": 6,
+        "stop_hit": 2
+      }
+    },
+    {
+      "label": "stop_mult_only",
+      "finalEquity": 10620.42,
+      "pctReturn": 0.062,
+      "closedCount": 10,
+      "winRate": 0.4,
+      "maxDrawdown": -0.1713,
+      "exits": {
+        "target_hit": 2,
+        "horizon_exceeded": 6,
+        "stop_hit": 2
+      }
+    },
+    {
+      "label": "weights_only",
+      "finalEquity": 8808.79,
+      "pctReturn": -0.1191,
+      "closedCount": 11,
+      "winRate": 0.182,
+      "maxDrawdown": -0.1833,
+      "exits": {
+        "target_hit": 1,
+        "stop_hit": 7,
+        "horizon_exceeded": 3
+      }
+    }
+  ],
+  "phase2": [
+    {
+      "label": "oos_no_cal",
+      "finalEquity": 8198.21,
+      "pctReturn": -0.1802,
+      "closedCount": 7,
+      "winRate": 0,
+      "maxDrawdown": -0.1802,
+      "exits": {
+        "stop_hit": 7
+      }
+    },
+    {
+      "label": "oos_full_cal",
+      "finalEquity": 8789.58,
+      "pctReturn": -0.121,
+      "closedCount": 6,
+      "winRate": 0,
+      "maxDrawdown": -0.1221,
+      "exits": {
+        "stop_hit": 6
+      }
+    },
+    {
+      "label": "oos_mults_only",
+      "finalEquity": 8139.6,
+      "pctReturn": -0.186,
+      "closedCount": 7,
+      "winRate": 0,
+      "maxDrawdown": -0.186,
+      "exits": {
+        "stop_hit": 7
+      }
+    },
+    {
+      "label": "oos_stop_only",
+      "finalEquity": 8139.6,
+      "pctReturn": -0.186,
+      "closedCount": 7,
+      "winRate": 0,
+      "maxDrawdown": -0.186,
+      "exits": {
+        "stop_hit": 7
+      }
+    },
+    {
+      "label": "oos_weights_only",
+      "finalEquity": 8789.58,
+      "pctReturn": -0.121,
+      "closedCount": 6,
+      "winRate": 0,
+      "maxDrawdown": -0.1221,
+      "exits": {
+        "stop_hit": 6
+      }
+    }
+  ],
+  "phase3": {
+    "2026-02-28_2026-03-31": {
+      "no_cal": {
+        "finalEquity": 11773.57,
+        "pctReturn": 0.1774,
+        "closedCount": 2,
+        "winRate": 1
+      },
+      "stop_only": {
+        "finalEquity": 11773.57,
+        "pctReturn": 0.1774,
+        "closedCount": 2,
+        "winRate": 1
+      },
+      "mults": {
+        "finalEquity": 11773.57,
+        "pctReturn": 0.1774,
+        "closedCount": 2,
+        "winRate": 1
+      },
+      "weights": {
+        "finalEquity": 10456.79,
+        "pctReturn": 0.0457,
+        "closedCount": 3,
+        "winRate": 0.333
+      },
+      "full": {
+        "finalEquity": 10456.79,
+        "pctReturn": 0.0457,
+        "closedCount": 3,
+        "winRate": 0.333
+      }
+    },
+    "2026-03-15_2026-04-30": {
+      "no_cal": {
+        "finalEquity": 10366.82,
+        "pctReturn": 0.0367,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      "stop_only": {
+        "finalEquity": 10366.82,
+        "pctReturn": 0.0367,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      "mults": {
+        "finalEquity": 10366.82,
+        "pctReturn": 0.0367,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      "weights": {
+        "finalEquity": 9904.66,
+        "pctReturn": -0.0095,
+        "closedCount": 4,
+        "winRate": 0.25
+      },
+      "full": {
+        "finalEquity": 9904.66,
+        "pctReturn": -0.0095,
+        "closedCount": 4,
+        "winRate": 0.25
+      }
+    },
+    "2026-04-01_2026-05-15": {
+      "no_cal": {
+        "finalEquity": 10102.1,
+        "pctReturn": 0.0102,
+        "closedCount": 6,
+        "winRate": 0.333
+      },
+      "stop_only": {
+        "finalEquity": 9991.42,
+        "pctReturn": -0.0009,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      "mults": {
+        "finalEquity": 9991.42,
+        "pctReturn": -0.0009,
+        "closedCount": 5,
+        "winRate": 0.4
+      },
+      "weights": {
+        "finalEquity": 8946.78,
+        "pctReturn": -0.1053,
+        "closedCount": 5,
+        "winRate": 0
+      },
+      "full": {
+        "finalEquity": 9175.38,
+        "pctReturn": -0.0825,
+        "closedCount": 4,
+        "winRate": 0
+      }
+    }
+  }
+}
