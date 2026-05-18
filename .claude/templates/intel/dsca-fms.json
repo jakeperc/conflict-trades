@@ -1,0 +1,42 @@
+{
+  "topic": "dsca-fms",
+  "scenarioKey": "europe",
+  "queries": [
+    "DSCA Foreign Military Sale notification Congress major arms",
+    "Israel Saudi Arabia UAE Taiwan Poland FMS approved",
+    "US weapons sale Ukraine Romania Estonia Lithuania",
+    "F-35 Patriot HIMARS THAAD foreign military sale"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["dsca", 5],
+    ["fms", 5],
+    ["foreign military sale", 6],
+    ["approved", 3],
+    ["congress notified", 5],
+    ["billion", 4],
+    ["israel", 3],
+    ["saudi", 3],
+    ["uae", 3],
+    ["taiwan", 4],
+    ["poland", 3],
+    ["ukraine", 3],
+    ["romania", 3],
+    ["germany", 2],
+    ["japan", 3],
+    ["south korea", 3],
+    ["f-35", 4],
+    ["patriot", 5],
+    ["thaad", 5],
+    ["himars", 4],
+    ["javelin", 3],
+    ["abrams", 3]
+  ],
+  "bands": {
+    "high": [40, 82],
+    "mid": [20, 74],
+    "low": [8, 66],
+    "baseline": 58
+  },
+  "maxHeatDelta": 4
+}

@@ -1,0 +1,37 @@
+{
+  "topic": "sanctions-update",
+  "scenarioKey": "iran",
+  "queries": [
+    "OFAC SDN list update Iran sanctions designated entities",
+    "Treasury sanctions Russia oligarchs shadow fleet tanker",
+    "OFAC sanctions DPRK North Korea proliferation",
+    "Secondary sanctions Iran oil tanker Chinese refinery"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["ofac", 6],
+    ["sdn", 5],
+    ["designated", 4],
+    ["treasury sanction", 5],
+    ["secondary sanction", 6],
+    ["iran", 3],
+    ["russia", 3],
+    ["dprk", 4],
+    ["north korea", 4],
+    ["shadow fleet", 5],
+    ["dark fleet", 5],
+    ["tanker", 3],
+    ["refinery", 3],
+    ["proliferation", 5],
+    ["irgc", 4],
+    ["oligarch", 3],
+    ["sanctioned vessel", 5]
+  ],
+  "bands": {
+    "high": [40, 90],
+    "mid": [20, 80],
+    "low": [8, 72],
+    "baseline": 60
+  },
+  "maxHeatDelta": 4
+}

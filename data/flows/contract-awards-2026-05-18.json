@@ -1,0 +1,85 @@
+{
+  "topic": "contract-awards",
+  "scenarioKey": "europe",
+  "fetchedAt": "2026-05-18T05:12:05.692Z",
+  "aggregateScore": 98,
+  "targetHeat": 84,
+  "oldHeatBase": 66,
+  "newHeatBase": 70,
+  "delta": 4,
+  "itemCount": 34,
+  "topSignals": [
+    {
+      "title": "Lockheed Martin awarded $991 million contract to deliver F-35 modification packages through 2032 - Defence Industry Europe",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaXBZbHpfcVJhMU1SWV9EUFdGbUlBdkZQZHZENlJ6aHg5UTVsVVRsQ3YzVWN5T1BmV2hGSTdBclJvQ21XQUJic2lqZldzQXBfZlVtRUZUNW9aV2ZvNThaaE9vQWh5YUs4bEpGd1ZQWG9JdzY4MWQwTkJ5LUlyWDUwLTFQMVA2Rnp0clhrMzNfWV82Y29sNURkTWNjWUF3UVoxOFQ4Z29DZzdSV183RTF4ZzlJTlUzRHdoM2VpbG1Ld0RVQQ?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaXBZbHpfcVJhMU1SWV9EUFdGbUlBdkZQZHZENlJ6aHg5UTVsVVRsQ3YzVWN5T1BmV2hGSTdBclJvQ21XQUJic2lqZldzQXBfZlVtRUZUNW9aV2ZvNThaaE9vQWh5YUs4bEpGd1ZQWG9JdzY4MWQwTkJ5LUlyWDUwLTFQMVA2Rnp0clhrMzNfWV82Y29sNURkTWNjWUF3UVoxOFQ4Z29DZzdSV183RTF4ZzlJTlUzRHdoM2VpbG1Ld0RVQQ?oc=5\" target=\"_blank\">Lockheed Martin awarded $991 million contract to deliver F-35 modification packages through 2032</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Defence Industry Europe</font>",
+      "publishedAt": "Sat, 16 May 2026 16:44:10 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 10
+    },
+    {
+      "title": "Pentagon extends Lockheed Martin contract for missile defense on Guam - Stars and Stripes",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTlRVWFB6cmIxM3YtZVR1ZzJ3UnoxRHYyS1o0VHRqTGhlZld3aC1ZOE00Mjd4Um04M0daNDFMMUZDeWJTaWUyMnoxUTBPb3o3STItUTFlMXNlaXdvQXVGM19tRF9EOGlJS1ZVeTJTd09WUElTUjhRS2ZISV92U2o1cU9INUNJTnVVczFwLW1mM25rMVhGZzNvNXJWNW93cW90WFE?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPTlRVWFB6cmIxM3YtZVR1ZzJ3UnoxRHYyS1o0VHRqTGhlZld3aC1ZOE00Mjd4Um04M0daNDFMMUZDeWJTaWUyMnoxUTBPb3o3STItUTFlMXNlaXdvQXVGM19tRF9EOGlJS1ZVeTJTd09WUElTUjhRS2ZISV92U2o1cU9INUNJTnVVczFwLW1mM25rMVhGZzNvNXJWNW93cW90WFE?oc=5\" target=\"_blank\">Pentagon extends Lockheed Martin contract for missile defense on Guam</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Stars and Stripes</font>",
+      "publishedAt": "Thu, 14 May 2026 07:23:09 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 9
+    },
+    {
+      "title": "US Rolls Out $1 Billion F-35 Electronic Warfare Retrofit Contract for Its Armed Forces, Foreign Operators - Republic World",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNUZWeDYzZDUyUHZ6RHFYR0xFa1N0SlhJVEFNZ24wZkE3TmFocjdZWVE0ODUyc0g1WDlEQVhaV3ByT2VGNEdhdnpyWU1IZHVqZzVzeDd1U3Y1dXA1UU5yRGNlLW55SjZpY0ZyTWdCRGZqUHlGeDJyZms4aVRlN2s3dHBXN3hKWG55azNOVjZIZWNsaDBGYjM3blRUZm5zaEZQTEMwRlZRWUlSU3V5MUFnbjlKWEhYd1RaNzNtQzVNcTVDQ2NVRlNESEFkajJ0WVpsNk41bUdPb28yWFJpai1rYTVRR3B0QTVVaElmZGt5RldrN2pN0gH6AUFVX3lxTFA4Q181QkRrdkxEcFVuaVJLMGRpb2ZiMDNjMWFuNmV1S0ExTEpGNnc2TWdZS1ZldjZQam1jVERZUEFKZDZRTm1lazg5a3ptR2l0X0xFblJIYkYzNTB2Q2tmOVhDRXJWakdwVC1wdk1pRHN5S0Y0VUQtYlF5cXB6MDRKWlMtR2Q5NjRnYjZ2Z1ZrWnhvdXVBWnVJTVJ1N0N1RVpBeDJ2bnZXRDFvMFhaNnQwMkVVbXpDLUhBRDVOWnFFOWQ4bklNNmswaS1yWUNBWjFwVzNtSmVWVWhXOU9wakdkWTctNjA1RzloQTRnZXctU0FCUG5kN1hBV3c?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNUZWeDYzZDUyUHZ6RHFYR0xFa1N0SlhJVEFNZ24wZkE3TmFocjdZWVE0ODUyc0g1WDlEQVhaV3ByT2VGNEdhdnpyWU1IZHVqZzVzeDd1U3Y1dXA1UU5yRGNlLW55SjZpY0ZyTWdCRGZqUHlGeDJyZms4aVRlN2s3dHBXN3hKWG55azNOVjZIZWNsaDBGYjM3blRUZm5zaEZQTEMwRlZRWUlSU3V5MUFnbjlKWEhYd1RaNzNtQzVNcTVDQ2NVRlNESEFkajJ0WVpsNk41bUdPb28yWFJpai1rYTVRR3B0QTVVaElmZGt5RldrN2pN0gH6AUFVX3lxTFA4Q181QkRrdkxEcFVuaVJLMGRpb2ZiMDNjMWFuNmV1S0ExTEpGNnc2TWdZS1ZldjZQam1jVERZUEFKZDZRTm1lazg5a3ptR2l0X0xFblJIYkYzNTB2Q2tmOVhDRXJWakdwVC1wdk1pRHN5S0Y0VUQtYlF5cXB6MDRKWlMtR2Q5NjRnYjZ2Z1ZrWnhvdXVBWnVJTVJ1N0N1RVpBeDJ2bnZXRDFvMFhaNnQwMkVVbXpDLUhBRDVOWnFFOWQ4bklNNmswaS1yWUNBWjFwVzNtSmVWVWhXOU9wakdkWTctNjA1RzloQTRnZXctU0FCUG5kN1hBV3c?oc=5\" target=\"_blank\">US Rolls Out $1 Billion F-35 Electronic Warfare Retrofit Contract for Its Armed Forces, Foreign Operators</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Republic World</font>",
+      "publishedAt": "Sun, 17 May 2026 05:45:10 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 7
+    },
+    {
+      "title": "US rolls out $1 billion F-35 electronic warfare retrofit contract for its armed forces, foreign operators - The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPakhId0ZRUmwtbWtTdmswaWNMQVFaOThUUFVwWWZZYWZDQXVTbmtVbndTaDB4dkRGU3dJOWY2M21CdV9ISzV1NGJjRE9oWDJKdEpRdHMtZFlrSGNIQThmZ1l5cVU0MVZsNV9LZXB0eE5nOUo3MERJMFRVZExSYlBLa0tPdnlITThkZ2lkUU9ETlpnZW9kN3FWZHNrUTRyTXVjNlE0c1hOM3ZjbHZNeWVvcUktSndsMHRTTy0wWTFLcnV0REtaN2lOaTVXWFEzOUNyS1NSS1ZENnBJbWlseWtVakgtd1RKMTBOS3AwMDRrVDNCcVl1eVlnd2dyNXRJREF2S3Zfd0Z4Ul9tRnJkREw3MG82MnZSLWd1TGhN0gGbAkFVX3lxTE9qSEh3RlFSbC1ta1N2azBpY0xBUVo5OFRQVXBZZllhZkNBdVNua1Vud1NoMHh2REZTd0k5ZjYzbUJ1X0hLNXU0YmNET2hYMkp0SlF0cy1kWWtIY0hBOGZnWXlxVTQxVmw1X0tlcHR4Tmc5SjcwREkwVFVkTFJiUEtrS092eUhNOGRnaWRRT0ROWmdlb2Q3cVZkc2tRNHJNdWM2UTRzWE4zdmNsdk15ZW9xSS1Kd2wwdFNPLTBZMUtydXRES1o3aU5pNVdYUTM5Q3JLU1JLVkQ2cEltaWx5a1VqSC13VEoxME5LcDAwNGtUM0JxWXV5WWd3Z3I1dElEQXZLdl93RnhSX21GcmRETDcwbzYydlItZ3VMaE0?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxPakhId0ZRUmwtbWtTdmswaWNMQVFaOThUUFVwWWZZYWZDQXVTbmtVbndTaDB4dkRGU3dJOWY2M21CdV9ISzV1NGJjRE9oWDJKdEpRdHMtZFlrSGNIQThmZ1l5cVU0MVZsNV9LZXB0eE5nOUo3MERJMFRVZExSYlBLa0tPdnlITThkZ2lkUU9ETlpnZW9kN3FWZHNrUTRyTXVjNlE0c1hOM3ZjbHZNeWVvcUktSndsMHRTTy0wWTFLcnV0REtaN2lOaTVXWFEzOUNyS1NSS1ZENnBJbWlseWtVakgtd1RKMTBOS3AwMDRrVDNCcVl1eVlnd2dyNXRJREF2S3Zfd0Z4Ul9tRnJkREw3MG82MnZSLWd1TGhN0gGbAkFVX3lxTE9qSEh3RlFSbC1ta1N2azBpY0xBUVo5OFRQVXBZZllhZkNBdVNua1Vud1NoMHh2REZTd0k5ZjYzbUJ1X0hLNXU0YmNET2hYMkp0SlF0cy1kWWtIY0hBOGZnWXlxVTQxVmw1X0tlcHR4Tmc5SjcwREkwVFVkTFJiUEtrS092eUhNOGRnaWRRT0ROWmdlb2Q3cVZkc2tRNHJNdWM2UTRzWE4zdmNsdk15ZW9xSS1Kd2wwdFNPLTBZMUtydXRES1o3aU5pNVdYUTM5Q3JLU1JLVkQ2cEltaWx5a1VqSC13VEoxME5LcDAwNGtUM0JxWXV5WWd3Z3I1dElEQXZLdl93RnhSX21GcmRETDcwbzYydlItZ3VMaE0?oc=5\" target=\"_blank\">US rolls out $1 billion F-35 electronic warfare retrofit contract for its armed forces, foreign operators</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Economic Times</font>",
+      "publishedAt": "Sun, 17 May 2026 05:22:00 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 7
+    },
+    {
+      "title": "UK awards £1 billion RCH 155 artillery contract to strengthen British Army capability and NATO interoperability - Defence Industry Europe",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUHhZNVpVSjdhQnZ4UV9pQ05SNEhWcGJFbjVlNTlYU0RDWFJlSjZna09YQnAzTkZnVk5xY20xcE93cGs2YXNjVmlNc2V6aHl5WFZIdFl0STZTRy01WGtyd1ZrcmpzNURVZVBDMTNGZExmdWluWml4cTE1dWp4MTNDUks1NTljUDI0RERPUkpSQzEzbWJCQUdXSVplcnl4cVl4VGUxbTJmVjFiaHUtXzRuUkg0b1psQVV4cmNKYmdKcW9sUzNhQk0tVHNtMm0tMWZEYzBrR09R?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUHhZNVpVSjdhQnZ4UV9pQ05SNEhWcGJFbjVlNTlYU0RDWFJlSjZna09YQnAzTkZnVk5xY20xcE93cGs2YXNjVmlNc2V6aHl5WFZIdFl0STZTRy01WGtyd1ZrcmpzNURVZVBDMTNGZExmdWluWml4cTE1dWp4MTNDUks1NTljUDI0RERPUkpSQzEzbWJCQUdXSVplcnl4cVl4VGUxbTJmVjFiaHUtXzRuUkg0b1psQVV4cmNKYmdKcW9sUzNhQk0tVHNtMm0tMWZEYzBrR09R?oc=5\" target=\"_blank\">UK awards £1 billion RCH 155 artillery contract to strengthen British Army capability and NATO interoperability</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Defence Industry Europe</font>",
+      "publishedAt": "Thu, 14 May 2026 06:18:45 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 7
+    },
+    {
+      "title": "New Pentagon Missile Program Could Pair with Air Force’s Affordable Munitions Push - Air & Space Forces Magazine",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRjlLODZpTExXU0NWNTVaU0dDWVpjYnIxNFJnVkVLdkpNNnpFczllcDFJb2QxdXV2UGMtaW1pRk1kNXhxSEZtazlXNWFJMDd2Sy01YTNZOVJPdy0wYS1xc0c0bWthYmlTSDRQMDAzd1JCYWstRld4NEVMUEZCNzRETUYzNjAxOUhibzliVW9xR19IYU9J?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQRjlLODZpTExXU0NWNTVaU0dDWVpjYnIxNFJnVkVLdkpNNnpFczllcDFJb2QxdXV2UGMtaW1pRk1kNXhxSEZtazlXNWFJMDd2Sy01YTNZOVJPdy0wYS1xc0c0bWthYmlTSDRQMDAzd1JCYWstRld4NEVMUEZCNzRETUYzNjAxOUhibzliVW9xR19IYU9J?oc=5\" target=\"_blank\">New Pentagon Missile Program Could Pair with Air Force’s Affordable Munitions Push</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Air & Space Forces Magazine</font>",
+      "publishedAt": "Thu, 14 May 2026 00:38:35 GMT",
+      "source": "google-news",
+      "query": "Pentagon awards defense contract billion munitions missiles",
+      "score": 6
+    },
+    {
+      "title": "U.S. Navy Strengthens MQ-4C Triton Drone for Indo-Pacific Operations with Northrop Grumman Contract - Army Recognition",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUUM2cGJmdlNrRFF5eDE1WVBvdmpVMFM3U3RYczY3THpzVHhDQ0FaSklnMHJ5Z1pSZThmR3o4T0EtcC1reVVDcWRNSDFkdzVWSnlWckVyVmxTdWdheVkwQ2d3ODN4YVJDbGtUbm04S0g2RU92YVA3NFRmcTQ5amlLNl96Ym1MNS1xdU1EYmhFeURfMEd1VVV2Z01jU19SelY1SlRFQWVTelMydGRjYzE4Z0p1Smh6UW9IVndqcVlVTlFSYkxIb2xGdndYcVFPaVk4RFVSTDVGZHpfbFVZUGtv?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUUM2cGJmdlNrRFF5eDE1WVBvdmpVMFM3U3RYczY3THpzVHhDQ0FaSklnMHJ5Z1pSZThmR3o4T0EtcC1reVVDcWRNSDFkdzVWSnlWckVyVmxTdWdheVkwQ2d3ODN4YVJDbGtUbm04S0g2RU92YVA3NFRmcTQ5amlLNl96Ym1MNS1xdU1EYmhFeURfMEd1VVV2Z01jU19SelY1SlRFQWVTelMydGRjYzE4Z0p1Smh6UW9IVndqcVlVTlFSYkxIb2xGdndYcVFPaVk4RFVSTDVGZHpfbFVZUGtv?oc=5\" target=\"_blank\">U.S. Navy Strengthens MQ-4C Triton Drone for Indo-Pacific Operations with Northrop Grumman Contract</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Army Recognition</font>",
+      "publishedAt": "Sun, 17 May 2026 09:59:01 GMT",
+      "source": "google-news",
+      "query": "Army Navy Air Force contract award announcement",
+      "score": 6
+    },
+    {
+      "title": "The Pentagon has no new munitions contracts amid concerns about a weapons shortage - NBC News",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYy1BZWlIejFpdkd0cEdDbnMtaDdoWmNTSU1XTFg0aU9fTkRRd2RDWmFjdEFRM3lBVVVsdWxxaG9ZQWhxTnk3VGdKZmNrWmVoWDRkMnFqVV9xbTFlQTB3QVppSVZPNDd6OUlUOEtfMFo2c0w2UlVhOWtxTE42Ni1JbVdHUGhoenJsam9MSW5HcUtUUFgtRmJsbkR3d1hpMXRpM0N5X0R5Z0ItMnhDS3hvRTgwUVVpbmM5NjRkd3ZUbUE?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYy1BZWlIejFpdkd0cEdDbnMtaDdoWmNTSU1XTFg0aU9fTkRRd2RDWmFjdEFRM3lBVVVsdWxxaG9ZQWhxTnk3VGdKZmNrWmVoWDRkMnFqVV9xbTFlQTB3QVppSVZPNDd6OUlUOEtfMFo2c0w2UlVhOWtxTE42Ni1JbVdHUGhoenJsam9MSW5HcUtUUFgtRmJsbkR3d1hpMXRpM0N5X0R5Z0ItMnhDS3hvRTgwUVVpbmM5NjRkd3ZUbUE?oc=5\" target=\"_blank\">The Pentagon has no new munitions contracts amid concerns about a weapons shortage</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NBC News</font>",
+      "publishedAt": "Thu, 14 May 2026 09:00:41 GMT",
+      "source": "google-news",
+      "query": "Pentagon awards defense contract billion munitions missiles",
+      "score": 5
+    }
+  ]
+}

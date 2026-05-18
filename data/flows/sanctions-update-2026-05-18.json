@@ -1,0 +1,85 @@
+{
+  "topic": "sanctions-update",
+  "scenarioKey": "iran",
+  "fetchedAt": "2026-05-18T05:12:09.425Z",
+  "aggregateScore": 77,
+  "targetHeat": 90,
+  "oldHeatBase": 92,
+  "newHeatBase": 90,
+  "delta": -2,
+  "itemCount": 22,
+  "topSignals": [
+    {
+      "title": "The Nobitex dilemma: How Iran's biggest crypto exchange stays off the OFAC blacklist - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQemFmeUV2MEpQVENrUmFvNzdsT21UbVBuSURNYmJWY2NuY2UwdWRZaDdsYnVaVUxIUExjNVluR0FseTFSbjRQNHU5NFFwZTdwOVlmQXhxbWVRQjlSRm9HTVlqOERLeUNNdHozNzNnMk1YOGhYUnBVMzFiTEZEQ09NVzZJUWwwOE41QmZUWW9iRWpiQ2E0TGV6MV9Oa1U0NWlnYUxOMmUwSUFMcHpyREpGMm5SQ25JbktSVGhsZUNtNmh2emFOclE5WHlqODhwQUJUZGpQc09zZk5GVnRzNS1UbA?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxQemFmeUV2MEpQVENrUmFvNzdsT21UbVBuSURNYmJWY2NuY2UwdWRZaDdsYnVaVUxIUExjNVluR0FseTFSbjRQNHU5NFFwZTdwOVlmQXhxbWVRQjlSRm9HTVlqOERLeUNNdHozNzNnMk1YOGhYUnBVMzFiTEZEQ09NVzZJUWwwOE41QmZUWW9iRWpiQ2E0TGV6MV9Oa1U0NWlnYUxOMmUwSUFMcHpyREpGMm5SQ25JbktSVGhsZUNtNmh2emFOclE5WHlqODhwQUJUZGpQc09zZk5GVnRzNS1UbA?oc=5\" target=\"_blank\">The Nobitex dilemma: How Iran's biggest crypto exchange stays off the OFAC blacklist</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
+      "publishedAt": "Sat, 09 May 2026 17:42:09 GMT",
+      "source": "google-news",
+      "query": "OFAC SDN list update Iran sanctions designated entities",
+      "score": 9
+    },
+    {
+      "title": "Treasury Sanctions 10 Entities Across Middle East, Asia, and Europe Over Iran Arms Networks - townhall.com",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQ2NJMHZ0bXR2Ul80RHhaZnMwQm5GWU5SQU1ZNDN0TFVSNE1mY3h5YTNtUm9yV2dqcUQ1c0Y2OVdnNmcyajNZcmFRNF96U2hTM0ZTeHZUTFFFT3dtTEJJMmRnNXdKNFFvQ042WVlkMzNlMG8yZEduLUdCc1lmVXhSMi1LTjRZYS0tVEdXbTRKcVhHNGhYTzFCczNFbkd2eXhib2t2eUVrZkdOdDdTaGJ5dUhpclBvU1EtUGRoSWpZYlo4NUZPVkNlelhaOVZPMUlQMUtPX1ZHUGpCeXJBVXU3UmVub1dUdXdLb2Nj?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQ2NJMHZ0bXR2Ul80RHhaZnMwQm5GWU5SQU1ZNDN0TFVSNE1mY3h5YTNtUm9yV2dqcUQ1c0Y2OVdnNmcyajNZcmFRNF96U2hTM0ZTeHZUTFFFT3dtTEJJMmRnNXdKNFFvQ042WVlkMzNlMG8yZEduLUdCc1lmVXhSMi1LTjRZYS0tVEdXbTRKcVhHNGhYTzFCczNFbkd2eXhib2t2eUVrZkdOdDdTaGJ5dUhpclBvU1EtUGRoSWpZYlo4NUZPVkNlelhaOVZPMUlQMUtPX1ZHUGpCeXJBVXU3UmVub1dUdXdLb2Nj?oc=5\" target=\"_blank\">Treasury Sanctions 10 Entities Across Middle East, Asia, and Europe Over Iran Arms Networks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">townhall.com</font>",
+      "publishedAt": "Sat, 09 May 2026 00:30:00 GMT",
+      "source": "google-news",
+      "query": "OFAC SDN list update Iran sanctions designated entities",
+      "score": 8
+    },
+    {
+      "title": "US imposes sanctions on China-based oil refinery and shipping companies over Iranian oil - MSN",
+      "link": "https://news.google.com/rss/articles/CBMigwNBVV95cUxQQnFOMVBtOTk2QWdZeFJ2dlpIMFFZYVFabGZkUkpEUGpfSE9jQ19QMXZMOUp2TTVUUHl3bHBkeG1kSWtveFVHVlRuYXRLcDNRV21pZEZKWjdEcjRhWVYtcGU5bk80b2ZtTXJFSUs3aEM4U2ZERGRTU3p3czE5S2lCcXRCeUVQd25XQ0xQTlZUaDVLNE9MOVlxcTlKVUxQUUFobVVnRzlpSFdCbjF5c25LZXpNbkp4ZWwzOGt5eXNXMXJwbWcxNWlaVmR1ajNNalhhaUQydko4R1BncjlISmZXcGNLMTFaZkZ4RExKMk5uQmVybDV6QTdYcVFCVERpaXh3MVFZSWVtN1RhdzdHeGJqNlE4WFQzUmtCWXV1ZkNHcGpkS1RwX0pUc3J4eTFPNFdTbnRZeGtQNjZxRkdRSG9GeWZyZW1lYVBJaVpjcE82cGFYbFRFT1dPeG95emF4M1o1ZnNzb1VUcUVGcHZLMXF6aEVtUWZETTZsWkhTQ1ZHenM3NE0?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMigwNBVV95cUxQQnFOMVBtOTk2QWdZeFJ2dlpIMFFZYVFabGZkUkpEUGpfSE9jQ19QMXZMOUp2TTVUUHl3bHBkeG1kSWtveFVHVlRuYXRLcDNRV21pZEZKWjdEcjRhWVYtcGU5bk80b2ZtTXJFSUs3aEM4U2ZERGRTU3p3czE5S2lCcXRCeUVQd25XQ0xQTlZUaDVLNE9MOVlxcTlKVUxQUUFobVVnRzlpSFdCbjF5c25LZXpNbkp4ZWwzOGt5eXNXMXJwbWcxNWlaVmR1ajNNalhhaUQydko4R1BncjlISmZXcGNLMTFaZkZ4RExKMk5uQmVybDV6QTdYcVFCVERpaXh3MVFZSWVtN1RhdzdHeGJqNlE4WFQzUmtCWXV1ZkNHcGpkS1RwX0pUc3J4eTFPNFdTbnRZeGtQNjZxRkdRSG9GeWZyZW1lYVBJaVpjcE82cGFYbFRFT1dPeG95emF4M1o1ZnNzb1VUcUVGcHZLMXF6aEVtUWZETTZsWkhTQ1ZHenM3NE0?oc=5\" target=\"_blank\">US imposes sanctions on China-based oil refinery and shipping companies over Iranian oil</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Sat, 16 May 2026 21:40:43 GMT",
+      "source": "google-news",
+      "query": "Secondary sanctions Iran oil tanker Chinese refinery",
+      "score": 6
+    },
+    {
+      "title": "US imposes sanctions on a China-based oil refinery and 40 shippers over Iranian oil - Nonstop Local News Montana",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZWNjMGpRaV90cktqeS04LXJWN1JsQ3I1ejllb2Q5MVo3MUMxYTVqem90V1RqZGZUU2ZXWGtNWGhmRVBzN3FTanlaM1BRVFNjWmRnQXAyaXctU1JlSlFtSlV3VEZEWnpOajZvSldFcEJhbHkwWVIybklVdUxDbktWc3J4a1ZTN3FIV0hDUWYwN21pVlZFN0ZaRXJtZ2pHak15V1ZOa0R2WDdwY2c4TXA4TnRzZndqaG9CUE5TUlhVZHN0N085SjRxVUF6UTRkTTNkbXFHMWs0VzhPbUR1QjFuTUNhRkxLSmVYa0YzdXZVcnp0TldMMWxDcw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZWNjMGpRaV90cktqeS04LXJWN1JsQ3I1ejllb2Q5MVo3MUMxYTVqem90V1RqZGZUU2ZXWGtNWGhmRVBzN3FTanlaM1BRVFNjWmRnQXAyaXctU1JlSlFtSlV3VEZEWnpOajZvSldFcEJhbHkwWVIybklVdUxDbktWc3J4a1ZTN3FIV0hDUWYwN21pVlZFN0ZaRXJtZ2pHak15V1ZOa0R2WDdwY2c4TXA4TnRzZndqaG9CUE5TUlhVZHN0N085SjRxVUF6UTRkTTNkbXFHMWs0VzhPbUR1QjFuTUNhRkxLSmVYa0YzdXZVcnp0TldMMWxDcw?oc=5\" target=\"_blank\">US imposes sanctions on a China-based oil refinery and 40 shippers over Iranian oil</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Nonstop Local News Montana</font>",
+      "publishedAt": "Fri, 15 May 2026 07:02:41 GMT",
+      "source": "google-news",
+      "query": "Secondary sanctions Iran oil tanker Chinese refinery",
+      "score": 6
+    },
+    {
+      "title": "Iran seizes the Chinese tanker Ocean Koi in the Strait of Hormuz while 1.6 million barrels per day flow amid the war with the USA. - CPG Click Petróleo e Gás",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONzE5UGg3QnFEdkNvRkdXWnl2Z1REUGxyQm9iSU9ucjJoYk9CaHU0Z3Mya0VOYnVRREtaOTUybUl4cGxQUXp6VUFiREc2MFprOHJydllSNGpFelZwSUVHSTEwYlpFZnh3SGxvYWl3MkpING9SWUVRNFF3WnA1R25halVDQ2hkanVUVk00YjZtcVByS2Z2ejNadjFMWmVyQnRXaW9lWFVxM1l6TTN3RHQtandfMGVNYkxpTW50ZzJWNnlfSk5QQ1BRa2lCMWJIanpxSW9lNFp2QXRSYnRVZHdXMmdvWldQZ202bktJY0J3WEdTb1A1MDcyeGYxS0x1LTZsWXc?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiggJBVV95cUxONzE5UGg3QnFEdkNvRkdXWnl2Z1REUGxyQm9iSU9ucjJoYk9CaHU0Z3Mya0VOYnVRREtaOTUybUl4cGxQUXp6VUFiREc2MFprOHJydllSNGpFelZwSUVHSTEwYlpFZnh3SGxvYWl3MkpING9SWUVRNFF3WnA1R25halVDQ2hkanVUVk00YjZtcVByS2Z2ejNadjFMWmVyQnRXaW9lWFVxM1l6TTN3RHQtandfMGVNYkxpTW50ZzJWNnlfSk5QQ1BRa2lCMWJIanpxSW9lNFp2QXRSYnRVZHdXMmdvWldQZ202bktJY0J3WEdTb1A1MDcyeGYxS0x1LTZsWXc?oc=5\" target=\"_blank\">Iran seizes the Chinese tanker Ocean Koi in the Strait of Hormuz while 1.6 million barrels per day flow amid the war with the USA.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CPG Click Petróleo e Gás</font>",
+      "publishedAt": "Thu, 14 May 2026 21:32:00 GMT",
+      "source": "google-news",
+      "query": "Secondary sanctions Iran oil tanker Chinese refinery",
+      "score": 6
+    },
+    {
+      "title": "How Cos. Can Navigate Iran Sanctions Risks In China - Law360",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMWtzQ3BYTm0yNVcycmdkLUVpWksyNmk1cHBWQjZCczAxaWk3TGRSRWR2czlCYy1iWENKV2w4VHlPQ1RTcXhEMTM5WDlCSHFOeTBSSHJrVFJnTTBOVlBhd3dtSjhhTl9NVWtvUTRSVFN0akI5QW0taUxfbjFUVldWYXZ2TWI0LVl6QVlOaG5pUFEzYmQ00gFWQVVfeXFMT3RHTkxVd2NPWWd2R3o3UkVPOWNjOFB2b1pMWjZtb21PV0J5N0wyUlNGQzRTa3ZTQ2pvX1NDaUFObzhOVnBCemJwMFkzTElSeFdLMUFFNGc?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNMWtzQ3BYTm0yNVcycmdkLUVpWksyNmk1cHBWQjZCczAxaWk3TGRSRWR2czlCYy1iWENKV2w4VHlPQ1RTcXhEMTM5WDlCSHFOeTBSSHJrVFJnTTBOVlBhd3dtSjhhTl9NVWtvUTRSVFN0akI5QW0taUxfbjFUVldWYXZ2TWI0LVl6QVlOaG5pUFEzYmQ00gFWQVVfeXFMT3RHTkxVd2NPWWd2R3o3UkVPOWNjOFB2b1pMWjZtb21PV0J5N0wyUlNGQzRTa3ZTQ2pvX1NDaUFObzhOVnBCemJwMFkzTElSeFdLMUFFNGc?oc=5\" target=\"_blank\">How Cos. Can Navigate Iran Sanctions Risks In China</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Law360</font>",
+      "publishedAt": "Wed, 13 May 2026 22:00:00 GMT",
+      "source": "google-news",
+      "query": "OFAC SDN list update Iran sanctions designated entities",
+      "score": 3
+    },
+    {
+      "title": "Arkham Publishes On-Chain Tracking Map for Suspected Iran Central Bank Crypto Wallets - MEXC",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IMUJGVms4Q3VBdWQtc2VQUE9BZE83TjVTRXVCbVBhN0NfVXZQSVhPV1JiNlhyaFpVbjI3ZGxqb0R5ZkJjbGtSNA?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IMUJGVms4Q3VBdWQtc2VQUE9BZE83TjVTRXVCbVBhN0NfVXZQSVhPV1JiNlhyaFpVbjI3ZGxqb0R5ZkJjbGtSNA?oc=5\" target=\"_blank\">Arkham Publishes On-Chain Tracking Map for Suspected Iran Central Bank Crypto Wallets</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MEXC</font>",
+      "publishedAt": "Wed, 13 May 2026 14:17:16 GMT",
+      "source": "google-news",
+      "query": "OFAC SDN list update Iran sanctions designated entities",
+      "score": 3
+    },
+    {
+      "title": "UK, EU and US sanctions on Russia - Fieldfisher",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQRkR0OE4zakg3ajgzTUI1UTg0cnk5LUlWU3VfcmdYb3VwSWJYVE43U3lXWHBGb0Vza0huN2xZN1BOM1dtZFg5YWFSYUU4T3p2TlRuUUl4RlB2cDV1QjdNVGJ3SDRTOWZkUUFpMVByc1F5TV9GWHFNV2REempsczhtRlFzNUJKZ093WTJVX0I2bDlDRl9IbGJ2NjhPbXZHV3JZRWQ5cXpJakpWYlRSVnpOSGlJbw?oc=5\" target=\"_blank\">UK, EU and US sanctions on Russia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fieldfisher</font>",
+      "publishedAt": "Wed, 13 May 2026 07:00:00 GMT",
+      "source": "google-news",
+      "query": "OFAC SDN list update Iran sanctions designated entities",
+      "score": 3
+    }
+  ]
+}

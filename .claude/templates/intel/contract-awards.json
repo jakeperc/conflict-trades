@@ -1,0 +1,42 @@
+{
+  "topic": "contract-awards",
+  "scenarioKey": "europe",
+  "queries": [
+    "Department of Defense contract award Lockheed Raytheon Northrop General Dynamics",
+    "Pentagon awards defense contract billion munitions missiles",
+    "Army Navy Air Force contract award announcement",
+    "DoD foreign military sale FMS contract signed"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["lockheed", 4],
+    ["raytheon", 4],
+    ["northrop", 4],
+    ["general dynamics", 4],
+    ["huntington ingalls", 4],
+    ["boeing defense", 3],
+    ["l3harris", 3],
+    ["bae", 2],
+    ["palantir", 2],
+    ["awarded", 4],
+    ["contract", 2],
+    ["billion", 5],
+    ["multi-year", 4],
+    ["idiq", 3],
+    ["ammunition", 3],
+    ["missile", 3],
+    ["patriot", 4],
+    ["pac-3", 5],
+    ["thaad", 4],
+    ["javelin", 4],
+    ["stinger", 4],
+    ["munitions", 3]
+  ],
+  "bands": {
+    "high": [40, 84],
+    "mid": [20, 76],
+    "low": [8, 68],
+    "baseline": 60
+  },
+  "maxHeatDelta": 4
+}

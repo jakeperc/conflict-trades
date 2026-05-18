@@ -11,7 +11,7 @@
         "Iran oil prices Hormuz shipping",
         "Yemen Houthi Red Sea shipping oil"
       ],
-      "heatBase": 92,
+      "heatBase": 90,
       "summary": "Updated for the May 2026 Hormuz blockage: crude sensitivity, trapped-vessel release attempts, tanker insurance stress, and defense restocking if Gulf transit risk stays elevated.",
       "secondOrderEffects": [
         "Marine insurance and mine-risk terms can hit delivered crude costs faster than headline oil moves.",
@@ -425,7 +425,7 @@
         "Europe defense rearmament Russia Ukraine NATO",
         "EU Russian LNG ban Europe gas"
       ],
-      "heatBase": 66,
+      "heatBase": 70,
       "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
       "secondOrderEffects": [
         "European rearmament can outlast the immediate headline cycle and support defense multiples longer than energy spikes do.",

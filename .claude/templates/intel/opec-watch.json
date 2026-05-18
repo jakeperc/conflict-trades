@@ -1,0 +1,38 @@
+{
+  "topic": "opec-watch",
+  "scenarioKey": "iran",
+  "queries": [
+    "OPEC+ meeting decision production cut increase quota",
+    "Saudi Arabia voluntary production OPEC oil supply",
+    "OPEC JMMC ministerial meeting outcome statement",
+    "OPEC monthly oil market report demand supply"
+  ],
+  "rssFeeds": [],
+  "weights": [
+    ["opec+", 5],
+    ["opec", 3],
+    ["production cut", 6],
+    ["production increase", 6],
+    ["quota", 4],
+    ["voluntary cut", 6],
+    ["voluntary increase", 6],
+    ["jmmc", 5],
+    ["ministerial", 3],
+    ["saudi", 3],
+    ["uae", 3],
+    ["iraq", 2],
+    ["barrels per day", 4],
+    ["bpd", 4],
+    ["compliance", 3],
+    ["overproduction", 4],
+    ["spare capacity", 4],
+    ["monthly oil market report", 5]
+  ],
+  "bands": {
+    "high": [40, 78],
+    "mid": [20, 70],
+    "low": [8, 64],
+    "baseline": 58
+  },
+  "maxHeatDelta": 3
+}
