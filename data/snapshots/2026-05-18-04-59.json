@@ -1,0 +1,1019 @@
+{
+  "generatedAt": "2026-05-18T04:59:13.009Z",
+  "appVersion": "2026-05-current-automated",
+  "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
+  "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and trailing realized volatility from recent Stooq or Yahoo Finance price history.",
+  "scenarios": {
+    "iran": {
+      "key": "iran",
+      "title": "Iran / Hormuz / Yemen",
+      "subtitle": "Hormuz freeze, tanker repricing, defense replenishment",
+      "color": "#ff8a3d",
+      "summary": "Updated for the May 2026 Hormuz blockage: crude sensitivity, trapped-vessel release attempts, tanker insurance stress, and defense restocking if Gulf transit risk stays elevated.",
+      "heat": 96,
+      "subScores": [
+        {
+          "label": "Military escalation",
+          "value": 98
+        },
+        {
+          "label": "Shipping disruption",
+          "value": 98
+        },
+        {
+          "label": "Energy shock",
+          "value": 98
+        },
+        {
+          "label": "Defense demand",
+          "value": 90
+        }
+      ],
+      "indicators": [
+        {
+          "label": "Brent crude",
+          "value": 111.3,
+          "unit": "pts",
+          "delta": 1.3,
+          "tone": "up"
+        },
+        {
+          "label": "Tanker rates",
+          "value": 160.5,
+          "unit": "%",
+          "delta": 5.5,
+          "tone": "up"
+        },
+        {
+          "label": "Marine insurance",
+          "value": 252.1,
+          "unit": "bps",
+          "delta": 7.1,
+          "tone": "up"
+        },
+        {
+          "label": "Airline margin stress",
+          "value": 29.5,
+          "unit": "%",
+          "delta": 2.5,
+          "tone": "up"
+        }
+      ],
+      "secondOrderEffects": [
+        "Marine insurance and mine-risk terms can hit delivered crude costs faster than headline oil moves.",
+        "A slow, military-managed reopening keeps tanker availability tight even if a small number of vessels transit.",
+        "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
+      ],
+      "topPairTrade": "Long XOM / Short UAL",
+      "refreshedAt": "2026-05-18T04:59:10.129Z",
+      "headlines": [
+        {
+          "title": "China signals veto on US Hormuz resolution as ship blockade grows - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNNlphWjl6ck1KUTRpRzgyQk1TNEJzVDRldzVIMzBXOHlfdkpZd29JZEpQcWwzQ3BEX0tEMTJQN1VtQlFVd24zMkJJcE91OHpIZ0ZVOE1LUVpRTW9CYXcxVjd1ODNYYnpfb1pCZ29lcDFLN3RTZWlWX1FDd1VubUJtdndSZGNkUm1ya0NrTjdULXVQRFdOQlBLYkVjYlhPYUk2d2QwS2xabk5TQ2M5U1dMMGlJamw4cl9sbEdiUTdRemJqb2d0aGhNZ2tTYzV0cU1CSmhvUktpc3JyNEQtbkItWEdWMmdHTFVFV2o2X1VfSDdtYTlvYlB6a0xzZHVrS1E?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxNNlphWjl6ck1KUTRpRzgyQk1TNEJzVDRldzVIMzBXOHlfdkpZd29JZEpQcWwzQ3BEX0tEMTJQN1VtQlFVd24zMkJJcE91OHpIZ0ZVOE1LUVpRTW9CYXcxVjd1ODNYYnpfb1pCZ29lcDFLN3RTZWlWX1FDd1VubUJtdndSZGNkUm1ya0NrTjdULXVQRFdOQlBLYkVjYlhPYUk2d2QwS2xabk5TQ2M5U1dMMGlJamw4cl9sbEdiUTdRemJqb2d0aGhNZ2tTYzV0cU1CSmhvUktpc3JyNEQtbkItWEdWMmdHTFVFV2o2X1VfSDdtYTlvYlB6a0xzZHVrS1E?oc=5\" target=\"_blank\">China signals veto on US Hormuz resolution as ship blockade grows</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "publishedAt": "Sun, 17 May 2026 17:44:35 GMT"
+        },
+        {
+          "title": "Shipping firms find new routes as partial Hormuz alternative — FT - RBC-Ukraine",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU1FCUVo1WFVWanFhZ3BhWXYwWXRQWkp2bnk3cjZEOWE0d1J1dWRZaEZCemNTNXA5Z2FwR3dINVIyM3dvLVBvLU1nRDBEN0lxQ3N2YTE2Nk9ELVFCU25KRjljOEJxM2RkUHVkdWdLbTFIbGNPYnZlTFplN0JPYThOc25kM2lSa2dsT2hNN0lVMnhCMHc?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxPU1FCUVo1WFVWanFhZ3BhWXYwWXRQWkp2bnk3cjZEOWE0d1J1dWRZaEZCemNTNXA5Z2FwR3dINVIyM3dvLVBvLU1nRDBEN0lxQ3N2YTE2Nk9ELVFCU25KRjljOEJxM2RkUHVkdWdLbTFIbGNPYnZlTFplN0JPYThOc25kM2lSa2dsT2hNN0lVMnhCMHc?oc=5\" target=\"_blank\">Shipping firms find new routes as partial Hormuz alternative — FT</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">RBC-Ukraine</font>",
+          "publishedAt": "Sun, 17 May 2026 16:20:19 GMT"
+        },
+        {
+          "title": "US blockade in Hormuz intensifies as Iran standoff deepens - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPa3RQUU9ELWJ4ekREaHZSV09tcFMwTzdFYlBaWkxtWUdMV3VXVElUYzZya0FuUmpBNURJMy1zZ1BveER1WE40MUpZZWExbjlqQXV5WlY0VmhKRW5nR1B0d2x0ZE5CMnlWSGNpOTVsN0FoaWh1clJkY2ZvcTUtcUFfSzFYUEVkRGxJcXZXWm1DUFRqVnhKcm96T3Q4dGlJdzhmZTNKYjFlTWlyVm0yT081bG5xZEZUQjdvYkIzTmg5YVlnNGZ6NVl6Vm9HUzBxU1d5NEEzUEs4eVpMeXRoNDdlWFN5MA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxPa3RQUU9ELWJ4ekREaHZSV09tcFMwTzdFYlBaWkxtWUdMV3VXVElUYzZya0FuUmpBNURJMy1zZ1BveER1WE40MUpZZWExbjlqQXV5WlY0VmhKRW5nR1B0d2x0ZE5CMnlWSGNpOTVsN0FoaWh1clJkY2ZvcTUtcUFfSzFYUEVkRGxJcXZXWm1DUFRqVnhKcm96T3Q4dGlJdzhmZTNKYjFlTWlyVm0yT081bG5xZEZUQjdvYkIzTmg5YVlnNGZ6NVl6Vm9HUzBxU1d5NEEzUEs4eVpMeXRoNDdlWFN5MA?oc=5\" target=\"_blank\">US blockade in Hormuz intensifies as Iran standoff deepens</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "publishedAt": "Sun, 17 May 2026 15:20:52 GMT"
+        },
+        {
+          "title": "US blockade turns back 78 ships as Iran seizes tanker - MSN",
+          "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPb18tdExOVmlBcjFMLUVGMWMtLWtpajBkTHhpYjV6V2pyMV93a29mekhGQ3Qzcjk0dHBiM1NmMVFZMFd0SVI5SnFzTHRaOWtTWXEta3JHVXVVN0d0Wm1VNm9vLTRBektMem5rWFN4WExXTVpqeWdva2tBNzFHMGZOcm5uNjZ3MDUxTElldEd3R01fSmc1MnN2ZDZrSlhPVWdHSDZOYTlhSTcycHE4Qmk2LVlKNVVvX01SYWtWNUlRYVFrZW9rZ1RweVhSTEtNM1l1c3FwQ2hEaUhMMk1aYkRUbUVDUF9aN09wVHdaem9tUkpNSjBlVVBhMnhhMUNpSTducXhoRkhB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMihgJBVV95cUxPb18tdExOVmlBcjFMLUVGMWMtLWtpajBkTHhpYjV6V2pyMV93a29mekhGQ3Qzcjk0dHBiM1NmMVFZMFd0SVI5SnFzTHRaOWtTWXEta3JHVXVVN0d0Wm1VNm9vLTRBektMem5rWFN4WExXTVpqeWdva2tBNzFHMGZOcm5uNjZ3MDUxTElldEd3R01fSmc1MnN2ZDZrSlhPVWdHSDZOYTlhSTcycHE4Qmk2LVlKNVVvX01SYWtWNUlRYVFrZW9rZ1RweVhSTEtNM1l1c3FwQ2hEaUhMMk1aYkRUbUVDUF9aN09wVHdaem9tUkpNSjBlVVBhMnhhMUNpSTducXhoRkhB?oc=5\" target=\"_blank\">US blockade turns back 78 ships as Iran seizes tanker</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "publishedAt": "Sun, 17 May 2026 14:57:07 GMT"
+        },
+        {
+          "title": "Iran Launches ‘Hormuz Safe’ Insurance Platform as Maritime Tensions Deepen in Strait of Hormuz - Kurdistan24",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ0ZTS01RbGQ0TUJ2cXNWVmlUbDlXb1M3blJGV0dENnJqS2p0bE1oTHJPYkI4NkYyLWZRcUlKa2RuTEFPYmV4amFEaGk3T1ZVWDhXcTd3YWY2aktNZ1BBNThwMVFvRGViczlxZDl3MEZzekN3OGNxYTNPX0lrYk5yaC1qa25mRTRWdkFoT2kxdVc0ckFDa2dHaXNyYTVfaEFrWXNoUnRDVDhZOGhwUUk5NDZ2bFJJUUZHLVJyUEJhaGlVemlvZkVPaU9WejVpVkt1Q0E?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ0ZTS01RbGQ0TUJ2cXNWVmlUbDlXb1M3blJGV0dENnJqS2p0bE1oTHJPYkI4NkYyLWZRcUlKa2RuTEFPYmV4amFEaGk3T1ZVWDhXcTd3YWY2aktNZ1BBNThwMVFvRGViczlxZDl3MEZzekN3OGNxYTNPX0lrYk5yaC1qa25mRTRWdkFoT2kxdVc0ckFDa2dHaXNyYTVfaEFrWXNoUnRDVDhZOGhwUUk5NDZ2bFJJUUZHLVJyUEJhaGlVemlvZkVPaU9WejVpVkt1Q0E?oc=5\" target=\"_blank\">Iran Launches ‘Hormuz Safe’ Insurance Platform as Maritime Tensions Deepen in Strait of Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kurdistan24</font>",
+          "publishedAt": "Sun, 17 May 2026 12:56:28 GMT"
+        },
+        {
+          "title": "Trump Says 'Clock Is Ticking' For Iran - Radio Free Europe/Radio Liberty",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5\" target=\"_blank\">Trump Says 'Clock Is Ticking' For Iran</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Radio Free Europe/Radio Liberty</font>",
+          "publishedAt": "Sun, 17 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "US Israel Iran War Latest News: Is Iran Preparing to Control Strait of Hormuz Shipping? What is Maritime Insurance? New Traffic Rules, Tolls Raise US-Israel Tension - The Sunday Guardian",
+          "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPQ2doeWNRcl9GYWI3WmVDS1FYbU11X3phOV9majVBNFZRODJrUEZTWEo1Wmtsd1NkbVBCQld0eThjM0wzM2pDS1E4RVo4V1BNQUJuVFdoZ2RvLURvUUlCM2QwcDljU1ptYndOTVVpRUd6ZDZ1b005LTB5MXJvTnFSQUhwYVI2ZENhT3dvVEdueFNPZF9jdnRBTUJfNjJha2xpMkZBRldEaHpIeFFtNE51d3VyVV8tTmlXYXRmRVd3ejVyeDBCaDR2NVV3Y2hOX2czcEhCZHZlRVVwSlQxQzU5V0tZNXRHTlUwQ29pYTB2eEYyendGVmZDNmhaTlU4aXFUTkM4WDlpY2t2VG8wZEY0aS1SVVRhZDFmUzZ6Ukh2c1Q0V19WYkJYeDM3QW43dw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMirgJBVV95cUxPQ2doeWNRcl9GYWI3WmVDS1FYbU11X3phOV9majVBNFZRODJrUEZTWEo1Wmtsd1NkbVBCQld0eThjM0wzM2pDS1E4RVo4V1BNQUJuVFdoZ2RvLURvUUlCM2QwcDljU1ptYndOTVVpRUd6ZDZ1b005LTB5MXJvTnFSQUhwYVI2ZENhT3dvVEdueFNPZF9jdnRBTUJfNjJha2xpMkZBRldEaHpIeFFtNE51d3VyVV8tTmlXYXRmRVd3ejVyeDBCaDR2NVV3Y2hOX2czcEhCZHZlRVVwSlQxQzU5V0tZNXRHTlUwQ29pYTB2eEYyendGVmZDNmhaTlU4aXFUTkM4WDlpY2t2VG8wZEY0aS1SVVRhZDFmUzZ6Ukh2c1Q0V19WYkJYeDM3QW43dw?oc=5\" target=\"_blank\">US Israel Iran War Latest News: Is Iran Preparing to Control Strait of Hormuz Shipping? What is Maritime Insurance? New Traffic Rules, Tolls Raise US-Israel Tension</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Sunday Guardian</font>",
+          "publishedAt": "Sun, 17 May 2026 03:42:31 GMT"
+        },
+        {
+          "title": "Iran war: Will tensions escalate in the Strait of Hormuz? - dw.com",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWYnZJLURyc3pUNDl0Xzg1TzlEZVZMbHVLODhKeHM2TW9acWFzemZwckQwTmdaN3lvYVo4VlBRb3JjdnpTMnU1XzBpS01VU3l5MGRXaWVmTEpUMVlfM0Rub2QwSlVOUWcwRnpmd1ZpQm9WeE1SdVRqTjlEd9IBe0FVX3lxTE0wR212akdxZk9GZFRFdVhFZTVVd194dVlETEE3SkpYOWlvM3hQb2MtTTJka2NoTjYwNzFvNlFsdXNDS0NZNk9tRkpsWXVCY1dNellkSVR2TVEzVXFCVFRFdnFxMDV3WGFRWXZ0MWVrcm9EYkJuRVczVXg2cw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBWYnZJLURyc3pUNDl0Xzg1TzlEZVZMbHVLODhKeHM2TW9acWFzemZwckQwTmdaN3lvYVo4VlBRb3JjdnpTMnU1XzBpS01VU3l5MGRXaWVmTEpUMVlfM0Rub2QwSlVOUWcwRnpmd1ZpQm9WeE1SdVRqTjlEd9IBe0FVX3lxTE0wR212akdxZk9GZFRFdVhFZTVVd194dVlETEE3SkpYOWlvM3hQb2MtTTJka2NoTjYwNzFvNlFsdXNDS0NZNk9tRkpsWXVCY1dNellkSVR2TVEzVXFCVFRFdnFxMDV3WGFRWXZ0MWVrcm9EYkJuRVczVXg2cw?oc=5\" target=\"_blank\">Iran war: Will tensions escalate in the Strait of Hormuz?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">dw.com</font>",
+          "publishedAt": "Sun, 17 May 2026 01:05:52 GMT"
+        },
+        {
+          "title": "Latest Travel Alert: Strait of Hormuz Disruptions as US Blocks Iranian Ports and Iran Reports Oil Tanker Seizure - Travel And Tour World",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcUlKMFpCNTdsblA3b2llLW1OaVVXaTMyQmhaN0VDU2o5Q1NqN2pFWXExcDd2M1NDNVBPbWdtSEJhRXVyRlhNaVd2YkptVkx3V3F0OWtBN2VuWGpfRWFqTHZyUnJUd0JpWlk2anNta0xFOHQ4WDlfZFpkRXhDRGxsd3pFclVzTFBYNVZVODJhSzByNW9jYjBLVmF1Q3Y1cXZ2VmNHN0hLZWdwcEdsczlCZVRpTGJBR0tHSnFsWDdBemxSWVY0VnBRTENmV09pZVp5YTl6RVM3WXBwTnVKUGZVX3RHb0hkTWJiRkdwckFWczBsdw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcUlKMFpCNTdsblA3b2llLW1OaVVXaTMyQmhaN0VDU2o5Q1NqN2pFWXExcDd2M1NDNVBPbWdtSEJhRXVyRlhNaVd2YkptVkx3V3F0OWtBN2VuWGpfRWFqTHZyUnJUd0JpWlk2anNta0xFOHQ4WDlfZFpkRXhDRGxsd3pFclVzTFBYNVZVODJhSzByNW9jYjBLVmF1Q3Y1cXZ2VmNHN0hLZWdwcEdsczlCZVRpTGJBR0tHSnFsWDdBemxSWVY0VnBRTENmV09pZVp5YTl6RVM3WXBwTnVKUGZVX3RHb0hkTWJiRkdwckFWczBsdw?oc=5\" target=\"_blank\">Latest Travel Alert: Strait of Hormuz Disruptions as US Blocks Iranian Ports and Iran Reports Oil Tanker Seizure</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Travel And Tour World</font>",
+          "publishedAt": "Sun, 17 May 2026 00:42:22 GMT"
+        },
+        {
+          "title": "Trump’s blockade appears to be turning back tankers in the Strait of Hormuz – but Iran has a trick up its sleeve - AOL.com",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4yZ3M5eXI3UEx4OTVNRUZDOTh0Tms0YXVRSVY3VktDLW9OU01UOHZkaGtVRkcyUGpiS3ZaelM1TmN6ZndzYTVWN3owb1U4bFVDV2pNWnNiOEVxdzJhUFJfZmJUNUk5MnBLY3pPa04tUkhaVWpJdzZ2WWpKLW0?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE4yZ3M5eXI3UEx4OTVNRUZDOTh0Tms0YXVRSVY3VktDLW9OU01UOHZkaGtVRkcyUGpiS3ZaelM1TmN6ZndzYTVWN3owb1U4bFVDV2pNWnNiOEVxdzJhUFJfZmJUNUk5MnBLY3pPa04tUkhaVWpJdzZ2WWpKLW0?oc=5\" target=\"_blank\">Trump’s blockade appears to be turning back tankers in the Strait of Hormuz – but Iran has a trick up its sleeve</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+          "publishedAt": "Sat, 16 May 2026 23:41:06 GMT"
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "XOM",
+          "direction": "LONG",
+          "conviction": 5,
+          "sector": "Energy",
+          "horizon": "2-6 weeks",
+          "pairTrade": "Long XOM / Short UAL",
+          "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
+          "catalyst": "Brent reprices on tanker and insurance stress.",
+          "riskLevel": "Medium",
+          "thesis": "Integrated major with direct upside to higher crude and LNG pricing.",
+          "price": 157.9199981689453,
+          "annualizedVol": 0.2986717933118516,
+          "upsidePct": 0.28,
+          "downsidePct": 0.11084061519742221,
+          "targetPrice": 202.13759765625,
+          "stopPrice": 140.41604841992364,
+          "rewardToRisk": 2.53,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "CVX",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Energy",
+          "horizon": "2-6 weeks",
+          "pairTrade": "Long CVX / Short CCL",
+          "thesisBreaker": "Oil retraces before downstream margins expand.",
+          "catalyst": "Upstream sensitivity and dividend quality attract capital.",
+          "riskLevel": "Medium",
+          "thesis": "Large upstream torque and strong cash returns in an oil squeeze.",
+          "price": 191.10000610351562,
+          "annualizedVol": 0.24796846965737948,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09475621635888554,
+          "targetPrice": 244.6080078125,
+          "stopPrice": 172.99209257898656,
+          "rewardToRisk": 2.95,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "COP",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Energy",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Long COP / Short UAL",
+          "thesisBreaker": "Headline escalation fails to convert into sustained crude drawdown.",
+          "catalyst": "Cleaner oil beta than integrated peers.",
+          "riskLevel": "High",
+          "thesis": "Upstream-heavy exposure gives cleaner oil beta than integrated peers.",
+          "price": 122.41000366210938,
+          "annualizedVol": 0.3151360389854103,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10281632467824925,
+          "targetPrice": 156.6848046875,
+          "stopPrice": 109.82425698172027,
+          "rewardToRisk": 2.72,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "LNG",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Gas / LNG",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LNG / Short airlines basket",
+          "thesisBreaker": "Shipping stress stays localized and gas balances remain loose.",
+          "catalyst": "LNG premium widens if Atlantic and Red Sea routes tighten.",
+          "riskLevel": "High",
+          "thesis": "LNG export leverage rises if shipping routes and gas balances tighten.",
+          "price": 241.83999633789062,
+          "annualizedVol": 0.3451085622358932,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10641302746830719,
+          "targetPrice": 309.5551953125,
+          "stopPrice": 216.10507016465138,
+          "rewardToRisk": 2.63,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "FRO",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Shipping",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Long FRO / Short CCL",
+          "thesisBreaker": "Rerouting proves temporary and rate spike fades.",
+          "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+          "riskLevel": "High",
+          "thesis": "Tanker day rates can spike when voyages reroute around risk zones.",
+          "price": 36.65999984741211,
+          "annualizedVol": 0.4671165982591886,
+          "upsidePct": 0.28,
+          "downsidePct": 0.12105399179110263,
+          "targetPrice": 46.9247998046875,
+          "stopPrice": 32.22216052682166,
+          "rewardToRisk": 2.31,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "TNK",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Shipping",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Long TNK / Short UAL",
+          "thesisBreaker": "Insurance market normalizes quickly.",
+          "catalyst": "Refined-product freight reacts fast to route disruption.",
+          "riskLevel": "High",
+          "thesis": "Product tanker pricing improves with insurance and routing friction.",
+          "price": 77.19000244140625,
+          "annualizedVol": 0.39853229727601824,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10282387567312218,
+          "targetPrice": 98.803203125,
+          "stopPrice": 69.2530272271631,
+          "rewardToRisk": 2.72,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long LMT / Short travel basket",
+          "thesisBreaker": "Conflict stays rhetorical without procurement urgency.",
+          "catalyst": "Interceptor and missile demand rises with Gulf defense posture.",
+          "riskLevel": "Medium",
+          "thesis": "Missile and air-defense replenishment benefits from a sustained Gulf scare.",
+          "price": 516.010009765625,
+          "annualizedVol": 0.27288650480023713,
+          "upsidePct": 0.27557488801073304,
+          "downsidePct": 0.08774638057602846,
+          "targetPrice": 658.2094104192045,
+          "stopPrice": 470.7319990676903,
+          "rewardToRisk": 3.14,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short consumer cyclicals",
+          "thesisBreaker": "Budget focus shifts away from missile defense.",
+          "catalyst": "Naval and missile systems benefit from prolonged escalation.",
+          "riskLevel": "Medium",
+          "thesis": "Naval, space, and missile defense exposure fits prolonged regional escalation.",
+          "price": 540.6900024414062,
+          "annualizedVol": 0.28864686234659415,
+          "upsidePct": 0.27998778812371306,
+          "downsidePct": 0.0896376234815913,
+          "targetPrice": 692.0766002855806,
+          "stopPrice": 492.2238355823028,
+          "rewardToRisk": 3.12,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "HAL",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Oil services",
+          "horizon": "1-3 months",
+          "pairTrade": "Long HAL / Short airline ETF proxy",
+          "thesisBreaker": "Oil spike is brief and producers avoid capex follow-through.",
+          "catalyst": "Sustained crude strength can reopen service-cycle upside.",
+          "riskLevel": "High",
+          "thesis": "Oilfield services typically follow through if crude stays bid long enough.",
+          "price": 41.7599983215332,
+          "annualizedVol": 0.3146200101018333,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09275440121222,
+          "targetPrice": 53.4527978515625,
+          "stopPrice": 37.88657468259608,
+          "rewardToRisk": 3.02,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "UAL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Airlines",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short UAL / Long XOM",
+          "thesisBreaker": "Fuel retreats quickly and demand remains resilient.",
+          "catalyst": "Jet fuel inflation and route changes pressure margins first.",
+          "riskLevel": "High",
+          "thesis": "Jet fuel inflation and route disruptions pressure airline margins.",
+          "price": 92.8499984741211,
+          "annualizedVol": 0.5518107661630341,
+          "upsidePct": 0.28,
+          "downsidePct": 0.1212172919395641,
+          "targetPrice": 66.85199890136718,
+          "stopPrice": 104.10502384574673,
+          "rewardToRisk": 2.31,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        }
+      ]
+    },
+    "taiwan": {
+      "key": "taiwan",
+      "title": "China / Taiwan",
+      "subtitle": "Gray-zone pressure, customs blockade risk, Indo-Pacific defense bid",
+      "color": "#5bc0ff",
+      "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
+      "heat": 96,
+      "subScores": [
+        {
+          "label": "Military escalation",
+          "value": 98
+        },
+        {
+          "label": "Semiconductor disruption",
+          "value": 96
+        },
+        {
+          "label": "Shipping disruption",
+          "value": 96
+        },
+        {
+          "label": "Onshoring tailwind",
+          "value": 92
+        }
+      ],
+      "indicators": [
+        {
+          "label": "Semiconductor stress",
+          "value": 104.3,
+          "unit": "%",
+          "delta": 4.3,
+          "tone": "up"
+        },
+        {
+          "label": "Defense bid",
+          "value": 102.2,
+          "unit": "%",
+          "delta": 2.2,
+          "tone": "up"
+        },
+        {
+          "label": "Asia shipping risk",
+          "value": 41.7,
+          "unit": "pts",
+          "delta": 3.7,
+          "tone": "up"
+        },
+        {
+          "label": "Consumer hardware drawdown",
+          "value": 11.3,
+          "unit": "%",
+          "delta": 2.3,
+          "tone": "up"
+        }
+      ],
+      "secondOrderEffects": [
+        "A customs or quarantine-style blockade can hit inventories before fabs are physically disrupted.",
+        "Consumer hardware multiples compress on uncertainty before revenue impacts show up.",
+        "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
+      ],
+      "topPairTrade": "Long LMT / Short AAPL",
+      "refreshedAt": "2026-05-18T04:59:13.008Z",
+      "headlines": [
+        {
+          "title": "Mainland China’s Wu Yongping on what the Xi-Trump summit means for Taiwan - South China Morning Post",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbjg4TFZmUlV2LWtxRjFNNGE4Mm1RVzlUVEdKZFJlcW9pcURrQ3ZiMlp4SGg3eVhCN1ZjanI4d25OZ1liNkdydy1oYXdZbTZVc2pJVEJyamRFdVFKZXJIQ2tsSExpX0xmc3dDUDF6MmNGZ19FZjRCaW1HSUJIUHc3aGhHcnZaWlJ5UTBVYTFSN2NsalF6OU9QS01jQ1JmVW9QR2t6WWNUXzFsOV9KZ2RmcXZJNnUxNFVFSHfSAboBQVVfeXFMT244OExWZlJVdi1rcUYxTTRhODJtUVc5VFRHSmRSZXFvaXFEa0N2YjJaeEhoN3lYQjdWY2pyOHduTmdZYjZHcnctaGF3WW02VXNqSVRCcmpkRXVRSmVySENrbEhMaV9MZnN3Q1AxejJjRmdfRWY0QmltR0lCSFB3N2hoR3J2WlpSeVEwVWExUjdjbGpRejlPUEtNY0NSZlVvUEdrelljVF8xbDlfSmdkZnF2STZ1MTRVRUh3?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPbjg4TFZmUlV2LWtxRjFNNGE4Mm1RVzlUVEdKZFJlcW9pcURrQ3ZiMlp4SGg3eVhCN1ZjanI4d25OZ1liNkdydy1oYXdZbTZVc2pJVEJyamRFdVFKZXJIQ2tsSExpX0xmc3dDUDF6MmNGZ19FZjRCaW1HSUJIUHc3aGhHcnZaWlJ5UTBVYTFSN2NsalF6OU9QS01jQ1JmVW9QR2t6WWNUXzFsOV9KZ2RmcXZJNnUxNFVFSHfSAboBQVVfeXFMT244OExWZlJVdi1rcUYxTTRhODJtUVc5VFRHSmRSZXFvaXFEa0N2YjJaeEhoN3lYQjdWY2pyOHduTmdZYjZHcnctaGF3WW02VXNqSVRCcmpkRXVRSmVySENrbEhMaV9MZnN3Q1AxejJjRmdfRWY0QmltR0lCSFB3N2hoR3J2WlpSeVEwVWExUjdjbGpRejlPUEtNY0NSZlVvUEdrelljVF8xbDlfSmdkZnF2STZ1MTRVRUh3?oc=5\" target=\"_blank\">Mainland China’s Wu Yongping on what the Xi-Trump summit means for Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">South China Morning Post</font>",
+          "publishedAt": "Sun, 17 May 2026 22:00:11 GMT"
+        },
+        {
+          "title": "Taiwan's president says island 'will never be sacrificed or traded' in stern rebuke of China - Fox News",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaEJhMTF6bTY1TW83eHFmNnhReFJxN2FCMUVmZEk4WFV3T1RFZUVzalI5UDRhQTFNRTNlRndaNXNhZzMzekh4R1NWUFVIS1d6RzRWS1VkaUowN3hqa3pHajNwcU8xOVlEU1RiYkFjZG1keVNrd0tSOWpST3hJRUZqb3hfbjhfRmdjUDJyN1VfTnRiQkQ4WlN1d05pdFQ4Q2NU0gGmAUFVX3lxTE1rVG8tWE9zWWZTUHdxZmVCdm5yN0JlX0FVcUxuQjlJd09PeTBFQ3BqLXM1VThlUWpVdHRWUi0ySzNOamJCZE9IalVvYTNjT19pUmZ1azgtbG1UZEM1Mk1GYzdsSjRodkV3cEZFckNVSm03RGZudzdpNkZ2bDRmdTlYSDJPcWt6SGl0dVdoTHN5ZGRZRXp6Z004SmIwVzdIeWF4VjNvSlE?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPaEJhMTF6bTY1TW83eHFmNnhReFJxN2FCMUVmZEk4WFV3T1RFZUVzalI5UDRhQTFNRTNlRndaNXNhZzMzekh4R1NWUFVIS1d6RzRWS1VkaUowN3hqa3pHajNwcU8xOVlEU1RiYkFjZG1keVNrd0tSOWpST3hJRUZqb3hfbjhfRmdjUDJyN1VfTnRiQkQ4WlN1d05pdFQ4Q2NU0gGmAUFVX3lxTE1rVG8tWE9zWWZTUHdxZmVCdm5yN0JlX0FVcUxuQjlJd09PeTBFQ3BqLXM1VThlUWpVdHRWUi0ySzNOamJCZE9IalVvYTNjT19pUmZ1azgtbG1UZEM1Mk1GYzdsSjRodkV3cEZFckNVSm03RGZudzdpNkZ2bDRmdTlYSDJPcWt6SGl0dVdoTHN5ZGRZRXp6Z004SmIwVzdIeWF4VjNvSlE?oc=5\" target=\"_blank\">Taiwan's president says island 'will never be sacrificed or traded' in stern rebuke of China</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox News</font>",
+          "publishedAt": "Sun, 17 May 2026 16:35:22 GMT"
+        },
+        {
+          "title": ": Trump China Visit: Echoes of Nixon as Taiwan Tensions Shadow Iran Strategy - zoomnews.in",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSG94Q2MzdUp3a3FXZTRjdHRDQTFBNnlJV0ZyTG96TEtWWVpqdnZMVVkzenpTVHlwck9fS0JCUGhjYjROTTJURjVGNi1IeUNtTVpGZ2U5RHhualVlQ2paVm44RFhKYkgyQ21mS2ZaYjNUSlh5NGo0Rk5rNS1sS2htLWxfZEM4RGV4Q2xCbEZoNlVIeGtnSi03OFFuTnRUdnNJdEhwcG5KaDMtWTdYOTBWVzRoRWZHOVRh0gG-AUFVX3lxTFBaRUZWWnkySDFpdzdVN3NWRUtvUWczS0F5SFg3cXR3ZThqUklpYUVuaWtRd0JNT3M2NV9ST0cyaG96dFRGTWRTNDN2QVVLMF9fVTZzNnpYcWU4alJoZ2dHaG51VWl3empaeW1hb19ZSjhNU2kyZFo3NThZcXN2MUxBUHhfYW1oc3pUREZyQTB0M1QwNjdZZ1YwNWNqbmJKUGU1NkMzVVlrNFhFTHhDNmw3TXF3ZHFjaUpHd2k4UkE?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSG94Q2MzdUp3a3FXZTRjdHRDQTFBNnlJV0ZyTG96TEtWWVpqdnZMVVkzenpTVHlwck9fS0JCUGhjYjROTTJURjVGNi1IeUNtTVpGZ2U5RHhualVlQ2paVm44RFhKYkgyQ21mS2ZaYjNUSlh5NGo0Rk5rNS1sS2htLWxfZEM4RGV4Q2xCbEZoNlVIeGtnSi03OFFuTnRUdnNJdEhwcG5KaDMtWTdYOTBWVzRoRWZHOVRh0gG-AUFVX3lxTFBaRUZWWnkySDFpdzdVN3NWRUtvUWczS0F5SFg3cXR3ZThqUklpYUVuaWtRd0JNT3M2NV9ST0cyaG96dFRGTWRTNDN2QVVLMF9fVTZzNnpYcWU4alJoZ2dHaG51VWl3empaeW1hb19ZSjhNU2kyZFo3NThZcXN2MUxBUHhfYW1oc3pUREZyQTB0M1QwNjdZZ1YwNWNqbmJKUGU1NkMzVVlrNFhFTHhDNmw3TXF3ZHFjaUpHd2k4UkE?oc=5\" target=\"_blank\">: Trump China Visit: Echoes of Nixon as Taiwan Tensions Shadow Iran Strategy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">zoomnews.in</font>",
+          "publishedAt": "Sun, 17 May 2026 16:27:04 GMT"
+        },
+        {
+          "title": "Trump Advisers Warn China Could Move Against Taiwan Within Five Years - HOKANEWS.COM",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WZ0hwTXo2T211cm1oS0FrMl83N3pwMWlFRVdOSTZQNG1xSGFac1Q2Q2lZUkVqN3luLVRNQlJLTkQ4ZWpUeGNEVUpvVlE1TTR6ZWdscjBPT3VkdDBmOXM2NWxxU3VncHd1YUdhdGxWTEdySU5sYnQyOVc5Zm5WUDQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5WZ0hwTXo2T211cm1oS0FrMl83N3pwMWlFRVdOSTZQNG1xSGFac1Q2Q2lZUkVqN3luLVRNQlJLTkQ4ZWpUeGNEVUpvVlE1TTR6ZWdscjBPT3VkdDBmOXM2NWxxU3VncHd1YUdhdGxWTEdySU5sYnQyOVc5Zm5WUDQ?oc=5\" target=\"_blank\">Trump Advisers Warn China Could Move Against Taiwan Within Five Years</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">HOKANEWS.COM</font>",
+          "publishedAt": "Sun, 17 May 2026 12:30:00 GMT"
+        },
+        {
+          "title": "Taiwan Reaffirms Sovereignty After Donald Trump Warns Against Formal Independence - The Hans India",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOaDJlRlNCOS1LcjVjanlMZndDc3RhNHNOXzMyS3QtUkVZUXpfVUZsSExVcWNTRE9ZeEU1X1Q3STE1RFE1ZzZWSDNHRXVVb1FCbVpXZXg3Z1dYUUV0Wld6NndnM0tOWEk1U0t2MHhHZDlkeGN1TlNHWHQtVVkwN1ZEZEJpei15d3RrSzZvWWYtcGZYZmdRaGJQdXdvWWVDWjNFWnpOM0hXVHNsdXN5U2FEYlhOM1JsTlo1RjQzUXdzaUp2NVNlcXlNUHQ0WXp3cWNrQUFv0gHYAUFVX3lxTE93R1hRMUxIanRWZTh6ZEpIVFVXNnpRMkdWbDlVSk1lSjNKUHhQNVR1Yk5KVW93Zjh4eGVkV2dlRmh3Q0JNalE2QW9qVnJheGNhbWVrczZybllTRGFZZjc3bTFGRmZmc0tlNWpCNkdYcEpPclBBNk5DR01UcmVRUnZCYnFacmhNLUtGbG1lTko3X3RvNUNWcW9YYkVlVFduVVF1akh0ak9IWjVzeS1LN2ZSVVNoOUN6Rk9DVVV0a0tna0wydU5JRHM5SmE0RmJ5c0pqdHViM0dFRw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxOaDJlRlNCOS1LcjVjanlMZndDc3RhNHNOXzMyS3QtUkVZUXpfVUZsSExVcWNTRE9ZeEU1X1Q3STE1RFE1ZzZWSDNHRXVVb1FCbVpXZXg3Z1dYUUV0Wld6NndnM0tOWEk1U0t2MHhHZDlkeGN1TlNHWHQtVVkwN1ZEZEJpei15d3RrSzZvWWYtcGZYZmdRaGJQdXdvWWVDWjNFWnpOM0hXVHNsdXN5U2FEYlhOM1JsTlo1RjQzUXdzaUp2NVNlcXlNUHQ0WXp3cWNrQUFv0gHYAUFVX3lxTE93R1hRMUxIanRWZTh6ZEpIVFVXNnpRMkdWbDlVSk1lSjNKUHhQNVR1Yk5KVW93Zjh4eGVkV2dlRmh3Q0JNalE2QW9qVnJheGNhbWVrczZybllTRGFZZjc3bTFGRmZmc0tlNWpCNkdYcEpPclBBNk5DR01UcmVRUnZCYnFacmhNLUtGbG1lTko3X3RvNUNWcW9YYkVlVFduVVF1akh0ak9IWjVzeS1LN2ZSVVNoOUN6Rk9DVVV0a0tna0wydU5JRHM5SmE0RmJ5c0pqdHViM0dFRw?oc=5\" target=\"_blank\">Taiwan Reaffirms Sovereignty After Donald Trump Warns Against Formal Independence</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Hans India</font>",
+          "publishedAt": "Sun, 17 May 2026 06:42:05 GMT"
+        },
+        {
+          "title": "Taiwan insists it is independent after Trump warning - MSN",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONkZfRlZ2TUprYWl6dEhybWpPVkduOG1UQzlVOWhNTi11VWtiRDBfQlJXR3BSTmRjUHB6TnBCMzF6VFdKU1ZUQ2NGbU5DMnBFTVZSWmRQeFd3SFdKU05PbTZpbzFfc0Z2Z0xaM2lRTEpzUmNzeVJkeV9IbVNjck1tUXpaVHUwMVJVQ0xia3I4Uk9MbHJSYjRzZWx1M0xSTm1qSG5pLTRB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxONkZfRlZ2TUprYWl6dEhybWpPVkduOG1UQzlVOWhNTi11VWtiRDBfQlJXR3BSTmRjUHB6TnBCMzF6VFdKU1ZUQ2NGbU5DMnBFTVZSWmRQeFd3SFdKU05PbTZpbzFfc0Z2Z0xaM2lRTEpzUmNzeVJkeV9IbVNjck1tUXpaVHUwMVJVQ0xia3I4Uk9MbHJSYjRzZWx1M0xSTm1qSG5pLTRB?oc=5\" target=\"_blank\">Taiwan insists it is independent after Trump warning</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "publishedAt": "Sun, 17 May 2026 02:14:55 GMT"
+        },
+        {
+          "title": "Balikatan Military Drills ‘Directly Relate to a Potential Contingency Involving Taiwan,’ Experts Say - visiontimes.com",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWVQyUjBtZm5aUlJsMnBtNmhwME5IZlZGSTl6azZkWFhYY0ZjR3ZjaHJxZUppbkpaQlBOQmd0eUViTkszXzhWS1NRQmU2M0ZIcmpWRlBNV0dBNFUzdGJqQXI4MWdQeF9kU3QxY2h3Z0Q3MzdZXzlKdHBJcnlnX2hnVHNWYXJ2Y0FzT2E2dmZScF94VjNuNVgxcjBnTV9ubE5NNVpuR1lmYTF2bHdIcTBFdzB5RnNrQVo1Yk9LNVdzVWFnOHU4ZFhJQjd5MTVjeUkyVm5XWHJKQmU?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWVQyUjBtZm5aUlJsMnBtNmhwME5IZlZGSTl6azZkWFhYY0ZjR3ZjaHJxZUppbkpaQlBOQmd0eUViTkszXzhWS1NRQmU2M0ZIcmpWRlBNV0dBNFUzdGJqQXI4MWdQeF9kU3QxY2h3Z0Q3MzdZXzlKdHBJcnlnX2hnVHNWYXJ2Y0FzT2E2dmZScF94VjNuNVgxcjBnTV9ubE5NNVpuR1lmYTF2bHdIcTBFdzB5RnNrQVo1Yk9LNVdzVWFnOHU4ZFhJQjd5MTVjeUkyVm5XWHJKQmU?oc=5\" target=\"_blank\">Balikatan Military Drills ‘Directly Relate to a Potential Contingency Involving Taiwan,’ Experts Say</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">visiontimes.com</font>",
+          "publishedAt": "Sat, 16 May 2026 18:56:01 GMT"
+        },
+        {
+          "title": "China Accuses U.S. of Playing With Fire Over Taiwan - opitanglobalmedia.com",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBITl9QdzkyQVNwdjlXRFFkLXZEbVJxWEdWOS02azMtck5ha0xadmxfNDBqc2hzU0doTnZVVnFJWW50ajV2dEl4cUpDaVo0MkJKUlZ2TUswdXZtWnhIN3g4bzN3VF9NZFFKN2tZMngzcXRvOERCUlBWcXlFMnBVLVk?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTFBITl9QdzkyQVNwdjlXRFFkLXZEbVJxWEdWOS02azMtck5ha0xadmxfNDBqc2hzU0doTnZVVnFJWW50ajV2dEl4cUpDaVo0MkJKUlZ2TUswdXZtWnhIN3g4bzN3VF9NZFFKN2tZMngzcXRvOERCUlBWcXlFMnBVLVk?oc=5\" target=\"_blank\">China Accuses U.S. of Playing With Fire Over Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">opitanglobalmedia.com</font>",
+          "publishedAt": "Sat, 16 May 2026 06:28:20 GMT"
+        },
+        {
+          "title": "Taiwan presses case for US arms after Trump says he is undecided on new sales - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRFl1Ny03MUg3TkpWYTFmZkpBbndZZTVwWjlCcy1NX1Q2Qkpfb0pwLURjT0UzNWtTQmVPYXptaHBsNG84WFBVMUxQU0toWUpmMFBLU0VBcnNZVEVWNEpLWFN5Mi1JbkpQOHBraWxwemlnYkIzRFd4OFN4RW1iNGNmY0JtQTNLVmM5akFINE44OW92T1FxNkdNOFp4SVlRV1dqZ2ttNG5sNA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxPRFl1Ny03MUg3TkpWYTFmZkpBbndZZTVwWjlCcy1NX1Q2Qkpfb0pwLURjT0UzNWtTQmVPYXptaHBsNG84WFBVMUxQU0toWUpmMFBLU0VBcnNZVEVWNEpLWFN5Mi1JbkpQOHBraWxwemlnYkIzRFd4OFN4RW1iNGNmY0JtQTNLVmM5akFINE44OW92T1FxNkdNOFp4SVlRV1dqZ2ttNG5sNA?oc=5\" target=\"_blank\">Taiwan presses case for US arms after Trump says he is undecided on new sales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reuters</font>",
+          "publishedAt": "Sat, 16 May 2026 02:33:38 GMT"
+        },
+        {
+          "title": "Indo-Pacific tensions: Beijing condemns U.S.-Philippines Balikatan drills near Taiwan - Indonesia Business Post",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQl8xelVUY3ZEVUZrMjA0Q1VNbW5aV0liRVpXcm0zQzlCQ0ZtZEk5c19mQ3hWdzZ6eW5fNzlPWFRya2xnMm1GdnNramh3d3lBZFJ6UFlNX1BZYkxTeU9IX184YWwweGw1MFNKRXNxM0NIZUp2dmZfTDNsVGxJbjdTRzBGc1QtTWxreGxzWmY1Y3FfSmhvMTNMRjBNbTZEQjlvRmxkUmFGOU5OUnc4WVEyT0QzSEtNeEVtbVhmWF95RmNZVmNrdzJTcEdsbFBHMHc?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxNQl8xelVUY3ZEVUZrMjA0Q1VNbW5aV0liRVpXcm0zQzlCQ0ZtZEk5c19mQ3hWdzZ6eW5fNzlPWFRya2xnMm1GdnNramh3d3lBZFJ6UFlNX1BZYkxTeU9IX184YWwweGw1MFNKRXNxM0NIZUp2dmZfTDNsVGxJbjdTRzBGc1QtTWxreGxzWmY1Y3FfSmhvMTNMRjBNbTZEQjlvRmxkUmFGOU5OUnc4WVEyT0QzSEtNeEVtbVhmWF95RmNZVmNrdzJTcEdsbFBHMHc?oc=5\" target=\"_blank\">Indo-Pacific tensions: Beijing condemns U.S.-Philippines Balikatan drills near Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Indonesia Business Post</font>",
+          "publishedAt": "Sat, 16 May 2026 01:27:31 GMT"
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LMT / Short AAPL",
+          "thesisBreaker": "Tensions cool before deterrence budgets move.",
+          "catalyst": "Missile and deterrence spending rise in Indo-Pacific stress.",
+          "riskLevel": "Medium",
+          "thesis": "High-end missiles, interceptors, and deterrence spending rise in Indo-Pacific stress.",
+          "price": 516.010009765625,
+          "annualizedVol": 0.27288650480023713,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09774638057602845,
+          "targetPrice": 660.4928125,
+          "stopPrice": 465.57189897003406,
+          "rewardToRisk": 2.86,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "RTX",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long RTX / Short QQQ proxy",
+          "thesisBreaker": "Defense leadership lags broader market rotation.",
+          "catalyst": "Air and missile defense systems benefit from regional rearmament.",
+          "riskLevel": "Medium",
+          "thesis": "Air and missile defense systems benefit from regional rearmament.",
+          "price": 171.17999267578125,
+          "annualizedVol": 0.2624591989869722,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09649510387843666,
+          "targetPrice": 219.110390625,
+          "stopPrice": 154.66196150062171,
+          "rewardToRisk": 2.9,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short consumer electronics basket",
+          "thesisBreaker": "Procurement remains slow-moving despite rhetoric.",
+          "catalyst": "Radar, C2, and missile programs fit a higher-alert Pacific posture.",
+          "riskLevel": "Medium",
+          "thesis": "Missile, radar, and space programs fit a higher-alert Pacific posture.",
+          "price": 540.6900024414062,
+          "annualizedVol": 0.28864686234659415,
+          "upsidePct": 0.28,
+          "downsidePct": 0.0996376234815913,
+          "targetPrice": 692.0832031250001,
+          "stopPrice": 486.8169355578887,
+          "rewardToRisk": 2.81,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "INTC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Semiconductor onshoring",
+          "horizon": "1-6 months",
+          "pairTrade": "Long INTC / Short TSM",
+          "thesisBreaker": "Domestic fab narrative fails to win marginal capital.",
+          "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
+          "riskLevel": "High",
+          "thesis": "Domestic fab narrative improves if Taiwan concentration becomes a bigger market risk.",
+          "price": 108.7699966430664,
+          "annualizedVol": 0.8880737977026144,
+          "upsidePct": 0.28,
+          "downsidePct": 0.16,
+          "targetPrice": 139.225595703125,
+          "stopPrice": 91.36679718017578,
+          "rewardToRisk": 1.75,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "GFS",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Foundry alternatives",
+          "horizon": "1-3 months",
+          "pairTrade": "Long GFS / Short QCOM",
+          "thesisBreaker": "Customers delay diversification spend.",
+          "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+          "riskLevel": "High",
+          "thesis": "Alternative foundry capacity gets revalued on supply-chain resilience demand.",
+          "price": 71.02999877929688,
+          "annualizedVol": 0.6174608577419884,
+          "upsidePct": 0.28,
+          "downsidePct": 0.12909530292903862,
+          "targetPrice": 90.9183984375,
+          "stopPrice": 61.8603595698343,
+          "rewardToRisk": 2.17,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "AVAV",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Drones / ISR",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long AVAV / Short travel-tech proxy",
+          "thesisBreaker": "No procurement urgency follows the headlines.",
+          "catalyst": "ISR and drone demand often rerates in contested-maritime scenarios.",
+          "riskLevel": "High",
+          "thesis": "ISR and drone demand often re-rates in contested-maritime scenarios.",
+          "price": 158,
+          "annualizedVol": 0.7551053148729331,
+          "upsidePct": 0.28,
+          "downsidePct": 0.14561263778475197,
+          "targetPrice": 202.24,
+          "stopPrice": 134.9932032300092,
+          "rewardToRisk": 1.92,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "AAPL",
+          "direction": "SHORT",
+          "conviction": 4,
+          "sector": "Consumer hardware",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short AAPL / Long LMT",
+          "thesisBreaker": "Supply chain remains intact and risk premium fades.",
+          "catalyst": "Assembly concentration and consumer hardware exposure make it a direct shock absorber.",
+          "riskLevel": "High",
+          "thesis": "Assembly concentration and consumer hardware exposure make it a direct shock absorber.",
+          "price": 300.2300109863281,
+          "annualizedVol": 0.2525824913481174,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09530989896177408,
+          "targetPrice": 216.16560791015624,
+          "stopPrice": 328.8449029987274,
+          "rewardToRisk": 2.94,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "NVDA",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "AI / Semis",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Short NVDA / Long RTX",
+          "thesisBreaker": "AI demand strength overwhelms geopolitical de-rating.",
+          "catalyst": "Supply-chain fragility meets premium valuation risk.",
+          "riskLevel": "High",
+          "thesis": "AI supply chains and premium multiple create downside if hardware flow is impaired.",
+          "price": 225.32000732421875,
+          "annualizedVol": 0.3867296095188694,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10140755314226432,
+          "targetPrice": 162.2304052734375,
+          "stopPrice": 248.16915794096482,
+          "rewardToRisk": 2.76,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "QCOM",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Handsets",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short QCOM / Long GFS",
+          "thesisBreaker": "Smartphone demand proves resilient and logistics keep flowing.",
+          "catalyst": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption.",
+          "riskLevel": "High",
+          "thesis": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption.",
+          "price": 201.49000549316406,
+          "annualizedVol": 0.5688606683604817,
+          "upsidePct": 0.28,
+          "downsidePct": 0.1232632802032578,
+          "targetPrice": 145.07280395507811,
+          "stopPrice": 226.3263244984239,
+          "rewardToRisk": 2.27,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "TSM",
+          "direction": "SHORT",
+          "conviction": 5,
+          "sector": "Semiconductor manufacturing",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short TSM / Long INTC",
+          "thesisBreaker": "Cross-strait signals soften materially.",
+          "catalyst": "Direct center-of-gravity risk in any severe cross-strait escalation.",
+          "riskLevel": "Very high",
+          "thesis": "Direct center-of-gravity risk in any severe cross-strait escalation.",
+          "price": 404.3500061035156,
+          "annualizedVol": 0.41466713578965037,
+          "upsidePct": 0.28,
+          "downsidePct": 0.12476005629475806,
+          "targetPrice": 291.13200439453124,
+          "stopPrice": 454.79673562777594,
+          "rewardToRisk": 2.24,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        }
+      ]
+    },
+    "europe": {
+      "key": "europe",
+      "title": "Russia / NATO / Western Europe",
+      "subtitle": "Drone waves, Baltic intercepts, rearmament and LNG repricing",
+      "color": "#c9ff66",
+      "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
+      "heat": 92,
+      "subScores": [
+        {
+          "label": "Military escalation",
+          "value": 98
+        },
+        {
+          "label": "Gas / power stress",
+          "value": 92
+        },
+        {
+          "label": "Defense replenishment",
+          "value": 98
+        },
+        {
+          "label": "Travel drag",
+          "value": 89
+        }
+      ],
+      "indicators": [
+        {
+          "label": "NATO procurement",
+          "value": 102.7,
+          "unit": "%",
+          "delta": 2.7,
+          "tone": "up"
+        },
+        {
+          "label": "European gas stress",
+          "value": 43.9,
+          "unit": "pts",
+          "delta": 2.9,
+          "tone": "up"
+        },
+        {
+          "label": "Transatlantic travel drag",
+          "value": 9.9,
+          "unit": "%",
+          "delta": 1.9,
+          "tone": "up"
+        },
+        {
+          "label": "Defense leadership",
+          "value": 101.9,
+          "unit": "%",
+          "delta": 1.9,
+          "tone": "up"
+        }
+      ],
+      "secondOrderEffects": [
+        "European rearmament can outlast the immediate headline cycle and support defense multiples longer than energy spikes do.",
+        "Russian LNG restrictions can lift U.S. gas infrastructure and producers before spot gas fully rerates.",
+        "Travel weakness often shows up through bookings and sentiment before official traffic data."
+      ],
+      "topPairTrade": "Long RTX / Short UAL",
+      "refreshedAt": "2026-05-18T04:59:10.636Z",
+      "headlines": [
+        {
+          "title": "Russian attacks on Odessa and Dnipro +++ Nato jets against drones over Latvia - blue News",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVUZxckZxZ3JleFNYRHgtR2R2WVFaMTFCa09FTWFNSzVrd1hxallUTjNiaXRjNnB3SzZDWnY5bHV6MDl3ZmZDTHZvNmJRa2dBaU40Yl9BUFN1QzItM0RPTGFJWlc2cmFiNDdES2ZCbTcxUTJFS0g0N29OSzVxTnNBQ2Z6cWJYeDl1ZlNJUV9fRzAzUWJHXzNKZlNTbE9uaEdrZkUxMm9rYTRfSHVrcG5VX3Jzby02U0JaNzUxcFBzZEJwTFgzQWt3ckRvWQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQVUZxckZxZ3JleFNYRHgtR2R2WVFaMTFCa09FTWFNSzVrd1hxallUTjNiaXRjNnB3SzZDWnY5bHV6MDl3ZmZDTHZvNmJRa2dBaU40Yl9BUFN1QzItM0RPTGFJWlc2cmFiNDdES2ZCbTcxUTJFS0g0N29OSzVxTnNBQ2Z6cWJYeDl1ZlNJUV9fRzAzUWJHXzNKZlNTbE9uaEdrZkUxMm9rYTRfSHVrcG5VX3Jzby02U0JaNzUxcFBzZEJwTFgzQWt3ckRvWQ?oc=5\" target=\"_blank\">Russian attacks on Odessa and Dnipro +++ Nato jets against drones over Latvia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">blue News</font>",
+          "publishedAt": "Mon, 18 May 2026 02:15:00 GMT"
+        },
+        {
+          "title": "NATO Air Bases Are Becoming Vulnerable Targets, Ukraine War Shows - The Baltic Sentinel",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORjNhMXh3V0MzUEN6alF3N1ZWZElwQ3VndkZMSGpyT2EwS1NhcDlFYkJIaTFMY1pEdTVMbFZ0SUc4b0djSzkweUhtS25Bel9sQ3BfS2lGMFE2UlBad1JNMGpGWWV0ZndDSkhyb3ZJM0RlSVg2S2tsSTBWbHN1SG9MaU1jemlzenVuODZxbVJUT3ExWlZtcGRWbHJqdl9Yc1U?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxORjNhMXh3V0MzUEN6alF3N1ZWZElwQ3VndkZMSGpyT2EwS1NhcDlFYkJIaTFMY1pEdTVMbFZ0SUc4b0djSzkweUhtS25Bel9sQ3BfS2lGMFE2UlBad1JNMGpGWWV0ZndDSkhyb3ZJM0RlSVg2S2tsSTBWbHN1SG9MaU1jemlzenVuODZxbVJUT3ExWlZtcGRWbHJqdl9Yc1U?oc=5\" target=\"_blank\">NATO Air Bases Are Becoming Vulnerable Targets, Ukraine War Shows</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Baltic Sentinel</font>",
+          "publishedAt": "Sun, 17 May 2026 19:23:41 GMT"
+        },
+        {
+          "title": "An unknown drone flies into a NATO country – fighter jets are called in - news.liga.net",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdEJxcnZQa05NYnRVWTZkYm1mb3plWmxZUmp0MmZqcV9uZkJ6cmZVT3I2TnBLcTFnNy1fWXVvUnZ0cFhiSHBFX3Z0UGM5WlpUVy1Md19BaGhxQzAtaF93SEFsNE1paGZFSVNNai1xaF9UNWZLeFFsMUJmdHhzSENMVE0wR3d4cWJDZV9CVVNTR0lIMTJKR0k0RU5TZUlaTzl5dG1MUVpTODAyTExx0gGyAUFVX3lxTE5YQkl2U2JLUkxkSy1Hd0dYZG9oSGpvdWhNb0RiTG1wVVN3akZuZ1lYbmdPcWFzOVZ5ekhMSE1NUWN6elhyb1Jna1A5TXMzWmgtYzdGSHVDTWdmNU13a2ZqdE9XajFMb0NKYVE5N1VEakdkTXlueWxYdi1hZGVvUUp2OURhbVRSNnZJQjgzaEpGaXoyb1JjeU1NR3NQX19UNFhjRi1uNTZsQ1QxcEJ3MC1DN3c?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPdEJxcnZQa05NYnRVWTZkYm1mb3plWmxZUmp0MmZqcV9uZkJ6cmZVT3I2TnBLcTFnNy1fWXVvUnZ0cFhiSHBFX3Z0UGM5WlpUVy1Md19BaGhxQzAtaF93SEFsNE1paGZFSVNNai1xaF9UNWZLeFFsMUJmdHhzSENMVE0wR3d4cWJDZV9CVVNTR0lIMTJKR0k0RU5TZUlaTzl5dG1MUVpTODAyTExx0gGyAUFVX3lxTE5YQkl2U2JLUkxkSy1Hd0dYZG9oSGpvdWhNb0RiTG1wVVN3akZuZ1lYbmdPcWFzOVZ5ekhMSE1NUWN6elhyb1Jna1A5TXMzWmgtYzdGSHVDTWdmNU13a2ZqdE9XajFMb0NKYVE5N1VEakdkTXlueWxYdi1hZGVvUUp2OURhbVRSNnZJQjgzaEpGaXoyb1JjeU1NR3NQX19UNFhjRi1uNTZsQ1QxcEJ3MC1DN3c?oc=5\" target=\"_blank\">An unknown drone flies into a NATO country – fighter jets are called in</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">news.liga.net</font>",
+          "publishedAt": "Sun, 17 May 2026 12:38:14 GMT"
+        },
+        {
+          "title": "Europe's Most Alarming Air Defense Scenario: Could It Survive a Month of Continuous russian Drone Waves? - Defense Express",
+          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZXlvVnFQMFlwWGlCNDJpR0MzZFBZeUltOHhvd1RjUlBMVlN4OGVSRE5NTnBPczY4TzF2WVR5Vm14THlPUlNpWDd0RWV3NmM0WGJvdHVUa3IzanBQa2w2X0VrZVlOQ01hUFhVQ2Q2M2xzRFNkOGhfSVFIV1IxNGFKTmdJRzZuQ3EtWWM0U2hHUmtZakNibzRjQnR1NlRaYmRfRkNoNERmbG9rcWFOTEVBSVBPU0RKU0I4LThjR2NqS0M1bWVSY0dpLXBaYU1SSlVLY2lYbGROc3FGRmQtRldWcA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZXlvVnFQMFlwWGlCNDJpR0MzZFBZeUltOHhvd1RjUlBMVlN4OGVSRE5NTnBPczY4TzF2WVR5Vm14THlPUlNpWDd0RWV3NmM0WGJvdHVUa3IzanBQa2w2X0VrZVlOQ01hUFhVQ2Q2M2xzRFNkOGhfSVFIV1IxNGFKTmdJRzZuQ3EtWWM0U2hHUmtZakNibzRjQnR1NlRaYmRfRkNoNERmbG9rcWFOTEVBSVBPU0RKU0I4LThjR2NqS0M1bWVSY0dpLXBaYU1SSlVLY2lYbGROc3FGRmQtRldWcA?oc=5\" target=\"_blank\">Europe's Most Alarming Air Defense Scenario: Could It Survive a Month of Continuous russian Drone Waves?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Defense Express</font>",
+          "publishedAt": "Sun, 17 May 2026 00:02:39 GMT"
+        },
+        {
+          "title": "“We Didn’t Do Enough” — Germany on NATO, Russia & Ukraine | Pistorius Interview - UNITED24 Media",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaC1qdVFNamliLW9ld0xWSEF1Z0xoWU5FUzYtcDBoZUthNlJSR1VsSkJ0eHJEM3BYeWZ5WE14eDE2bFdYQ2gyc2gwajlkWVhSMUZ6b2otS05qN2V1Y0QyNzZpcF83VHBYdGlFVmp5Y29xazRNM0FfbVhseXIxNzdVX2lMQkliNDY3dGZtbFh6bUJ3MXE4dXlQdW9UMGlVLVlWSGp3Vlpva2VlZmlBaFlOX0s5NmJDbms?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQaC1qdVFNamliLW9ld0xWSEF1Z0xoWU5FUzYtcDBoZUthNlJSR1VsSkJ0eHJEM3BYeWZ5WE14eDE2bFdYQ2gyc2gwajlkWVhSMUZ6b2otS05qN2V1Y0QyNzZpcF83VHBYdGlFVmp5Y29xazRNM0FfbVhseXIxNzdVX2lMQkliNDY3dGZtbFh6bUJ3MXE4dXlQdW9UMGlVLVlWSGp3Vlpva2VlZmlBaFlOX0s5NmJDbms?oc=5\" target=\"_blank\">“We Didn’t Do Enough” — Germany on NATO, Russia & Ukraine | Pistorius Interview</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UNITED24 Media</font>",
+          "publishedAt": "Sat, 16 May 2026 14:10:12 GMT"
+        },
+        {
+          "title": "How Ukrainian FPV Drones Disrupted Swedish Defenses During Exercise Aurora 26 - Aviacionline",
+          "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWVBVR2J2ZXZkcm9NUFVfMnNaQXhqUmFrVWQ0MXR1UnFXRU1kNVpnaFk3d3VxdUE0Y1o3cEFvTGMzdnRBQjVndjhuanowWHVCdDlZQXp3ZV94Y1hpcFIwRndfa0N6d00wSUlXajNMN0JRZjA4Vld5NkNMRXM2cmhHbmFPbWZ0aklHemxuMERXMWRZVUg0SnZqTjFnNkdEeC1LcEZvU3ZoODBBLUhLVjdyNXhfazY3RmhIOVYxcktBdlk3QUgzOGU5Tl9rNGdibDUwdWthWGM1OGw4SXJHNURfazdOcFB2R19JVEU4?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWVBVR2J2ZXZkcm9NUFVfMnNaQXhqUmFrVWQ0MXR1UnFXRU1kNVpnaFk3d3VxdUE0Y1o3cEFvTGMzdnRBQjVndjhuanowWHVCdDlZQXp3ZV94Y1hpcFIwRndfa0N6d00wSUlXajNMN0JRZjA4Vld5NkNMRXM2cmhHbmFPbWZ0aklHemxuMERXMWRZVUg0SnZqTjFnNkdEeC1LcEZvU3ZoODBBLUhLVjdyNXhfazY3RmhIOVYxcktBdlk3QUgzOGU5Tl9rNGdibDUwdWthWGM1OGw4SXJHNURfazdOcFB2R19JVEU4?oc=5\" target=\"_blank\">How Ukrainian FPV Drones Disrupted Swedish Defenses During Exercise Aurora 26</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Aviacionline</font>",
+          "publishedAt": "Fri, 15 May 2026 15:15:57 GMT"
+        },
+        {
+          "title": "Ukrainian Drone Teams ‘Demolish’ NATO Troops in Swedish Exercise - Kyiv Post",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kUHpLd19lX2h0RngyOHE0bFhtYmExaHRjZVVSeG4wNUs2ZjRNdTdRWmJndmpodEg5TnY2Sy1vWXZKYktxN0VFUXVaQQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kUHpLd19lX2h0RngyOHE0bFhtYmExaHRjZVVSeG4wNUs2ZjRNdTdRWmJndmpodEg5TnY2Sy1vWXZKYktxN0VFUXVaQQ?oc=5\" target=\"_blank\">Ukrainian Drone Teams ‘Demolish’ NATO Troops in Swedish Exercise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kyiv Post</font>",
+          "publishedAt": "Fri, 15 May 2026 12:39:59 GMT"
+        },
+        {
+          "title": "Day 1542 Ukraine's Response to the Attack on Kiev: Blocks and a Refinery Hit by Drones, Rain of Oil in Ryazan (Video). Russia Could Attack NATO by 2029 - Spotmedia.ro",
+          "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPbDc4STVKVy1iMGllNHlRTW5lendabUM2TlpPRlNWVF81RTR0VGE4dDBhSmpxY1c1ck51dC0tYnBXM044cGN1ZWxUc20xMjFFQzdEYlZGOE1HalNiMk1rSUktWmRNbmVDNDVZVVk2OWhFVjZpTld0dFRCWjVTNUItS19Cdnl4ZFl1WmEzU3JfS0llcTJVc0daa1d6NUFQWFp5b2djLXFyZnc2T081T2ZXTWdQRHF6UE5HSzY4SDlPM01YYzJ3RXB2TlpiSGt1ZDVfV1NESDFBWXNUUFFlN0FoQXRnNS1haVVEczVJM3gybVFaMW91SUQ4Y0R4R2ZqaVhUdjhLTk5CY0FaU2s?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiiwJBVV95cUxPbDc4STVKVy1iMGllNHlRTW5lendabUM2TlpPRlNWVF81RTR0VGE4dDBhSmpxY1c1ck51dC0tYnBXM044cGN1ZWxUc20xMjFFQzdEYlZGOE1HalNiMk1rSUktWmRNbmVDNDVZVVk2OWhFVjZpTld0dFRCWjVTNUItS19Cdnl4ZFl1WmEzU3JfS0llcTJVc0daa1d6NUFQWFp5b2djLXFyZnc2T081T2ZXTWdQRHF6UE5HSzY4SDlPM01YYzJ3RXB2TlpiSGt1ZDVfV1NESDFBWXNUUFFlN0FoQXRnNS1haVVEczVJM3gybVFaMW91SUQ4Y0R4R2ZqaVhUdjhLTk5CY0FaU2s?oc=5\" target=\"_blank\">Day 1542 Ukraine's Response to the Attack on Kiev: Blocks and a Refinery Hit by Drones, Rain of Oil in Ryazan (Video). Russia Could Attack NATO by 2029</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Spotmedia.ro</font>",
+          "publishedAt": "Fri, 15 May 2026 09:13:00 GMT"
+        },
+        {
+          "title": "Russo-Ukrainian war, day 1540: Ukrainian drone pilots demonstrate their edge during NATO drills on Gotland - Euromaidan Press",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOHo5ci04WmpybzBQbEpFU1FsV0V0SzZvWHNFZ1NNcjg3SVo1QzNfVEw2bEVMSWZSN0c5T2N6Z2dnZTE1czJ0bWtyeWRUTTlaWDhRZUFVMnRmM1JrVHVsd3VkZmdiZ18ya2VuQ0Q0T1owVExxdmwzc3FycS16czVvS1ZzcVR3djRfYkxuR3VWOVZFQ0tGQU8wZXgzUmM3LUFpTzFhRFN6Sm03cW5DWXVzMF91MnFENUhGT1EzT2djYWRDOEVCN0hWb3Fsb1BmS2JmM0NrR0N0Q1NOX2Z2?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOHo5ci04WmpybzBQbEpFU1FsV0V0SzZvWHNFZ1NNcjg3SVo1QzNfVEw2bEVMSWZSN0c5T2N6Z2dnZTE1czJ0bWtyeWRUTTlaWDhRZUFVMnRmM1JrVHVsd3VkZmdiZ18ya2VuQ0Q0T1owVExxdmwzc3FycS16czVvS1ZzcVR3djRfYkxuR3VWOVZFQ0tGQU8wZXgzUmM3LUFpTzFhRFN6Sm03cW5DWXVzMF91MnFENUhGT1EzT2djYWRDOEVCN0hWb3Fsb1BmS2JmM0NrR0N0Q1NOX2Z2?oc=5\" target=\"_blank\">Russo-Ukrainian war, day 1540: Ukrainian drone pilots demonstrate their edge during NATO drills on Gotland</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Euromaidan Press</font>",
+          "publishedAt": "Fri, 15 May 2026 05:50:21 GMT"
+        },
+        {
+          "title": "After a large-scale daytime attack, Russia bombarded Ukraine with drones and missiles throughout the night. - ubn.news",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOM2dpUW9SbWFYN1ROaGpDelZwS0pZVm0yMGNDbmdoRmRyNU42Nk52b21iRG05WUxqdlJVaGV5UE91M2VicWNSU2dGaUw3NzJzOGVvTzZUYTJHRDY1Z3Eta1I1U3ZGTHJMRUZfQWpKeXdnXzYyYlpULTAxNVMyMV9NcmZLeVp0NWJWYVI0X3E3RkU4dlQ1NlhJbll2eHdRUG5jRzJKRndkMEI1djhwQU5nN1RKUHlZSjFPNjl5aVlmZFnSAcgBQVVfeXFMTmY3WmZWOFRhLVRfQ1FseXQ5SVNVS3QxWGVmNkQ2bU1lX0Ztck9GZmlOcHQ0cnZqbldfanNaSHBfVFhJakdUNEtvZWFSZFBvYldoblBMeTk3dkpNVlNUbWZpWFV5eHFtbUJVTWdXVmZZWEhGdXlTMUhxSFFMdEN3c2tqRGx3aTVGcm8xbkd5WG5KUlN3SDFyWExWaUJqN1BETFpJTkw5ek1HaFBlR1FmWGdud0FfYnBpbXNldGpuOVhrZkN3cEJBWk4?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxOM2dpUW9SbWFYN1ROaGpDelZwS0pZVm0yMGNDbmdoRmRyNU42Nk52b21iRG05WUxqdlJVaGV5UE91M2VicWNSU2dGaUw3NzJzOGVvTzZUYTJHRDY1Z3Eta1I1U3ZGTHJMRUZfQWpKeXdnXzYyYlpULTAxNVMyMV9NcmZLeVp0NWJWYVI0X3E3RkU4dlQ1NlhJbll2eHdRUG5jRzJKRndkMEI1djhwQU5nN1RKUHlZSjFPNjl5aVlmZFnSAcgBQVVfeXFMTmY3WmZWOFRhLVRfQ1FseXQ5SVNVS3QxWGVmNkQ2bU1lX0Ztck9GZmlOcHQ0cnZqbldfanNaSHBfVFhJakdUNEtvZWFSZFBvYldoblBMeTk3dkpNVlNUbWZpWFV5eHFtbUJVTWdXVmZZWEhGdXlTMUhxSFFMdEN3c2tqRGx3aTVGcm8xbkd5WG5KUlN3SDFyWExWaUJqN1BETFpJTkw5ek1HaFBlR1FmWGdud0FfYnBpbXNldGpuOVhrZkN3cEJBWk4?oc=5\" target=\"_blank\">After a large-scale daytime attack, Russia bombarded Ukraine with drones and missiles throughout the night.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ubn.news</font>",
+          "publishedAt": "Fri, 15 May 2026 02:43:25 GMT"
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "RTX",
+          "direction": "LONG",
+          "conviction": 5,
+          "sector": "Defense",
+          "horizon": "2-12 weeks",
+          "pairTrade": "Long RTX / Short UAL",
+          "thesisBreaker": "European response remains political, not procurement-driven.",
+          "catalyst": "Air-defense demand and replenishment remain the cleanest expression.",
+          "riskLevel": "Medium",
+          "thesis": "European air-defense demand and replenishment programs remain the cleanest expression.",
+          "price": 171.17999267578125,
+          "annualizedVol": 0.2624591989869722,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10649510387843666,
+          "targetPrice": 219.110390625,
+          "stopPrice": 152.9501615738639,
+          "rewardToRisk": 2.63,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long LMT / Short CCL",
+          "thesisBreaker": "Backlog upside is already fully priced.",
+          "catalyst": "Broad NATO procurement and missile demand support backlog expansion.",
+          "riskLevel": "Medium",
+          "thesis": "Broad NATO procurement and missile demand support backlog expansion.",
+          "price": 516.010009765625,
+          "annualizedVol": 0.27288650480023713,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09774638057602845,
+          "targetPrice": 660.4928125,
+          "stopPrice": 465.57189897003406,
+          "rewardToRisk": 2.86,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short travel basket",
+          "thesisBreaker": "Spending emphasis shifts toward domestic European primes only.",
+          "catalyst": "Command, radar, and interceptors fit higher European readiness spending.",
+          "riskLevel": "Medium",
+          "thesis": "Command, radar, and interceptors fit higher European readiness spending.",
+          "price": 540.6900024414062,
+          "annualizedVol": 0.28864686234659415,
+          "upsidePct": 0.28,
+          "downsidePct": 0.0996376234815913,
+          "targetPrice": 692.0832031250001,
+          "stopPrice": 486.8169355578887,
+          "rewardToRisk": 2.81,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "GD",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long GD / Short consumer cyclicals",
+          "thesisBreaker": "Rearmament rhetoric outruns actual contract cadence.",
+          "catalyst": "Ammunition, armored systems, and defense electronics benefit from rearmament.",
+          "riskLevel": "Medium",
+          "thesis": "Ammunition, armored systems, and defense electronics benefit from rearmament.",
+          "price": 334.5,
+          "annualizedVol": 0.25355147650090487,
+          "upsidePct": 0.28,
+          "downsidePct": 0.09542617718010858,
+          "targetPrice": 428.16,
+          "stopPrice": 302.5799437332537,
+          "rewardToRisk": 2.93,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "HII",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Naval defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long HII / Short airlines",
+          "thesisBreaker": "Atlantic naval posture does not shift materially.",
+          "catalyst": "Naval emphasis rises when the Atlantic and northern flank look less secure.",
+          "riskLevel": "High",
+          "thesis": "Naval emphasis rises when the Atlantic and northern flank look less secure.",
+          "price": 326.1700134277344,
+          "annualizedVol": 0.4432926257346658,
+          "upsidePct": 0.28,
+          "downsidePct": 0.1081951150881599,
+          "targetPrice": 417.4976171875,
+          "stopPrice": 290.880011286614,
+          "rewardToRisk": 2.59,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "LNG",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Gas / LNG",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LNG / Short CCL",
+          "thesisBreaker": "European storage and weather mute the gas response.",
+          "catalyst": "Europe often leans harder on LNG when pipeline and security risk rises.",
+          "riskLevel": "High",
+          "thesis": "Europe often leans harder on LNG when pipeline and security risk rises.",
+          "price": 241.83999633789062,
+          "annualizedVol": 0.3451085622358932,
+          "upsidePct": 0.28,
+          "downsidePct": 0.10641302746830719,
+          "targetPrice": 309.5551953125,
+          "stopPrice": 216.10507016465138,
+          "rewardToRisk": 2.63,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "KMI",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Midstream",
+          "horizon": "1-3 months",
+          "pairTrade": "Long KMI / Short UAL",
+          "thesisBreaker": "Feedgas demand fails to accelerate.",
+          "catalyst": "US gas infrastructure gains if LNG feedgas demand persists.",
+          "riskLevel": "Medium",
+          "thesis": "US gas infrastructure gains if LNG feedgas demand persists.",
+          "price": 33.630001068115234,
+          "annualizedVol": 0.1960037708640909,
+          "upsidePct": 0.2496032780641677,
+          "downsidePct": 0.07852045250369091,
+          "targetPrice": 42.024159576018256,
+          "stopPrice": 30.98935816654722,
+          "rewardToRisk": 3.18,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "EQT",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Natural gas",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long EQT / Short travel ETF proxy",
+          "thesisBreaker": "Gas market stays well supplied despite Europe headlines.",
+          "catalyst": "Appalachian gas names can rerate if Europe drives another gas bid.",
+          "riskLevel": "High",
+          "thesis": "Appalachian gas names can re-rate if Europe drives another gas bid.",
+          "price": 56.220001220703125,
+          "annualizedVol": 0.28954077627165303,
+          "upsidePct": 0.27579363957828507,
+          "downsidePct": 0.08974489315259837,
+          "targetPrice": 71.72511997445648,
+          "stopPrice": 51.17454321811217,
+          "rewardToRisk": 3.07,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "UAL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Airlines",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short UAL / Long RTX",
+          "thesisBreaker": "Security shock fades without demand damage.",
+          "catalyst": "Transatlantic travel demand and costs get hit in a Europe security shock.",
+          "riskLevel": "High",
+          "thesis": "Transatlantic travel demand and costs get hit in a Europe security shock.",
+          "price": 92.8499984741211,
+          "annualizedVol": 0.5518107661630341,
+          "upsidePct": 0.28,
+          "downsidePct": 0.1212172919395641,
+          "targetPrice": 66.85199890136718,
+          "stopPrice": 104.10502384574673,
+          "rewardToRisk": 2.31,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        },
+        {
+          "ticker": "CCL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Leisure travel",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short CCL / Long LNG",
+          "thesisBreaker": "Consumer travel remains robust despite headlines.",
+          "catalyst": "Travel-discretionary exposure is vulnerable to European headline risk.",
+          "riskLevel": "High",
+          "thesis": "Travel-discretionary exposure is vulnerable to European headline risk.",
+          "price": 24.639999389648438,
+          "annualizedVol": 0.5806882659247768,
+          "upsidePct": 0.28,
+          "downsidePct": 0.12468259191097322,
+          "targetPrice": 17.740799560546876,
+          "stopPrice": 27.712178378234604,
+          "rewardToRisk": 2.25,
+          "lastQuoteDate": "2026-05-15",
+          "priceSource": "Live quote"
+        }
+      ]
+    }
+  }
+}

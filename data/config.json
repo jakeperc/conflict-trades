@@ -1,0 +1,611 @@
+{
+  "scenarios": {
+    "iran": {
+      "key": "iran",
+      "title": "Iran / Hormuz / Yemen",
+      "subtitle": "Hormuz freeze, tanker repricing, defense replenishment",
+      "color": "#ff8a3d",
+      "query": "Iran Strait of Hormuz blockade Project Freedom mines tanker shipping oil CENTCOM Yemen Houthi",
+      "newsFallbackQueries": [
+        "Strait of Hormuz shipping Iran oil blockade",
+        "Iran oil prices Hormuz shipping",
+        "Yemen Houthi Red Sea shipping oil"
+      ],
+      "heatBase": 88,
+      "summary": "Updated for the May 2026 Hormuz blockage: crude sensitivity, trapped-vessel release attempts, tanker insurance stress, and defense restocking if Gulf transit risk stays elevated.",
+      "secondOrderEffects": [
+        "Marine insurance and mine-risk terms can hit delivered crude costs faster than headline oil moves.",
+        "A slow, military-managed reopening keeps tanker availability tight even if a small number of vessels transit.",
+        "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
+      ],
+      "indicatorBlueprints": [
+        {
+          "label": "Brent crude",
+          "unit": "pts",
+          "mode": "risk-on-disruption",
+          "base": 110,
+          "sensitivity": 0.28
+        },
+        {
+          "label": "Tanker rates",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 155,
+          "sensitivity": 1.2
+        },
+        {
+          "label": "Marine insurance",
+          "unit": "bps",
+          "mode": "risk-on-disruption",
+          "base": 245,
+          "sensitivity": 1.55
+        },
+        {
+          "label": "Airline margin stress",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 27,
+          "sensitivity": 0.55
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "XOM",
+          "direction": "LONG",
+          "conviction": 5,
+          "sector": "Energy",
+          "horizon": "2-6 weeks",
+          "pairTrade": "Long XOM / Short UAL",
+          "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
+          "catalyst": "Brent reprices on tanker and insurance stress.",
+          "riskLevel": "Medium",
+          "thesis": "Integrated major with direct upside to higher crude and LNG pricing."
+        },
+        {
+          "ticker": "CVX",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Energy",
+          "horizon": "2-6 weeks",
+          "pairTrade": "Long CVX / Short CCL",
+          "thesisBreaker": "Oil retraces before downstream margins expand.",
+          "catalyst": "Upstream sensitivity and dividend quality attract capital.",
+          "riskLevel": "Medium",
+          "thesis": "Large upstream torque and strong cash returns in an oil squeeze."
+        },
+        {
+          "ticker": "COP",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Energy",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Long COP / Short UAL",
+          "thesisBreaker": "Headline escalation fails to convert into sustained crude drawdown.",
+          "catalyst": "Cleaner oil beta than integrated peers.",
+          "riskLevel": "High",
+          "thesis": "Upstream-heavy exposure gives cleaner oil beta than integrated peers."
+        },
+        {
+          "ticker": "LNG",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Gas / LNG",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LNG / Short airlines basket",
+          "thesisBreaker": "Shipping stress stays localized and gas balances remain loose.",
+          "catalyst": "LNG premium widens if Atlantic and Red Sea routes tighten.",
+          "riskLevel": "High",
+          "thesis": "LNG export leverage rises if shipping routes and gas balances tighten."
+        },
+        {
+          "ticker": "FRO",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Shipping",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Long FRO / Short CCL",
+          "thesisBreaker": "Rerouting proves temporary and rate spike fades.",
+          "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+          "riskLevel": "High",
+          "thesis": "Tanker day rates can spike when voyages reroute around risk zones."
+        },
+        {
+          "ticker": "TNK",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Shipping",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Long TNK / Short UAL",
+          "thesisBreaker": "Insurance market normalizes quickly.",
+          "catalyst": "Refined-product freight reacts fast to route disruption.",
+          "riskLevel": "High",
+          "thesis": "Product tanker pricing improves with insurance and routing friction."
+        },
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long LMT / Short travel basket",
+          "thesisBreaker": "Conflict stays rhetorical without procurement urgency.",
+          "catalyst": "Interceptor and missile demand rises with Gulf defense posture.",
+          "riskLevel": "Medium",
+          "thesis": "Missile and air-defense replenishment benefits from a sustained Gulf scare."
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short consumer cyclicals",
+          "thesisBreaker": "Budget focus shifts away from missile defense.",
+          "catalyst": "Naval and missile systems benefit from prolonged escalation.",
+          "riskLevel": "Medium",
+          "thesis": "Naval, space, and missile defense exposure fits prolonged regional escalation."
+        },
+        {
+          "ticker": "HAL",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Oil services",
+          "horizon": "1-3 months",
+          "pairTrade": "Long HAL / Short airline ETF proxy",
+          "thesisBreaker": "Oil spike is brief and producers avoid capex follow-through.",
+          "catalyst": "Sustained crude strength can reopen service-cycle upside.",
+          "riskLevel": "High",
+          "thesis": "Oilfield services typically follow through if crude stays bid long enough."
+        },
+        {
+          "ticker": "UAL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Airlines",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short UAL / Long XOM",
+          "thesisBreaker": "Fuel retreats quickly and demand remains resilient.",
+          "catalyst": "Jet fuel inflation and route changes pressure margins first.",
+          "riskLevel": "High",
+          "thesis": "Jet fuel inflation and route disruptions pressure airline margins."
+        }
+      ]
+    },
+    "taiwan": {
+      "key": "taiwan",
+      "title": "China / Taiwan",
+      "subtitle": "Gray-zone pressure, customs blockade risk, Indo-Pacific defense bid",
+      "color": "#5bc0ff",
+      "query": "China Taiwan Strait PLA ships aircraft drills customs blockade semiconductor supply chain US aid defense",
+      "newsFallbackQueries": [
+        "Taiwan China military drills Taiwan Strait",
+        "Taiwan China blockade semiconductor supply chain",
+        "US Taiwan defense aid China"
+      ],
+      "heatBase": 67,
+      "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
+      "secondOrderEffects": [
+        "A customs or quarantine-style blockade can hit inventories before fabs are physically disrupted.",
+        "Consumer hardware multiples compress on uncertainty before revenue impacts show up.",
+        "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
+      ],
+      "indicatorBlueprints": [
+        {
+          "label": "Semiconductor stress",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.95
+        },
+        {
+          "label": "Defense bid",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.48
+        },
+        {
+          "label": "Asia shipping risk",
+          "unit": "pts",
+          "mode": "risk-on-disruption",
+          "base": 38,
+          "sensitivity": 0.82
+        },
+        {
+          "label": "Consumer hardware drawdown",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 9,
+          "sensitivity": 0.5
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LMT / Short AAPL",
+          "thesisBreaker": "Tensions cool before deterrence budgets move.",
+          "catalyst": "Missile and deterrence spending rise in Indo-Pacific stress.",
+          "riskLevel": "Medium",
+          "thesis": "High-end missiles, interceptors, and deterrence spending rise in Indo-Pacific stress."
+        },
+        {
+          "ticker": "RTX",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long RTX / Short QQQ proxy",
+          "thesisBreaker": "Defense leadership lags broader market rotation.",
+          "catalyst": "Air and missile defense systems benefit from regional rearmament.",
+          "riskLevel": "Medium",
+          "thesis": "Air and missile defense systems benefit from regional rearmament."
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short consumer electronics basket",
+          "thesisBreaker": "Procurement remains slow-moving despite rhetoric.",
+          "catalyst": "Radar, C2, and missile programs fit a higher-alert Pacific posture.",
+          "riskLevel": "Medium",
+          "thesis": "Missile, radar, and space programs fit a higher-alert Pacific posture."
+        },
+        {
+          "ticker": "INTC",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Semiconductor onshoring",
+          "horizon": "1-6 months",
+          "pairTrade": "Long INTC / Short TSM",
+          "thesisBreaker": "Domestic fab narrative fails to win marginal capital.",
+          "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
+          "riskLevel": "High",
+          "thesis": "Domestic fab narrative improves if Taiwan concentration becomes a bigger market risk."
+        },
+        {
+          "ticker": "GFS",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Foundry alternatives",
+          "horizon": "1-3 months",
+          "pairTrade": "Long GFS / Short QCOM",
+          "thesisBreaker": "Customers delay diversification spend.",
+          "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+          "riskLevel": "High",
+          "thesis": "Alternative foundry capacity gets revalued on supply-chain resilience demand."
+        },
+        {
+          "ticker": "AVAV",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Drones / ISR",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long AVAV / Short travel-tech proxy",
+          "thesisBreaker": "No procurement urgency follows the headlines.",
+          "catalyst": "ISR and drone demand often rerates in contested-maritime scenarios.",
+          "riskLevel": "High",
+          "thesis": "ISR and drone demand often re-rates in contested-maritime scenarios."
+        },
+        {
+          "ticker": "AAPL",
+          "direction": "SHORT",
+          "conviction": 4,
+          "sector": "Consumer hardware",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short AAPL / Long LMT",
+          "thesisBreaker": "Supply chain remains intact and risk premium fades.",
+          "catalyst": "Assembly concentration and consumer hardware exposure make it a direct shock absorber.",
+          "riskLevel": "High",
+          "thesis": "Assembly concentration and consumer hardware exposure make it a direct shock absorber."
+        },
+        {
+          "ticker": "NVDA",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "AI / Semis",
+          "horizon": "1-3 weeks",
+          "pairTrade": "Short NVDA / Long RTX",
+          "thesisBreaker": "AI demand strength overwhelms geopolitical de-rating.",
+          "catalyst": "Supply-chain fragility meets premium valuation risk.",
+          "riskLevel": "High",
+          "thesis": "AI supply chains and premium multiple create downside if hardware flow is impaired."
+        },
+        {
+          "ticker": "QCOM",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Handsets",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short QCOM / Long GFS",
+          "thesisBreaker": "Smartphone demand proves resilient and logistics keep flowing.",
+          "catalyst": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption.",
+          "riskLevel": "High",
+          "thesis": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption."
+        },
+        {
+          "ticker": "TSM",
+          "direction": "SHORT",
+          "conviction": 5,
+          "sector": "Semiconductor manufacturing",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short TSM / Long INTC",
+          "thesisBreaker": "Cross-strait signals soften materially.",
+          "catalyst": "Direct center-of-gravity risk in any severe cross-strait escalation.",
+          "riskLevel": "Very high",
+          "thesis": "Direct center-of-gravity risk in any severe cross-strait escalation."
+        }
+      ]
+    },
+    "europe": {
+      "key": "europe",
+      "title": "Russia / NATO / Western Europe",
+      "subtitle": "Drone waves, Baltic intercepts, rearmament and LNG repricing",
+      "color": "#c9ff66",
+      "query": "Russia Ukraine NATO Baltic Sea intercept drones missile defense European rearmament Russian LNG ban",
+      "newsFallbackQueries": [
+        "Russia Ukraine NATO drones air defense",
+        "Europe defense rearmament Russia Ukraine NATO",
+        "EU Russian LNG ban Europe gas"
+      ],
+      "heatBase": 66,
+      "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
+      "secondOrderEffects": [
+        "European rearmament can outlast the immediate headline cycle and support defense multiples longer than energy spikes do.",
+        "Russian LNG restrictions can lift U.S. gas infrastructure and producers before spot gas fully rerates.",
+        "Travel weakness often shows up through bookings and sentiment before official traffic data."
+      ],
+      "indicatorBlueprints": [
+        {
+          "label": "NATO procurement",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.62
+        },
+        {
+          "label": "European gas stress",
+          "unit": "pts",
+          "mode": "risk-on-disruption",
+          "base": 41,
+          "sensitivity": 0.66
+        },
+        {
+          "label": "Transatlantic travel drag",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 8,
+          "sensitivity": 0.42
+        },
+        {
+          "label": "Defense leadership",
+          "unit": "%",
+          "mode": "risk-on-disruption",
+          "base": 100,
+          "sensitivity": 0.44
+        }
+      ],
+      "trades": [
+        {
+          "ticker": "RTX",
+          "direction": "LONG",
+          "conviction": 5,
+          "sector": "Defense",
+          "horizon": "2-12 weeks",
+          "pairTrade": "Long RTX / Short UAL",
+          "thesisBreaker": "European response remains political, not procurement-driven.",
+          "catalyst": "Air-defense demand and replenishment remain the cleanest expression.",
+          "riskLevel": "Medium",
+          "thesis": "European air-defense demand and replenishment programs remain the cleanest expression."
+        },
+        {
+          "ticker": "LMT",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long LMT / Short CCL",
+          "thesisBreaker": "Backlog upside is already fully priced.",
+          "catalyst": "Broad NATO procurement and missile demand support backlog expansion.",
+          "riskLevel": "Medium",
+          "thesis": "Broad NATO procurement and missile demand support backlog expansion."
+        },
+        {
+          "ticker": "NOC",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long NOC / Short travel basket",
+          "thesisBreaker": "Spending emphasis shifts toward domestic European primes only.",
+          "catalyst": "Command, radar, and interceptors fit higher European readiness spending.",
+          "riskLevel": "Medium",
+          "thesis": "Command, radar, and interceptors fit higher European readiness spending."
+        },
+        {
+          "ticker": "GD",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long GD / Short consumer cyclicals",
+          "thesisBreaker": "Rearmament rhetoric outruns actual contract cadence.",
+          "catalyst": "Ammunition, armored systems, and defense electronics benefit from rearmament.",
+          "riskLevel": "Medium",
+          "thesis": "Ammunition, armored systems, and defense electronics benefit from rearmament."
+        },
+        {
+          "ticker": "HII",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Naval defense",
+          "horizon": "1-6 months",
+          "pairTrade": "Long HII / Short airlines",
+          "thesisBreaker": "Atlantic naval posture does not shift materially.",
+          "catalyst": "Naval emphasis rises when the Atlantic and northern flank look less secure.",
+          "riskLevel": "High",
+          "thesis": "Naval emphasis rises when the Atlantic and northern flank look less secure."
+        },
+        {
+          "ticker": "LNG",
+          "direction": "LONG",
+          "conviction": 4,
+          "sector": "Gas / LNG",
+          "horizon": "2-8 weeks",
+          "pairTrade": "Long LNG / Short CCL",
+          "thesisBreaker": "European storage and weather mute the gas response.",
+          "catalyst": "Europe often leans harder on LNG when pipeline and security risk rises.",
+          "riskLevel": "High",
+          "thesis": "Europe often leans harder on LNG when pipeline and security risk rises."
+        },
+        {
+          "ticker": "KMI",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Midstream",
+          "horizon": "1-3 months",
+          "pairTrade": "Long KMI / Short UAL",
+          "thesisBreaker": "Feedgas demand fails to accelerate.",
+          "catalyst": "US gas infrastructure gains if LNG feedgas demand persists.",
+          "riskLevel": "Medium",
+          "thesis": "US gas infrastructure gains if LNG feedgas demand persists."
+        },
+        {
+          "ticker": "EQT",
+          "direction": "LONG",
+          "conviction": 3,
+          "sector": "Natural gas",
+          "horizon": "1-8 weeks",
+          "pairTrade": "Long EQT / Short travel ETF proxy",
+          "thesisBreaker": "Gas market stays well supplied despite Europe headlines.",
+          "catalyst": "Appalachian gas names can rerate if Europe drives another gas bid.",
+          "riskLevel": "High",
+          "thesis": "Appalachian gas names can re-rate if Europe drives another gas bid."
+        },
+        {
+          "ticker": "UAL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Airlines",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short UAL / Long RTX",
+          "thesisBreaker": "Security shock fades without demand damage.",
+          "catalyst": "Transatlantic travel demand and costs get hit in a Europe security shock.",
+          "riskLevel": "High",
+          "thesis": "Transatlantic travel demand and costs get hit in a Europe security shock."
+        },
+        {
+          "ticker": "CCL",
+          "direction": "SHORT",
+          "conviction": 3,
+          "sector": "Leisure travel",
+          "horizon": "1-4 weeks",
+          "pairTrade": "Short CCL / Long LNG",
+          "thesisBreaker": "Consumer travel remains robust despite headlines.",
+          "catalyst": "Travel-discretionary exposure is vulnerable to European headline risk.",
+          "riskLevel": "High",
+          "thesis": "Travel-discretionary exposure is vulnerable to European headline risk."
+        }
+      ]
+    }
+  },
+  "fallbackQuotes": {
+    "XOM": {
+      "price": 157.92,
+      "annualizedVol": 0.299
+    },
+    "CVX": {
+      "price": 191.1,
+      "annualizedVol": 0.248
+    },
+    "COP": {
+      "price": 122.41,
+      "annualizedVol": 0.315
+    },
+    "LNG": {
+      "price": 241.84,
+      "annualizedVol": 0.345
+    },
+    "FRO": {
+      "price": 36.66,
+      "annualizedVol": 0.467
+    },
+    "TNK": {
+      "price": 77.19,
+      "annualizedVol": 0.399
+    },
+    "LMT": {
+      "price": 516.01,
+      "annualizedVol": 0.273
+    },
+    "NOC": {
+      "price": 540.69,
+      "annualizedVol": 0.289
+    },
+    "HAL": {
+      "price": 41.76,
+      "annualizedVol": 0.315
+    },
+    "UAL": {
+      "price": 92.85,
+      "annualizedVol": 0.552
+    },
+    "RTX": {
+      "price": 171.18,
+      "annualizedVol": 0.262
+    },
+    "INTC": {
+      "price": 108.77,
+      "annualizedVol": 0.888
+    },
+    "GFS": {
+      "price": 71.03,
+      "annualizedVol": 0.617
+    },
+    "AVAV": {
+      "price": 158,
+      "annualizedVol": 0.755
+    },
+    "AAPL": {
+      "price": 300.23,
+      "annualizedVol": 0.253
+    },
+    "NVDA": {
+      "price": 225.32,
+      "annualizedVol": 0.387
+    },
+    "QCOM": {
+      "price": 201.49,
+      "annualizedVol": 0.569
+    },
+    "TSM": {
+      "price": 404.35,
+      "annualizedVol": 0.415
+    },
+    "GD": {
+      "price": 334.5,
+      "annualizedVol": 0.254
+    },
+    "HII": {
+      "price": 326.17,
+      "annualizedVol": 0.443
+    },
+    "KMI": {
+      "price": 33.63,
+      "annualizedVol": 0.196
+    },
+    "EQT": {
+      "price": 56.22,
+      "annualizedVol": 0.29
+    },
+    "CCL": {
+      "price": 24.64,
+      "annualizedVol": 0.581
+    }
+  }
+}
