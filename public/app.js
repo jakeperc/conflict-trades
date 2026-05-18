@@ -101,8 +101,8 @@ function formatPostedAt(value) {
 function setLoading(loading) {
   state.loading = loading;
   nodes.refreshButton.disabled = loading;
-  nodes.refreshButton.textContent = loading ? "Refreshing..." : "Refresh Live Update";
-  nodes.statusText.textContent = loading ? "Pulling headlines and quotes" : "Live scenario feed active";
+  nodes.refreshButton.textContent = loading ? "Refreshing…" : "Refresh";
+  nodes.statusText.textContent = loading ? "Pulling live data" : "Live";
 }
 
 async function loadData() {
@@ -404,76 +404,129 @@ function renderTraderOpen(positions) {
   const body = document.getElementById("traderOpenBody");
   body.innerHTML = "";
   if (!positions.length) {
-    body.innerHTML = '<tr><td colspan="9" class="muted-cell">No open positions. Run /ai-trader to enter.</td></tr>';
+    body.innerHTML = '<tr><td colspan="10" class="muted-cell">No open positions. Run /ai-trader to enter.</td></tr>';
     return;
   }
   positions.forEach((pos) => {
     const row = document.createElement("tr");
     const pctClass = pos.unrealizedPct >= 0 ? "positive" : "negative";
+    const score = pos.finalScoreAtEntry ?? Math.round((pos.confidenceAtEntry || 0) * 100);
+    const scoreClass = scoreColorClass(score);
     row.innerHTML = `
-      <td><strong>${pos.ticker}</strong></td>
+      <td class="ticker-cell"><strong>${pos.ticker}</strong></td>
       <td>${pos.scenarioTitle || pos.scenario}</td>
       <td><span class="direction-badge ${pos.direction.toLowerCase()}">${pos.direction}</span></td>
-      <td>${formatCurrency(pos.entryPrice)}</td>
-      <td>${formatCurrency(pos.currentPrice)}</td>
-      <td>${formatCurrency(pos.targetPrice)}</td>
-      <td>${formatCurrency(pos.stopPrice)}</td>
-      <td class="${pctClass}">${formatCurrency(pos.unrealizedPnlDollar)} (${(pos.unrealizedPct * 100).toFixed(1)}%)</td>
-      <td>${(pos.confidenceAtEntry * 100).toFixed(0)}</td>
+      <td class="num">${formatCurrency(pos.entryPrice)}</td>
+      <td class="num">${formatCurrency(pos.currentPrice)}</td>
+      <td class="num">${formatCurrency(pos.targetPrice)}</td>
+      <td class="num">${formatCurrency(pos.stopPrice)}</td>
+      <td class="num ${pctClass}">${formatCurrency(pos.unrealizedPnlDollar)}</td>
+      <td class="num ${pctClass}">${(pos.unrealizedPct * 100).toFixed(2)}%</td>
+      <td class="num"><span class="score-cell ${scoreClass}">${score.toFixed(0)}</span></td>
     `;
     body.appendChild(row);
   });
+}
+
+function scoreColorClass(score) {
+  if (score >= 75) return "score-elite";
+  if (score >= 60) return "score-high";
+  if (score >= 45) return "score-mid";
+  return "score-low";
+}
+
+function fillColorClass(score) {
+  if (score >= 75) return "fill-elite";
+  if (score >= 60) return "fill-high";
+  if (score >= 45) return "fill-mid";
+  return "fill-low";
 }
 
 function renderTraderClosed(closed) {
   const body = document.getElementById("traderClosedBody");
   body.innerHTML = "";
   if (!closed.length) {
-    body.innerHTML = '<tr><td colspan="7" class="muted-cell">No closed trades yet. Memory will populate as positions exit.</td></tr>';
+    body.innerHTML = '<tr><td colspan="7" class="muted-cell">No closed trades yet — memory populates as positions exit.</td></tr>';
     return;
   }
   closed.forEach((t) => {
     const row = document.createElement("tr");
     const cls = t.outcome === "win" ? "positive" : "negative";
     row.innerHTML = `
-      <td><strong>${t.ticker}</strong></td>
+      <td class="ticker-cell"><strong>${t.ticker}</strong></td>
       <td>${t.scenarioTitle || t.scenario}</td>
       <td><span class="direction-badge ${t.direction.toLowerCase()}">${t.direction}</span></td>
       <td><span class="result-pill ${cls}">${t.outcome.toUpperCase()}</span></td>
-      <td class="${cls}">${(t.realizedPct * 100).toFixed(1)}%</td>
-      <td>${t.holdingDays}</td>
+      <td class="num ${cls}">${(t.realizedPct * 100).toFixed(2)}%</td>
+      <td class="num">${t.holdingDays}</td>
       <td>${t.exitReason.replace(/_/g, " ")}</td>
     `;
     body.appendChild(row);
   });
 }
 
+const COMPONENT_ORDER = [
+  ["conviction", "conv"],
+  ["scenario", "scen"],
+  ["riskReward", "r/r"],
+  ["trend", "trnd"],
+  ["volRegime", "vol"],
+  ["catalyst", "cat"],
+  ["memory", "mem"]
+];
+
 function renderTraderWatchlist(items) {
   const node = document.getElementById("traderWatchlist");
   node.innerHTML = "";
   if (!items.length) {
-    node.innerHTML = '<p class="muted-cell">Run /ai-trader to populate the watchlist.</p>';
+    node.innerHTML = '<p class="muted-cell">Run /ai-trader to score candidates.</p>';
     return;
   }
   items.forEach((c) => {
     const card = document.createElement("article");
     card.className = `watchlist-card${c.held ? " held" : ""}`;
-    const memTone = c.memoryMult >= 1.05 ? "positive" : c.memoryMult <= 0.95 ? "negative" : "";
+    const finalScore = c.finalScore ?? Math.round((c.confidence || 0) * 100);
+    const scoreClass = scoreColorClass(finalScore);
+    const components = c.components || {};
+    const componentsHtml = COMPONENT_ORDER.map(([key, label]) => {
+      const val = components[key] ?? 0;
+      const fillClass = fillColorClass(val);
+      return `
+        <div class="score-bar" title="${key}">
+          <span class="score-bar-label">${label}</span>
+          <div class="score-bar-track">
+            <div class="score-bar-fill ${fillClass}" style="width:${val}%"></div>
+          </div>
+          <span class="score-bar-value">${val.toFixed(0)}</span>
+        </div>`;
+    }).join("");
+    const mom22 = c.momentum22d != null ? `${(c.momentum22d * 100).toFixed(1)}%` : "—";
+    const vol = c.annualizedVol != null ? `${(c.annualizedVol * 100).toFixed(0)}%` : "—";
+    const divPenalty = c.diversificationPenalty || 0;
     card.innerHTML = `
-      <div class="watchlist-row">
-        <strong>${c.ticker}</strong>
-        <span class="direction-badge ${c.direction.toLowerCase()}">${c.direction}</span>
-        <span class="watchlist-conf">${(c.confidence * 100).toFixed(0)}</span>
+      <div class="watchlist-top">
+        <div class="watchlist-ticker">
+          <strong>${c.ticker}</strong>
+          <span class="direction-badge ${c.direction.toLowerCase()}">${c.direction}</span>
+          ${c.held ? '<span class="watchlist-held-flag">held</span>' : ""}
+        </div>
+        <div class="watchlist-meta">
+          <div>${c.scenarioTitle || c.scenario} · ${c.sector}</div>
+          <div class="watchlist-meta-row">
+            <span class="mono">${formatCurrency(c.price)}</span>
+            <span>22d ${mom22}</span>
+            <span>vol ${vol}</span>
+            <span>R/R ${c.rewardToRisk}x</span>
+            <span>mem ×${(c.memoryMult || 1).toFixed(2)}</span>
+            ${divPenalty > 0 ? `<span class="negative">−${divPenalty.toFixed(0)} div</span>` : ""}
+          </div>
+        </div>
+        <div class="watchlist-score">
+          <span class="watchlist-score-value ${scoreClass}">${finalScore.toFixed(0)}</span>
+          <span class="watchlist-score-label">Score</span>
+        </div>
       </div>
-      <div class="watchlist-meta">
-        ${c.scenarioTitle || c.scenario} · ${c.sector} · ${formatCurrency(c.price)}
-      </div>
-      <div class="watchlist-detail">
-        <span>Base ${(c.baseScore * 100).toFixed(0)}</span>
-        <span class="${memTone}">Mem ×${c.memoryMult.toFixed(2)}</span>
-        <span>R/R ${c.rewardToRisk}x</span>
-        ${c.held ? '<span class="watchlist-held">held</span>' : ""}
-      </div>
+      <div class="watchlist-components">${componentsHtml}</div>
     `;
     node.appendChild(card);
   });
@@ -486,35 +539,32 @@ function renderTraderMemory(summary) {
   bottom.innerHTML = "";
 
   if (!summary.top?.length) {
-    top.innerHTML = '<p class="muted-cell">Need at least 3 closed trades per pattern.</p>';
+    top.innerHTML = '<p class="muted-cell">Need ≥3 closed trades per pattern.</p>';
   } else {
-    summary.top.forEach((b) => {
+    summary.top.slice(0, 5).forEach((b) => {
       const row = document.createElement("div");
       row.className = "memory-row positive";
       row.innerHTML = `
         <span class="memory-key">${b.key}</span>
-        <span class="memory-stats">${(b.winRate * 100).toFixed(0)}% wins · avg ${(b.avgPnlPct * 100).toFixed(1)}% · n=${b.n}</span>
+        <span class="memory-stats"><span class="positive">${(b.winRate * 100).toFixed(0)}% win</span><span>n=${b.n}</span><span class="positive">avg ${(b.avgPnlPct * 100).toFixed(1)}%</span></span>
       `;
       top.appendChild(row);
     });
   }
 
-  if (!summary.bottom?.length) {
+  const negativeOnly = (summary.bottom || []).filter((b) => b.score < 0).slice(0, 5);
+  if (!negativeOnly.length) {
     bottom.innerHTML = '<p class="muted-cell">No underperforming patterns yet.</p>';
   } else {
-    summary.bottom.forEach((b) => {
-      if (b.score >= 0) return;
+    negativeOnly.forEach((b) => {
       const row = document.createElement("div");
       row.className = "memory-row negative";
       row.innerHTML = `
         <span class="memory-key">${b.key}</span>
-        <span class="memory-stats">${(b.winRate * 100).toFixed(0)}% wins · avg ${(b.avgPnlPct * 100).toFixed(1)}% · n=${b.n}</span>
+        <span class="memory-stats"><span class="negative">${(b.winRate * 100).toFixed(0)}% win</span><span>n=${b.n}</span><span class="negative">avg ${(b.avgPnlPct * 100).toFixed(1)}%</span></span>
       `;
       bottom.appendChild(row);
     });
-    if (!bottom.children.length) {
-      bottom.innerHTML = '<p class="muted-cell">No underperforming patterns yet.</p>';
-    }
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "startingCash": 10000,
-  "cash": 1000,
+  "cash": 1600,
   "openPositions": [
     {
       "id": "pos-2026-05-18-XOM-iran",
@@ -22,71 +22,75 @@
       "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
       "pairTrade": "Long XOM / Short UAL",
       "heatAtEntry": 96,
-      "confidenceAtEntry": 1,
-      "memoryMultAtEntry": 1.83,
+      "confidenceAtEntry": 0.831,
+      "finalScoreAtEntry": 83.1,
+      "componentsAtEntry": {
+        "conviction": 95,
+        "scenario": 95,
+        "riskReward": 92.6,
+        "trend": 81,
+        "volRegime": 82,
+        "catalyst": 64,
+        "memory": 67.9
+      },
+      "diversificationPenaltyAtEntry": 0,
+      "memoryMultAtEntry": 1.536,
       "memoryAdjustmentsAtEntry": [
         {
-          "key": "ticker:XOM",
-          "n": 4,
-          "winRate": 0.5,
-          "avgPct": 0.0681642538631075,
-          "factor": 1.0908856718174766
-        },
-        {
           "key": "sector:Energy",
-          "n": 12,
+          "n": 6,
           "winRate": 0.5,
           "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "factor": 1.081767784880791
         },
         {
           "key": "direction:LONG",
-          "n": 178,
+          "n": 89,
           "winRate": 0.33707865168539325,
-          "avgPct": 0.00441605131109898,
-          "factor": 0.9545388630833467
+          "avgPct": 0.004416051311098978,
+          "factor": 0.9564135491417654
         },
         {
           "key": "scenario:iran",
-          "n": 62,
+          "n": 31,
           "winRate": 0.5483870967741935,
-          "avgPct": 0.053270791290103085,
-          "factor": 1.205873660570651
+          "avgPct": 0.05327079129010309,
+          "factor": 1.1847584133326354
         },
         {
           "key": "conviction:5",
-          "n": 16,
+          "n": 8,
           "winRate": 0.25,
-          "avgPct": -0.054152841222689416,
-          "factor": 0.7889257567394949
+          "avgPct": -0.05415284122268941,
+          "factor": 0.8416943175546212
         },
         {
           "key": "sector:Energy|direction:LONG",
-          "n": 12,
+          "n": 6,
           "winRate": 0.5,
           "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "factor": 1.081767784880791
         },
         {
           "key": "scenario:iran|direction:LONG",
-          "n": 58,
+          "n": 29,
           "winRate": 0.5517241379310345,
-          "avgPct": 0.05096738225293478,
-          "factor": 1.1973398891315283
+          "avgPct": 0.0509673822529348,
+          "factor": 1.176005847063255
         },
         {
           "key": "scenario:iran|sector:Energy",
-          "n": 12,
+          "n": 6,
           "winRate": 0.5,
           "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "factor": 1.081767784880791
         },
         {
           "key": "scenario:iran|sector:Energy|direction:LONG",
-          "n": 12,
+          "n": 6,
           "winRate": 0.5,
           "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "factor": 1.081767784880791
         }
       ],
       "currentPrice": 157.92,
@@ -94,275 +98,308 @@
       "unrealizedPct": 0
     },
     {
-      "id": "pos-2026-05-18-CVX-iran",
-      "ticker": "CVX",
+      "id": "pos-2026-05-18-TNK-iran",
+      "ticker": "TNK",
       "scenario": "iran",
       "scenarioTitle": "Iran / Hormuz / Yemen",
-      "sector": "Energy",
+      "sector": "Shipping",
       "direction": "LONG",
-      "conviction": 4,
+      "conviction": 3,
       "entryDate": "2026-05-18",
-      "entryPrice": 191.1,
-      "shares": 12.558869,
+      "entryPrice": 77.19,
+      "shares": 31.092109,
       "allocatedCash": 2400,
-      "targetPrice": 244.61,
-      "stopPrice": 172.99,
-      "horizonDays": 42,
-      "thesis": "Large upstream torque and strong cash returns in an oil squeeze.",
-      "catalyst": "Upstream sensitivity and dividend quality attract capital.",
-      "thesisBreaker": "Oil retraces before downstream margins expand.",
-      "pairTrade": "Long CVX / Short CCL",
+      "targetPrice": 98.8,
+      "stopPrice": 69.25,
+      "horizonDays": 21,
+      "thesis": "Product tanker pricing improves with insurance and routing friction.",
+      "catalyst": "Refined-product freight reacts fast to route disruption.",
+      "thesisBreaker": "Insurance market normalizes quickly.",
+      "pairTrade": "Long TNK / Short UAL",
       "heatAtEntry": 96,
-      "confidenceAtEntry": 1,
-      "memoryMultAtEntry": 1.704,
+      "confidenceAtEntry": 0.734,
+      "finalScoreAtEntry": 73.4,
+      "componentsAtEntry": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 95.4,
+        "trend": 59,
+        "volRegime": 80,
+        "catalyst": 64,
+        "memory": 100
+      },
+      "diversificationPenaltyAtEntry": 7,
+      "memoryMultAtEntry": 2.5,
       "memoryAdjustmentsAtEntry": [
         {
-          "key": "ticker:CVX",
-          "n": 4,
-          "winRate": 0.5,
-          "avgPct": 0.027821523373606973,
-          "factor": 1.0370953644981427
+          "key": "ticker:TNK",
+          "n": 3,
+          "winRate": 1,
+          "avgPct": 0.059489797351284235,
+          "factor": 1.11944341529231
         },
         {
-          "key": "sector:Energy",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "key": "sector:Shipping",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
           "key": "direction:LONG",
-          "n": 178,
+          "n": 89,
           "winRate": 0.33707865168539325,
-          "avgPct": 0.00441605131109898,
-          "factor": 0.9545388630833467
+          "avgPct": 0.004416051311098978,
+          "factor": 0.9564135491417654
         },
         {
           "key": "scenario:iran",
-          "n": 62,
+          "n": 31,
           "winRate": 0.5483870967741935,
-          "avgPct": 0.053270791290103085,
-          "factor": 1.205873660570651
+          "avgPct": 0.05327079129010309,
+          "factor": 1.1847584133326354
         },
         {
-          "key": "conviction:4",
-          "n": 96,
-          "winRate": 0.25,
-          "avgPct": -0.03647769377347126,
-          "factor": 0.7730054383748753
+          "key": "conviction:3",
+          "n": 64,
+          "winRate": 0.390625,
+          "avgPct": 0.022062813320152593,
+          "factor": 1.0395566695827647
         },
         {
-          "key": "sector:Energy|direction:LONG",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "key": "sector:Shipping|direction:LONG",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
           "key": "scenario:iran|direction:LONG",
-          "n": 58,
+          "n": 29,
           "winRate": 0.5517241379310345,
-          "avgPct": 0.05096738225293478,
-          "factor": 1.1973398891315283
+          "avgPct": 0.0509673822529348,
+          "factor": 1.176005847063255
         },
         {
-          "key": "scenario:iran|sector:Energy",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "key": "scenario:iran|sector:Shipping",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
-          "key": "scenario:iran|sector:Energy|direction:LONG",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
+          "key": "scenario:iran|sector:Shipping|direction:LONG",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         }
       ],
-      "currentPrice": 191.1,
+      "currentPrice": 77.19,
       "unrealizedPnlDollar": 0,
       "unrealizedPct": 0
     },
     {
-      "id": "pos-2026-05-18-COP-iran",
-      "ticker": "COP",
+      "id": "pos-2026-05-18-FRO-iran",
+      "ticker": "FRO",
       "scenario": "iran",
       "scenarioTitle": "Iran / Hormuz / Yemen",
-      "sector": "Energy",
+      "sector": "Shipping",
       "direction": "LONG",
       "conviction": 4,
       "entryDate": "2026-05-18",
-      "entryPrice": 122.41,
-      "shares": 19.606241,
-      "allocatedCash": 2400,
-      "targetPrice": 156.68,
-      "stopPrice": 109.82,
-      "horizonDays": 28,
-      "thesis": "Upstream-heavy exposure gives cleaner oil beta than integrated peers.",
-      "catalyst": "Cleaner oil beta than integrated peers.",
-      "thesisBreaker": "Headline escalation fails to convert into sustained crude drawdown.",
-      "pairTrade": "Long COP / Short UAL",
-      "heatAtEntry": 96,
-      "confidenceAtEntry": 1,
-      "memoryMultAtEntry": 1.747,
-      "memoryAdjustmentsAtEntry": [
-        {
-          "key": "ticker:COP",
-          "n": 4,
-          "winRate": 0.5,
-          "avgPct": 0.04710784630466961,
-          "factor": 1.0628104617395595
-        },
-        {
-          "key": "sector:Energy",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
-        },
-        {
-          "key": "direction:LONG",
-          "n": 178,
-          "winRate": 0.33707865168539325,
-          "avgPct": 0.00441605131109898,
-          "factor": 0.9545388630833467
-        },
-        {
-          "key": "scenario:iran",
-          "n": 62,
-          "winRate": 0.5483870967741935,
-          "avgPct": 0.053270791290103085,
-          "factor": 1.205873660570651
-        },
-        {
-          "key": "conviction:4",
-          "n": 96,
-          "winRate": 0.25,
-          "avgPct": -0.03647769377347126,
-          "factor": 0.7730054383748753
-        },
-        {
-          "key": "sector:Energy|direction:LONG",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
-        },
-        {
-          "key": "scenario:iran|direction:LONG",
-          "n": 58,
-          "winRate": 0.5517241379310345,
-          "avgPct": 0.05096738225293478,
-          "factor": 1.1973398891315283
-        },
-        {
-          "key": "scenario:iran|sector:Energy",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
-        },
-        {
-          "key": "scenario:iran|sector:Energy|direction:LONG",
-          "n": 12,
-          "winRate": 0.5,
-          "avgPct": 0.047697874513794696,
-          "factor": 1.1144748988331072
-        }
-      ],
-      "currentPrice": 122.41,
-      "unrealizedPnlDollar": 0,
-      "unrealizedPct": 0
-    },
-    {
-      "id": "pos-2026-05-18-LNG-iran",
-      "ticker": "LNG",
-      "scenario": "iran",
-      "scenarioTitle": "Iran / Hormuz / Yemen",
-      "sector": "Gas / LNG",
-      "direction": "LONG",
-      "conviction": 4,
-      "entryDate": "2026-05-18",
-      "entryPrice": 241.84,
-      "shares": 7.442938,
+      "entryPrice": 36.66,
+      "shares": 49.099837,
       "allocatedCash": 1800,
-      "targetPrice": 309.56,
-      "stopPrice": 216.11,
-      "horizonDays": 56,
-      "thesis": "LNG export leverage rises if shipping routes and gas balances tighten.",
-      "catalyst": "LNG premium widens if Atlantic and Red Sea routes tighten.",
-      "thesisBreaker": "Shipping stress stays localized and gas balances remain loose.",
-      "pairTrade": "Long LNG / Short airlines basket",
+      "targetPrice": 46.92,
+      "stopPrice": 32.22,
+      "horizonDays": 21,
+      "thesis": "Tanker day rates can spike when voyages reroute around risk zones.",
+      "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+      "thesisBreaker": "Rerouting proves temporary and rate spike fades.",
+      "pairTrade": "Long FRO / Short CCL",
       "heatAtEntry": 96,
-      "confidenceAtEntry": 0.737,
-      "memoryMultAtEntry": 1.095,
+      "confidenceAtEntry": 0.636,
+      "finalScoreAtEntry": 63.6,
+      "componentsAtEntry": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 89.3,
+        "trend": 59,
+        "volRegime": 60,
+        "catalyst": 50,
+        "memory": 97.9
+      },
+      "diversificationPenaltyAtEntry": 16,
+      "memoryMultAtEntry": 2.436,
       "memoryAdjustmentsAtEntry": [
         {
-          "key": "ticker:LNG",
-          "n": 12,
-          "winRate": 0.3333333333333333,
-          "avgPct": 0.019251996871857965,
-          "factor": 1.006204792492459
+          "key": "ticker:FRO",
+          "n": 3,
+          "winRate": 1,
+          "avgPct": 0.06964683645186155,
+          "factor": 1.130523821583849
         },
         {
-          "key": "sector:Gas / LNG",
-          "n": 12,
-          "winRate": 0.3333333333333333,
-          "avgPct": 0.019251996871857965,
-          "factor": 1.006204792492459
+          "key": "sector:Shipping",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
           "key": "direction:LONG",
-          "n": 178,
+          "n": 89,
           "winRate": 0.33707865168539325,
-          "avgPct": 0.00441605131109898,
-          "factor": 0.9545388630833467
+          "avgPct": 0.004416051311098978,
+          "factor": 0.9564135491417654
         },
         {
           "key": "scenario:iran",
-          "n": 62,
+          "n": 31,
           "winRate": 0.5483870967741935,
-          "avgPct": 0.053270791290103085,
-          "factor": 1.205873660570651
+          "avgPct": 0.05327079129010309,
+          "factor": 1.1847584133326354
         },
         {
           "key": "conviction:4",
-          "n": 96,
+          "n": 48,
           "winRate": 0.25,
           "avgPct": -0.03647769377347126,
-          "factor": 0.7730054383748753
+          "factor": 0.7892193356338129
         },
         {
-          "key": "sector:Gas / LNG|direction:LONG",
-          "n": 12,
-          "winRate": 0.3333333333333333,
-          "avgPct": 0.019251996871857965,
-          "factor": 1.006204792492459
+          "key": "sector:Shipping|direction:LONG",
+          "n": 6,
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
           "key": "scenario:iran|direction:LONG",
-          "n": 58,
+          "n": 29,
           "winRate": 0.5517241379310345,
-          "avgPct": 0.05096738225293478,
-          "factor": 1.1973398891315283
+          "avgPct": 0.0509673822529348,
+          "factor": 1.176005847063255
         },
         {
-          "key": "scenario:iran|sector:Gas / LNG",
+          "key": "scenario:iran|sector:Shipping",
           "n": 6,
-          "winRate": 0.3333333333333333,
-          "avgPct": 0.019251996871857958,
-          "factor": 1.0044319946374707
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         },
         {
-          "key": "scenario:iran|sector:Gas / LNG|direction:LONG",
+          "key": "scenario:iran|sector:Shipping|direction:LONG",
           "n": 6,
-          "winRate": 0.3333333333333333,
-          "avgPct": 0.019251996871857958,
-          "factor": 1.0044319946374707
+          "winRate": 1,
+          "avgPct": 0.06456831690157289,
+          "factor": 1.1964028289741249
         }
       ],
-      "currentPrice": 241.84,
+      "currentPrice": 36.66,
+      "unrealizedPnlDollar": 0,
+      "unrealizedPct": 0
+    },
+    {
+      "id": "pos-2026-05-18-UCO-iran",
+      "ticker": "UCO",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "sector": "Oil ETF (2x)",
+      "direction": "LONG",
+      "conviction": 3,
+      "entryDate": "2026-05-18",
+      "entryPrice": 50.2,
+      "shares": 35.856573,
+      "allocatedCash": 1800,
+      "targetPrice": 64.26,
+      "stopPrice": 43.02,
+      "horizonDays": 21,
+      "thesis": "Two-times geared WTI exposure for short-duration views with crisp invalidation.",
+      "catalyst": "Geared upside if Brent stays bid for sustained period.",
+      "thesisBreaker": "Daily roll decay outpaces price move on a quick reversal.",
+      "pairTrade": "Long UCO / Short CCL",
+      "heatAtEntry": 96,
+      "confidenceAtEntry": 0.653,
+      "finalScoreAtEntry": 65.3,
+      "componentsAtEntry": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 84.1,
+        "trend": 87,
+        "volRegime": 45,
+        "catalyst": 50,
+        "memory": 100
+      },
+      "diversificationPenaltyAtEntry": 13,
+      "memoryMultAtEntry": 2.5,
+      "memoryAdjustmentsAtEntry": [
+        {
+          "key": "ticker:UCO",
+          "n": 4,
+          "winRate": 0.5,
+          "avgPct": 0.09560182441030785,
+          "factor": 1.1274690992137437
+        },
+        {
+          "key": "sector:Oil ETF (2x)",
+          "n": 4,
+          "winRate": 0.5,
+          "avgPct": 0.09560182441030785,
+          "factor": 1.1274690992137437
+        },
+        {
+          "key": "direction:LONG",
+          "n": 89,
+          "winRate": 0.33707865168539325,
+          "avgPct": 0.004416051311098978,
+          "factor": 0.9564135491417654
+        },
+        {
+          "key": "scenario:iran",
+          "n": 31,
+          "winRate": 0.5483870967741935,
+          "avgPct": 0.05327079129010309,
+          "factor": 1.1847584133326354
+        },
+        {
+          "key": "conviction:3",
+          "n": 64,
+          "winRate": 0.390625,
+          "avgPct": 0.022062813320152593,
+          "factor": 1.0395566695827647
+        },
+        {
+          "key": "sector:Oil ETF (2x)|direction:LONG",
+          "n": 4,
+          "winRate": 0.5,
+          "avgPct": 0.09560182441030785,
+          "factor": 1.1274690992137437
+        },
+        {
+          "key": "scenario:iran|direction:LONG",
+          "n": 29,
+          "winRate": 0.5517241379310345,
+          "avgPct": 0.0509673822529348,
+          "factor": 1.176005847063255
+        },
+        {
+          "key": "scenario:iran|sector:Oil ETF (2x)",
+          "n": 4,
+          "winRate": 0.5,
+          "avgPct": 0.09560182441030785,
+          "factor": 1.1274690992137437
+        },
+        {
+          "key": "scenario:iran|sector:Oil ETF (2x)|direction:LONG",
+          "n": 4,
+          "winRate": 0.5,
+          "avgPct": 0.09560182441030785,
+          "factor": 1.1274690992137437
+        }
+      ],
+      "currentPrice": 50.2,
       "unrealizedPnlDollar": 0,
       "unrealizedPct": 0
     }
@@ -372,14 +409,14 @@
     {
       "date": "2026-05-18",
       "cycle": 1,
-      "cash": 1000,
-      "openMtM": 9000,
+      "cash": 1600,
+      "openMtM": 8400,
       "totalEquity": 10000,
       "pctVsStart": 0
     }
   ],
-  "createdAt": "2026-05-18T05:26:20.624Z",
-  "lastRunAt": "2026-05-18T05:26:24.653Z",
+  "createdAt": "2026-05-18T05:40:21.624Z",
+  "lastRunAt": "2026-05-18T05:40:26.049Z",
   "cycles": 1,
   "lastWatchlist": [
     {
@@ -394,60 +431,25 @@
       "rewardToRisk": 2.53,
       "conviction": 5,
       "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.81,
-      "memoryMult": 1.83,
-      "held": false
-    },
-    {
-      "ticker": "CVX",
-      "scenario": "iran",
-      "scenarioTitle": "Iran / Hormuz / Yemen",
-      "direction": "LONG",
-      "sector": "Energy",
-      "price": 191.1,
-      "targetPrice": 244.61,
-      "stopPrice": 172.99,
-      "rewardToRisk": 2.95,
-      "conviction": 4,
-      "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.755,
-      "memoryMult": 1.704,
-      "held": false
-    },
-    {
-      "ticker": "COP",
-      "scenario": "iran",
-      "scenarioTitle": "Iran / Hormuz / Yemen",
-      "direction": "LONG",
-      "sector": "Energy",
-      "price": 122.41,
-      "targetPrice": 156.68,
-      "stopPrice": 109.82,
-      "rewardToRisk": 2.72,
-      "conviction": 4,
-      "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.696,
-      "memoryMult": 1.747,
-      "held": false
-    },
-    {
-      "ticker": "FRO",
-      "scenario": "iran",
-      "scenarioTitle": "Iran / Hormuz / Yemen",
-      "direction": "LONG",
-      "sector": "Shipping",
-      "price": 36.66,
-      "targetPrice": 46.92,
-      "stopPrice": 32.22,
-      "rewardToRisk": 2.31,
-      "conviction": 4,
-      "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.591,
-      "memoryMult": 2.5,
+      "upsidePct": 0.28,
+      "downsidePct": 0.11084061519742221,
+      "momentum22d": 0.059794671435281624,
+      "pctVsMa22": 0.048070959930554234,
+      "annualizedVol": 0.2986717933118516,
+      "catalyst": "Brent reprices on tanker and insurance stress.",
+      "finalScore": 83.1,
+      "confidence": 0.831,
+      "components": {
+        "conviction": 95,
+        "scenario": 95,
+        "riskReward": 92.6,
+        "trend": 81,
+        "volRegime": 82,
+        "catalyst": 64,
+        "memory": 67.9
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.536,
       "held": false
     },
     {
@@ -462,26 +464,190 @@
       "rewardToRisk": 2.72,
       "conviction": 3,
       "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.522,
+      "upsidePct": 0.28,
+      "downsidePct": 0.10282387567312218,
+      "momentum22d": 0.0329184928939845,
+      "pctVsMa22": -0.010257688940159158,
+      "annualizedVol": 0.39853229727601824,
+      "catalyst": "Refined-product freight reacts fast to route disruption.",
+      "finalScore": 80.4,
+      "confidence": 0.804,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 95.4,
+        "trend": 59,
+        "volRegime": 80,
+        "catalyst": 64,
+        "memory": 100
+      },
+      "diversificationPenalty": 0,
       "memoryMult": 2.5,
       "held": false
     },
     {
-      "ticker": "USO",
+      "ticker": "FRO",
       "scenario": "iran",
       "scenarioTitle": "Iran / Hormuz / Yemen",
       "direction": "LONG",
-      "sector": "Oil ETF",
-      "price": 148.23,
-      "targetPrice": 189.73,
-      "stopPrice": 127.43,
-      "rewardToRisk": 2,
+      "sector": "Shipping",
+      "price": 36.66,
+      "targetPrice": 46.92,
+      "stopPrice": 32.22,
+      "rewardToRisk": 2.31,
       "conviction": 4,
       "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.512,
+      "upsidePct": 0.28,
+      "downsidePct": 0.12105399179110263,
+      "momentum22d": 0.032966979814351406,
+      "pctVsMa22": -0.003988894296282193,
+      "annualizedVol": 0.4671165982591886,
+      "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+      "finalScore": 79.6,
+      "confidence": 0.796,
+      "components": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 89.3,
+        "trend": 59,
+        "volRegime": 60,
+        "catalyst": 50,
+        "memory": 97.9
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 2.436,
+      "held": false
+    },
+    {
+      "ticker": "UCO",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "LONG",
+      "sector": "Oil ETF (2x)",
+      "price": 50.2,
+      "targetPrice": 64.26,
+      "stopPrice": 43.02,
+      "rewardToRisk": 1.96,
+      "conviction": 3,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.14302013907743777,
+      "momentum22d": 0.22022366328888848,
+      "pctVsMa22": 0.10949258368067906,
+      "annualizedVol": 0.7335011589786481,
+      "catalyst": "Geared upside if Brent stays bid for sustained period.",
+      "finalScore": 78.3,
+      "confidence": 0.783,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 84.1,
+        "trend": 87,
+        "volRegime": 45,
+        "catalyst": 50,
+        "memory": 100
+      },
+      "diversificationPenalty": 0,
       "memoryMult": 2.5,
+      "held": false
+    },
+    {
+      "ticker": "HAL",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "LONG",
+      "sector": "Oil services",
+      "price": 41.76,
+      "targetPrice": 53.45,
+      "stopPrice": 37.89,
+      "rewardToRisk": 3.02,
+      "conviction": 3,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.09275440121222,
+      "momentum22d": 0.11241335383826212,
+      "pctVsMa22": 0.038054720966023484,
+      "annualizedVol": 0.3146200101018333,
+      "catalyst": "Sustained crude strength can reopen service-cycle upside.",
+      "finalScore": 76.2,
+      "confidence": 0.762,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 99.8,
+        "trend": 87,
+        "volRegime": 80,
+        "catalyst": 50,
+        "memory": 62.8
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.385,
+      "held": false
+    },
+    {
+      "ticker": "INTC",
+      "scenario": "taiwan",
+      "scenarioTitle": "China / Taiwan",
+      "direction": "LONG",
+      "sector": "Semiconductor onshoring",
+      "price": 108.77,
+      "targetPrice": 139.23,
+      "stopPrice": 91.37,
+      "rewardToRisk": 1.75,
+      "conviction": 3,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.16,
+      "momentum22d": 0.6749305906048721,
+      "pctVsMa22": 0.14580805954606485,
+      "annualizedVol": 0.8880737977026144,
+      "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
+      "finalScore": 76.2,
+      "confidence": 0.762,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 81,
+        "trend": 87,
+        "volRegime": 30,
+        "catalyst": 46,
+        "memory": 100
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 2.5,
+      "held": false
+    },
+    {
+      "ticker": "CVX",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "LONG",
+      "sector": "Energy",
+      "price": 191.1,
+      "targetPrice": 244.61,
+      "stopPrice": 172.99,
+      "rewardToRisk": 2.95,
+      "conviction": 4,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.09475621635888554,
+      "momentum22d": 0.03347575749723847,
+      "pctVsMa22": 0.02082592410237909,
+      "annualizedVol": 0.24796846965737948,
+      "catalyst": "Upstream sensitivity and dividend quality attract capital.",
+      "finalScore": 76,
+      "confidence": 0.76,
+      "components": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 98.8,
+        "trend": 57,
+        "volRegime": 82,
+        "catalyst": 50,
+        "memory": 64.7
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.44,
       "held": false
     },
     {
@@ -496,9 +662,91 @@
       "rewardToRisk": 2.05,
       "conviction": 4,
       "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.525,
-      "memoryMult": 2.5,
+      "upsidePct": 0.28,
+      "downsidePct": 0.13639869867115073,
+      "momentum22d": 0.21914621721815053,
+      "pctVsMa22": 0.06530239608666585,
+      "annualizedVol": 0.5949891555929229,
+      "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+      "finalScore": 75.8,
+      "confidence": 0.758,
+      "components": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 85.4,
+        "trend": 87,
+        "volRegime": 60,
+        "catalyst": 71,
+        "memory": 51.7
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.052,
+      "held": false
+    },
+    {
+      "ticker": "COP",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "LONG",
+      "sector": "Energy",
+      "price": 122.41,
+      "targetPrice": 156.68,
+      "stopPrice": 109.82,
+      "rewardToRisk": 2.72,
+      "conviction": 4,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.10281632467824925,
+      "momentum22d": 0.029347507121602362,
+      "pctVsMa22": 0.014568560624214404,
+      "annualizedVol": 0.3151360389854103,
+      "catalyst": "Cleaner oil beta than integrated peers.",
+      "finalScore": 75.3,
+      "confidence": 0.753,
+      "components": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 95.4,
+        "trend": 57,
+        "volRegime": 80,
+        "catalyst": 50,
+        "memory": 64.7
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.44,
+      "held": false
+    },
+    {
+      "ticker": "USO",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "LONG",
+      "sector": "Oil ETF",
+      "price": 148.23,
+      "targetPrice": 189.73,
+      "stopPrice": 127.43,
+      "rewardToRisk": 2,
+      "conviction": 4,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.14029668558314376,
+      "momentum22d": 0.20915246068674137,
+      "pctVsMa22": 0.08221134775730025,
+      "annualizedVol": 0.6274723798595313,
+      "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+      "finalScore": 73.8,
+      "confidence": 0.738,
+      "components": {
+        "conviction": 80,
+        "scenario": 95,
+        "riskReward": 84.7,
+        "trend": 87,
+        "volRegime": 45,
+        "catalyst": 64,
+        "memory": 51.7
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.052,
       "held": false
     },
     {
@@ -513,9 +761,58 @@
       "rewardToRisk": 2.17,
       "conviction": 3,
       "heat": 96,
-      "confidence": 1,
-      "baseScore": 0.417,
-      "memoryMult": 2.5,
+      "upsidePct": 0.28,
+      "downsidePct": 0.12909530292903862,
+      "momentum22d": 0.470295937904216,
+      "pctVsMa22": 0.08135449352777382,
+      "annualizedVol": 0.6174608577419884,
+      "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+      "finalScore": 73.5,
+      "confidence": 0.735,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 87.2,
+        "trend": 87,
+        "volRegime": 45,
+        "catalyst": 50,
+        "memory": 73.1
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.693,
+      "held": false
+    },
+    {
+      "ticker": "UAL",
+      "scenario": "iran",
+      "scenarioTitle": "Iran / Hormuz / Yemen",
+      "direction": "SHORT",
+      "sector": "Airlines",
+      "price": 92.85,
+      "targetPrice": 66.85,
+      "stopPrice": 104.11,
+      "rewardToRisk": 2.31,
+      "conviction": 3,
+      "heat": 96,
+      "upsidePct": 0.28,
+      "downsidePct": 0.1212172919395641,
+      "momentum22d": -0.015063097692915361,
+      "pctVsMa22": -0.019050422729650882,
+      "annualizedVol": 0.5518107661630341,
+      "catalyst": "Jet fuel inflation and route changes pressure margins first.",
+      "finalScore": 71.2,
+      "confidence": 0.712,
+      "components": {
+        "conviction": 60,
+        "scenario": 95,
+        "riskReward": 89.3,
+        "trend": 69,
+        "volRegime": 60,
+        "catalyst": 57,
+        "memory": 63.1
+      },
+      "diversificationPenalty": 0,
+      "memoryMult": 1.392,
       "held": false
     }
   ]

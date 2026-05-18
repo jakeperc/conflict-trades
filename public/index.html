@@ -7,65 +7,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="backdrop backdrop-one"></div>
-    <div class="backdrop backdrop-two"></div>
-
     <main class="shell">
-      <section class="command-bar">
-        <div class="command-pill">
-          <span class="meta-label">Mode</span>
-          <strong>Scenario Command Center</strong>
-        </div>
-        <div class="command-pill">
-          <span class="meta-label">Build</span>
-          <strong id="buildVersion">Waiting</strong>
-        </div>
-        <div class="command-pill">
-          <span class="meta-label">Top pair</span>
-          <strong id="topPairTrade">Waiting</strong>
-        </div>
-      </section>
-
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Live Geopolitical Scenario Lab</p>
-          <h1>Conflict Scenario Market Dashboard</h1>
-          <p class="lede">
-            A local, refreshable research dashboard for Iran chokepoints, China /
-            Taiwan escalation, and Russia / NATO / Western Europe stress.
-          </p>
-        </div>
-
-        <div class="hero-panel">
-          <div class="hero-meta">
-            <div>
-              <span class="meta-label">Status</span>
-              <strong id="statusText">Connecting to live feeds</strong>
-            </div>
-            <div>
-              <span class="meta-label">Last refresh</span>
-              <strong id="lastRefresh">Waiting</strong>
-            </div>
-          </div>
-
-          <div class="change-card">
-            <span class="meta-label">What Changed</span>
-            <div id="changeList" class="change-list"></div>
-          </div>
-
-          <div class="hero-actions">
-            <button id="refreshButton" class="refresh-button">Refresh Live Update</button>
-            <p class="microcopy">
-              Pulls current headlines and quote history, then recalculates risk bands.
-            </p>
+      <header class="topbar">
+        <div class="topbar-brand">
+          <span class="brand-mark">CS</span>
+          <div>
+            <span class="brand-title">Conflict Scenarios</span>
+            <span class="brand-sub">Geopolitical alpha desk</span>
           </div>
         </div>
+        <div class="topbar-stats">
+          <div class="stat">
+            <span class="stat-label">Status</span>
+            <span class="stat-value" id="statusText">—</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Refreshed</span>
+            <span class="stat-value mono" id="lastRefresh">—</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Build</span>
+            <span class="stat-value mono" id="buildVersion">—</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Top pair</span>
+            <span class="stat-value" id="topPairTrade">—</span>
+          </div>
+          <button id="refreshButton" class="btn-refresh">Refresh</button>
+        </div>
+      </header>
+
+      <section class="change-strip">
+        <span class="change-label">Δ since last</span>
+        <div id="changeList" class="change-list"></div>
       </section>
 
       <section class="overview-grid" id="overviewGrid"></section>
@@ -155,68 +135,76 @@
       </section>
 
       <section class="trader-card">
-        <div class="trader-header">
-          <div>
-            <p class="eyebrow">Paper AI Trader</p>
-            <h2>Autonomous Trader</h2>
-            <p class="lede trader-lede">
-              Starts at $10,000. Each cycle picks the highest-confidence scenario trades. Memory learns from every closed trade — what worked, what didn't — and re-weights future entries.
+        <header class="trader-header">
+          <div class="trader-title">
+            <span class="section-tag">AI Trader · Paper</span>
+            <h2>Autonomous Book</h2>
+            <p class="trader-lede">
+              $10,000 seed. Each cycle scores every trade across seven factors,
+              picks the strongest, and feeds outcomes back into the memory
+              system that re-weights the next set of entries.
             </p>
           </div>
-          <div class="trader-equity">
-            <span class="meta-label">Total Equity</span>
-            <strong id="traderEquity">--</strong>
-            <span id="traderEquityDelta" class="trader-equity-delta">--</span>
-            <span class="meta-label trader-last-run" id="traderLastRun">Waiting for first cycle</span>
+          <div class="trader-equity-wrap">
+            <div class="trader-equity-main">
+              <span class="stat-label">Total equity</span>
+              <strong class="mono" id="traderEquity">—</strong>
+              <span id="traderEquityDelta" class="trader-equity-delta">—</span>
+            </div>
+            <div class="trader-equity-meta">
+              <span class="stat-label">Last cycle</span>
+              <span class="mono" id="traderLastRun">Awaiting cycle 1</span>
+            </div>
           </div>
-        </div>
+        </header>
 
-        <div class="trader-meta-grid">
-          <div class="trader-meta-card">
-            <span class="meta-label">Cash</span>
-            <strong id="traderCash">--</strong>
+        <div class="trader-kpi-row">
+          <div class="kpi">
+            <span class="kpi-label">Cash</span>
+            <span class="kpi-value mono" id="traderCash">—</span>
           </div>
-          <div class="trader-meta-card">
-            <span class="meta-label">Open positions</span>
-            <strong id="traderOpenCount">--</strong>
+          <div class="kpi">
+            <span class="kpi-label">Open</span>
+            <span class="kpi-value mono" id="traderOpenCount">—</span>
           </div>
-          <div class="trader-meta-card">
-            <span class="meta-label">Closed trades</span>
-            <strong id="traderClosedCount">--</strong>
+          <div class="kpi">
+            <span class="kpi-label">Closed</span>
+            <span class="kpi-value mono" id="traderClosedCount">—</span>
           </div>
-          <div class="trader-meta-card">
-            <span class="meta-label">Cycles run</span>
-            <strong id="traderCycles">--</strong>
+          <div class="kpi">
+            <span class="kpi-label">Win rate</span>
+            <span class="kpi-value mono" id="traderWinRate">—</span>
           </div>
-          <div class="trader-meta-card">
-            <span class="meta-label">Memory buckets</span>
-            <strong id="traderMemoryBuckets">--</strong>
+          <div class="kpi">
+            <span class="kpi-label">Cycles</span>
+            <span class="kpi-value mono" id="traderCycles">—</span>
           </div>
-          <div class="trader-meta-card">
-            <span class="meta-label">Win rate</span>
-            <strong id="traderWinRate">--</strong>
+          <div class="kpi">
+            <span class="kpi-label">Memory</span>
+            <span class="kpi-value mono" id="traderMemoryBuckets">—</span>
           </div>
         </div>
 
         <div class="trader-grid">
-          <section class="panel">
+          <section class="panel panel-positions">
             <div class="panel-head">
-              <h3>Open Positions</h3>
-              <span>Mark-to-market on each refresh</span>
+              <h3>Open positions</h3>
+              <span class="panel-sub">Marked to market</span>
             </div>
             <div class="table-wrap">
-              <table>
+              <table class="data-table">
                 <thead>
                   <tr>
                     <th>Ticker</th>
                     <th>Scenario</th>
                     <th>Dir</th>
-                    <th>Entry</th>
-                    <th>Current</th>
-                    <th>Target</th>
-                    <th>Stop</th>
-                    <th>Unreal P&amp;L</th>
-                    <th>Conf</th>
+                    <th class="num">Entry</th>
+                    <th class="num">Mark</th>
+                    <th class="num">Tgt</th>
+                    <th class="num">Stop</th>
+                    <th class="num">P&amp;L $</th>
+                    <th class="num">P&amp;L %</th>
+                    <th class="num">Score</th>
                   </tr>
                 </thead>
                 <tbody id="traderOpenBody"></tbody>
@@ -224,29 +212,29 @@
             </div>
           </section>
 
-          <section class="panel">
+          <section class="panel panel-watchlist">
             <div class="panel-head">
               <h3>Watchlist</h3>
-              <span>Highest-confidence candidates not yet held</span>
+              <span class="panel-sub">Top candidates by composite score</span>
             </div>
             <div id="traderWatchlist" class="watchlist"></div>
           </section>
 
-          <section class="panel">
+          <section class="panel panel-closed">
             <div class="panel-head">
-              <h3>Recent Closed Trades</h3>
-              <span>Each outcome teaches the memory</span>
+              <h3>Closed trades</h3>
+              <span class="panel-sub">Most recent · each updates memory</span>
             </div>
             <div class="table-wrap">
-              <table>
+              <table class="data-table">
                 <thead>
                   <tr>
                     <th>Ticker</th>
                     <th>Scenario</th>
                     <th>Dir</th>
-                    <th>Result</th>
-                    <th>P&amp;L %</th>
-                    <th>Held (d)</th>
+                    <th>Outcome</th>
+                    <th class="num">P&amp;L %</th>
+                    <th class="num">Days</th>
                     <th>Exit</th>
                   </tr>
                 </thead>
@@ -255,16 +243,20 @@
             </div>
           </section>
 
-          <section class="panel">
+          <section class="panel panel-memory">
             <div class="panel-head">
-              <h3>Learned Patterns</h3>
-              <span>Top + bottom buckets (≥3 trades, credibility-weighted)</span>
+              <h3>Learned edges</h3>
+              <span class="panel-sub">Patterns with ≥3 closed trades</span>
             </div>
             <div class="memory-block">
-              <h4>Top performing</h4>
-              <div id="traderMemoryTop" class="memory-list"></div>
-              <h4>Avoid</h4>
-              <div id="traderMemoryBottom" class="memory-list"></div>
+              <div class="memory-section">
+                <h4>Lean into</h4>
+                <div id="traderMemoryTop" class="memory-list"></div>
+              </div>
+              <div class="memory-section">
+                <h4>Avoid</h4>
+                <div id="traderMemoryBottom" class="memory-list"></div>
+              </div>
             </div>
           </section>
         </div>
