@@ -218,7 +218,7 @@
         "Taiwan China blockade semiconductor supply chain",
         "US Taiwan defense aid China"
       ],
-      "heatBase": 87,
+      "heatBase": 88,
       "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
       "secondOrderEffects": [
         "A customs or quarantine-style blockade can hit inventories before fabs are physically disrupted.",
@@ -645,7 +645,7 @@
         "Samsung SK Hynix Korea semiconductor risk",
         "Yellow Sea NLL DPRK provocation"
       ],
-      "heatBase": 82,
+      "heatBase": 88,
       "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
       "secondOrderEffects": [
         "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",
@@ -832,136 +832,136 @@
   },
   "fallbackQuotes": {
     "XOM": {
-      "price": 154.02,
-      "annualizedVol": 0.307
+      "price": 145.26,
+      "annualizedVol": 0.301
     },
     "CVX": {
-      "price": 190.7,
-      "annualizedVol": 0.258
+      "price": 182.46,
+      "annualizedVol": 0.254
     },
     "COP": {
-      "price": 120.33,
-      "annualizedVol": 0.318
+      "price": 113.98,
+      "annualizedVol": 0.314
     },
     "LNG": {
-      "price": 237.65,
-      "annualizedVol": 0.348
+      "price": 224.86,
+      "annualizedVol": 0.351
     },
     "FRO": {
-      "price": 37.06,
-      "annualizedVol": 0.473
+      "price": 34.67,
+      "annualizedVol": 0.478
     },
     "TNK": {
-      "price": 77,
-      "annualizedVol": 0.403
+      "price": 70.35,
+      "annualizedVol": 0.417
     },
     "LMT": {
-      "price": 529.7,
-      "annualizedVol": 0.262
+      "price": 530.45,
+      "annualizedVol": 0.252
     },
     "NOC": {
-      "price": 555.55,
-      "annualizedVol": 0.284
+      "price": 563.68,
+      "annualizedVol": 0.278
     },
     "HAL": {
-      "price": 41.22,
-      "annualizedVol": 0.317
+      "price": 38.85,
+      "annualizedVol": 0.318
     },
     "UAL": {
-      "price": 99.99,
-      "annualizedVol": 0.578
+      "price": 114.8,
+      "annualizedVol": 0.589
     },
     "RTX": {
-      "price": 176.86,
-      "annualizedVol": 0.259
+      "price": 179.66,
+      "annualizedVol": 0.255
     },
     "INTC": {
-      "price": 121.37,
+      "price": 114.68,
       "annualizedVol": 0.795
     },
     "GFS": {
-      "price": 85.92,
-      "annualizedVol": 0.656
+      "price": 79.97,
+      "annualizedVol": 0.677
     },
     "AVAV": {
-      "price": 170.43,
-      "annualizedVol": 0.759
+      "price": 207.24,
+      "annualizedVol": 0.8
     },
     "AAPL": {
-      "price": 309.2,
-      "annualizedVol": 0.249
+      "price": 312.06,
+      "annualizedVol": 0.236
     },
     "NVDA": {
-      "price": 217.35,
-      "annualizedVol": 0.389
+      "price": 211.14,
+      "annualizedVol": 0.378
     },
     "QCOM": {
-      "price": 237.91,
-      "annualizedVol": 0.611
+      "price": 251.02,
+      "annualizedVol": 0.628
     },
     "TSM": {
-      "price": 407.31,
-      "annualizedVol": 0.416
+      "price": 418.45,
+      "annualizedVol": 0.408
     },
     "GD": {
-      "price": 343.77,
-      "annualizedVol": 0.252
+      "price": 346.82,
+      "annualizedVol": 0.249
     },
     "HII": {
-      "price": 320.28,
-      "annualizedVol": 0.442
+      "price": 308.17,
+      "annualizedVol": 0.44
     },
     "KMI": {
-      "price": 33.63,
-      "annualizedVol": 0.199
+      "price": 31.08,
+      "annualizedVol": 0.203
     },
     "EQT": {
-      "price": 57.56,
-      "annualizedVol": 0.293
+      "price": 54.93,
+      "annualizedVol": 0.279
     },
     "CCL": {
-      "price": 26.06,
-      "annualizedVol": 0.588
+      "price": 28.06,
+      "annualizedVol": 0.575
     },
     "EWY": {
-      "price": 185.25,
-      "annualizedVol": 0.606
+      "price": 205.83,
+      "annualizedVol": 0.626
     },
     "BNO": {
-      "price": 55.1,
-      "annualizedVol": 0.603
+      "price": 50.59,
+      "annualizedVol": 0.604
     },
     "USO": {
-      "price": 141.26,
-      "annualizedVol": 0.637
+      "price": 129.09,
+      "annualizedVol": 0.638
     },
     "REMX": {
-      "price": 96.89,
-      "annualizedVol": 0.549
+      "price": 99.63,
+      "annualizedVol": 0.516
     },
     "UNG": {
-      "price": 10.95,
-      "annualizedVol": 0.695
+      "price": 11.93,
+      "annualizedVol": 0.434
     },
     "UCO": {
-      "price": 47.79,
-      "annualizedVol": 0.743
+      "price": 43.51,
+      "annualizedVol": 0.727
     },
     "DBA": {
-      "price": 27.58,
-      "annualizedVol": 0.102
+      "price": 27.25,
+      "annualizedVol": 0.103
     },
     "GLD": {
-      "price": 414.78,
-      "annualizedVol": 0.373
+      "price": 417.12,
+      "annualizedVol": 0.293
     },
     "URA": {
-      "price": 49.29,
-      "annualizedVol": 0.561
+      "price": 50.76,
+      "annualizedVol": 0.523
     },
     "COPX": {
-      "price": 83.27,
-      "annualizedVol": 0.572
+      "price": 88.14,
+      "annualizedVol": 0.531
     }
   }
 }
