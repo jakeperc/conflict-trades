@@ -11,7 +11,7 @@
         "Iran oil prices Hormuz shipping",
         "Yemen Houthi Red Sea shipping oil"
       ],
-      "heatBase": 88,
+      "heatBase": 95,
       "summary": "Updated for the May 2026 Hormuz blockage: crude sensitivity, trapped-vessel release attempts, tanker insurance stress, and defense restocking if Gulf transit risk stays elevated.",
       "secondOrderEffects": [
         "Marine insurance and mine-risk terms can hit delivered crude costs faster than headline oil moves.",
@@ -218,7 +218,7 @@
         "Taiwan China blockade semiconductor supply chain",
         "US Taiwan defense aid China"
       ],
-      "heatBase": 88,
+      "heatBase": 76,
       "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
       "secondOrderEffects": [
         "A customs or quarantine-style blockade can hit inventories before fabs are physically disrupted.",
@@ -425,7 +425,7 @@
         "Europe defense rearmament Russia Ukraine NATO",
         "EU Russian LNG ban Europe gas"
       ],
-      "heatBase": 88,
+      "heatBase": 75,
       "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
       "secondOrderEffects": [
         "European rearmament can outlast the immediate headline cycle and support defense multiples longer than energy spikes do.",
@@ -645,7 +645,7 @@
         "Samsung SK Hynix Korea semiconductor risk",
         "Yellow Sea NLL DPRK provocation"
       ],
-      "heatBase": 88,
+      "heatBase": 74,
       "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
       "secondOrderEffects": [
         "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",

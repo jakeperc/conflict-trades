@@ -61,20 +61,27 @@ async function refreshOne(scenarioKey, scenarioConfig) {
 
   const oldHeatBase = scenarioConfig.heatBase;
   const score = scoreHeadlines(allHeadlines, scenarioKey);
+  const headlineCount = allHeadlines.length;
+  const density = headlineCount > 0 ? score / headlineCount : 0;
 
-  // Map score to a target heatBase. Empirical bands:
-  // score >= 50 -> target 88; 30-50 -> 78; 15-30 -> 68; 5-15 -> 58; <5 -> 48
-  let targetHeatBase;
-  if (score >= 50) targetHeatBase = 88;
-  else if (score >= 30) targetHeatBase = 78;
-  else if (score >= 15) targetHeatBase = 68;
-  else if (score >= 5) targetHeatBase = 58;
-  else targetHeatBase = 48;
+  // Heat from keyword density (avg escalation-keyword weight per headline).
+  // Raw totals over a 14d window scale with newsroom volume, not severity;
+  // density isolates how loaded the average headline is with escalation terms.
+  // Linear so small density differences between scenarios actually register
+  // (bands clustered iran/europe/korea/taiwan onto the same heat value).
+  // density 0 → 38, 1 → 44, 5 → 68, 7 → 80, 10 → 98; clamped to [35, 95].
+  let targetHeatBase = Math.round(38 + density * 6);
 
-  // Clamp adjustment to +/-10 from current to avoid wild swings
-  const maxDelta = 10;
-  const delta = Math.max(-maxDelta, Math.min(maxDelta, targetHeatBase - oldHeatBase));
-  const newHeatBase = oldHeatBase + delta;
+  // Volume kicker: scales 0 → +6 between 10 and 50 headlines. Sustained
+  // coverage is itself a signal even when avg severity is moderate.
+  const volBonus = Math.max(0, Math.min(6, (headlineCount - 10) * 0.15));
+  targetHeatBase = Math.round(targetHeatBase + volBonus);
+  targetHeatBase = Math.max(35, Math.min(95, targetHeatBase));
+
+  // Move halfway toward the target each refresh — smooths single-day noise
+  // while still letting a sustained shift fully converge in 3-4 runs.
+  const newHeatBase = Math.round(oldHeatBase + (targetHeatBase - oldHeatBase) * 0.5);
+  const delta = newHeatBase - oldHeatBase;
 
   updateScenarioField(scenarioKey, "heatBase", newHeatBase);
 
