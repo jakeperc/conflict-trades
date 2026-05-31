@@ -1,0 +1,101 @@
+{
+  "topic": "taiwan-strait",
+  "scenarioKey": "taiwan",
+  "fetchedAt": "2026-05-31T04:51:17.097Z",
+  "aggregateScore": 14.4,
+  "targetHeat": 65,
+  "oldHeatBase": 73,
+  "newHeatBase": 67,
+  "delta": -6,
+  "itemCount": 20,
+  "topSignals": [
+    {
+      "title": "Taiwan detects 16 sorties of Chinese aircraft, 8 vessels, 3 ships - ANI News",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOanJDUXpFYlBzMDhicFpuRjZzclFObnJpOE5RTFByNFZwa05tYTlWRnFsY04yZkpybEZYeEtnblRPMjFnQUcxMWc1eW8xXzdpRXdkY3pfVFk0WHQyZFhjMTh0MmFZSWJzRm1ySU9nQzVocXIxT042OHRXcHlPSTZFdzM5ZnoyYUZBMjRVMGNtdzFPcUhXUnJTZy1pSmJGSHVadXpPbml5eEVEenAzZTZhTGw2VjFCUkE?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxOanJDUXpFYlBzMDhicFpuRjZzclFObnJpOE5RTFByNFZwa05tYTlWRnFsY04yZkpybEZYeEtnblRPMjFnQUcxMWc1eW8xXzdpRXdkY3pfVFk0WHQyZFhjMTh0MmFZSWJzRm1ySU9nQzVocXIxT042OHRXcHlPSTZFdzM5ZnoyYUZBMjRVMGNtdzFPcUhXUnJTZy1pSmJGSHVadXpPbml5eEVEenAzZTZhTGw2VjFCUkE?oc=5\" target=\"_blank\">Taiwan detects 16 sorties of Chinese aircraft, 8 vessels, 3 ships</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ANI News</font>",
+      "publishedAt": "Sat, 30 May 2026 10:42:00 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 4,
+      "rawScore": 4,
+      "decayFactor": 1
+    },
+    {
+      "title": "Taiwan detects 10 sorties of Chinese aircraft, 8 vessels, 4 ships - ANI News",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWQteDQyU2lGSTg1SXk4cXl0NWpNUnlTcDFXdzlHWm9zd3lVOFROOUZtRVA1dHpRNXFqelFsZmxDZU9uak02b2NwUXBaZXA2TUo2dTZnTzFOZk8zWVpWM2NMaDZmbElOWEl0Y2dFMDFTVWI3eFZ6cVZPNklheTRNWVNXTzd2YnhnRk1qT2FpV25GbmlHNm5leXdGbHdHLVRORmJNRXNsR0w2b3puRllRY0EtYw?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWQteDQyU2lGSTg1SXk4cXl0NWpNUnlTcDFXdzlHWm9zd3lVOFROOUZtRVA1dHpRNXFqelFsZmxDZU9uak02b2NwUXBaZXA2TUo2dTZnTzFOZk8zWVpWM2NMaDZmbElOWEl0Y2dFMDFTVWI3eFZ6cVZPNklheTRNWVNXTzd2YnhnRk1qT2FpV25GbmlHNm5leXdGbHdHLVRORmJNRXNsR0w2b3puRllRY0EtYw?oc=5\" target=\"_blank\">Taiwan detects 10 sorties of Chinese aircraft, 8 vessels, 4 ships</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ANI News</font>",
+      "publishedAt": "Fri, 29 May 2026 12:00:00 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 3.2,
+      "rawScore": 4,
+      "decayFactor": 0.8
+    },
+    {
+      "title": "Taiwan detects 9 PLA sorties, 6 vessels operating near territory - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOSXVyQ3pKWDRpaHlPeVBuczllUVhnaUlDMGNJQTh1Vmk1emFFeHVIdS1HcXhUOXA1X0hxRV9CLXh4M3VKSjZDcnc4aUlCUnZnSkJoQ3RCLWlTWmdabEI3bzliTDk3dnVEZEtSVU43MDFyalhSM2JqWFFQWUtQVEVERTg4dkszWi1MSm1za0diX3o5bVdLYkZQMlkxWTNKRzVvYm5HRVJsLTc2aTk2cVlrcUZ0OUtlUmZxdW9HdEp2M0hOM0o3OWZqaWZlQmx3YUw0bkpwQzRKUThoVkltWHBWaDhmSU9nNkg3UmhwQVRUYzVUSVBzWXNIdVc3d2w3MlM0ZVE2cjgyZGJQWVZLbnJMbXcydG9SS3FVc1NUdjJ6Y1ZjazV3VzIyNG5EUUlZS3BNWUJWd0MyaUNVblo4MVpWSzRlN3M0d19Y?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiyAJBVV95cUxOSXVyQ3pKWDRpaHlPeVBuczllUVhnaUlDMGNJQTh1Vmk1emFFeHVIdS1HcXhUOXA1X0hxRV9CLXh4M3VKSjZDcnc4aUlCUnZnSkJoQ3RCLWlTWmdabEI3bzliTDk3dnVEZEtSVU43MDFyalhSM2JqWFFQWUtQVEVERTg4dkszWi1MSm1za0diX3o5bVdLYkZQMlkxWTNKRzVvYm5HRVJsLTc2aTk2cVlrcUZ0OUtlUmZxdW9HdEp2M0hOM0o3OWZqaWZlQmx3YUw0bkpwQzRKUThoVkltWHBWaDhmSU9nNkg3UmhwQVRUYzVUSVBzWXNIdVc3d2w3MlM0ZVE2cjgyZGJQWVZLbnJMbXcydG9SS3FVc1NUdjJ6Y1ZjazV3VzIyNG5EUUlZS3BNWUJWd0MyaUNVblo4MVpWSzRlN3M0d19Y?oc=5\" target=\"_blank\">Taiwan detects 9 PLA sorties, 6 vessels operating near territory</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "publishedAt": "Thu, 28 May 2026 07:00:00 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 3,
+      "rawScore": 6,
+      "decayFactor": 0.5
+    },
+    {
+      "title": "Taiwan detects 9 PLA aircraft sorties, 6 PLAN vessels around territory - The Tribune",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbEwydzk5R0tXMmdqV2dRLUpsQzB0VVFzNUVUWm1wekMyUS11UjNmM3k1dTExc241TWF2a085RDNMbGY2YUlmX2xjNWZXRGpPNlFZb2c4WjVwR3VGYllGUmEtYkxhLTNnVWVKMnVqNGVuMXJ5RzRZNk5DSlphNzFzLV9hZ1h5MTFYT2JnRHBkU1lMdHVFWV9HMnlja2RMNDEyX0V6Wnd3aG1RRUMycHRv?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQbEwydzk5R0tXMmdqV2dRLUpsQzB0VVFzNUVUWm1wekMyUS11UjNmM3k1dTExc241TWF2a085RDNMbGY2YUlmX2xjNWZXRGpPNlFZb2c4WjVwR3VGYllGUmEtYkxhLTNnVWVKMnVqNGVuMXJ5RzRZNk5DSlphNzFzLV9hZ1h5MTFYT2JnRHBkU1lMdHVFWV9HMnlja2RMNDEyX0V6Wnd3aG1RRUMycHRv?oc=5\" target=\"_blank\">Taiwan detects 9 PLA aircraft sorties, 6 PLAN vessels around territory</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Tribune</font>",
+      "publishedAt": "Thu, 28 May 2026 02:50:17 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 2,
+      "rawScore": 10,
+      "decayFactor": 0.2
+    },
+    {
+      "title": "Taiwan tracks 16 Chinese military planes and 11 ships - Taiwan News",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHSXppS0xpaFdPZXJmZFFjTC1FUnNRc1BFUHRBM1ZPcHlETWNaNDIwZGFBSjYwTXNJZ1JQQmprU1cxcDRxYnpWaklVeG5wbE5fS1ZOMg?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHSXppS0xpaFdPZXJmZFFjTC1FUnNRc1BFUHRBM1ZPcHlETWNaNDIwZGFBSjYwTXNJZ1JQQmprU1cxcDRxYnpWaklVeG5wbE5fS1ZOMg?oc=5\" target=\"_blank\">Taiwan tracks 16 Chinese military planes and 11 ships</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Taiwan News</font>",
+      "publishedAt": "Sat, 30 May 2026 03:50:00 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 1.6,
+      "rawScore": 2,
+      "decayFactor": 0.8
+    },
+    {
+      "title": "PLA activities in the waters and airspace around Taiwan - mnd.gov.tw",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrNEJkM3VqY1lvbzRVSVlOaHZtQ3NmZUlWRWRMOTdyRVFMcEZORFZlT2dBRmlPNmt2SFI3TVhlRjl0Ukdac2dSem5vbG51aTdzbk9DYXdn?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrNEJkM3VqY1lvbzRVSVlOaHZtQ3NmZUlWRWRMOTdyRVFMcEZORFZlT2dBRmlPNmt2SFI3TVhlRjl0Ukdac2dSem5vbG51aTdzbk9DYXdn?oc=5\" target=\"_blank\">PLA activities in the waters and airspace around Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mnd.gov.tw</font>",
+      "publishedAt": "Fri, 29 May 2026 16:30:39 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 1.6,
+      "rawScore": 2,
+      "decayFactor": 0.8
+    },
+    {
+      "title": "PLA activities in the waters and airspace around Taiwan - mnd.gov.tw",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpM25rZDF4ZWgzZTJxRGFHUWtlMm1tYTktT2ZEa1huVE9WUU5CNFFSenRJbjJEZG55bXctNFJ4NHJBU0JtcGFiVnlsdjdNdUgxOVpveW93?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpM25rZDF4ZWgzZTJxRGFHUWtlMm1tYTktT2ZEa1huVE9WUU5CNFFSenRJbjJEZG55bXctNFJ4NHJBU0JtcGFiVnlsdjdNdUgxOVpveW93?oc=5\" target=\"_blank\">PLA activities in the waters and airspace around Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mnd.gov.tw</font>",
+      "publishedAt": "Thu, 28 May 2026 12:34:16 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 1,
+      "rawScore": 2,
+      "decayFactor": 0.5
+    },
+    {
+      "title": "PLA activities in the waters and airspace around Taiwan - mnd.gov.tw",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Ta2JCY1NlVzUzaGhFY3BETVRiRkJLU0NuRTUtVHE4bzdmR0dRZnIwWjM5N3BzdFd0TTF3VFBhX0ItVDEwNTZkWlBOcEFuMlN5bV9zSEV3?oc=5",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Ta2JCY1NlVzUzaGhFY3BETVRiRkJLU0NuRTUtVHE4bzdmR0dRZnIwWjM5N3BzdFd0TTF3VFBhX0ItVDEwNTZkWlBOcEFuMlN5bV9zSEV3?oc=5\" target=\"_blank\">PLA activities in the waters and airspace around Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mnd.gov.tw</font>",
+      "publishedAt": "Wed, 27 May 2026 08:29:55 GMT",
+      "source": "google-news",
+      "query": "PLA warship Taiwan Strait median line crossing",
+      "score": 0.4,
+      "rawScore": 2,
+      "decayFactor": 0.2
+    }
+  ]
+}
