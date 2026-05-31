@@ -50,6 +50,40 @@ function scoreHeadlines(headlines, scenarioKey) {
   }, 0);
 }
 
+// Kinetic-event keywords that mark actual escalation (death, attack,
+// breach of sovereign space, alliance-territory hit). Density alone
+// can't tell "active diplomatic friction" from "civilians killed by
+// drone strike" — these terms fire as a bonus regardless of overall
+// density so a low-volume scenario with a real incident still registers.
+const SEVERITY_TERMS = [
+  // Casualties
+  "killed", "kills", "casualties", "wounded", "dead", "deadly", "fatal",
+  // Kinetic action
+  "strike", "strikes", "struck", "airstrike", "attack", "attacked",
+  "fires on", "fired on", "opened fire",
+  // Intercept / repel
+  "intercepted", "shot down", "downed", "scrambled",
+  // Sovereignty / breach
+  "breach", "breached", "incursion into", "airspace violation",
+  // Civilian impact (signals kinetic hit on non-combatants — major escalation)
+  "civilian", "civilians", "apartment", "residential", "homes hit",
+  // Naval / vessel kinetic
+  "sunk", "sinking", "boarded",
+  // Hostage / siege
+  "hostage", "siege", "captured",
+  // Damage
+  "destroyed", "devastated", "demolished"
+];
+
+function countSeverityHits(headlines) {
+  return headlines.reduce((acc, item) => {
+    const text = `${item.title} ${item.description || ""} ${item.link}`.toLowerCase();
+    return (
+      acc + SEVERITY_TERMS.reduce((s, term) => s + (text.includes(term) ? 1 : 0), 0)
+    );
+  }, 0);
+}
+
 async function refreshOne(scenarioKey, scenarioConfig) {
   const queries = [scenarioConfig.query, ...(scenarioConfig.newsFallbackQueries || [])];
   let allHeadlines = [];
@@ -63,6 +97,7 @@ async function refreshOne(scenarioKey, scenarioConfig) {
   const score = scoreHeadlines(allHeadlines, scenarioKey);
   const headlineCount = allHeadlines.length;
   const density = headlineCount > 0 ? score / headlineCount : 0;
+  const severityHits = countSeverityHits(allHeadlines);
 
   // Heat from keyword density (avg escalation-keyword weight per headline).
   // Raw totals over a 14d window scale with newsroom volume, not severity;
@@ -75,7 +110,13 @@ async function refreshOne(scenarioKey, scenarioConfig) {
   // Volume kicker: scales 0 → +6 between 10 and 50 headlines. Sustained
   // coverage is itself a signal even when avg severity is moderate.
   const volBonus = Math.max(0, Math.min(6, (headlineCount - 10) * 0.15));
-  targetHeatBase = Math.round(targetHeatBase + volBonus);
+
+  // Severity overlay: kinetic-event bonus, capped at +12. Lets europe
+  // (Galați drone strike on civilian housing) outrank korea (routine
+  // launches) even when overall keyword density is similar.
+  const severityBonus = Math.min(12, severityHits * 1.0);
+
+  targetHeatBase = Math.round(targetHeatBase + volBonus + severityBonus);
   targetHeatBase = Math.max(35, Math.min(95, targetHeatBase));
 
   // Move halfway toward the target each refresh — smooths single-day noise
@@ -98,6 +139,8 @@ async function refreshOne(scenarioKey, scenarioConfig) {
     oldHeatBase,
     newHeatBase,
     delta,
+    severityHits,
+    density: Math.round(density * 100) / 100,
     keywordScore: score,
     headlineCount: allHeadlines.length,
     topHeadlines: allHeadlines.slice(0, 5).map((h) => h.title)

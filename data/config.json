@@ -218,7 +218,7 @@
         "Taiwan China blockade semiconductor supply chain",
         "US Taiwan defense aid China"
       ],
-      "heatBase": 76,
+      "heatBase": 73,
       "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
       "secondOrderEffects": [
         "A customs or quarantine-style blockade can hit inventories before fabs are physically disrupted.",
@@ -425,7 +425,7 @@
         "Europe defense rearmament Russia Ukraine NATO",
         "EU Russian LNG ban Europe gas"
       ],
-      "heatBase": 75,
+      "heatBase": 78,
       "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
       "secondOrderEffects": [
         "European rearmament can outlast the immediate headline cycle and support defense multiples longer than energy spikes do.",
@@ -645,7 +645,7 @@
         "Samsung SK Hynix Korea semiconductor risk",
         "Yellow Sea NLL DPRK provocation"
       ],
-      "heatBase": 74,
+      "heatBase": 75,
       "summary": "DPRK launch cadence and Yellow Sea provocations drive Pacific defense pulls (THAAD, Patriot, Aegis BMD), Korean memory/foundry knock-ons via Samsung and SK Hynix ADR proxies, and risk-off USD bid against KRW.",
       "secondOrderEffects": [
         "DPRK launches usually tighten Korean defense procurement and US Pacific posture rather than triggering kinetic action, so defense beats consumer-tech beta.",
