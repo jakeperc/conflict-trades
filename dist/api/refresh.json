@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T08:01:48.982Z",
+  "generatedAt": "2026-05-31T08:18:35.508Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
@@ -65,7 +65,7 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-05-31T08:01:48.839Z",
+      "refreshedAt": "2026-05-31T08:18:35.506Z",
       "headlines": [
         {
           "title": "US Navy Fires Missile at Cargo Ship Attempting to Breach Iran Blockade - Ratopati",
@@ -1063,7 +1063,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T08:01",
+          "t": "2026-05-31T08:18",
           "heat": 92
         }
       ]
@@ -1129,7 +1129,7 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-05-31T08:01:48.782Z",
+      "refreshedAt": "2026-05-31T08:18:35.318Z",
       "headlines": [
         {
           "title": "China 'firmly' opposed to Canadian warship's Taiwan Strait crossing - National Post",
@@ -2127,7 +2127,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T08:01",
+          "t": "2026-05-31T08:18",
           "heat": 66
         }
       ]
@@ -2193,8 +2193,17 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-05-31T08:01:48.981Z",
+      "refreshedAt": "2026-05-31T08:18:35.435Z",
       "headlines": [
+        {
+          "title": "Ukraine repels massive Russian drone blitz as NATO aid grows - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPa3h3LURMT2pWdjNZcGgzT3RtQWJUWTI0V0tMQTJzTzFnMk43QzZYbFBwODZLaE43QkUzdkM1ak5vd1UwZzNESC1jRmZiSUZ6ejBnOVBVNms5a0NtT0J0SDlGOU9HcFpIQTk3WXZkcXdYT1Nnei1yeTlJeUppa2dtMW9McWFFSzVDbDlHTXlyTjVtZHY2MnhzY0d5dGhabTI5UEtBZUdoYXdhM3lBQTJPUUtXSkV1T09LYV81OXV3Vl9iZW9aN1VxOHhBTGVmY1JCblJuNzUyUE0xcTFLRmNUb3Z1eFF1RExra0V4NmNtQUZRT21E?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxPa3h3LURMT2pWdjNZcGgzT3RtQWJUWTI0V0tMQTJzTzFnMk43QzZYbFBwODZLaE43QkUzdkM1ak5vd1UwZzNESC1jRmZiSUZ6ejBnOVBVNms5a0NtT0J0SDlGOU9HcFpIQTk3WXZkcXdYT1Nnei1yeTlJeUppa2dtMW9McWFFSzVDbDlHTXlyTjVtZHY2MnhzY0d5dGhabTI5UEtBZUdoYXdhM3lBQTJPUUtXSkV1T09LYV81OXV3Vl9iZW9aN1VxOHhBTGVmY1JCblJuNzUyUE0xcTFLRmNUb3Z1eFF1RExra0V4NmNtQUZRT21E?oc=5\" target=\"_blank\">Ukraine repels massive Russian drone blitz as NATO aid grows</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "source": "MSN",
+          "publishedAt": "Sun, 31 May 2026 01:30:01 GMT",
+          "publishedMs": 1780191001000,
+          "relevance": 3
+        },
         {
           "title": "Russian Offensive Campaign Assessment, May 30, 2026 - Institute for the Study of War",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEJxNXR3aGdycFVkYmJsXzk4RDJUd3NhOUtNb2MxdUhTaDZpanI5NkVPUHJBMkt4dnNVQTJhdHVvN3diVm9tQkRlS19hRG95YktaeUl3RjdfLVV1ZGpnQzE5XzNlaW1PX0UyX0UwV3ZDVENYeHBMb0o1T1JKX21oazNBN01qTEQ1cnJiNjNWYlNwTDRQX0xsclZVekdGV1ViUzNUcjV3?oc=5",
@@ -2232,6 +2241,15 @@
           "relevance": 2
         },
         {
+          "title": "Russian businesses propose financing air defences after drone attacks - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNLWhHcnlSNnJSUERvVHN0RTZDZHRZU004cnpyUXBDd0E0UTNHRVBWRWdYVFo3REZhakhrS1oySXQ4R19ydXBuQ2RwWGVGa0hlWjdsaG52WDRDWHNCbndKZlc1ZnM2X1pwWmxEcjFqWjJpa3dvWUVySllteDJLMi1FTU1fd1V3OU1pYnpBM1FvVERaX3o3TG5UdGlXaGRIQlZ5Rk5lVTZ0eTVrVTROU2NVekRlbm9KSEtaWU12TjNSRGVJU1M4Nkc4WTlJYi1pZXFiZWtfOFY2RGxSSEZFRmp1NTVIMHpVZTVGOWZFZDUyMEVmZw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxNLWhHcnlSNnJSUERvVHN0RTZDZHRZU004cnpyUXBDd0E0UTNHRVBWRWdYVFo3REZhakhrS1oySXQ4R19ydXBuQ2RwWGVGa0hlWjdsaG52WDRDWHNCbndKZlc1ZnM2X1pwWmxEcjFqWjJpa3dvWUVySllteDJLMi1FTU1fd1V3OU1pYnpBM1FvVERaX3o3TG5UdGlXaGRIQlZ5Rk5lVTZ0eTVrVTROU2NVekRlbm9KSEtaWU12TjNSRGVJU1M4Nkc4WTlJYi1pZXFiZWtfOFY2RGxSSEZFRmp1NTVIMHpVZTVGOWZFZDUyMEVmZw?oc=5\" target=\"_blank\">Russian businesses propose financing air defences after drone attacks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "source": "MSN",
+          "publishedAt": "Sat, 30 May 2026 10:58:35 GMT",
+          "publishedMs": 1780138715000,
+          "relevance": 2
+        },
+        {
           "title": "ISW: NATO should conclude air defense agreements with Ukraine and Moldova - logos-pres.md",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRllLMVpTZW53d2xERnp5TDlvYzhtbjlySU1qQldLWXdROWl4SmxpYjVlUE9qR0pIazloNW9hbktHbGVfUXRfZUpraWlCaGxSYXZkWnh2UFFvQVU0Q2FzMXRFTFUtRFhjbk9QVGNZbHZPQzVtb2NLWklwQk8ycFBiSGVlV1d3dm1MX0tBbUZqME54ZjVMNzQ3ZkVPdlFkVWhUSDRhbG9B?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQRllLMVpTZW53d2xERnp5TDlvYzhtbjlySU1qQldLWXdROWl4SmxpYjVlUE9qR0pIazloNW9hbktHbGVfUXRfZUpraWlCaGxSYXZkWnh2UFFvQVU0Q2FzMXRFTFUtRFhjbk9QVGNZbHZPQzVtb2NLWklwQk8ycFBiSGVlV1d3dm1MX0tBbUZqME54ZjVMNzQ3ZkVPdlFkVWhUSDRhbG9B?oc=5\" target=\"_blank\">ISW: NATO should conclude air defense agreements with Ukraine and Moldova</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">logos-pres.md</font>",
@@ -2266,24 +2284,6 @@
           "publishedAt": "Sat, 30 May 2026 07:49:00 GMT",
           "publishedMs": 1780127340000,
           "relevance": 2
-        },
-        {
-          "title": "Romanian President: Russian drone struck Galați after being hit by Ukrainian air defences - eualive.net",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHdma1NacThmR3loMHRnLTkxa1A4OEZQUE9DSkg0bENzY01XRVNRNmRGWUhWbHpja0I0XzZJRzlFVVQ0NkRjT1N2cU5aLWZ6aHFYRUloTmFZcmZuRDRxVDdkNUo3aXdFMUhUaTJnN1JsN1lyUk42eFhPZnllb1pZTEdtWUdfdGU1ck5VTmFxRGRhZzVEV0FyM3l5UHBVX2JMUWxRR1F4X0NMaVpEWkE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHdma1NacThmR3loMHRnLTkxa1A4OEZQUE9DSkg0bENzY01XRVNRNmRGWUhWbHpja0I0XzZJRzlFVVQ0NkRjT1N2cU5aLWZ6aHFYRUloTmFZcmZuRDRxVDdkNUo3aXdFMUhUaTJnN1JsN1lyUk42eFhPZnllb1pZTEdtWUdfdGU1ck5VTmFxRGRhZzVEV0FyM3l5UHBVX2JMUWxRR1F4X0NMaVpEWkE?oc=5\" target=\"_blank\">Romanian President: Russian drone struck Galați after being hit by Ukrainian air defences</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">eualive.net</font>",
-          "source": "eualive.net",
-          "publishedAt": "Sat, 30 May 2026 06:41:42 GMT",
-          "publishedMs": 1780123302000,
-          "relevance": 2
-        },
-        {
-          "title": "Romania asks NATO to speed up air defense deliveries after Russian drone strike - AzerNews",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MQ2NaOF9XbG1tR0Zra3huRG1weXhfUkw3emZ6WXFWUUprbVhDWjAtUjZSQzJEY3V0TC12SDdMdU1ZWlJKMWVQYzB3bVE5TmVHc1Rmdg?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MQ2NaOF9XbG1tR0Zra3huRG1weXhfUkw3emZ6WXFWUUprbVhDWjAtUjZSQzJEY3V0TC12SDdMdU1ZWlJKMWVQYzB3bVE5TmVHc1Rmdg?oc=5\" target=\"_blank\">Romania asks NATO to speed up air defense deliveries after Russian drone strike</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AzerNews</font>",
-          "source": "AzerNews",
-          "publishedAt": "Sat, 30 May 2026 06:00:00 GMT",
-          "publishedMs": 1780120800000,
-          "relevance": 3
         }
       ],
       "trades": [
@@ -3260,7 +3260,7 @@
           "heat": 92
         },
         {
-          "t": "2026-05-31T08:01",
+          "t": "2026-05-31T08:18",
           "heat": 76
         }
       ]
@@ -3326,7 +3326,7 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-05-31T08:01:46.501Z",
+      "refreshedAt": "2026-05-31T08:18:32.814Z",
       "headlines": [
         {
           "title": "North Korea is testing three ballistic missile - bolnews.com",
@@ -4251,7 +4251,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-05-31T08:01",
+          "t": "2026-05-31T08:18",
           "heat": 72
         }
       ]
