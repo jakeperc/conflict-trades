@@ -1999,8 +1999,11 @@ a:hover { text-decoration: underline; }
 .hero-jump:hover { color: var(--accent); }
 
 /* ---- Scenario detail ---- */
-.scenario-detail { display: grid; grid-template-columns: 1.1fr 2fr 1fr; gap: var(--sp-3); margin-bottom: var(--sp-3); align-items: start; }
+.scenario-detail { display: flex; flex-direction: column; gap: var(--sp-3); margin-bottom: var(--sp-3); }
 .scenario-detail .panel { min-width: 0; }
+.panel-trades       { order: 1; }
+.panel-transmission { order: 2; }
+.panel-headlines    { order: 3; }
 .panel-head h2 { margin: 0; font-size: var(--fs-h2); font-weight: 600; text-transform: none; letter-spacing: 0; }
 .effects-block h3 { margin: var(--sp-3) 0 var(--sp-2); font-size: var(--fs-meta); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); font-weight: 600; }
 

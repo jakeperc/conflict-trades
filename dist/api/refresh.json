@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T08:18:35.508Z",
+  "generatedAt": "2026-05-31T08:25:44.269Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
@@ -65,7 +65,7 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-05-31T08:18:35.506Z",
+      "refreshedAt": "2026-05-31T08:25:44.132Z",
       "headlines": [
         {
           "title": "US Navy Fires Missile at Cargo Ship Attempting to Breach Iran Blockade - Ratopati",
@@ -1063,7 +1063,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T08:18",
+          "t": "2026-05-31T08:25",
           "heat": 92
         }
       ]
@@ -1129,7 +1129,7 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-05-31T08:18:35.318Z",
+      "refreshedAt": "2026-05-31T08:25:43.925Z",
       "headlines": [
         {
           "title": "China 'firmly' opposed to Canadian warship's Taiwan Strait crossing - National Post",
@@ -1139,24 +1139,6 @@
           "publishedAt": "Fri, 29 May 2026 19:11:37 GMT",
           "publishedMs": 1780081897000,
           "relevance": 4
-        },
-        {
-          "title": "China 'firmly' opposed to Canadian warship's Taiwan Strait crossing - Yahoo News Canada",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2pPNW5WaTdPSFc3akNGaHE4bHl3U2k5SkpQd1Q2MGN0dXJPZ2hRUV9LOVphMVdtS1BtOC1lazV0Q1Q2MmZGcDNzZGdzQzlhb0ZXaDdfYUxtZ3RVX0tWbDMybzVyZFZoLTV4dWFBdjZ3b0VybDRDZWJRU3FEMkRRTkRrZTd1QQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2pPNW5WaTdPSFc3akNGaHE4bHl3U2k5SkpQd1Q2MGN0dXJPZ2hRUV9LOVphMVdtS1BtOC1lazV0Q1Q2MmZGcDNzZGdzQzlhb0ZXaDdfYUxtZ3RVX0tWbDMybzVyZFZoLTV4dWFBdjZ3b0VybDRDZWJRU3FEMkRRTkRrZTd1QQ?oc=5\" target=\"_blank\">China 'firmly' opposed to Canadian warship's Taiwan Strait crossing</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo News Canada</font>",
-          "source": "Yahoo News Canada",
-          "publishedAt": "Fri, 29 May 2026 19:09:41 GMT",
-          "publishedMs": 1780081781000,
-          "relevance": 4
-        },
-        {
-          "title": "China distorting history, ‘status quo,’ minister says - Taipei Times",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EbGxJODJob1ZLUmJiSzZYRXJtNzBjMHVPcWI0aFBBUExqeGJHc2traGk3ZlBQVHVHU0RDZFUzZ3d5OUl0Y3BGNmJGNW5nU051UVBhVzFRTy1lWjZpUW9Tc2h0bGg2b1ppbl9mT2E2WHJLODVsektiZGdR?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE5EbGxJODJob1ZLUmJiSzZYRXJtNzBjMHVPcWI0aFBBUExqeGJHc2traGk3ZlBQVHVHU0RDZFUzZ3d5OUl0Y3BGNmJGNW5nU051UVBhVzFRTy1lWjZpUW9Tc2h0bGg2b1ppbl9mT2E2WHJLODVsektiZGdR?oc=5\" target=\"_blank\">China distorting history, ‘status quo,’ minister says</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Taipei Times</font>",
-          "source": "Taipei Times",
-          "publishedAt": "Fri, 29 May 2026 16:00:00 GMT",
-          "publishedMs": 1780070400000,
-          "relevance": 1
         },
         {
           "title": "China-US conflict over Taiwan could trigger nuclear escalation, report warns - Khaama Press",
@@ -1195,15 +1177,6 @@
           "relevance": 3
         },
         {
-          "title": "Taiwan: The Most Dangerous Flashpoint in the World? - Modern Diplomacy",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTMzbFZ2ZEFWV2ZyWEhYT01kY1BTTFJfMnZEZTF1LXh0TTBBWHVNM2tXQTRRYmpEa0NKeDBtMkI0QkVKV2Nrc1dRbFFPOUFsa1pKdVM5cHpEdVVuUlRJWFRmSWpFVVZ0T2lPQ1l3RkhGaGlkUWI5WmRsclhhYkNTYU45Y2ZmSjFodGZwNzhieEdDQQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNQTMzbFZ2ZEFWV2ZyWEhYT01kY1BTTFJfMnZEZTF1LXh0TTBBWHVNM2tXQTRRYmpEa0NKeDBtMkI0QkVKV2Nrc1dRbFFPOUFsa1pKdVM5cHpEdVVuUlRJWFRmSWpFVVZ0T2lPQ1l3RkhGaGlkUWI5WmRsclhhYkNTYU45Y2ZmSjFodGZwNzhieEdDQQ?oc=5\" target=\"_blank\">Taiwan: The Most Dangerous Flashpoint in the World?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Modern Diplomacy</font>",
-          "source": "Modern Diplomacy",
-          "publishedAt": "Wed, 27 May 2026 04:00:22 GMT",
-          "publishedMs": 1779854422000,
-          "relevance": 3
-        },
-        {
           "title": "CHINESE PATROL NEAR TAIWAN Taiwan sent ships and fighter jets to monitor the second Chinese \"joint combat readiness patrol\" in a week near the island. | via Reuters - facebook.com",
           "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUXZhR1VzOGMtRFJaOXplMGpZWjNxcVlaYUFnVmRfZ3laWEhyVTVjeExKSWxMMkluUGZyZjc5T3dxMEk1UmZNdGZKVkd2Zk1WZk1iX3hQZ2pKREVpWGtJT3Zid1JBSGZseURGUGY2bENZQUEwTi1vWXFkQWZ3S3ZiWkxhOHVBTmJ5ZV9FSjhUbi1wZTVBTm5ZMDZfb1pGNF9GbUdyNk1oTVhWVE80dWM5VE5faThVeUcySGJfMG9xUVgtT0RsRXJjbGhBS0phVWRWUWJvRVpnTF8xSDBxVkE?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUXZhR1VzOGMtRFJaOXplMGpZWjNxcVlaYUFnVmRfZ3laWEhyVTVjeExKSWxMMkluUGZyZjc5T3dxMEk1UmZNdGZKVkd2Zk1WZk1iX3hQZ2pKREVpWGtJT3Zid1JBSGZseURGUGY2bENZQUEwTi1vWXFkQWZ3S3ZiWkxhOHVBTmJ5ZV9FSjhUbi1wZTVBTm5ZMDZfb1pGNF9GbUdyNk1oTVhWVE80dWM5VE5faThVeUcySGJfMG9xUVgtT0RsRXJjbGhBS0phVWRWUWJvRVpnTF8xSDBxVkE?oc=5\" target=\"_blank\">CHINESE PATROL NEAR TAIWAN Taiwan sent ships and fighter jets to monitor the second Chinese \"joint combat readiness patrol\" in a week near the island. | via Reuters</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">facebook.com</font>",
@@ -1213,13 +1186,40 @@
           "relevance": 3
         },
         {
-          "title": "OPINION | Why China Can't Invade Taiwan - Dailyhunt",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNYUswNmlSMkdpYWo3X0RZUlMtLU1RU05JX2JDSGNTMHdEVnJPaVZYcVZMYTJ0c3ZxbEFMZDBCVFJsWHBiNExlMFc2ekVmRWZMTks0WE84NWZFTjhycklOX2d6N0ZfZ1o0M1hFdUdMLUFMOEx6aGp0Q1pUQlBwTTVzQ1c3N1U5X1poRGZucDFWeHM0VkIxWkVHb2pfaFNmOFNBdXR5akNBcTFaNHFXMjVPV29YWkFTdHBRS0tkZ0ZLSXFBSDd0N2pB?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNYUswNmlSMkdpYWo3X0RZUlMtLU1RU05JX2JDSGNTMHdEVnJPaVZYcVZMYTJ0c3ZxbEFMZDBCVFJsWHBiNExlMFc2ekVmRWZMTks0WE84NWZFTjhycklOX2d6N0ZfZ1o0M1hFdUdMLUFMOEx6aGp0Q1pUQlBwTTVzQ1c3N1U5X1poRGZucDFWeHM0VkIxWkVHb2pfaFNmOFNBdXR5akNBcTFaNHFXMjVPV29YWkFTdHBRS0tkZ0ZLSXFBSDd0N2pB?oc=5\" target=\"_blank\">OPINION | Why China Can't Invade Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Dailyhunt</font>",
-          "source": "Dailyhunt",
-          "publishedAt": "Mon, 25 May 2026 17:58:15 GMT",
-          "publishedMs": 1779731895000,
+          "title": "OPINION | Why China Can’t Invade Taiwan - ABP News",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOOW1fT1o2MFFxWjczNWtIZUwtNTZxV0NnM1UyZUVJVFlUakVZT3c4dlVsdkY3SHVfTHVEWFo4SG5LdHp3T1JpYzEyRDFyTE9lVDBMdzJrNW1WYjVObVhwTHJTRGNOeUlLZEpmUm5fTDNGZ0l0Z09YR01xaFBPUHJ3YdIBhgFBVV95cUxQLUtZTUxVOVZIajQ3dkhEUnQwTUF0aXpjRVlaRG9HX0h4VVpKVmVST3NLVXUwbUQ0N2pNMzF2aHNGUU1KZU14ajZoRC14dFZWNWFhUDFEb1RvMjRPcGVMSnlPencxb0tjMU9zRnJJQlNzanBaYnhBYXgtUTh2SzZ4QUQ4UWttZw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOOW1fT1o2MFFxWjczNWtIZUwtNTZxV0NnM1UyZUVJVFlUakVZT3c4dlVsdkY3SHVfTHVEWFo4SG5LdHp3T1JpYzEyRDFyTE9lVDBMdzJrNW1WYjVObVhwTHJTRGNOeUlLZEpmUm5fTDNGZ0l0Z09YR01xaFBPUHJ3YdIBhgFBVV95cUxQLUtZTUxVOVZIajQ3dkhEUnQwTUF0aXpjRVlaRG9HX0h4VVpKVmVST3NLVXUwbUQ0N2pNMzF2aHNGUU1KZU14ajZoRC14dFZWNWFhUDFEb1RvMjRPcGVMSnlPencxb0tjMU9zRnJJQlNzanBaYnhBYXgtUTh2SzZ4QUQ4UWttZw?oc=5\" target=\"_blank\">OPINION | Why China Can’t Invade Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABP News</font>",
+          "source": "ABP News",
+          "publishedAt": "Sun, 24 May 2026 03:07:06 GMT",
+          "publishedMs": 1779592026000,
           "relevance": 3
+        },
+        {
+          "title": "Taiwan detects Chinese military aircraft, naval vessels near island for second straight day - The Times of India",
+          "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPSlNoeW4zNXBNQzhjb3g0Ul9YZE4xRmplb2lZY0JsNmo0LWpWU1REY2RIaXVNQkZoZFpfMlBUbG1MTldTS2pmUHFLRHJEV25qNW9tUFZfOHJTdnJ4b29uall6QnVvYTA0d2c0dW5tSnNzWGVSdFRKUjMyb1l6aVp2Ynk0X2FOYmdWTHVoN1l6T3R6emlUMUJMeVFRbXBGYl94OE5oWUo3b3JXVjA0Y2l3d1J3Q0s5eWxjUHBLSURrTnljcVdmLVpWRFd2RDRla2MzaXJOVXZKeXBQTERLT0xPcE5YZkdYZGJTRDZCTEJEODlYZ2VJbkZ4MzltVHZLSnA0T0HSAYcCQVVfeXFMT1k2TEFhX0w1OFo4RTItZHFHb25IV3R4dmw3RGswU2E2SHVhcUlrOEVUdjJYR1ZLYnJHT2d1Ykd1bDJBdzdXSUdOSTVHZ1dNU0lpYnhjUVhYLXo2YkZVaXVYbTcxbHNaTGNCcFhSRm5BSGl0bzZjVm1ZZkFNTUVRZEppOFNzNXUtLWZQZ3BrZ19CTUpGTG5yQmFhZENXZ0tfbUhJOHNXaEtsbHJrSVpfd3NORzBaZTlCZXpKQkNvR2ZoRUhaQmtVd0p0M285Y2JPNkJsN3hTZUYxQUtwYW9oNVRtN18zZHFiNXFPTUR0S2s4aHl0dG9id1pkeUZPTmsyZG1CQ0R0TG8?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiggJBVV95cUxPSlNoeW4zNXBNQzhjb3g0Ul9YZE4xRmplb2lZY0JsNmo0LWpWU1REY2RIaXVNQkZoZFpfMlBUbG1MTldTS2pmUHFLRHJEV25qNW9tUFZfOHJTdnJ4b29uall6QnVvYTA0d2c0dW5tSnNzWGVSdFRKUjMyb1l6aVp2Ynk0X2FOYmdWTHVoN1l6T3R6emlUMUJMeVFRbXBGYl94OE5oWUo3b3JXVjA0Y2l3d1J3Q0s5eWxjUHBLSURrTnljcVdmLVpWRFd2RDRla2MzaXJOVXZKeXBQTERLT0xPcE5YZkdYZGJTRDZCTEJEODlYZ2VJbkZ4MzltVHZLSnA0T0HSAYcCQVVfeXFMT1k2TEFhX0w1OFo4RTItZHFHb25IV3R4dmw3RGswU2E2SHVhcUlrOEVUdjJYR1ZLYnJHT2d1Ykd1bDJBdzdXSUdOSTVHZ1dNU0lpYnhjUVhYLXo2YkZVaXVYbTcxbHNaTGNCcFhSRm5BSGl0bzZjVm1ZZkFNTUVRZEppOFNzNXUtLWZQZ3BrZ19CTUpGTG5yQmFhZENXZ0tfbUhJOHNXaEtsbHJrSVpfd3NORzBaZTlCZXpKQkNvR2ZoRUhaQmtVd0p0M285Y2JPNkJsN3hTZUYxQUtwYW9oNVRtN18zZHFiNXFPTUR0S2s4aHl0dG9id1pkeUZPTmsyZG1CQ0R0TG8?oc=5\" target=\"_blank\">Taiwan detects Chinese military aircraft, naval vessels near island for second straight day</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Times of India</font>",
+          "source": "The Times of India",
+          "publishedAt": "Sun, 24 May 2026 02:31:00 GMT",
+          "publishedMs": 1779589860000,
+          "relevance": 3
+        },
+        {
+          "title": "China deployed over 100 vessels near Taiwan in the wake of Trump-Xi summit, Taiwan security official claims - Fox News",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYkZfMk9aZEJ6d3R0TUdxTXpoTHA4dDVpTVNuV2xfenYwSUprR2Q1R1VIeWRHMzhLOGUwMG9QNVBjdWJsN0ZLR19EUno5SEg3bGhXSmJ2ejNBUWc4cnRqR2NFTzRRMkRVU1pvSlR0cHg2Tm5KSXc4UlAzUERHWVUtTXJWYS1Cb2xxTFltdTBsem95eWNZVEh6TXhmWTJqN1FqYlc0UzdrMGVWQll6TVpfS1Z2NGt1ZGliYUNoVDh30gHDAUFVX3lxTE9fdE1pWkVMTmg2ZFRfb1lHZ0F1S2tpcXdMS1dsQ3pOaEJBVF9aMkVhWElhQXBld2l6WTZzSHFPTDd5eFVId0Nrbmp3Q05CdWhyOFlzcFRaQ2p3d0NjRjlSSmdZSEVpZzRjTzRSUWZOeC1yN2hGMVJEbzNSVUhGZUNINmpTalk1ZnR6bUptUXhYLWZRVTZVZDV0bDEwdElLTktFWFItLXZLYjZ0TktESXMxakdLbVVEeTZlUmNwTUlpTkhDMA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxOYkZfMk9aZEJ6d3R0TUdxTXpoTHA4dDVpTVNuV2xfenYwSUprR2Q1R1VIeWRHMzhLOGUwMG9QNVBjdWJsN0ZLR19EUno5SEg3bGhXSmJ2ejNBUWc4cnRqR2NFTzRRMkRVU1pvSlR0cHg2Tm5KSXc4UlAzUERHWVUtTXJWYS1Cb2xxTFltdTBsem95eWNZVEh6TXhmWTJqN1FqYlc0UzdrMGVWQll6TVpfS1Z2NGt1ZGliYUNoVDh30gHDAUFVX3lxTE9fdE1pWkVMTmg2ZFRfb1lHZ0F1S2tpcXdMS1dsQ3pOaEJBVF9aMkVhWElhQXBld2l6WTZzSHFPTDd5eFVId0Nrbmp3Q05CdWhyOFlzcFRaQ2p3d0NjRjlSSmdZSEVpZzRjTzRSUWZOeC1yN2hGMVJEbzNSVUhGZUNINmpTalk1ZnR6bUptUXhYLWZRVTZVZDV0bDEwdElLTktFWFItLXZLYjZ0TktESXMxakdLbVVEeTZlUmNwTUlpTkhDMA?oc=5\" target=\"_blank\">China deployed over 100 vessels near Taiwan in the wake of Trump-Xi summit, Taiwan security official claims</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox News</font>",
+          "source": "Fox News",
+          "publishedAt": "Sat, 23 May 2026 18:38:26 GMT",
+          "publishedMs": 1779561506000,
+          "relevance": 3
+        },
+        {
+          "title": "Why the largest-ever US-Philippine drill, and Japan’s role, makes China uneasy - South China Morning Post",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRWtCQ0JtYWx3U0Zzd3pIUDNrdTNXUEg5Qlh6QlZXSHlJNllzTnZHSndhVnFhVnZnZExxVk9SM1M0UkF2NjNvczNLcC11ZlFESEF0enlrU3BKR2l2c21UZGk4VVNaM21jVlEzN0FMVzIyX2JtalFFZ2szbnVDeHlDTHlJRUh4Mk5BVnh3dlY1SEFOWmdnT2VrbTdOZDQzRXdBQzluTlZlYmxTSnYwdGJuZGhZbjVNLTJDbkFLamtsUW5MQmREYm1MSE4wYVYtZ9IBzgFBVV95cUxQQW54OFNaV2ZIX1RqVjVxX0xFcllYeDFZQmdRQkNRNTRXRHptRGlTSWVHZEJVQ2hZbURuaHU1T3BFclE2RWh0UGc3Q0k3YUNvMDVrMkE0NTU5UURwbnNkaTVENHpmX1ZFTmNqVDUtdURhME94eUY2bWRRRFdOcndFMHpqWFNfM0d5V1NZeThZQ3F4bTJGV1AtcDMybnF3T1JWM0UzcGJHWHVxUzVIbDRMUTB4WWQzMENDRkZzN0Y1akRxNHczMWd4dnNZOUdIZw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNRWtCQ0JtYWx3U0Zzd3pIUDNrdTNXUEg5Qlh6QlZXSHlJNllzTnZHSndhVnFhVnZnZExxVk9SM1M0UkF2NjNvczNLcC11ZlFESEF0enlrU3BKR2l2c21UZGk4VVNaM21jVlEzN0FMVzIyX2JtalFFZ2szbnVDeHlDTHlJRUh4Mk5BVnh3dlY1SEFOWmdnT2VrbTdOZDQzRXdBQzluTlZlYmxTSnYwdGJuZGhZbjVNLTJDbkFLamtsUW5MQmREYm1MSE4wYVYtZ9IBzgFBVV95cUxQQW54OFNaV2ZIX1RqVjVxX0xFcllYeDFZQmdRQkNRNTRXRHptRGlTSWVHZEJVQ2hZbURuaHU1T3BFclE2RWh0UGc3Q0k3YUNvMDVrMkE0NTU5UURwbnNkaTVENHpmX1ZFTmNqVDUtdURhME94eUY2bWRRRFdOcndFMHpqWFNfM0d5V1NZeThZQ3F4bTJGV1AtcDMybnF3T1JWM0UzcGJHWHVxUzVIbDRMUTB4WWQzMENDRkZzN0Y1akRxNHczMWd4dnNZOUdIZw?oc=5\" target=\"_blank\">Why the largest-ever US-Philippine drill, and Japan’s role, makes China uneasy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">South China Morning Post</font>",
+          "source": "South China Morning Post",
+          "publishedAt": "Sat, 23 May 2026 10:00:17 GMT",
+          "publishedMs": 1779530417000,
+          "relevance": 2
         }
       ],
       "trades": [
@@ -2127,7 +2127,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T08:18",
+          "t": "2026-05-31T08:25",
           "heat": 66
         }
       ]
@@ -2193,7 +2193,7 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-05-31T08:18:35.435Z",
+      "refreshedAt": "2026-05-31T08:25:44.267Z",
       "headlines": [
         {
           "title": "Ukraine repels massive Russian drone blitz as NATO aid grows - MSN",
@@ -3260,7 +3260,7 @@
           "heat": 92
         },
         {
-          "t": "2026-05-31T08:18",
+          "t": "2026-05-31T08:25",
           "heat": 76
         }
       ]
@@ -3326,7 +3326,7 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-05-31T08:18:32.814Z",
+      "refreshedAt": "2026-05-31T08:25:43.887Z",
       "headlines": [
         {
           "title": "North Korea is testing three ballistic missile - bolnews.com",
@@ -3384,8 +3384,8 @@
         },
         {
           "title": "North Korea launches ballistic missiles in show of force - MSN",
-          "link": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxPd0ZORUxBVnRmeTcwNmlqNXBuVnVwYUk2U0dMc29KY3RELWFFSm04c2p2aUJweUpkeGtrSXVGRnppT1JTcEtUZ1dleUozLW1HeDZPZFRUd01jLVJqMXlDYkJQNkdUU1huMko3T0lVLVRKLTJSTC1UXzl3R1pjbTJCbG9iMHpzVTQ4N0tzQnBtMHNRT1A0V2hwZW1aUFJ5VENQSGRlcjlqeEZ5RV8tS3NUTVpuVGtiR2xOZFVoWDZRMzlScHhJdkVhd1dNX3lkRFNfU2l4T1VYSUQ1elBhTUtaYnRMdU4xaXBJeFR6aGlxUVR5QUxSd3ltTFdydV9VTWdkTFFYUExXdGttcTJMT25nc3AwSkhmdUJ6MFotTGZSTFlia0JSa1hJeHpOOGJSbEdrdlRiUU9ycThNVGFJVmNpR3NlZnY4NDJpSURaa2pjR2xVYVZibzk3VTU1YXd6Y25OTjc2cl9jV1pUaWRBNUhUeg?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8AJBVV95cUxPd0ZORUxBVnRmeTcwNmlqNXBuVnVwYUk2U0dMc29KY3RELWFFSm04c2p2aUJweUpkeGtrSXVGRnppT1JTcEtUZ1dleUozLW1HeDZPZFRUd01jLVJqMXlDYkJQNkdUU1huMko3T0lVLVRKLTJSTC1UXzl3R1pjbTJCbG9iMHpzVTQ4N0tzQnBtMHNRT1A0V2hwZW1aUFJ5VENQSGRlcjlqeEZ5RV8tS3NUTVpuVGtiR2xOZFVoWDZRMzlScHhJdkVhd1dNX3lkRFNfU2l4T1VYSUQ1elBhTUtaYnRMdU4xaXBJeFR6aGlxUVR5QUxSd3ltTFdydV9VTWdkTFFYUExXdGttcTJMT25nc3AwSkhmdUJ6MFotTGZSTFlia0JSa1hJeHpOOGJSbEdrdlRiUU9ycThNVGFJVmNpR3NlZnY4NDJpSURaa2pjR2xVYVZibzk3VTU1YXd6Y25OTjc2cl9jV1pUaWRBNUhUeg?oc=5\" target=\"_blank\">North Korea launches ballistic missiles in show of force</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+          "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxNTkMyam9zd0VramdWNkoyLW9KRHVQQ1lESXJUbG40T0RXNmVrSnFBVWdFWGZ5NVNQX2NSSzhHcURCV3lhdEF0NVZWak1lWkc0UHNwQV91cTZ3aWNZSFNrR05aZjdPeV9xZE9GZnRHSGxVUURKQ0tRdmNJTE95dXlUNUgzRnc1anBZNHhPeF9BRjJKQnhxdlBYaVdrU0ZPdXBCenJiMGIyeVVhWEoxbVNJdkcyWmJvdHNoUy1aTTh4M2xTREZvY2x0ZDdyaVJreVBHT05xUTdxMVVXOC1penlZSnFPLU9xX01SN2FCS2JBcURYcURsdUpkQTRIbVRra28zclFtUFVNY2JLTEhWS3lJcmV6ZmZ1YTdhRzFZVVBSdHptQXVjX3FXQnY2WHlWcndEeUVJMXRoVXhlODJpSXA4dUZneHFtb2xEYUZLdU1KdlV4Zw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gJBVV95cUxNTkMyam9zd0VramdWNkoyLW9KRHVQQ1lESXJUbG40T0RXNmVrSnFBVWdFWGZ5NVNQX2NSSzhHcURCV3lhdEF0NVZWak1lWkc0UHNwQV91cTZ3aWNZSFNrR05aZjdPeV9xZE9GZnRHSGxVUURKQ0tRdmNJTE95dXlUNUgzRnc1anBZNHhPeF9BRjJKQnhxdlBYaVdrU0ZPdXBCenJiMGIyeVVhWEoxbVNJdkcyWmJvdHNoUy1aTTh4M2xTREZvY2x0ZDdyaVJreVBHT05xUTdxMVVXOC1penlZSnFPLU9xX01SN2FCS2JBcURYcURsdUpkQTRIbVRra28zclFtUFVNY2JLTEhWS3lJcmV6ZmZ1YTdhRzFZVVBSdHptQXVjX3FXQnY2WHlWcndEeUVJMXRoVXhlODJpSXA4dUZneHFtb2xEYUZLdU1KdlV4Zw?oc=5\" target=\"_blank\">North Korea launches ballistic missiles in show of force</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
           "source": "MSN",
           "publishedAt": "Tue, 26 May 2026 07:00:00 GMT",
           "publishedMs": 1779778800000,
@@ -4251,7 +4251,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-05-31T08:18",
+          "t": "2026-05-31T08:25",
           "heat": 72
         }
       ]
