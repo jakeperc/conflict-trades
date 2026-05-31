@@ -1472,3 +1472,29 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 if (!document.hidden) startTraderPoll();
+
+/* ===================== page nav ===================== */
+
+const PAGE_IDS = ["pageDashboard", "pageTrader"];
+
+function switchPage(pageId) {
+  const targetId = PAGE_IDS.includes(pageId) ? pageId : PAGE_IDS[0];
+  document.querySelectorAll(".page").forEach((p) => p.classList.remove("page-active"));
+  document.querySelectorAll(".page-nav-btn").forEach((b) => {
+    b.classList.toggle("active", b.dataset.page === targetId);
+  });
+  document.getElementById(targetId).classList.add("page-active");
+  history.replaceState(null, "", `#${targetId}`);
+  window.scrollTo(0, 0);
+  if (targetId === "pageTrader") {
+    // Re-render trader charts now that canvases have layout dimensions.
+    loadTrader();
+  }
+}
+
+document.querySelectorAll(".page-nav-btn").forEach((btn) => {
+  btn.addEventListener("click", () => switchPage(btn.dataset.page));
+});
+
+// Initialize from URL hash, default to dashboard.
+switchPage(location.hash.replace("#", "") || "pageDashboard");

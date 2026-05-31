@@ -24,6 +24,12 @@
             <span class="brand-sub">Geopolitical alpha desk</span>
           </div>
         </div>
+
+        <nav class="page-nav" aria-label="Navigation">
+          <button class="page-nav-btn active" data-page="pageDashboard">Dashboard</button>
+          <button class="page-nav-btn" data-page="pageTrader">AI Trader</button>
+        </nav>
+
         <div class="topbar-meta">
           <span class="status-pill" id="statusPill">
             <span class="status-dot"></span>
@@ -41,71 +47,148 @@
         </div>
       </header>
 
-      <!-- ============ 2. Overview rail (clickable scenario selectors) ============ -->
-      <section class="overview-rail" id="overviewGrid" aria-label="Scenario overview — select one"></section>
+      <!-- ============ PAGE 1: Dashboard ============ -->
+      <div class="page page-active" id="pageDashboard">
 
-      <!-- ============ 3. Balanced hero: scenario intel | trader book ============ -->
-      <section class="hero">
-        <!-- LEFT: active scenario -->
-        <section class="panel hero-scenario" aria-label="Active scenario">
-          <header class="hero-head">
-            <div class="hero-head-titles">
-              <p class="eyebrow">Active scenario</p>
-              <h1 id="scenarioTitle">Loading…</h1>
-              <p id="scenarioSubtitle" class="hero-subtitle"></p>
-            </div>
-            <div class="scenario-nav">
-              <div class="tab-strip" id="tabStrip" role="tablist" aria-label="Scenario"></div>
-              <select id="scenarioSelect" class="scenario-select" aria-label="Select scenario"></select>
-            </div>
-          </header>
+        <!-- 2. Overview rail (clickable scenario selectors) -->
+        <section class="overview-rail" id="overviewGrid" aria-label="Scenario overview — select one"></section>
 
-          <div class="hero-scenario-body">
-            <div class="heat-block">
-              <div class="gauge-wrap">
-                <canvas id="heatGauge" width="180" height="180" aria-hidden="true"></canvas>
-                <div class="gauge-center">
-                  <strong id="heatValue" class="mono">--</strong>
-                  <span id="heatBand" class="heat-band">—</span>
+        <!-- 3. Hero: scenario intel (full width on page 1) -->
+        <section class="hero hero-solo">
+          <section class="panel hero-scenario" aria-label="Active scenario">
+            <header class="hero-head">
+              <div class="hero-head-titles">
+                <p class="eyebrow">Active scenario</p>
+                <h1 id="scenarioTitle">Loading…</h1>
+                <p id="scenarioSubtitle" class="hero-subtitle"></p>
+              </div>
+              <div class="scenario-nav">
+                <div class="tab-strip" id="tabStrip" role="tablist" aria-label="Scenario"></div>
+                <select id="scenarioSelect" class="scenario-select" aria-label="Select scenario"></select>
+              </div>
+            </header>
+
+            <div class="hero-scenario-body">
+              <div class="heat-block">
+                <div class="gauge-wrap">
+                  <canvas id="heatGauge" width="180" height="180" aria-hidden="true"></canvas>
+                  <div class="gauge-center">
+                    <strong id="heatValue" class="mono">--</strong>
+                    <span id="heatBand" class="heat-band">—</span>
+                  </div>
+                </div>
+                <div class="heat-meta">
+                  <span class="eyebrow">Scenario heat</span>
+                  <span id="heatDelta" class="heat-delta mono">—</span>
+                  <div class="heat-spark-wrap">
+                    <canvas id="heatSpark" height="34" aria-hidden="true"></canvas>
+                  </div>
+                  <span class="heat-spark-label">trend across snapshots</span>
                 </div>
               </div>
-              <div class="heat-meta">
-                <span class="eyebrow">Scenario heat</span>
-                <span id="heatDelta" class="heat-delta mono">—</span>
-                <div class="heat-spark-wrap">
-                  <canvas id="heatSpark" height="34" aria-hidden="true"></canvas>
+
+              <div class="radar-block">
+                <span class="eyebrow">Sub-scores</span>
+                <div class="radar-wrap">
+                  <canvas id="subscoreRadar" aria-hidden="true"></canvas>
                 </div>
-                <span class="heat-spark-label">trend across snapshots</span>
+                <div id="subScoreGrid" class="subscore-legend"></div>
               </div>
             </div>
 
-            <div class="radar-block">
-              <span class="eyebrow">Sub-scores</span>
-              <div class="radar-wrap">
-                <canvas id="subscoreRadar" aria-hidden="true"></canvas>
+            <p id="scenarioSummary" class="hero-summary"></p>
+
+            <div class="hero-foot">
+              <div class="hero-pair">
+                <span class="eyebrow">Top pair trade</span>
+                <strong id="topPairTrade" class="mono">—</strong>
               </div>
-              <div id="subScoreGrid" class="subscore-legend"></div>
+              <div class="hero-changes">
+                <span class="change-label">Δ since last</span>
+                <div id="changeList" class="change-list"></div>
+              </div>
             </div>
-          </div>
-
-          <p id="scenarioSummary" class="hero-summary"></p>
-
-          <div class="hero-foot">
-            <div class="hero-pair">
-              <span class="eyebrow">Top pair trade</span>
-              <strong id="topPairTrade" class="mono">—</strong>
-            </div>
-            <div class="hero-changes">
-              <span class="change-label">Δ since last</span>
-              <div id="changeList" class="change-list"></div>
-            </div>
-          </div>
+          </section>
         </section>
 
-        <!-- RIGHT: trader book summary -->
-        <section class="panel hero-trader" aria-label="AI trader book summary">
-          <header class="hero-head">
-            <div class="hero-head-titles">
+        <!-- 4. Scenario detail -->
+        <section class="scenario-detail" id="scenarioDetail">
+          <section class="panel panel-transmission">
+            <div class="panel-head">
+              <h2>Market transmission</h2>
+              <span class="panel-sub">Indicators move with scenario heat &amp; sub-scores</span>
+            </div>
+            <div id="indicatorGrid" class="indicator-grid"></div>
+            <div class="effects-block">
+              <h3>Second-order effects</h3>
+              <div id="effectsList" class="effects-list"></div>
+            </div>
+          </section>
+
+          <section class="panel panel-trades">
+            <div class="panel-head">
+              <h2>Top trades</h2>
+              <div class="trade-controls" id="tradeControls">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="LONG">Long</button>
+                <button class="filter-chip" data-filter="SHORT">Short</button>
+                <button class="filter-chip" data-filter="Defense">Defense</button>
+                <button class="filter-chip" data-filter="Energy">Energy</button>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="trades-table">
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Dir</th>
+                    <th>Sector</th>
+                    <th class="num">Price</th>
+                    <th class="num">R:R</th>
+                    <th>Horizon</th>
+                    <th aria-label="Expand"></th>
+                  </tr>
+                </thead>
+                <tbody id="tradeTableBody"></tbody>
+              </table>
+            </div>
+            <div id="tradeCards" class="trade-cards"></div>
+          </section>
+
+          <section class="panel panel-headlines">
+            <div class="panel-head">
+              <h2>Live headlines</h2>
+              <span class="panel-sub">Scored signal inputs · newest first</span>
+            </div>
+            <div id="headlineList" class="headline-list"></div>
+          </section>
+        </section>
+
+        <!-- Method / disclaimer -->
+        <section class="method-card">
+          <div>
+            <p class="eyebrow">Method</p>
+            <p id="methodologyText"></p>
+          </div>
+          <div>
+            <p class="eyebrow">Disclaimer</p>
+            <p id="disclaimerText"></p>
+          </div>
+          <p class="method-sources">
+            Data: Google News RSS · Stooq / Yahoo Finance daily closes · CFTC, EIA, OFAC, DoD &amp; CENTCOM intel feeds.
+            Charts via Chart.js. Heat, sub-scores &amp; risk bands are model estimates — validate every trade independently.
+          </p>
+        </section>
+
+      </div><!-- /pageDashboard -->
+
+      <!-- ============ PAGE 2: AI Trader ============ -->
+      <div class="page" id="pageTrader">
+
+        <!-- Summary bar -->
+        <section class="panel trader-summary-bar" aria-label="AI trader book summary">
+          <div class="tsb-head">
+            <div class="tsb-info">
               <p class="eyebrow">AI trader · paper book</p>
               <div class="equity-row">
                 <strong class="mono equity-value" id="traderEquity">—</strong>
@@ -113,12 +196,10 @@
               </div>
               <span class="hero-trader-lede mono" id="traderLastRun">Awaiting first cycle</span>
             </div>
-          </header>
-
-          <div class="equity-curve-wrap">
-            <canvas id="equityCurve" aria-hidden="true"></canvas>
+            <div class="equity-curve-wrap tsb-curve">
+              <canvas id="equityCurve" aria-hidden="true"></canvas>
+            </div>
           </div>
-
           <div class="trader-kpi-row">
             <div class="kpi">
               <span class="kpi-label">Cash</span>
@@ -145,244 +226,175 @@
               <span class="kpi-value mono" id="traderMemoryBuckets">—</span>
             </div>
           </div>
-
-          <a class="hero-jump" href="#traderDetail">View full book, positions &amp; memory ↓</a>
-        </section>
-      </section>
-
-      <!-- ============ 4. Scenario detail ============ -->
-      <section class="scenario-detail" id="scenarioDetail">
-        <section class="panel panel-transmission">
-          <div class="panel-head">
-            <h2>Market transmission</h2>
-            <span class="panel-sub">Indicators move with scenario heat &amp; sub-scores</span>
-          </div>
-          <div id="indicatorGrid" class="indicator-grid"></div>
-          <div class="effects-block">
-            <h3>Second-order effects</h3>
-            <div id="effectsList" class="effects-list"></div>
-          </div>
         </section>
 
-        <section class="panel panel-trades">
-          <div class="panel-head">
-            <h2>Top trades</h2>
-            <div class="trade-controls" id="tradeControls">
-              <button class="filter-chip active" data-filter="all">All</button>
-              <button class="filter-chip" data-filter="LONG">Long</button>
-              <button class="filter-chip" data-filter="SHORT">Short</button>
-              <button class="filter-chip" data-filter="Defense">Defense</button>
-              <button class="filter-chip" data-filter="Energy">Energy</button>
-            </div>
-          </div>
-          <div class="table-wrap">
-            <table class="trades-table">
-              <thead>
-                <tr>
-                  <th>Ticker</th>
-                  <th>Dir</th>
-                  <th>Sector</th>
-                  <th class="num">Price</th>
-                  <th class="num">R:R</th>
-                  <th>Horizon</th>
-                  <th aria-label="Expand"></th>
-                </tr>
-              </thead>
-              <tbody id="tradeTableBody"></tbody>
-            </table>
-          </div>
-          <div id="tradeCards" class="trade-cards"></div>
-        </section>
-
-        <section class="panel panel-headlines">
-          <div class="panel-head">
-            <h2>Live headlines</h2>
-            <span class="panel-sub">Scored signal inputs · newest first</span>
-          </div>
-          <div id="headlineList" class="headline-list"></div>
-        </section>
-      </section>
-
-      <!-- ============ 5. Trader detail (relocated below hero) ============ -->
-      <section class="trader-detail" id="traderDetail">
-        <header class="trader-detail-head">
-          <div>
-            <p class="eyebrow">AI trader · paper</p>
-            <h2>Autonomous book — full detail</h2>
-            <p class="trader-lede">
-              $10,000 seed. Each cycle scores every trade across seven factors, takes the
-              strongest, and feeds outcomes back into the memory that re-weights the next entries.
-            </p>
-          </div>
-          <div class="allocation-wrap">
-            <span class="eyebrow">Capital allocation</span>
-            <div class="allocation-chart-wrap">
-              <canvas id="allocationChart" aria-hidden="true"></canvas>
-            </div>
-            <div id="allocationLegend" class="allocation-legend"></div>
-          </div>
-        </header>
-
-        <div class="trader-grid">
-          <section class="panel panel-positions">
-            <div class="panel-head">
-              <h3>Open positions</h3>
-              <span class="panel-sub">Marked to market · click a row for the full thesis</span>
-            </div>
-            <div class="table-wrap">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Ticker</th>
-                    <th>Scenario</th>
-                    <th>Dir</th>
-                    <th class="num">Entry</th>
-                    <th class="num">Mark</th>
-                    <th class="num">Tgt</th>
-                    <th class="num">Stop</th>
-                    <th class="num">P&amp;L $</th>
-                    <th class="num">P&amp;L %</th>
-                    <th class="num">Score</th>
-                  </tr>
-                </thead>
-                <tbody id="traderOpenBody"></tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="panel panel-watchlist">
-            <div class="panel-head">
-              <h3>Watchlist</h3>
-              <span class="panel-sub">Top candidates by composite score</span>
-            </div>
-            <div id="traderWatchlist" class="watchlist"></div>
-          </section>
-
-          <section class="panel panel-closed">
-            <div class="panel-head">
-              <h3>Closed trades</h3>
-              <span class="panel-sub">Most recent · each updates memory</span>
-            </div>
-            <div class="table-wrap">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Ticker</th>
-                    <th>Scenario</th>
-                    <th>Dir</th>
-                    <th>Outcome</th>
-                    <th class="num">P&amp;L %</th>
-                    <th class="num">Days</th>
-                    <th>Exit</th>
-                  </tr>
-                </thead>
-                <tbody id="traderClosedBody"></tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="panel panel-memory">
-            <div class="panel-head">
-              <h3>Learned edges</h3>
-              <span class="panel-sub">Patterns with ≥3 closed trades</span>
-            </div>
-            <div class="memory-block">
-              <div class="memory-section">
-                <h4>Lean into</h4>
-                <div id="traderMemoryTop" class="memory-list"></div>
-              </div>
-              <div class="memory-section">
-                <h4>Avoid</h4>
-                <div id="traderMemoryBottom" class="memory-list"></div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <!-- ============ 6. Simulation lab (collapsible) ============ -->
-      <details class="simulation-panel" id="simulationPanel" hidden>
-        <summary class="simulation-head">
-          <div class="simulation-head-title">
-            <span class="sim-chevron" aria-hidden="true">▸</span>
+        <!-- Full detail -->
+        <section class="trader-detail" id="traderDetail">
+          <header class="trader-detail-head">
             <div>
-              <h3>Simulation lab</h3>
-              <span class="panel-sub" id="simulationSubtitle">—</span>
+              <p class="eyebrow">AI trader · paper</p>
+              <h2>Autonomous book — full detail</h2>
+              <p class="trader-lede">
+                $10,000 seed. Each cycle scores every trade across seven factors, takes the
+                strongest, and feeds outcomes back into the memory that re-weights the next entries.
+              </p>
             </div>
-          </div>
-          <div class="simulation-kpis">
-            <div class="kpi-mini">
-              <span>Closed</span>
-              <strong class="mono" id="simClosed">—</strong>
-            </div>
-            <div class="kpi-mini">
-              <span>Win rate</span>
-              <strong class="mono" id="simWinRate">—</strong>
-            </div>
-            <div class="kpi-mini">
-              <span>Avg P&amp;L</span>
-              <strong class="mono" id="simAvgPnl">—</strong>
-            </div>
-            <div class="kpi-mini">
-              <span>Recalibrated</span>
-              <strong class="mono" id="simRecalibrated">—</strong>
-            </div>
-          </div>
-        </summary>
-
-        <div class="simulation-content">
-          <section class="panel sim-section-active" id="simActivePanel" hidden>
-            <div class="panel-head">
-              <h3>Active weights</h3>
-              <span class="panel-sub" id="simActiveSub">Tournament-tuned · applied to live scoring</span>
-            </div>
-            <div id="simActiveWeights" class="active-weights"></div>
-          </section>
-
-          <div class="simulation-grid">
-            <section class="panel sim-section-failure">
-              <div class="panel-head">
-                <h3>Failure modes</h3>
-                <span class="panel-sub">Why trades ended the way they did</span>
+            <div class="allocation-wrap">
+              <span class="eyebrow">Capital allocation</span>
+              <div class="allocation-chart-wrap">
+                <canvas id="allocationChart" aria-hidden="true"></canvas>
               </div>
-              <div id="simFailureBar" class="failure-bar"></div>
-              <div id="simFailureLegend" class="failure-legend"></div>
+              <div id="allocationLegend" class="allocation-legend"></div>
+            </div>
+          </header>
+
+          <div class="trader-grid">
+            <section class="panel panel-positions">
+              <div class="panel-head">
+                <h3>Open positions</h3>
+                <span class="panel-sub">Marked to market · click a row for the full thesis</span>
+              </div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Ticker</th>
+                      <th>Scenario</th>
+                      <th>Dir</th>
+                      <th class="num">Entry</th>
+                      <th class="num">Mark</th>
+                      <th class="num">Tgt</th>
+                      <th class="num">Stop</th>
+                      <th class="num">P&amp;L $</th>
+                      <th class="num">P&amp;L %</th>
+                      <th class="num">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody id="traderOpenBody"></tbody>
+                </table>
+              </div>
             </section>
 
-            <section class="panel sim-section-variants">
+            <section class="panel panel-watchlist">
               <div class="panel-head">
-                <h3>A/B variants</h3>
-                <span class="panel-sub">What stop/target widths actually worked</span>
+                <h3>Watchlist</h3>
+                <span class="panel-sub">Top candidates by composite score</span>
               </div>
-              <div id="simVariants" class="variant-grid"></div>
+              <div id="traderWatchlist" class="watchlist"></div>
             </section>
 
-            <section class="panel sim-section-buckets">
+            <section class="panel panel-closed">
               <div class="panel-head">
-                <h3>Per-bucket overrides</h3>
-                <span class="panel-sub" id="simBucketsSub">Observational — disabled by default after overfit testing</span>
+                <h3>Closed trades</h3>
+                <span class="panel-sub">Most recent · each updates memory</span>
               </div>
-              <div id="simBuckets" class="bucket-grid"></div>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Ticker</th>
+                      <th>Scenario</th>
+                      <th>Dir</th>
+                      <th>Outcome</th>
+                      <th class="num">P&amp;L %</th>
+                      <th class="num">Days</th>
+                      <th>Exit</th>
+                    </tr>
+                  </thead>
+                  <tbody id="traderClosedBody"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel panel-memory">
+              <div class="panel-head">
+                <h3>Learned edges</h3>
+                <span class="panel-sub">Patterns with ≥3 closed trades</span>
+              </div>
+              <div class="memory-block">
+                <div class="memory-section">
+                  <h4>Lean into</h4>
+                  <div id="traderMemoryTop" class="memory-list"></div>
+                </div>
+                <div class="memory-section">
+                  <h4>Avoid</h4>
+                  <div id="traderMemoryBottom" class="memory-list"></div>
+                </div>
+              </div>
             </section>
           </div>
-        </div>
-      </details>
+        </section>
 
-      <!-- ============ 7. Method / disclaimer ============ -->
-      <section class="method-card">
-        <div>
-          <p class="eyebrow">Method</p>
-          <p id="methodologyText"></p>
-        </div>
-        <div>
-          <p class="eyebrow">Disclaimer</p>
-          <p id="disclaimerText"></p>
-        </div>
-        <p class="method-sources">
-          Data: Google News RSS · Stooq / Yahoo Finance daily closes · CFTC, EIA, OFAC, DoD &amp; CENTCOM intel feeds.
-          Charts via Chart.js. Heat, sub-scores &amp; risk bands are model estimates — validate every trade independently.
-        </p>
-      </section>
+        <!-- Simulation lab (collapsible) -->
+        <details class="simulation-panel" id="simulationPanel" hidden>
+          <summary class="simulation-head">
+            <div class="simulation-head-title">
+              <span class="sim-chevron" aria-hidden="true">▸</span>
+              <div>
+                <h3>Simulation lab</h3>
+                <span class="panel-sub" id="simulationSubtitle">—</span>
+              </div>
+            </div>
+            <div class="simulation-kpis">
+              <div class="kpi-mini">
+                <span>Closed</span>
+                <strong class="mono" id="simClosed">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Win rate</span>
+                <strong class="mono" id="simWinRate">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Avg P&amp;L</span>
+                <strong class="mono" id="simAvgPnl">—</strong>
+              </div>
+              <div class="kpi-mini">
+                <span>Recalibrated</span>
+                <strong class="mono" id="simRecalibrated">—</strong>
+              </div>
+            </div>
+          </summary>
+
+          <div class="simulation-content">
+            <section class="panel sim-section-active" id="simActivePanel" hidden>
+              <div class="panel-head">
+                <h3>Active weights</h3>
+                <span class="panel-sub" id="simActiveSub">Tournament-tuned · applied to live scoring</span>
+              </div>
+              <div id="simActiveWeights" class="active-weights"></div>
+            </section>
+
+            <div class="simulation-grid">
+              <section class="panel sim-section-failure">
+                <div class="panel-head">
+                  <h3>Failure modes</h3>
+                  <span class="panel-sub">Why trades ended the way they did</span>
+                </div>
+                <div id="simFailureBar" class="failure-bar"></div>
+                <div id="simFailureLegend" class="failure-legend"></div>
+              </section>
+
+              <section class="panel sim-section-variants">
+                <div class="panel-head">
+                  <h3>A/B variants</h3>
+                  <span class="panel-sub">What stop/target widths actually worked</span>
+                </div>
+                <div id="simVariants" class="variant-grid"></div>
+              </section>
+
+              <section class="panel sim-section-buckets">
+                <div class="panel-head">
+                  <h3>Per-bucket overrides</h3>
+                  <span class="panel-sub" id="simBucketsSub">Observational — disabled by default after overfit testing</span>
+                </div>
+                <div id="simBuckets" class="bucket-grid"></div>
+              </section>
+            </div>
+          </div>
+        </details>
+
+      </div><!-- /pageTrader -->
+
     </main>
 
     <!-- Row template for the scenario trades table (7-column + expandable detail) -->
