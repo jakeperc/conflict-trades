@@ -10,7 +10,6 @@ const nodes = {
   statusText: document.getElementById("statusText"),
   statusPill: document.getElementById("statusPill"),
   lastRefresh: document.getElementById("lastRefresh"),
-  buildVersion: document.getElementById("buildVersion"),
   topPairTrade: document.getElementById("topPairTrade"),
   changeList: document.getElementById("changeList"),
   refreshButton: document.getElementById("refreshButton"),
@@ -409,7 +408,6 @@ async function loadData() {
     nodes.lastRefresh.textContent = formatTime(payload.generatedAt);
     nodes.methodologyText.textContent = payload.methodology;
     nodes.disclaimerText.textContent = payload.disclaimer;
-    nodes.buildVersion.textContent = payload.appVersion || "Live";
     if (!payload.scenarios[state.activeKey]) {
       state.activeKey = Object.keys(payload.scenarios)[0];
     }
