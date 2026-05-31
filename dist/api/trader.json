@@ -1,0 +1,6525 @@
+{
+  "state": {
+    "startingCash": 10000,
+    "cash": 1600,
+    "openPositions": [
+      {
+        "id": "pos-2026-05-18-XOM-iran",
+        "ticker": "XOM",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Energy",
+        "direction": "LONG",
+        "conviction": 5,
+        "entryDate": "2026-05-18",
+        "entryPrice": 157.92,
+        "shares": 15.197569,
+        "allocatedCash": 2400,
+        "targetPrice": 202.14,
+        "stopPrice": 140.42,
+        "horizonDays": 42,
+        "thesis": "Integrated major with direct upside to higher crude and LNG pricing.",
+        "catalyst": "Brent reprices on tanker and insurance stress.",
+        "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
+        "pairTrade": "Long XOM / Short UAL",
+        "heatAtEntry": 96,
+        "confidenceAtEntry": 0.831,
+        "finalScoreAtEntry": 83.1,
+        "componentsAtEntry": {
+          "conviction": 95,
+          "scenario": 95,
+          "riskReward": 92.6,
+          "trend": 81,
+          "volRegime": 82,
+          "catalyst": 64,
+          "memory": 67.9
+        },
+        "diversificationPenaltyAtEntry": 0,
+        "memoryMultAtEntry": 1.536,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "sector:Energy",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "direction:LONG",
+            "n": 89,
+            "winRate": 0.33707865168539325,
+            "avgPct": 0.004416051311098978,
+            "factor": 0.9564135491417654
+          },
+          {
+            "key": "scenario:iran",
+            "n": 31,
+            "winRate": 0.5483870967741935,
+            "avgPct": 0.05327079129010309,
+            "factor": 1.1847584133326354
+          },
+          {
+            "key": "conviction:5",
+            "n": 8,
+            "winRate": 0.25,
+            "avgPct": -0.05415284122268941,
+            "factor": 0.8416943175546212
+          },
+          {
+            "key": "sector:Energy|direction:LONG",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 29,
+            "winRate": 0.5517241379310345,
+            "avgPct": 0.0509673822529348,
+            "factor": 1.176005847063255
+          },
+          {
+            "key": "scenario:iran|sector:Energy",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "scenario:iran|sector:Energy|direction:LONG",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          }
+        ],
+        "currentPrice": 145.26,
+        "unrealizedPnlDollar": -192.4,
+        "unrealizedPct": -0.0802,
+        "currentPriceDate": "2026-05-29"
+      },
+      {
+        "id": "pos-2026-05-18-TNK-iran",
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-05-18",
+        "entryPrice": 77.19,
+        "shares": 31.092109,
+        "allocatedCash": 2400,
+        "targetPrice": 98.8,
+        "stopPrice": 69.25,
+        "horizonDays": 21,
+        "thesis": "Product tanker pricing improves with insurance and routing friction.",
+        "catalyst": "Refined-product freight reacts fast to route disruption.",
+        "thesisBreaker": "Insurance market normalizes quickly.",
+        "pairTrade": "Long TNK / Short UAL",
+        "heatAtEntry": 96,
+        "confidenceAtEntry": 0.734,
+        "finalScoreAtEntry": 73.4,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 95.4,
+          "trend": 59,
+          "volRegime": 80,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 7,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:TNK",
+            "n": 3,
+            "winRate": 1,
+            "avgPct": 0.059489797351284235,
+            "factor": 1.11944341529231
+          },
+          {
+            "key": "sector:Shipping",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "direction:LONG",
+            "n": 89,
+            "winRate": 0.33707865168539325,
+            "avgPct": 0.004416051311098978,
+            "factor": 0.9564135491417654
+          },
+          {
+            "key": "scenario:iran",
+            "n": 31,
+            "winRate": 0.5483870967741935,
+            "avgPct": 0.05327079129010309,
+            "factor": 1.1847584133326354
+          },
+          {
+            "key": "conviction:3",
+            "n": 64,
+            "winRate": 0.390625,
+            "avgPct": 0.022062813320152593,
+            "factor": 1.0395566695827647
+          },
+          {
+            "key": "sector:Shipping|direction:LONG",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 29,
+            "winRate": 0.5517241379310345,
+            "avgPct": 0.0509673822529348,
+            "factor": 1.176005847063255
+          },
+          {
+            "key": "scenario:iran|sector:Shipping",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "scenario:iran|sector:Shipping|direction:LONG",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          }
+        ],
+        "currentPrice": 70.35,
+        "unrealizedPnlDollar": -212.67,
+        "unrealizedPct": -0.0886,
+        "currentPriceDate": "2026-05-29"
+      },
+      {
+        "id": "pos-2026-05-18-FRO-iran",
+        "ticker": "FRO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-05-18",
+        "entryPrice": 36.66,
+        "shares": 49.099837,
+        "allocatedCash": 1800,
+        "targetPrice": 46.92,
+        "stopPrice": 32.22,
+        "horizonDays": 21,
+        "thesis": "Tanker day rates can spike when voyages reroute around risk zones.",
+        "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+        "thesisBreaker": "Rerouting proves temporary and rate spike fades.",
+        "pairTrade": "Long FRO / Short CCL",
+        "heatAtEntry": 96,
+        "confidenceAtEntry": 0.636,
+        "finalScoreAtEntry": 63.6,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 89.3,
+          "trend": 59,
+          "volRegime": 60,
+          "catalyst": 50,
+          "memory": 97.9
+        },
+        "diversificationPenaltyAtEntry": 16,
+        "memoryMultAtEntry": 2.436,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:FRO",
+            "n": 3,
+            "winRate": 1,
+            "avgPct": 0.06964683645186155,
+            "factor": 1.130523821583849
+          },
+          {
+            "key": "sector:Shipping",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "direction:LONG",
+            "n": 89,
+            "winRate": 0.33707865168539325,
+            "avgPct": 0.004416051311098978,
+            "factor": 0.9564135491417654
+          },
+          {
+            "key": "scenario:iran",
+            "n": 31,
+            "winRate": 0.5483870967741935,
+            "avgPct": 0.05327079129010309,
+            "factor": 1.1847584133326354
+          },
+          {
+            "key": "conviction:4",
+            "n": 48,
+            "winRate": 0.25,
+            "avgPct": -0.03647769377347126,
+            "factor": 0.7892193356338129
+          },
+          {
+            "key": "sector:Shipping|direction:LONG",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 29,
+            "winRate": 0.5517241379310345,
+            "avgPct": 0.0509673822529348,
+            "factor": 1.176005847063255
+          },
+          {
+            "key": "scenario:iran|sector:Shipping",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          },
+          {
+            "key": "scenario:iran|sector:Shipping|direction:LONG",
+            "n": 6,
+            "winRate": 1,
+            "avgPct": 0.06456831690157289,
+            "factor": 1.1964028289741249
+          }
+        ],
+        "currentPrice": 34.67,
+        "unrealizedPnlDollar": -97.71,
+        "unrealizedPct": -0.0543,
+        "currentPriceDate": "2026-05-29"
+      },
+      {
+        "id": "pos-2026-05-18-UCO-iran",
+        "ticker": "UCO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF (2x)",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-05-18",
+        "entryPrice": 50.2,
+        "shares": 35.856573,
+        "allocatedCash": 1800,
+        "targetPrice": 64.26,
+        "stopPrice": 43.02,
+        "horizonDays": 21,
+        "thesis": "Two-times geared WTI exposure for short-duration views with crisp invalidation.",
+        "catalyst": "Geared upside if Brent stays bid for sustained period.",
+        "thesisBreaker": "Daily roll decay outpaces price move on a quick reversal.",
+        "pairTrade": "Long UCO / Short CCL",
+        "heatAtEntry": 96,
+        "confidenceAtEntry": 0.653,
+        "finalScoreAtEntry": 65.3,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 84.1,
+          "trend": 87,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 13,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:UCO",
+            "n": 4,
+            "winRate": 0.5,
+            "avgPct": 0.09560182441030785,
+            "factor": 1.1274690992137437
+          },
+          {
+            "key": "sector:Oil ETF (2x)",
+            "n": 4,
+            "winRate": 0.5,
+            "avgPct": 0.09560182441030785,
+            "factor": 1.1274690992137437
+          },
+          {
+            "key": "direction:LONG",
+            "n": 89,
+            "winRate": 0.33707865168539325,
+            "avgPct": 0.004416051311098978,
+            "factor": 0.9564135491417654
+          },
+          {
+            "key": "scenario:iran",
+            "n": 31,
+            "winRate": 0.5483870967741935,
+            "avgPct": 0.05327079129010309,
+            "factor": 1.1847584133326354
+          },
+          {
+            "key": "conviction:3",
+            "n": 64,
+            "winRate": 0.390625,
+            "avgPct": 0.022062813320152593,
+            "factor": 1.0395566695827647
+          },
+          {
+            "key": "sector:Oil ETF (2x)|direction:LONG",
+            "n": 4,
+            "winRate": 0.5,
+            "avgPct": 0.09560182441030785,
+            "factor": 1.1274690992137437
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 29,
+            "winRate": 0.5517241379310345,
+            "avgPct": 0.0509673822529348,
+            "factor": 1.176005847063255
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF (2x)",
+            "n": 4,
+            "winRate": 0.5,
+            "avgPct": 0.09560182441030785,
+            "factor": 1.1274690992137437
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF (2x)|direction:LONG",
+            "n": 4,
+            "winRate": 0.5,
+            "avgPct": 0.09560182441030785,
+            "factor": 1.1274690992137437
+          }
+        ],
+        "currentPrice": 43.51,
+        "unrealizedPnlDollar": -239.88,
+        "unrealizedPct": -0.1333,
+        "currentPriceDate": "2026-05-29"
+      }
+    ],
+    "closedTrades": [],
+    "equityCurve": [
+      {
+        "date": "2026-05-18",
+        "cycle": 1,
+        "cash": 1600,
+        "openMtM": 8400,
+        "totalEquity": 10000,
+        "pctVsStart": 0
+      }
+    ],
+    "createdAt": "2026-05-18T05:40:21.624Z",
+    "lastRunAt": "2026-05-18T05:40:26.049Z",
+    "cycles": 1,
+    "lastWatchlist": [
+      {
+        "ticker": "XOM",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Energy",
+        "price": 157.92,
+        "targetPrice": 202.14,
+        "stopPrice": 140.42,
+        "rewardToRisk": 2.53,
+        "conviction": 5,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.11084061519742221,
+        "momentum22d": 0.059794671435281624,
+        "pctVsMa22": 0.048070959930554234,
+        "annualizedVol": 0.2986717933118516,
+        "catalyst": "Brent reprices on tanker and insurance stress.",
+        "finalScore": 83.1,
+        "confidence": 0.831,
+        "components": {
+          "conviction": 95,
+          "scenario": 95,
+          "riskReward": 92.6,
+          "trend": 81,
+          "volRegime": 82,
+          "catalyst": 64,
+          "memory": 67.9
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.536,
+        "held": false
+      },
+      {
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Shipping",
+        "price": 77.19,
+        "targetPrice": 98.8,
+        "stopPrice": 69.25,
+        "rewardToRisk": 2.72,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.10282387567312218,
+        "momentum22d": 0.0329184928939845,
+        "pctVsMa22": -0.010257688940159158,
+        "annualizedVol": 0.39853229727601824,
+        "catalyst": "Refined-product freight reacts fast to route disruption.",
+        "finalScore": 80.4,
+        "confidence": 0.804,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 95.4,
+          "trend": 59,
+          "volRegime": 80,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "FRO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Shipping",
+        "price": 36.66,
+        "targetPrice": 46.92,
+        "stopPrice": 32.22,
+        "rewardToRisk": 2.31,
+        "conviction": 4,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.12105399179110263,
+        "momentum22d": 0.032966979814351406,
+        "pctVsMa22": -0.003988894296282193,
+        "annualizedVol": 0.4671165982591886,
+        "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+        "finalScore": 79.6,
+        "confidence": 0.796,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 89.3,
+          "trend": 59,
+          "volRegime": 60,
+          "catalyst": 50,
+          "memory": 97.9
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 2.436,
+        "held": false
+      },
+      {
+        "ticker": "UCO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Oil ETF (2x)",
+        "price": 50.2,
+        "targetPrice": 64.26,
+        "stopPrice": 43.02,
+        "rewardToRisk": 1.96,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.14302013907743777,
+        "momentum22d": 0.22022366328888848,
+        "pctVsMa22": 0.10949258368067906,
+        "annualizedVol": 0.7335011589786481,
+        "catalyst": "Geared upside if Brent stays bid for sustained period.",
+        "finalScore": 78.3,
+        "confidence": 0.783,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 84.1,
+          "trend": 87,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "HAL",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Oil services",
+        "price": 41.76,
+        "targetPrice": 53.45,
+        "stopPrice": 37.89,
+        "rewardToRisk": 3.02,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.09275440121222,
+        "momentum22d": 0.11241335383826212,
+        "pctVsMa22": 0.038054720966023484,
+        "annualizedVol": 0.3146200101018333,
+        "catalyst": "Sustained crude strength can reopen service-cycle upside.",
+        "finalScore": 76.2,
+        "confidence": 0.762,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 99.8,
+          "trend": 87,
+          "volRegime": 80,
+          "catalyst": 50,
+          "memory": 62.8
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.385,
+        "held": false
+      },
+      {
+        "ticker": "INTC",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "direction": "LONG",
+        "sector": "Semiconductor onshoring",
+        "price": 108.77,
+        "targetPrice": 139.23,
+        "stopPrice": 91.37,
+        "rewardToRisk": 1.75,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.16,
+        "momentum22d": 0.6749305906048721,
+        "pctVsMa22": 0.14580805954606485,
+        "annualizedVol": 0.8880737977026144,
+        "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
+        "finalScore": 76.2,
+        "confidence": 0.762,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 81,
+          "trend": 87,
+          "volRegime": 30,
+          "catalyst": 46,
+          "memory": 100
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "CVX",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Energy",
+        "price": 191.1,
+        "targetPrice": 244.61,
+        "stopPrice": 172.99,
+        "rewardToRisk": 2.95,
+        "conviction": 4,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.09475621635888554,
+        "momentum22d": 0.03347575749723847,
+        "pctVsMa22": 0.02082592410237909,
+        "annualizedVol": 0.24796846965737948,
+        "catalyst": "Upstream sensitivity and dividend quality attract capital.",
+        "finalScore": 76,
+        "confidence": 0.76,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 98.8,
+          "trend": 57,
+          "volRegime": 82,
+          "catalyst": 50,
+          "memory": 64.7
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.44,
+        "held": false
+      },
+      {
+        "ticker": "BNO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Brent ETF",
+        "price": 57.69,
+        "targetPrice": 73.84,
+        "stopPrice": 49.82,
+        "rewardToRisk": 2.05,
+        "conviction": 4,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.13639869867115073,
+        "momentum22d": 0.21914621721815053,
+        "pctVsMa22": 0.06530239608666585,
+        "annualizedVol": 0.5949891555929229,
+        "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+        "finalScore": 75.8,
+        "confidence": 0.758,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 85.4,
+          "trend": 87,
+          "volRegime": 60,
+          "catalyst": 71,
+          "memory": 51.7
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.052,
+        "held": false
+      },
+      {
+        "ticker": "COP",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Energy",
+        "price": 122.41,
+        "targetPrice": 156.68,
+        "stopPrice": 109.82,
+        "rewardToRisk": 2.72,
+        "conviction": 4,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.10281632467824925,
+        "momentum22d": 0.029347507121602362,
+        "pctVsMa22": 0.014568560624214404,
+        "annualizedVol": 0.3151360389854103,
+        "catalyst": "Cleaner oil beta than integrated peers.",
+        "finalScore": 75.3,
+        "confidence": 0.753,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 95.4,
+          "trend": 57,
+          "volRegime": 80,
+          "catalyst": 50,
+          "memory": 64.7
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.44,
+        "held": false
+      },
+      {
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Oil ETF",
+        "price": 148.23,
+        "targetPrice": 189.73,
+        "stopPrice": 127.43,
+        "rewardToRisk": 2,
+        "conviction": 4,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.14029668558314376,
+        "momentum22d": 0.20915246068674137,
+        "pctVsMa22": 0.08221134775730025,
+        "annualizedVol": 0.6274723798595313,
+        "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+        "finalScore": 73.8,
+        "confidence": 0.738,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 84.7,
+          "trend": 87,
+          "volRegime": 45,
+          "catalyst": 64,
+          "memory": 51.7
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.052,
+        "held": false
+      },
+      {
+        "ticker": "GFS",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "direction": "LONG",
+        "sector": "Foundry alternatives",
+        "price": 71.03,
+        "targetPrice": 90.92,
+        "stopPrice": 61.86,
+        "rewardToRisk": 2.17,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.12909530292903862,
+        "momentum22d": 0.470295937904216,
+        "pctVsMa22": 0.08135449352777382,
+        "annualizedVol": 0.6174608577419884,
+        "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+        "finalScore": 73.5,
+        "confidence": 0.735,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 87.2,
+          "trend": 87,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 73.1
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.693,
+        "held": false
+      },
+      {
+        "ticker": "UAL",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "SHORT",
+        "sector": "Airlines",
+        "price": 92.85,
+        "targetPrice": 66.85,
+        "stopPrice": 104.11,
+        "rewardToRisk": 2.31,
+        "conviction": 3,
+        "heat": 96,
+        "upsidePct": 0.28,
+        "downsidePct": 0.1212172919395641,
+        "momentum22d": -0.015063097692915361,
+        "pctVsMa22": -0.019050422729650882,
+        "annualizedVol": 0.5518107661630341,
+        "catalyst": "Jet fuel inflation and route changes pressure margins first.",
+        "finalScore": 71.2,
+        "confidence": 0.712,
+        "components": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 89.3,
+          "trend": 69,
+          "volRegime": 60,
+          "catalyst": 57,
+          "memory": 63.1
+        },
+        "diversificationPenalty": 0,
+        "memoryMult": 1.392,
+        "held": false
+      }
+    ]
+  },
+  "live": {
+    "equity": 9257.34,
+    "openMtM": 7657.34,
+    "pctReturn": -0.0743,
+    "fetchedAt": "2026-05-31T07:38:18.393Z"
+  },
+  "memory": {
+    "buckets": {
+      "ticker:XOM": {
+        "n": 128,
+        "wins": 10,
+        "totalPnlPct": -6.7159999999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 91,
+          "stop_hit": 37
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 81,
+          "horizon_drift_winner": 10,
+          "stop_hit_late": 37
+        },
+        "holdingDaysTotal": 4552,
+        "maxFavorableTotal": 9.751199999999999,
+        "maxAdverseTotal": -8.970399999999998
+      },
+      "sector:Energy": {
+        "n": 433,
+        "wins": 75,
+        "totalPnlPct": -16.166500000000003,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 300,
+          "stop_hit": 133
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 225,
+          "horizon_drift_winner": 75,
+          "stop_hit_late": 124,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 13148,
+        "maxFavorableTotal": 29.347800000000003,
+        "maxAdverseTotal": -27.82149999999999
+      },
+      "direction:LONG": {
+        "n": 5940,
+        "wins": 1712,
+        "totalPnlPct": -98.65190000000082,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 1112,
+          "target_hit": 994,
+          "stop_hit": 3834
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 394,
+          "horizon_drift_winner": 718,
+          "target_hit": 237,
+          "stop_overshoot": 198,
+          "stop_hit_quick": 148,
+          "stop_hit_late": 3488,
+          "target_undershoot": 757
+        },
+        "holdingDaysTotal": 141576,
+        "maxFavorableTotal": 496.5434999999982,
+        "maxAdverseTotal": -532.5350000000019
+      },
+      "scenario:iran": {
+        "n": 2058,
+        "wins": 899,
+        "totalPnlPct": 5.117400000000051,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 1130,
+          "target_hit": 144,
+          "stop_hit": 784
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 375,
+          "horizon_drift_winner": 755,
+          "target_hit": 99,
+          "stop_overshoot": 93,
+          "stop_hit_quick": 31,
+          "stop_hit_late": 660,
+          "target_undershoot": 45
+        },
+        "holdingDaysTotal": 50016,
+        "maxFavorableTotal": 182.03760000000025,
+        "maxAdverseTotal": -137.81780000000018
+      },
+      "conviction:5": {
+        "n": 461,
+        "wins": 40,
+        "totalPnlPct": -38.810400000000016,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 173,
+          "stop_hit": 288
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 133,
+          "horizon_drift_winner": 40,
+          "stop_hit_late": 280,
+          "stop_overshoot": 6,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 12838,
+        "maxFavorableTotal": 20.62980000000007,
+        "maxAdverseTotal": -43.85380000000001
+      },
+      "sector:Energy|direction:LONG": {
+        "n": 433,
+        "wins": 75,
+        "totalPnlPct": -16.166500000000003,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 300,
+          "stop_hit": 133
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 225,
+          "horizon_drift_winner": 75,
+          "stop_hit_late": 124,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 13148,
+        "maxFavorableTotal": 29.347800000000003,
+        "maxAdverseTotal": -27.82149999999999
+      },
+      "scenario:iran|direction:LONG": {
+        "n": 1879,
+        "wins": 829,
+        "totalPnlPct": 9.157100000000085,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 993,
+          "target_hit": 144,
+          "stop_hit": 742
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 308,
+          "horizon_drift_winner": 685,
+          "target_hit": 99,
+          "stop_overshoot": 83,
+          "stop_hit_quick": 31,
+          "stop_hit_late": 628,
+          "target_undershoot": 45
+        },
+        "holdingDaysTotal": 45497,
+        "maxFavorableTotal": 169.42669999999993,
+        "maxAdverseTotal": -125.14850000000013
+      },
+      "scenario:iran|sector:Energy": {
+        "n": 433,
+        "wins": 75,
+        "totalPnlPct": -16.166500000000003,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 300,
+          "stop_hit": 133
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 225,
+          "horizon_drift_winner": 75,
+          "stop_hit_late": 124,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 13148,
+        "maxFavorableTotal": 29.347800000000003,
+        "maxAdverseTotal": -27.82149999999999
+      },
+      "scenario:iran|sector:Energy|direction:LONG": {
+        "n": 433,
+        "wins": 75,
+        "totalPnlPct": -16.166500000000003,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 300,
+          "stop_hit": 133
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 225,
+          "horizon_drift_winner": 75,
+          "stop_hit_late": 124,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 13148,
+        "maxFavorableTotal": 29.347800000000003,
+        "maxAdverseTotal": -27.82149999999999
+      },
+      "ticker:CVX": {
+        "n": 125,
+        "wins": 5,
+        "totalPnlPct": -6.718499999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 79,
+          "stop_hit": 46
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 5,
+          "horizon_drift_loser": 74,
+          "stop_hit_late": 45,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 4229,
+        "maxFavorableTotal": 7.569000000000008,
+        "maxAdverseTotal": -8.211699999999999
+      },
+      "conviction:4": {
+        "n": 3057,
+        "wins": 627,
+        "totalPnlPct": -187.03610000000145,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 848,
+          "target_hit": 114,
+          "stop_hit": 2095
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 513,
+          "target_hit": 91,
+          "stop_overshoot": 78,
+          "stop_hit_quick": 74,
+          "stop_hit_late": 1943,
+          "target_undershoot": 23,
+          "horizon_drift_loser": 335
+        },
+        "holdingDaysTotal": 76822,
+        "maxFavorableTotal": 156.19160000000056,
+        "maxAdverseTotal": -282.8022000000015
+      },
+      "ticker:COP": {
+        "n": 180,
+        "wins": 60,
+        "totalPnlPct": -2.7319999999999984,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 130,
+          "stop_hit": 50
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 60,
+          "horizon_drift_loser": 70,
+          "stop_hit_late": 42,
+          "stop_overshoot": 8
+        },
+        "holdingDaysTotal": 4367,
+        "maxFavorableTotal": 12.027599999999998,
+        "maxAdverseTotal": -10.639400000000002
+      },
+      "ticker:LNG": {
+        "n": 322,
+        "wins": 82,
+        "totalPnlPct": -15.72219999999999,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 110,
+          "target_hit": 12,
+          "stop_hit": 200
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "target_hit": 12,
+          "horizon_drift_loser": 40,
+          "stop_hit_late": 176,
+          "stop_overshoot": 14,
+          "stop_hit_quick": 10
+        },
+        "holdingDaysTotal": 10268,
+        "maxFavorableTotal": 26.759899999999966,
+        "maxAdverseTotal": -24.41100000000002
+      },
+      "sector:Gas / LNG": {
+        "n": 322,
+        "wins": 82,
+        "totalPnlPct": -15.72219999999999,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 110,
+          "target_hit": 12,
+          "stop_hit": 200
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "target_hit": 12,
+          "horizon_drift_loser": 40,
+          "stop_hit_late": 176,
+          "stop_overshoot": 14,
+          "stop_hit_quick": 10
+        },
+        "holdingDaysTotal": 10268,
+        "maxFavorableTotal": 26.759899999999966,
+        "maxAdverseTotal": -24.41100000000002
+      },
+      "sector:Gas / LNG|direction:LONG": {
+        "n": 322,
+        "wins": 82,
+        "totalPnlPct": -15.72219999999999,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 110,
+          "target_hit": 12,
+          "stop_hit": 200
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "target_hit": 12,
+          "horizon_drift_loser": 40,
+          "stop_hit_late": 176,
+          "stop_overshoot": 14,
+          "stop_hit_quick": 10
+        },
+        "holdingDaysTotal": 10268,
+        "maxFavorableTotal": 26.759899999999966,
+        "maxAdverseTotal": -24.41100000000002
+      },
+      "scenario:iran|sector:Gas / LNG": {
+        "n": 161,
+        "wins": 40,
+        "totalPnlPct": -8.280600000000005,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 58,
+          "target_hit": 3,
+          "stop_hit": 100
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 37,
+          "target_hit": 3,
+          "horizon_drift_loser": 21,
+          "stop_hit_late": 88,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 5
+        },
+        "holdingDaysTotal": 5255,
+        "maxFavorableTotal": 13.389299999999997,
+        "maxAdverseTotal": -12.250399999999994
+      },
+      "scenario:iran|sector:Gas / LNG|direction:LONG": {
+        "n": 161,
+        "wins": 40,
+        "totalPnlPct": -8.280600000000005,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 58,
+          "target_hit": 3,
+          "stop_hit": 100
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 37,
+          "target_hit": 3,
+          "horizon_drift_loser": 21,
+          "stop_hit_late": 88,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 5
+        },
+        "holdingDaysTotal": 5255,
+        "maxFavorableTotal": 13.389299999999997,
+        "maxAdverseTotal": -12.250399999999994
+      },
+      "ticker:FRO": {
+        "n": 195,
+        "wins": 139,
+        "totalPnlPct": 5.804399999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 32,
+          "horizon_exceeded": 162,
+          "target_hit": 1
+        },
+        "failureKinds": {
+          "stop_overshoot": 20,
+          "stop_hit_quick": 1,
+          "stop_hit_late": 11,
+          "horizon_drift_loser": 24,
+          "horizon_drift_winner": 138,
+          "target_hit": 1
+        },
+        "holdingDaysTotal": 3615,
+        "maxFavorableTotal": 15.378799999999991,
+        "maxAdverseTotal": -8.345899999999993
+      },
+      "sector:Shipping": {
+        "n": 390,
+        "wins": 285,
+        "totalPnlPct": 13.717300000000005,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 66,
+          "horizon_exceeded": 321,
+          "target_hit": 3
+        },
+        "failureKinds": {
+          "stop_overshoot": 38,
+          "stop_hit_quick": 2,
+          "stop_hit_late": 26,
+          "horizon_drift_loser": 39,
+          "horizon_drift_winner": 282,
+          "target_hit": 3
+        },
+        "holdingDaysTotal": 7206,
+        "maxFavorableTotal": 32.58249999999998,
+        "maxAdverseTotal": -15.40440000000001
+      },
+      "sector:Shipping|direction:LONG": {
+        "n": 390,
+        "wins": 285,
+        "totalPnlPct": 13.717300000000005,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 66,
+          "horizon_exceeded": 321,
+          "target_hit": 3
+        },
+        "failureKinds": {
+          "stop_overshoot": 38,
+          "stop_hit_quick": 2,
+          "stop_hit_late": 26,
+          "horizon_drift_loser": 39,
+          "horizon_drift_winner": 282,
+          "target_hit": 3
+        },
+        "holdingDaysTotal": 7206,
+        "maxFavorableTotal": 32.58249999999998,
+        "maxAdverseTotal": -15.40440000000001
+      },
+      "scenario:iran|sector:Shipping": {
+        "n": 390,
+        "wins": 285,
+        "totalPnlPct": 13.717300000000005,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 66,
+          "horizon_exceeded": 321,
+          "target_hit": 3
+        },
+        "failureKinds": {
+          "stop_overshoot": 38,
+          "stop_hit_quick": 2,
+          "stop_hit_late": 26,
+          "horizon_drift_loser": 39,
+          "horizon_drift_winner": 282,
+          "target_hit": 3
+        },
+        "holdingDaysTotal": 7206,
+        "maxFavorableTotal": 32.58249999999998,
+        "maxAdverseTotal": -15.40440000000001
+      },
+      "scenario:iran|sector:Shipping|direction:LONG": {
+        "n": 390,
+        "wins": 285,
+        "totalPnlPct": 13.717300000000005,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 66,
+          "horizon_exceeded": 321,
+          "target_hit": 3
+        },
+        "failureKinds": {
+          "stop_overshoot": 38,
+          "stop_hit_quick": 2,
+          "stop_hit_late": 26,
+          "horizon_drift_loser": 39,
+          "horizon_drift_winner": 282,
+          "target_hit": 3
+        },
+        "holdingDaysTotal": 7206,
+        "maxFavorableTotal": 32.58249999999998,
+        "maxAdverseTotal": -15.40440000000001
+      },
+      "ticker:TNK": {
+        "n": 195,
+        "wins": 146,
+        "totalPnlPct": 7.912899999999993,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 34,
+          "horizon_exceeded": 159,
+          "target_hit": 2
+        },
+        "failureKinds": {
+          "stop_hit_late": 15,
+          "stop_overshoot": 18,
+          "horizon_drift_winner": 144,
+          "stop_hit_quick": 1,
+          "target_hit": 2,
+          "horizon_drift_loser": 15
+        },
+        "holdingDaysTotal": 3591,
+        "maxFavorableTotal": 17.203700000000005,
+        "maxAdverseTotal": -7.058499999999997
+      },
+      "conviction:3": {
+        "n": 4486,
+        "wins": 1567,
+        "totalPnlPct": -0.22789999999998292,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 2505,
+          "horizon_exceeded": 1100,
+          "target_hit": 881
+        },
+        "failureKinds": {
+          "stop_hit_late": 2197,
+          "stop_overshoot": 196,
+          "horizon_drift_winner": 686,
+          "target_undershoot": 734,
+          "horizon_drift_loser": 414,
+          "stop_hit_quick": 112,
+          "target_hit": 147
+        },
+        "holdingDaysTotal": 94871,
+        "maxFavorableTotal": 409.2967999999983,
+        "maxAdverseTotal": -379.42099999999897
+      },
+      "ticker:LMT": {
+        "n": 724,
+        "wins": 0,
+        "totalPnlPct": -80.88799999999992,
+        "lastUpdated": "2026-04-24",
+        "exitReasons": {
+          "stop_hit": 724
+        },
+        "failureKinds": {
+          "stop_hit_late": 686,
+          "stop_hit_quick": 37,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 17013,
+        "maxFavorableTotal": 8.422000000000002,
+        "maxAdverseTotal": -80.88799999999992
+      },
+      "sector:Defense": {
+        "n": 2187,
+        "wins": 0,
+        "totalPnlPct": -239.76799999999992,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 2187
+        },
+        "failureKinds": {
+          "stop_hit_late": 2081,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 93
+        },
+        "holdingDaysTotal": 53228,
+        "maxFavorableTotal": 23.08719999999988,
+        "maxAdverseTotal": -239.76799999999992
+      },
+      "sector:Defense|direction:LONG": {
+        "n": 2187,
+        "wins": 0,
+        "totalPnlPct": -239.76799999999992,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 2187
+        },
+        "failureKinds": {
+          "stop_hit_late": 2081,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 93
+        },
+        "holdingDaysTotal": 53228,
+        "maxFavorableTotal": 23.08719999999988,
+        "maxAdverseTotal": -239.76799999999992
+      },
+      "scenario:iran|sector:Defense": {
+        "n": 367,
+        "wins": 0,
+        "totalPnlPct": -39.50519999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 367
+        },
+        "failureKinds": {
+          "stop_hit_late": 342,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 23
+        },
+        "holdingDaysTotal": 8020,
+        "maxFavorableTotal": 3.4235000000000033,
+        "maxAdverseTotal": -39.50519999999999
+      },
+      "scenario:iran|sector:Defense|direction:LONG": {
+        "n": 367,
+        "wins": 0,
+        "totalPnlPct": -39.50519999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 367
+        },
+        "failureKinds": {
+          "stop_hit_late": 342,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 23
+        },
+        "holdingDaysTotal": 8020,
+        "maxFavorableTotal": 3.4235000000000033,
+        "maxAdverseTotal": -39.50519999999999
+      },
+      "ticker:NOC": {
+        "n": 728,
+        "wins": 0,
+        "totalPnlPct": -84.8891999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 728
+        },
+        "failureKinds": {
+          "stop_hit_late": 680,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 44
+        },
+        "holdingDaysTotal": 16110,
+        "maxFavorableTotal": 5.272000000000018,
+        "maxAdverseTotal": -84.8891999999999
+      },
+      "ticker:UAL": {
+        "n": 358,
+        "wins": 140,
+        "totalPnlPct": -8.079400000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 274,
+          "stop_hit": 84
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 140,
+          "horizon_drift_loser": 134,
+          "stop_hit_late": 64,
+          "stop_overshoot": 20
+        },
+        "holdingDaysTotal": 9038,
+        "maxFavorableTotal": 25.221800000000005,
+        "maxAdverseTotal": -25.338600000000007
+      },
+      "sector:Airlines": {
+        "n": 358,
+        "wins": 140,
+        "totalPnlPct": -8.079400000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 274,
+          "stop_hit": 84
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 140,
+          "horizon_drift_loser": 134,
+          "stop_hit_late": 64,
+          "stop_overshoot": 20
+        },
+        "holdingDaysTotal": 9038,
+        "maxFavorableTotal": 25.221800000000005,
+        "maxAdverseTotal": -25.338600000000007
+      },
+      "direction:SHORT": {
+        "n": 2064,
+        "wins": 522,
+        "totalPnlPct": -127.42250000000006,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 1009,
+          "target_hit": 1,
+          "stop_hit": 1054
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 521,
+          "target_hit": 1,
+          "horizon_drift_loser": 488,
+          "stop_hit_late": 932,
+          "stop_overshoot": 82,
+          "stop_hit_quick": 40
+        },
+        "holdingDaysTotal": 42955,
+        "maxFavorableTotal": 89.57469999999986,
+        "maxAdverseTotal": -173.54200000000031
+      },
+      "sector:Airlines|direction:SHORT": {
+        "n": 358,
+        "wins": 140,
+        "totalPnlPct": -8.079400000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 274,
+          "stop_hit": 84
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 140,
+          "horizon_drift_loser": 134,
+          "stop_hit_late": 64,
+          "stop_overshoot": 20
+        },
+        "holdingDaysTotal": 9038,
+        "maxFavorableTotal": 25.221800000000005,
+        "maxAdverseTotal": -25.338600000000007
+      },
+      "scenario:iran|direction:SHORT": {
+        "n": 179,
+        "wins": 70,
+        "totalPnlPct": -4.039700000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 137,
+          "stop_hit": 42
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 67,
+          "stop_hit_late": 32,
+          "stop_overshoot": 10
+        },
+        "holdingDaysTotal": 4519,
+        "maxFavorableTotal": 12.610900000000022,
+        "maxAdverseTotal": -12.669299999999984
+      },
+      "scenario:iran|sector:Airlines": {
+        "n": 179,
+        "wins": 70,
+        "totalPnlPct": -4.039700000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 137,
+          "stop_hit": 42
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 67,
+          "stop_hit_late": 32,
+          "stop_overshoot": 10
+        },
+        "holdingDaysTotal": 4519,
+        "maxFavorableTotal": 12.610900000000022,
+        "maxAdverseTotal": -12.669299999999984
+      },
+      "scenario:iran|sector:Airlines|direction:SHORT": {
+        "n": 179,
+        "wins": 70,
+        "totalPnlPct": -4.039700000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 137,
+          "stop_hit": 42
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 67,
+          "stop_hit_late": 32,
+          "stop_overshoot": 10
+        },
+        "holdingDaysTotal": 4519,
+        "maxFavorableTotal": 12.610900000000022,
+        "maxAdverseTotal": -12.669299999999984
+      },
+      "ticker:USO": {
+        "n": 172,
+        "wins": 152,
+        "totalPnlPct": 22.28509999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 48,
+          "horizon_exceeded": 108,
+          "stop_hit": 16
+        },
+        "failureKinds": {
+          "target_hit": 37,
+          "target_undershoot": 11,
+          "horizon_drift_winner": 104,
+          "stop_overshoot": 6,
+          "horizon_drift_loser": 4,
+          "stop_hit_late": 10
+        },
+        "holdingDaysTotal": 3960,
+        "maxFavorableTotal": 33.540499999999994,
+        "maxAdverseTotal": -9.307599999999995
+      },
+      "sector:Oil ETF": {
+        "n": 172,
+        "wins": 152,
+        "totalPnlPct": 22.28509999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 48,
+          "horizon_exceeded": 108,
+          "stop_hit": 16
+        },
+        "failureKinds": {
+          "target_hit": 37,
+          "target_undershoot": 11,
+          "horizon_drift_winner": 104,
+          "stop_overshoot": 6,
+          "horizon_drift_loser": 4,
+          "stop_hit_late": 10
+        },
+        "holdingDaysTotal": 3960,
+        "maxFavorableTotal": 33.540499999999994,
+        "maxAdverseTotal": -9.307599999999995
+      },
+      "sector:Oil ETF|direction:LONG": {
+        "n": 172,
+        "wins": 152,
+        "totalPnlPct": 22.28509999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 48,
+          "horizon_exceeded": 108,
+          "stop_hit": 16
+        },
+        "failureKinds": {
+          "target_hit": 37,
+          "target_undershoot": 11,
+          "horizon_drift_winner": 104,
+          "stop_overshoot": 6,
+          "horizon_drift_loser": 4,
+          "stop_hit_late": 10
+        },
+        "holdingDaysTotal": 3960,
+        "maxFavorableTotal": 33.540499999999994,
+        "maxAdverseTotal": -9.307599999999995
+      },
+      "scenario:iran|sector:Oil ETF": {
+        "n": 172,
+        "wins": 152,
+        "totalPnlPct": 22.28509999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 48,
+          "horizon_exceeded": 108,
+          "stop_hit": 16
+        },
+        "failureKinds": {
+          "target_hit": 37,
+          "target_undershoot": 11,
+          "horizon_drift_winner": 104,
+          "stop_overshoot": 6,
+          "horizon_drift_loser": 4,
+          "stop_hit_late": 10
+        },
+        "holdingDaysTotal": 3960,
+        "maxFavorableTotal": 33.540499999999994,
+        "maxAdverseTotal": -9.307599999999995
+      },
+      "scenario:iran|sector:Oil ETF|direction:LONG": {
+        "n": 172,
+        "wins": 152,
+        "totalPnlPct": 22.28509999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 48,
+          "horizon_exceeded": 108,
+          "stop_hit": 16
+        },
+        "failureKinds": {
+          "target_hit": 37,
+          "target_undershoot": 11,
+          "horizon_drift_winner": 104,
+          "stop_overshoot": 6,
+          "horizon_drift_loser": 4,
+          "stop_hit_late": 10
+        },
+        "holdingDaysTotal": 3960,
+        "maxFavorableTotal": 33.540499999999994,
+        "maxAdverseTotal": -9.307599999999995
+      },
+      "ticker:UCO": {
+        "n": 200,
+        "wins": 162,
+        "totalPnlPct": 21.863499999999988,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 42,
+          "horizon_exceeded": 139,
+          "stop_hit": 19
+        },
+        "failureKinds": {
+          "target_undershoot": 25,
+          "target_hit": 17,
+          "horizon_drift_winner": 120,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 7,
+          "stop_overshoot": 12
+        },
+        "holdingDaysTotal": 3527,
+        "maxFavorableTotal": 31.0778,
+        "maxAdverseTotal": -10.850799999999994
+      },
+      "sector:Oil ETF (2x)": {
+        "n": 200,
+        "wins": 162,
+        "totalPnlPct": 21.863499999999988,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 42,
+          "horizon_exceeded": 139,
+          "stop_hit": 19
+        },
+        "failureKinds": {
+          "target_undershoot": 25,
+          "target_hit": 17,
+          "horizon_drift_winner": 120,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 7,
+          "stop_overshoot": 12
+        },
+        "holdingDaysTotal": 3527,
+        "maxFavorableTotal": 31.0778,
+        "maxAdverseTotal": -10.850799999999994
+      },
+      "sector:Oil ETF (2x)|direction:LONG": {
+        "n": 200,
+        "wins": 162,
+        "totalPnlPct": 21.863499999999988,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 42,
+          "horizon_exceeded": 139,
+          "stop_hit": 19
+        },
+        "failureKinds": {
+          "target_undershoot": 25,
+          "target_hit": 17,
+          "horizon_drift_winner": 120,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 7,
+          "stop_overshoot": 12
+        },
+        "holdingDaysTotal": 3527,
+        "maxFavorableTotal": 31.0778,
+        "maxAdverseTotal": -10.850799999999994
+      },
+      "scenario:iran|sector:Oil ETF (2x)": {
+        "n": 200,
+        "wins": 162,
+        "totalPnlPct": 21.863499999999988,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 42,
+          "horizon_exceeded": 139,
+          "stop_hit": 19
+        },
+        "failureKinds": {
+          "target_undershoot": 25,
+          "target_hit": 17,
+          "horizon_drift_winner": 120,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 7,
+          "stop_overshoot": 12
+        },
+        "holdingDaysTotal": 3527,
+        "maxFavorableTotal": 31.0778,
+        "maxAdverseTotal": -10.850799999999994
+      },
+      "scenario:iran|sector:Oil ETF (2x)|direction:LONG": {
+        "n": 200,
+        "wins": 162,
+        "totalPnlPct": 21.863499999999988,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 42,
+          "horizon_exceeded": 139,
+          "stop_hit": 19
+        },
+        "failureKinds": {
+          "target_undershoot": 25,
+          "target_hit": 17,
+          "horizon_drift_winner": 120,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 7,
+          "stop_overshoot": 12
+        },
+        "holdingDaysTotal": 3527,
+        "maxFavorableTotal": 31.0778,
+        "maxAdverseTotal": -10.850799999999994
+      },
+      "ticker:BNO": {
+        "n": 144,
+        "wins": 106,
+        "totalPnlPct": 13.593099999999996,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 39,
+          "horizon_exceeded": 67,
+          "stop_hit": 38
+        },
+        "failureKinds": {
+          "target_undershoot": 8,
+          "target_hit": 31,
+          "horizon_drift_winner": 67,
+          "stop_hit_late": 30,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3927,
+        "maxFavorableTotal": 24.201600000000028,
+        "maxAdverseTotal": -9.5975
+      },
+      "sector:Brent ETF": {
+        "n": 144,
+        "wins": 106,
+        "totalPnlPct": 13.593099999999996,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 39,
+          "horizon_exceeded": 67,
+          "stop_hit": 38
+        },
+        "failureKinds": {
+          "target_undershoot": 8,
+          "target_hit": 31,
+          "horizon_drift_winner": 67,
+          "stop_hit_late": 30,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3927,
+        "maxFavorableTotal": 24.201600000000028,
+        "maxAdverseTotal": -9.5975
+      },
+      "sector:Brent ETF|direction:LONG": {
+        "n": 144,
+        "wins": 106,
+        "totalPnlPct": 13.593099999999996,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 39,
+          "horizon_exceeded": 67,
+          "stop_hit": 38
+        },
+        "failureKinds": {
+          "target_undershoot": 8,
+          "target_hit": 31,
+          "horizon_drift_winner": 67,
+          "stop_hit_late": 30,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3927,
+        "maxFavorableTotal": 24.201600000000028,
+        "maxAdverseTotal": -9.5975
+      },
+      "scenario:iran|sector:Brent ETF": {
+        "n": 144,
+        "wins": 106,
+        "totalPnlPct": 13.593099999999996,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 39,
+          "horizon_exceeded": 67,
+          "stop_hit": 38
+        },
+        "failureKinds": {
+          "target_undershoot": 8,
+          "target_hit": 31,
+          "horizon_drift_winner": 67,
+          "stop_hit_late": 30,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3927,
+        "maxFavorableTotal": 24.201600000000028,
+        "maxAdverseTotal": -9.5975
+      },
+      "scenario:iran|sector:Brent ETF|direction:LONG": {
+        "n": 144,
+        "wins": 106,
+        "totalPnlPct": 13.593099999999996,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "target_hit": 39,
+          "horizon_exceeded": 67,
+          "stop_hit": 38
+        },
+        "failureKinds": {
+          "target_undershoot": 8,
+          "target_hit": 31,
+          "horizon_drift_winner": 67,
+          "stop_hit_late": 30,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3927,
+        "maxFavorableTotal": 24.201600000000028,
+        "maxAdverseTotal": -9.5975
+      },
+      "scenario:taiwan": {
+        "n": 2199,
+        "wins": 620,
+        "totalPnlPct": -35.111899999999935,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 1362,
+          "target_hit": 444,
+          "horizon_exceeded": 393
+        },
+        "failureKinds": {
+          "stop_hit_late": 1213,
+          "target_undershoot": 356,
+          "horizon_drift_loser": 217,
+          "horizon_drift_winner": 176,
+          "stop_hit_quick": 73,
+          "stop_overshoot": 76,
+          "target_hit": 88
+        },
+        "holdingDaysTotal": 46106,
+        "maxFavorableTotal": 181.36120000000042,
+        "maxAdverseTotal": -199.9817000000004
+      },
+      "scenario:taiwan|direction:LONG": {
+        "n": 1335,
+        "wins": 444,
+        "totalPnlPct": 25.5382,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 883,
+          "target_hit": 444,
+          "horizon_exceeded": 8
+        },
+        "failureKinds": {
+          "stop_hit_late": 802,
+          "target_undershoot": 356,
+          "horizon_drift_loser": 8,
+          "stop_hit_quick": 40,
+          "stop_overshoot": 41,
+          "target_hit": 88
+        },
+        "holdingDaysTotal": 29032,
+        "maxFavorableTotal": 152.44230000000013,
+        "maxAdverseTotal": -127.4050000000001
+      },
+      "scenario:taiwan|sector:Defense": {
+        "n": 526,
+        "wins": 0,
+        "totalPnlPct": -59.610999999999954,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 526
+        },
+        "failureKinds": {
+          "stop_hit_late": 501,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 23
+        },
+        "holdingDaysTotal": 12384,
+        "maxFavorableTotal": 6.085699999999998,
+        "maxAdverseTotal": -59.610999999999954
+      },
+      "scenario:taiwan|sector:Defense|direction:LONG": {
+        "n": 526,
+        "wins": 0,
+        "totalPnlPct": -59.610999999999954,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 526
+        },
+        "failureKinds": {
+          "stop_hit_late": 501,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 23
+        },
+        "holdingDaysTotal": 12384,
+        "maxFavorableTotal": 6.085699999999998,
+        "maxAdverseTotal": -59.610999999999954
+      },
+      "ticker:RTX": {
+        "n": 484,
+        "wins": 0,
+        "totalPnlPct": -51.26389999999992,
+        "lastUpdated": "2026-04-24",
+        "exitReasons": {
+          "stop_hit": 484
+        },
+        "failureKinds": {
+          "stop_hit_late": 467,
+          "stop_hit_quick": 12,
+          "stop_overshoot": 5
+        },
+        "holdingDaysTotal": 12087,
+        "maxFavorableTotal": 7.661999999999993,
+        "maxAdverseTotal": -51.26389999999992
+      },
+      "ticker:INTC": {
+        "n": 458,
+        "wins": 438,
+        "totalPnlPct": 140.69360000000017,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 438,
+          "stop_hit": 20
+        },
+        "failureKinds": {
+          "target_undershoot": 416,
+          "stop_hit_late": 10,
+          "target_hit": 22,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 8
+        },
+        "holdingDaysTotal": 7368,
+        "maxFavorableTotal": 143.60400000000007,
+        "maxAdverseTotal": -20.455400000000026
+      },
+      "sector:Semiconductor onshoring": {
+        "n": 458,
+        "wins": 438,
+        "totalPnlPct": 140.69360000000017,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 438,
+          "stop_hit": 20
+        },
+        "failureKinds": {
+          "target_undershoot": 416,
+          "stop_hit_late": 10,
+          "target_hit": 22,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 8
+        },
+        "holdingDaysTotal": 7368,
+        "maxFavorableTotal": 143.60400000000007,
+        "maxAdverseTotal": -20.455400000000026
+      },
+      "sector:Semiconductor onshoring|direction:LONG": {
+        "n": 458,
+        "wins": 438,
+        "totalPnlPct": 140.69360000000017,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 438,
+          "stop_hit": 20
+        },
+        "failureKinds": {
+          "target_undershoot": 416,
+          "stop_hit_late": 10,
+          "target_hit": 22,
+          "stop_overshoot": 2,
+          "stop_hit_quick": 8
+        },
+        "holdingDaysTotal": 7368,
+        "maxFavorableTotal": 143.60400000000007,
+        "maxAdverseTotal": -20.455400000000026
+      },
+      "scenario:taiwan|sector:Semiconductor onshoring": {
+        "n": 229,
+        "wins": 219,
+        "totalPnlPct": 70.34679999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 219,
+          "stop_hit": 10
+        },
+        "failureKinds": {
+          "target_undershoot": 208,
+          "stop_hit_late": 5,
+          "target_hit": 11,
+          "stop_overshoot": 1,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 3684,
+        "maxFavorableTotal": 71.80199999999999,
+        "maxAdverseTotal": -10.227700000000027
+      },
+      "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG": {
+        "n": 229,
+        "wins": 219,
+        "totalPnlPct": 70.34679999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 219,
+          "stop_hit": 10
+        },
+        "failureKinds": {
+          "target_undershoot": 208,
+          "stop_hit_late": 5,
+          "target_hit": 11,
+          "stop_overshoot": 1,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 3684,
+        "maxFavorableTotal": 71.80199999999999,
+        "maxAdverseTotal": -10.227700000000027
+      },
+      "ticker:GFS": {
+        "n": 354,
+        "wins": 304,
+        "totalPnlPct": 88.75520000000006,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 50,
+          "target_hit": 304
+        },
+        "failureKinds": {
+          "stop_hit_late": 34,
+          "target_undershoot": 280,
+          "stop_overshoot": 16,
+          "target_hit": 24
+        },
+        "holdingDaysTotal": 8150,
+        "maxFavorableTotal": 95.55880000000005,
+        "maxAdverseTotal": -16.536200000000022
+      },
+      "sector:Foundry alternatives": {
+        "n": 354,
+        "wins": 304,
+        "totalPnlPct": 88.75520000000006,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 50,
+          "target_hit": 304
+        },
+        "failureKinds": {
+          "stop_hit_late": 34,
+          "target_undershoot": 280,
+          "stop_overshoot": 16,
+          "target_hit": 24
+        },
+        "holdingDaysTotal": 8150,
+        "maxFavorableTotal": 95.55880000000005,
+        "maxAdverseTotal": -16.536200000000022
+      },
+      "sector:Foundry alternatives|direction:LONG": {
+        "n": 354,
+        "wins": 304,
+        "totalPnlPct": 88.75520000000006,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 50,
+          "target_hit": 304
+        },
+        "failureKinds": {
+          "stop_hit_late": 34,
+          "target_undershoot": 280,
+          "stop_overshoot": 16,
+          "target_hit": 24
+        },
+        "holdingDaysTotal": 8150,
+        "maxFavorableTotal": 95.55880000000005,
+        "maxAdverseTotal": -16.536200000000022
+      },
+      "scenario:taiwan|sector:Foundry alternatives": {
+        "n": 177,
+        "wins": 152,
+        "totalPnlPct": 44.37759999999999,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 25,
+          "target_hit": 152
+        },
+        "failureKinds": {
+          "stop_hit_late": 17,
+          "target_undershoot": 140,
+          "stop_overshoot": 8,
+          "target_hit": 12
+        },
+        "holdingDaysTotal": 4075,
+        "maxFavorableTotal": 47.779399999999974,
+        "maxAdverseTotal": -8.268099999999992
+      },
+      "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
+        "n": 177,
+        "wins": 152,
+        "totalPnlPct": 44.37759999999999,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 25,
+          "target_hit": 152
+        },
+        "failureKinds": {
+          "stop_hit_late": 17,
+          "target_undershoot": 140,
+          "stop_overshoot": 8,
+          "target_hit": 12
+        },
+        "holdingDaysTotal": 4075,
+        "maxFavorableTotal": 47.779399999999974,
+        "maxAdverseTotal": -8.268099999999992
+      },
+      "ticker:AVAV": {
+        "n": 328,
+        "wins": 0,
+        "totalPnlPct": -54.52560000000004,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 16,
+          "stop_hit": 312
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 16,
+          "stop_hit_late": 302,
+          "stop_overshoot": 8,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 8740,
+        "maxFavorableTotal": 13.589799999999988,
+        "maxAdverseTotal": -55.49940000000004
+      },
+      "sector:Drones / ISR": {
+        "n": 328,
+        "wins": 0,
+        "totalPnlPct": -54.52560000000004,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 16,
+          "stop_hit": 312
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 16,
+          "stop_hit_late": 302,
+          "stop_overshoot": 8,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 8740,
+        "maxFavorableTotal": 13.589799999999988,
+        "maxAdverseTotal": -55.49940000000004
+      },
+      "sector:Drones / ISR|direction:LONG": {
+        "n": 328,
+        "wins": 0,
+        "totalPnlPct": -54.52560000000004,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 16,
+          "stop_hit": 312
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 16,
+          "stop_hit_late": 302,
+          "stop_overshoot": 8,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 8740,
+        "maxFavorableTotal": 13.589799999999988,
+        "maxAdverseTotal": -55.49940000000004
+      },
+      "scenario:taiwan|sector:Drones / ISR": {
+        "n": 164,
+        "wins": 0,
+        "totalPnlPct": -27.26279999999998,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 8,
+          "stop_hit": 156
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 8,
+          "stop_hit_late": 151,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 4370,
+        "maxFavorableTotal": 6.794899999999996,
+        "maxAdverseTotal": -27.749699999999976
+      },
+      "scenario:taiwan|sector:Drones / ISR|direction:LONG": {
+        "n": 164,
+        "wins": 0,
+        "totalPnlPct": -27.26279999999998,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 8,
+          "stop_hit": 156
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 8,
+          "stop_hit_late": 151,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 4370,
+        "maxFavorableTotal": 6.794899999999996,
+        "maxAdverseTotal": -27.749699999999976
+      },
+      "ticker:AAPL": {
+        "n": 420,
+        "wins": 70,
+        "totalPnlPct": -24.998100000000004,
+        "lastUpdated": "2026-05-12",
+        "exitReasons": {
+          "horizon_exceeded": 211,
+          "stop_hit": 209
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 141,
+          "stop_hit_late": 209
+        },
+        "holdingDaysTotal": 10163,
+        "maxFavorableTotal": 8.247400000000024,
+        "maxAdverseTotal": -27.78970000000001
+      },
+      "sector:Consumer hardware": {
+        "n": 420,
+        "wins": 70,
+        "totalPnlPct": -24.998100000000004,
+        "lastUpdated": "2026-05-12",
+        "exitReasons": {
+          "horizon_exceeded": 211,
+          "stop_hit": 209
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 141,
+          "stop_hit_late": 209
+        },
+        "holdingDaysTotal": 10163,
+        "maxFavorableTotal": 8.247400000000024,
+        "maxAdverseTotal": -27.78970000000001
+      },
+      "sector:Consumer hardware|direction:SHORT": {
+        "n": 420,
+        "wins": 70,
+        "totalPnlPct": -24.998100000000004,
+        "lastUpdated": "2026-05-12",
+        "exitReasons": {
+          "horizon_exceeded": 211,
+          "stop_hit": 209
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 141,
+          "stop_hit_late": 209
+        },
+        "holdingDaysTotal": 10163,
+        "maxFavorableTotal": 8.247400000000024,
+        "maxAdverseTotal": -27.78970000000001
+      },
+      "scenario:taiwan|direction:SHORT": {
+        "n": 864,
+        "wins": 176,
+        "totalPnlPct": -60.65010000000002,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 385,
+          "stop_hit": 479
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 176,
+          "horizon_drift_loser": 209,
+          "stop_hit_late": 411,
+          "stop_hit_quick": 33,
+          "stop_overshoot": 35
+        },
+        "holdingDaysTotal": 17074,
+        "maxFavorableTotal": 28.91890000000005,
+        "maxAdverseTotal": -72.57670000000002
+      },
+      "scenario:taiwan|sector:Consumer hardware": {
+        "n": 209,
+        "wins": 35,
+        "totalPnlPct": -12.686200000000003,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 111,
+          "stop_hit": 98
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 35,
+          "horizon_drift_loser": 76,
+          "stop_hit_late": 98
+        },
+        "holdingDaysTotal": 5121,
+        "maxFavorableTotal": 4.123699999999997,
+        "maxAdverseTotal": -14.1231
+      },
+      "scenario:taiwan|sector:Consumer hardware|direction:SHORT": {
+        "n": 209,
+        "wins": 35,
+        "totalPnlPct": -12.686200000000003,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 111,
+          "stop_hit": 98
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 35,
+          "horizon_drift_loser": 76,
+          "stop_hit_late": 98
+        },
+        "holdingDaysTotal": 5121,
+        "maxFavorableTotal": 4.123699999999997,
+        "maxAdverseTotal": -14.1231
+      },
+      "ticker:NVDA": {
+        "n": 470,
+        "wins": 122,
+        "totalPnlPct": -29.160600000000013,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 198,
+          "stop_hit": 272
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 122,
+          "horizon_drift_loser": 76,
+          "stop_hit_late": 248,
+          "stop_hit_quick": 6,
+          "stop_overshoot": 18
+        },
+        "holdingDaysTotal": 7582,
+        "maxFavorableTotal": 17.447399999999963,
+        "maxAdverseTotal": -36.86860000000007
+      },
+      "sector:AI / Semis": {
+        "n": 470,
+        "wins": 122,
+        "totalPnlPct": -29.160600000000013,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 198,
+          "stop_hit": 272
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 122,
+          "horizon_drift_loser": 76,
+          "stop_hit_late": 248,
+          "stop_hit_quick": 6,
+          "stop_overshoot": 18
+        },
+        "holdingDaysTotal": 7582,
+        "maxFavorableTotal": 17.447399999999963,
+        "maxAdverseTotal": -36.86860000000007
+      },
+      "sector:AI / Semis|direction:SHORT": {
+        "n": 470,
+        "wins": 122,
+        "totalPnlPct": -29.160600000000013,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 198,
+          "stop_hit": 272
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 122,
+          "horizon_drift_loser": 76,
+          "stop_hit_late": 248,
+          "stop_hit_quick": 6,
+          "stop_overshoot": 18
+        },
+        "holdingDaysTotal": 7582,
+        "maxFavorableTotal": 17.447399999999963,
+        "maxAdverseTotal": -36.86860000000007
+      },
+      "scenario:taiwan|sector:AI / Semis": {
+        "n": 235,
+        "wins": 61,
+        "totalPnlPct": -14.580299999999992,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 99,
+          "stop_hit": 136
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 61,
+          "horizon_drift_loser": 38,
+          "stop_hit_late": 124,
+          "stop_hit_quick": 3,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 3791,
+        "maxFavorableTotal": 8.72369999999999,
+        "maxAdverseTotal": -18.434299999999997
+      },
+      "scenario:taiwan|sector:AI / Semis|direction:SHORT": {
+        "n": 235,
+        "wins": 61,
+        "totalPnlPct": -14.580299999999992,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 99,
+          "stop_hit": 136
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 61,
+          "horizon_drift_loser": 38,
+          "stop_hit_late": 124,
+          "stop_hit_quick": 3,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 3791,
+        "maxFavorableTotal": 8.72369999999999,
+        "maxAdverseTotal": -18.434299999999997
+      },
+      "ticker:QCOM": {
+        "n": 241,
+        "wins": 50,
+        "totalPnlPct": -18.400699999999993,
+        "lastUpdated": "2026-05-11",
+        "exitReasons": {
+          "horizon_exceeded": 93,
+          "stop_hit": 148
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 50,
+          "horizon_drift_loser": 43,
+          "stop_hit_late": 95,
+          "stop_overshoot": 23,
+          "stop_hit_quick": 30
+        },
+        "holdingDaysTotal": 4067,
+        "maxFavorableTotal": 7.530499999999991,
+        "maxAdverseTotal": -22.247399999999978
+      },
+      "sector:Handsets": {
+        "n": 241,
+        "wins": 50,
+        "totalPnlPct": -18.400699999999993,
+        "lastUpdated": "2026-05-11",
+        "exitReasons": {
+          "horizon_exceeded": 93,
+          "stop_hit": 148
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 50,
+          "horizon_drift_loser": 43,
+          "stop_hit_late": 95,
+          "stop_overshoot": 23,
+          "stop_hit_quick": 30
+        },
+        "holdingDaysTotal": 4067,
+        "maxFavorableTotal": 7.530499999999991,
+        "maxAdverseTotal": -22.247399999999978
+      },
+      "sector:Handsets|direction:SHORT": {
+        "n": 241,
+        "wins": 50,
+        "totalPnlPct": -18.400699999999993,
+        "lastUpdated": "2026-05-11",
+        "exitReasons": {
+          "horizon_exceeded": 93,
+          "stop_hit": 148
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 50,
+          "horizon_drift_loser": 43,
+          "stop_hit_late": 95,
+          "stop_overshoot": 23,
+          "stop_hit_quick": 30
+        },
+        "holdingDaysTotal": 4067,
+        "maxFavorableTotal": 7.530499999999991,
+        "maxAdverseTotal": -22.247399999999978
+      },
+      "scenario:taiwan|sector:Handsets": {
+        "n": 241,
+        "wins": 50,
+        "totalPnlPct": -18.400699999999993,
+        "lastUpdated": "2026-05-11",
+        "exitReasons": {
+          "horizon_exceeded": 93,
+          "stop_hit": 148
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 50,
+          "horizon_drift_loser": 43,
+          "stop_hit_late": 95,
+          "stop_overshoot": 23,
+          "stop_hit_quick": 30
+        },
+        "holdingDaysTotal": 4067,
+        "maxFavorableTotal": 7.530499999999991,
+        "maxAdverseTotal": -22.247399999999978
+      },
+      "scenario:taiwan|sector:Handsets|direction:SHORT": {
+        "n": 241,
+        "wins": 50,
+        "totalPnlPct": -18.400699999999993,
+        "lastUpdated": "2026-05-11",
+        "exitReasons": {
+          "horizon_exceeded": 93,
+          "stop_hit": 148
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 50,
+          "horizon_drift_loser": 43,
+          "stop_hit_late": 95,
+          "stop_overshoot": 23,
+          "stop_hit_quick": 30
+        },
+        "holdingDaysTotal": 4067,
+        "maxFavorableTotal": 7.530499999999991,
+        "maxAdverseTotal": -22.247399999999978
+      },
+      "ticker:TSM": {
+        "n": 179,
+        "wins": 30,
+        "totalPnlPct": -14.982899999999994,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 82,
+          "stop_hit": 97
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 30,
+          "horizon_drift_loser": 52,
+          "stop_hit_late": 94,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 4095,
+        "maxFavorableTotal": 8.54099999999999,
+        "maxAdverseTotal": -17.77189999999999
+      },
+      "sector:Semiconductor manufacturing": {
+        "n": 179,
+        "wins": 30,
+        "totalPnlPct": -14.982899999999994,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 82,
+          "stop_hit": 97
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 30,
+          "horizon_drift_loser": 52,
+          "stop_hit_late": 94,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 4095,
+        "maxFavorableTotal": 8.54099999999999,
+        "maxAdverseTotal": -17.77189999999999
+      },
+      "sector:Semiconductor manufacturing|direction:SHORT": {
+        "n": 179,
+        "wins": 30,
+        "totalPnlPct": -14.982899999999994,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 82,
+          "stop_hit": 97
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 30,
+          "horizon_drift_loser": 52,
+          "stop_hit_late": 94,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 4095,
+        "maxFavorableTotal": 8.54099999999999,
+        "maxAdverseTotal": -17.77189999999999
+      },
+      "scenario:taiwan|sector:Semiconductor manufacturing": {
+        "n": 179,
+        "wins": 30,
+        "totalPnlPct": -14.982899999999994,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 82,
+          "stop_hit": 97
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 30,
+          "horizon_drift_loser": 52,
+          "stop_hit_late": 94,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 4095,
+        "maxFavorableTotal": 8.54099999999999,
+        "maxAdverseTotal": -17.77189999999999
+      },
+      "scenario:taiwan|sector:Semiconductor manufacturing|direction:SHORT": {
+        "n": 179,
+        "wins": 30,
+        "totalPnlPct": -14.982899999999994,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 82,
+          "stop_hit": 97
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 30,
+          "horizon_drift_loser": 52,
+          "stop_hit_late": 94,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 4095,
+        "maxFavorableTotal": 8.54099999999999,
+        "maxAdverseTotal": -17.77189999999999
+      },
+      "ticker:COPX": {
+        "n": 82,
+        "wins": 26,
+        "totalPnlPct": -0.3921000000000007,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "stop_hit": 56,
+          "target_hit": 26
+        },
+        "failureKinds": {
+          "stop_hit_quick": 4,
+          "stop_overshoot": 10,
+          "stop_hit_late": 42,
+          "target_hit": 24,
+          "target_undershoot": 2
+        },
+        "holdingDaysTotal": 1576,
+        "maxFavorableTotal": 6.754500000000003,
+        "maxAdverseTotal": -7.1503999999999985
+      },
+      "sector:Copper miners": {
+        "n": 82,
+        "wins": 26,
+        "totalPnlPct": -0.3921000000000007,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "stop_hit": 56,
+          "target_hit": 26
+        },
+        "failureKinds": {
+          "stop_hit_quick": 4,
+          "stop_overshoot": 10,
+          "stop_hit_late": 42,
+          "target_hit": 24,
+          "target_undershoot": 2
+        },
+        "holdingDaysTotal": 1576,
+        "maxFavorableTotal": 6.754500000000003,
+        "maxAdverseTotal": -7.1503999999999985
+      },
+      "sector:Copper miners|direction:LONG": {
+        "n": 82,
+        "wins": 26,
+        "totalPnlPct": -0.3921000000000007,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "stop_hit": 56,
+          "target_hit": 26
+        },
+        "failureKinds": {
+          "stop_hit_quick": 4,
+          "stop_overshoot": 10,
+          "stop_hit_late": 42,
+          "target_hit": 24,
+          "target_undershoot": 2
+        },
+        "holdingDaysTotal": 1576,
+        "maxFavorableTotal": 6.754500000000003,
+        "maxAdverseTotal": -7.1503999999999985
+      },
+      "scenario:taiwan|sector:Copper miners": {
+        "n": 82,
+        "wins": 26,
+        "totalPnlPct": -0.3921000000000007,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "stop_hit": 56,
+          "target_hit": 26
+        },
+        "failureKinds": {
+          "stop_hit_quick": 4,
+          "stop_overshoot": 10,
+          "stop_hit_late": 42,
+          "target_hit": 24,
+          "target_undershoot": 2
+        },
+        "holdingDaysTotal": 1576,
+        "maxFavorableTotal": 6.754500000000003,
+        "maxAdverseTotal": -7.1503999999999985
+      },
+      "scenario:taiwan|sector:Copper miners|direction:LONG": {
+        "n": 82,
+        "wins": 26,
+        "totalPnlPct": -0.3921000000000007,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "stop_hit": 56,
+          "target_hit": 26
+        },
+        "failureKinds": {
+          "stop_hit_quick": 4,
+          "stop_overshoot": 10,
+          "stop_hit_late": 42,
+          "target_hit": 24,
+          "target_undershoot": 2
+        },
+        "holdingDaysTotal": 1576,
+        "maxFavorableTotal": 6.754500000000003,
+        "maxAdverseTotal": -7.1503999999999985
+      },
+      "ticker:REMX": {
+        "n": 97,
+        "wins": 34,
+        "totalPnlPct": 0.7679000000000047,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 63,
+          "target_hit": 34
+        },
+        "failureKinds": {
+          "stop_hit_late": 47,
+          "stop_overshoot": 12,
+          "target_hit": 32,
+          "target_undershoot": 2,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1804,
+        "maxFavorableTotal": 9.667399999999999,
+        "maxAdverseTotal": -8.544999999999998
+      },
+      "sector:Rare earth miners": {
+        "n": 97,
+        "wins": 34,
+        "totalPnlPct": 0.7679000000000047,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 63,
+          "target_hit": 34
+        },
+        "failureKinds": {
+          "stop_hit_late": 47,
+          "stop_overshoot": 12,
+          "target_hit": 32,
+          "target_undershoot": 2,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1804,
+        "maxFavorableTotal": 9.667399999999999,
+        "maxAdverseTotal": -8.544999999999998
+      },
+      "sector:Rare earth miners|direction:LONG": {
+        "n": 97,
+        "wins": 34,
+        "totalPnlPct": 0.7679000000000047,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 63,
+          "target_hit": 34
+        },
+        "failureKinds": {
+          "stop_hit_late": 47,
+          "stop_overshoot": 12,
+          "target_hit": 32,
+          "target_undershoot": 2,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1804,
+        "maxFavorableTotal": 9.667399999999999,
+        "maxAdverseTotal": -8.544999999999998
+      },
+      "scenario:taiwan|sector:Rare earth miners": {
+        "n": 97,
+        "wins": 34,
+        "totalPnlPct": 0.7679000000000047,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 63,
+          "target_hit": 34
+        },
+        "failureKinds": {
+          "stop_hit_late": 47,
+          "stop_overshoot": 12,
+          "target_hit": 32,
+          "target_undershoot": 2,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1804,
+        "maxFavorableTotal": 9.667399999999999,
+        "maxAdverseTotal": -8.544999999999998
+      },
+      "scenario:taiwan|sector:Rare earth miners|direction:LONG": {
+        "n": 97,
+        "wins": 34,
+        "totalPnlPct": 0.7679000000000047,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 63,
+          "target_hit": 34
+        },
+        "failureKinds": {
+          "stop_hit_late": 47,
+          "stop_overshoot": 12,
+          "target_hit": 32,
+          "target_undershoot": 2,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1804,
+        "maxFavorableTotal": 9.667399999999999,
+        "maxAdverseTotal": -8.544999999999998
+      },
+      "ticker:URA": {
+        "n": 171,
+        "wins": 39,
+        "totalPnlPct": -7.1297000000000015,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 132,
+          "target_hit": 39
+        },
+        "failureKinds": {
+          "stop_overshoot": 12,
+          "stop_hit_late": 108,
+          "target_hit": 27,
+          "target_undershoot": 12,
+          "stop_hit_quick": 12
+        },
+        "holdingDaysTotal": 3234,
+        "maxFavorableTotal": 10.49330000000001,
+        "maxAdverseTotal": -16.624400000000012
+      },
+      "sector:Uranium / nuclear": {
+        "n": 171,
+        "wins": 39,
+        "totalPnlPct": -7.1297000000000015,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 132,
+          "target_hit": 39
+        },
+        "failureKinds": {
+          "stop_overshoot": 12,
+          "stop_hit_late": 108,
+          "target_hit": 27,
+          "target_undershoot": 12,
+          "stop_hit_quick": 12
+        },
+        "holdingDaysTotal": 3234,
+        "maxFavorableTotal": 10.49330000000001,
+        "maxAdverseTotal": -16.624400000000012
+      },
+      "sector:Uranium / nuclear|direction:LONG": {
+        "n": 171,
+        "wins": 39,
+        "totalPnlPct": -7.1297000000000015,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 132,
+          "target_hit": 39
+        },
+        "failureKinds": {
+          "stop_overshoot": 12,
+          "stop_hit_late": 108,
+          "target_hit": 27,
+          "target_undershoot": 12,
+          "stop_hit_quick": 12
+        },
+        "holdingDaysTotal": 3234,
+        "maxFavorableTotal": 10.49330000000001,
+        "maxAdverseTotal": -16.624400000000012
+      },
+      "scenario:taiwan|sector:Uranium / nuclear": {
+        "n": 60,
+        "wins": 13,
+        "totalPnlPct": -2.6882,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 47,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 39,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1139,
+        "maxFavorableTotal": 3.558399999999999,
+        "maxAdverseTotal": -5.8530999999999995
+      },
+      "scenario:taiwan|sector:Uranium / nuclear|direction:LONG": {
+        "n": 60,
+        "wins": 13,
+        "totalPnlPct": -2.6882,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 47,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 39,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1139,
+        "maxFavorableTotal": 3.558399999999999,
+        "maxAdverseTotal": -5.8530999999999995
+      },
+      "scenario:europe": {
+        "n": 1723,
+        "wins": 200,
+        "totalPnlPct": -151.13540000000023,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 1369,
+          "horizon_exceeded": 332,
+          "target_hit": 22
+        },
+        "failureKinds": {
+          "stop_hit_late": 1271,
+          "horizon_drift_winner": 178,
+          "target_hit": 18,
+          "horizon_drift_loser": 154,
+          "stop_overshoot": 58,
+          "stop_hit_quick": 40,
+          "target_undershoot": 4
+        },
+        "holdingDaysTotal": 45181,
+        "maxFavorableTotal": 61.44110000000006,
+        "maxAdverseTotal": -177.8953000000002
+      },
+      "scenario:europe|direction:LONG": {
+        "n": 1374,
+        "wins": 55,
+        "totalPnlPct": -141.27370000000016,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 1249,
+          "horizon_exceeded": 103,
+          "target_hit": 22
+        },
+        "failureKinds": {
+          "stop_hit_late": 1167,
+          "horizon_drift_winner": 33,
+          "target_hit": 18,
+          "horizon_drift_loser": 70,
+          "stop_overshoot": 43,
+          "stop_hit_quick": 39,
+          "target_undershoot": 4
+        },
+        "holdingDaysTotal": 36718,
+        "maxFavorableTotal": 37.334199999999974,
+        "maxAdverseTotal": -151.0360000000002
+      },
+      "scenario:europe|sector:Defense": {
+        "n": 630,
+        "wins": 0,
+        "totalPnlPct": -70.51280000000003,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 630
+        },
+        "failureKinds": {
+          "stop_hit_late": 605,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 20
+        },
+        "holdingDaysTotal": 16432,
+        "maxFavorableTotal": 6.568899999999996,
+        "maxAdverseTotal": -70.51280000000003
+      },
+      "scenario:europe|sector:Defense|direction:LONG": {
+        "n": 630,
+        "wins": 0,
+        "totalPnlPct": -70.51280000000003,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 630
+        },
+        "failureKinds": {
+          "stop_hit_late": 605,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 20
+        },
+        "holdingDaysTotal": 16432,
+        "maxFavorableTotal": 6.568899999999996,
+        "maxAdverseTotal": -70.51280000000003
+      },
+      "ticker:GD": {
+        "n": 251,
+        "wins": 0,
+        "totalPnlPct": -22.726900000000004,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 251
+        },
+        "failureKinds": {
+          "stop_hit_late": 248,
+          "stop_overshoot": 3
+        },
+        "holdingDaysTotal": 8018,
+        "maxFavorableTotal": 1.7311999999999996,
+        "maxAdverseTotal": -22.726900000000004
+      },
+      "ticker:HII": {
+        "n": 219,
+        "wins": 0,
+        "totalPnlPct": -28.706900000000022,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 219
+        },
+        "failureKinds": {
+          "stop_hit_late": 199,
+          "stop_overshoot": 16,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 4718,
+        "maxFavorableTotal": 3.9476000000000004,
+        "maxAdverseTotal": -28.706900000000022
+      },
+      "sector:Naval defense": {
+        "n": 219,
+        "wins": 0,
+        "totalPnlPct": -28.706900000000022,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 219
+        },
+        "failureKinds": {
+          "stop_hit_late": 199,
+          "stop_overshoot": 16,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 4718,
+        "maxFavorableTotal": 3.9476000000000004,
+        "maxAdverseTotal": -28.706900000000022
+      },
+      "sector:Naval defense|direction:LONG": {
+        "n": 219,
+        "wins": 0,
+        "totalPnlPct": -28.706900000000022,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 219
+        },
+        "failureKinds": {
+          "stop_hit_late": 199,
+          "stop_overshoot": 16,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 4718,
+        "maxFavorableTotal": 3.9476000000000004,
+        "maxAdverseTotal": -28.706900000000022
+      },
+      "scenario:europe|sector:Naval defense": {
+        "n": 219,
+        "wins": 0,
+        "totalPnlPct": -28.706900000000022,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 219
+        },
+        "failureKinds": {
+          "stop_hit_late": 199,
+          "stop_overshoot": 16,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 4718,
+        "maxFavorableTotal": 3.9476000000000004,
+        "maxAdverseTotal": -28.706900000000022
+      },
+      "scenario:europe|sector:Naval defense|direction:LONG": {
+        "n": 219,
+        "wins": 0,
+        "totalPnlPct": -28.706900000000022,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 219
+        },
+        "failureKinds": {
+          "stop_hit_late": 199,
+          "stop_overshoot": 16,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 4718,
+        "maxFavorableTotal": 3.9476000000000004,
+        "maxAdverseTotal": -28.706900000000022
+      },
+      "scenario:europe|sector:Gas / LNG": {
+        "n": 161,
+        "wins": 42,
+        "totalPnlPct": -7.441600000000004,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 52,
+          "target_hit": 9,
+          "stop_hit": 100
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 33,
+          "target_hit": 9,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 88,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 5
+        },
+        "holdingDaysTotal": 5013,
+        "maxFavorableTotal": 13.370599999999998,
+        "maxAdverseTotal": -12.160599999999993
+      },
+      "scenario:europe|sector:Gas / LNG|direction:LONG": {
+        "n": 161,
+        "wins": 42,
+        "totalPnlPct": -7.441600000000004,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 52,
+          "target_hit": 9,
+          "stop_hit": 100
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 33,
+          "target_hit": 9,
+          "horizon_drift_loser": 19,
+          "stop_hit_late": 88,
+          "stop_overshoot": 7,
+          "stop_hit_quick": 5
+        },
+        "holdingDaysTotal": 5013,
+        "maxFavorableTotal": 13.370599999999998,
+        "maxAdverseTotal": -12.160599999999993
+      },
+      "ticker:KMI": {
+        "n": 54,
+        "wins": 0,
+        "totalPnlPct": -4.078600000000002,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 54
+        },
+        "failureKinds": {
+          "stop_hit_late": 54
+        },
+        "holdingDaysTotal": 1943,
+        "maxFavorableTotal": 0.4140999999999999,
+        "maxAdverseTotal": -4.078600000000002
+      },
+      "sector:Midstream": {
+        "n": 54,
+        "wins": 0,
+        "totalPnlPct": -4.078600000000002,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 54
+        },
+        "failureKinds": {
+          "stop_hit_late": 54
+        },
+        "holdingDaysTotal": 1943,
+        "maxFavorableTotal": 0.4140999999999999,
+        "maxAdverseTotal": -4.078600000000002
+      },
+      "sector:Midstream|direction:LONG": {
+        "n": 54,
+        "wins": 0,
+        "totalPnlPct": -4.078600000000002,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 54
+        },
+        "failureKinds": {
+          "stop_hit_late": 54
+        },
+        "holdingDaysTotal": 1943,
+        "maxFavorableTotal": 0.4140999999999999,
+        "maxAdverseTotal": -4.078600000000002
+      },
+      "scenario:europe|sector:Midstream": {
+        "n": 54,
+        "wins": 0,
+        "totalPnlPct": -4.078600000000002,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 54
+        },
+        "failureKinds": {
+          "stop_hit_late": 54
+        },
+        "holdingDaysTotal": 1943,
+        "maxFavorableTotal": 0.4140999999999999,
+        "maxAdverseTotal": -4.078600000000002
+      },
+      "scenario:europe|sector:Midstream|direction:LONG": {
+        "n": 54,
+        "wins": 0,
+        "totalPnlPct": -4.078600000000002,
+        "lastUpdated": "2026-04-27",
+        "exitReasons": {
+          "stop_hit": 54
+        },
+        "failureKinds": {
+          "stop_hit_late": 54
+        },
+        "holdingDaysTotal": 1943,
+        "maxFavorableTotal": 0.4140999999999999,
+        "maxAdverseTotal": -4.078600000000002
+      },
+      "ticker:EQT": {
+        "n": 115,
+        "wins": 0,
+        "totalPnlPct": -9.679699999999995,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 29,
+          "stop_hit": 86
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 29,
+          "stop_hit_late": 81,
+          "stop_hit_quick": 4,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 3553,
+        "maxFavorableTotal": 6.2213,
+        "maxAdverseTotal": -10.773799999999998
+      },
+      "sector:Natural gas": {
+        "n": 115,
+        "wins": 0,
+        "totalPnlPct": -9.679699999999995,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 29,
+          "stop_hit": 86
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 29,
+          "stop_hit_late": 81,
+          "stop_hit_quick": 4,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 3553,
+        "maxFavorableTotal": 6.2213,
+        "maxAdverseTotal": -10.773799999999998
+      },
+      "sector:Natural gas|direction:LONG": {
+        "n": 115,
+        "wins": 0,
+        "totalPnlPct": -9.679699999999995,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 29,
+          "stop_hit": 86
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 29,
+          "stop_hit_late": 81,
+          "stop_hit_quick": 4,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 3553,
+        "maxFavorableTotal": 6.2213,
+        "maxAdverseTotal": -10.773799999999998
+      },
+      "scenario:europe|sector:Natural gas": {
+        "n": 115,
+        "wins": 0,
+        "totalPnlPct": -9.679699999999995,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 29,
+          "stop_hit": 86
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 29,
+          "stop_hit_late": 81,
+          "stop_hit_quick": 4,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 3553,
+        "maxFavorableTotal": 6.2213,
+        "maxAdverseTotal": -10.773799999999998
+      },
+      "scenario:europe|sector:Natural gas|direction:LONG": {
+        "n": 115,
+        "wins": 0,
+        "totalPnlPct": -9.679699999999995,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "horizon_exceeded": 29,
+          "stop_hit": 86
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 29,
+          "stop_hit_late": 81,
+          "stop_hit_quick": 4,
+          "stop_overshoot": 1
+        },
+        "holdingDaysTotal": 3553,
+        "maxFavorableTotal": 6.2213,
+        "maxAdverseTotal": -10.773799999999998
+      },
+      "scenario:europe|direction:SHORT": {
+        "n": 349,
+        "wins": 145,
+        "totalPnlPct": -9.861699999999997,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 229,
+          "stop_hit": 120
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 145,
+          "horizon_drift_loser": 84,
+          "stop_hit_late": 104,
+          "stop_overshoot": 15,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 8463,
+        "maxFavorableTotal": 24.106899999999975,
+        "maxAdverseTotal": -26.859299999999987
+      },
+      "scenario:europe|sector:Airlines": {
+        "n": 179,
+        "wins": 70,
+        "totalPnlPct": -4.039700000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 137,
+          "stop_hit": 42
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 67,
+          "stop_hit_late": 32,
+          "stop_overshoot": 10
+        },
+        "holdingDaysTotal": 4519,
+        "maxFavorableTotal": 12.610900000000022,
+        "maxAdverseTotal": -12.669299999999984
+      },
+      "scenario:europe|sector:Airlines|direction:SHORT": {
+        "n": 179,
+        "wins": 70,
+        "totalPnlPct": -4.039700000000003,
+        "lastUpdated": "2026-05-06",
+        "exitReasons": {
+          "horizon_exceeded": 137,
+          "stop_hit": 42
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 70,
+          "horizon_drift_loser": 67,
+          "stop_hit_late": 32,
+          "stop_overshoot": 10
+        },
+        "holdingDaysTotal": 4519,
+        "maxFavorableTotal": 12.610900000000022,
+        "maxAdverseTotal": -12.669299999999984
+      },
+      "ticker:CCL": {
+        "n": 170,
+        "wins": 75,
+        "totalPnlPct": -5.821999999999997,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 92,
+          "stop_hit": 78
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 75,
+          "horizon_drift_loser": 17,
+          "stop_hit_late": 72,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3944,
+        "maxFavorableTotal": 11.496000000000011,
+        "maxAdverseTotal": -14.190000000000001
+      },
+      "sector:Leisure travel": {
+        "n": 170,
+        "wins": 75,
+        "totalPnlPct": -5.821999999999997,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 92,
+          "stop_hit": 78
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 75,
+          "horizon_drift_loser": 17,
+          "stop_hit_late": 72,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3944,
+        "maxFavorableTotal": 11.496000000000011,
+        "maxAdverseTotal": -14.190000000000001
+      },
+      "sector:Leisure travel|direction:SHORT": {
+        "n": 170,
+        "wins": 75,
+        "totalPnlPct": -5.821999999999997,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 92,
+          "stop_hit": 78
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 75,
+          "horizon_drift_loser": 17,
+          "stop_hit_late": 72,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3944,
+        "maxFavorableTotal": 11.496000000000011,
+        "maxAdverseTotal": -14.190000000000001
+      },
+      "scenario:europe|sector:Leisure travel": {
+        "n": 170,
+        "wins": 75,
+        "totalPnlPct": -5.821999999999997,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 92,
+          "stop_hit": 78
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 75,
+          "horizon_drift_loser": 17,
+          "stop_hit_late": 72,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3944,
+        "maxFavorableTotal": 11.496000000000011,
+        "maxAdverseTotal": -14.190000000000001
+      },
+      "scenario:europe|sector:Leisure travel|direction:SHORT": {
+        "n": 170,
+        "wins": 75,
+        "totalPnlPct": -5.821999999999997,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "horizon_exceeded": 92,
+          "stop_hit": 78
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 75,
+          "horizon_drift_loser": 17,
+          "stop_hit_late": 72,
+          "stop_overshoot": 5,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 3944,
+        "maxFavorableTotal": 11.496000000000011,
+        "maxAdverseTotal": -14.190000000000001
+      },
+      "ticker:UNG": {
+        "n": 86,
+        "wins": 0,
+        "totalPnlPct": -12.392899999999996,
+        "lastUpdated": "2026-04-29",
+        "exitReasons": {
+          "horizon_exceeded": 22,
+          "stop_hit": 64
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 22,
+          "stop_hit_late": 64
+        },
+        "holdingDaysTotal": 3434,
+        "maxFavorableTotal": 3.0387000000000013,
+        "maxAdverseTotal": -13.177199999999994
+      },
+      "sector:Gas ETF": {
+        "n": 86,
+        "wins": 0,
+        "totalPnlPct": -12.392899999999996,
+        "lastUpdated": "2026-04-29",
+        "exitReasons": {
+          "horizon_exceeded": 22,
+          "stop_hit": 64
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 22,
+          "stop_hit_late": 64
+        },
+        "holdingDaysTotal": 3434,
+        "maxFavorableTotal": 3.0387000000000013,
+        "maxAdverseTotal": -13.177199999999994
+      },
+      "sector:Gas ETF|direction:LONG": {
+        "n": 86,
+        "wins": 0,
+        "totalPnlPct": -12.392899999999996,
+        "lastUpdated": "2026-04-29",
+        "exitReasons": {
+          "horizon_exceeded": 22,
+          "stop_hit": 64
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 22,
+          "stop_hit_late": 64
+        },
+        "holdingDaysTotal": 3434,
+        "maxFavorableTotal": 3.0387000000000013,
+        "maxAdverseTotal": -13.177199999999994
+      },
+      "scenario:europe|sector:Gas ETF": {
+        "n": 86,
+        "wins": 0,
+        "totalPnlPct": -12.392899999999996,
+        "lastUpdated": "2026-04-29",
+        "exitReasons": {
+          "horizon_exceeded": 22,
+          "stop_hit": 64
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 22,
+          "stop_hit_late": 64
+        },
+        "holdingDaysTotal": 3434,
+        "maxFavorableTotal": 3.0387000000000013,
+        "maxAdverseTotal": -13.177199999999994
+      },
+      "scenario:europe|sector:Gas ETF|direction:LONG": {
+        "n": 86,
+        "wins": 0,
+        "totalPnlPct": -12.392899999999996,
+        "lastUpdated": "2026-04-29",
+        "exitReasons": {
+          "horizon_exceeded": 22,
+          "stop_hit": 64
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 22,
+          "stop_hit_late": 64
+        },
+        "holdingDaysTotal": 3434,
+        "maxFavorableTotal": 3.0387000000000013,
+        "maxAdverseTotal": -13.177199999999994
+      },
+      "scenario:europe|sector:Uranium / nuclear": {
+        "n": 51,
+        "wins": 13,
+        "totalPnlPct": -1.7532999999999996,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 38,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 30,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 956,
+        "maxFavorableTotal": 3.3764999999999996,
+        "maxAdverseTotal": -4.918200000000001
+      },
+      "scenario:europe|sector:Uranium / nuclear|direction:LONG": {
+        "n": 51,
+        "wins": 13,
+        "totalPnlPct": -1.7532999999999996,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 38,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 30,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 956,
+        "maxFavorableTotal": 3.3764999999999996,
+        "maxAdverseTotal": -4.918200000000001
+      },
+      "ticker:GLD": {
+        "n": 116,
+        "wins": 0,
+        "totalPnlPct": -13.4158,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 116
+        },
+        "failureKinds": {
+          "stop_hit_late": 92,
+          "stop_overshoot": 20,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1338,
+        "maxFavorableTotal": 0.7929999999999995,
+        "maxAdverseTotal": -13.4158
+      },
+      "sector:Gold": {
+        "n": 116,
+        "wins": 0,
+        "totalPnlPct": -13.4158,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 116
+        },
+        "failureKinds": {
+          "stop_hit_late": 92,
+          "stop_overshoot": 20,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1338,
+        "maxFavorableTotal": 0.7929999999999995,
+        "maxAdverseTotal": -13.4158
+      },
+      "sector:Gold|direction:LONG": {
+        "n": 116,
+        "wins": 0,
+        "totalPnlPct": -13.4158,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 116
+        },
+        "failureKinds": {
+          "stop_hit_late": 92,
+          "stop_overshoot": 20,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1338,
+        "maxFavorableTotal": 0.7929999999999995,
+        "maxAdverseTotal": -13.4158
+      },
+      "scenario:europe|sector:Gold": {
+        "n": 58,
+        "wins": 0,
+        "totalPnlPct": -6.707899999999997,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 58
+        },
+        "failureKinds": {
+          "stop_hit_late": 46,
+          "stop_overshoot": 10,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 669,
+        "maxFavorableTotal": 0.39649999999999985,
+        "maxAdverseTotal": -6.707899999999997
+      },
+      "scenario:europe|sector:Gold|direction:LONG": {
+        "n": 58,
+        "wins": 0,
+        "totalPnlPct": -6.707899999999997,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 58
+        },
+        "failureKinds": {
+          "stop_hit_late": 46,
+          "stop_overshoot": 10,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 669,
+        "maxFavorableTotal": 0.39649999999999985,
+        "maxAdverseTotal": -6.707899999999997
+      },
+      "scenario:korea": {
+        "n": 2024,
+        "wins": 515,
+        "totalPnlPct": -44.94450000000003,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 1373,
+          "horizon_exceeded": 266,
+          "target_hit": 385
+        },
+        "failureKinds": {
+          "stop_hit_late": 1276,
+          "horizon_drift_loser": 136,
+          "target_undershoot": 352,
+          "horizon_drift_winner": 130,
+          "target_hit": 33,
+          "stop_overshoot": 53,
+          "stop_hit_quick": 44
+        },
+        "holdingDaysTotal": 43228,
+        "maxFavorableTotal": 161.27830000000006,
+        "maxAdverseTotal": -190.38220000000086
+      },
+      "scenario:korea|direction:LONG": {
+        "n": 1352,
+        "wins": 384,
+        "totalPnlPct": 7.926500000000028,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 960,
+          "horizon_exceeded": 8,
+          "target_hit": 384
+        },
+        "failureKinds": {
+          "stop_hit_late": 891,
+          "horizon_drift_loser": 8,
+          "target_undershoot": 352,
+          "stop_overshoot": 31,
+          "target_hit": 32,
+          "stop_hit_quick": 38
+        },
+        "holdingDaysTotal": 30329,
+        "maxFavorableTotal": 137.34030000000024,
+        "maxAdverseTotal": -128.94550000000004
+      },
+      "scenario:korea|sector:Defense": {
+        "n": 664,
+        "wins": 0,
+        "totalPnlPct": -70.13900000000001,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 664
+        },
+        "failureKinds": {
+          "stop_hit_late": 633,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 27
+        },
+        "holdingDaysTotal": 16392,
+        "maxFavorableTotal": 7.009099999999995,
+        "maxAdverseTotal": -70.13900000000001
+      },
+      "scenario:korea|sector:Defense|direction:LONG": {
+        "n": 664,
+        "wins": 0,
+        "totalPnlPct": -70.13900000000001,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 664
+        },
+        "failureKinds": {
+          "stop_hit_late": 633,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 27
+        },
+        "holdingDaysTotal": 16392,
+        "maxFavorableTotal": 7.009099999999995,
+        "maxAdverseTotal": -70.13900000000001
+      },
+      "scenario:korea|sector:Drones / ISR": {
+        "n": 164,
+        "wins": 0,
+        "totalPnlPct": -27.26279999999998,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 8,
+          "stop_hit": 156
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 8,
+          "stop_hit_late": 151,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 4370,
+        "maxFavorableTotal": 6.794899999999996,
+        "maxAdverseTotal": -27.749699999999976
+      },
+      "scenario:korea|sector:Drones / ISR|direction:LONG": {
+        "n": 164,
+        "wins": 0,
+        "totalPnlPct": -27.26279999999998,
+        "lastUpdated": "2026-05-13",
+        "exitReasons": {
+          "horizon_exceeded": 8,
+          "stop_hit": 156
+        },
+        "failureKinds": {
+          "horizon_drift_loser": 8,
+          "stop_hit_late": 151,
+          "stop_overshoot": 4,
+          "stop_hit_quick": 1
+        },
+        "holdingDaysTotal": 4370,
+        "maxFavorableTotal": 6.794899999999996,
+        "maxAdverseTotal": -27.749699999999976
+      },
+      "scenario:korea|sector:Semiconductor onshoring": {
+        "n": 229,
+        "wins": 219,
+        "totalPnlPct": 70.34679999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 219,
+          "stop_hit": 10
+        },
+        "failureKinds": {
+          "target_undershoot": 208,
+          "stop_hit_late": 5,
+          "target_hit": 11,
+          "stop_overshoot": 1,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 3684,
+        "maxFavorableTotal": 71.80199999999999,
+        "maxAdverseTotal": -10.227700000000027
+      },
+      "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
+        "n": 229,
+        "wins": 219,
+        "totalPnlPct": 70.34679999999999,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "target_hit": 219,
+          "stop_hit": 10
+        },
+        "failureKinds": {
+          "target_undershoot": 208,
+          "stop_hit_late": 5,
+          "target_hit": 11,
+          "stop_overshoot": 1,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 3684,
+        "maxFavorableTotal": 71.80199999999999,
+        "maxAdverseTotal": -10.227700000000027
+      },
+      "scenario:korea|sector:Foundry alternatives": {
+        "n": 177,
+        "wins": 152,
+        "totalPnlPct": 44.37759999999999,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 25,
+          "target_hit": 152
+        },
+        "failureKinds": {
+          "stop_hit_late": 17,
+          "target_undershoot": 140,
+          "stop_overshoot": 8,
+          "target_hit": 12
+        },
+        "holdingDaysTotal": 4075,
+        "maxFavorableTotal": 47.779399999999974,
+        "maxAdverseTotal": -8.268099999999992
+      },
+      "scenario:korea|sector:Foundry alternatives|direction:LONG": {
+        "n": 177,
+        "wins": 152,
+        "totalPnlPct": 44.37759999999999,
+        "lastUpdated": "2026-05-05",
+        "exitReasons": {
+          "stop_hit": 25,
+          "target_hit": 152
+        },
+        "failureKinds": {
+          "stop_hit_late": 17,
+          "target_undershoot": 140,
+          "stop_overshoot": 8,
+          "target_hit": 12
+        },
+        "holdingDaysTotal": 4075,
+        "maxFavorableTotal": 47.779399999999974,
+        "maxAdverseTotal": -8.268099999999992
+      },
+      "ticker:EWY": {
+        "n": 226,
+        "wins": 35,
+        "totalPnlPct": -25.978799999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 59,
+          "target_hit": 1,
+          "stop_hit": 166
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 34,
+          "target_hit": 1,
+          "horizon_drift_loser": 25,
+          "stop_hit_late": 150,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 3
+        },
+        "holdingDaysTotal": 4066,
+        "maxFavorableTotal": 11.0906,
+        "maxAdverseTotal": -29.335799999999992
+      },
+      "sector:Korea equity": {
+        "n": 226,
+        "wins": 35,
+        "totalPnlPct": -25.978799999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 59,
+          "target_hit": 1,
+          "stop_hit": 166
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 34,
+          "target_hit": 1,
+          "horizon_drift_loser": 25,
+          "stop_hit_late": 150,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 3
+        },
+        "holdingDaysTotal": 4066,
+        "maxFavorableTotal": 11.0906,
+        "maxAdverseTotal": -29.335799999999992
+      },
+      "sector:Korea equity|direction:SHORT": {
+        "n": 226,
+        "wins": 35,
+        "totalPnlPct": -25.978799999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 59,
+          "target_hit": 1,
+          "stop_hit": 166
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 34,
+          "target_hit": 1,
+          "horizon_drift_loser": 25,
+          "stop_hit_late": 150,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 3
+        },
+        "holdingDaysTotal": 4066,
+        "maxFavorableTotal": 11.0906,
+        "maxAdverseTotal": -29.335799999999992
+      },
+      "scenario:korea|direction:SHORT": {
+        "n": 672,
+        "wins": 131,
+        "totalPnlPct": -52.87100000000004,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 258,
+          "target_hit": 1,
+          "stop_hit": 413
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 130,
+          "target_hit": 1,
+          "horizon_drift_loser": 128,
+          "stop_hit_late": 385,
+          "stop_overshoot": 22,
+          "stop_hit_quick": 6
+        },
+        "holdingDaysTotal": 12899,
+        "maxFavorableTotal": 23.93800000000001,
+        "maxAdverseTotal": -61.43670000000008
+      },
+      "scenario:korea|sector:Korea equity": {
+        "n": 226,
+        "wins": 35,
+        "totalPnlPct": -25.978799999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 59,
+          "target_hit": 1,
+          "stop_hit": 166
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 34,
+          "target_hit": 1,
+          "horizon_drift_loser": 25,
+          "stop_hit_late": 150,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 3
+        },
+        "holdingDaysTotal": 4066,
+        "maxFavorableTotal": 11.0906,
+        "maxAdverseTotal": -29.335799999999992
+      },
+      "scenario:korea|sector:Korea equity|direction:SHORT": {
+        "n": 226,
+        "wins": 35,
+        "totalPnlPct": -25.978799999999975,
+        "lastUpdated": "2026-05-08",
+        "exitReasons": {
+          "horizon_exceeded": 59,
+          "target_hit": 1,
+          "stop_hit": 166
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 34,
+          "target_hit": 1,
+          "horizon_drift_loser": 25,
+          "stop_hit_late": 150,
+          "stop_overshoot": 13,
+          "stop_hit_quick": 3
+        },
+        "holdingDaysTotal": 4066,
+        "maxFavorableTotal": 11.0906,
+        "maxAdverseTotal": -29.335799999999992
+      },
+      "scenario:korea|sector:Consumer hardware": {
+        "n": 211,
+        "wins": 35,
+        "totalPnlPct": -12.311899999999994,
+        "lastUpdated": "2026-05-12",
+        "exitReasons": {
+          "horizon_exceeded": 100,
+          "stop_hit": 111
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 35,
+          "horizon_drift_loser": 65,
+          "stop_hit_late": 111
+        },
+        "holdingDaysTotal": 5042,
+        "maxFavorableTotal": 4.123699999999997,
+        "maxAdverseTotal": -13.666599999999988
+      },
+      "scenario:korea|sector:Consumer hardware|direction:SHORT": {
+        "n": 211,
+        "wins": 35,
+        "totalPnlPct": -12.311899999999994,
+        "lastUpdated": "2026-05-12",
+        "exitReasons": {
+          "horizon_exceeded": 100,
+          "stop_hit": 111
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 35,
+          "horizon_drift_loser": 65,
+          "stop_hit_late": 111
+        },
+        "holdingDaysTotal": 5042,
+        "maxFavorableTotal": 4.123699999999997,
+        "maxAdverseTotal": -13.666599999999988
+      },
+      "scenario:korea|sector:AI / Semis": {
+        "n": 235,
+        "wins": 61,
+        "totalPnlPct": -14.580299999999992,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 99,
+          "stop_hit": 136
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 61,
+          "horizon_drift_loser": 38,
+          "stop_hit_late": 124,
+          "stop_hit_quick": 3,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 3791,
+        "maxFavorableTotal": 8.72369999999999,
+        "maxAdverseTotal": -18.434299999999997
+      },
+      "scenario:korea|sector:AI / Semis|direction:SHORT": {
+        "n": 235,
+        "wins": 61,
+        "totalPnlPct": -14.580299999999992,
+        "lastUpdated": "2026-05-14",
+        "exitReasons": {
+          "horizon_exceeded": 99,
+          "stop_hit": 136
+        },
+        "failureKinds": {
+          "horizon_drift_winner": 61,
+          "horizon_drift_loser": 38,
+          "stop_hit_late": 124,
+          "stop_hit_quick": 3,
+          "stop_overshoot": 9
+        },
+        "holdingDaysTotal": 3791,
+        "maxFavorableTotal": 8.72369999999999,
+        "maxAdverseTotal": -18.434299999999997
+      },
+      "scenario:korea|sector:Uranium / nuclear": {
+        "n": 60,
+        "wins": 13,
+        "totalPnlPct": -2.6882,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 47,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 39,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1139,
+        "maxFavorableTotal": 3.558399999999999,
+        "maxAdverseTotal": -5.8530999999999995
+      },
+      "scenario:korea|sector:Uranium / nuclear|direction:LONG": {
+        "n": 60,
+        "wins": 13,
+        "totalPnlPct": -2.6882,
+        "lastUpdated": "2026-05-15",
+        "exitReasons": {
+          "stop_hit": 47,
+          "target_hit": 13
+        },
+        "failureKinds": {
+          "stop_overshoot": 4,
+          "stop_hit_late": 39,
+          "target_hit": 9,
+          "target_undershoot": 4,
+          "stop_hit_quick": 4
+        },
+        "holdingDaysTotal": 1139,
+        "maxFavorableTotal": 3.558399999999999,
+        "maxAdverseTotal": -5.8530999999999995
+      },
+      "scenario:korea|sector:Gold": {
+        "n": 58,
+        "wins": 0,
+        "totalPnlPct": -6.707899999999997,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 58
+        },
+        "failureKinds": {
+          "stop_hit_late": 46,
+          "stop_overshoot": 10,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 669,
+        "maxFavorableTotal": 0.39649999999999985,
+        "maxAdverseTotal": -6.707899999999997
+      },
+      "scenario:korea|sector:Gold|direction:LONG": {
+        "n": 58,
+        "wins": 0,
+        "totalPnlPct": -6.707899999999997,
+        "lastUpdated": "2026-03-23",
+        "exitReasons": {
+          "stop_hit": 58
+        },
+        "failureKinds": {
+          "stop_hit_late": 46,
+          "stop_overshoot": 10,
+          "stop_hit_quick": 2
+        },
+        "holdingDaysTotal": 669,
+        "maxFavorableTotal": 0.39649999999999985,
+        "maxAdverseTotal": -6.707899999999997
+      },
+      "ticker:HAL": {
+        "n": 12,
+        "wins": 9,
+        "totalPnlPct": 1.6503999999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "target_hit": 9,
+          "stop_hit": 3
+        },
+        "failureKinds": {
+          "target_hit": 8,
+          "target_undershoot": 1,
+          "stop_hit_late": 1,
+          "stop_overshoot": 2
+        },
+        "holdingDaysTotal": 454,
+        "maxFavorableTotal": 1.8637,
+        "maxAdverseTotal": -0.4111
+      },
+      "sector:Oil services": {
+        "n": 12,
+        "wins": 9,
+        "totalPnlPct": 1.6503999999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "target_hit": 9,
+          "stop_hit": 3
+        },
+        "failureKinds": {
+          "target_hit": 8,
+          "target_undershoot": 1,
+          "stop_hit_late": 1,
+          "stop_overshoot": 2
+        },
+        "holdingDaysTotal": 454,
+        "maxFavorableTotal": 1.8637,
+        "maxAdverseTotal": -0.4111
+      },
+      "sector:Oil services|direction:LONG": {
+        "n": 12,
+        "wins": 9,
+        "totalPnlPct": 1.6503999999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "target_hit": 9,
+          "stop_hit": 3
+        },
+        "failureKinds": {
+          "target_hit": 8,
+          "target_undershoot": 1,
+          "stop_hit_late": 1,
+          "stop_overshoot": 2
+        },
+        "holdingDaysTotal": 454,
+        "maxFavorableTotal": 1.8637,
+        "maxAdverseTotal": -0.4111
+      },
+      "scenario:iran|sector:Oil services": {
+        "n": 12,
+        "wins": 9,
+        "totalPnlPct": 1.6503999999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "target_hit": 9,
+          "stop_hit": 3
+        },
+        "failureKinds": {
+          "target_hit": 8,
+          "target_undershoot": 1,
+          "stop_hit_late": 1,
+          "stop_overshoot": 2
+        },
+        "holdingDaysTotal": 454,
+        "maxFavorableTotal": 1.8637,
+        "maxAdverseTotal": -0.4111
+      },
+      "scenario:iran|sector:Oil services|direction:LONG": {
+        "n": 12,
+        "wins": 9,
+        "totalPnlPct": 1.6503999999999999,
+        "lastUpdated": "2026-05-07",
+        "exitReasons": {
+          "target_hit": 9,
+          "stop_hit": 3
+        },
+        "failureKinds": {
+          "target_hit": 8,
+          "target_undershoot": 1,
+          "stop_hit_late": 1,
+          "stop_overshoot": 2
+        },
+        "holdingDaysTotal": 454,
+        "maxFavorableTotal": 1.8637,
+        "maxAdverseTotal": -0.4111
+      }
+    },
+    "lastUpdatedAt": "2026-05-18T06:06:15.946Z",
+    "tradesObserved": 8004,
+    "summary": {
+      "bucketCount": 179,
+      "tradesObserved": 8004,
+      "top": [
+        {
+          "key": "ticker:INTC",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "sector:Semiconductor onshoring",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "sector:Semiconductor onshoring|direction:LONG",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "scenario:taiwan|sector:Semiconductor onshoring",
+          "n": 229,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG",
+          "n": 229,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        }
+      ],
+      "bottom": [
+        {
+          "key": "scenario:korea|sector:Gold|direction:LONG",
+          "n": 58,
+          "winRate": 0,
+          "avgPnlPct": -0.1157,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Gold",
+          "n": 58,
+          "winRate": 0,
+          "avgPnlPct": -0.1157,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Drones / ISR|direction:LONG",
+          "n": 164,
+          "winRate": 0,
+          "avgPnlPct": -0.1662,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Drones / ISR",
+          "n": 164,
+          "winRate": 0,
+          "avgPnlPct": -0.1662,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Defense|direction:LONG",
+          "n": 664,
+          "winRate": 0,
+          "avgPnlPct": -0.1056,
+          "score": -0.6000000000000001
+        }
+      ]
+    }
+  },
+  "simulation": {
+    "runAt": "2026-05-18T06:06:15.963Z",
+    "startDate": "2026-02-28",
+    "endDate": "2026-05-18",
+    "tradingDays": 54,
+    "closedCount": 8004,
+    "overallWinRate": 0.279,
+    "overallAvgPnlPct": -0.0282,
+    "failureMode": {
+      "horizon_drift_loser": 882,
+      "horizon_drift_winner": 1239,
+      "target_hit": 238,
+      "stop_overshoot": 280,
+      "stop_hit_quick": 188,
+      "stop_hit_late": 4420,
+      "target_undershoot": 757
+    },
+    "variantStats": {
+      "standard": {
+        "n": 1581,
+        "wins": 437,
+        "winRate": 0.276,
+        "avgPnlPct": -0.0315
+      },
+      "tight_stop": {
+        "n": 1795,
+        "wins": 398,
+        "winRate": 0.222,
+        "avgPnlPct": -0.029
+      },
+      "wide_stop": {
+        "n": 1402,
+        "wins": 459,
+        "winRate": 0.327,
+        "avgPnlPct": -0.0287
+      },
+      "tight_target": {
+        "n": 1662,
+        "wins": 520,
+        "winRate": 0.313,
+        "avgPnlPct": -0.0255
+      },
+      "wide_target": {
+        "n": 1564,
+        "wins": 420,
+        "winRate": 0.269,
+        "avgPnlPct": -0.0266
+      }
+    },
+    "recalibratedBuckets": 71,
+    "topRecalibrationSignals": [
+      {
+        "bucket": "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG",
+        "n": 229,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "sector:Semiconductor onshoring|direction:LONG",
+        "n": 458,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "scenario:taiwan|sector:Foundry alternatives|direction:LONG",
+        "n": 177,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "sector:Foundry alternatives|direction:LONG",
+        "n": 354,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "scenario:korea|sector:Semiconductor onshoring|direction:LONG",
+        "n": 229,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "scenario:korea|sector:Foundry alternatives|direction:LONG",
+        "n": 177,
+        "signal": "widen_targets",
+        "magnitude": 1.5,
+        "action": "Widen target ×1.50 — winners run further on average"
+      },
+      {
+        "bucket": "scenario:iran|sector:Gas / LNG|direction:LONG",
+        "n": 161,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 161 trades"
+      },
+      {
+        "bucket": "sector:Gas / LNG|direction:LONG",
+        "n": 322,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 322 trades"
+      },
+      {
+        "bucket": "scenario:iran|sector:Oil ETF|direction:LONG",
+        "n": 172,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 172 trades"
+      },
+      {
+        "bucket": "sector:Oil ETF|direction:LONG",
+        "n": 172,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 172 trades"
+      },
+      {
+        "bucket": "scenario:iran|sector:Brent ETF|direction:LONG",
+        "n": 144,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 144 trades"
+      },
+      {
+        "bucket": "sector:Brent ETF|direction:LONG",
+        "n": 144,
+        "signal": "widen_stops",
+        "magnitude": 1.3,
+        "action": "Widen stop ×1.30 — wide-stop variant outperformed in 144 trades"
+      }
+    ],
+    "memorySummary": {
+      "bucketCount": 179,
+      "tradesObserved": 8004,
+      "top": [
+        {
+          "key": "ticker:INTC",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "sector:Semiconductor onshoring",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "sector:Semiconductor onshoring|direction:LONG",
+          "n": 458,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "scenario:taiwan|sector:Semiconductor onshoring",
+          "n": 229,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        },
+        {
+          "key": "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG",
+          "n": 229,
+          "winRate": 0.956,
+          "avgPnlPct": 0.3072,
+          "score": 0.5825327510917031
+        }
+      ],
+      "bottom": [
+        {
+          "key": "scenario:korea|sector:Gold|direction:LONG",
+          "n": 58,
+          "winRate": 0,
+          "avgPnlPct": -0.1157,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Gold",
+          "n": 58,
+          "winRate": 0,
+          "avgPnlPct": -0.1157,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Drones / ISR|direction:LONG",
+          "n": 164,
+          "winRate": 0,
+          "avgPnlPct": -0.1662,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Drones / ISR",
+          "n": 164,
+          "winRate": 0,
+          "avgPnlPct": -0.1662,
+          "score": -0.6000000000000001
+        },
+        {
+          "key": "scenario:korea|sector:Defense|direction:LONG",
+          "n": 664,
+          "winRate": 0,
+          "avgPnlPct": -0.1056,
+          "score": -0.6000000000000001
+        }
+      ]
+    }
+  },
+  "calibration": {
+    "generatedAt": "2026-05-18T18:03:55.215Z",
+    "fromTrades": 8004,
+    "perBucket": {
+      "scenario:iran|sector:Energy|direction:LONG": {
+        "n": 433,
+        "nStandard": 86,
+        "componentCorrelations": {
+          "conviction": -0.155,
+          "scenario": 0,
+          "riskReward": -0.024,
+          "trend": -0.087,
+          "volRegime": -0.364,
+          "catalyst": -0.155,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.174,
+        "standardAvgPnl": -0.0384
+      },
+      "sector:Energy|direction:LONG": {
+        "n": 433,
+        "nStandard": 86,
+        "componentCorrelations": {
+          "conviction": -0.155,
+          "scenario": 0,
+          "riskReward": -0.024,
+          "trend": -0.087,
+          "volRegime": -0.364,
+          "catalyst": -0.155,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.174,
+        "standardAvgPnl": -0.0384
+      },
+      "scenario:iran|direction:LONG": {
+        "n": 1879,
+        "nStandard": 370,
+        "componentCorrelations": {
+          "conviction": 0.048,
+          "scenario": 0,
+          "riskReward": -0.159,
+          "trend": 0.156,
+          "volRegime": -0.393,
+          "catalyst": 0.246,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.159,
+          "scenario": 0.084,
+          "riskReward": 0.093,
+          "trend": 0.269,
+          "volRegime": 0.057,
+          "catalyst": 0.226,
+          "memory": 0.113
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.438,
+        "standardAvgPnl": 0.0019
+      },
+      "scenario:iran|sector:Gas / LNG|direction:LONG": {
+        "n": 161,
+        "nStandard": 32,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.026,
+          "trend": 0.265,
+          "volRegime": 0.593,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.111,
+          "scenario": 0.091,
+          "riskReward": 0.118,
+          "trend": 0.265,
+          "volRegime": 0.221,
+          "catalyst": 0.071,
+          "memory": 0.123
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.25,
+        "standardAvgPnl": -0.0557
+      },
+      "sector:Gas / LNG|direction:LONG": {
+        "n": 322,
+        "nStandard": 64,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": -0.029,
+          "riskReward": -0.071,
+          "trend": 0.265,
+          "volRegime": 0.59,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.112,
+          "scenario": 0.092,
+          "riskReward": 0.102,
+          "trend": 0.274,
+          "volRegime": 0.224,
+          "catalyst": 0.072,
+          "memory": 0.124
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.25,
+        "standardAvgPnl": -0.0557
+      },
+      "scenario:iran|sector:Shipping|direction:LONG": {
+        "n": 390,
+        "nStandard": 78,
+        "componentCorrelations": {
+          "conviction": -0.059,
+          "scenario": 0,
+          "riskReward": -0.039,
+          "trend": -0.634,
+          "volRegime": -0.267,
+          "catalyst": 0.059,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.134,
+          "scenario": 0.11,
+          "riskReward": 0.122,
+          "trend": 0.11,
+          "volRegime": 0.075,
+          "catalyst": 0.299,
+          "memory": 0.149
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.731,
+        "standardAvgPnl": 0.0341
+      },
+      "sector:Shipping|direction:LONG": {
+        "n": 390,
+        "nStandard": 78,
+        "componentCorrelations": {
+          "conviction": -0.059,
+          "scenario": 0,
+          "riskReward": -0.039,
+          "trend": -0.634,
+          "volRegime": -0.267,
+          "catalyst": 0.059,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.134,
+          "scenario": 0.11,
+          "riskReward": 0.122,
+          "trend": 0.11,
+          "volRegime": 0.075,
+          "catalyst": 0.299,
+          "memory": 0.149
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.731,
+        "standardAvgPnl": 0.0341
+      },
+      "scenario:iran|sector:Defense|direction:LONG": {
+        "n": 367,
+        "nStandard": 73,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.245,
+          "trend": 0.02,
+          "volRegime": 0.192,
+          "catalyst": 0.201,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.091,
+          "scenario": 0.075,
+          "riskReward": 0.261,
+          "trend": 0.089,
+          "volRegime": 0.182,
+          "catalyst": 0.202,
+          "memory": 0.101
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.107
+      },
+      "sector:Defense|direction:LONG": {
+        "n": 2187,
+        "nStandard": 443,
+        "componentCorrelations": {
+          "conviction": -0.124,
+          "scenario": 0.01,
+          "riskReward": 0.28,
+          "trend": 0.01,
+          "volRegime": 0.268,
+          "catalyst": -0.02,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.106,
+          "scenario": 0.097,
+          "riskReward": 0.305,
+          "trend": 0.097,
+          "volRegime": 0.211,
+          "catalyst": 0.068,
+          "memory": 0.117
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1107
+      },
+      "scenario:iran|sector:Airlines|direction:SHORT": {
+        "n": 179,
+        "nStandard": 35,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.068,
+          "trend": -0.215,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.429,
+        "standardAvgPnl": -0.019
+      },
+      "sector:Airlines|direction:SHORT": {
+        "n": 358,
+        "nStandard": 70,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.068,
+          "trend": -0.215,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.429,
+        "standardAvgPnl": -0.019
+      },
+      "scenario:iran|direction:SHORT": {
+        "n": 179,
+        "nStandard": 35,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.068,
+          "trend": -0.215,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.429,
+        "standardAvgPnl": -0.019
+      },
+      "scenario:iran|sector:Oil ETF|direction:LONG": {
+        "n": 172,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.028,
+          "trend": -0.212,
+          "volRegime": 0.44,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.131,
+          "scenario": 0.108,
+          "riskReward": 0.161,
+          "trend": 0.108,
+          "volRegime": 0.262,
+          "catalyst": 0.085,
+          "memory": 0.146
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.882,
+        "standardAvgPnl": 0.1245
+      },
+      "sector:Oil ETF|direction:LONG": {
+        "n": 172,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.028,
+          "trend": -0.212,
+          "volRegime": 0.44,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.131,
+          "scenario": 0.108,
+          "riskReward": 0.161,
+          "trend": 0.108,
+          "volRegime": 0.262,
+          "catalyst": 0.085,
+          "memory": 0.146
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.882,
+        "standardAvgPnl": 0.1245
+      },
+      "scenario:iran|sector:Oil ETF (2x)|direction:LONG": {
+        "n": 200,
+        "nStandard": 40,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.012,
+          "trend": -0.348,
+          "volRegime": 0.265,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.137,
+          "scenario": 0.112,
+          "riskReward": 0.125,
+          "trend": 0.112,
+          "volRegime": 0.274,
+          "catalyst": 0.088,
+          "memory": 0.152
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.825,
+        "standardAvgPnl": 0.1125
+      },
+      "sector:Oil ETF (2x)|direction:LONG": {
+        "n": 200,
+        "nStandard": 40,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.012,
+          "trend": -0.348,
+          "volRegime": 0.265,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.137,
+          "scenario": 0.112,
+          "riskReward": 0.125,
+          "trend": 0.112,
+          "volRegime": 0.274,
+          "catalyst": 0.088,
+          "memory": 0.152
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.825,
+        "standardAvgPnl": 0.1125
+      },
+      "scenario:iran|sector:Brent ETF|direction:LONG": {
+        "n": 144,
+        "nStandard": 27,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.106,
+          "trend": -0.296,
+          "volRegime": 0.374,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.137,
+          "scenario": 0.112,
+          "riskReward": 0.125,
+          "trend": 0.112,
+          "volRegime": 0.274,
+          "catalyst": 0.088,
+          "memory": 0.152
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.704,
+        "standardAvgPnl": 0.0812
+      },
+      "sector:Brent ETF|direction:LONG": {
+        "n": 144,
+        "nStandard": 27,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.106,
+          "trend": -0.296,
+          "volRegime": 0.374,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.137,
+          "scenario": 0.112,
+          "riskReward": 0.125,
+          "trend": 0.112,
+          "volRegime": 0.274,
+          "catalyst": 0.088,
+          "memory": 0.152
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.704,
+        "standardAvgPnl": 0.0812
+      },
+      "scenario:taiwan|sector:Defense|direction:LONG": {
+        "n": 526,
+        "nStandard": 106,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.313,
+          "trend": 0.045,
+          "volRegime": 0.288,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.104,
+          "scenario": 0.085,
+          "riskReward": 0.299,
+          "trend": 0.123,
+          "volRegime": 0.207,
+          "catalyst": 0.067,
+          "memory": 0.115
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1143
+      },
+      "scenario:taiwan|direction:LONG": {
+        "n": 1335,
+        "nStandard": 259,
+        "componentCorrelations": {
+          "conviction": -0.508,
+          "scenario": 0,
+          "riskReward": -0.116,
+          "trend": 0.103,
+          "volRegime": -0.394,
+          "catalyst": -0.191,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.13,
+          "scenario": 0.107,
+          "riskReward": 0.118,
+          "trend": 0.346,
+          "volRegime": 0.072,
+          "catalyst": 0.084,
+          "memory": 0.144
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.328,
+        "standardAvgPnl": 0.0168
+      },
+      "scenario:taiwan|sector:Semiconductor onshoring|direction:LONG": {
+        "n": 229,
+        "nStandard": 46,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.216,
+          "trend": -0.039,
+          "volRegime": 0.194,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.108,
+          "scenario": 0.089,
+          "riskReward": 0.311,
+          "trend": 0.089,
+          "volRegime": 0.215,
+          "catalyst": 0.069,
+          "memory": 0.12
+        },
+        "stopMult": 1,
+        "targetMult": 1.5,
+        "standardWinRate": 0.978,
+        "standardAvgPnl": 0.31
+      },
+      "sector:Semiconductor onshoring|direction:LONG": {
+        "n": 458,
+        "nStandard": 92,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.216,
+          "trend": -0.039,
+          "volRegime": 0.194,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.108,
+          "scenario": 0.089,
+          "riskReward": 0.311,
+          "trend": 0.089,
+          "volRegime": 0.215,
+          "catalyst": 0.069,
+          "memory": 0.12
+        },
+        "stopMult": 1,
+        "targetMult": 1.5,
+        "standardWinRate": 0.978,
+        "standardAvgPnl": 0.31
+      },
+      "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
+        "n": 177,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.094,
+          "trend": -0.454,
+          "volRegime": -0.326,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1.3,
+        "targetMult": 1.5,
+        "standardWinRate": 0.853,
+        "standardAvgPnl": 0.2522
+      },
+      "sector:Foundry alternatives|direction:LONG": {
+        "n": 354,
+        "nStandard": 68,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.094,
+          "trend": -0.454,
+          "volRegime": -0.326,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1.3,
+        "targetMult": 1.5,
+        "standardWinRate": 0.853,
+        "standardAvgPnl": 0.2522
+      },
+      "scenario:taiwan|sector:Drones / ISR|direction:LONG": {
+        "n": 164,
+        "nStandard": 33,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.381,
+          "trend": -0.102,
+          "volRegime": 0.089,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.113,
+          "scenario": 0.093,
+          "riskReward": 0.327,
+          "trend": 0.093,
+          "volRegime": 0.176,
+          "catalyst": 0.073,
+          "memory": 0.126
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1736
+      },
+      "sector:Drones / ISR|direction:LONG": {
+        "n": 328,
+        "nStandard": 66,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.381,
+          "trend": -0.102,
+          "volRegime": 0.089,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.113,
+          "scenario": 0.093,
+          "riskReward": 0.327,
+          "trend": 0.093,
+          "volRegime": 0.176,
+          "catalyst": 0.073,
+          "memory": 0.126
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1736
+      },
+      "scenario:taiwan|sector:Consumer hardware|direction:SHORT": {
+        "n": 209,
+        "nStandard": 43,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.028,
+          "trend": 0.436,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.125,
+          "scenario": 0.102,
+          "riskReward": 0.153,
+          "trend": 0.332,
+          "volRegime": 0.069,
+          "catalyst": 0.08,
+          "memory": 0.138
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.163,
+        "standardAvgPnl": -0.0634
+      },
+      "sector:Consumer hardware|direction:SHORT": {
+        "n": 420,
+        "nStandard": 86,
+        "componentCorrelations": {
+          "conviction": -0.025,
+          "scenario": 0,
+          "riskReward": 0.017,
+          "trend": 0.409,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.126,
+          "scenario": 0.104,
+          "riskReward": 0.142,
+          "trend": 0.337,
+          "volRegime": 0.07,
+          "catalyst": 0.081,
+          "memory": 0.14
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.163,
+        "standardAvgPnl": -0.0618
+      },
+      "scenario:taiwan|direction:SHORT": {
+        "n": 864,
+        "nStandard": 174,
+        "componentCorrelations": {
+          "conviction": -0.05,
+          "scenario": 0,
+          "riskReward": 0.057,
+          "trend": 0.313,
+          "volRegime": 0.108,
+          "catalyst": -0.053,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.105,
+          "scenario": 0.086,
+          "riskReward": 0.162,
+          "trend": 0.28,
+          "volRegime": 0.183,
+          "catalyst": 0.068,
+          "memory": 0.117
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.201,
+        "standardAvgPnl": -0.0724
+      },
+      "scenario:taiwan|sector:AI / Semis|direction:SHORT": {
+        "n": 235,
+        "nStandard": 47,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.032,
+          "trend": 0.351,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.123,
+          "scenario": 0.101,
+          "riskReward": 0.166,
+          "trend": 0.327,
+          "volRegime": 0.068,
+          "catalyst": 0.079,
+          "memory": 0.136
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.255,
+        "standardAvgPnl": -0.0633
+      },
+      "sector:AI / Semis|direction:SHORT": {
+        "n": 470,
+        "nStandard": 94,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.032,
+          "trend": 0.351,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.123,
+          "scenario": 0.101,
+          "riskReward": 0.166,
+          "trend": 0.327,
+          "volRegime": 0.068,
+          "catalyst": 0.079,
+          "memory": 0.136
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.255,
+        "standardAvgPnl": -0.0633
+      },
+      "scenario:taiwan|sector:Handsets|direction:SHORT": {
+        "n": 241,
+        "nStandard": 48,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.061,
+          "trend": 0.549,
+          "volRegime": 0.131,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.11,
+          "scenario": 0.091,
+          "riskReward": 0.148,
+          "trend": 0.294,
+          "volRegime": 0.164,
+          "catalyst": 0.071,
+          "memory": 0.122
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.208,
+        "standardAvgPnl": -0.0783
+      },
+      "sector:Handsets|direction:SHORT": {
+        "n": 241,
+        "nStandard": 48,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.061,
+          "trend": 0.549,
+          "volRegime": 0.131,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.11,
+          "scenario": 0.091,
+          "riskReward": 0.148,
+          "trend": 0.294,
+          "volRegime": 0.164,
+          "catalyst": 0.071,
+          "memory": 0.122
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.208,
+        "standardAvgPnl": -0.0783
+      },
+      "scenario:taiwan|sector:Semiconductor manufacturing|direction:SHORT": {
+        "n": 179,
+        "nStandard": 36,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.073,
+          "trend": -0.187,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.167,
+        "standardAvgPnl": -0.0872
+      },
+      "sector:Semiconductor manufacturing|direction:SHORT": {
+        "n": 179,
+        "nStandard": 36,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.073,
+          "trend": -0.187,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.167,
+        "standardAvgPnl": -0.0872
+      },
+      "scenario:taiwan|sector:Copper miners|direction:LONG": {
+        "n": 82,
+        "nStandard": 14,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.338,
+          "trend": -0.432,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.286,
+        "standardAvgPnl": -0.0069
+      },
+      "sector:Copper miners|direction:LONG": {
+        "n": 82,
+        "nStandard": 14,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.338,
+          "trend": -0.432,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.286,
+        "standardAvgPnl": -0.0069
+      },
+      "scenario:taiwan|sector:Rare earth miners|direction:LONG": {
+        "n": 97,
+        "nStandard": 18,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.236,
+          "trend": -0.853,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.333,
+        "standardAvgPnl": 0.0062
+      },
+      "sector:Rare earth miners|direction:LONG": {
+        "n": 97,
+        "nStandard": 18,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.236,
+          "trend": -0.853,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.333,
+        "standardAvgPnl": 0.0062
+      },
+      "scenario:taiwan|sector:Uranium / nuclear|direction:LONG": {
+        "n": 60,
+        "nStandard": 8,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.505,
+          "trend": -0.661,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.125,
+        "standardAvgPnl": -0.0825
+      },
+      "sector:Uranium / nuclear|direction:LONG": {
+        "n": 171,
+        "nStandard": 22,
+        "componentCorrelations": {
+          "conviction": 0.033,
+          "scenario": 0.033,
+          "riskReward": -0.523,
+          "trend": -0.684,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.317,
+          "scenario": 0.271,
+          "riskReward": 0.093,
+          "trend": 0.084,
+          "volRegime": 0.057,
+          "catalyst": 0.066,
+          "memory": 0.113
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.136,
+        "standardAvgPnl": -0.078
+      },
+      "scenario:europe|sector:Defense|direction:LONG": {
+        "n": 630,
+        "nStandard": 130,
+        "componentCorrelations": {
+          "conviction": 0.02,
+          "scenario": 0,
+          "riskReward": 0.325,
+          "trend": -0.031,
+          "volRegime": 0.298,
+          "catalyst": -0.051,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.123,
+          "scenario": 0.087,
+          "riskReward": 0.306,
+          "trend": 0.087,
+          "volRegime": 0.212,
+          "catalyst": 0.068,
+          "memory": 0.118
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1139
+      },
+      "scenario:europe|direction:LONG": {
+        "n": 1374,
+        "nStandard": 272,
+        "componentCorrelations": {
+          "conviction": 0.052,
+          "scenario": 0,
+          "riskReward": 0.038,
+          "trend": 0.174,
+          "volRegime": 0.147,
+          "catalyst": -0.122,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.162,
+          "scenario": 0.08,
+          "riskReward": 0.136,
+          "trend": 0.259,
+          "volRegime": 0.194,
+          "catalyst": 0.063,
+          "memory": 0.108
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.033,
+        "standardAvgPnl": -0.1083
+      },
+      "scenario:europe|sector:Naval defense|direction:LONG": {
+        "n": 219,
+        "nStandard": 45,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.291,
+          "trend": 0.146,
+          "volRegime": 0.07,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.099,
+          "scenario": 0.082,
+          "riskReward": 0.286,
+          "trend": 0.232,
+          "volRegime": 0.127,
+          "catalyst": 0.064,
+          "memory": 0.11
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1315
+      },
+      "sector:Naval defense|direction:LONG": {
+        "n": 219,
+        "nStandard": 45,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.291,
+          "trend": 0.146,
+          "volRegime": 0.07,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.099,
+          "scenario": 0.082,
+          "riskReward": 0.286,
+          "trend": 0.232,
+          "volRegime": 0.127,
+          "catalyst": 0.064,
+          "memory": 0.11
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1315
+      },
+      "scenario:europe|sector:Gas / LNG|direction:LONG": {
+        "n": 161,
+        "nStandard": 32,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.148,
+          "trend": 0.266,
+          "volRegime": 0.588,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.112,
+          "scenario": 0.092,
+          "riskReward": 0.102,
+          "trend": 0.275,
+          "volRegime": 0.223,
+          "catalyst": 0.072,
+          "memory": 0.124
+        },
+        "stopMult": 1.3,
+        "targetMult": 1,
+        "standardWinRate": 0.25,
+        "standardAvgPnl": -0.0557
+      },
+      "scenario:europe|sector:Midstream|direction:LONG": {
+        "n": 54,
+        "nStandard": 9,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.363,
+          "trend": -0.372,
+          "volRegime": -0.418,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.0871
+      },
+      "sector:Midstream|direction:LONG": {
+        "n": 54,
+        "nStandard": 9,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.363,
+          "trend": -0.372,
+          "volRegime": -0.418,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.0871
+      },
+      "scenario:europe|sector:Natural gas|direction:LONG": {
+        "n": 115,
+        "nStandard": 22,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.082,
+          "trend": -0.006,
+          "volRegime": 0.066,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.108,
+          "scenario": 0.089,
+          "riskReward": 0.311,
+          "trend": 0.089,
+          "volRegime": 0.215,
+          "catalyst": 0.069,
+          "memory": 0.12
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.083
+      },
+      "sector:Natural gas|direction:LONG": {
+        "n": 115,
+        "nStandard": 22,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.082,
+          "trend": -0.006,
+          "volRegime": 0.066,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.108,
+          "scenario": 0.089,
+          "riskReward": 0.311,
+          "trend": 0.089,
+          "volRegime": 0.215,
+          "catalyst": 0.069,
+          "memory": 0.12
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.083
+      },
+      "scenario:europe|sector:Airlines|direction:SHORT": {
+        "n": 179,
+        "nStandard": 35,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.068,
+          "trend": -0.215,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.429,
+        "standardAvgPnl": -0.019
+      },
+      "scenario:europe|direction:SHORT": {
+        "n": 349,
+        "nStandard": 69,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.034,
+          "trend": -0.48,
+          "volRegime": -0.227,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.435,
+        "standardAvgPnl": -0.0292
+      },
+      "scenario:europe|sector:Leisure travel|direction:SHORT": {
+        "n": 170,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.013,
+          "trend": -0.643,
+          "volRegime": -0.294,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.441,
+        "standardAvgPnl": -0.0396
+      },
+      "sector:Leisure travel|direction:SHORT": {
+        "n": 170,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.013,
+          "trend": -0.643,
+          "volRegime": -0.294,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.441,
+        "standardAvgPnl": -0.0396
+      },
+      "scenario:europe|sector:Gas ETF|direction:LONG": {
+        "n": 86,
+        "nStandard": 16,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.337,
+          "trend": -0.4,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1582
+      },
+      "sector:Gas ETF|direction:LONG": {
+        "n": 86,
+        "nStandard": 16,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.337,
+          "trend": -0.4,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1582
+      },
+      "scenario:europe|sector:Uranium / nuclear|direction:LONG": {
+        "n": 51,
+        "nStandard": 6,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.56,
+          "trend": -0.736,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.167,
+        "standardAvgPnl": -0.0662
+      },
+      "scenario:europe|sector:Gold|direction:LONG": {
+        "n": 58,
+        "nStandard": 12,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.352,
+          "trend": -0.307,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1174
+      },
+      "sector:Gold|direction:LONG": {
+        "n": 116,
+        "nStandard": 24,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.354,
+          "trend": -0.307,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1174
+      },
+      "scenario:korea|sector:Defense|direction:LONG": {
+        "n": 664,
+        "nStandard": 134,
+        "componentCorrelations": {
+          "conviction": -0.163,
+          "scenario": 0,
+          "riskReward": 0.254,
+          "trend": 0.02,
+          "volRegime": 0.294,
+          "catalyst": -0.217,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.106,
+          "scenario": 0.087,
+          "riskReward": 0.305,
+          "trend": 0.106,
+          "volRegime": 0.211,
+          "catalyst": 0.068,
+          "memory": 0.117
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1068
+      },
+      "scenario:korea|direction:LONG": {
+        "n": 1352,
+        "nStandard": 267,
+        "componentCorrelations": {
+          "conviction": -0.334,
+          "scenario": 0,
+          "riskReward": -0.077,
+          "trend": 0.174,
+          "volRegime": -0.45,
+          "catalyst": -0.461,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.13,
+          "scenario": 0.107,
+          "riskReward": 0.118,
+          "trend": 0.346,
+          "volRegime": 0.072,
+          "catalyst": 0.084,
+          "memory": 0.144
+        },
+        "stopMult": 1.3,
+        "targetMult": 1.3,
+        "standardWinRate": 0.281,
+        "standardAvgPnl": 0.0027
+      },
+      "scenario:korea|sector:Drones / ISR|direction:LONG": {
+        "n": 164,
+        "nStandard": 33,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.381,
+          "trend": -0.102,
+          "volRegime": 0.089,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.113,
+          "scenario": 0.093,
+          "riskReward": 0.327,
+          "trend": 0.093,
+          "volRegime": 0.176,
+          "catalyst": 0.073,
+          "memory": 0.126
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1736
+      },
+      "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
+        "n": 229,
+        "nStandard": 46,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.216,
+          "trend": -0.039,
+          "volRegime": 0.194,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.108,
+          "scenario": 0.089,
+          "riskReward": 0.311,
+          "trend": 0.089,
+          "volRegime": 0.215,
+          "catalyst": 0.069,
+          "memory": 0.12
+        },
+        "stopMult": 1,
+        "targetMult": 1.5,
+        "standardWinRate": 0.978,
+        "standardAvgPnl": 0.31
+      },
+      "scenario:korea|sector:Foundry alternatives|direction:LONG": {
+        "n": 177,
+        "nStandard": 34,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.094,
+          "trend": -0.454,
+          "volRegime": -0.326,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1.3,
+        "targetMult": 1.5,
+        "standardWinRate": 0.853,
+        "standardAvgPnl": 0.2522
+      },
+      "scenario:korea|sector:Korea equity|direction:SHORT": {
+        "n": 226,
+        "nStandard": 45,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.217,
+          "trend": -0.049,
+          "volRegime": 0.744,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.118,
+          "scenario": 0.097,
+          "riskReward": 0.247,
+          "trend": 0.097,
+          "volRegime": 0.235,
+          "catalyst": 0.076,
+          "memory": 0.131
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.156,
+        "standardAvgPnl": -0.1168
+      },
+      "sector:Korea equity|direction:SHORT": {
+        "n": 226,
+        "nStandard": 45,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.217,
+          "trend": -0.049,
+          "volRegime": 0.744,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.118,
+          "scenario": 0.097,
+          "riskReward": 0.247,
+          "trend": 0.097,
+          "volRegime": 0.235,
+          "catalyst": 0.076,
+          "memory": 0.131
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.156,
+        "standardAvgPnl": -0.1168
+      },
+      "scenario:korea|direction:SHORT": {
+        "n": 672,
+        "nStandard": 135,
+        "componentCorrelations": {
+          "conviction": -0.344,
+          "scenario": 0,
+          "riskReward": 0.127,
+          "trend": 0.235,
+          "volRegime": 0.572,
+          "catalyst": 0.163,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.102,
+          "scenario": 0.084,
+          "riskReward": 0.155,
+          "trend": 0.198,
+          "volRegime": 0.203,
+          "catalyst": 0.145,
+          "memory": 0.113
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.193,
+        "standardAvgPnl": -0.0802
+      },
+      "scenario:korea|sector:Consumer hardware|direction:SHORT": {
+        "n": 211,
+        "nStandard": 43,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.011,
+          "trend": 0.382,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.135,
+          "trend": 0.339,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.141
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.163,
+        "standardAvgPnl": -0.0603
+      },
+      "scenario:korea|sector:AI / Semis|direction:SHORT": {
+        "n": 235,
+        "nStandard": 47,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.032,
+          "trend": 0.351,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.123,
+          "scenario": 0.101,
+          "riskReward": 0.166,
+          "trend": 0.327,
+          "volRegime": 0.068,
+          "catalyst": 0.079,
+          "memory": 0.136
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.255,
+        "standardAvgPnl": -0.0633
+      },
+      "scenario:korea|sector:Uranium / nuclear|direction:LONG": {
+        "n": 60,
+        "nStandard": 8,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": -0.505,
+          "trend": -0.661,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.18,
+          "scenario": 0.14,
+          "riskReward": 0.16,
+          "trend": 0.14,
+          "volRegime": 0.08,
+          "catalyst": 0.1,
+          "memory": 0.2
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0.125,
+        "standardAvgPnl": -0.0825
+      },
+      "scenario:korea|sector:Gold|direction:LONG": {
+        "n": 58,
+        "nStandard": 12,
+        "componentCorrelations": {
+          "conviction": 0,
+          "scenario": 0,
+          "riskReward": 0.356,
+          "trend": -0.307,
+          "volRegime": 0,
+          "catalyst": 0,
+          "memory": 0
+        },
+        "weights": {
+          "conviction": 0.127,
+          "scenario": 0.105,
+          "riskReward": 0.368,
+          "trend": 0.105,
+          "volRegime": 0.071,
+          "catalyst": 0.082,
+          "memory": 0.142
+        },
+        "stopMult": 1,
+        "targetMult": 1,
+        "standardWinRate": 0,
+        "standardAvgPnl": -0.1174
+      }
+    },
+    "globalWeights": {
+      "conviction": 0.16928831342444617,
+      "scenario": 0.1316686882190137,
+      "riskReward": 0.15047850082172992,
+      "trend": 0.1316686882190137,
+      "volRegime": 0.050526887659853775,
+      "catalyst": 0.17827079562878037,
+      "memory": 0.18809812602716242
+    },
+    "tournamentMeta": {
+      "ranAt": "2026-05-18T18:03:55.215Z",
+      "baselineAvgReturn": 0.07476666666666666,
+      "winnerAvgReturn": 0.08056666666666668,
+      "improvement": 0.0058000000000000135,
+      "winnerWindows": [
+        {
+          "window": "Feb28-Mar31",
+          "pctReturn": 0.1774,
+          "finalEquity": 11773.57,
+          "closedCount": 2,
+          "winRate": 1
+        },
+        {
+          "window": "Mar15-Apr30",
+          "pctReturn": 0.0541,
+          "finalEquity": 10541.41,
+          "closedCount": 5,
+          "winRate": 0.4
+        },
+        {
+          "window": "Apr01-May15",
+          "pctReturn": 0.0102,
+          "finalEquity": 10102.1,
+          "closedCount": 6,
+          "winRate": 0.333
+        }
+      ],
+      "candidateCount": 80
+    },
+    "applyBucketWeights": false
+  }
+}
