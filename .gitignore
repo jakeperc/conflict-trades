@@ -13,3 +13,6 @@ data/server.log
 # Local-only secrets
 .env
 .env.local
+
+# Static build output for FTP deploy to jakepercy.com
+dist/

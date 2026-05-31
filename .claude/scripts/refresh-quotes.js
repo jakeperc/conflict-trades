@@ -6,7 +6,7 @@
  */
 const path = require("path");
 const { fetchQuoteHistory, computeVolatility } = require(path.join(__dirname, "..", "..", "lib", "quotes"));
-const { getAllTickers, bulkUpdateFallbackQuotes, loadConfig } = require(path.join(__dirname, "..", "..", "lib", "config"));
+const { getAllTickers, bulkUpdateFallbackQuotes, loadConfig, saveConfig } = require(path.join(__dirname, "..", "..", "lib", "config"));
 
 async function main() {
   const tickers = getAllTickers();
@@ -32,6 +32,9 @@ async function main() {
 
   const before = loadConfig().fallbackQuotes;
   bulkUpdateFallbackQuotes(updates);
+  const cfg = loadConfig();
+  cfg.lastRefreshAt = new Date().toISOString();
+  saveConfig(cfg);
 
   const summary = {
     timestamp: new Date().toISOString(),

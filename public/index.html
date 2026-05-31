@@ -43,97 +43,6 @@
         </div>
       </header>
 
-      <section class="change-strip">
-        <span class="change-label">Δ since last</span>
-        <div id="changeList" class="change-list"></div>
-      </section>
-
-      <section class="overview-grid" id="overviewGrid"></section>
-
-      <section class="tabs-card">
-        <div class="tabs-header">
-          <div>
-            <p class="eyebrow">Scenario Tabs</p>
-            <h2 id="scenarioTitle">Loading</h2>
-          </div>
-          <div class="tab-strip" id="tabStrip"></div>
-        </div>
-
-        <div class="scenario-topline">
-          <div class="signal-card">
-            <span class="signal-label">Scenario heat</span>
-            <div class="signal-value-row">
-              <strong id="heatValue">--</strong>
-              <span>/ 100</span>
-            </div>
-            <div class="meter">
-              <div id="heatBar" class="meter-fill"></div>
-            </div>
-          </div>
-
-          <div class="summary-card">
-            <p id="scenarioSubtitle" class="scenario-subtitle"></p>
-            <p id="scenarioSummary" class="scenario-summary"></p>
-            <div id="subScoreGrid" class="subscore-grid"></div>
-          </div>
-        </div>
-
-        <div class="content-grid">
-          <section class="panel">
-            <div class="panel-head">
-              <h3>Market Transmission</h3>
-              <span>Primary indicators and second-order effects</span>
-            </div>
-            <div id="indicatorGrid" class="indicator-grid"></div>
-            <div class="effects-block">
-              <h4>Second-Order Effects</h4>
-              <div id="effectsList" class="effects-list"></div>
-            </div>
-          </section>
-
-          <section class="panel">
-            <div class="panel-head">
-              <h3>Top Trades</h3>
-              <div class="trade-controls">
-                <button class="filter-chip active" data-filter="all">All</button>
-                <button class="filter-chip" data-filter="LONG">Long</button>
-                <button class="filter-chip" data-filter="SHORT">Short</button>
-                <button class="filter-chip" data-filter="Defense">Defense</button>
-                <button class="filter-chip" data-filter="Energy">Energy</button>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Ticker</th>
-                    <th>Sector</th>
-                    <th>Direction</th>
-                    <th>Price</th>
-                    <th>Upside</th>
-                    <th>Downside</th>
-                    <th>Horizon</th>
-                    <th>Pair Trade</th>
-                    <th>Target</th>
-                    <th>Stop</th>
-                    <th>R/R</th>
-                  </tr>
-                </thead>
-                <tbody id="tradeTableBody"></tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="panel">
-            <div class="panel-head">
-              <h3>Live Headlines</h3>
-              <span>Current scenario signal inputs</span>
-            </div>
-            <div id="headlineList" class="headline-list"></div>
-          </section>
-        </div>
-      </section>
-
       <section class="trader-card">
         <header class="trader-header">
           <div class="trader-title">
@@ -320,6 +229,97 @@
                 <div id="traderMemoryBottom" class="memory-list"></div>
               </div>
             </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="change-strip">
+        <span class="change-label">Δ since last</span>
+        <div id="changeList" class="change-list"></div>
+      </section>
+
+      <section class="overview-grid" id="overviewGrid"></section>
+
+      <section class="tabs-card">
+        <div class="tabs-header">
+          <div>
+            <p class="eyebrow">Scenario Tabs</p>
+            <h2 id="scenarioTitle">Loading</h2>
+          </div>
+          <div class="tab-strip" id="tabStrip"></div>
+        </div>
+
+        <div class="scenario-topline">
+          <div class="signal-card">
+            <span class="signal-label">Scenario heat</span>
+            <div class="signal-value-row">
+              <strong id="heatValue">--</strong>
+              <span>/ 100</span>
+            </div>
+            <div class="meter">
+              <div id="heatBar" class="meter-fill"></div>
+            </div>
+          </div>
+
+          <div class="summary-card">
+            <p id="scenarioSubtitle" class="scenario-subtitle"></p>
+            <p id="scenarioSummary" class="scenario-summary"></p>
+            <div id="subScoreGrid" class="subscore-grid"></div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Market Transmission</h3>
+              <span>Primary indicators and second-order effects</span>
+            </div>
+            <div id="indicatorGrid" class="indicator-grid"></div>
+            <div class="effects-block">
+              <h4>Second-Order Effects</h4>
+              <div id="effectsList" class="effects-list"></div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Top Trades</h3>
+              <div class="trade-controls">
+                <button class="filter-chip active" data-filter="all">All</button>
+                <button class="filter-chip" data-filter="LONG">Long</button>
+                <button class="filter-chip" data-filter="SHORT">Short</button>
+                <button class="filter-chip" data-filter="Defense">Defense</button>
+                <button class="filter-chip" data-filter="Energy">Energy</button>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Sector</th>
+                    <th>Direction</th>
+                    <th>Price</th>
+                    <th>Upside</th>
+                    <th>Downside</th>
+                    <th>Horizon</th>
+                    <th>Pair Trade</th>
+                    <th>Target</th>
+                    <th>Stop</th>
+                    <th>R/R</th>
+                  </tr>
+                </thead>
+                <tbody id="tradeTableBody"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h3>Live Headlines</h3>
+              <span>Current scenario signal inputs</span>
+            </div>
+            <div id="headlineList" class="headline-list"></div>
           </section>
         </div>
       </section>

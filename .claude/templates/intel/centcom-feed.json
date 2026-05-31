@@ -7,25 +7,33 @@
     "CENTCOM Houthi UAV drone interception",
     "CENTCOM tanker incident Persian Gulf Strait Hormuz"
   ],
-  "rssFeeds": [],
+  "rssFeeds": [
+    "https://www.understandingwar.org/feeds/updates",
+    "https://www.criticalthreats.org/rss.xml"
+  ],
   "weights": [
     ["centcom", 5],
     ["press release", 2],
     ["statement", 1],
-    ["strike", 4],
-    ["destroyed", 4],
-    ["intercepted", 4],
+    ["strike", 4, "kinetic"],
+    ["destroyed", 4, "kinetic"],
+    ["intercepted", 4, "kinetic"],
     ["operation", 2],
     ["maritime", 3],
-    ["uav", 3],
-    ["drone", 3],
-    ["missile", 3],
+    ["uav", 3, "kinetic"],
+    ["drone", 3, "kinetic"],
+    ["missile", 3, "kinetic"],
     ["iran-backed", 5],
     ["proxy", 3],
     ["houthi", 4],
     ["red sea", 3],
     ["gulf of oman", 4],
-    ["persian gulf", 4]
+    ["persian gulf", 4],
+    ["hezbollah", 4],
+    ["pmf", 3],
+    ["ceasefire", -4, "diplomatic"],
+    ["negotiations", -3, "diplomatic"],
+    ["withdraw", -3, "diplomatic"]
   ],
   "bands": {
     "high": [40, 88],
