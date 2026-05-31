@@ -2126,7 +2126,6 @@ a:hover { text-decoration: underline; }
   .overview-rail { grid-template-columns: 1fr 1fr; }
   .panel-trades .table-wrap { display: none; }
   .trade-cards { display: flex; }
-  .topbar-build { display: none; }
   .hero-trader .trader-kpi-row { grid-template-columns: repeat(2, 1fr); }
   .hero-changes { max-width: 100%; }
 }
