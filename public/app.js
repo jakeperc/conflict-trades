@@ -8,6 +8,7 @@ const state = {
 
 const nodes = {
   statusText: document.getElementById("statusText"),
+  statusPill: document.getElementById("statusPill"),
   lastRefresh: document.getElementById("lastRefresh"),
   buildVersion: document.getElementById("buildVersion"),
   topPairTrade: document.getElementById("topPairTrade"),
@@ -15,20 +16,25 @@ const nodes = {
   refreshButton: document.getElementById("refreshButton"),
   overviewGrid: document.getElementById("overviewGrid"),
   tabStrip: document.getElementById("tabStrip"),
+  scenarioSelect: document.getElementById("scenarioSelect"),
   scenarioTitle: document.getElementById("scenarioTitle"),
   scenarioSubtitle: document.getElementById("scenarioSubtitle"),
   scenarioSummary: document.getElementById("scenarioSummary"),
   heatValue: document.getElementById("heatValue"),
-  heatBar: document.getElementById("heatBar"),
+  heatBand: document.getElementById("heatBand"),
+  heatDelta: document.getElementById("heatDelta"),
   subScoreGrid: document.getElementById("subScoreGrid"),
   indicatorGrid: document.getElementById("indicatorGrid"),
   effectsList: document.getElementById("effectsList"),
   tradeTableBody: document.getElementById("tradeTableBody"),
+  tradeCards: document.getElementById("tradeCards"),
   headlineList: document.getElementById("headlineList"),
   methodologyText: document.getElementById("methodologyText"),
   disclaimerText: document.getElementById("disclaimerText"),
   tradeRowTemplate: document.getElementById("tradeRowTemplate")
 };
+
+/* ===================== persistence ===================== */
 
 function loadPreviousPayload() {
   try {
@@ -42,11 +48,10 @@ function savePayload(payload) {
   localStorage.setItem("conflict-dashboard-last-payload", JSON.stringify(payload));
 }
 
-function formatCurrency(value) {
-  if (value == null || Number.isNaN(value)) {
-    return "N/A";
-  }
+/* ===================== formatting ===================== */
 
+function formatCurrency(value) {
+  if (value == null || Number.isNaN(value)) return "N/A";
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -55,10 +60,7 @@ function formatCurrency(value) {
 }
 
 function formatPct(value) {
-  if (value == null || Number.isNaN(value)) {
-    return "N/A";
-  }
-
+  if (value == null || Number.isNaN(value)) return "N/A";
   return `${(value * 100).toFixed(1)}%`;
 }
 
@@ -68,51 +70,337 @@ function formatDelta(value, unit = "") {
 }
 
 function formatTime(value) {
-  if (!value) {
-    return "Waiting";
-  }
-
-  return new Intl.DateTimeFormat("en-US", {
-    dateStyle: "medium",
-    timeStyle: "short"
-  }).format(new Date(value));
+  if (!value) return "Waiting";
+  return new Intl.DateTimeFormat("en-US", { dateStyle: "medium", timeStyle: "short" }).format(new Date(value));
 }
 
-function formatPostedAt(value) {
-  if (!value) {
-    return "No timestamp available";
-  }
-
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) {
-    return "No timestamp available";
-  }
-
-  return `Posted ${new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-    timeZoneName: "short"
-  }).format(date)}`;
+function relativeTime(value) {
+  if (!value) return "—";
+  const t = Date.parse(value);
+  if (Number.isNaN(t)) return "—";
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1) return "just now";
+  if (m < 60) return `${m}m ago`;
+  const h = Math.round(m / 60);
+  if (h < 24) return `${h}h ago`;
+  const d = Math.round(h / 24);
+  if (d < 7) return `${d}d ago`;
+  return new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
+
+/* ===================== small UI helpers ===================== */
+
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
+function hexAlpha(hex, alpha) {
+  const h = (hex || "").replace("#", "");
+  if (h.length !== 6) return hex;
+  const n = parseInt(h, 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+}
+
+const HEAT_BANDS = [
+  { min: 95, label: "Critical", varName: "--heat-critical" },
+  { min: 75, label: "High", varName: "--heat-high" },
+  { min: 50, label: "Moderate", varName: "--heat-moderate" },
+  { min: 0, label: "Low", varName: "--heat-low" }
+];
+
+function heatBand(value) {
+  return HEAT_BANDS.find((b) => value >= b.min) || HEAT_BANDS[HEAT_BANDS.length - 1];
+}
+
+function heatColor(value) {
+  return cssVar(heatBand(value).varName) || "#f5a623";
+}
+
+function shortLabel(scenario) {
+  return (scenario.title || scenario.key || "").split("/")[0].trim().split(/\s+/)[0] || scenario.key;
+}
+
+function shortLabelByKey(key) {
+  const s = state.payload?.scenarios?.[key];
+  return s ? shortLabel(s) : key;
+}
+
+function sectorHue(sector) {
+  const s = sector || "General";
+  let h = 0;
+  for (let i = 0; i < s.length; i += 1) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h % 360;
+}
+
+function sectorChip(sector) {
+  const label = sector || "General";
+  return `<span class="sector-chip" style="--chip-h:${sectorHue(label)}">${label}</span>`;
+}
+
+function convictionPips(n) {
+  const filled = Math.max(0, Math.min(5, Math.round(n || 0)));
+  let out = "";
+  for (let i = 1; i <= 5; i += 1) out += `<i class="pip${i <= filled ? " on" : ""}"></i>`;
+  return `<span class="pips" title="Conviction ${filled}/5">${out}</span>`;
+}
+
+function relevancePips(n) {
+  const f = Math.max(0, Math.min(5, Math.round(n)));
+  let out = "";
+  for (let i = 1; i <= 5; i += 1) out += `<i class="rpip${i <= f ? " on" : ""}"></i>`;
+  return out;
+}
+
+const REL_KEYWORDS = [
+  ["hormuz", 3], ["strait", 2], ["taiwan", 3], ["nato", 2], ["russia", 2],
+  ["missile", 2], ["drill", 2], ["shipping", 2], ["warship", 2], ["sanction", 2],
+  ["tanker", 2], ["oil", 1], ["gas", 1], ["launch", 2], ["dprk", 2],
+  ["pyongyang", 2], ["semiconductor", 2], ["chip", 1], ["blockade", 3]
+];
+
+function clientRelevance(headline) {
+  const text = `${headline.title} ${headline.description || ""}`.toLowerCase();
+  let s = 0;
+  REL_KEYWORDS.forEach(([k, w]) => { if (text.includes(k)) s += w; });
+  return Math.max(1, Math.min(5, Math.round(s / 2) || 1));
+}
+
+function sourceFromDescription(desc) {
+  if (!desc) return "";
+  const m = desc.match(/<font[^>]*>([^<]+)<\/font>\s*$/i);
+  if (m) return m[1].trim();
+  const stripped = desc.replace(/<[^>]+>/g, "").trim();
+  return stripped.length > 0 && stripped.length < 48 ? stripped : "";
+}
+
+function rrBar(rr) {
+  const pct = Math.max(2, Math.min(100, (rr / 4) * 100));
+  return `<span class="rr-wrap"><span class="rr-bar"><span class="rr-fill ${rr >= 2 ? "good" : ""}" style="width:${pct}%"></span></span><span class="rr-val mono">${rr}x</span></span>`;
+}
+
+// Lightweight inline-SVG price sparkline — cheaper than a Chart.js instance per row.
+function miniSparkline(series) {
+  if (!Array.isArray(series) || series.length < 2) return '<span class="spark-empty">–</span>';
+  const w = 64, h = 22, n = series.length;
+  const min = Math.min(...series), max = Math.max(...series), rng = (max - min) || 1;
+  const pts = series
+    .map((v, i) => {
+      const x = (i / (n - 1)) * w;
+      const y = h - 2 - ((v - min) / rng) * (h - 4);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(" ");
+  const up = series[n - 1] >= series[0];
+  const col = up ? "var(--long)" : "var(--short)";
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.3" stroke-linejoin="round"/></svg>`;
+}
+
+/* ===================== charts (Chart.js) ===================== */
+
+const charts = {};
+// Honor reduced-motion for canvas charts (CSS can't reach Chart.js's rAF animations).
+if (window.Chart && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  window.Chart.defaults.animation = false;
+}
+function destroyChart(id) {
+  if (charts[id]) {
+    charts[id].destroy();
+    delete charts[id];
+  }
+}
+
+function renderHeatGauge(scenario) {
+  const el = document.getElementById("heatGauge");
+  if (!el || !window.Chart) return;
+  destroyChart("heatGauge");
+  const v = Math.max(0, Math.min(100, scenario.heat));
+  const col = heatColor(scenario.heat);
+  charts.heatGauge = new Chart(el, {
+    type: "doughnut",
+    data: {
+      datasets: [{
+        data: [v, 100 - v],
+        backgroundColor: [col, "rgba(255,255,255,0.06)"],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      cutout: "75%",
+      rotation: -135,
+      circumference: 270,
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } }
+    }
+  });
+}
+
+function renderHeatSpark(scenario) {
+  const el = document.getElementById("heatSpark");
+  if (!el || !window.Chart) return;
+  destroyChart("heatSpark");
+  const hist = Array.isArray(scenario.heatHistory) ? scenario.heatHistory : [];
+  const pts = hist.map((h) => h.heat);
+  if (!pts.length) return;
+  const col = heatColor(scenario.heat);
+  charts.heatSpark = new Chart(el, {
+    type: "line",
+    data: {
+      labels: hist.map((h) => h.t),
+      datasets: [{
+        data: pts,
+        borderColor: col,
+        backgroundColor: hexAlpha(col, 0.14),
+        borderWidth: 1.5,
+        pointRadius: pts.length <= 2 ? 2.5 : 0,
+        fill: true,
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { display: false },
+        y: { display: false, min: Math.min(...pts, 35) - 5, max: Math.max(...pts, 100) }
+      },
+      plugins: { legend: { display: false }, tooltip: { enabled: false } }
+    }
+  });
+}
+
+function renderRadar(scenario) {
+  const el = document.getElementById("subscoreRadar");
+  if (!el || !window.Chart) return;
+  destroyChart("radar");
+  const labels = scenario.subScores.map((s) => s.label);
+  const data = scenario.subScores.map((s) => s.value);
+  const accent = cssVar("--heat-high") || "#f5a623";
+  const grid = "rgba(255,255,255,0.09)";
+  const datasets = [{
+    label: "Now",
+    data,
+    borderColor: accent,
+    backgroundColor: hexAlpha(accent, 0.18),
+    borderWidth: 2,
+    pointRadius: 2,
+    pointBackgroundColor: accent
+  }];
+  charts.radar = new Chart(el, {
+    type: "radar",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        r: {
+          min: 0,
+          max: 100,
+          ticks: { display: false, stepSize: 25 },
+          grid: { color: grid },
+          angleLines: { color: grid },
+          pointLabels: { color: cssVar("--text-dim") || "#9aa3b3", font: { size: 10 } }
+        }
+      },
+      plugins: { legend: { display: false }, tooltip: { enabled: true } }
+    }
+  });
+}
+
+function renderEquityCurve(curve) {
+  const el = document.getElementById("equityCurve");
+  if (!el || !window.Chart) return;
+  destroyChart("equityCurve");
+  const series = Array.isArray(curve) ? curve : [];
+  const pts = series.map((p) => p.totalEquity);
+  if (!pts.length) return;
+  const base = pts[0] ?? 10000;
+  const up = pts[pts.length - 1] >= base;
+  const col = up ? cssVar("--long") : cssVar("--short");
+  charts.equityCurve = new Chart(el, {
+    type: "line",
+    data: {
+      labels: series.map((p) => p.date),
+      datasets: [{
+        data: pts,
+        borderColor: col,
+        backgroundColor: hexAlpha(col, 0.1),
+        borderWidth: 1.5,
+        pointRadius: pts.length <= 2 ? 3 : 0,
+        fill: true,
+        tension: 0.25
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: { x: { display: false }, y: { display: false } },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (c) => formatCurrency(c.parsed.y ?? c.parsed) } }
+      }
+    }
+  });
+}
+
+function renderAllocation(positions, cash) {
+  const el = document.getElementById("allocationChart");
+  const legend = document.getElementById("allocationLegend");
+  if (!el || !window.Chart) return;
+  destroyChart("allocation");
+  const groups = {};
+  (positions || []).forEach((p) => {
+    const k = p.scenario || "other";
+    groups[k] = (groups[k] || 0) + (p.allocatedCash || 0);
+  });
+  const keys = Object.keys(groups);
+  const labels = keys.map((k) => shortLabelByKey(k));
+  const data = keys.map((k) => groups[k]);
+  const colors = keys.map((k) => state.payload?.scenarios?.[k]?.color || "#8b9dc3");
+  if (cash && cash > 0) {
+    labels.push("Cash");
+    data.push(cash);
+    colors.push("rgba(255,255,255,0.16)");
+  }
+  if (!data.length) {
+    if (legend) legend.innerHTML = '<p class="muted-cell">No open positions.</p>';
+    return;
+  }
+  charts.allocation = new Chart(el, {
+    type: "doughnut",
+    data: { labels, datasets: [{ data, backgroundColor: colors, borderWidth: 0 }] },
+    options: {
+      cutout: "60%",
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: (c) => `${c.label}: ${formatCurrency(c.parsed)}` } }
+      }
+    }
+  });
+  if (legend) {
+    legend.innerHTML = labels
+      .map((l, i) => `<span class="alloc-item"><i style="background:${colors[i]}"></i>${l} <strong class="mono">${formatCurrency(data[i])}</strong></span>`)
+      .join("");
+  }
+}
+
+/* ===================== data load ===================== */
 
 function setLoading(loading) {
   state.loading = loading;
   nodes.refreshButton.disabled = loading;
   nodes.refreshButton.textContent = loading ? "Refreshing…" : "Refresh";
   nodes.statusText.textContent = loading ? "Pulling live data" : "Live";
+  if (nodes.statusPill) nodes.statusPill.dataset.state = loading ? "loading" : "live";
 }
 
 async function loadData() {
   setLoading(true);
-
   try {
     const response = await fetch("/api/refresh", { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const payload = await response.json();
     state.previousPayload = state.payload || state.previousPayload;
@@ -122,16 +410,44 @@ async function loadData() {
     nodes.methodologyText.textContent = payload.methodology;
     nodes.disclaimerText.textContent = payload.disclaimer;
     nodes.buildVersion.textContent = payload.appVersion || "Live";
-    renderOverview();
+    if (!payload.scenarios[state.activeKey]) {
+      state.activeKey = Object.keys(payload.scenarios)[0];
+    }
     renderTabs();
+    renderOverview();
     renderScenario();
     renderChanges();
   } catch (error) {
     nodes.statusText.textContent = "Refresh failed";
+    if (nodes.statusPill) nodes.statusPill.dataset.state = "error";
     nodes.lastRefresh.textContent = error.message;
   } finally {
     setLoading(false);
   }
+}
+
+/* ===================== scenario navigation ===================== */
+
+function setActiveScenario(key) {
+  if (!state.payload?.scenarios?.[key]) return;
+  state.activeKey = key;
+  syncScenarioNav();
+  renderScenario();
+  renderChanges();
+}
+
+function syncScenarioNav() {
+  nodes.tabStrip?.querySelectorAll(".tab-button").forEach((b) => {
+    const on = b.dataset.key === state.activeKey;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-selected", on ? "true" : "false");
+  });
+  nodes.overviewGrid?.querySelectorAll(".overview-card").forEach((c) => {
+    const on = c.dataset.key === state.activeKey;
+    c.classList.toggle("active", on);
+    c.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  if (nodes.scenarioSelect) nodes.scenarioSelect.value = state.activeKey;
 }
 
 function renderOverview() {
@@ -139,60 +455,89 @@ function renderOverview() {
   nodes.overviewGrid.innerHTML = "";
 
   scenarios.forEach((scenario) => {
-    const card = document.createElement("article");
-    card.className = "overview-card";
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = `overview-card${scenario.key === state.activeKey ? " active" : ""}`;
+    card.dataset.key = scenario.key;
+    card.setAttribute("aria-pressed", scenario.key === state.activeKey ? "true" : "false");
+    card.style.setProperty("--scenario-color", scenario.color || "var(--accent)");
+
+    const band = heatBand(scenario.heat);
+    const col = heatColor(scenario.heat);
+    const prev = state.previousPayload?.scenarios?.[scenario.key];
+    const dHeat = prev ? scenario.heat - prev.heat : null;
+    const deltaChip = dHeat == null || dHeat === 0
+      ? ""
+      : `<span class="heat-chip-delta ${dHeat > 0 ? "up" : "down"}">${dHeat > 0 ? "▲" : "▼"}${Math.abs(dHeat)}</span>`;
     const strongest = [...scenario.subScores].sort((a, b) => b.value - a.value)[0];
-    const latestHeadline = scenario.headlines?.[0];
-    const latestPostedAt = latestHeadline?.publishedAt
-      ? formatPostedAt(latestHeadline.publishedAt).replace("Posted", "Latest headline")
-      : `Refreshed ${formatTime(scenario.refreshedAt || state.payload.generatedAt)}`;
 
     card.innerHTML = `
-      <div class="scenario-kicker">
-        <span>${scenario.title}</span>
-        <span class="heat-pill">Heat ${scenario.heat}</span>
+      <div class="ov-top">
+        <span class="ov-title">${shortLabel(scenario)}</span>
+        <span class="heat-chip" style="--hc:${col}">${scenario.heat}${deltaChip}</span>
       </div>
-      <h3>${scenario.subtitle}</h3>
-      <p class="overview-timestamp">${latestPostedAt}</p>
-      <p class="scenario-summary">${scenario.summary}</p>
-      <div class="overview-footer">
-        <span>${strongest.label}</span>
-        <strong>${strongest.value}/100</strong>
-      </div>
+      <div class="ov-band" style="--hc:${col}">${band.label} risk</div>
+      <p class="ov-sub">${scenario.subtitle}</p>
+      <div class="ov-foot"><span>${strongest.label}</span><strong class="mono">${strongest.value}</strong></div>
     `;
+    card.addEventListener("click", () => setActiveScenario(scenario.key));
     nodes.overviewGrid.appendChild(card);
   });
+  syncScenarioNav();
 }
 
 function renderTabs() {
   const scenarios = Object.values(state.payload.scenarios);
   nodes.tabStrip.innerHTML = "";
+  nodes.scenarioSelect.innerHTML = "";
 
   scenarios.forEach((scenario) => {
     const button = document.createElement("button");
     button.className = `tab-button${scenario.key === state.activeKey ? " active" : ""}`;
-    button.textContent = scenario.title;
-    button.addEventListener("click", () => {
-      state.activeKey = scenario.key;
-      renderTabs();
-      renderScenario();
-      renderChanges();
-    });
+    button.textContent = shortLabel(scenario);
+    button.dataset.key = scenario.key;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-selected", scenario.key === state.activeKey ? "true" : "false");
+    button.addEventListener("click", () => setActiveScenario(scenario.key));
     nodes.tabStrip.appendChild(button);
+
+    const option = document.createElement("option");
+    option.value = scenario.key;
+    option.textContent = scenario.title;
+    if (scenario.key === state.activeKey) option.selected = true;
+    nodes.scenarioSelect.appendChild(option);
   });
 }
 
 function renderScenario() {
   const scenario = state.payload.scenarios[state.activeKey];
-  if (!scenario) {
-    return;
-  }
+  if (!scenario) return;
 
   nodes.scenarioTitle.textContent = scenario.title;
   nodes.scenarioSubtitle.textContent = scenario.subtitle;
   nodes.scenarioSummary.textContent = scenario.summary;
+
+  const band = heatBand(scenario.heat);
+  const col = heatColor(scenario.heat);
   nodes.heatValue.textContent = String(scenario.heat);
-  nodes.heatBar.style.width = `${scenario.heat}%`;
+  nodes.heatValue.style.color = col;
+  if (nodes.heatBand) {
+    nodes.heatBand.textContent = `${band.label} risk`;
+    nodes.heatBand.style.color = col;
+  }
+
+  const prev = state.previousPayload?.scenarios?.[state.activeKey];
+  if (nodes.heatDelta) {
+    if (prev) {
+      const d = scenario.heat - prev.heat;
+      nodes.heatDelta.textContent = d === 0 ? "no change vs last" : `${d > 0 ? "▲ +" : "▼ "}${d} vs last`;
+      nodes.heatDelta.className = `heat-delta mono ${d > 0 ? "rising" : d < 0 ? "falling" : "flat"}`;
+    } else {
+      nodes.heatDelta.textContent = "first snapshot";
+      nodes.heatDelta.className = "heat-delta mono flat";
+    }
+  }
+
   nodes.topPairTrade.textContent = scenario.topPairTrade || "No pair trade";
 
   renderSubScores(scenario.subScores);
@@ -200,30 +545,38 @@ function renderScenario() {
   renderEffects(scenario.secondOrderEffects);
   renderTrades(scenario.trades);
   renderHeadlines(scenario.headlines);
+
+  renderHeatGauge(scenario);
+  renderHeatSpark(scenario);
+  renderRadar(scenario);
 }
 
 function renderSubScores(subScores) {
   nodes.subScoreGrid.innerHTML = "";
-  subScores.forEach((item) => {
-    const card = document.createElement("div");
-    card.className = "subscore-card";
-    card.innerHTML = `
-      <span>${item.label}</span>
-      <strong>${item.value}</strong>
+  const ranked = [...subScores].sort((a, b) => b.value - a.value);
+  ranked.forEach((item) => {
+    const row = document.createElement("div");
+    row.className = "subscore-legend-item";
+    const col = heatColor(item.value);
+    row.innerHTML = `
+      <span class="ssl-dot" style="background:${col}"></span>
+      <span class="ssl-label">${item.label}</span>
+      <span class="ssl-value mono" style="color:${col}">${item.value}</span>
     `;
-    nodes.subScoreGrid.appendChild(card);
+    nodes.subScoreGrid.appendChild(row);
   });
 }
 
 function renderIndicators(indicators) {
   nodes.indicatorGrid.innerHTML = "";
   indicators.forEach((item) => {
+    const moved = Math.abs(item.delta || 0) >= 0.5;
     const card = document.createElement("div");
     card.className = "indicator-card";
     card.innerHTML = `
       <span class="indicator-label">${item.label}</span>
-      <strong>${item.value}${item.unit ? ` ${item.unit}` : ""}</strong>
-      <span class="indicator-delta ${item.tone === "up" ? "positive" : "negative"}">${formatDelta(item.delta, item.unit === "%" ? "%" : "")}</span>
+      <strong class="mono">${item.value}${item.unit ? ` ${item.unit}` : ""}</strong>
+      <span class="indicator-delta ${moved ? "moved" : "flat"}">${item.delta >= 0 ? "▲" : "▼"} ${formatDelta(item.delta, item.unit === "%" ? "%" : "")}</span>
     `;
     nodes.indicatorGrid.appendChild(card);
   });
@@ -231,7 +584,7 @@ function renderIndicators(indicators) {
 
 function renderEffects(effects) {
   nodes.effectsList.innerHTML = "";
-  effects.forEach((effect) => {
+  (effects || []).forEach((effect) => {
     const item = document.createElement("div");
     item.className = "effect-item";
     item.textContent = effect;
@@ -239,76 +592,175 @@ function renderEffects(effects) {
   });
 }
 
-function getFilteredTrades(trades) {
-  if (state.activeFilter === "all") {
-    return trades;
-  }
+/* ===================== trades ===================== */
 
+function getFilteredTrades(trades) {
+  if (state.activeFilter === "all") return trades;
   return trades.filter((trade) => {
     if (state.activeFilter === "LONG" || state.activeFilter === "SHORT") {
       return trade.direction === state.activeFilter;
     }
-
     return (trade.sector || "").toLowerCase().includes(state.activeFilter.toLowerCase());
   });
 }
 
+const expandedTradeIds = new Set();
+function tradeKey(trade) {
+  return `${state.activeKey}:${trade.ticker}:${trade.direction}`;
+}
+
 function renderTrades(trades) {
   nodes.tradeTableBody.innerHTML = "";
-  const filteredTrades = getFilteredTrades(trades);
+  if (nodes.tradeCards) nodes.tradeCards.innerHTML = "";
+  const filtered = getFilteredTrades(trades);
 
-  filteredTrades.forEach((trade) => {
+  if (!filtered.length) {
+    nodes.tradeTableBody.innerHTML = '<tr><td colspan="7" class="muted-cell">No trades match this filter.</td></tr>';
+    return;
+  }
+
+  filtered.forEach((trade) => {
+    const id = tradeKey(trade);
+    const expanded = expandedTradeIds.has(id);
     const fragment = nodes.tradeRowTemplate.content.cloneNode(true);
-    fragment.querySelector(".ticker").textContent = trade.ticker;
-    fragment.querySelector(".thesis").textContent = trade.thesis;
-    fragment.querySelector(".sector").textContent = trade.sector || "General";
+    const row = fragment.querySelector("tr");
+    row.dataset.tradeId = id;
+    if (expanded) row.classList.add("expanded");
 
-    const directionNode = fragment.querySelector(".direction");
-    directionNode.innerHTML = `<span class="direction-badge ${trade.direction.toLowerCase()}">${trade.direction}</span>`;
+    fragment.querySelector(".ticker").textContent = trade.ticker;
+    fragment.querySelector(".row-chevron").textContent = expanded ? "▾" : "▸";
+    fragment.querySelector(".conviction-pips").outerHTML = convictionPips(trade.conviction);
+
+    fragment.querySelector(".direction").innerHTML =
+      `<span class="direction-badge ${trade.direction.toLowerCase()}">${trade.direction}</span>`;
+    fragment.querySelector(".sector").innerHTML = sectorChip(trade.sector);
 
     const priceNode = fragment.querySelector(".price");
-    priceNode.innerHTML =
-      trade.priceSource && trade.price != null
-        ? `${formatCurrency(trade.price)}<div class="cell-meta">${trade.priceSource}</div>`
-        : formatCurrency(trade.price);
+    priceNode.innerHTML = trade.price != null
+      ? `${formatCurrency(trade.price)}${trade.priceSource === "Fallback baseline" ? '<span class="px-fallback" title="Fallback price">~</span>' : ""}`
+      : "N/A";
 
-    const upsideNode = fragment.querySelector(".upside");
-    upsideNode.textContent = formatPct(trade.upsidePct);
-    upsideNode.classList.add("positive");
-
-    const downsideNode = fragment.querySelector(".downside");
-    downsideNode.textContent = formatPct(trade.downsidePct);
-    downsideNode.classList.add("negative");
-
+    fragment.querySelector(".rr").innerHTML = trade.rewardToRisk != null ? rrBar(trade.rewardToRisk) : "N/A";
     fragment.querySelector(".horizon").textContent = trade.horizon || "Tactical";
-    const pairTradeNode = fragment.querySelector(".pairTrade");
-    pairTradeNode.innerHTML = `${trade.pairTrade || "N/A"}<div class="cell-meta">${trade.riskLevel || "Risk not set"}</div>`;
-    fragment.querySelector(".target").textContent = formatCurrency(trade.targetPrice);
-    fragment.querySelector(".stop").textContent = formatCurrency(trade.stopPrice);
-    fragment.querySelector(".rr").textContent = trade.rewardToRisk == null ? "N/A" : `${trade.rewardToRisk}x`;
+    fragment.querySelector(".spark-mini").innerHTML = miniSparkline(trade.priceSeries);
 
-    const row = fragment.querySelector("tr");
-    row.classList.add("trade-row");
-    row.title = `Catalyst: ${trade.catalyst} | Breaker: ${trade.thesisBreaker}`;
+    row.addEventListener("click", () => toggleTradeDetail(row, trade, id));
     nodes.tradeTableBody.appendChild(fragment);
+    if (expanded) nodes.tradeTableBody.appendChild(buildTradeDetailRow(trade));
+
+    if (nodes.tradeCards) nodes.tradeCards.appendChild(buildTradeCard(trade));
   });
 }
+
+function toggleTradeDetail(row, trade, id) {
+  const next = row.nextElementSibling;
+  const isOpen = next && next.classList.contains("trade-detail");
+  const chev = row.querySelector(".row-chevron");
+  if (isOpen) {
+    next.remove();
+    row.classList.remove("expanded");
+    expandedTradeIds.delete(id);
+    if (chev) chev.textContent = "▸";
+    return;
+  }
+  row.classList.add("expanded");
+  expandedTradeIds.add(id);
+  if (chev) chev.textContent = "▾";
+  row.parentNode.insertBefore(buildTradeDetailRow(trade), row.nextSibling);
+}
+
+function buildTradeDetailRow(trade) {
+  const tr = document.createElement("tr");
+  tr.className = "trade-detail";
+  tr.innerHTML = `<td colspan="7">${renderTradeDetail(trade)}</td>`;
+  return tr;
+}
+
+function renderTradeDetail(trade) {
+  const math = [
+    ["Target", formatCurrency(trade.targetPrice)],
+    ["Stop", formatCurrency(trade.stopPrice)],
+    ["Upside", formatPct(trade.upsidePct)],
+    ["Downside", formatPct(trade.downsidePct)],
+    ["Reward:risk", trade.rewardToRisk != null ? `${trade.rewardToRisk}x` : "N/A"],
+    ["Risk level", trade.riskLevel || "—"]
+  ].map(([k, v]) => `<div class="td-stat"><span>${k}</span><strong class="mono">${v}</strong></div>`).join("");
+
+  return `
+    <div class="trade-detail-grid">
+      <div class="td-thesis">
+        <span class="detail-tag">Thesis</span>
+        <p>${trade.thesis || "—"}</p>
+        <div class="td-cols">
+          <div><span class="detail-sublabel">Catalyst</span><p>${trade.catalyst || "—"}</p></div>
+          <div><span class="detail-sublabel">Thesis breaker</span><p>${trade.thesisBreaker || "—"}</p></div>
+          <div><span class="detail-sublabel">Pair trade</span><p class="mono">${trade.pairTrade || "—"}</p></div>
+        </div>
+      </div>
+      <div class="td-math">
+        <span class="detail-tag">Risk bands</span>
+        <div class="td-stat-grid">${math}</div>
+        <div class="td-pricesource">${trade.priceSource || ""}${trade.lastQuoteDate ? ` · ${trade.lastQuoteDate}` : ""}</div>
+      </div>
+    </div>
+  `;
+}
+
+function buildTradeCard(trade) {
+  const card = document.createElement("article");
+  card.className = "trade-card";
+  card.innerHTML = `
+    <div class="tc-head">
+      <div class="tc-ticker">
+        <strong class="mono">${trade.ticker}</strong>
+        <span class="direction-badge ${trade.direction.toLowerCase()}">${trade.direction}</span>
+        ${convictionPips(trade.conviction)}
+      </div>
+      <span class="mono tc-price">${trade.price != null ? formatCurrency(trade.price) : "N/A"}</span>
+    </div>
+    <div class="tc-meta">
+      ${sectorChip(trade.sector)}
+      <span class="tc-rr">${trade.rewardToRisk != null ? `${trade.rewardToRisk}x R:R` : ""}</span>
+      <span class="tc-horizon">${trade.horizon || ""}</span>
+    </div>
+    <p class="tc-thesis">${trade.thesis || ""}</p>
+    <div class="tc-bands">
+      <span>Tgt <strong class="mono">${formatCurrency(trade.targetPrice)}</strong></span>
+      <span>Stop <strong class="mono">${formatCurrency(trade.stopPrice)}</strong></span>
+    </div>
+  `;
+  return card;
+}
+
+/* ===================== headlines ===================== */
 
 function renderHeadlines(headlines) {
   nodes.headlineList.innerHTML = "";
 
   if (!headlines || !headlines.length) {
-    nodes.headlineList.innerHTML = '<div class="headline-item">No recent headlines were returned for this refresh window.</div>';
+    nodes.headlineList.innerHTML = '<div class="headline-empty">No recent headlines were returned for this refresh window.</div>';
     return;
   }
 
-  headlines.forEach((headline, index) => {
+  const prevTitles = new Set(
+    (state.previousPayload?.scenarios?.[state.activeKey]?.headlines || []).map((h) => h.title)
+  );
+
+  headlines.forEach((headline) => {
+    const isNew = state.previousPayload && !prevTitles.has(headline.title);
+    const rel = headline.relevance != null ? headline.relevance : clientRelevance(headline);
+    const source = headline.source || sourceFromDescription(headline.description) || "News";
+
     const article = document.createElement("article");
     article.className = "headline-item";
     article.innerHTML = `
-      <div class="headline-rank">Signal ${index + 1}</div>
+      <div class="headline-top">
+        <span class="relevance-pips" title="Signal relevance ${rel}/5">${relevancePips(rel)}</span>
+        ${isNew ? '<span class="badge-new">NEW</span>' : ""}
+        <span class="headline-source">${source}</span>
+        <span class="headline-time mono">${relativeTime(headline.publishedAt)}</span>
+      </div>
       <a href="${headline.link}" target="_blank" rel="noreferrer">${headline.title}</a>
-      <div class="headline-meta">${formatPostedAt(headline.publishedAt)}</div>
     `;
     nodes.headlineList.appendChild(article);
   });
@@ -320,26 +772,24 @@ function renderChanges() {
   const previous = state.previousPayload?.scenarios?.[state.activeKey];
 
   const items = [];
-  if (!current) {
-    return;
-  }
+  if (!current) return;
 
   if (!previous) {
     items.push("First captured snapshot for this scenario.");
   } else {
     const heatDelta = current.heat - previous.heat;
-    items.push(`Heat ${heatDelta >= 0 ? "up" : "down"} ${Math.abs(heatDelta)} points.`);
+    items.push(`Heat ${heatDelta >= 0 ? "up" : "down"} ${Math.abs(heatDelta)} pts.`);
 
     const currentTopHeadline = current.headlines?.[0]?.title;
     const previousTopHeadline = previous.headlines?.[0]?.title;
     if (currentTopHeadline && currentTopHeadline !== previousTopHeadline) {
-      items.push("Top headline rotated on this refresh.");
+      items.push("Top headline rotated.");
     }
 
     const currentTopTrade = current.trades?.[0];
     const previousTopTrade = previous.trades?.[0];
     if (currentTopTrade && previousTopTrade && currentTopTrade.targetPrice !== previousTopTrade.targetPrice) {
-      items.push(`${currentTopTrade.ticker} target changed to ${formatCurrency(currentTopTrade.targetPrice)}.`);
+      items.push(`${currentTopTrade.ticker} target → ${formatCurrency(currentTopTrade.targetPrice)}.`);
     }
   }
 
@@ -350,6 +800,8 @@ function renderChanges() {
     nodes.changeList.appendChild(line);
   });
 }
+
+/* ===================== trader ===================== */
 
 async function loadTrader() {
   try {
@@ -405,6 +857,9 @@ function renderTrader(data) {
   renderTraderWatchlist(state.lastWatchlist || []);
   renderTraderMemory(memory?.summary || { top: [], bottom: [] });
   renderSimulation(data.simulation, data.calibration);
+
+  renderEquityCurve(state.equityCurve);
+  renderAllocation(state.openPositions, state.cash);
 }
 
 const FAILURE_LABELS = {
@@ -971,16 +1426,22 @@ function renderTraderMemory(summary) {
   }
 }
 
+/* ===================== events + init ===================== */
+
 document.querySelectorAll(".filter-chip").forEach((chip) => {
   chip.addEventListener("click", () => {
     document.querySelectorAll(".filter-chip").forEach((item) => item.classList.remove("active"));
     chip.classList.add("active");
     state.activeFilter = chip.dataset.filter;
     if (state.payload) {
-      renderScenario();
+      renderTrades(state.payload.scenarios[state.activeKey].trades);
     }
   });
 });
+
+if (nodes.scenarioSelect) {
+  nodes.scenarioSelect.addEventListener("change", (e) => setActiveScenario(e.target.value));
+}
 
 nodes.refreshButton.addEventListener("click", () => {
   loadData();
