@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T07:51:23.757Z",
+  "generatedAt": "2026-05-31T08:01:48.982Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
@@ -65,7 +65,7 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-05-31T07:51:23.756Z",
+      "refreshedAt": "2026-05-31T08:01:48.839Z",
       "headlines": [
         {
           "title": "US Navy Fires Missile at Cargo Ship Attempting to Breach Iran Blockade - Ratopati",
@@ -1063,7 +1063,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T07:51",
+          "t": "2026-05-31T08:01",
           "heat": 92
         }
       ]
@@ -1129,7 +1129,7 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-05-31T07:51:23.725Z",
+      "refreshedAt": "2026-05-31T08:01:48.782Z",
       "headlines": [
         {
           "title": "China 'firmly' opposed to Canadian warship's Taiwan Strait crossing - National Post",
@@ -2127,7 +2127,7 @@
           "heat": 96
         },
         {
-          "t": "2026-05-31T07:51",
+          "t": "2026-05-31T08:01",
           "heat": 66
         }
       ]
@@ -2193,7 +2193,7 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-05-31T07:51:23.699Z",
+      "refreshedAt": "2026-05-31T08:01:48.981Z",
       "headlines": [
         {
           "title": "Russian Offensive Campaign Assessment, May 30, 2026 - Institute for the Study of War",
@@ -3260,7 +3260,7 @@
           "heat": 92
         },
         {
-          "t": "2026-05-31T07:51",
+          "t": "2026-05-31T08:01",
           "heat": 76
         }
       ]
@@ -3326,7 +3326,7 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-05-31T07:51:23.587Z",
+      "refreshedAt": "2026-05-31T08:01:46.501Z",
       "headlines": [
         {
           "title": "North Korea is testing three ballistic missile - bolnews.com",
@@ -4251,7 +4251,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-05-31T07:51",
+          "t": "2026-05-31T08:01",
           "heat": 72
         }
       ]
