@@ -1062,11 +1062,19 @@
       "openMtM": 6844.38,
       "totalEquity": 8984.45,
       "pctVsStart": -0.1016
+    },
+    {
+      "date": "2026-06-20",
+      "cycle": 20,
+      "cash": 2140.07,
+      "openMtM": 6844.38,
+      "totalEquity": 8984.45,
+      "pctVsStart": -0.1016
     }
   ],
   "createdAt": "2026-05-18T05:40:21.624Z",
-  "lastRunAt": "2026-06-19T13:46:38.993Z",
-  "cycles": 19,
+  "lastRunAt": "2026-06-20T13:45:51.714Z",
+  "cycles": 20,
   "lastWatchlist": [
     {
       "ticker": "FRO",
