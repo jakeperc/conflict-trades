@@ -38,14 +38,14 @@
       "maxAdverseTotal": -27.82149999999999
     },
     "direction:LONG": {
-      "n": 5944,
+      "n": 5946,
       "wins": 1712,
-      "totalPnlPct": -98.95590000000081,
-      "lastUpdated": "2026-06-18",
+      "totalPnlPct": -99.37610000000082,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "horizon_exceeded": 1115,
         "target_hit": 994,
-        "stop_hit": 3835
+        "stop_hit": 3837
       },
       "failureKinds": {
         "horizon_drift_loser": 394,
@@ -56,19 +56,19 @@
         "stop_hit_late": 3488,
         "target_undershoot": 757
       },
-      "holdingDaysTotal": 141670,
+      "holdingDaysTotal": 141702,
       "maxFavorableTotal": 496.5434999999982,
       "maxAdverseTotal": -532.5350000000019
     },
     "scenario:iran": {
-      "n": 2062,
+      "n": 2064,
       "wins": 899,
-      "totalPnlPct": 4.813400000000051,
-      "lastUpdated": "2026-06-18",
+      "totalPnlPct": 4.393200000000051,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "horizon_exceeded": 1133,
         "target_hit": 144,
-        "stop_hit": 785
+        "stop_hit": 787
       },
       "failureKinds": {
         "horizon_drift_loser": 375,
@@ -79,7 +79,7 @@
         "stop_hit_late": 660,
         "target_undershoot": 45
       },
-      "holdingDaysTotal": 50110,
+      "holdingDaysTotal": 50142,
       "maxFavorableTotal": 182.03760000000025,
       "maxAdverseTotal": -137.81780000000018
     },
@@ -123,14 +123,14 @@
       "maxAdverseTotal": -27.82149999999999
     },
     "scenario:iran|direction:LONG": {
-      "n": 1883,
+      "n": 1885,
       "wins": 829,
-      "totalPnlPct": 8.853100000000085,
-      "lastUpdated": "2026-06-18",
+      "totalPnlPct": 8.432900000000085,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "horizon_exceeded": 996,
         "target_hit": 144,
-        "stop_hit": 743
+        "stop_hit": 745
       },
       "failureKinds": {
         "horizon_drift_loser": 308,
@@ -141,7 +141,7 @@
         "stop_hit_late": 628,
         "target_undershoot": 45
       },
-      "holdingDaysTotal": 45591,
+      "holdingDaysTotal": 45623,
       "maxFavorableTotal": 169.42669999999993,
       "maxAdverseTotal": -125.14850000000013
     },
@@ -203,14 +203,14 @@
       "maxAdverseTotal": -8.211699999999999
     },
     "conviction:4": {
-      "n": 3058,
+      "n": 3060,
       "wins": 627,
-      "totalPnlPct": -187.06830000000144,
-      "lastUpdated": "2026-06-08",
+      "totalPnlPct": -187.48850000000144,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "horizon_exceeded": 849,
         "target_hit": 114,
-        "stop_hit": 2095
+        "stop_hit": 2097
       },
       "failureKinds": {
         "horizon_drift_winner": 513,
@@ -221,7 +221,7 @@
         "target_undershoot": 23,
         "horizon_drift_loser": 335
       },
-      "holdingDaysTotal": 76843,
+      "holdingDaysTotal": 76875,
       "maxFavorableTotal": 156.19160000000056,
       "maxAdverseTotal": -282.8022000000015
     },
@@ -748,14 +748,14 @@
       "maxAdverseTotal": -12.669299999999984
     },
     "ticker:USO": {
-      "n": 172,
+      "n": 173,
       "wins": 152,
-      "totalPnlPct": 22.28509999999997,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 22.075999999999972,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 48,
         "horizon_exceeded": 108,
-        "stop_hit": 16
+        "stop_hit": 17
       },
       "failureKinds": {
         "target_hit": 37,
@@ -765,19 +765,19 @@
         "horizon_drift_loser": 4,
         "stop_hit_late": 10
       },
-      "holdingDaysTotal": 3960,
+      "holdingDaysTotal": 3976,
       "maxFavorableTotal": 33.540499999999994,
       "maxAdverseTotal": -9.307599999999995
     },
     "sector:Oil ETF": {
-      "n": 172,
+      "n": 173,
       "wins": 152,
-      "totalPnlPct": 22.28509999999997,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 22.075999999999972,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 48,
         "horizon_exceeded": 108,
-        "stop_hit": 16
+        "stop_hit": 17
       },
       "failureKinds": {
         "target_hit": 37,
@@ -787,19 +787,19 @@
         "horizon_drift_loser": 4,
         "stop_hit_late": 10
       },
-      "holdingDaysTotal": 3960,
+      "holdingDaysTotal": 3976,
       "maxFavorableTotal": 33.540499999999994,
       "maxAdverseTotal": -9.307599999999995
     },
     "sector:Oil ETF|direction:LONG": {
-      "n": 172,
+      "n": 173,
       "wins": 152,
-      "totalPnlPct": 22.28509999999997,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 22.075999999999972,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 48,
         "horizon_exceeded": 108,
-        "stop_hit": 16
+        "stop_hit": 17
       },
       "failureKinds": {
         "target_hit": 37,
@@ -809,19 +809,19 @@
         "horizon_drift_loser": 4,
         "stop_hit_late": 10
       },
-      "holdingDaysTotal": 3960,
+      "holdingDaysTotal": 3976,
       "maxFavorableTotal": 33.540499999999994,
       "maxAdverseTotal": -9.307599999999995
     },
     "scenario:iran|sector:Oil ETF": {
-      "n": 172,
+      "n": 173,
       "wins": 152,
-      "totalPnlPct": 22.28509999999997,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 22.075999999999972,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 48,
         "horizon_exceeded": 108,
-        "stop_hit": 16
+        "stop_hit": 17
       },
       "failureKinds": {
         "target_hit": 37,
@@ -831,19 +831,19 @@
         "horizon_drift_loser": 4,
         "stop_hit_late": 10
       },
-      "holdingDaysTotal": 3960,
+      "holdingDaysTotal": 3976,
       "maxFavorableTotal": 33.540499999999994,
       "maxAdverseTotal": -9.307599999999995
     },
     "scenario:iran|sector:Oil ETF|direction:LONG": {
-      "n": 172,
+      "n": 173,
       "wins": 152,
-      "totalPnlPct": 22.28509999999997,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 22.075999999999972,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 48,
         "horizon_exceeded": 108,
-        "stop_hit": 16
+        "stop_hit": 17
       },
       "failureKinds": {
         "target_hit": 37,
@@ -853,7 +853,7 @@
         "horizon_drift_loser": 4,
         "stop_hit_late": 10
       },
-      "holdingDaysTotal": 3960,
+      "holdingDaysTotal": 3976,
       "maxFavorableTotal": 33.540499999999994,
       "maxAdverseTotal": -9.307599999999995
     },
@@ -968,14 +968,14 @@
       "maxAdverseTotal": -10.850799999999994
     },
     "ticker:BNO": {
-      "n": 144,
+      "n": 145,
       "wins": 106,
-      "totalPnlPct": 13.593099999999996,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 13.381999999999996,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 39,
         "horizon_exceeded": 67,
-        "stop_hit": 38
+        "stop_hit": 39
       },
       "failureKinds": {
         "target_undershoot": 8,
@@ -985,19 +985,19 @@
         "stop_overshoot": 7,
         "stop_hit_quick": 1
       },
-      "holdingDaysTotal": 3927,
+      "holdingDaysTotal": 3943,
       "maxFavorableTotal": 24.201600000000028,
       "maxAdverseTotal": -9.5975
     },
     "sector:Brent ETF": {
-      "n": 144,
+      "n": 145,
       "wins": 106,
-      "totalPnlPct": 13.593099999999996,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 13.381999999999996,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 39,
         "horizon_exceeded": 67,
-        "stop_hit": 38
+        "stop_hit": 39
       },
       "failureKinds": {
         "target_undershoot": 8,
@@ -1007,19 +1007,19 @@
         "stop_overshoot": 7,
         "stop_hit_quick": 1
       },
-      "holdingDaysTotal": 3927,
+      "holdingDaysTotal": 3943,
       "maxFavorableTotal": 24.201600000000028,
       "maxAdverseTotal": -9.5975
     },
     "sector:Brent ETF|direction:LONG": {
-      "n": 144,
+      "n": 145,
       "wins": 106,
-      "totalPnlPct": 13.593099999999996,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 13.381999999999996,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 39,
         "horizon_exceeded": 67,
-        "stop_hit": 38
+        "stop_hit": 39
       },
       "failureKinds": {
         "target_undershoot": 8,
@@ -1029,19 +1029,19 @@
         "stop_overshoot": 7,
         "stop_hit_quick": 1
       },
-      "holdingDaysTotal": 3927,
+      "holdingDaysTotal": 3943,
       "maxFavorableTotal": 24.201600000000028,
       "maxAdverseTotal": -9.5975
     },
     "scenario:iran|sector:Brent ETF": {
-      "n": 144,
+      "n": 145,
       "wins": 106,
-      "totalPnlPct": 13.593099999999996,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 13.381999999999996,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 39,
         "horizon_exceeded": 67,
-        "stop_hit": 38
+        "stop_hit": 39
       },
       "failureKinds": {
         "target_undershoot": 8,
@@ -1051,19 +1051,19 @@
         "stop_overshoot": 7,
         "stop_hit_quick": 1
       },
-      "holdingDaysTotal": 3927,
+      "holdingDaysTotal": 3943,
       "maxFavorableTotal": 24.201600000000028,
       "maxAdverseTotal": -9.5975
     },
     "scenario:iran|sector:Brent ETF|direction:LONG": {
-      "n": 144,
+      "n": 145,
       "wins": 106,
-      "totalPnlPct": 13.593099999999996,
-      "lastUpdated": "2026-05-06",
+      "totalPnlPct": 13.381999999999996,
+      "lastUpdated": "2026-06-24",
       "exitReasons": {
         "target_hit": 39,
         "horizon_exceeded": 67,
-        "stop_hit": 38
+        "stop_hit": 39
       },
       "failureKinds": {
         "target_undershoot": 8,
@@ -1073,7 +1073,7 @@
         "stop_overshoot": 7,
         "stop_hit_quick": 1
       },
-      "holdingDaysTotal": 3927,
+      "holdingDaysTotal": 3943,
       "maxFavorableTotal": 24.201600000000028,
       "maxAdverseTotal": -9.5975
     },
@@ -3504,6 +3504,6 @@
       "maxAdverseTotal": -0.4111
     }
   },
-  "lastUpdatedAt": "2026-06-18T13:46:39.709Z",
-  "tradesObserved": 8008
+  "lastUpdatedAt": "2026-06-24T13:46:39.127Z",
+  "tradesObserved": 8010
 }
