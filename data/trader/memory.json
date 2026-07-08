@@ -38,14 +38,14 @@
       "maxAdverseTotal": -27.82149999999999
     },
     "direction:LONG": {
-      "n": 5947,
+      "n": 5948,
       "wins": 1712,
-      "totalPnlPct": -99.51740000000082,
-      "lastUpdated": "2026-06-26",
+      "totalPnlPct": -99.68930000000081,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "horizon_exceeded": 1115,
         "target_hit": 994,
-        "stop_hit": 3838
+        "stop_hit": 3839
       },
       "failureKinds": {
         "horizon_drift_loser": 394,
@@ -56,7 +56,7 @@
         "stop_hit_late": 3488,
         "target_undershoot": 757
       },
-      "holdingDaysTotal": 141704,
+      "holdingDaysTotal": 141723,
       "maxFavorableTotal": 496.5434999999982,
       "maxAdverseTotal": -532.5350000000019
     },
@@ -487,12 +487,12 @@
       "maxAdverseTotal": -7.058499999999997
     },
     "conviction:3": {
-      "n": 4489,
+      "n": 4490,
       "wins": 1567,
-      "totalPnlPct": -0.5028999999999829,
-      "lastUpdated": "2026-06-26",
+      "totalPnlPct": -0.674799999999983,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
-        "stop_hit": 2506,
+        "stop_hit": 2507,
         "horizon_exceeded": 1102,
         "target_hit": 881
       },
@@ -505,7 +505,7 @@
         "stop_hit_quick": 112,
         "target_hit": 147
       },
-      "holdingDaysTotal": 94915,
+      "holdingDaysTotal": 94934,
       "maxFavorableTotal": 409.2967999999983,
       "maxAdverseTotal": -379.42099999999897
     },
@@ -1174,13 +1174,13 @@
       "maxAdverseTotal": -51.26389999999992
     },
     "ticker:INTC": {
-      "n": 458,
+      "n": 459,
       "wins": 438,
-      "totalPnlPct": 140.69360000000017,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 140.52170000000018,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "target_hit": 438,
-        "stop_hit": 20
+        "stop_hit": 21
       },
       "failureKinds": {
         "target_undershoot": 416,
@@ -1189,18 +1189,18 @@
         "stop_overshoot": 2,
         "stop_hit_quick": 8
       },
-      "holdingDaysTotal": 7368,
+      "holdingDaysTotal": 7387,
       "maxFavorableTotal": 143.60400000000007,
       "maxAdverseTotal": -20.455400000000026
     },
     "sector:Semiconductor onshoring": {
-      "n": 458,
+      "n": 459,
       "wins": 438,
-      "totalPnlPct": 140.69360000000017,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 140.52170000000018,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "target_hit": 438,
-        "stop_hit": 20
+        "stop_hit": 21
       },
       "failureKinds": {
         "target_undershoot": 416,
@@ -1209,18 +1209,18 @@
         "stop_overshoot": 2,
         "stop_hit_quick": 8
       },
-      "holdingDaysTotal": 7368,
+      "holdingDaysTotal": 7387,
       "maxFavorableTotal": 143.60400000000007,
       "maxAdverseTotal": -20.455400000000026
     },
     "sector:Semiconductor onshoring|direction:LONG": {
-      "n": 458,
+      "n": 459,
       "wins": 438,
-      "totalPnlPct": 140.69360000000017,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 140.52170000000018,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "target_hit": 438,
-        "stop_hit": 20
+        "stop_hit": 21
       },
       "failureKinds": {
         "target_undershoot": 416,
@@ -1229,7 +1229,7 @@
         "stop_overshoot": 2,
         "stop_hit_quick": 8
       },
-      "holdingDaysTotal": 7368,
+      "holdingDaysTotal": 7387,
       "maxFavorableTotal": 143.60400000000007,
       "maxAdverseTotal": -20.455400000000026
     },
@@ -2932,12 +2932,12 @@
       "maxAdverseTotal": -6.707899999999997
     },
     "scenario:korea": {
-      "n": 2024,
+      "n": 2025,
       "wins": 515,
-      "totalPnlPct": -44.94450000000003,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": -45.116400000000034,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
-        "stop_hit": 1373,
+        "stop_hit": 1374,
         "horizon_exceeded": 266,
         "target_hit": 385
       },
@@ -2950,17 +2950,17 @@
         "stop_overshoot": 53,
         "stop_hit_quick": 44
       },
-      "holdingDaysTotal": 43228,
+      "holdingDaysTotal": 43247,
       "maxFavorableTotal": 161.27830000000006,
       "maxAdverseTotal": -190.38220000000086
     },
     "scenario:korea|direction:LONG": {
-      "n": 1352,
+      "n": 1353,
       "wins": 384,
-      "totalPnlPct": 7.926500000000028,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 7.754600000000028,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
-        "stop_hit": 960,
+        "stop_hit": 961,
         "horizon_exceeded": 8,
         "target_hit": 384
       },
@@ -2972,7 +2972,7 @@
         "target_hit": 32,
         "stop_hit_quick": 38
       },
-      "holdingDaysTotal": 30329,
+      "holdingDaysTotal": 30348,
       "maxFavorableTotal": 137.34030000000024,
       "maxAdverseTotal": -128.94550000000004
     },
@@ -3049,13 +3049,13 @@
       "maxAdverseTotal": -27.749699999999976
     },
     "scenario:korea|sector:Semiconductor onshoring": {
-      "n": 229,
+      "n": 230,
       "wins": 219,
-      "totalPnlPct": 70.34679999999999,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 70.1749,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "target_hit": 219,
-        "stop_hit": 10
+        "stop_hit": 11
       },
       "failureKinds": {
         "target_undershoot": 208,
@@ -3064,18 +3064,18 @@
         "stop_overshoot": 1,
         "stop_hit_quick": 4
       },
-      "holdingDaysTotal": 3684,
+      "holdingDaysTotal": 3703,
       "maxFavorableTotal": 71.80199999999999,
       "maxAdverseTotal": -10.227700000000027
     },
     "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
-      "n": 229,
+      "n": 230,
       "wins": 219,
-      "totalPnlPct": 70.34679999999999,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 70.1749,
+      "lastUpdated": "2026-07-07",
       "exitReasons": {
         "target_hit": 219,
-        "stop_hit": 10
+        "stop_hit": 11
       },
       "failureKinds": {
         "target_undershoot": 208,
@@ -3084,7 +3084,7 @@
         "stop_overshoot": 1,
         "stop_hit_quick": 4
       },
-      "holdingDaysTotal": 3684,
+      "holdingDaysTotal": 3703,
       "maxFavorableTotal": 71.80199999999999,
       "maxAdverseTotal": -10.227700000000027
     },
@@ -3504,6 +3504,6 @@
       "maxAdverseTotal": -0.4111
     }
   },
-  "lastUpdatedAt": "2026-06-29T00:56:04.101Z",
-  "tradesObserved": 8011
+  "lastUpdatedAt": "2026-07-08T13:45:52.461Z",
+  "tradesObserved": 8012
 }
