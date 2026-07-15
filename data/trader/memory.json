@@ -38,14 +38,14 @@
       "maxAdverseTotal": -27.82149999999999
     },
     "direction:LONG": {
-      "n": 5948,
+      "n": 5949,
       "wins": 1712,
-      "totalPnlPct": -99.68930000000081,
-      "lastUpdated": "2026-07-07",
+      "totalPnlPct": -99.90380000000081,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
         "horizon_exceeded": 1115,
         "target_hit": 994,
-        "stop_hit": 3839
+        "stop_hit": 3840
       },
       "failureKinds": {
         "horizon_drift_loser": 394,
@@ -56,7 +56,7 @@
         "stop_hit_late": 3488,
         "target_undershoot": 757
       },
-      "holdingDaysTotal": 141723,
+      "holdingDaysTotal": 141760,
       "maxFavorableTotal": 496.5434999999982,
       "maxAdverseTotal": -532.5350000000019
     },
@@ -487,12 +487,12 @@
       "maxAdverseTotal": -7.058499999999997
     },
     "conviction:3": {
-      "n": 4490,
+      "n": 4491,
       "wins": 1567,
-      "totalPnlPct": -0.674799999999983,
-      "lastUpdated": "2026-07-07",
+      "totalPnlPct": -0.889299999999983,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 2507,
+        "stop_hit": 2508,
         "horizon_exceeded": 1102,
         "target_hit": 881
       },
@@ -505,7 +505,7 @@
         "stop_hit_quick": 112,
         "target_hit": 147
       },
-      "holdingDaysTotal": 94934,
+      "holdingDaysTotal": 94971,
       "maxFavorableTotal": 409.2967999999983,
       "maxAdverseTotal": -379.42099999999897
     },
@@ -1078,12 +1078,12 @@
       "maxAdverseTotal": -9.5975
     },
     "scenario:taiwan": {
-      "n": 2199,
+      "n": 2200,
       "wins": 620,
-      "totalPnlPct": -35.111899999999935,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": -35.326399999999936,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 1362,
+        "stop_hit": 1363,
         "target_hit": 444,
         "horizon_exceeded": 393
       },
@@ -1096,17 +1096,17 @@
         "stop_overshoot": 76,
         "target_hit": 88
       },
-      "holdingDaysTotal": 46106,
+      "holdingDaysTotal": 46143,
       "maxFavorableTotal": 181.36120000000042,
       "maxAdverseTotal": -199.9817000000004
     },
     "scenario:taiwan|direction:LONG": {
-      "n": 1335,
+      "n": 1336,
       "wins": 444,
-      "totalPnlPct": 25.5382,
-      "lastUpdated": "2026-05-15",
+      "totalPnlPct": 25.3237,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 883,
+        "stop_hit": 884,
         "target_hit": 444,
         "horizon_exceeded": 8
       },
@@ -1118,7 +1118,7 @@
         "stop_overshoot": 41,
         "target_hit": 88
       },
-      "holdingDaysTotal": 29032,
+      "holdingDaysTotal": 29069,
       "maxFavorableTotal": 152.44230000000013,
       "maxAdverseTotal": -127.4050000000001
     },
@@ -1274,12 +1274,12 @@
       "maxAdverseTotal": -10.227700000000027
     },
     "ticker:GFS": {
-      "n": 354,
+      "n": 355,
       "wins": 304,
-      "totalPnlPct": 88.75520000000006,
-      "lastUpdated": "2026-05-05",
+      "totalPnlPct": 88.54070000000006,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 50,
+        "stop_hit": 51,
         "target_hit": 304
       },
       "failureKinds": {
@@ -1288,17 +1288,17 @@
         "stop_overshoot": 16,
         "target_hit": 24
       },
-      "holdingDaysTotal": 8150,
+      "holdingDaysTotal": 8187,
       "maxFavorableTotal": 95.55880000000005,
       "maxAdverseTotal": -16.536200000000022
     },
     "sector:Foundry alternatives": {
-      "n": 354,
+      "n": 355,
       "wins": 304,
-      "totalPnlPct": 88.75520000000006,
-      "lastUpdated": "2026-05-05",
+      "totalPnlPct": 88.54070000000006,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 50,
+        "stop_hit": 51,
         "target_hit": 304
       },
       "failureKinds": {
@@ -1307,17 +1307,17 @@
         "stop_overshoot": 16,
         "target_hit": 24
       },
-      "holdingDaysTotal": 8150,
+      "holdingDaysTotal": 8187,
       "maxFavorableTotal": 95.55880000000005,
       "maxAdverseTotal": -16.536200000000022
     },
     "sector:Foundry alternatives|direction:LONG": {
-      "n": 354,
+      "n": 355,
       "wins": 304,
-      "totalPnlPct": 88.75520000000006,
-      "lastUpdated": "2026-05-05",
+      "totalPnlPct": 88.54070000000006,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 50,
+        "stop_hit": 51,
         "target_hit": 304
       },
       "failureKinds": {
@@ -1326,17 +1326,17 @@
         "stop_overshoot": 16,
         "target_hit": 24
       },
-      "holdingDaysTotal": 8150,
+      "holdingDaysTotal": 8187,
       "maxFavorableTotal": 95.55880000000005,
       "maxAdverseTotal": -16.536200000000022
     },
     "scenario:taiwan|sector:Foundry alternatives": {
-      "n": 177,
+      "n": 178,
       "wins": 152,
-      "totalPnlPct": 44.37759999999999,
-      "lastUpdated": "2026-05-05",
+      "totalPnlPct": 44.163099999999986,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 25,
+        "stop_hit": 26,
         "target_hit": 152
       },
       "failureKinds": {
@@ -1345,17 +1345,17 @@
         "stop_overshoot": 8,
         "target_hit": 12
       },
-      "holdingDaysTotal": 4075,
+      "holdingDaysTotal": 4112,
       "maxFavorableTotal": 47.779399999999974,
       "maxAdverseTotal": -8.268099999999992
     },
     "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
-      "n": 177,
+      "n": 178,
       "wins": 152,
-      "totalPnlPct": 44.37759999999999,
-      "lastUpdated": "2026-05-05",
+      "totalPnlPct": 44.163099999999986,
+      "lastUpdated": "2026-07-15",
       "exitReasons": {
-        "stop_hit": 25,
+        "stop_hit": 26,
         "target_hit": 152
       },
       "failureKinds": {
@@ -1364,7 +1364,7 @@
         "stop_overshoot": 8,
         "target_hit": 12
       },
-      "holdingDaysTotal": 4075,
+      "holdingDaysTotal": 4112,
       "maxFavorableTotal": 47.779399999999974,
       "maxAdverseTotal": -8.268099999999992
     },
@@ -3504,6 +3504,6 @@
       "maxAdverseTotal": -0.4111
     }
   },
-  "lastUpdatedAt": "2026-07-08T13:45:52.461Z",
-  "tradesObserved": 8012
+  "lastUpdatedAt": "2026-07-15T14:59:02.123Z",
+  "tradesObserved": 8013
 }
