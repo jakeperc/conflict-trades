@@ -1,106 +1,362 @@
 {
   "state": {
     "startingCash": 10000,
-    "cash": 1600,
+    "cash": 2768.2400915379003,
     "openPositions": [
       {
-        "id": "pos-2026-05-18-XOM-iran",
-        "ticker": "XOM",
+        "id": "pos-2026-07-23-BNO-iran",
+        "ticker": "BNO",
         "scenario": "iran",
         "scenarioTitle": "Iran / Hormuz / Yemen",
-        "sector": "Energy",
+        "sector": "Brent ETF",
         "direction": "LONG",
-        "conviction": 5,
-        "entryDate": "2026-05-18",
-        "entryPrice": 157.92,
-        "shares": 15.197569,
+        "conviction": 4,
+        "entryDate": "2026-07-23",
+        "entryPrice": 53.65,
+        "shares": 44.738559,
         "allocatedCash": 2400,
-        "targetPrice": 202.14,
-        "stopPrice": 140.42,
+        "targetPrice": 70.96,
+        "stopPrice": 42.93,
         "horizonDays": 42,
-        "thesis": "Integrated major with direct upside to higher crude and LNG pricing.",
-        "catalyst": "Brent reprices on tanker and insurance stress.",
-        "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
-        "pairTrade": "Long XOM / Short UAL",
-        "heatAtEntry": 96,
-        "confidenceAtEntry": 0.831,
-        "finalScoreAtEntry": 83.1,
+        "thesis": "Brent benchmark moves before WTI on shipping/insurance stress in the Gulf.",
+        "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+        "thesisBreaker": "Brent-WTI spread compresses on US export pickup.",
+        "pairTrade": "Long BNO / Short XLY proxy",
+        "heatAtEntry": 93,
+        "confidenceAtEntry": 0.75,
+        "finalScoreAtEntry": 75,
         "componentsAtEntry": {
-          "conviction": 95,
+          "conviction": 80,
           "scenario": 95,
-          "riskReward": 92.6,
-          "trend": 81,
-          "volRegime": 82,
-          "catalyst": 64,
-          "memory": 67.9
+          "riskReward": 86.2,
+          "trend": 87,
+          "volRegime": 60,
+          "catalyst": 71,
+          "memory": 100
         },
-        "diversificationPenaltyAtEntry": 0,
-        "memoryMultAtEntry": 1.536,
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.5,
         "memoryAdjustmentsAtEntry": [
           {
-            "key": "sector:Energy",
-            "n": 6,
-            "winRate": 0.5,
-            "avgPct": 0.047697874513794696,
-            "factor": 1.081767784880791
+            "key": "ticker:BNO",
+            "n": 146,
+            "winRate": 0.7328767123287672,
+            "avgPct": 0.09392328767123286,
+            "factor": 1.4444883116883116
+          },
+          {
+            "key": "sector:Brent ETF",
+            "n": 146,
+            "winRate": 0.7328767123287672,
+            "avgPct": 0.09392328767123286,
+            "factor": 1.4444883116883116
           },
           {
             "key": "direction:LONG",
-            "n": 89,
-            "winRate": 0.33707865168539325,
-            "avgPct": 0.004416051311098978,
-            "factor": 0.9564135491417654
+            "n": 5950,
+            "winRate": 0.28789915966386553,
+            "avgPct": -0.016734957983193414,
+            "factor": 0.8484236320913052
           },
           {
             "key": "scenario:iran",
-            "n": 31,
-            "winRate": 0.5483870967741935,
-            "avgPct": 0.05327079129010309,
-            "factor": 1.1847584133326354
+            "n": 2066,
+            "winRate": 0.4356243949661181,
+            "avgPct": 0.0022181510164569463,
+            "factor": 0.9831874638379943
           },
           {
-            "key": "conviction:5",
-            "n": 8,
-            "winRate": 0.25,
-            "avgPct": -0.05415284122268941,
-            "factor": 0.8416943175546212
+            "key": "conviction:4",
+            "n": 3061,
+            "winRate": 0.20516171185886964,
+            "avgPct": -0.061142665795492136,
+            "factor": 0.6384389703486459
           },
           {
-            "key": "sector:Energy|direction:LONG",
-            "n": 6,
-            "winRate": 0.5,
-            "avgPct": 0.047697874513794696,
-            "factor": 1.081767784880791
+            "key": "sector:Brent ETF|direction:LONG",
+            "n": 146,
+            "winRate": 0.7328767123287672,
+            "avgPct": 0.09392328767123286,
+            "factor": 1.4444883116883116
           },
           {
             "key": "scenario:iran|direction:LONG",
-            "n": 29,
-            "winRate": 0.5517241379310345,
-            "avgPct": 0.0509673822529348,
-            "factor": 1.176005847063255
+            "n": 1887,
+            "winRate": 0.43985161632220454,
+            "avgPct": 0.004569369369369415,
+            "factor": 0.9942425329815305
           },
           {
-            "key": "scenario:iran|sector:Energy",
-            "n": 6,
-            "winRate": 0.5,
-            "avgPct": 0.047697874513794696,
-            "factor": 1.081767784880791
+            "key": "scenario:iran|sector:Brent ETF",
+            "n": 146,
+            "winRate": 0.7328767123287672,
+            "avgPct": 0.09392328767123286,
+            "factor": 1.4444883116883116
           },
           {
-            "key": "scenario:iran|sector:Energy|direction:LONG",
-            "n": 6,
-            "winRate": 0.5,
-            "avgPct": 0.047697874513794696,
-            "factor": 1.081767784880791
+            "key": "scenario:iran|sector:Brent ETF|direction:LONG",
+            "n": 146,
+            "winRate": 0.7328767123287672,
+            "avgPct": 0.09392328767123286,
+            "factor": 1.4444883116883116
           }
         ],
-        "currentPrice": 152.53,
-        "unrealizedPnlDollar": -81.91,
-        "unrealizedPct": -0.0341,
-        "lastKnownPrice": 151.8800048828125,
-        "lastKnownDate": "2026-06-03",
-        "currentPriceDate": "2026-06-03"
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Brent ETF|direction:LONG",
+        "currentPrice": 52.88,
+        "unrealizedPnlDollar": -34.67,
+        "unrealizedPct": -0.0144,
+        "lastKnownPrice": 53.349998474121094,
+        "lastKnownDate": "2026-08-24",
+        "currentPriceDate": "2026-08-24"
       },
+      {
+        "id": "pos-2026-08-05-TNK-iran",
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-08-05",
+        "entryPrice": 77.5,
+        "shares": 23.225806,
+        "allocatedCash": 1800,
+        "targetPrice": 99.4,
+        "stopPrice": 67.49,
+        "horizonDays": 21,
+        "thesis": "Product tanker pricing improves with insurance and routing friction.",
+        "catalyst": "Refined-product freight reacts fast to route disruption.",
+        "thesisBreaker": "Insurance market normalizes quickly.",
+        "pairTrade": "Long TNK / Short UAL",
+        "heatAtEntry": 94,
+        "confidenceAtEntry": 0.695,
+        "finalScoreAtEntry": 69.5,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 87.5,
+          "trend": 87,
+          "volRegime": 80,
+          "catalyst": 64,
+          "memory": 89.2
+        },
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.177,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:TNK",
+            "n": 198,
+            "winRate": 0.7424242424242424,
+            "avgPct": 0.03940858585858582,
+            "factor": 1.244716504854369
+          },
+          {
+            "key": "sector:Shipping",
+            "n": 394,
+            "winRate": 0.7258883248730964,
+            "avgPct": 0.0344545685279188,
+            "factor": 1.2236328358208954
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5952,
+            "winRate": 0.28813844086021506,
+            "avgPct": -0.016680258736559275,
+            "factor": 0.8487376510067108
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2068,
+            "winRate": 0.43617021276595747,
+            "avgPct": 0.0023572533849129836,
+            "factor": 0.9839591522157998
+          },
+          {
+            "key": "conviction:3",
+            "n": 4492,
+            "winRate": 0.3490650044523598,
+            "avgPct": -0.0001798753339269775,
+            "factor": 0.9390151111111111
+          },
+          {
+            "key": "sector:Shipping|direction:LONG",
+            "n": 394,
+            "winRate": 0.7258883248730964,
+            "avgPct": 0.0344545685279188,
+            "factor": 1.2236328358208954
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1889,
+            "winRate": 0.44044467972472207,
+            "avgPct": 0.004719163578613069,
+            "factor": 0.9950753821823934
+          },
+          {
+            "key": "scenario:iran|sector:Shipping",
+            "n": 394,
+            "winRate": 0.7258883248730964,
+            "avgPct": 0.0344545685279188,
+            "factor": 1.2236328358208954
+          },
+          {
+            "key": "scenario:iran|sector:Shipping|direction:LONG",
+            "n": 394,
+            "winRate": 0.7258883248730964,
+            "avgPct": 0.0344545685279188,
+            "factor": 1.2236328358208954
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Shipping|direction:LONG",
+        "currentPrice": 92.39,
+        "unrealizedPnlDollar": 345.83,
+        "unrealizedPct": 0.1921,
+        "lastKnownPrice": 91.58499908447266,
+        "lastKnownDate": "2026-08-24",
+        "currentPriceDate": "2026-08-24"
+      },
+      {
+        "id": "pos-2026-08-24-USO-iran",
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-08-24",
+        "entryPrice": 132.91,
+        "shares": 13.542927,
+        "allocatedCash": 1800,
+        "targetPrice": 175.32,
+        "stopPrice": 107,
+        "horizonDays": 28,
+        "thesis": "Cleanest direct-oil expression of Hormuz disruption without single-stock idiosyncratic risk.",
+        "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+        "thesisBreaker": "OPEC+ supply lift offsets Hormuz risk premium.",
+        "pairTrade": "Long USO / Short UAL",
+        "heatAtEntry": 94,
+        "confidenceAtEntry": 0.718,
+        "finalScoreAtEntry": 71.8,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 86.6,
+          "trend": 72,
+          "volRegime": 60,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:USO",
+            "n": 175,
+            "winRate": 0.88,
+            "avgPct": 0.12758571428571414,
+            "factor": 1.5278688524590165
+          },
+          {
+            "key": "sector:Oil ETF",
+            "n": 175,
+            "winRate": 0.88,
+            "avgPct": 0.12758571428571414,
+            "factor": 1.5278688524590165
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5953,
+            "winRate": 0.28825802116579874,
+            "avgPct": -0.01667061985553516,
+            "factor": 0.8488238886092931
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2069,
+            "winRate": 0.4364427259545674,
+            "avgPct": 0.0023757854035766314,
+            "factor": 0.9841415503129515
+          },
+          {
+            "key": "conviction:4",
+            "n": 3063,
+            "winRate": 0.20568070519098922,
+            "avgPct": -0.061020633365981534,
+            "factor": 0.6391322696190147
+          },
+          {
+            "key": "sector:Oil ETF|direction:LONG",
+            "n": 175,
+            "winRate": 0.88,
+            "avgPct": 0.12758571428571414,
+            "factor": 1.5278688524590165
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1890,
+            "winRate": 0.44074074074074077,
+            "avgPct": 0.004738201058201104,
+            "factor": 0.995269125395153
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF",
+            "n": 175,
+            "winRate": 0.88,
+            "avgPct": 0.12758571428571414,
+            "factor": 1.5278688524590165
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF|direction:LONG",
+            "n": 175,
+            "winRate": 0.88,
+            "avgPct": 0.12758571428571414,
+            "factor": 1.5278688524590165
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
+        "currentPrice": 132.22,
+        "unrealizedPnlDollar": -9.34,
+        "unrealizedPct": -0.0052,
+        "currentPriceDate": "2026-08-24"
+      }
+    ],
+    "closedTrades": [
       {
         "id": "pos-2026-05-18-TNK-iran",
         "ticker": "TNK",
@@ -199,12 +455,18 @@
             "factor": 1.1964028289741249
           }
         ],
-        "currentPrice": 70.78,
-        "unrealizedPnlDollar": -199.3,
-        "unrealizedPct": -0.083,
-        "lastKnownPrice": 70.88999938964844,
-        "lastKnownDate": "2026-06-03",
-        "currentPriceDate": "2026-06-03"
+        "currentPrice": 72.2,
+        "unrealizedPnlDollar": -155.15,
+        "unrealizedPct": -0.0646,
+        "lastKnownPrice": 72.19999694824219,
+        "lastKnownDate": "2026-06-05",
+        "exitDate": "2026-06-08",
+        "exitPrice": 73.33,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": -120.02,
+        "realizedPct": -0.05,
+        "holdingDays": 21,
+        "outcome": "loss"
       },
       {
         "id": "pos-2026-05-18-FRO-iran",
@@ -304,12 +566,18 @@
             "factor": 1.1964028289741249
           }
         ],
-        "currentPrice": 34.46,
-        "unrealizedPnlDollar": -108.02,
-        "unrealizedPct": -0.06,
-        "lastKnownPrice": 34.33649826049805,
-        "lastKnownDate": "2026-06-03",
-        "currentPriceDate": "2026-06-03"
+        "currentPrice": 35.17,
+        "unrealizedPnlDollar": -73.16,
+        "unrealizedPct": -0.0406,
+        "lastKnownPrice": 35.16999816894531,
+        "lastKnownDate": "2026-06-05",
+        "exitDate": "2026-06-08",
+        "exitPrice": 35.48,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": -57.94,
+        "realizedPct": -0.0322,
+        "holdingDays": 21,
+        "outcome": "loss"
       },
       {
         "id": "pos-2026-05-18-UCO-iran",
@@ -409,15 +677,1240 @@
             "factor": 1.1274690992137437
           }
         ],
-        "currentPrice": 48.13,
-        "unrealizedPnlDollar": -74.22,
-        "unrealizedPct": -0.0412,
-        "lastKnownPrice": 47.85499954223633,
-        "lastKnownDate": "2026-06-03",
-        "currentPriceDate": "2026-06-03"
+        "currentPrice": 44.81,
+        "unrealizedPnlDollar": -193.27,
+        "unrealizedPct": -0.1074,
+        "lastKnownPrice": 44.810001373291016,
+        "lastKnownDate": "2026-06-05",
+        "exitDate": "2026-06-08",
+        "exitPrice": 46,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": -150.6,
+        "realizedPct": -0.0837,
+        "holdingDays": 21,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-05-18-XOM-iran",
+        "ticker": "XOM",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Energy",
+        "direction": "LONG",
+        "conviction": 5,
+        "entryDate": "2026-05-18",
+        "entryPrice": 157.92,
+        "shares": 15.197569,
+        "allocatedCash": 2400,
+        "targetPrice": 202.14,
+        "stopPrice": 140.42,
+        "horizonDays": 42,
+        "thesis": "Integrated major with direct upside to higher crude and LNG pricing.",
+        "catalyst": "Brent reprices on tanker and insurance stress.",
+        "thesisBreaker": "Fast de-escalation plus OPEC offset supply lift.",
+        "pairTrade": "Long XOM / Short UAL",
+        "heatAtEntry": 96,
+        "confidenceAtEntry": 0.831,
+        "finalScoreAtEntry": 83.1,
+        "componentsAtEntry": {
+          "conviction": 95,
+          "scenario": 95,
+          "riskReward": 92.6,
+          "trend": 81,
+          "volRegime": 82,
+          "catalyst": 64,
+          "memory": 67.9
+        },
+        "diversificationPenaltyAtEntry": 0,
+        "memoryMultAtEntry": 1.536,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "sector:Energy",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "direction:LONG",
+            "n": 89,
+            "winRate": 0.33707865168539325,
+            "avgPct": 0.004416051311098978,
+            "factor": 0.9564135491417654
+          },
+          {
+            "key": "scenario:iran",
+            "n": 31,
+            "winRate": 0.5483870967741935,
+            "avgPct": 0.05327079129010309,
+            "factor": 1.1847584133326354
+          },
+          {
+            "key": "conviction:5",
+            "n": 8,
+            "winRate": 0.25,
+            "avgPct": -0.05415284122268941,
+            "factor": 0.8416943175546212
+          },
+          {
+            "key": "sector:Energy|direction:LONG",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 29,
+            "winRate": 0.5517241379310345,
+            "avgPct": 0.0509673822529348,
+            "factor": 1.176005847063255
+          },
+          {
+            "key": "scenario:iran|sector:Energy",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          },
+          {
+            "key": "scenario:iran|sector:Energy|direction:LONG",
+            "n": 6,
+            "winRate": 0.5,
+            "avgPct": 0.047697874513794696,
+            "factor": 1.081767784880791
+          }
+        ],
+        "currentPrice": 141.18,
+        "unrealizedPnlDollar": -254.33,
+        "unrealizedPct": -0.106,
+        "lastKnownPrice": 141.18499755859375,
+        "lastKnownDate": "2026-06-17",
+        "exitDate": "2026-06-18",
+        "exitPrice": 136.12,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -331.38,
+        "realizedPct": -0.1381,
+        "holdingDays": 31,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-08-USO-iran",
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-06-08",
+        "entryPrice": 134.71,
+        "shares": 13.362036,
+        "allocatedCash": 1800,
+        "targetPrice": 179.17,
+        "stopPrice": 106.63,
+        "horizonDays": 28,
+        "thesis": "Cleanest direct-oil expression of Hormuz disruption without single-stock idiosyncratic risk.",
+        "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+        "thesisBreaker": "OPEC+ supply lift offsets Hormuz risk premium.",
+        "pairTrade": "Long USO / Short UAL",
+        "heatAtEntry": 92,
+        "confidenceAtEntry": 0.689,
+        "finalScoreAtEntry": 68.9,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 85.6,
+          "trend": 34,
+          "volRegime": 45,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 7,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:USO",
+            "n": 172,
+            "winRate": 0.8837209302325582,
+            "avgPct": 0.12956453488372077,
+            "factor": 1.528888888888889
+          },
+          {
+            "key": "sector:Oil ETF",
+            "n": 172,
+            "winRate": 0.8837209302325582,
+            "avgPct": 0.12956453488372077,
+            "factor": 1.528888888888889
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5943,
+            "winRate": 0.28806999831734814,
+            "avgPct": -0.016627595490493155,
+            "factor": 0.8489209880692316
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2061,
+            "winRate": 0.43619602134885976,
+            "avgPct": 0.0024024745269287003,
+            "factor": 0.9841498308361528
+          },
+          {
+            "key": "conviction:4",
+            "n": 3058,
+            "winRate": 0.20503597122302158,
+            "avgPct": -0.061173413996076335,
+            "factor": 0.6382670580560973
+          },
+          {
+            "key": "sector:Oil ETF|direction:LONG",
+            "n": 172,
+            "winRate": 0.8837209302325582,
+            "avgPct": 0.12956453488372077,
+            "factor": 1.528888888888889
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1882,
+            "winRate": 0.4404888416578108,
+            "avgPct": 0.0047774707757705015,
+            "factor": 0.9953252910052912
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF",
+            "n": 172,
+            "winRate": 0.8837209302325582,
+            "avgPct": 0.12956453488372077,
+            "factor": 1.528888888888889
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF|direction:LONG",
+            "n": 172,
+            "winRate": 0.8837209302325582,
+            "avgPct": 0.12956453488372077,
+            "factor": 1.528888888888889
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
+        "currentPrice": 111.14,
+        "unrealizedPnlDollar": -315.01,
+        "unrealizedPct": -0.175,
+        "lastKnownPrice": 111.13500213623047,
+        "lastKnownDate": "2026-06-23",
+        "exitDate": "2026-06-24",
+        "exitPrice": 106.54,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -376.41,
+        "realizedPct": -0.2091,
+        "holdingDays": 16,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-08-BNO-iran",
+        "ticker": "BNO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Brent ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-06-08",
+        "entryPrice": 51.86,
+        "shares": 34.708831,
+        "allocatedCash": 1800,
+        "targetPrice": 68.78,
+        "stopPrice": 41.25,
+        "horizonDays": 42,
+        "thesis": "Brent benchmark moves before WTI on shipping/insurance stress in the Gulf.",
+        "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+        "thesisBreaker": "Brent-WTI spread compresses on US export pickup.",
+        "pairTrade": "Long BNO / Short XLY proxy",
+        "heatAtEntry": 92,
+        "confidenceAtEntry": 0.659,
+        "finalScoreAtEntry": 65.9,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 85.7,
+          "trend": 24,
+          "volRegime": 45,
+          "catalyst": 71,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:BNO",
+            "n": 144,
+            "winRate": 0.7361111111111112,
+            "avgPct": 0.09439652777777775,
+            "factor": 1.4471868421052632
+          },
+          {
+            "key": "sector:Brent ETF",
+            "n": 144,
+            "winRate": 0.7361111111111112,
+            "avgPct": 0.09439652777777775,
+            "factor": 1.4471868421052632
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5943,
+            "winRate": 0.28806999831734814,
+            "avgPct": -0.016627595490493155,
+            "factor": 0.8489209880692316
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2061,
+            "winRate": 0.43619602134885976,
+            "avgPct": 0.0024024745269287003,
+            "factor": 0.9841498308361528
+          },
+          {
+            "key": "conviction:4",
+            "n": 3058,
+            "winRate": 0.20503597122302158,
+            "avgPct": -0.061173413996076335,
+            "factor": 0.6382670580560973
+          },
+          {
+            "key": "sector:Brent ETF|direction:LONG",
+            "n": 144,
+            "winRate": 0.7361111111111112,
+            "avgPct": 0.09439652777777775,
+            "factor": 1.4471868421052632
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1882,
+            "winRate": 0.4404888416578108,
+            "avgPct": 0.0047774707757705015,
+            "factor": 0.9953252910052912
+          },
+          {
+            "key": "scenario:iran|sector:Brent ETF",
+            "n": 144,
+            "winRate": 0.7361111111111112,
+            "avgPct": 0.09439652777777775,
+            "factor": 1.4471868421052632
+          },
+          {
+            "key": "scenario:iran|sector:Brent ETF|direction:LONG",
+            "n": 144,
+            "winRate": 0.7361111111111112,
+            "avgPct": 0.09439652777777775,
+            "factor": 1.4471868421052632
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Brent ETF|direction:LONG",
+        "currentPrice": 42.57,
+        "unrealizedPnlDollar": -322.45,
+        "unrealizedPct": -0.1791,
+        "lastKnownPrice": 42.56999969482422,
+        "lastKnownDate": "2026-06-23",
+        "exitDate": "2026-06-24",
+        "exitPrice": 40.91,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -379.92,
+        "realizedPct": -0.2111,
+        "holdingDays": 16,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-24-TNK-iran",
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-06-24",
+        "entryPrice": 79.18,
+        "shares": 30.310684,
+        "allocatedCash": 2400,
+        "targetPrice": 101.7,
+        "stopPrice": 68.83,
+        "horizonDays": 21,
+        "thesis": "Product tanker pricing improves with insurance and routing friction.",
+        "catalyst": "Refined-product freight reacts fast to route disruption.",
+        "thesisBreaker": "Insurance market normalizes quickly.",
+        "pairTrade": "Long TNK / Short UAL",
+        "heatAtEntry": 94,
+        "confidenceAtEntry": 0.749,
+        "finalScoreAtEntry": 74.9,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 87.4,
+          "trend": 82,
+          "volRegime": 80,
+          "catalyst": 64,
+          "memory": 89.7
+        },
+        "diversificationPenaltyAtEntry": 4,
+        "memoryMultAtEntry": 2.191,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:TNK",
+            "n": 196,
+            "winRate": 0.7448979591836735,
+            "avgPct": 0.04011683673469384,
+            "factor": 1.248292156862745
+          },
+          {
+            "key": "sector:Shipping",
+            "n": 392,
+            "winRate": 0.7270408163265306,
+            "avgPct": 0.03478341836734695,
+            "factor": 1.225351
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5946,
+            "winRate": 0.287924655230407,
+            "avgPct": -0.01671310124453428,
+            "factor": 0.8485212630164589
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2064,
+            "winRate": 0.43556201550387597,
+            "avgPct": 0.0021284883720930478,
+            "factor": 0.9828054054054055
+          },
+          {
+            "key": "conviction:3",
+            "n": 4488,
+            "winRate": 0.3491532976827095,
+            "avgPct": -0.00008057040998217089,
+            "factor": 0.939446975088968
+          },
+          {
+            "key": "sector:Shipping|direction:LONG",
+            "n": 392,
+            "winRate": 0.7270408163265306,
+            "avgPct": 0.03478341836734695,
+            "factor": 1.225351
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1885,
+            "winRate": 0.4397877984084881,
+            "avgPct": 0.004473687002652565,
+            "factor": 0.9938360274696251
+          },
+          {
+            "key": "scenario:iran|sector:Shipping",
+            "n": 392,
+            "winRate": 0.7270408163265306,
+            "avgPct": 0.03478341836734695,
+            "factor": 1.225351
+          },
+          {
+            "key": "scenario:iran|sector:Shipping|direction:LONG",
+            "n": 392,
+            "winRate": 0.7270408163265306,
+            "avgPct": 0.03478341836734695,
+            "factor": 1.225351
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Shipping|direction:LONG",
+        "currentPrice": 76.49,
+        "unrealizedPnlDollar": -81.54,
+        "unrealizedPct": -0.034,
+        "lastKnownPrice": 76.48999786376953,
+        "lastKnownDate": "2026-06-25",
+        "exitDate": "2026-06-26",
+        "exitPrice": 67.99,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -339.18,
+        "realizedPct": -0.1413,
+        "holdingDays": 2,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-18-INTC-korea",
+        "ticker": "INTC",
+        "scenario": "korea",
+        "scenarioTitle": "Korea / DPRK / Yellow Sea",
+        "sector": "Semiconductor onshoring",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-06-18",
+        "entryPrice": 133.3,
+        "shares": 13.503366,
+        "allocatedCash": 1800,
+        "targetPrice": 195.03,
+        "stopPrice": 110.79,
+        "horizonDays": 180,
+        "thesis": "Korean DRAM concentration widens the onshoring trade beyond Taiwan foundry to memory and logic alternatives.",
+        "catalyst": "Onshoring narrative widens to include Korean memory exposure, not just Taiwan foundry.",
+        "thesisBreaker": "Customers shrug off Korean concentration risk.",
+        "pairTrade": "Long INTC / Short EWY",
+        "heatAtEntry": 69,
+        "confidenceAtEntry": 0.657,
+        "finalScoreAtEntry": 65.7,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 55,
+          "riskReward": 82.2,
+          "trend": 87,
+          "volRegime": 30,
+          "catalyst": 46,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 4,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:INTC",
+            "n": 458,
+            "winRate": 0.9563318777292577,
+            "avgPct": 0.3071912663755462,
+            "factor": 1.5725321888412016
+          },
+          {
+            "key": "sector:Semiconductor onshoring",
+            "n": 458,
+            "winRate": 0.9563318777292577,
+            "avgPct": 0.3071912663755462,
+            "factor": 1.5725321888412016
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5944,
+            "winRate": 0.288021534320323,
+            "avgPct": -0.01664803162853311,
+            "factor": 0.8488199596774189
+          },
+          {
+            "key": "scenario:korea",
+            "n": 2024,
+            "winRate": 0.2544466403162055,
+            "avgPct": -0.022205780632411083,
+            "factor": 0.8136919291338582
+          },
+          {
+            "key": "conviction:3",
+            "n": 4488,
+            "winRate": 0.3491532976827095,
+            "avgPct": -0.00008057040998217089,
+            "factor": 0.939446975088968
+          },
+          {
+            "key": "sector:Semiconductor onshoring|direction:LONG",
+            "n": 458,
+            "winRate": 0.9563318777292577,
+            "avgPct": 0.3071912663755462,
+            "factor": 1.5725321888412016
+          },
+          {
+            "key": "scenario:korea|direction:LONG",
+            "n": 1352,
+            "winRate": 0.28402366863905326,
+            "avgPct": 0.005862795857988186,
+            "factor": 0.9374308823529413
+          },
+          {
+            "key": "scenario:korea|sector:Semiconductor onshoring",
+            "n": 229,
+            "winRate": 0.9563318777292577,
+            "avgPct": 0.3071912663755458,
+            "factor": 1.5628691983122365
+          },
+          {
+            "key": "scenario:korea|sector:Semiconductor onshoring|direction:LONG",
+            "n": 229,
+            "winRate": 0.9563318777292577,
+            "avgPct": 0.3071912663755458,
+            "factor": 1.5628691983122365
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1.5,
+        "calibrationBucketAtEntry": "scenario:korea|sector:Semiconductor onshoring|direction:LONG",
+        "currentPrice": 122.2,
+        "unrealizedPnlDollar": -149.89,
+        "unrealizedPct": -0.0833,
+        "lastKnownPrice": 122.19999694824219,
+        "lastKnownDate": "2026-07-06",
+        "exitDate": "2026-07-07",
+        "exitPrice": 110.39,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -309.36,
+        "realizedPct": -0.1719,
+        "holdingDays": 19,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-08-GFS-taiwan",
+        "ticker": "GFS",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "sector": "Foundry alternatives",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-06-08",
+        "entryPrice": 78.14,
+        "shares": 23.035577,
+        "allocatedCash": 1800,
+        "targetPrice": 112.22,
+        "stopPrice": 62.62,
+        "horizonDays": 90,
+        "thesis": "Alternative foundry capacity gets revalued on supply-chain resilience demand.",
+        "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+        "thesisBreaker": "Customers delay diversification spend.",
+        "pairTrade": "Long GFS / Short QCOM",
+        "heatAtEntry": 71,
+        "confidenceAtEntry": 0.684,
+        "finalScoreAtEntry": 68.4,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 70,
+          "riskReward": 83.2,
+          "trend": 80,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 4,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:GFS",
+            "n": 354,
+            "winRate": 0.8587570621468926,
+            "avgPct": 0.2507209039548024,
+            "factor": 1.5314917127071823
+          },
+          {
+            "key": "sector:Foundry alternatives",
+            "n": 354,
+            "winRate": 0.8587570621468926,
+            "avgPct": 0.2507209039548024,
+            "factor": 1.5314917127071823
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5943,
+            "winRate": 0.28806999831734814,
+            "avgPct": -0.016627595490493155,
+            "factor": 0.8489209880692316
+          },
+          {
+            "key": "scenario:taiwan",
+            "n": 2199,
+            "winRate": 0.2819463392451114,
+            "avgPct": -0.015967212369258726,
+            "factor": 0.8494573629361124
+          },
+          {
+            "key": "conviction:3",
+            "n": 4488,
+            "winRate": 0.3491532976827095,
+            "avgPct": -0.00008057040998217089,
+            "factor": 0.939446975088968
+          },
+          {
+            "key": "sector:Foundry alternatives|direction:LONG",
+            "n": 354,
+            "winRate": 0.8587570621468926,
+            "avgPct": 0.2507209039548024,
+            "factor": 1.5314917127071823
+          },
+          {
+            "key": "scenario:taiwan|direction:LONG",
+            "n": 1335,
+            "winRate": 0.3325842696629214,
+            "avgPct": 0.019129737827715355,
+            "factor": 1.0094957557706628
+          },
+          {
+            "key": "scenario:taiwan|sector:Foundry alternatives",
+            "n": 177,
+            "winRate": 0.8587570621468926,
+            "avgPct": 0.2507209039548022,
+            "factor": 1.52
+          },
+          {
+            "key": "scenario:taiwan|sector:Foundry alternatives|direction:LONG",
+            "n": 177,
+            "winRate": 0.8587570621468926,
+            "avgPct": 0.2507209039548022,
+            "factor": 1.52
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1.5,
+        "calibrationBucketAtEntry": "scenario:taiwan|sector:Foundry alternatives|direction:LONG",
+        "currentPrice": 66.25,
+        "unrealizedPnlDollar": -273.92,
+        "unrealizedPct": -0.1522,
+        "lastKnownPrice": 66.2490005493164,
+        "lastKnownDate": "2026-07-14",
+        "exitDate": "2026-07-15",
+        "exitPrice": 61.38,
+        "exitReason": "stop_hit",
+        "realizedPnlDollar": -386.08,
+        "realizedPct": -0.2145,
+        "holdingDays": 37,
+        "outcome": "loss"
+      },
+      {
+        "id": "pos-2026-06-29-BNO-iran",
+        "ticker": "BNO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Brent ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-06-29",
+        "entryPrice": 40.31,
+        "shares": 44.653931,
+        "allocatedCash": 1800,
+        "targetPrice": 53.64,
+        "stopPrice": 32,
+        "horizonDays": 42,
+        "thesis": "Brent benchmark moves before WTI on shipping/insurance stress in the Gulf.",
+        "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
+        "thesisBreaker": "Brent-WTI spread compresses on US export pickup.",
+        "pairTrade": "Long BNO / Short XLY proxy",
+        "heatAtEntry": 95,
+        "confidenceAtEntry": 0.704,
+        "finalScoreAtEntry": 70.4,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 85.9,
+          "trend": 13,
+          "volRegime": 45,
+          "catalyst": 71,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 4,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:BNO",
+            "n": 145,
+            "winRate": 0.7310344827586207,
+            "avgPct": 0.09228965517241376,
+            "factor": 1.437437908496732
+          },
+          {
+            "key": "sector:Brent ETF",
+            "n": 145,
+            "winRate": 0.7310344827586207,
+            "avgPct": 0.09228965517241376,
+            "factor": 1.437437908496732
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5947,
+            "winRate": 0.28787624012106944,
+            "avgPct": -0.01673405078190698,
+            "factor": 0.8484182031905956
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2065,
+            "winRate": 0.4353510895883777,
+            "avgPct": 0.002059031476997603,
+            "factor": 0.9824445730824892
+          },
+          {
+            "key": "conviction:4",
+            "n": 3060,
+            "winRate": 0.20490196078431372,
+            "avgPct": -0.061270751633987396,
+            "factor": 0.6378246414602329
+          },
+          {
+            "key": "sector:Brent ETF|direction:LONG",
+            "n": 145,
+            "winRate": 0.7310344827586207,
+            "avgPct": 0.09228965517241376,
+            "factor": 1.437437908496732
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1886,
+            "winRate": 0.4395546129374337,
+            "avgPct": 0.004396394485684033,
+            "factor": 0.9934352692713835
+          },
+          {
+            "key": "scenario:iran|sector:Brent ETF",
+            "n": 145,
+            "winRate": 0.7310344827586207,
+            "avgPct": 0.09228965517241376,
+            "factor": 1.437437908496732
+          },
+          {
+            "key": "scenario:iran|sector:Brent ETF|direction:LONG",
+            "n": 145,
+            "winRate": 0.7310344827586207,
+            "avgPct": 0.09228965517241376,
+            "factor": 1.437437908496732
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Brent ETF|direction:LONG",
+        "currentPrice": 51.27,
+        "unrealizedPnlDollar": 489.41,
+        "unrealizedPct": 0.2719,
+        "lastKnownPrice": 51.27000045776367,
+        "lastKnownDate": "2026-07-22",
+        "exitDate": "2026-07-23",
+        "exitPrice": 53.65,
+        "exitReason": "target_hit",
+        "realizedPnlDollar": 595.46,
+        "realizedPct": 0.3308,
+        "holdingDays": 24,
+        "outcome": "win"
+      },
+      {
+        "id": "pos-2026-06-29-USO-iran",
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-06-29",
+        "entryPrice": 105.48,
+        "shares": 17.064846,
+        "allocatedCash": 1800,
+        "targetPrice": 140.77,
+        "stopPrice": 83.3,
+        "horizonDays": 28,
+        "thesis": "Cleanest direct-oil expression of Hormuz disruption without single-stock idiosyncratic risk.",
+        "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+        "thesisBreaker": "OPEC+ supply lift offsets Hormuz risk premium.",
+        "pairTrade": "Long USO / Short UAL",
+        "heatAtEntry": 95,
+        "confidenceAtEntry": 0.662,
+        "finalScoreAtEntry": 66.2,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 85.7,
+          "trend": 13,
+          "volRegime": 45,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 7,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:USO",
+            "n": 173,
+            "winRate": 0.8786127167630058,
+            "avgPct": 0.1276069364161848,
+            "factor": 1.52707182320442
+          },
+          {
+            "key": "sector:Oil ETF",
+            "n": 173,
+            "winRate": 0.8786127167630058,
+            "avgPct": 0.1276069364161848,
+            "factor": 1.52707182320442
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5947,
+            "winRate": 0.28787624012106944,
+            "avgPct": -0.01673405078190698,
+            "factor": 0.8484182031905956
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2065,
+            "winRate": 0.4353510895883777,
+            "avgPct": 0.002059031476997603,
+            "factor": 0.9824445730824892
+          },
+          {
+            "key": "conviction:4",
+            "n": 3060,
+            "winRate": 0.20490196078431372,
+            "avgPct": -0.061270751633987396,
+            "factor": 0.6378246414602329
+          },
+          {
+            "key": "sector:Oil ETF|direction:LONG",
+            "n": 173,
+            "winRate": 0.8786127167630058,
+            "avgPct": 0.1276069364161848,
+            "factor": 1.52707182320442
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1886,
+            "winRate": 0.4395546129374337,
+            "avgPct": 0.004396394485684033,
+            "factor": 0.9934352692713835
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF",
+            "n": 173,
+            "winRate": 0.8786127167630058,
+            "avgPct": 0.1276069364161848,
+            "factor": 1.52707182320442
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF|direction:LONG",
+            "n": 173,
+            "winRate": 0.8786127167630058,
+            "avgPct": 0.1276069364161848,
+            "factor": 1.52707182320442
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
+        "currentPrice": 136.69,
+        "unrealizedPnlDollar": 532.59,
+        "unrealizedPct": 0.2959,
+        "lastKnownPrice": 136.69000244140625,
+        "lastKnownDate": "2026-07-24",
+        "exitDate": "2026-07-27",
+        "exitPrice": 127.72,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": 379.52,
+        "realizedPct": 0.2108,
+        "holdingDays": 28,
+        "outcome": "win"
+      },
+      {
+        "id": "pos-2026-07-15-TNK-iran",
+        "ticker": "TNK",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Shipping",
+        "direction": "LONG",
+        "conviction": 3,
+        "entryDate": "2026-07-15",
+        "entryPrice": 71.67,
+        "shares": 25.115112,
+        "allocatedCash": 1800,
+        "targetPrice": 91.99,
+        "stopPrice": 62.3,
+        "horizonDays": 21,
+        "thesis": "Product tanker pricing improves with insurance and routing friction.",
+        "catalyst": "Refined-product freight reacts fast to route disruption.",
+        "thesisBreaker": "Insurance market normalizes quickly.",
+        "pairTrade": "Long TNK / Short UAL",
+        "heatAtEntry": 93,
+        "confidenceAtEntry": 0.633,
+        "finalScoreAtEntry": 63.3,
+        "componentsAtEntry": {
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 87.2,
+          "trend": 41,
+          "volRegime": 80,
+          "catalyst": 64,
+          "memory": 88.7
+        },
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.161,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:TNK",
+            "n": 197,
+            "winRate": 0.7411167512690355,
+            "avgPct": 0.03919593908629438,
+            "factor": 1.2433482926829267
+          },
+          {
+            "key": "sector:Shipping",
+            "n": 393,
+            "winRate": 0.7251908396946565,
+            "avgPct": 0.034335368956743016,
+            "factor": 1.2228807980049876
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5949,
+            "winRate": 0.2877794587325601,
+            "avgPct": -0.016793377038157812,
+            "factor": 0.8481424878294438
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2065,
+            "winRate": 0.4353510895883777,
+            "avgPct": 0.002059031476997603,
+            "factor": 0.9824445730824892
+          },
+          {
+            "key": "conviction:3",
+            "n": 4491,
+            "winRate": 0.348920062346916,
+            "avgPct": -0.00019801825873969783,
+            "factor": 0.9388848188486331
+          },
+          {
+            "key": "sector:Shipping|direction:LONG",
+            "n": 393,
+            "winRate": 0.7251908396946565,
+            "avgPct": 0.034335368956743016,
+            "factor": 1.2228807980049876
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1886,
+            "winRate": 0.4395546129374337,
+            "avgPct": 0.004396394485684033,
+            "factor": 0.9934352692713835
+          },
+          {
+            "key": "scenario:iran|sector:Shipping",
+            "n": 393,
+            "winRate": 0.7251908396946565,
+            "avgPct": 0.034335368956743016,
+            "factor": 1.2228807980049876
+          },
+          {
+            "key": "scenario:iran|sector:Shipping|direction:LONG",
+            "n": 393,
+            "winRate": 0.7251908396946565,
+            "avgPct": 0.034335368956743016,
+            "factor": 1.2228807980049876
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Shipping|direction:LONG",
+        "currentPrice": 78.71,
+        "unrealizedPnlDollar": 176.68,
+        "unrealizedPct": 0.0982,
+        "lastKnownPrice": 78.70500183105469,
+        "lastKnownDate": "2026-08-04",
+        "exitDate": "2026-08-05",
+        "exitPrice": 77.5,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": 146.42,
+        "realizedPct": 0.0813,
+        "holdingDays": 21,
+        "outcome": "win"
+      },
+      {
+        "id": "pos-2026-07-27-USO-iran",
+        "ticker": "USO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "sector": "Oil ETF",
+        "direction": "LONG",
+        "conviction": 4,
+        "entryDate": "2026-07-27",
+        "entryPrice": 127.72,
+        "shares": 18.79037,
+        "allocatedCash": 2400,
+        "targetPrice": 169.39,
+        "stopPrice": 101.86,
+        "horizonDays": 28,
+        "thesis": "Cleanest direct-oil expression of Hormuz disruption without single-stock idiosyncratic risk.",
+        "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
+        "thesisBreaker": "OPEC+ supply lift offsets Hormuz risk premium.",
+        "pairTrade": "Long USO / Short UAL",
+        "heatAtEntry": 94,
+        "confidenceAtEntry": 0.729,
+        "finalScoreAtEntry": 72.9,
+        "componentsAtEntry": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 86,
+          "trend": 81,
+          "volRegime": 60,
+          "catalyst": 64,
+          "memory": 100
+        },
+        "diversificationPenaltyAtEntry": 10,
+        "memoryMultAtEntry": 2.5,
+        "memoryAdjustmentsAtEntry": [
+          {
+            "key": "ticker:USO",
+            "n": 174,
+            "winRate": 0.8793103448275862,
+            "avgPct": 0.1280850574712642,
+            "factor": 1.5274725274725274
+          },
+          {
+            "key": "sector:Oil ETF",
+            "n": 174,
+            "winRate": 0.8793103448275862,
+            "avgPct": 0.1280850574712642,
+            "factor": 1.5274725274725274
+          },
+          {
+            "key": "direction:LONG",
+            "n": 5951,
+            "winRate": 0.288018820366325,
+            "avgPct": -0.016696723239791766,
+            "factor": 0.8486241315656984
+          },
+          {
+            "key": "scenario:iran",
+            "n": 2067,
+            "winRate": 0.4358974358974359,
+            "avgPct": 0.0023190614417029757,
+            "factor": 0.9836983132530122
+          },
+          {
+            "key": "conviction:4",
+            "n": 3062,
+            "winRate": 0.205421293272371,
+            "avgPct": -0.061053853690398896,
+            "factor": 0.6388965472312684
+          },
+          {
+            "key": "sector:Oil ETF|direction:LONG",
+            "n": 174,
+            "winRate": 0.8793103448275862,
+            "avgPct": 0.1280850574712642,
+            "factor": 1.5274725274725274
+          },
+          {
+            "key": "scenario:iran|direction:LONG",
+            "n": 1888,
+            "winRate": 0.4401483050847458,
+            "avgPct": 0.0046786016949153,
+            "factor": 0.9947957805907175
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF",
+            "n": 174,
+            "winRate": 0.8793103448275862,
+            "avgPct": 0.1280850574712642,
+            "factor": 1.5274725274725274
+          },
+          {
+            "key": "scenario:iran|sector:Oil ETF|direction:LONG",
+            "n": 174,
+            "winRate": 0.8793103448275862,
+            "avgPct": 0.1280850574712642,
+            "factor": 1.5274725274725274
+          }
+        ],
+        "weightsAtEntry": {
+          "conviction": 0.16928831342444617,
+          "scenario": 0.1316686882190137,
+          "riskReward": 0.15047850082172992,
+          "trend": 0.1316686882190137,
+          "volRegime": 0.050526887659853775,
+          "catalyst": 0.17827079562878037,
+          "memory": 0.18809812602716242
+        },
+        "weightsBucketAtEntry": "global",
+        "stopMultAtEntry": 1.3,
+        "targetMultAtEntry": 1,
+        "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
+        "currentPrice": 134.64,
+        "unrealizedPnlDollar": 130.03,
+        "unrealizedPct": 0.0542,
+        "lastKnownPrice": 134.63999938964844,
+        "lastKnownDate": "2026-08-21",
+        "exitDate": "2026-08-24",
+        "exitPrice": 132.92,
+        "exitReason": "horizon_exceeded",
+        "realizedPnlDollar": 97.71,
+        "realizedPct": 0.0407,
+        "holdingDays": 28,
+        "outcome": "win"
       }
     ],
-    "closedTrades": [],
     "equityCurve": [
       {
         "date": "2026-05-18",
@@ -458,207 +1951,610 @@
         "openMtM": 7912.29,
         "totalEquity": 9512.29,
         "pctVsStart": -0.0488
+      },
+      {
+        "date": "2026-06-04",
+        "cycle": 6,
+        "cash": 1600,
+        "openMtM": 7861.01,
+        "totalEquity": 9461.01,
+        "pctVsStart": -0.0539
+      },
+      {
+        "date": "2026-06-05",
+        "cycle": 7,
+        "cash": 1600,
+        "openMtM": 7936.54,
+        "totalEquity": 9536.54,
+        "pctVsStart": -0.0463
+      },
+      {
+        "date": "2026-06-06",
+        "cycle": 8,
+        "cash": 1600,
+        "openMtM": 7856.84,
+        "totalEquity": 9456.84,
+        "pctVsStart": -0.0543
+      },
+      {
+        "date": "2026-06-07",
+        "cycle": 9,
+        "cash": 1600,
+        "openMtM": 7856.84,
+        "totalEquity": 9456.84,
+        "pctVsStart": -0.0543
+      },
+      {
+        "date": "2026-06-08",
+        "cycle": 10,
+        "cash": 1871.45,
+        "openMtM": 7719.53,
+        "totalEquity": 9590.98,
+        "pctVsStart": -0.0409
+      },
+      {
+        "date": "2026-06-09",
+        "cycle": 11,
+        "cash": 1871.45,
+        "openMtM": 7632.34,
+        "totalEquity": 9503.79,
+        "pctVsStart": -0.0496
+      },
+      {
+        "date": "2026-06-11",
+        "cycle": 12,
+        "cash": 1871.45,
+        "openMtM": 7646.71,
+        "totalEquity": 9518.15,
+        "pctVsStart": -0.0482
+      },
+      {
+        "date": "2026-06-12",
+        "cycle": 13,
+        "cash": 1871.45,
+        "openMtM": 7501.31,
+        "totalEquity": 9372.76,
+        "pctVsStart": -0.0627
+      },
+      {
+        "date": "2026-06-13",
+        "cycle": 14,
+        "cash": 1871.45,
+        "openMtM": 7444.61,
+        "totalEquity": 9316.06,
+        "pctVsStart": -0.0684
+      },
+      {
+        "date": "2026-06-14",
+        "cycle": 15,
+        "cash": 1871.45,
+        "openMtM": 7444.61,
+        "totalEquity": 9316.06,
+        "pctVsStart": -0.0684
+      },
+      {
+        "date": "2026-06-16",
+        "cycle": 16,
+        "cash": 1871.45,
+        "openMtM": 7182.4,
+        "totalEquity": 9053.85,
+        "pctVsStart": -0.0946
+      },
+      {
+        "date": "2026-06-17",
+        "cycle": 17,
+        "cash": 1871.45,
+        "openMtM": 7097.31,
+        "totalEquity": 8968.75,
+        "pctVsStart": -0.1031
+      },
+      {
+        "date": "2026-06-18",
+        "cycle": 18,
+        "cash": 2140.07,
+        "openMtM": 6672.73,
+        "totalEquity": 8812.79,
+        "pctVsStart": -0.1187
+      },
+      {
+        "date": "2026-06-19",
+        "cycle": 19,
+        "cash": 2140.07,
+        "openMtM": 6844.38,
+        "totalEquity": 8984.45,
+        "pctVsStart": -0.1016
+      },
+      {
+        "date": "2026-06-20",
+        "cycle": 20,
+        "cash": 2140.07,
+        "openMtM": 6844.38,
+        "totalEquity": 8984.45,
+        "pctVsStart": -0.1016
+      },
+      {
+        "date": "2026-06-21",
+        "cycle": 21,
+        "cash": 2140.07,
+        "openMtM": 6844.38,
+        "totalEquity": 8984.45,
+        "pctVsStart": -0.1016
+      },
+      {
+        "date": "2026-06-22",
+        "cycle": 22,
+        "cash": 2140.07,
+        "openMtM": 6911.06,
+        "totalEquity": 9051.13,
+        "pctVsStart": -0.0949
+      },
+      {
+        "date": "2026-06-23",
+        "cycle": 23,
+        "cash": 2140.07,
+        "openMtM": 6683.16,
+        "totalEquity": 8823.22,
+        "pctVsStart": -0.1177
+      },
+      {
+        "date": "2026-06-24",
+        "cycle": 24,
+        "cash": 2583.74,
+        "openMtM": 6094.72,
+        "totalEquity": 8678.46,
+        "pctVsStart": -0.1322
+      },
+      {
+        "date": "2026-06-25",
+        "cycle": 25,
+        "cash": 2583.74,
+        "openMtM": 6114.68,
+        "totalEquity": 8698.42,
+        "pctVsStart": -0.1302
+      },
+      {
+        "date": "2026-06-29",
+        "cycle": 26,
+        "cash": 1044.57,
+        "openMtM": 7170.53,
+        "totalEquity": 8215.1,
+        "pctVsStart": -0.1785
+      },
+      {
+        "date": "2026-06-30",
+        "cycle": 27,
+        "cash": 1044.57,
+        "openMtM": 7374.82,
+        "totalEquity": 8419.39,
+        "pctVsStart": -0.1581
+      },
+      {
+        "date": "2026-07-01",
+        "cycle": 28,
+        "cash": 1044.57,
+        "openMtM": 7219.93,
+        "totalEquity": 8264.49,
+        "pctVsStart": -0.1736
+      },
+      {
+        "date": "2026-07-02",
+        "cycle": 29,
+        "cash": 1044.57,
+        "openMtM": 6986.12,
+        "totalEquity": 8030.69,
+        "pctVsStart": -0.1969
+      },
+      {
+        "date": "2026-07-03",
+        "cycle": 30,
+        "cash": 1044.57,
+        "openMtM": 6779.76,
+        "totalEquity": 7824.33,
+        "pctVsStart": -0.2176
+      },
+      {
+        "date": "2026-07-04",
+        "cycle": 31,
+        "cash": 1044.57,
+        "openMtM": 6779.76,
+        "totalEquity": 7824.33,
+        "pctVsStart": -0.2176
+      },
+      {
+        "date": "2026-07-05",
+        "cycle": 32,
+        "cash": 1044.57,
+        "openMtM": 6779.76,
+        "totalEquity": 7824.33,
+        "pctVsStart": -0.2176
+      },
+      {
+        "date": "2026-07-07",
+        "cycle": 33,
+        "cash": 1044.57,
+        "openMtM": 6801.69,
+        "totalEquity": 7846.25,
+        "pctVsStart": -0.2154
+      },
+      {
+        "date": "2026-07-08",
+        "cycle": 34,
+        "cash": 2535.2,
+        "openMtM": 5367.54,
+        "totalEquity": 7902.74,
+        "pctVsStart": -0.2097
+      },
+      {
+        "date": "2026-07-09",
+        "cycle": 35,
+        "cash": 2535.2,
+        "openMtM": 5459.9,
+        "totalEquity": 7995.1,
+        "pctVsStart": -0.2005
+      },
+      {
+        "date": "2026-07-10",
+        "cycle": 36,
+        "cash": 2535.2,
+        "openMtM": 5345.32,
+        "totalEquity": 7880.52,
+        "pctVsStart": -0.2119
+      },
+      {
+        "date": "2026-07-11",
+        "cycle": 37,
+        "cash": 2535.2,
+        "openMtM": 5325.88,
+        "totalEquity": 7861.08,
+        "pctVsStart": -0.2139
+      },
+      {
+        "date": "2026-07-12",
+        "cycle": 38,
+        "cash": 2535.2,
+        "openMtM": 5325.88,
+        "totalEquity": 7861.08,
+        "pctVsStart": -0.2139
+      },
+      {
+        "date": "2026-07-13",
+        "cycle": 39,
+        "cash": 2535.2,
+        "openMtM": 5376.3,
+        "totalEquity": 7911.51,
+        "pctVsStart": -0.2088
+      },
+      {
+        "date": "2026-07-14",
+        "cycle": 40,
+        "cash": 2535.2,
+        "openMtM": 5687.43,
+        "totalEquity": 8222.63,
+        "pctVsStart": -0.1777
+      },
+      {
+        "date": "2026-07-15",
+        "cycle": 41,
+        "cash": 2149.13,
+        "openMtM": 5899.87,
+        "totalEquity": 8049,
+        "pctVsStart": -0.1951
+      },
+      {
+        "date": "2026-07-16",
+        "cycle": 42,
+        "cash": 2149.13,
+        "openMtM": 6015.04,
+        "totalEquity": 8164.17,
+        "pctVsStart": -0.1836
+      },
+      {
+        "date": "2026-07-20",
+        "cycle": 43,
+        "cash": 2149.13,
+        "openMtM": 6141.17,
+        "totalEquity": 8290.3,
+        "pctVsStart": -0.171
+      },
+      {
+        "date": "2026-07-21",
+        "cycle": 44,
+        "cash": 2149.13,
+        "openMtM": 6292.35,
+        "totalEquity": 8441.48,
+        "pctVsStart": -0.1559
+      },
+      {
+        "date": "2026-07-22",
+        "cycle": 45,
+        "cash": 2149.13,
+        "openMtM": 6453.94,
+        "totalEquity": 8603.07,
+        "pctVsStart": -0.1397
+      },
+      {
+        "date": "2026-07-23",
+        "cycle": 46,
+        "cash": 2144.59,
+        "openMtM": 6669.91,
+        "totalEquity": 8814.5,
+        "pctVsStart": -0.1186
+      },
+      {
+        "date": "2026-07-24",
+        "cycle": 47,
+        "cash": 2144.59,
+        "openMtM": 6612.49,
+        "totalEquity": 8757.08,
+        "pctVsStart": -0.1243
+      },
+      {
+        "date": "2026-07-25",
+        "cycle": 48,
+        "cash": 2144.59,
+        "openMtM": 6588.7,
+        "totalEquity": 8733.29,
+        "pctVsStart": -0.1267
+      },
+      {
+        "date": "2026-07-26",
+        "cycle": 49,
+        "cash": 2144.59,
+        "openMtM": 6588.7,
+        "totalEquity": 8733.29,
+        "pctVsStart": -0.1267
+      },
+      {
+        "date": "2026-07-27",
+        "cycle": 50,
+        "cash": 1924.11,
+        "openMtM": 6497.14,
+        "totalEquity": 8421.25,
+        "pctVsStart": -0.1579
+      },
+      {
+        "date": "2026-07-28",
+        "cycle": 51,
+        "cash": 1924.11,
+        "openMtM": 6380.65,
+        "totalEquity": 8304.76,
+        "pctVsStart": -0.1695
+      },
+      {
+        "date": "2026-07-29",
+        "cycle": 52,
+        "cash": 1924.11,
+        "openMtM": 6594.88,
+        "totalEquity": 8518.99,
+        "pctVsStart": -0.1481
+      },
+      {
+        "date": "2026-07-30",
+        "cycle": 53,
+        "cash": 1924.11,
+        "openMtM": 6544.24,
+        "totalEquity": 8468.35,
+        "pctVsStart": -0.1532
+      },
+      {
+        "date": "2026-07-31",
+        "cycle": 54,
+        "cash": 1924.11,
+        "openMtM": 6699.25,
+        "totalEquity": 8623.36,
+        "pctVsStart": -0.1377
+      },
+      {
+        "date": "2026-08-01",
+        "cycle": 55,
+        "cash": 1924.11,
+        "openMtM": 6674.34,
+        "totalEquity": 8598.45,
+        "pctVsStart": -0.1402
+      },
+      {
+        "date": "2026-08-02",
+        "cycle": 56,
+        "cash": 1924.11,
+        "openMtM": 6674.34,
+        "totalEquity": 8598.45,
+        "pctVsStart": -0.1402
+      },
+      {
+        "date": "2026-08-03",
+        "cycle": 57,
+        "cash": 1924.11,
+        "openMtM": 6346.62,
+        "totalEquity": 8270.73,
+        "pctVsStart": -0.1729
+      },
+      {
+        "date": "2026-08-04",
+        "cycle": 58,
+        "cash": 1924.11,
+        "openMtM": 6212.79,
+        "totalEquity": 8136.9,
+        "pctVsStart": -0.1863
+      },
+      {
+        "date": "2026-08-05",
+        "cycle": 59,
+        "cash": 2070.53,
+        "openMtM": 6011.47,
+        "totalEquity": 8082,
+        "pctVsStart": -0.1918
+      },
+      {
+        "date": "2026-08-06",
+        "cycle": 60,
+        "cash": 2070.53,
+        "openMtM": 6034.35,
+        "totalEquity": 8104.88,
+        "pctVsStart": -0.1895
+      },
+      {
+        "date": "2026-08-07",
+        "cycle": 61,
+        "cash": 2070.53,
+        "openMtM": 6100.52,
+        "totalEquity": 8171.05,
+        "pctVsStart": -0.1829
+      },
+      {
+        "date": "2026-08-08",
+        "cycle": 62,
+        "cash": 2070.53,
+        "openMtM": 6110.53,
+        "totalEquity": 8181.06,
+        "pctVsStart": -0.1819
+      },
+      {
+        "date": "2026-08-09",
+        "cycle": 63,
+        "cash": 2070.53,
+        "openMtM": 6110.53,
+        "totalEquity": 8181.06,
+        "pctVsStart": -0.1819
+      },
+      {
+        "date": "2026-08-10",
+        "cycle": 64,
+        "cash": 2070.53,
+        "openMtM": 6301.49,
+        "totalEquity": 8372.02,
+        "pctVsStart": -0.1628
+      },
+      {
+        "date": "2026-08-11",
+        "cycle": 65,
+        "cash": 2070.53,
+        "openMtM": 6340.02,
+        "totalEquity": 8410.55,
+        "pctVsStart": -0.1589
+      },
+      {
+        "date": "2026-08-13",
+        "cycle": 66,
+        "cash": 2070.53,
+        "openMtM": 6539.76,
+        "totalEquity": 8610.29,
+        "pctVsStart": -0.139
+      },
+      {
+        "date": "2026-08-14",
+        "cycle": 67,
+        "cash": 2070.53,
+        "openMtM": 6514.39,
+        "totalEquity": 8584.92,
+        "pctVsStart": -0.1415
+      },
+      {
+        "date": "2026-08-15",
+        "cycle": 68,
+        "cash": 2070.53,
+        "openMtM": 6621.5,
+        "totalEquity": 8692.03,
+        "pctVsStart": -0.1308
+      },
+      {
+        "date": "2026-08-16",
+        "cycle": 69,
+        "cash": 2070.53,
+        "openMtM": 6621.5,
+        "totalEquity": 8692.03,
+        "pctVsStart": -0.1308
+      },
+      {
+        "date": "2026-08-17",
+        "cycle": 70,
+        "cash": 2070.53,
+        "openMtM": 6661.03,
+        "totalEquity": 8731.56,
+        "pctVsStart": -0.1268
+      },
+      {
+        "date": "2026-08-18",
+        "cycle": 71,
+        "cash": 2070.53,
+        "openMtM": 6853.69,
+        "totalEquity": 8924.22,
+        "pctVsStart": -0.1076
+      },
+      {
+        "date": "2026-08-20",
+        "cycle": 72,
+        "cash": 2070.53,
+        "openMtM": 7003.49,
+        "totalEquity": 9074.02,
+        "pctVsStart": -0.0926
+      },
+      {
+        "date": "2026-08-21",
+        "cycle": 73,
+        "cash": 2070.53,
+        "openMtM": 7098.51,
+        "totalEquity": 9169.04,
+        "pctVsStart": -0.0831
+      },
+      {
+        "date": "2026-08-22",
+        "cycle": 74,
+        "cash": 2070.53,
+        "openMtM": 7050.75,
+        "totalEquity": 9121.28,
+        "pctVsStart": -0.0879
+      },
+      {
+        "date": "2026-08-23",
+        "cycle": 75,
+        "cash": 2070.53,
+        "openMtM": 7050.75,
+        "totalEquity": 9121.28,
+        "pctVsStart": -0.0879
+      },
+      {
+        "date": "2026-08-24",
+        "cycle": 76,
+        "cash": 2768.24,
+        "openMtM": 6313.72,
+        "totalEquity": 9081.96,
+        "pctVsStart": -0.0918
       }
     ],
     "createdAt": "2026-05-18T05:40:21.624Z",
-    "lastRunAt": "2026-06-03T13:45:57.959Z",
-    "cycles": 5,
+    "lastRunAt": "2026-08-24T13:46:40.155Z",
+    "cycles": 76,
     "lastWatchlist": [
-      {
-        "ticker": "GFS",
-        "scenario": "korea",
-        "scenarioTitle": "Korea / DPRK / Yellow Sea",
-        "direction": "LONG",
-        "sector": "Foundry alternatives",
-        "price": 84.25,
-        "targetPrice": 108.97,
-        "stopPrice": 71.27,
-        "rewardToRisk": 1.9,
-        "conviction": 3,
-        "heat": 72,
-        "upsidePct": 0.29331374619800055,
-        "downsidePct": 0.1541356006040573,
-        "momentum22d": 0.29802792327681005,
-        "pctVsMa22": 0.10406544286856556,
-        "annualizedVol": 0.6791737820587029,
-        "catalyst": "Resilience demand spans Korea+Taiwan, not just Taiwan.",
-        "finalScore": 69.3,
-        "confidence": 0.693,
-        "components": {
-          "conviction": 60,
-          "scenario": 70,
-          "riskReward": 83.2,
-          "trend": 87,
-          "volRegime": 45,
-          "catalyst": 50,
-          "memory": 100
-        },
-        "diversificationPenalty": 4,
-        "memoryMult": 2.5,
-        "held": false
-      },
-      {
-        "ticker": "GFS",
-        "scenario": "taiwan",
-        "scenarioTitle": "China / Taiwan",
-        "direction": "LONG",
-        "sector": "Foundry alternatives",
-        "price": 84.24,
-        "targetPrice": 108.49,
-        "stopPrice": 71.26,
-        "rewardToRisk": 1.87,
-        "conviction": 3,
-        "heat": 66,
-        "upsidePct": 0.28786014107177904,
-        "downsidePct": 0.15413636462082045,
-        "momentum22d": 0.29781694249710033,
-        "pctVsMa22": 0.10389499313144619,
-        "annualizedVol": 0.6791834688855257,
-        "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
-        "finalScore": 67.3,
-        "confidence": 0.673,
-        "components": {
-          "conviction": 60,
-          "scenario": 55,
-          "riskReward": 82.8,
-          "trend": 87,
-          "volRegime": 45,
-          "catalyst": 50,
-          "memory": 100
-        },
-        "diversificationPenalty": 4,
-        "memoryMult": 2.5,
-        "held": false
-      },
-      {
-        "ticker": "INTC",
-        "scenario": "korea",
-        "scenarioTitle": "Korea / DPRK / Yellow Sea",
-        "direction": "LONG",
-        "sector": "Semiconductor onshoring",
-        "price": 114.27,
-        "targetPrice": 149.1,
-        "stopPrice": 95.59,
-        "rewardToRisk": 1.86,
-        "conviction": 3,
-        "heat": 72,
-        "upsidePct": 0.30482716031637447,
-        "downsidePct": 0.16349024957523606,
-        "momentum22d": 0.1470587582069407,
-        "pctVsMa22": -0.008378129596195794,
-        "annualizedVol": 0.8029572926686855,
-        "catalyst": "Onshoring narrative widens to include Korean memory exposure, not just Taiwan foundry.",
-        "finalScore": 64.8,
-        "confidence": 0.648,
-        "components": {
-          "conviction": 60,
-          "scenario": 70,
-          "riskReward": 82.6,
-          "trend": 64,
-          "volRegime": 30,
-          "catalyst": 46,
-          "memory": 100
-        },
-        "diversificationPenalty": 4,
-        "memoryMult": 2.5,
-        "held": false
-      },
-      {
-        "ticker": "INTC",
-        "scenario": "taiwan",
-        "scenarioTitle": "China / Taiwan",
-        "direction": "LONG",
-        "sector": "Semiconductor onshoring",
-        "price": 114.32,
-        "targetPrice": 148.55,
-        "stopPrice": 95.63,
-        "rewardToRisk": 1.83,
-        "conviction": 3,
-        "heat": 66,
-        "upsidePct": 0.29937998408300914,
-        "downsidePct": 0.16349623706744495,
-        "momentum22d": 0.1475606960746299,
-        "pctVsMa22": -0.007963775466301327,
-        "annualizedVol": 0.8030398373298423,
-        "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
-        "finalScore": 62.7,
-        "confidence": 0.627,
-        "components": {
-          "conviction": 60,
-          "scenario": 55,
-          "riskReward": 82.2,
-          "trend": 64,
-          "volRegime": 30,
-          "catalyst": 46,
-          "memory": 100
-        },
-        "diversificationPenalty": 4,
-        "memoryMult": 2.5,
-        "held": false
-      },
       {
         "ticker": "USO",
         "scenario": "iran",
         "scenarioTitle": "Iran / Hormuz / Yemen",
         "direction": "LONG",
         "sector": "Oil ETF",
-        "price": 139.38,
-        "targetPrice": 185.34,
-        "stopPrice": 117.07,
-        "rewardToRisk": 2.06,
+        "price": 132.91,
+        "targetPrice": 175.32,
+        "stopPrice": 112.98,
+        "rewardToRisk": 2.13,
         "conviction": 4,
-        "heat": 92,
-        "upsidePct": 0.329727328268389,
-        "downsidePct": 0.16007390876352062,
-        "momentum22d": -0.02394956649759829,
-        "pctVsMa22": -0.0046062814845799155,
-        "annualizedVol": 0.6409099695454211,
+        "heat": 94,
+        "upsidePct": 0.31909529903530715,
+        "downsidePct": 0.14995811228436887,
+        "momentum22d": -0.04716681961189142,
+        "pctVsMa22": 0.05032248635775463,
+        "annualizedVol": 0.5223743706533768,
         "catalyst": "Direct WTI futures exposure capturing tanker/insurance stress.",
-        "finalScore": 61.9,
-        "confidence": 0.619,
+        "finalScore": 71.8,
+        "confidence": 0.718,
         "components": {
           "conviction": 80,
           "scenario": 95,
-          "riskReward": 85.6,
-          "trend": 49,
-          "volRegime": 45,
+          "riskReward": 86.6,
+          "trend": 72,
+          "volRegime": 60,
           "catalyst": 64,
           "memory": 100
         },
-        "diversificationPenalty": 16,
-        "memoryMult": 2.5,
-        "held": false
-      },
-      {
-        "ticker": "BNO",
-        "scenario": "iran",
-        "scenarioTitle": "Iran / Hormuz / Yemen",
-        "direction": "LONG",
-        "sector": "Brent ETF",
-        "price": 53.62,
-        "targetPrice": 71.11,
-        "stopPrice": 45.19,
-        "rewardToRisk": 2.08,
-        "conviction": 4,
-        "heat": 92,
-        "upsidePct": 0.32611168644577737,
-        "downsidePct": 0.15713619978264864,
-        "momentum22d": -0.06373321977831593,
-        "pctVsMa22": -0.02355767072974295,
-        "annualizedVol": 0.6052385151760842,
-        "catalyst": "Brent typically reprices faster than WTI on Hormuz disruption.",
-        "finalScore": 61.7,
-        "confidence": 0.617,
-        "components": {
-          "conviction": 80,
-          "scenario": 95,
-          "riskReward": 85.9,
-          "trend": 38,
-          "volRegime": 45,
-          "catalyst": 71,
-          "memory": 100
-        },
-        "diversificationPenalty": 16,
+        "diversificationPenalty": 10,
         "memoryMult": 2.5,
         "held": false
       },
@@ -668,97 +2564,295 @@
         "scenarioTitle": "Iran / Hormuz / Yemen",
         "direction": "LONG",
         "sector": "Oil services",
-        "price": 40.38,
-        "targetPrice": 51.25,
-        "stopPrice": 35.54,
-        "rewardToRisk": 2.25,
+        "price": 34.95,
+        "targetPrice": 44.56,
+        "stopPrice": 30.65,
+        "rewardToRisk": 2.24,
         "conviction": 3,
-        "heat": 92,
-        "upsidePct": 0.2692792467283526,
-        "downsidePct": 0.11983484251224098,
-        "momentum22d": -0.030844931639910523,
-        "pctVsMa22": -0.012270859459775768,
-        "annualizedVol": 0.3139002534782809,
+        "heat": 94,
+        "upsidePct": 0.27495329588462986,
+        "downsidePct": 0.12296773472444358,
+        "momentum22d": 0.06848064020674703,
+        "pctVsMa22": 0.05235067570041362,
+        "annualizedVol": 0.3414850129682503,
         "catalyst": "Sustained crude strength can reopen service-cycle upside.",
-        "finalScore": 57.4,
-        "confidence": 0.574,
+        "finalScore": 68.4,
+        "confidence": 0.684,
         "components": {
           "conviction": 60,
           "scenario": 95,
-          "riskReward": 88.4,
-          "trend": 43,
+          "riskReward": 88.3,
+          "trend": 81,
           "volRegime": 80,
           "catalyst": 50,
           "memory": 100
         },
-        "diversificationPenalty": 16,
+        "diversificationPenalty": 10,
         "memoryMult": 2.5,
         "held": false
       },
       {
-        "ticker": "UNG",
-        "scenario": "europe",
-        "scenarioTitle": "Russia / NATO / Western Europe",
+        "ticker": "UCO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
         "direction": "LONG",
-        "sector": "Gas ETF",
-        "price": 11.49,
-        "targetPrice": 14.8,
-        "stopPrice": 9.89,
-        "rewardToRisk": 2.07,
-        "conviction": 4,
-        "heat": 75,
-        "upsidePct": 0.28854716326439744,
-        "downsidePct": 0.13917184287959564,
-        "momentum22d": 0.07237159211696909,
-        "pctVsMa22": 0.025059712709282263,
-        "annualizedVol": 0.40932280757326295,
-        "catalyst": "Russian LNG ban + cold-snap risk lifts US Henry Hub.",
-        "finalScore": 55.2,
-        "confidence": 0.552,
+        "sector": "Oil ETF (2x)",
+        "price": 44.42,
+        "targetPrice": 58.5,
+        "stopPrice": 37.44,
+        "rewardToRisk": 2.02,
+        "conviction": 3,
+        "heat": 94,
+        "upsidePct": 0.317024118955694,
+        "downsidePct": 0.15715027846968319,
+        "momentum22d": 0.004522771205816973,
+        "pctVsMa22": 0.0860393949168198,
+        "annualizedVol": 0.7179339554407546,
+        "catalyst": "Geared upside if Brent stays bid for sustained period.",
+        "finalScore": 66.2,
+        "confidence": 0.662,
         "components": {
-          "conviction": 80,
+          "conviction": 60,
+          "scenario": 95,
+          "riskReward": 85,
+          "trend": 82,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
+        },
+        "diversificationPenalty": 10,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "TSM",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "direction": "SHORT",
+        "sector": "Semiconductor manufacturing",
+        "price": 408.87,
+        "targetPrice": 280.48,
+        "stopPrice": 471.81,
+        "rewardToRisk": 2.04,
+        "conviction": 5,
+        "heat": 71,
+        "upsidePct": 0.3140022778142118,
+        "downsidePct": 0.1539336689058653,
+        "momentum22d": -0.01614608901266548,
+        "pctVsMa22": -0.009277090020433679,
+        "annualizedVol": 0.4679998500034362,
+        "catalyst": "Direct center-of-gravity risk in any severe cross-strait escalation.",
+        "finalScore": 60,
+        "confidence": 0.6,
+        "components": {
+          "conviction": 95,
           "scenario": 70,
-          "riskReward": 85.7,
-          "trend": 80,
-          "volRegime": 80,
+          "riskReward": 85.3,
+          "trend": 75,
+          "volRegime": 60,
           "catalyst": 50,
           "memory": 0
         },
-        "diversificationPenalty": 4,
+        "diversificationPenalty": 0,
         "memoryMult": 0.3,
         "held": false
       },
       {
-        "ticker": "LMT",
+        "ticker": "FRO",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Shipping",
+        "price": 43.63,
+        "targetPrice": 57.07,
+        "stopPrice": 37.47,
+        "rewardToRisk": 2.18,
+        "conviction": 4,
+        "heat": 94,
+        "upsidePct": 0.30810799751732787,
+        "downsidePct": 0.14103092980101073,
+        "momentum22d": 0.12290866701216599,
+        "pctVsMa22": 0.07923781020450492,
+        "annualizedVol": 0.4278259776819182,
+        "catalyst": "Voyage lengths and risk premia push tanker day rates higher.",
+        "finalScore": 59.7,
+        "confidence": 0.597,
+        "components": {
+          "conviction": 80,
+          "scenario": 95,
+          "riskReward": 87.4,
+          "trend": 87,
+          "volRegime": 80,
+          "catalyst": 50,
+          "memory": 64.1
+        },
+        "diversificationPenalty": 16,
+        "memoryMult": 1.422,
+        "held": false
+      },
+      {
+        "ticker": "GFS",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "direction": "LONG",
+        "sector": "Foundry alternatives",
+        "price": 46.14,
+        "targetPrice": 59.96,
+        "stopPrice": 38.76,
+        "rewardToRisk": 1.87,
+        "conviction": 3,
+        "heat": 71,
+        "upsidePct": 0.29958209039233596,
+        "downsidePct": 0.15996726662559113,
+        "momentum22d": -0.18927782505279478,
+        "pctVsMa22": -0.08819279622579507,
+        "annualizedVol": 0.7551244573288399,
+        "catalyst": "Alternative foundry capacity gets revalued on resilience demand.",
+        "finalScore": 59.5,
+        "confidence": 0.595,
+        "components": {
+          "conviction": 60,
+          "scenario": 70,
+          "riskReward": 82.8,
+          "trend": 13,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
+        },
+        "diversificationPenalty": 4,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "GFS",
         "scenario": "korea",
         "scenarioTitle": "Korea / DPRK / Yellow Sea",
         "direction": "LONG",
-        "sector": "Defense",
-        "price": 515.86,
-        "targetPrice": 651.52,
-        "stopPrice": 453.65,
-        "rewardToRisk": 2.18,
-        "conviction": 4,
-        "heat": 72,
-        "upsidePct": 0.2629661207536511,
-        "downsidePct": 0.12060315493052337,
-        "momentum22d": 0.006035787166251013,
-        "pctVsMa22": -0.009763196530398472,
-        "annualizedVol": 0.2469566643181779,
-        "catalyst": "THAAD upgrades and Patriot replenishment for Korean theater.",
-        "finalScore": 52.2,
-        "confidence": 0.522,
+        "sector": "Foundry alternatives",
+        "price": 46.08,
+        "targetPrice": 59.85,
+        "stopPrice": 38.71,
+        "rewardToRisk": 1.87,
+        "conviction": 3,
+        "heat": 70,
+        "upsidePct": 0.2986897695071208,
+        "downsidePct": 0.1599808922699902,
+        "momentum22d": -0.19021263032794936,
+        "pctVsMa22": -0.08920063151056964,
+        "annualizedVol": 0.7553066282913097,
+        "catalyst": "Resilience demand spans Korea+Taiwan, not just Taiwan.",
+        "finalScore": 59.5,
+        "confidence": 0.595,
         "components": {
-          "conviction": 80,
+          "conviction": 60,
           "scenario": 70,
-          "riskReward": 87.4,
-          "trend": 35,
-          "volRegime": 82,
-          "catalyst": 65,
-          "memory": 0
+          "riskReward": 82.8,
+          "trend": 13,
+          "volRegime": 45,
+          "catalyst": 50,
+          "memory": 100
         },
         "diversificationPenalty": 4,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "XOM",
+        "scenario": "iran",
+        "scenarioTitle": "Iran / Hormuz / Yemen",
+        "direction": "LONG",
+        "sector": "Energy",
+        "price": 164.9,
+        "targetPrice": 215.97,
+        "stopPrice": 142.9,
+        "rewardToRisk": 2.32,
+        "conviction": 5,
+        "heat": 94,
+        "upsidePct": 0.30968506081846026,
+        "downsidePct": 0.13343729373318078,
+        "momentum22d": 0.05105484440051846,
+        "pctVsMa22": 0.03994904977116362,
+        "annualizedVol": 0.27713983275276116,
+        "catalyst": "Brent reprices on tanker and insurance stress.",
+        "finalScore": 59.1,
+        "confidence": 0.591,
+        "components": {
+          "conviction": 95,
+          "scenario": 95,
+          "riskReward": 89.5,
+          "trend": 87,
+          "volRegime": 82,
+          "catalyst": 64,
+          "memory": 0
+        },
+        "diversificationPenalty": 10,
         "memoryMult": 0.3,
+        "held": false
+      },
+      {
+        "ticker": "INTC",
+        "scenario": "taiwan",
+        "scenarioTitle": "China / Taiwan",
+        "direction": "LONG",
+        "sector": "Semiconductor onshoring",
+        "price": 86.16,
+        "targetPrice": 112.76,
+        "stopPrice": 71.74,
+        "rewardToRisk": 1.84,
+        "conviction": 3,
+        "heat": 71,
+        "upsidePct": 0.3087571094493067,
+        "downsidePct": 0.16742196960937983,
+        "momentum22d": -0.14036022645972585,
+        "pctVsMa22": -0.09410176402962964,
+        "annualizedVol": 0.8580740097397869,
+        "catalyst": "Onshoring and redundancy narrative improves if Taiwan concentration becomes a bigger market risk.",
+        "finalScore": 58,
+        "confidence": 0.58,
+        "components": {
+          "conviction": 60,
+          "scenario": 70,
+          "riskReward": 82.3,
+          "trend": 13,
+          "volRegime": 30,
+          "catalyst": 46,
+          "memory": 100
+        },
+        "diversificationPenalty": 4,
+        "memoryMult": 2.5,
+        "held": false
+      },
+      {
+        "ticker": "INTC",
+        "scenario": "korea",
+        "scenarioTitle": "Korea / DPRK / Yellow Sea",
+        "direction": "LONG",
+        "sector": "Semiconductor onshoring",
+        "price": 86.16,
+        "targetPrice": 112.69,
+        "stopPrice": 71.74,
+        "rewardToRisk": 1.84,
+        "conviction": 3,
+        "heat": 70,
+        "upsidePct": 0.3078480185402157,
+        "downsidePct": 0.16742196960937983,
+        "momentum22d": -0.14036022645972585,
+        "pctVsMa22": -0.09410176402962964,
+        "annualizedVol": 0.8580740097397869,
+        "catalyst": "Onshoring narrative widens to include Korean memory exposure, not just Taiwan foundry.",
+        "finalScore": 58,
+        "confidence": 0.58,
+        "components": {
+          "conviction": 60,
+          "scenario": 70,
+          "riskReward": 82.3,
+          "trend": 13,
+          "volRegime": 30,
+          "catalyst": 46,
+          "memory": 100
+        },
+        "diversificationPenalty": 4,
+        "memoryMult": 2.5,
         "held": false
       },
       {
@@ -767,25 +2861,25 @@
         "scenarioTitle": "Russia / NATO / Western Europe",
         "direction": "LONG",
         "sector": "Defense",
-        "price": 173.78,
-        "targetPrice": 224.06,
-        "stopPrice": 151.02,
-        "rewardToRisk": 2.21,
+        "price": 210.04,
+        "targetPrice": 273.27,
+        "stopPrice": 181.94,
+        "rewardToRisk": 2.25,
         "conviction": 5,
-        "heat": 75,
-        "upsidePct": 0.2893553263727115,
-        "downsidePct": 0.13095347540510086,
-        "momentum22d": -0.0012070044671355477,
-        "pctVsMa22": -0.012807405150149768,
-        "annualizedVol": 0.25738822000066525,
+        "heat": 84,
+        "upsidePct": 0.30104855045749424,
+        "downsidePct": 0.13380649270125955,
+        "momentum22d": 0.004207255730617742,
+        "pctVsMa22": -0.03966151803724272,
+        "annualizedVol": 0.2801380732454722,
         "catalyst": "Air-defense demand and replenishment remain the cleanest expression.",
-        "finalScore": 52.1,
-        "confidence": 0.521,
+        "finalScore": 57.7,
+        "confidence": 0.577,
         "components": {
           "conviction": 95,
-          "scenario": 70,
-          "riskReward": 87.8,
-          "trend": 25,
+          "scenario": 85,
+          "riskReward": 88.4,
+          "trend": 52,
           "volRegime": 82,
           "catalyst": 57,
           "memory": 0
@@ -795,65 +2889,32 @@
         "held": false
       },
       {
-        "ticker": "COPX",
-        "scenario": "taiwan",
-        "scenarioTitle": "China / Taiwan",
-        "direction": "LONG",
-        "sector": "Copper miners",
-        "price": 90.51,
-        "targetPrice": 115.03,
-        "stopPrice": 77.8,
-        "rewardToRisk": 1.93,
-        "conviction": 3,
-        "heat": 66,
-        "upsidePct": 0.2709399797667068,
-        "downsidePct": 0.14038873356044929,
-        "momentum22d": 0.14497151982358872,
-        "pctVsMa22": 0.05689963511269098,
-        "annualizedVol": 0.516062458936366,
-        "catalyst": "Strategic copper bid on supply-chain resilience and grid buildout.",
-        "finalScore": 51.3,
-        "confidence": 0.513,
-        "components": {
-          "conviction": 60,
-          "scenario": 55,
-          "riskReward": 83.7,
-          "trend": 87,
-          "volRegime": 60,
-          "catalyst": 50,
-          "memory": 10.1
-        },
-        "diversificationPenalty": 4,
-        "memoryMult": 0.441,
-        "held": false
-      },
-      {
-        "ticker": "LMT",
+        "ticker": "LNG",
         "scenario": "europe",
         "scenarioTitle": "Russia / NATO / Western Europe",
         "direction": "LONG",
-        "sector": "Defense",
-        "price": 515.73,
-        "targetPrice": 652.75,
-        "stopPrice": 453.53,
+        "sector": "Gas / LNG",
+        "price": 276.57,
+        "targetPrice": 355.2,
+        "stopPrice": 240.87,
         "rewardToRisk": 2.2,
         "conviction": 4,
-        "heat": 75,
-        "upsidePct": 0.265689239915931,
-        "downsidePct": 0.12059978015896668,
-        "momentum22d": 0.00576380298870736,
-        "pctVsMa22": -0.01001886256469912,
-        "annualizedVol": 0.24693086370336242,
-        "catalyst": "Broad NATO procurement and missile demand support backlog expansion.",
-        "finalScore": 50.9,
-        "confidence": 0.509,
+        "heat": 84,
+        "upsidePct": 0.2843182478399617,
+        "downsidePct": 0.12908812182451435,
+        "momentum22d": 0.01683891780685432,
+        "pctVsMa22": 0.04264816202864279,
+        "annualizedVol": 0.3160871924162751,
+        "catalyst": "Europe often leans harder on LNG when pipeline and security risk rises.",
+        "finalScore": 57.7,
+        "confidence": 0.577,
         "components": {
           "conviction": 80,
-          "scenario": 70,
+          "scenario": 85,
           "riskReward": 87.7,
-          "trend": 35,
-          "volRegime": 82,
-          "catalyst": 57,
+          "trend": 82,
+          "volRegime": 80,
+          "catalyst": 50,
           "memory": 0
         },
         "diversificationPenalty": 4,
@@ -863,39 +2924,39 @@
     ]
   },
   "live": {
-    "equity": 9536.54,
-    "openMtM": 7936.54,
-    "pctReturn": -0.0463,
-    "fetchedAt": "2026-06-04T00:39:17.108Z"
+    "equity": 9070.06,
+    "openMtM": 6301.82,
+    "pctReturn": -0.093,
+    "fetchedAt": "2026-08-24T17:10:54.364Z"
   },
   "memory": {
     "buckets": {
       "ticker:XOM": {
-        "n": 128,
+        "n": 129,
         "wins": 10,
-        "totalPnlPct": -6.7159999999999975,
-        "lastUpdated": "2026-05-08",
+        "totalPnlPct": -6.854099999999997,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 91,
-          "stop_hit": 37
+          "stop_hit": 38
         },
         "failureKinds": {
           "horizon_drift_loser": 81,
           "horizon_drift_winner": 10,
           "stop_hit_late": 37
         },
-        "holdingDaysTotal": 4552,
+        "holdingDaysTotal": 4583,
         "maxFavorableTotal": 9.751199999999999,
         "maxAdverseTotal": -8.970399999999998
       },
       "sector:Energy": {
-        "n": 433,
+        "n": 434,
         "wins": 75,
-        "totalPnlPct": -16.166500000000003,
-        "lastUpdated": "2026-05-08",
+        "totalPnlPct": -16.304600000000004,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 300,
-          "stop_hit": 133
+          "stop_hit": 134
         },
         "failureKinds": {
           "horizon_drift_loser": 225,
@@ -903,19 +2964,19 @@
           "stop_hit_late": 124,
           "stop_overshoot": 9
         },
-        "holdingDaysTotal": 13148,
+        "holdingDaysTotal": 13179,
         "maxFavorableTotal": 29.347800000000003,
         "maxAdverseTotal": -27.82149999999999
       },
       "direction:LONG": {
-        "n": 5940,
-        "wins": 1712,
-        "totalPnlPct": -98.65190000000082,
-        "lastUpdated": "2026-05-15",
+        "n": 5953,
+        "wins": 1716,
+        "totalPnlPct": -99.24020000000081,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
-          "horizon_exceeded": 1112,
-          "target_hit": 994,
-          "stop_hit": 3834
+          "horizon_exceeded": 1118,
+          "target_hit": 995,
+          "stop_hit": 3840
         },
         "failureKinds": {
           "horizon_drift_loser": 394,
@@ -926,19 +2987,19 @@
           "stop_hit_late": 3488,
           "target_undershoot": 757
         },
-        "holdingDaysTotal": 141576,
+        "holdingDaysTotal": 141861,
         "maxFavorableTotal": 496.5434999999982,
         "maxAdverseTotal": -532.5350000000019
       },
       "scenario:iran": {
-        "n": 2058,
-        "wins": 899,
-        "totalPnlPct": 5.117400000000051,
-        "lastUpdated": "2026-05-08",
+        "n": 2069,
+        "wins": 903,
+        "totalPnlPct": 4.91550000000005,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
-          "horizon_exceeded": 1130,
-          "target_hit": 144,
-          "stop_hit": 784
+          "horizon_exceeded": 1136,
+          "target_hit": 145,
+          "stop_hit": 788
         },
         "failureKinds": {
           "horizon_drift_loser": 375,
@@ -949,18 +3010,18 @@
           "stop_hit_late": 660,
           "target_undershoot": 45
         },
-        "holdingDaysTotal": 50016,
+        "holdingDaysTotal": 50245,
         "maxFavorableTotal": 182.03760000000025,
         "maxAdverseTotal": -137.81780000000018
       },
       "conviction:5": {
-        "n": 461,
+        "n": 462,
         "wins": 40,
-        "totalPnlPct": -38.810400000000016,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": -38.94850000000002,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 173,
-          "stop_hit": 288
+          "stop_hit": 289
         },
         "failureKinds": {
           "horizon_drift_loser": 133,
@@ -969,18 +3030,18 @@
           "stop_overshoot": 6,
           "stop_hit_quick": 2
         },
-        "holdingDaysTotal": 12838,
+        "holdingDaysTotal": 12869,
         "maxFavorableTotal": 20.62980000000007,
         "maxAdverseTotal": -43.85380000000001
       },
       "sector:Energy|direction:LONG": {
-        "n": 433,
+        "n": 434,
         "wins": 75,
-        "totalPnlPct": -16.166500000000003,
-        "lastUpdated": "2026-05-08",
+        "totalPnlPct": -16.304600000000004,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 300,
-          "stop_hit": 133
+          "stop_hit": 134
         },
         "failureKinds": {
           "horizon_drift_loser": 225,
@@ -988,19 +3049,19 @@
           "stop_hit_late": 124,
           "stop_overshoot": 9
         },
-        "holdingDaysTotal": 13148,
+        "holdingDaysTotal": 13179,
         "maxFavorableTotal": 29.347800000000003,
         "maxAdverseTotal": -27.82149999999999
       },
       "scenario:iran|direction:LONG": {
-        "n": 1879,
-        "wins": 829,
-        "totalPnlPct": 9.157100000000085,
-        "lastUpdated": "2026-05-08",
+        "n": 1890,
+        "wins": 833,
+        "totalPnlPct": 8.955200000000087,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
-          "horizon_exceeded": 993,
-          "target_hit": 144,
-          "stop_hit": 742
+          "horizon_exceeded": 999,
+          "target_hit": 145,
+          "stop_hit": 746
         },
         "failureKinds": {
           "horizon_drift_loser": 308,
@@ -1011,18 +3072,18 @@
           "stop_hit_late": 628,
           "target_undershoot": 45
         },
-        "holdingDaysTotal": 45497,
+        "holdingDaysTotal": 45726,
         "maxFavorableTotal": 169.42669999999993,
         "maxAdverseTotal": -125.14850000000013
       },
       "scenario:iran|sector:Energy": {
-        "n": 433,
+        "n": 434,
         "wins": 75,
-        "totalPnlPct": -16.166500000000003,
-        "lastUpdated": "2026-05-08",
+        "totalPnlPct": -16.304600000000004,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 300,
-          "stop_hit": 133
+          "stop_hit": 134
         },
         "failureKinds": {
           "horizon_drift_loser": 225,
@@ -1030,18 +3091,18 @@
           "stop_hit_late": 124,
           "stop_overshoot": 9
         },
-        "holdingDaysTotal": 13148,
+        "holdingDaysTotal": 13179,
         "maxFavorableTotal": 29.347800000000003,
         "maxAdverseTotal": -27.82149999999999
       },
       "scenario:iran|sector:Energy|direction:LONG": {
-        "n": 433,
+        "n": 434,
         "wins": 75,
-        "totalPnlPct": -16.166500000000003,
-        "lastUpdated": "2026-05-08",
+        "totalPnlPct": -16.304600000000004,
+        "lastUpdated": "2026-06-18",
         "exitReasons": {
           "horizon_exceeded": 300,
-          "stop_hit": 133
+          "stop_hit": 134
         },
         "failureKinds": {
           "horizon_drift_loser": 225,
@@ -1049,7 +3110,7 @@
           "stop_hit_late": 124,
           "stop_overshoot": 9
         },
-        "holdingDaysTotal": 13148,
+        "holdingDaysTotal": 13179,
         "maxFavorableTotal": 29.347800000000003,
         "maxAdverseTotal": -27.82149999999999
       },
@@ -1073,14 +3134,14 @@
         "maxAdverseTotal": -8.211699999999999
       },
       "conviction:4": {
-        "n": 3057,
-        "wins": 627,
-        "totalPnlPct": -187.03610000000145,
-        "lastUpdated": "2026-05-15",
+        "n": 3063,
+        "wins": 630,
+        "totalPnlPct": -186.90620000000143,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
-          "horizon_exceeded": 848,
-          "target_hit": 114,
-          "stop_hit": 2095
+          "horizon_exceeded": 851,
+          "target_hit": 115,
+          "stop_hit": 2097
         },
         "failureKinds": {
           "horizon_drift_winner": 513,
@@ -1091,7 +3152,7 @@
           "target_undershoot": 23,
           "horizon_drift_loser": 335
         },
-        "holdingDaysTotal": 76822,
+        "holdingDaysTotal": 76955,
         "maxFavorableTotal": 156.19160000000056,
         "maxAdverseTotal": -282.8022000000015
       },
@@ -1225,13 +3286,13 @@
         "maxAdverseTotal": -12.250399999999994
       },
       "ticker:FRO": {
-        "n": 195,
+        "n": 196,
         "wins": 139,
-        "totalPnlPct": 5.804399999999999,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 5.7722,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "stop_hit": 32,
-          "horizon_exceeded": 162,
+          "horizon_exceeded": 163,
           "target_hit": 1
         },
         "failureKinds": {
@@ -1242,18 +3303,18 @@
           "horizon_drift_winner": 138,
           "target_hit": 1
         },
-        "holdingDaysTotal": 3615,
+        "holdingDaysTotal": 3636,
         "maxFavorableTotal": 15.378799999999991,
         "maxAdverseTotal": -8.345899999999993
       },
       "sector:Shipping": {
-        "n": 390,
-        "wins": 285,
-        "totalPnlPct": 13.717300000000005,
-        "lastUpdated": "2026-05-15",
+        "n": 394,
+        "wins": 286,
+        "totalPnlPct": 13.575100000000006,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 66,
-          "horizon_exceeded": 321,
+          "stop_hit": 67,
+          "horizon_exceeded": 324,
           "target_hit": 3
         },
         "failureKinds": {
@@ -1264,18 +3325,18 @@
           "horizon_drift_winner": 282,
           "target_hit": 3
         },
-        "holdingDaysTotal": 7206,
+        "holdingDaysTotal": 7271,
         "maxFavorableTotal": 32.58249999999998,
         "maxAdverseTotal": -15.40440000000001
       },
       "sector:Shipping|direction:LONG": {
-        "n": 390,
-        "wins": 285,
-        "totalPnlPct": 13.717300000000005,
-        "lastUpdated": "2026-05-15",
+        "n": 394,
+        "wins": 286,
+        "totalPnlPct": 13.575100000000006,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 66,
-          "horizon_exceeded": 321,
+          "stop_hit": 67,
+          "horizon_exceeded": 324,
           "target_hit": 3
         },
         "failureKinds": {
@@ -1286,18 +3347,18 @@
           "horizon_drift_winner": 282,
           "target_hit": 3
         },
-        "holdingDaysTotal": 7206,
+        "holdingDaysTotal": 7271,
         "maxFavorableTotal": 32.58249999999998,
         "maxAdverseTotal": -15.40440000000001
       },
       "scenario:iran|sector:Shipping": {
-        "n": 390,
-        "wins": 285,
-        "totalPnlPct": 13.717300000000005,
-        "lastUpdated": "2026-05-15",
+        "n": 394,
+        "wins": 286,
+        "totalPnlPct": 13.575100000000006,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 66,
-          "horizon_exceeded": 321,
+          "stop_hit": 67,
+          "horizon_exceeded": 324,
           "target_hit": 3
         },
         "failureKinds": {
@@ -1308,18 +3369,18 @@
           "horizon_drift_winner": 282,
           "target_hit": 3
         },
-        "holdingDaysTotal": 7206,
+        "holdingDaysTotal": 7271,
         "maxFavorableTotal": 32.58249999999998,
         "maxAdverseTotal": -15.40440000000001
       },
       "scenario:iran|sector:Shipping|direction:LONG": {
-        "n": 390,
-        "wins": 285,
-        "totalPnlPct": 13.717300000000005,
-        "lastUpdated": "2026-05-15",
+        "n": 394,
+        "wins": 286,
+        "totalPnlPct": 13.575100000000006,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 66,
-          "horizon_exceeded": 321,
+          "stop_hit": 67,
+          "horizon_exceeded": 324,
           "target_hit": 3
         },
         "failureKinds": {
@@ -1330,18 +3391,18 @@
           "horizon_drift_winner": 282,
           "target_hit": 3
         },
-        "holdingDaysTotal": 7206,
+        "holdingDaysTotal": 7271,
         "maxFavorableTotal": 32.58249999999998,
         "maxAdverseTotal": -15.40440000000001
       },
       "ticker:TNK": {
-        "n": 195,
-        "wins": 146,
-        "totalPnlPct": 7.912899999999993,
-        "lastUpdated": "2026-05-15",
+        "n": 198,
+        "wins": 147,
+        "totalPnlPct": 7.802899999999993,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 34,
-          "horizon_exceeded": 159,
+          "stop_hit": 35,
+          "horizon_exceeded": 161,
           "target_hit": 2
         },
         "failureKinds": {
@@ -1352,18 +3413,18 @@
           "target_hit": 2,
           "horizon_drift_loser": 15
         },
-        "holdingDaysTotal": 3591,
+        "holdingDaysTotal": 3635,
         "maxFavorableTotal": 17.203700000000005,
         "maxAdverseTotal": -7.058499999999997
       },
       "conviction:3": {
-        "n": 4486,
-        "wins": 1567,
-        "totalPnlPct": -0.22789999999998292,
-        "lastUpdated": "2026-05-15",
+        "n": 4492,
+        "wins": 1568,
+        "totalPnlPct": -0.807999999999983,
+        "lastUpdated": "2026-08-05",
         "exitReasons": {
-          "stop_hit": 2505,
-          "horizon_exceeded": 1100,
+          "stop_hit": 2508,
+          "horizon_exceeded": 1103,
           "target_hit": 881
         },
         "failureKinds": {
@@ -1375,7 +3436,7 @@
           "stop_hit_quick": 112,
           "target_hit": 147
         },
-        "holdingDaysTotal": 94871,
+        "holdingDaysTotal": 94992,
         "maxFavorableTotal": 409.2967999999983,
         "maxAdverseTotal": -379.42099999999897
       },
@@ -1618,14 +3679,14 @@
         "maxAdverseTotal": -12.669299999999984
       },
       "ticker:USO": {
-        "n": 172,
-        "wins": 152,
-        "totalPnlPct": 22.28509999999997,
-        "lastUpdated": "2026-05-06",
+        "n": 175,
+        "wins": 154,
+        "totalPnlPct": 22.327499999999972,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
           "target_hit": 48,
-          "horizon_exceeded": 108,
-          "stop_hit": 16
+          "horizon_exceeded": 110,
+          "stop_hit": 17
         },
         "failureKinds": {
           "target_hit": 37,
@@ -1635,19 +3696,19 @@
           "horizon_drift_loser": 4,
           "stop_hit_late": 10
         },
-        "holdingDaysTotal": 3960,
+        "holdingDaysTotal": 4032,
         "maxFavorableTotal": 33.540499999999994,
         "maxAdverseTotal": -9.307599999999995
       },
       "sector:Oil ETF": {
-        "n": 172,
-        "wins": 152,
-        "totalPnlPct": 22.28509999999997,
-        "lastUpdated": "2026-05-06",
+        "n": 175,
+        "wins": 154,
+        "totalPnlPct": 22.327499999999972,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
           "target_hit": 48,
-          "horizon_exceeded": 108,
-          "stop_hit": 16
+          "horizon_exceeded": 110,
+          "stop_hit": 17
         },
         "failureKinds": {
           "target_hit": 37,
@@ -1657,19 +3718,19 @@
           "horizon_drift_loser": 4,
           "stop_hit_late": 10
         },
-        "holdingDaysTotal": 3960,
+        "holdingDaysTotal": 4032,
         "maxFavorableTotal": 33.540499999999994,
         "maxAdverseTotal": -9.307599999999995
       },
       "sector:Oil ETF|direction:LONG": {
-        "n": 172,
-        "wins": 152,
-        "totalPnlPct": 22.28509999999997,
-        "lastUpdated": "2026-05-06",
+        "n": 175,
+        "wins": 154,
+        "totalPnlPct": 22.327499999999972,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
           "target_hit": 48,
-          "horizon_exceeded": 108,
-          "stop_hit": 16
+          "horizon_exceeded": 110,
+          "stop_hit": 17
         },
         "failureKinds": {
           "target_hit": 37,
@@ -1679,19 +3740,19 @@
           "horizon_drift_loser": 4,
           "stop_hit_late": 10
         },
-        "holdingDaysTotal": 3960,
+        "holdingDaysTotal": 4032,
         "maxFavorableTotal": 33.540499999999994,
         "maxAdverseTotal": -9.307599999999995
       },
       "scenario:iran|sector:Oil ETF": {
-        "n": 172,
-        "wins": 152,
-        "totalPnlPct": 22.28509999999997,
-        "lastUpdated": "2026-05-06",
+        "n": 175,
+        "wins": 154,
+        "totalPnlPct": 22.327499999999972,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
           "target_hit": 48,
-          "horizon_exceeded": 108,
-          "stop_hit": 16
+          "horizon_exceeded": 110,
+          "stop_hit": 17
         },
         "failureKinds": {
           "target_hit": 37,
@@ -1701,19 +3762,19 @@
           "horizon_drift_loser": 4,
           "stop_hit_late": 10
         },
-        "holdingDaysTotal": 3960,
+        "holdingDaysTotal": 4032,
         "maxFavorableTotal": 33.540499999999994,
         "maxAdverseTotal": -9.307599999999995
       },
       "scenario:iran|sector:Oil ETF|direction:LONG": {
-        "n": 172,
-        "wins": 152,
-        "totalPnlPct": 22.28509999999997,
-        "lastUpdated": "2026-05-06",
+        "n": 175,
+        "wins": 154,
+        "totalPnlPct": 22.327499999999972,
+        "lastUpdated": "2026-08-24",
         "exitReasons": {
           "target_hit": 48,
-          "horizon_exceeded": 108,
-          "stop_hit": 16
+          "horizon_exceeded": 110,
+          "stop_hit": 17
         },
         "failureKinds": {
           "target_hit": 37,
@@ -1723,18 +3784,18 @@
           "horizon_drift_loser": 4,
           "stop_hit_late": 10
         },
-        "holdingDaysTotal": 3960,
+        "holdingDaysTotal": 4032,
         "maxFavorableTotal": 33.540499999999994,
         "maxAdverseTotal": -9.307599999999995
       },
       "ticker:UCO": {
-        "n": 200,
+        "n": 201,
         "wins": 162,
-        "totalPnlPct": 21.863499999999988,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": 21.779799999999987,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "target_hit": 42,
-          "horizon_exceeded": 139,
+          "horizon_exceeded": 140,
           "stop_hit": 19
         },
         "failureKinds": {
@@ -1745,18 +3806,18 @@
           "stop_hit_late": 7,
           "stop_overshoot": 12
         },
-        "holdingDaysTotal": 3527,
+        "holdingDaysTotal": 3548,
         "maxFavorableTotal": 31.0778,
         "maxAdverseTotal": -10.850799999999994
       },
       "sector:Oil ETF (2x)": {
-        "n": 200,
+        "n": 201,
         "wins": 162,
-        "totalPnlPct": 21.863499999999988,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": 21.779799999999987,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "target_hit": 42,
-          "horizon_exceeded": 139,
+          "horizon_exceeded": 140,
           "stop_hit": 19
         },
         "failureKinds": {
@@ -1767,18 +3828,18 @@
           "stop_hit_late": 7,
           "stop_overshoot": 12
         },
-        "holdingDaysTotal": 3527,
+        "holdingDaysTotal": 3548,
         "maxFavorableTotal": 31.0778,
         "maxAdverseTotal": -10.850799999999994
       },
       "sector:Oil ETF (2x)|direction:LONG": {
-        "n": 200,
+        "n": 201,
         "wins": 162,
-        "totalPnlPct": 21.863499999999988,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": 21.779799999999987,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "target_hit": 42,
-          "horizon_exceeded": 139,
+          "horizon_exceeded": 140,
           "stop_hit": 19
         },
         "failureKinds": {
@@ -1789,18 +3850,18 @@
           "stop_hit_late": 7,
           "stop_overshoot": 12
         },
-        "holdingDaysTotal": 3527,
+        "holdingDaysTotal": 3548,
         "maxFavorableTotal": 31.0778,
         "maxAdverseTotal": -10.850799999999994
       },
       "scenario:iran|sector:Oil ETF (2x)": {
-        "n": 200,
+        "n": 201,
         "wins": 162,
-        "totalPnlPct": 21.863499999999988,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": 21.779799999999987,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "target_hit": 42,
-          "horizon_exceeded": 139,
+          "horizon_exceeded": 140,
           "stop_hit": 19
         },
         "failureKinds": {
@@ -1811,18 +3872,18 @@
           "stop_hit_late": 7,
           "stop_overshoot": 12
         },
-        "holdingDaysTotal": 3527,
+        "holdingDaysTotal": 3548,
         "maxFavorableTotal": 31.0778,
         "maxAdverseTotal": -10.850799999999994
       },
       "scenario:iran|sector:Oil ETF (2x)|direction:LONG": {
-        "n": 200,
+        "n": 201,
         "wins": 162,
-        "totalPnlPct": 21.863499999999988,
-        "lastUpdated": "2026-05-06",
+        "totalPnlPct": 21.779799999999987,
+        "lastUpdated": "2026-06-08",
         "exitReasons": {
           "target_hit": 42,
-          "horizon_exceeded": 139,
+          "horizon_exceeded": 140,
           "stop_hit": 19
         },
         "failureKinds": {
@@ -1833,19 +3894,19 @@
           "stop_hit_late": 7,
           "stop_overshoot": 12
         },
-        "holdingDaysTotal": 3527,
+        "holdingDaysTotal": 3548,
         "maxFavorableTotal": 31.0778,
         "maxAdverseTotal": -10.850799999999994
       },
       "ticker:BNO": {
-        "n": 144,
-        "wins": 106,
-        "totalPnlPct": 13.593099999999996,
-        "lastUpdated": "2026-05-06",
+        "n": 146,
+        "wins": 107,
+        "totalPnlPct": 13.712799999999996,
+        "lastUpdated": "2026-07-23",
         "exitReasons": {
-          "target_hit": 39,
+          "target_hit": 40,
           "horizon_exceeded": 67,
-          "stop_hit": 38
+          "stop_hit": 39
         },
         "failureKinds": {
           "target_undershoot": 8,
@@ -1855,19 +3916,19 @@
           "stop_overshoot": 7,
           "stop_hit_quick": 1
         },
-        "holdingDaysTotal": 3927,
+        "holdingDaysTotal": 3967,
         "maxFavorableTotal": 24.201600000000028,
         "maxAdverseTotal": -9.5975
       },
       "sector:Brent ETF": {
-        "n": 144,
-        "wins": 106,
-        "totalPnlPct": 13.593099999999996,
-        "lastUpdated": "2026-05-06",
+        "n": 146,
+        "wins": 107,
+        "totalPnlPct": 13.712799999999996,
+        "lastUpdated": "2026-07-23",
         "exitReasons": {
-          "target_hit": 39,
+          "target_hit": 40,
           "horizon_exceeded": 67,
-          "stop_hit": 38
+          "stop_hit": 39
         },
         "failureKinds": {
           "target_undershoot": 8,
@@ -1877,19 +3938,19 @@
           "stop_overshoot": 7,
           "stop_hit_quick": 1
         },
-        "holdingDaysTotal": 3927,
+        "holdingDaysTotal": 3967,
         "maxFavorableTotal": 24.201600000000028,
         "maxAdverseTotal": -9.5975
       },
       "sector:Brent ETF|direction:LONG": {
-        "n": 144,
-        "wins": 106,
-        "totalPnlPct": 13.593099999999996,
-        "lastUpdated": "2026-05-06",
+        "n": 146,
+        "wins": 107,
+        "totalPnlPct": 13.712799999999996,
+        "lastUpdated": "2026-07-23",
         "exitReasons": {
-          "target_hit": 39,
+          "target_hit": 40,
           "horizon_exceeded": 67,
-          "stop_hit": 38
+          "stop_hit": 39
         },
         "failureKinds": {
           "target_undershoot": 8,
@@ -1899,19 +3960,19 @@
           "stop_overshoot": 7,
           "stop_hit_quick": 1
         },
-        "holdingDaysTotal": 3927,
+        "holdingDaysTotal": 3967,
         "maxFavorableTotal": 24.201600000000028,
         "maxAdverseTotal": -9.5975
       },
       "scenario:iran|sector:Brent ETF": {
-        "n": 144,
-        "wins": 106,
-        "totalPnlPct": 13.593099999999996,
-        "lastUpdated": "2026-05-06",
+        "n": 146,
+        "wins": 107,
+        "totalPnlPct": 13.712799999999996,
+        "lastUpdated": "2026-07-23",
         "exitReasons": {
-          "target_hit": 39,
+          "target_hit": 40,
           "horizon_exceeded": 67,
-          "stop_hit": 38
+          "stop_hit": 39
         },
         "failureKinds": {
           "target_undershoot": 8,
@@ -1921,19 +3982,19 @@
           "stop_overshoot": 7,
           "stop_hit_quick": 1
         },
-        "holdingDaysTotal": 3927,
+        "holdingDaysTotal": 3967,
         "maxFavorableTotal": 24.201600000000028,
         "maxAdverseTotal": -9.5975
       },
       "scenario:iran|sector:Brent ETF|direction:LONG": {
-        "n": 144,
-        "wins": 106,
-        "totalPnlPct": 13.593099999999996,
-        "lastUpdated": "2026-05-06",
+        "n": 146,
+        "wins": 107,
+        "totalPnlPct": 13.712799999999996,
+        "lastUpdated": "2026-07-23",
         "exitReasons": {
-          "target_hit": 39,
+          "target_hit": 40,
           "horizon_exceeded": 67,
-          "stop_hit": 38
+          "stop_hit": 39
         },
         "failureKinds": {
           "target_undershoot": 8,
@@ -1943,17 +4004,17 @@
           "stop_overshoot": 7,
           "stop_hit_quick": 1
         },
-        "holdingDaysTotal": 3927,
+        "holdingDaysTotal": 3967,
         "maxFavorableTotal": 24.201600000000028,
         "maxAdverseTotal": -9.5975
       },
       "scenario:taiwan": {
-        "n": 2199,
+        "n": 2200,
         "wins": 620,
-        "totalPnlPct": -35.111899999999935,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": -35.326399999999936,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 1362,
+          "stop_hit": 1363,
           "target_hit": 444,
           "horizon_exceeded": 393
         },
@@ -1966,17 +4027,17 @@
           "stop_overshoot": 76,
           "target_hit": 88
         },
-        "holdingDaysTotal": 46106,
+        "holdingDaysTotal": 46143,
         "maxFavorableTotal": 181.36120000000042,
         "maxAdverseTotal": -199.9817000000004
       },
       "scenario:taiwan|direction:LONG": {
-        "n": 1335,
+        "n": 1336,
         "wins": 444,
-        "totalPnlPct": 25.5382,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 25.3237,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 883,
+          "stop_hit": 884,
           "target_hit": 444,
           "horizon_exceeded": 8
         },
@@ -1988,7 +4049,7 @@
           "stop_overshoot": 41,
           "target_hit": 88
         },
-        "holdingDaysTotal": 29032,
+        "holdingDaysTotal": 29069,
         "maxFavorableTotal": 152.44230000000013,
         "maxAdverseTotal": -127.4050000000001
       },
@@ -2044,13 +4105,13 @@
         "maxAdverseTotal": -51.26389999999992
       },
       "ticker:INTC": {
-        "n": 458,
+        "n": 459,
         "wins": 438,
-        "totalPnlPct": 140.69360000000017,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 140.52170000000018,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
           "target_hit": 438,
-          "stop_hit": 20
+          "stop_hit": 21
         },
         "failureKinds": {
           "target_undershoot": 416,
@@ -2059,18 +4120,18 @@
           "stop_overshoot": 2,
           "stop_hit_quick": 8
         },
-        "holdingDaysTotal": 7368,
+        "holdingDaysTotal": 7387,
         "maxFavorableTotal": 143.60400000000007,
         "maxAdverseTotal": -20.455400000000026
       },
       "sector:Semiconductor onshoring": {
-        "n": 458,
+        "n": 459,
         "wins": 438,
-        "totalPnlPct": 140.69360000000017,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 140.52170000000018,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
           "target_hit": 438,
-          "stop_hit": 20
+          "stop_hit": 21
         },
         "failureKinds": {
           "target_undershoot": 416,
@@ -2079,18 +4140,18 @@
           "stop_overshoot": 2,
           "stop_hit_quick": 8
         },
-        "holdingDaysTotal": 7368,
+        "holdingDaysTotal": 7387,
         "maxFavorableTotal": 143.60400000000007,
         "maxAdverseTotal": -20.455400000000026
       },
       "sector:Semiconductor onshoring|direction:LONG": {
-        "n": 458,
+        "n": 459,
         "wins": 438,
-        "totalPnlPct": 140.69360000000017,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 140.52170000000018,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
           "target_hit": 438,
-          "stop_hit": 20
+          "stop_hit": 21
         },
         "failureKinds": {
           "target_undershoot": 416,
@@ -2099,7 +4160,7 @@
           "stop_overshoot": 2,
           "stop_hit_quick": 8
         },
-        "holdingDaysTotal": 7368,
+        "holdingDaysTotal": 7387,
         "maxFavorableTotal": 143.60400000000007,
         "maxAdverseTotal": -20.455400000000026
       },
@@ -2144,12 +4205,12 @@
         "maxAdverseTotal": -10.227700000000027
       },
       "ticker:GFS": {
-        "n": 354,
+        "n": 355,
         "wins": 304,
-        "totalPnlPct": 88.75520000000006,
-        "lastUpdated": "2026-05-05",
+        "totalPnlPct": 88.54070000000006,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 50,
+          "stop_hit": 51,
           "target_hit": 304
         },
         "failureKinds": {
@@ -2158,17 +4219,17 @@
           "stop_overshoot": 16,
           "target_hit": 24
         },
-        "holdingDaysTotal": 8150,
+        "holdingDaysTotal": 8187,
         "maxFavorableTotal": 95.55880000000005,
         "maxAdverseTotal": -16.536200000000022
       },
       "sector:Foundry alternatives": {
-        "n": 354,
+        "n": 355,
         "wins": 304,
-        "totalPnlPct": 88.75520000000006,
-        "lastUpdated": "2026-05-05",
+        "totalPnlPct": 88.54070000000006,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 50,
+          "stop_hit": 51,
           "target_hit": 304
         },
         "failureKinds": {
@@ -2177,17 +4238,17 @@
           "stop_overshoot": 16,
           "target_hit": 24
         },
-        "holdingDaysTotal": 8150,
+        "holdingDaysTotal": 8187,
         "maxFavorableTotal": 95.55880000000005,
         "maxAdverseTotal": -16.536200000000022
       },
       "sector:Foundry alternatives|direction:LONG": {
-        "n": 354,
+        "n": 355,
         "wins": 304,
-        "totalPnlPct": 88.75520000000006,
-        "lastUpdated": "2026-05-05",
+        "totalPnlPct": 88.54070000000006,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 50,
+          "stop_hit": 51,
           "target_hit": 304
         },
         "failureKinds": {
@@ -2196,17 +4257,17 @@
           "stop_overshoot": 16,
           "target_hit": 24
         },
-        "holdingDaysTotal": 8150,
+        "holdingDaysTotal": 8187,
         "maxFavorableTotal": 95.55880000000005,
         "maxAdverseTotal": -16.536200000000022
       },
       "scenario:taiwan|sector:Foundry alternatives": {
-        "n": 177,
+        "n": 178,
         "wins": 152,
-        "totalPnlPct": 44.37759999999999,
-        "lastUpdated": "2026-05-05",
+        "totalPnlPct": 44.163099999999986,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 25,
+          "stop_hit": 26,
           "target_hit": 152
         },
         "failureKinds": {
@@ -2215,17 +4276,17 @@
           "stop_overshoot": 8,
           "target_hit": 12
         },
-        "holdingDaysTotal": 4075,
+        "holdingDaysTotal": 4112,
         "maxFavorableTotal": 47.779399999999974,
         "maxAdverseTotal": -8.268099999999992
       },
       "scenario:taiwan|sector:Foundry alternatives|direction:LONG": {
-        "n": 177,
+        "n": 178,
         "wins": 152,
-        "totalPnlPct": 44.37759999999999,
-        "lastUpdated": "2026-05-05",
+        "totalPnlPct": 44.163099999999986,
+        "lastUpdated": "2026-07-15",
         "exitReasons": {
-          "stop_hit": 25,
+          "stop_hit": 26,
           "target_hit": 152
         },
         "failureKinds": {
@@ -2234,7 +4295,7 @@
           "stop_overshoot": 8,
           "target_hit": 12
         },
-        "holdingDaysTotal": 4075,
+        "holdingDaysTotal": 4112,
         "maxFavorableTotal": 47.779399999999974,
         "maxAdverseTotal": -8.268099999999992
       },
@@ -3802,12 +5863,12 @@
         "maxAdverseTotal": -6.707899999999997
       },
       "scenario:korea": {
-        "n": 2024,
+        "n": 2025,
         "wins": 515,
-        "totalPnlPct": -44.94450000000003,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": -45.116400000000034,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
-          "stop_hit": 1373,
+          "stop_hit": 1374,
           "horizon_exceeded": 266,
           "target_hit": 385
         },
@@ -3820,17 +5881,17 @@
           "stop_overshoot": 53,
           "stop_hit_quick": 44
         },
-        "holdingDaysTotal": 43228,
+        "holdingDaysTotal": 43247,
         "maxFavorableTotal": 161.27830000000006,
         "maxAdverseTotal": -190.38220000000086
       },
       "scenario:korea|direction:LONG": {
-        "n": 1352,
+        "n": 1353,
         "wins": 384,
-        "totalPnlPct": 7.926500000000028,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 7.754600000000028,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
-          "stop_hit": 960,
+          "stop_hit": 961,
           "horizon_exceeded": 8,
           "target_hit": 384
         },
@@ -3842,7 +5903,7 @@
           "target_hit": 32,
           "stop_hit_quick": 38
         },
-        "holdingDaysTotal": 30329,
+        "holdingDaysTotal": 30348,
         "maxFavorableTotal": 137.34030000000024,
         "maxAdverseTotal": -128.94550000000004
       },
@@ -3919,13 +5980,13 @@
         "maxAdverseTotal": -27.749699999999976
       },
       "scenario:korea|sector:Semiconductor onshoring": {
-        "n": 229,
+        "n": 230,
         "wins": 219,
-        "totalPnlPct": 70.34679999999999,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 70.1749,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
           "target_hit": 219,
-          "stop_hit": 10
+          "stop_hit": 11
         },
         "failureKinds": {
           "target_undershoot": 208,
@@ -3934,18 +5995,18 @@
           "stop_overshoot": 1,
           "stop_hit_quick": 4
         },
-        "holdingDaysTotal": 3684,
+        "holdingDaysTotal": 3703,
         "maxFavorableTotal": 71.80199999999999,
         "maxAdverseTotal": -10.227700000000027
       },
       "scenario:korea|sector:Semiconductor onshoring|direction:LONG": {
-        "n": 229,
+        "n": 230,
         "wins": 219,
-        "totalPnlPct": 70.34679999999999,
-        "lastUpdated": "2026-05-15",
+        "totalPnlPct": 70.1749,
+        "lastUpdated": "2026-07-07",
         "exitReasons": {
           "target_hit": 219,
-          "stop_hit": 10
+          "stop_hit": 11
         },
         "failureKinds": {
           "target_undershoot": 208,
@@ -3954,7 +6015,7 @@
           "stop_overshoot": 1,
           "stop_hit_quick": 4
         },
-        "holdingDaysTotal": 3684,
+        "holdingDaysTotal": 3703,
         "maxFavorableTotal": 71.80199999999999,
         "maxAdverseTotal": -10.227700000000027
       },
@@ -4374,33 +6435,12 @@
         "maxAdverseTotal": -0.4111
       }
     },
-    "lastUpdatedAt": "2026-05-18T06:06:15.946Z",
-    "tradesObserved": 8004,
+    "lastUpdatedAt": "2026-08-24T13:46:39.606Z",
+    "tradesObserved": 8017,
     "summary": {
       "bucketCount": 179,
-      "tradesObserved": 8004,
+      "tradesObserved": 8017,
       "top": [
-        {
-          "key": "ticker:INTC",
-          "n": 458,
-          "winRate": 0.956,
-          "avgPnlPct": 0.3072,
-          "score": 0.5825327510917031
-        },
-        {
-          "key": "sector:Semiconductor onshoring",
-          "n": 458,
-          "winRate": 0.956,
-          "avgPnlPct": 0.3072,
-          "score": 0.5825327510917031
-        },
-        {
-          "key": "sector:Semiconductor onshoring|direction:LONG",
-          "n": 458,
-          "winRate": 0.956,
-          "avgPnlPct": 0.3072,
-          "score": 0.5825327510917031
-        },
         {
           "key": "scenario:taiwan|sector:Semiconductor onshoring",
           "n": 229,
@@ -4414,6 +6454,27 @@
           "winRate": 0.956,
           "avgPnlPct": 0.3072,
           "score": 0.5825327510917031
+        },
+        {
+          "key": "ticker:INTC",
+          "n": 459,
+          "winRate": 0.954,
+          "avgPnlPct": 0.3061,
+          "score": 0.5816993464052288
+        },
+        {
+          "key": "sector:Semiconductor onshoring",
+          "n": 459,
+          "winRate": 0.954,
+          "avgPnlPct": 0.3061,
+          "score": 0.5816993464052288
+        },
+        {
+          "key": "sector:Semiconductor onshoring|direction:LONG",
+          "n": 459,
+          "winRate": 0.954,
+          "avgPnlPct": 0.3061,
+          "score": 0.5816993464052288
         }
       ],
       "bottom": [
