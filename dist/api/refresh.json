@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T13:46:52.894Z",
+  "generatedAt": "2026-09-07T13:47:08.155Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
@@ -36,7 +36,7 @@
         },
         {
           "label": "Defense demand",
-          "value": 95
+          "value": 90
         }
       ],
       "indicators": [
@@ -49,23 +49,23 @@
         },
         {
           "label": "Tanker rates",
-          "value": 160.7,
+          "value": 160.5,
           "unit": "%",
-          "delta": 5.7,
+          "delta": 5.5,
           "tone": "up"
         },
         {
           "label": "Marine insurance",
-          "value": 252.3,
+          "value": 252.1,
           "unit": "bps",
-          "delta": 7.3,
+          "delta": 7.1,
           "tone": "up"
         },
         {
           "label": "Airline margin stress",
-          "value": 29.6,
+          "value": 29.5,
           "unit": "%",
-          "delta": 2.6,
+          "delta": 2.5,
           "tone": "up"
         }
       ],
@@ -75,97 +75,97 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-09-06T13:46:52.716Z",
+      "refreshedAt": "2026-09-07T13:47:08.153Z",
       "headlines": [
         {
-          "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed? - aljazeera.com",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYl9iXzAxY2Jyd3FvVE1aa1V3TmVHd19wcDNad1RSUG13VTFFZ1BINnpIWjBQa1lwRVdsZXBFa1NFeGZnbzZpQWN3Ul8zeEx2aGs0cFQwUVZIamljSEVBMDZUNmJQdWhlSDREZU5Xcmh5emh5dFNMZm1RTTloNkxoeG9VWjhual9jYXZyMkQ5NTBXZnZuemFJeGRYd1ZWQmFSN3JtTDJLV0lXTWw1MUtZ0gG0AUFVX3lxTE5scDhDRzVfdkhnVkpIMF9pbkYxNFphWVdKd19fZ0phU0Q4QkFsZFctaDk4SmxiVWVvMDhFM1R3R1l6T2dfWlJtaUJ6TVR1WUtXaUhjY05jc1NKaTVrVUlORlZBXzhVUDhZZ1Rabmpnb0ZiZ0UtZlFOeFdnUkVzTWpPdW84YUF6NkVneF9tMU0tUDVaaTQ1bmNweGI4UkZSVFZVX2hFbHZlVmltYTFDd0pteUc4YQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQYl9iXzAxY2Jyd3FvVE1aa1V3TmVHd19wcDNad1RSUG13VTFFZ1BINnpIWjBQa1lwRVdsZXBFa1NFeGZnbzZpQWN3Ul8zeEx2aGs0cFQwUVZIamljSEVBMDZUNmJQdWhlSDREZU5Xcmh5emh5dFNMZm1RTTloNkxoeG9VWjhual9jYXZyMkQ5NTBXZnZuemFJeGRYd1ZWQmFSN3JtTDJLV0lXTWw1MUtZ0gG0AUFVX3lxTE5scDhDRzVfdkhnVkpIMF9pbkYxNFphWVdKd19fZ0phU0Q4QkFsZFctaDk4SmxiVWVvMDhFM1R3R1l6T2dfWlJtaUJ6TVR1WUtXaUhjY05jc1NKaTVrVUlORlZBXzhVUDhZZ1Rabmpnb0ZiZ0UtZlFOeFdnUkVzTWpPdW84YUF6NkVneF9tMU0tUDVaaTQ1bmNweGI4UkZSVFZVX2hFbHZlVmltYTFDd0pteUc4YQ?oc=5\" target=\"_blank\">US, Iran engaged in tanker war: Where is the months-long conflict headed?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">aljazeera.com</font>",
-          "source": "aljazeera.com",
-          "publishedAt": "Sun, 06 Sep 2026 10:50:58 GMT",
-          "publishedMs": 1788691858000,
-          "relevance": 1
-        },
-        {
-          "title": "Live - US says Iran’s oil supply for China is running out as Tehran warns of heavier response - Iran International",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0VzE5VXZZUC0yUU02WnVobXRXcnBXU1d4NmZwVTJZRXV0ZFBxU2pHQkpiTk56MEE4Z2RpVnEwUU1PQ3dwUy1GQTBCZHFDSDd1ZFZjR0FkM2NRMF8zQ0E?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0VzE5VXZZUC0yUU02WnVobXRXcnBXU1d4NmZwVTJZRXV0ZFBxU2pHQkpiTk56MEE4Z2RpVnEwUU1PQ3dwUy1GQTBCZHFDSDd1ZFZjR0FkM2NRMF8zQ0E?oc=5\" target=\"_blank\">Live - US says Iran’s oil supply for China is running out as Tehran warns of heavier response</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Iran International</font>",
-          "source": "Iran International",
-          "publishedAt": "Sun, 06 Sep 2026 09:47:44 GMT",
-          "publishedMs": 1788688064000,
-          "relevance": 1
-        },
-        {
-          "title": "Iran attacks US unmanned ship in the Strait of Hormuz - Laodong.vn",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFBMQ1JQVFFxNXFvbFpSSF9odHFvMWlIV3dZc3VETExuWUhUVTFHODdKN2UwQ3dkTHl2X01TSVBJcC1vUWJuRlVYS0JLbnozdlRQeXJNbFlHamlFVV91cEdaQ2NLY3ZkNjVlcDdpX2RRcE5TRmJURG8tUmp3LVNtejhKSDQyX19seTU4N1lJQ2p0clBtelNLZWhsU091V3MyaUE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxOMFBMQ1JQVFFxNXFvbFpSSF9odHFvMWlIV3dZc3VETExuWUhUVTFHODdKN2UwQ3dkTHl2X01TSVBJcC1vUWJuRlVYS0JLbnozdlRQeXJNbFlHamlFVV91cEdaQ2NLY3ZkNjVlcDdpX2RRcE5TRmJURG8tUmp3LVNtejhKSDQyX19seTU4N1lJQ2p0clBtelNLZWhsU091V3MyaUE?oc=5\" target=\"_blank\">Iran attacks US unmanned ship in the Strait of Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Laodong.vn</font>",
-          "source": "Laodong.vn",
-          "publishedAt": "Sun, 06 Sep 2026 07:39:42 GMT",
-          "publishedMs": 1788680382000,
+          "title": "Can Iran enforce a restricted zone in the Strait of Hormuz? - Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVEt3eFVmQzY5SGV4MS1nV194dS1QZmtocWEwQVpkTkpKYldmcV8wWjRnT3llQVV1ZFJDXzRHWEpfM2R2Y2VSWHJPOEpqVXBrWm92MzZQaTh4aUhZUkNkZ0tfR3kzTm1lNzlKQUVxQU5udGFuMjB1REktN0loMmZQNDF5NENDVW8tQlJ0cDg1NTh3S0xpMUtjOVp1d3RqUTjSAaQBQVVfeXFMTWZyOFFNR0NJNy1aYTVwZi1lX0NYdW1fOThtR1ZHLVFVMWtQd3g1aUotQWR1WDU4TC0ydjRrX3dxS0w4eGlfcnYxdTd2Z1BiTGVEZlYzdFFKdGxqeGVHSVRxMUREY001Uy12MUprT2w2aXRmdFZ0UW93M3JNYWdCU3J2X20wNHZjWWhNQ2RmZlJwYmpsYlRwUjJQUFRqbzFVMlk0SGo?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNVEt3eFVmQzY5SGV4MS1nV194dS1QZmtocWEwQVpkTkpKYldmcV8wWjRnT3llQVV1ZFJDXzRHWEpfM2R2Y2VSWHJPOEpqVXBrWm92MzZQaTh4aUhZUkNkZ0tfR3kzTm1lNzlKQUVxQU5udGFuMjB1REktN0loMmZQNDF5NENDVW8tQlJ0cDg1NTh3S0xpMUtjOVp1d3RqUTjSAaQBQVVfeXFMTWZyOFFNR0NJNy1aYTVwZi1lX0NYdW1fOThtR1ZHLVFVMWtQd3g1aUotQWR1WDU4TC0ydjRrX3dxS0w4eGlfcnYxdTd2Z1BiTGVEZlYzdFFKdGxqeGVHSVRxMUREY001Uy12MUprT2w2aXRmdFZ0UW93M3JNYWdCU3J2X20wNHZjWWhNQ2RmZlJwYmpsYlRwUjJQUFRqbzFVMlk0SGo?oc=5\" target=\"_blank\">Can Iran enforce a restricted zone in the Strait of Hormuz?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Jazeera</font>",
+          "source": "Al Jazeera",
+          "publishedAt": "Mon, 07 Sep 2026 11:41:10 GMT",
+          "publishedMs": 1788781270000,
           "relevance": 4
         },
         {
-          "title": "Iran attacks naval drone near Hormuz after US strikes 3 oil tankers - South China Morning Post",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTGpKTUlGbVpDTVlGbjdkS3hwdV9SNUk5Snd0ZmRNNEtSNVFVYWx4VFlFb2c5eUVpUU1DYjRhZ3pJZV91V1N3RFMyQ2NuNjg1cWcteU51a1VVWmVsTEpYSzRuOUFkRW5yMHNkTW5jTGppOXZKUU1DUlJCMHUwS2x0eVIzenFtVE91NTFicHVnaUUxbHlPWlI3dDh0ODVyQjdxOUo2LU1xVEVDa1BVWkJaejAxc3lxM1ZiSHMxLUxoYzRlUXFHVWfSAcYBQVVfeXFMTkhfSi1MYzg5V254U0RGVzdLTDRwdU9fV3IzSmJkYmtBQ0tILU1KVWZvc0dwa0NCZVhVWGxlTnVvRnJqc2VVTjBFYU5vdkh3T1R4N2p5WDNOeDJ1dnhVc2xSM2FMaG1NUURLLUhzcXVCaUhlTllwRkhiUVNzNmxVVGRTMHUwU05mZFVQcldwY254Q3hfZU1wNGFqd2NxSjgteWpPbENTZGc1SFg3THdlVGE1Zl9xMVBCZGRWeG40d1gxQW9uUHRn?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOTGpKTUlGbVpDTVlGbjdkS3hwdV9SNUk5Snd0ZmRNNEtSNVFVYWx4VFlFb2c5eUVpUU1DYjRhZ3pJZV91V1N3RFMyQ2NuNjg1cWcteU51a1VVWmVsTEpYSzRuOUFkRW5yMHNkTW5jTGppOXZKUU1DUlJCMHUwS2x0eVIzenFtVE91NTFicHVnaUUxbHlPWlI3dDh0ODVyQjdxOUo2LU1xVEVDa1BVWkJaejAxc3lxM1ZiSHMxLUxoYzRlUXFHVWfSAcYBQVVfeXFMTkhfSi1MYzg5V254U0RGVzdLTDRwdU9fV3IzSmJkYmtBQ0tILU1KVWZvc0dwa0NCZVhVWGxlTnVvRnJqc2VVTjBFYU5vdkh3T1R4N2p5WDNOeDJ1dnhVc2xSM2FMaG1NUURLLUhzcXVCaUhlTllwRkhiUVNzNmxVVGRTMHUwU05mZFVQcldwY254Q3hfZU1wNGFqd2NxSjgteWpPbENTZGc1SFg3THdlVGE1Zl9xMVBCZGRWeG40d1gxQW9uUHRn?oc=5\" target=\"_blank\">Iran attacks naval drone near Hormuz after US strikes 3 oil tankers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">South China Morning Post</font>",
-          "source": "South China Morning Post",
-          "publishedAt": "Sun, 06 Sep 2026 06:45:50 GMT",
-          "publishedMs": 1788677150000,
+          "title": "Iran’s Mohsen Rezaei Plans Exclusion Zone Near Strait of Hormuz From U.S. Blockade Line: who 37 outlets blamed - NewsCord",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYi1FMEMzZS1hdzlHNUVrUGhvVUZXSUt0SjFIVEMtc0J3dTZFRUZVZ1h4c3lCdWJkRzJfQTNYTzVBRS1BQW9sbUgwaW5EcjVTVy1iYktMREQzZHBuNy1rTGJLWVhrQ0F1NDRyRjEwX09rVkJRYUp5VEY5cnNrNWlKQVBCaktObzhSWG1oSm9xUC1TbG5uSHh2eW1DUjFSbE1uRWxNMXI1MWdiSnd4dkVTeFJoc1BmSGFQY3NqNHc3RlJ6aDBNSkd2bTZzN1hjVU0y?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYi1FMEMzZS1hdzlHNUVrUGhvVUZXSUt0SjFIVEMtc0J3dTZFRUZVZ1h4c3lCdWJkRzJfQTNYTzVBRS1BQW9sbUgwaW5EcjVTVy1iYktMREQzZHBuNy1rTGJLWVhrQ0F1NDRyRjEwX09rVkJRYUp5VEY5cnNrNWlKQVBCaktObzhSWG1oSm9xUC1TbG5uSHh2eW1DUjFSbE1uRWxNMXI1MWdiSnd4dkVTeFJoc1BmSGFQY3NqNHc3RlJ6aDBNSkd2bTZzN1hjVU0y?oc=5\" target=\"_blank\">Iran’s Mohsen Rezaei Plans Exclusion Zone Near Strait of Hormuz From U.S. Blockade Line: who 37 outlets blamed</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NewsCord</font>",
+          "source": "NewsCord",
+          "publishedAt": "Mon, 07 Sep 2026 10:31:30 GMT",
+          "publishedMs": 1788777090000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran Threatens To Set Up ‘Exclusion Zone’ Near War-Torn Strait Of Hormuz Following Tanker Attacks - Marine Insight",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPa094M0xYa1RVRllBWHFqMWo4ZjlHUEZQS1ZxNDBPb3hJa0tYNVppWWVaVENUdW81NUF3UE9IZ0trM2lmUm9HOGRoWHR0cVk3XzFDNnMyM0ljeFdaX19BM0VRUXF5WXRqSHB1cm9LbVdWS2NQQWkzbW1leVVFOUlvRThaalRfR1psemJaYWVibzVRMk9pdjVpU2Q0YmlxMzZCMkxUM1NHU2xCb2thS2ppMFVDYTBWazU0eWhVWlhkQkpucHRJ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPa094M0xYa1RVRllBWHFqMWo4ZjlHUEZQS1ZxNDBPb3hJa0tYNVppWWVaVENUdW81NUF3UE9IZ0trM2lmUm9HOGRoWHR0cVk3XzFDNnMyM0ljeFdaX19BM0VRUXF5WXRqSHB1cm9LbVdWS2NQQWkzbW1leVVFOUlvRThaalRfR1psemJaYWVibzVRMk9pdjVpU2Q0YmlxMzZCMkxUM1NHU2xCb2thS2ppMFVDYTBWazU0eWhVWlhkQkpucHRJ?oc=5\" target=\"_blank\">Iran Threatens To Set Up ‘Exclusion Zone’ Near War-Torn Strait Of Hormuz Following Tanker Attacks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Marine Insight</font>",
+          "source": "Marine Insight",
+          "publishedAt": "Mon, 07 Sep 2026 09:10:38 GMT",
+          "publishedMs": 1788772238000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran plans new Hormuz shipping corridor with Oman - Gulf Business",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORGdjTFQzM2o2UEVZdHN4aWxlN1FzOHBBNzFBV0czNDJtVS1LY0hDOXpuUk8xZTdSZDl6Z2JwWXU1RUJCVlFRcjk3cmMtMjdkYVI2aHNVRmFRVWc3RGlmZnhrdlhsTld3V0tWSlZuVG02YlhycnFubEJselVHenhVWmZ5UnJORVdvZWRfU3NMb0lfUQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxORGdjTFQzM2o2UEVZdHN4aWxlN1FzOHBBNzFBV0czNDJtVS1LY0hDOXpuUk8xZTdSZDl6Z2JwWXU1RUJCVlFRcjk3cmMtMjdkYVI2aHNVRmFRVWc3RGlmZnhrdlhsTld3V0tWSlZuVG02YlhycnFubEJselVHenhVWmZ5UnJORVdvZWRfU3NMb0lfUQ?oc=5\" target=\"_blank\">Iran plans new Hormuz shipping corridor with Oman</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Gulf Business</font>",
+          "source": "Gulf Business",
+          "publishedAt": "Mon, 07 Sep 2026 08:43:13 GMT",
+          "publishedMs": 1788770593000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran plans new Hormuz corridor as shipping plunges and Gulf allies question US protection - Ynetnews",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBZM3RrdlBOd3Z1YUdaVU45TVBKOHYwazJZVTlHREpHU244eDVybmhKX2dZdjdNZ3FvbHNxRV83cU9rdHprQVRzLTlEWkVaRjUydXlDQlZ6SQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTFBZM3RrdlBOd3Z1YUdaVU45TVBKOHYwazJZVTlHREpHU244eDVybmhKX2dZdjdNZ3FvbHNxRV83cU9rdHprQVRzLTlEWkVaRjUydXlDQlZ6SQ?oc=5\" target=\"_blank\">Iran plans new Hormuz corridor as shipping plunges and Gulf allies question US protection</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ynetnews</font>",
+          "source": "Ynetnews",
+          "publishedAt": "Mon, 07 Sep 2026 08:37:45 GMT",
+          "publishedMs": 1788770265000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran Plans New Gulf Zone as Hormuz Tensions Push Oil Prices Higher - Modern Diplomacy",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVTJtZ0hpaktSSTcwM1ZwcV94WFpyblFpOHJiaTVNTzRoNWJmSjR3TkUySUFlUnlrbjM0bUJINzVQWlVDdG1Oalplc0pZZjJPSVZQMURodE1qM3B4NWdtVm83cFhkUlNuNGJPNHEzYnNEeXdYOHFBZEg5ckFUb1VwdnZHX0djVHY0ejV1VW1JSk1GYV94dkkzMVM5Vkp5RDhXVmNLM3k0dnE?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVTJtZ0hpaktSSTcwM1ZwcV94WFpyblFpOHJiaTVNTzRoNWJmSjR3TkUySUFlUnlrbjM0bUJINzVQWlVDdG1Oalplc0pZZjJPSVZQMURodE1qM3B4NWdtVm83cFhkUlNuNGJPNHEzYnNEeXdYOHFBZEg5ckFUb1VwdnZHX0djVHY0ejV1VW1JSk1GYV94dkkzMVM5Vkp5RDhXVmNLM3k0dnE?oc=5\" target=\"_blank\">Iran Plans New Gulf Zone as Hormuz Tensions Push Oil Prices Higher</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Modern Diplomacy</font>",
+          "source": "Modern Diplomacy",
+          "publishedAt": "Mon, 07 Sep 2026 08:17:26 GMT",
+          "publishedMs": 1788769046000,
           "relevance": 3
         },
         {
-          "title": "US Destroys Three Iranian Oil Tankers After Missile Attack Attempts - tvcnews.tv",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQXkxeHNmY2RZUjU5WEVBS1A2R2pDb0NmeEt2S245QllpR3FQc0E2bGNPakNINnprZW1veWozaHVqNjhmeE9wdGVQaUR2Uk1iTDBjRkROc1l3WGFOQWxURXlIRUViQ3duVFdaMjFROFRqcjlNd1FLekZ1QmxYSVVLNUJQdnBlYlBtWl9paVpxazdPeDZGYkE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQQXkxeHNmY2RZUjU5WEVBS1A2R2pDb0NmeEt2S245QllpR3FQc0E2bGNPakNINnprZW1veWozaHVqNjhmeE9wdGVQaUR2Uk1iTDBjRkROc1l3WGFOQWxURXlIRUViQ3duVFdaMjFROFRqcjlNd1FLekZ1QmxYSVVLNUJQdnBlYlBtWl9paVpxazdPeDZGYkE?oc=5\" target=\"_blank\">US Destroys Three Iranian Oil Tankers After Missile Attack Attempts</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">tvcnews.tv</font>",
-          "source": "tvcnews.tv",
-          "publishedAt": "Sun, 06 Sep 2026 04:49:00 GMT",
-          "publishedMs": 1788670140000,
+          "title": "Tensions Rise in the Gulf: Iran's New Shipping Corridor Through the Strait of Hormuz - Devdiscourse",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMDVkTHdZbHJNbUZHdmFyd0piSXZ0UGFUXzB2bG1rY2ZSQ1RoX3NLMWVZX3JhUjNCSkd1RW1RanFjNkItMTlocjdYWGNUQ2dtbXp5dGszV3h4OURsQXZSM2RDa1l6YkVjR3VJcDlib3J4OUF4TzFJTFdNZjVhd3lfQlpELU9IQ1JCc3o3bnp0U2M3M2hiVmd6b2dHMGVzRXVtQmpsU3hUNFdQZl9UTGdTQkhkRDdpb25DVjd4d2pmYllyVDh2YUR4N0xIT0tnQmhNZU5iWkpXcWsyclJ5V0NLZzJ2Ty1EUdIB5gFBVV95cUxOMDVkTHdZbHJNbUZHdmFyd0piSXZ0UGFUXzB2bG1rY2ZSQ1RoX3NLMWVZX3JhUjNCSkd1RW1RanFjNkItMTlocjdYWGNUQ2dtbXp5dGszV3h4OURsQXZSM2RDa1l6YkVjR3VJcDlib3J4OUF4TzFJTFdNZjVhd3lfQlpELU9IQ1JCc3o3bnp0U2M3M2hiVmd6b2dHMGVzRXVtQmpsU3hUNFdQZl9UTGdTQkhkRDdpb25DVjd4d2pmYllyVDh2YUR4N0xIT0tnQmhNZU5iWkpXcWsyclJ5V0NLZzJ2Ty1EUQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMDVkTHdZbHJNbUZHdmFyd0piSXZ0UGFUXzB2bG1rY2ZSQ1RoX3NLMWVZX3JhUjNCSkd1RW1RanFjNkItMTlocjdYWGNUQ2dtbXp5dGszV3h4OURsQXZSM2RDa1l6YkVjR3VJcDlib3J4OUF4TzFJTFdNZjVhd3lfQlpELU9IQ1JCc3o3bnp0U2M3M2hiVmd6b2dHMGVzRXVtQmpsU3hUNFdQZl9UTGdTQkhkRDdpb25DVjd4d2pmYllyVDh2YUR4N0xIT0tnQmhNZU5iWkpXcWsyclJ5V0NLZzJ2Ty1EUdIB5gFBVV95cUxOMDVkTHdZbHJNbUZHdmFyd0piSXZ0UGFUXzB2bG1rY2ZSQ1RoX3NLMWVZX3JhUjNCSkd1RW1RanFjNkItMTlocjdYWGNUQ2dtbXp5dGszV3h4OURsQXZSM2RDa1l6YkVjR3VJcDlib3J4OUF4TzFJTFdNZjVhd3lfQlpELU9IQ1JCc3o3bnp0U2M3M2hiVmd6b2dHMGVzRXVtQmpsU3hUNFdQZl9UTGdTQkhkRDdpb25DVjd4d2pmYllyVDh2YUR4N0xIT0tnQmhNZU5iWkpXcWsyclJ5V0NLZzJ2Ty1EUQ?oc=5\" target=\"_blank\">Tensions Rise in the Gulf: Iran's New Shipping Corridor Through the Strait of Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Devdiscourse</font>",
+          "source": "Devdiscourse",
+          "publishedAt": "Mon, 07 Sep 2026 08:04:40 GMT",
+          "publishedMs": 1788768280000,
+          "relevance": 5
+        },
+        {
+          "title": "Iran plans 'exclusion zone' near Strait of Hormuz as tensions with US flare again - The Times of India",
+          "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZTB5anBsVWpKLXZ2ekxCYmZkYTYwcEtEamR0STNraUtzYmw2UDBkOWh4cHNJU2NzMjJxeEVsSC14d1RoZGZFMWZ3VFpHM214VVNYQWlvS05GQjBWdlh3RVEyVGtVRVR5OG0xMVZfSVpmYXFFci1BRG1XcUFMbWdIQkRYWEdYZU84YWFneUJxQzNNNTRibXQ3VEgtdm5zUWl1Zk5qUlRGbGJScGhqR0V3WlUzd1dpRkF0b3VBMGhJUlAxWFpGYzZyOTd6am9VYUk4NDlzOTAyYnFGUGJmLXlKMWo5UU1lQkFfbXRXNHFJQU3SAfYBQVVfeXFMTUVjX3RwdEkwTWVENVIwcEwxUHVPbWw5alh4NlIyc2lCNEp4VFJRQ1gwWXVoeUJfVGp5bGZ1eVRIMzJlZGdyOFBiOFF2VjZCYVlYQTVOay1KeE95clNCdDFzeFRNYWF1X21ralVfQ2xRZFZ3UkliLWpkdndBTVdLWmdlazNCOVNURTN1bm1USmhacXlXclBGaEQ2U3J6Y3FjdURjakJFOGVBbmVwUVJ4Ujl2RzFiUEZ3RGZXbkF2eE9rQmRPOWkzQXNSaWVZWjdsd1hBb1lEVUVoTlQzajJVbDN5OE9nSm5GOFhYdVhfcjdmZXFFQWZB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZTB5anBsVWpKLXZ2ekxCYmZkYTYwcEtEamR0STNraUtzYmw2UDBkOWh4cHNJU2NzMjJxeEVsSC14d1RoZGZFMWZ3VFpHM214VVNYQWlvS05GQjBWdlh3RVEyVGtVRVR5OG0xMVZfSVpmYXFFci1BRG1XcUFMbWdIQkRYWEdYZU84YWFneUJxQzNNNTRibXQ3VEgtdm5zUWl1Zk5qUlRGbGJScGhqR0V3WlUzd1dpRkF0b3VBMGhJUlAxWFpGYzZyOTd6am9VYUk4NDlzOTAyYnFGUGJmLXlKMWo5UU1lQkFfbXRXNHFJQU3SAfYBQVVfeXFMTUVjX3RwdEkwTWVENVIwcEwxUHVPbWw5alh4NlIyc2lCNEp4VFJRQ1gwWXVoeUJfVGp5bGZ1eVRIMzJlZGdyOFBiOFF2VjZCYVlYQTVOay1KeE95clNCdDFzeFRNYWF1X21ralVfQ2xRZFZ3UkliLWpkdndBTVdLWmdlazNCOVNURTN1bm1USmhacXlXclBGaEQ2U3J6Y3FjdURjakJFOGVBbmVwUVJ4Ujl2RzFiUEZ3RGZXbkF2eE9rQmRPOWkzQXNSaWVZWjdsd1hBb1lEVUVoTlQzajJVbDN5OE9nSm5GOFhYdVhfcjdmZXFFQWZB?oc=5\" target=\"_blank\">Iran plans 'exclusion zone' near Strait of Hormuz as tensions with US flare again</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Times of India</font>",
+          "source": "The Times of India",
+          "publishedAt": "Mon, 07 Sep 2026 07:50:00 GMT",
+          "publishedMs": 1788767400000,
+          "relevance": 5
+        },
+        {
+          "title": "Iran vows to respond to US strikes, says US energy companies’ facilities are ‘exposed’ - Internazionale",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcDl2Y3JBbi15RWpRRk1vNTJUdlkzaU5YVGpJd2hTdmF4YnBVc0toUmdLeHc2dDFSS2FKYnFKbVhPSjN5ZFk1a2drbF9BTXB4Mmxrc1ltUWE2dnNIaDNmSmlIazdtX21Mak5ob2liSmVUeWphUVFBZ0FYb21teDJDc3ZhSmxOa0Nkd2FYU0wxWHFVQWZaRmExb3Uyd2NXaXNvYzJRU01hSVV0cFV4UElaRUpZVXZHZjdQQjYzNE9JWmdNRUxETlk3Yk9qU2pQTWdDcUE?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcDl2Y3JBbi15RWpRRk1vNTJUdlkzaU5YVGpJd2hTdmF4YnBVc0toUmdLeHc2dDFSS2FKYnFKbVhPSjN5ZFk1a2drbF9BTXB4Mmxrc1ltUWE2dnNIaDNmSmlIazdtX21Mak5ob2liSmVUeWphUVFBZ0FYb21teDJDc3ZhSmxOa0Nkd2FYU0wxWHFVQWZaRmExb3Uyd2NXaXNvYzJRU01hSVV0cFV4UElaRUpZVXZHZjdQQjYzNE9JWmdNRUxETlk3Yk9qU2pQTWdDcUE?oc=5\" target=\"_blank\">Iran vows to respond to US strikes, says US energy companies’ facilities are ‘exposed’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Internazionale</font>",
+          "source": "Internazionale",
+          "publishedAt": "Mon, 07 Sep 2026 07:15:38 GMT",
+          "publishedMs": 1788765338000,
           "relevance": 2
         },
         {
-          "title": "US-Iran ship attacks open dangerous new phase in battle for Strait of Hormuz - Gulf News",
-          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSFQ3WXJQdFl0UF9XTVU5dUktTUVWNXpUUTJjQm12ZFphWjdsRkhta1N4djViQVJDbGtmXzYwakJteGNqY2hTRkR0ZzUzc1RhTURPM2FiSjgwWmp6akVyNVp6MUtNNlA2T0xzZGlmYXZhWWdldWY2RTBKV2tidkxmRDMwS2hkSnZjRHdlcXVyck1YVFdMY29zcXRLX0ZYdk84cnRPSXFCSkIzYjVMWnNDTzZqTjFOcS02UXB5NDJDcEM2ZWxZX0NNYlB6M0tGbDRIaS1B?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSFQ3WXJQdFl0UF9XTVU5dUktTUVWNXpUUTJjQm12ZFphWjdsRkhta1N4djViQVJDbGtmXzYwakJteGNqY2hTRkR0ZzUzc1RhTURPM2FiSjgwWmp6akVyNVp6MUtNNlA2T0xzZGlmYXZhWWdldWY2RTBKV2tidkxmRDMwS2hkSnZjRHdlcXVyck1YVFdMY29zcXRLX0ZYdk84cnRPSXFCSkIzYjVMWnNDTzZqTjFOcS02UXB5NDJDcEM2ZWxZX0NNYlB6M0tGbDRIaS1B?oc=5\" target=\"_blank\">US-Iran ship attacks open dangerous new phase in battle for Strait of Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Gulf News</font>",
-          "source": "Gulf News",
-          "publishedAt": "Sun, 06 Sep 2026 01:01:00 GMT",
-          "publishedMs": 1788656460000,
-          "relevance": 4
-        },
-        {
-          "title": "US military strikes oil tankers as Iran vows tougher reprisals - The Straits Times",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWWNMOEVvdW1paU1aR0hvMFhjUENKaWk5ZTF5OEJpQ2Fab1FCeXBMQm5rUHlSUzhwc0NnMTBNNTNTRXd2RE5Yam9MWlZmQlVmTjZfdXBjRHdCRm5OS0ZERjBJaUxNMS1sSWplMVlqWmdlazBQNlozMGMzWjJkLWxFcmNHeUt4R3hFNm1CQ1FJVnpBSlpoejR1eVRYXzZUeFhRNzVLR2s0c0VNM3FLY0E?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxPWWNMOEVvdW1paU1aR0hvMFhjUENKaWk5ZTF5OEJpQ2Fab1FCeXBMQm5rUHlSUzhwc0NnMTBNNTNTRXd2RE5Yam9MWlZmQlVmTjZfdXBjRHdCRm5OS0ZERjBJaUxNMS1sSWplMVlqWmdlazBQNlozMGMzWjJkLWxFcmNHeUt4R3hFNm1CQ1FJVnpBSlpoejR1eVRYXzZUeFhRNzVLR2s0c0VNM3FLY0E?oc=5\" target=\"_blank\">US military strikes oil tankers as Iran vows tougher reprisals</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Straits Times</font>",
-          "source": "The Straits Times",
-          "publishedAt": "Sat, 05 Sep 2026 20:51:00 GMT",
-          "publishedMs": 1788641460000,
-          "relevance": 2
-        },
-        {
-          "title": "US military strikes three Iranian oil tankers as Tehran vows 'tougher reprisals' - The New Indian Express",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQldEazQ1NVZBd2tWbzJpWHhLN0F3QzF6NFk2U1BWQzNjSUZCV3o1QTRjZVREaWRFQ1o3U25sUFhScWc2UXE3Q0J3WHFIRVZQYnE1cWRTS29ZU3BZeXpLOU9XN3k1Um5kaElURncwTGhaN09sb09XbUc3TFdFcDlNOGt1NndjdXpDbzkxS2Q1N3Njek4wWnNCbFFLdjVsUGpSS0NYZ0U5TUNGVUk2M2ZsTl9paTFzN2FrYmpWbGtoMGVpSFB3QzYzZNIB1gFBVV95cUxQdFk4SEZZV1dVQ2JZaXhJS1U5R3lpWm1mNjJqbUJ6MGQ1aW1IaVVZMFVLNVhIUlZHaW9Vb05kX3RremlIZTlKX3BLLXJja2x1M0NwZmdScklDUC01Tmh3OC1Pb2hWdDBqcWZHMEJuSnN1SXhXdmQ1SkdFdkViQ19YVmUzVkVvOUJQREhGR3dCV09PdkxHcEZjM295Vnc0OHVxVDBUdDN6X2dEWjJZVlNRQVA4Q3BpWnRjMDJ0ZW1VRG5RWTMzNHQtVU9VTnlySVVZME9EMDJ3?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQldEazQ1NVZBd2tWbzJpWHhLN0F3QzF6NFk2U1BWQzNjSUZCV3o1QTRjZVREaWRFQ1o3U25sUFhScWc2UXE3Q0J3WHFIRVZQYnE1cWRTS29ZU3BZeXpLOU9XN3k1Um5kaElURncwTGhaN09sb09XbUc3TFdFcDlNOGt1NndjdXpDbzkxS2Q1N3Njek4wWnNCbFFLdjVsUGpSS0NYZ0U5TUNGVUk2M2ZsTl9paTFzN2FrYmpWbGtoMGVpSFB3QzYzZNIB1gFBVV95cUxQdFk4SEZZV1dVQ2JZaXhJS1U5R3lpWm1mNjJqbUJ6MGQ1aW1IaVVZMFVLNVhIUlZHaW9Vb05kX3RremlIZTlKX3BLLXJja2x1M0NwZmdScklDUC01Tmh3OC1Pb2hWdDBqcWZHMEJuSnN1SXhXdmQ1SkdFdkViQ19YVmUzVkVvOUJQREhGR3dCV09PdkxHcEZjM295Vnc0OHVxVDBUdDN6X2dEWjJZVlNRQVA4Q3BpWnRjMDJ0ZW1VRG5RWTMzNHQtVU9VTnlySVVZME9EMDJ3?oc=5\" target=\"_blank\">US military strikes three Iranian oil tankers as Tehran vows 'tougher reprisals'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
-          "source": "The New Indian Express",
-          "publishedAt": "Sat, 05 Sep 2026 19:44:08 GMT",
-          "publishedMs": 1788637448000,
+          "title": "Iran says to announce new restricted zone in the Gulf in the coming days - Yahoo News Canada",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1dlN24xQzFZcWVKbWx0MkZ4Z3N3YjNQV093ZDRxUWtGTU9Ub25RNHl6X1FFd0RTQzE2eHZtVjhwRkdzeGRDNjFrV1BNd1dlM3YxN1YzT09zMXVCQWJ6aEdmeUhxTlhqdXdiUmxzbVZhYmhjQU9CZGZ6MUVHTFY4LQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1dlN24xQzFZcWVKbWx0MkZ4Z3N3YjNQV093ZDRxUWtGTU9Ub25RNHl6X1FFd0RTQzE2eHZtVjhwRkdzeGRDNjFrV1BNd1dlM3YxN1YzT09zMXVCQWJ6aEdmeUhxTlhqdXdiUmxzbVZhYmhjQU9CZGZ6MUVHTFY4LQ?oc=5\" target=\"_blank\">Iran says to announce new restricted zone in the Gulf in the coming days</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo News Canada</font>",
+          "source": "Yahoo News Canada",
+          "publishedAt": "Mon, 07 Sep 2026 07:04:47 GMT",
+          "publishedMs": 1788764687000,
           "relevance": 1
-        },
-        {
-          "title": "DW News. . The US military says it has struck three Iranian oil tankers linked to Iran's Revolutionary Guard. US Central Command (CENTCOM) released footage it says shows the attacks near Kharg Island, the Strait of Hormuz and the Gulf of Oman. According t - facebook.com",
-          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRWdXb2ZHWHprbmluNTI0VXNYVkN3RkpRMDdicW83cFVfdVQyZkpTelZ0OVE0R0oyN0Njc1JyVk1VT1ExS0hXc29WWGg1THdLUzlwbGxmNnU1aWJlWXZnbmQ1NUJlN1g1QlVXTExYMGo0WlpzSWFqd0xEU0tWejc2MXhONGtSY2lFUXRCY1c3akx2YzRkSWpPcFJhYXNIUExGdDd5WFMxbGFJdEcwTXB6N0FzWnJKZFZWc2hFelQ4MjdQSXhaWGM3UXlfNzY0b0NyLWQ1cFVtazlfbGRJaGdhS0JR?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRWdXb2ZHWHprbmluNTI0VXNYVkN3RkpRMDdicW83cFVfdVQyZkpTelZ0OVE0R0oyN0Njc1JyVk1VT1ExS0hXc29WWGg1THdLUzlwbGxmNnU1aWJlWXZnbmQ1NUJlN1g1QlVXTExYMGo0WlpzSWFqd0xEU0tWejc2MXhONGtSY2lFUXRCY1c3akx2YzRkSWpPcFJhYXNIUExGdDd5WFMxbGFJdEcwTXB6N0FzWnJKZFZWc2hFelQ4MjdQSXhaWGM3UXlfNzY0b0NyLWQ1cFVtazlfbGRJaGdhS0JR?oc=5\" target=\"_blank\">DW News. . The US military says it has struck three Iranian oil tankers linked to Iran's Revolutionary Guard. US Central Command (CENTCOM) released footage it says shows the attacks near Kharg Island, the Strait of Hormuz and the Gulf of Oman. According t</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">facebook.com</font>",
-          "source": "facebook.com",
-          "publishedAt": "Sat, 05 Sep 2026 18:33:05 GMT",
-          "publishedMs": 1788633185000,
-          "relevance": 4
-        },
-        {
-          "title": "US strikes 3 Iranian oil tankers after IRGC attack on American naval ship - The Korea Times",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdGZ5Q2ZocGZiejVZZGdLY3RpTjVqQzQzcFV5VVc0TWUwVktZX3A5Tk9NeGl0OFBsdFJySFdxRmdHZXF4bmYxMEdyUWFYZlgxdEtqZ2pBT1pCM0lURlptLU04RXJXVXhZNzJyamVMT1hDZUFRQUY1TE9haWtmVHJ0Q2x6ZGJjbFE1Y3JJa3lpTF9LV3I3N2JmX2FicXROXzJJRzBmSlJnMmVCRi15dlNmMk82Zng3UVkz0gG-AUFVX3lxTE02TWwzUDBBX00xQkIxZnJDTmJMd19ta2dtRWQ3eHRaTUNGS0xNdVZTdURtWXRxZ1NWSGhmWnQwejVCb3BrYnVpd1hQbDZlSVpFaGZ6ZHRSVXV6R1cxUkhRT3lHWEk1My1ia0RHRHJadXYyY2dLNjRINkxIcVdRZk5MdjFmVktFWFA0TXFmT1ZGdVZhbFpzeHp3cFpSZmx3QzRCMG1BTlRGVmRpMVJLU2RJa0V3ZDUzRTJHbzFiNXc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdGZ5Q2ZocGZiejVZZGdLY3RpTjVqQzQzcFV5VVc0TWUwVktZX3A5Tk9NeGl0OFBsdFJySFdxRmdHZXF4bmYxMEdyUWFYZlgxdEtqZ2pBT1pCM0lURlptLU04RXJXVXhZNzJyamVMT1hDZUFRQUY1TE9haWtmVHJ0Q2x6ZGJjbFE1Y3JJa3lpTF9LV3I3N2JmX2FicXROXzJJRzBmSlJnMmVCRi15dlNmMk82Zng3UVkz0gG-AUFVX3lxTE02TWwzUDBBX00xQkIxZnJDTmJMd19ta2dtRWQ3eHRaTUNGS0xNdVZTdURtWXRxZ1NWSGhmWnQwejVCb3BrYnVpd1hQbDZlSVpFaGZ6ZHRSVXV6R1cxUkhRT3lHWEk1My1ia0RHRHJadXYyY2dLNjRINkxIcVdRZk5MdjFmVktFWFA0TXFmT1ZGdVZhbFpzeHp3cFpSZmx3QzRCMG1BTlRGVmRpMVJLU2RJa0V3ZDUzRTJHbzFiNXc?oc=5\" target=\"_blank\">US strikes 3 Iranian oil tankers after IRGC attack on American naval ship</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Korea Times</font>",
-          "source": "The Korea Times",
-          "publishedAt": "Sat, 05 Sep 2026 18:22:00 GMT",
-          "publishedMs": 1788632520000,
-          "relevance": 2
         }
       ],
       "trades": [
@@ -1073,7 +1073,7 @@
           "heat": 96
         },
         {
-          "t": "2026-09-06T13:46",
+          "t": "2026-09-07T13:47",
           "heat": 96
         }
       ]
@@ -1084,11 +1084,11 @@
       "subtitle": "Gray-zone pressure, customs blockade risk, Indo-Pacific defense bid",
       "color": "#5bc0ff",
       "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
-      "heat": 79,
-      "ww3Tilt": 2,
+      "heat": 80,
+      "ww3Tilt": 3,
       "ww3Signal": {
-        "tilt": 2,
-        "score": 0.65,
+        "tilt": 3,
+        "score": 0.83,
         "sources": [
           "us-china"
         ]
@@ -1096,48 +1096,48 @@
       "subScores": [
         {
           "label": "Military escalation",
-          "value": 87
-        },
-        {
-          "label": "Semiconductor disruption",
-          "value": 79
-        },
-        {
-          "label": "Shipping disruption",
           "value": 88
         },
         {
+          "label": "Semiconductor disruption",
+          "value": 80
+        },
+        {
+          "label": "Shipping disruption",
+          "value": 89
+        },
+        {
           "label": "Onshoring tailwind",
-          "value": 75
+          "value": 76
         }
       ],
       "indicators": [
         {
           "label": "Semiconductor stress",
-          "value": 103.1,
+          "value": 103.2,
           "unit": "%",
-          "delta": 3.1,
+          "delta": 3.2,
           "tone": "up"
         },
         {
           "label": "Defense bid",
-          "value": 101.5,
+          "value": 101.6,
           "unit": "%",
-          "delta": 1.5,
+          "delta": 1.6,
           "tone": "up"
         },
         {
           "label": "Asia shipping risk",
-          "value": 40.6,
+          "value": 40.7,
           "unit": "pts",
-          "delta": 2.6,
+          "delta": 2.7,
           "tone": "up"
         },
         {
           "label": "Consumer hardware drawdown",
-          "value": 10.6,
+          "value": 10.7,
           "unit": "%",
-          "delta": 1.6,
+          "delta": 1.7,
           "tone": "up"
         }
       ],
@@ -1147,8 +1147,26 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-09-06T13:46:52.892Z",
+      "refreshedAt": "2026-09-07T13:47:07.908Z",
       "headlines": [
+        {
+          "title": "China piles pressure on Taiwan with new patrols off Pacific coast - The Japan Times",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRmxqYkh5Y2RWMmpsakY2Z3lnakxSenhyclllQlB2UGVUUWVkWEY4bmFiYWdCbV9abkQwS3lSTGNFN1Z4YTFGNXNzdzFmNEVsRHM5ekdIYU5tMllabDhCVFNFSVZCeGpXTHVvUWVYLXlESGhYQWs0cXdqdGVQQWR5aUw1Y0gwSjJ0cV9EUGVNMmRvUQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNRmxqYkh5Y2RWMmpsakY2Z3lnakxSenhyclllQlB2UGVUUWVkWEY4bmFiYWdCbV9abkQwS3lSTGNFN1Z4YTFGNXNzdzFmNEVsRHM5ekdIYU5tMllabDhCVFNFSVZCeGpXTHVvUWVYLXlESGhYQWs0cXdqdGVQQWR5aUw1Y0gwSjJ0cV9EUGVNMmRvUQ?oc=5\" target=\"_blank\">China piles pressure on Taiwan with new patrols off Pacific coast</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Japan Times</font>",
+          "source": "The Japan Times",
+          "publishedAt": "Mon, 07 Sep 2026 06:57:54 GMT",
+          "publishedMs": 1788764274000,
+          "relevance": 3
+        },
+        {
+          "title": "JUN KAJEE | China can make the global market blockade Taiwan - Business Day",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQS043b09KRTNHRlEyb0dMYU13X2h1X2ZlclBtdnBEbXh3RDVLeWg0U21jcThZd2R5enlMU0lrUEJsWDVyZWRJazdLUDU2ZWUyVjJ1SE1QYW5GeGJCMTBfR3BtQzE4RWF6NmJwZU1lcm5WUHFQb2NfbXVYZjRlbXFHSTMwOEx2OGs1MmJkLTByM0tHRDZwVmJIeVVGNHI5V1VoY3NuUXFmNGctOEJh?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQS043b09KRTNHRlEyb0dMYU13X2h1X2ZlclBtdnBEbXh3RDVLeWg0U21jcThZd2R5enlMU0lrUEJsWDVyZWRJazdLUDU2ZWUyVjJ1SE1QYW5GeGJCMTBfR3BtQzE4RWF6NmJwZU1lcm5WUHFQb2NfbXVYZjRlbXFHSTMwOEx2OGs1MmJkLTByM0tHRDZwVmJIeVVGNHI5V1VoY3NuUXFmNGctOEJh?oc=5\" target=\"_blank\">JUN KAJEE | China can make the global market blockade Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Day</font>",
+          "source": "Business Day",
+          "publishedAt": "Mon, 07 Sep 2026 03:00:00 GMT",
+          "publishedMs": 1788750000000,
+          "relevance": 3
+        },
         {
           "title": "US Pacific Command chief meets Chinese commander overseeing Taiwan operations - Taiwan News",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91SGw4V29zb0ZOWWdxZGdtb3BodURhT0JpRjdWQ2tnbjFmdEVyang1MjV4ZHplVFBBcFZnYUdLWkNDdllJSlRXY3pzVGdRb09oZEZaWVRmQXE?oc=5",
@@ -1196,11 +1214,11 @@
         },
         {
           "title": "20 Chinese aircraft crossed Taiwan Strait median line, Taiwan says - Free Press Kashmir",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUTlYNmxEb2tNUWZkMnF6Wk1nNl9CVV80MldJUzczV1UtNWs0bktvVElzdVd4aFdkUk1jN0NYSmp3Rjd0R2xEVlZSWGdhNDdLNGlVUzdnSXBuNmpTS2NQTXRzZ0pfQVFRLTlrM29fMGpxeG5FNzNUSlNudzN2enp2LXoydFpyOTJFLVZ3QVFnZms0TTd6S19BX0gwYUhPQ3Y3WmQ0YjU4UjV4X0R3dW9oX9IBsAFBVV95cUxPUTlYNmxEb2tNUWZkMnF6Wk1nNl9CVV80MldJUzczV1UtNWs0bktvVElzdVd4aFdkUk1jN0NYSmp3Rjd0R2xEVlZSWGdhNDdLNGlVUzdnSXBuNmpTS2NQTXRzZ0pfQVFRLTlrM29fMGpxeG5FNzNUSlNudzN2enp2LXoydFpyOTJFLVZ3QVFnZms0TTd6S19BX0gwYUhPQ3Y3WmQ0YjU4UjV4X0R3dW9oXw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPUTlYNmxEb2tNUWZkMnF6Wk1nNl9CVV80MldJUzczV1UtNWs0bktvVElzdVd4aFdkUk1jN0NYSmp3Rjd0R2xEVlZSWGdhNDdLNGlVUzdnSXBuNmpTS2NQTXRzZ0pfQVFRLTlrM29fMGpxeG5FNzNUSlNudzN2enp2LXoydFpyOTJFLVZ3QVFnZms0TTd6S19BX0gwYUhPQ3Y3WmQ0YjU4UjV4X0R3dW9oX9IBsAFBVV95cUxPUTlYNmxEb2tNUWZkMnF6Wk1nNl9CVV80MldJUzczV1UtNWs0bktvVElzdVd4aFdkUk1jN0NYSmp3Rjd0R2xEVlZSWGdhNDdLNGlVUzdnSXBuNmpTS2NQTXRzZ0pfQVFRLTlrM29fMGpxeG5FNzNUSlNudzN2enp2LXoydFpyOTJFLVZ3QVFnZms0TTd6S19BX0gwYUhPQ3Y3WmQ0YjU4UjV4X0R3dW9oXw?oc=5\" target=\"_blank\">20 Chinese aircraft crossed Taiwan Strait median line, Taiwan says</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Free Press Kashmir</font>",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYl9JMHNyMG5MUG1JYlN3M3Q2R0lLTnBBN2kyWUI4RUFQcXNybDRJYnlDSzk0dm1BOXM3cVh3RkR0TjVST1dhY2FaLTBsVGtQZVh6eU1OQTdUOW1fdVFMSEFpOU1oQVpsQWR6QXZWOWNpZ0NFVXFOYU1Va0diQ0Q3QjdRN0ZkLXZQQVRpUy03R0ZISllNbnRZQTdMS3JJRk9ZUS1pMG1CR2VYdTjSAbABQVVfeXFMT1E5WDZsRG9rTVFmZDJxelpNZzZfQlVfNDJXSVM3M1dVLTVrNG5Lb1RJc3VXeGhXZFJNYzdDWEpqd0Y3dEdsRFZWUlhnYTQ3SzRpVVM3Z0lwbjZqU0tjUE10c2dKX0FRUS05azNvXzBqcXhuRTczVEpTbnczdnp6di16MnRacjkyRS1Wd0FRZ2ZrNE03ektfQV9IMGFIT0N2N1pkNGI1OFI1eF9Ed3VvaF8?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYl9JMHNyMG5MUG1JYlN3M3Q2R0lLTnBBN2kyWUI4RUFQcXNybDRJYnlDSzk0dm1BOXM3cVh3RkR0TjVST1dhY2FaLTBsVGtQZVh6eU1OQTdUOW1fdVFMSEFpOU1oQVpsQWR6QXZWOWNpZ0NFVXFOYU1Va0diQ0Q3QjdRN0ZkLXZQQVRpUy03R0ZISllNbnRZQTdMS3JJRk9ZUS1pMG1CR2VYdTjSAbABQVVfeXFMT1E5WDZsRG9rTVFmZDJxelpNZzZfQlVfNDJXSVM3M1dVLTVrNG5Lb1RJc3VXeGhXZFJNYzdDWEpqd0Y3dEdsRFZWUlhnYTQ3SzRpVVM3Z0lwbjZqU0tjUE10c2dKX0FRUS05azNvXzBqcXhuRTczVEpTbnczdnp6di16MnRacjkyRS1Wd0FRZ2ZrNE03ektfQV9IMGFIT0N2N1pkNGI1OFI1eF9Ed3VvaF8?oc=5\" target=\"_blank\">20 Chinese aircraft crossed Taiwan Strait median line, Taiwan says</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Free Press Kashmir</font>",
           "source": "Free Press Kashmir",
-          "publishedAt": "Sat, 05 Sep 2026 07:42:15 GMT",
-          "publishedMs": 1788594135000,
+          "publishedAt": "Sat, 05 Sep 2026 07:39:06 GMT",
+          "publishedMs": 1788593946000,
           "relevance": 4
         },
         {
@@ -1220,24 +1238,6 @@
           "publishedAt": "Fri, 04 Sep 2026 04:00:00 GMT",
           "publishedMs": 1788494400000,
           "relevance": 4
-        },
-        {
-          "title": "On Taiwan’s Frontline Islands, Troops Train for a Chinese First Strike - International Business Times",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ0hGOUJLQzkwUEc5bVIzTUVlYVlLMnMzTTY1NGxiV0RLM05UQjhrUUh6cUlKYjd3cm5qdFpvN1pBNUgzMWpQcGRBWEpNdTNQWXNJVWtyYlZsNk1nVHdoWHF6aWpKTGttLW5Kd1UzTkFnejlhU3RFbEM0VjdnTW5EbnVxZGZzRTVxeFoxcDlSeHJ4ajA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOQ0hGOUJLQzkwUEc5bVIzTUVlYVlLMnMzTTY1NGxiV0RLM05UQjhrUUh6cUlKYjd3cm5qdFpvN1pBNUgzMWpQcGRBWEpNdTNQWXNJVWtyYlZsNk1nVHdoWHF6aWpKTGttLW5Kd1UzTkFnejlhU3RFbEM0VjdnTW5EbnVxZGZzRTVxeFoxcDlSeHJ4ajA?oc=5\" target=\"_blank\">On Taiwan’s Frontline Islands, Troops Train for a Chinese First Strike</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">International Business Times</font>",
-          "source": "International Business Times",
-          "publishedAt": "Fri, 04 Sep 2026 02:08:22 GMT",
-          "publishedMs": 1788487702000,
-          "relevance": 3
-        },
-        {
-          "title": "Beijing’s Shadow Play: Research Vessels Near Taiwan Signal CCP’s Drive for Forced Annexation - PML Daily",
-          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORDYwYTI5eDEwakJoems1UkNwc1VGcTNwR3Z1UjJua3lGdXEycUdqTmRlTHZXT0hTWHRUSjI5THZmc0MzUFpWc0JveEQ1Y3RyZTY0Y2ZNNzRrbXdCVmxIN1M0MVZQc0wxRlRqR2ZtR2VqMDI1SjM0cXlyUGY2WHFyYnZpcVViS1dfZWJZMnp2amhhLU5ueHJrNElSYVU3dU5IOUkxc1ZmdmRLUmFmV1djdk5FdGo3Ynl3NjVjLVNyRHd2eW40ZTJJ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxORDYwYTI5eDEwakJoems1UkNwc1VGcTNwR3Z1UjJua3lGdXEycUdqTmRlTHZXT0hTWHRUSjI5THZmc0MzUFpWc0JveEQ1Y3RyZTY0Y2ZNNzRrbXdCVmxIN1M0MVZQc0wxRlRqR2ZtR2VqMDI1SjM0cXlyUGY2WHFyYnZpcVViS1dfZWJZMnp2amhhLU5ueHJrNElSYVU3dU5IOUkxc1ZmdmRLUmFmV1djdk5FdGo3Ynl3NjVjLVNyRHd2eW40ZTJJ?oc=5\" target=\"_blank\">Beijing’s Shadow Play: Research Vessels Near Taiwan Signal CCP’s Drive for Forced Annexation</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PML Daily</font>",
-          "source": "PML Daily",
-          "publishedAt": "Thu, 03 Sep 2026 07:19:21 GMT",
-          "publishedMs": 1788419961000,
-          "relevance": 3
         }
       ],
       "trades": [
@@ -1254,9 +1254,9 @@
           "thesis": "High-end missiles, interceptors, and deterrence spending rise in Indo-Pacific stress.",
           "price": 525.280029296875,
           "annualizedVol": 0.32811744399515874,
-          "upsidePct": 0.281468640443745,
+          "upsidePct": 0.2823777313528359,
           "downsidePct": 0.13046599763327005,
-          "targetPrice": 673.129884995317,
+          "targetPrice": 673.6074122946777,
           "stopPrice": 456.74884623782486,
           "rewardToRisk": 2.16,
           "lastQuoteDate": "2026-09-04",
@@ -1323,9 +1323,9 @@
           "thesis": "Air and missile defense systems benefit from regional rearmament.",
           "price": 200.7899932861328,
           "annualizedVol": 0.28287652656513135,
-          "upsidePct": 0.27491600247222303,
+          "upsidePct": 0.27582509338131395,
           "downsidePct": 0.12514197928140847,
-          "targetPrice": 255.99037557678093,
+          "targetPrice": 256.1729119343138,
           "stopPrice": 175.66273610640545,
           "rewardToRisk": 2.2,
           "lastQuoteDate": "2026-09-04",
@@ -1392,9 +1392,9 @@
           "thesis": "Missile, radar, and space programs fit a higher-alert Pacific posture.",
           "price": 514.97998046875,
           "annualizedVol": 0.283577956936494,
-          "upsidePct": 0.27502144289177133,
+          "upsidePct": 0.2759305338008622,
           "downsidePct": 0.12522764962229144,
-          "targetPrice": 656.6105177576419,
+          "targetPrice": 657.0786813762497,
           "stopPrice": 450.49024791211485,
           "rewardToRisk": 2.2,
           "lastQuoteDate": "2026-09-04",
@@ -1461,11 +1461,11 @@
           "thesis": "Domestic fab narrative improves if Taiwan concentration becomes a bigger market risk.",
           "price": 95.80000305175781,
           "annualizedVol": 0.7757545769444246,
-          "upsidePct": 0.30874127137336177,
+          "upsidePct": 0.3096503622824527,
           "downsidePct": 0.16150001026358374,
-          "targetPrice": 125.37741779152945,
+          "targetPrice": 125.46450870339469,
           "stopPrice": 80.32830157564757,
-          "rewardToRisk": 1.91,
+          "rewardToRisk": 1.92,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": 0.013064702797343135,
           "pctVsMa50": -0.04777805156807862,
@@ -1530,9 +1530,9 @@
           "thesis": "Alternative foundry capacity gets revalued on supply-chain resilience demand.",
           "price": 45.209999084472656,
           "annualizedVol": 0.7222148649657846,
-          "upsidePct": 0.30379134293141064,
+          "upsidePct": 0.30470043384050155,
           "downsidePct": 0.15747819340449842,
-          "targetPrice": 58.94440542027245,
+          "targetPrice": 58.98550541944015,
           "stopPrice": 38.09041010483087,
           "rewardToRisk": 1.93,
           "lastQuoteDate": "2026-09-04",
@@ -1599,9 +1599,9 @@
           "thesis": "ISR and drone demand often re-rates in contested-maritime scenarios.",
           "price": 144.64999389648438,
           "annualizedVol": 0.8290007375341699,
-          "upsidePct": 0.3134973460142835,
+          "upsidePct": 0.31440643692337444,
           "downsidePct": 0.16536432090933262,
-          "targetPrice": 189.9973830840145,
+          "targetPrice": 190.12888307846586,
           "stopPrice": 120.73004588625312,
           "rewardToRisk": 1.9,
           "lastQuoteDate": "2026-09-04",
@@ -1668,11 +1668,11 @@
           "thesis": "Assembly concentration and consumer hardware exposure make it a direct shock absorber.",
           "price": 319.9700012207031,
           "annualizedVol": 0.3006763479910356,
-          "upsidePct": 0.27755252235009964,
+          "upsidePct": 0.2784616132591905,
           "downsidePct": 0.1272841516821832,
-          "targetPrice": 231.16152030553252,
+          "targetPrice": 230.87063848624098,
           "stopPrice": 360.69711138982746,
-          "rewardToRisk": 2.18,
+          "rewardToRisk": 2.19,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": 0.021891438433853643,
           "pctVsMa50": 0.015289799415971918,
@@ -1737,9 +1737,9 @@
           "thesis": "AI supply chains and premium multiple create downside if hardware flow is impaired.",
           "price": 230.36000061035156,
           "annualizedVol": 0.42335865906708453,
-          "upsidePct": 0.2719238092939209,
+          "upsidePct": 0.2728329002030118,
           "downsidePct": 0.13158582232403804,
-          "targetPrice": 167.71963173543483,
+          "targetPrice": 167.51021355306176,
           "stopPrice": 260.6721107212306,
           "rewardToRisk": 2.07,
           "lastQuoteDate": "2026-09-04",
@@ -1806,11 +1806,11 @@
           "thesis": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption.",
           "price": 168.74000549316406,
           "annualizedVol": 0.6352117624042622,
-          "upsidePct": 0.2953384590981074,
+          "upsidePct": 0.2962475500071984,
           "downsidePct": 0.15061022528993956,
-          "targetPrice": 118.90459228260681,
+          "targetPrice": 118.75119227761301,
           "stopPrice": 194.15397573591514,
-          "rewardToRisk": 1.96,
+          "rewardToRisk": 1.97,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": 0.028714292031486708,
           "pctVsMa50": -0.003374815002568957,
@@ -1875,11 +1875,11 @@
           "thesis": "Direct center-of-gravity risk in any severe cross-strait escalation.",
           "price": 428.9100036621094,
           "annualizedVol": 0.45721799677933866,
-          "upsidePct": 0.32000681669981373,
+          "upsidePct": 0.32091590760890465,
           "downsidePct": 0.15290326584132596,
-          "targetPrice": 291.65587873949227,
+          "targetPrice": 291.26596055434493,
           "stopPrice": 494.491743974061,
-          "rewardToRisk": 2.09,
+          "rewardToRisk": 2.1,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": 0.021550386503809714,
           "pctVsMa50": 0.02022516107789644,
@@ -1944,11 +1944,11 @@
           "thesis": "Copper miners get a strategic-stockpile bid when supply chain resilience becomes a national priority.",
           "price": 90.66000366210938,
           "annualizedVol": 0.5031582534786618,
-          "upsidePct": 0.2813120199286878,
+          "upsidePct": 0.28222111083777873,
           "downsidePct": 0.1392137434647861,
-          "targetPrice": 116.1637524190396,
+          "targetPrice": 116.24617060418697,
           "stopPrice": 78.03888516977591,
-          "rewardToRisk": 2.02,
+          "rewardToRisk": 2.03,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": 0.0029669322282620436,
           "pctVsMa50": 0.09148177133861286,
@@ -2013,11 +2013,11 @@
           "thesis": "China REE export controls force a rerating of ex-China producers as defense and EV inputs.",
           "price": 75.66000366210938,
           "annualizedVol": 0.46381686490169816,
-          "upsidePct": 0.27678474431091843,
+          "upsidePct": 0.27769383522000934,
           "downsidePct": 0.1355353320253485,
-          "targetPrice": 96.60153843028947,
+          "targetPrice": 96.67032025180048,
           "stopPrice": 65.4053999447263,
-          "rewardToRisk": 2.04,
+          "rewardToRisk": 2.05,
           "lastQuoteDate": "2026-09-04",
           "pctVsMa22": -0.021187217324214632,
           "pctVsMa50": -0.007964031004947825,
@@ -2082,9 +2082,9 @@
           "thesis": "Uranium gets both an energy-security and an AI-power-demand bid in any Asia tension scenario.",
           "price": 46.060001373291016,
           "annualizedVol": 0.4893359942292683,
-          "upsidePct": 0.27974226971828164,
+          "upsidePct": 0.28065136062737256,
           "downsidePct": 0.1379383214188311,
-          "targetPrice": 58.94493070068261,
+          "targetPrice": 58.98680342920379,
           "stopPrice": 39.7065620993102,
           "rewardToRisk": 2.03,
           "lastQuoteDate": "2026-09-04",
@@ -2145,8 +2145,8 @@
           "heat": 96
         },
         {
-          "t": "2026-09-06T13:46",
-          "heat": 79
+          "t": "2026-09-07T13:47",
+          "heat": 80
         }
       ]
     },
@@ -2173,11 +2173,11 @@
         },
         {
           "label": "Gas / power stress",
-          "value": 85
+          "value": 94
         },
         {
           "label": "Defense replenishment",
-          "value": 91
+          "value": 97
         },
         {
           "label": "Travel drag",
@@ -2187,30 +2187,30 @@
       "indicators": [
         {
           "label": "NATO procurement",
-          "value": 102.4,
+          "value": 102.7,
           "unit": "%",
-          "delta": 2.4,
+          "delta": 2.7,
           "tone": "up"
         },
         {
           "label": "European gas stress",
-          "value": 43.6,
+          "value": 43.8,
           "unit": "pts",
-          "delta": 2.6,
+          "delta": 2.8,
           "tone": "up"
         },
         {
           "label": "Transatlantic travel drag",
-          "value": 9.6,
+          "value": 9.8,
           "unit": "%",
-          "delta": 1.6,
+          "delta": 1.8,
           "tone": "up"
         },
         {
           "label": "Defense leadership",
-          "value": 101.7,
+          "value": 101.9,
           "unit": "%",
-          "delta": 1.7,
+          "delta": 1.9,
           "tone": "up"
         }
       ],
@@ -2220,8 +2220,62 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-09-06T13:46:52.772Z",
+      "refreshedAt": "2026-09-07T13:47:07.939Z",
       "headlines": [
+        {
+          "title": "Opinion | Putin is probing NATO. He keeps finding mush, not steel. - The Washington Post",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUlF0dGhCY0tmRzF0cFg3OUczRUZNTEdDU1dVTnFNNnA4MTJRNE1ueHdTVWpSQXd3a1M2ZDQtQlNGMkdzOXdrOC12TmRaZ3U2Rk5lekRFRzB4QkRBRXdQQTgxQWhiQ1B0S21zQ25meW9UU09XYzY2ckc0NE5xb0ZqSVZxQ24xNGoxOGZQTHY4Mzdya1BXZVFHTnkzUQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQUlF0dGhCY0tmRzF0cFg3OUczRUZNTEdDU1dVTnFNNnA4MTJRNE1ueHdTVWpSQXd3a1M2ZDQtQlNGMkdzOXdrOC12TmRaZ3U2Rk5lekRFRzB4QkRBRXdQQTgxQWhiQ1B0S21zQ25meW9UU09XYzY2ckc0NE5xb0ZqSVZxQ24xNGoxOGZQTHY4Mzdya1BXZVFHTnkzUQ?oc=5\" target=\"_blank\">Opinion | Putin is probing NATO. He keeps finding mush, not steel.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Washington Post</font>",
+          "source": "The Washington Post",
+          "publishedAt": "Mon, 07 Sep 2026 13:03:47 GMT",
+          "publishedMs": 1788786227000,
+          "relevance": 2
+        },
+        {
+          "title": "Ukraine Urges NATO to Accelerate Air Defense Deliveries Ahead of Ramstein Meeting - Межа. Новини України.",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ERzJRbTdHSzl3d0ItSXo2eWdwX0JOZTJPQjdLRU1MZXlvVWtNU2k1bHhKVjFpUjZyXzl3aUh5dzJPWmxKUkVDcE1YZUMySFRITEFnYWhPdVJlV2gycy1aU2EyT25Ydw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ERzJRbTdHSzl3d0ItSXo2eWdwX0JOZTJPQjdLRU1MZXlvVWtNU2k1bHhKVjFpUjZyXzl3aUh5dzJPWmxKUkVDcE1YZUMySFRITEFnYWhPdVJlV2gycy1aU2EyT25Ydw?oc=5\" target=\"_blank\">Ukraine Urges NATO to Accelerate Air Defense Deliveries Ahead of Ramstein Meeting</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Межа. Новини України.</font>",
+          "source": "Межа. Новини України.",
+          "publishedAt": "Mon, 07 Sep 2026 10:50:19 GMT",
+          "publishedMs": 1788778219000,
+          "relevance": 2
+        },
+        {
+          "title": "Ukraine has communicated its urgent needs for air defense systems to NATO - UA.NEWS",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVFgyanpqZS1EWUxEb2djQVctZmJOV3pZWTI5T1MzUTlELUpKWnJEZXBfUjJzMmhHNFZ4bjZsUXBLcDR3UmVxaWNheW12cm15RlVoUk1sY1FIdlphdElsRUVHU0ZmR0pQZUhTVTZXbFNWbXQ4NFpaZ0l6ZUpYMy1MNGhibXZnLURDeXc?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNVFgyanpqZS1EWUxEb2djQVctZmJOV3pZWTI5T1MzUTlELUpKWnJEZXBfUjJzMmhHNFZ4bjZsUXBLcDR3UmVxaWNheW12cm15RlVoUk1sY1FIdlphdElsRUVHU0ZmR0pQZUhTVTZXbFNWbXQ4NFpaZ0l6ZUpYMy1MNGhibXZnLURDeXc?oc=5\" target=\"_blank\">Ukraine has communicated its urgent needs for air defense systems to NATO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UA.NEWS</font>",
+          "source": "UA.NEWS",
+          "publishedAt": "Mon, 07 Sep 2026 09:57:59 GMT",
+          "publishedMs": 1788775079000,
+          "relevance": 2
+        },
+        {
+          "title": "Ukraine calls on NATO to accelerate efforts to strengthen air and missile defense ahead of Ramstein-format meeting - Міністерство оборони України",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNel9XREJnb2JJUWRQZEZlU29LbXNHOUhLQkM5OFNuRTR0eTlzZkZnZC11YkhlaDZlZ2xSTTEzTWZpMFA0Uk4tYm9LUGJIQ3AzV0MwdVJLbFNXT0J2dmNjSV94NzVPbmk5b0RlYl9yUGN0WWRnUmMtWW5vcmJxZFJNdjN0dEszcmZuZUlaa1lkaFE0aURaaVkwamRYdEE4bUtjRndjLVlXSjV0M1VndlJKTldhNlVKT1hZRy1HaGRzY2hreXY5aVVzdlpnY0YtWEtNamh1YWlzTm4?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxNel9XREJnb2JJUWRQZEZlU29LbXNHOUhLQkM5OFNuRTR0eTlzZkZnZC11YkhlaDZlZ2xSTTEzTWZpMFA0Uk4tYm9LUGJIQ3AzV0MwdVJLbFNXT0J2dmNjSV94NzVPbmk5b0RlYl9yUGN0WWRnUmMtWW5vcmJxZFJNdjN0dEszcmZuZUlaa1lkaFE0aURaaVkwamRYdEE4bUtjRndjLVlXSjV0M1VndlJKTldhNlVKT1hZRy1HaGRzY2hreXY5aVVzdlpnY0YtWEtNamh1YWlzTm4?oc=5\" target=\"_blank\">Ukraine calls on NATO to accelerate efforts to strengthen air and missile defense ahead of Ramstein-format meeting</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Міністерство оборони України</font>",
+          "source": "Міністерство оборони України",
+          "publishedAt": "Mon, 07 Sep 2026 07:03:00 GMT",
+          "publishedMs": 1788764580000,
+          "relevance": 3
+        },
+        {
+          "title": "Ukraine and NATO Align Defense Priorities Ahead of the 'Ramstein' Meeting: Focus on Air Defense and Drone Support - 112.ua",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd2t4ZjRpYktQbExLbDhFZl9haUtVemZyNUJiOTBCSWhHV3dtdkpFbWNUOEdWclFNUGhvdUFyZVItOFR0TU1MdFlWWXYwRGtXbGxQTVdzaG1QNE10MklwaEJZUVkwcWpqRW12ZGdldzVHa0oybHE5bDVhYUlSVXFaR0w5M1ppQ1U0LWo4a0s4b0pISkVmVm9oclo1NzFnWVFnVVRYdnhLamYwT2tFS1VYMTBmWQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNd2t4ZjRpYktQbExLbDhFZl9haUtVemZyNUJiOTBCSWhHV3dtdkpFbWNUOEdWclFNUGhvdUFyZVItOFR0TU1MdFlWWXYwRGtXbGxQTVdzaG1QNE10MklwaEJZUVkwcWpqRW12ZGdldzVHa0oybHE5bDVhYUlSVXFaR0w5M1ppQ1U0LWo4a0s4b0pISkVmVm9oclo1NzFnWVFnVVRYdnhLamYwT2tFS1VYMTBmWQ?oc=5\" target=\"_blank\">Ukraine and NATO Align Defense Priorities Ahead of the 'Ramstein' Meeting: Focus on Air Defense and Drone Support</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">112.ua</font>",
+          "source": "112.ua",
+          "publishedAt": "Sun, 06 Sep 2026 21:44:12 GMT",
+          "publishedMs": 1788731052000,
+          "relevance": 2
+        },
+        {
+          "title": "Experts say Trump's plan to license Patriot missiles for Ukraine could take years - ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT1dxWXh0VTZONzR0WU1oNkx2cU5pUHN6bkhqMWtGS1M3WmpSWVVHaGIzS2c4ZDI3a0hPTGxyRks1V3hRbGh4Q3BDWlZjWHNGMVpsMC1kZ2pIVUltSjJPTzVSZlhUY2NjRXRubXNSbGkyMExDSEhqdFJ5a2YxSlNVTjBWdU9HUmRnajJ3dnN5aXJ6ZW5lWXJGbnU4VFF2QjNXYlRYaW4tMHVEUdIBrwFBVV95cUxPaHNja3FVUEliUzczM01zSTVtWGNhS2dVdUd0c0RNLXluRTE3eU9DTVNmODZpcUFIQTZFa3QzeTMxN1VSckFqTUhEVGxjMjBUWV9zR25IcXJicHBFX0NiNUxHc2RlaDNCajFiYVE1b2JaM3d6Z2FpanNOYnAzeER5blJPSkh6VTBVMEY5Z29UZ0VBcUtPeDFxaTl4MGV1RGsxQUpvdkxoQ3Y3NVlIX1Fr?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT1dxWXh0VTZONzR0WU1oNkx2cU5pUHN6bkhqMWtGS1M3WmpSWVVHaGIzS2c4ZDI3a0hPTGxyRks1V3hRbGh4Q3BDWlZjWHNGMVpsMC1kZ2pIVUltSjJPTzVSZlhUY2NjRXRubXNSbGkyMExDSEhqdFJ5a2YxSlNVTjBWdU9HUmRnajJ3dnN5aXJ6ZW5lWXJGbnU4VFF2QjNXYlRYaW4tMHVEUdIBrwFBVV95cUxPaHNja3FVUEliUzczM01zSTVtWGNhS2dVdUd0c0RNLXluRTE3eU9DTVNmODZpcUFIQTZFa3QzeTMxN1VSckFqTUhEVGxjMjBUWV9zR25IcXJicHBFX0NiNUxHc2RlaDNCajFiYVE1b2JaM3d6Z2FpanNOYnAzeER5blJPSkh6VTBVMEY5Z29UZ0VBcUtPeDFxaTl4MGV1RGsxQUpvdkxoQ3Y3NVlIX1Fr?oc=5\" target=\"_blank\">Experts say Trump's plan to license Patriot missiles for Ukraine could take years</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC News - Breaking News, Latest News and Videos</font>",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "publishedAt": "Sun, 06 Sep 2026 11:00:19 GMT",
+          "publishedMs": 1788692419000,
+          "relevance": 2
+        },
         {
           "title": "Ukraine seeks more air defense and defense funding from partners - The New Voice of Ukraine",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSmRKX1lMc3gwQUtyaEtLaEtfeDVEaUw5d2lhZ0FNNXNiUmp6MGdzcWNCaDdXRTBLYzAtWi1PdW93M2pKb3JLOVU4dmJoX0JZRVFjUS11cVA5MjQxaE1faHY1cmVuTTZIZ3Q4V2I5RjE5ZDltbVdwQ0Y2azVqZWVWV3RHeVFOb2dpdk56MnJTaDNka1pObWttV3AxUGJzc1lIRWFWdUJDbS0xRUVUbmk3Q3lINNIBswFBVV95cUxOSmRKX1lMc3gwQUtyaEtLaEtfeDVEaUw5d2lhZ0FNNXNiUmp6MGdzcWNCaDdXRTBLYzAtWi1PdW93M2pKb3JLOVU4dmJoX0JZRVFjUS11cVA5MjQxaE1faHY1cmVuTTZIZ3Q4V2I5RjE5ZDltbVdwQ0Y2azVqZWVWV3RHeVFOb2dpdk56MnJTaDNka1pObWttV3AxUGJzc1lIRWFWdUJDbS0xRUVUbmk3Q3lINA?oc=5",
@@ -2241,75 +2295,21 @@
           "relevance": 2
         },
         {
-          "title": "Ukraine strikes may have hit 15% of Russian refinery capacity — NATO official - Arab News PK",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDFwRzZPRmhsb0UwQ2UyWjZ3ekpKQ0ZyR1k3MVF3N0xwM052N0VJMkZseFMza2tpNHl6OFVEUk9tLW5SOG1LUzM3cjNtVGVfUHdkWG42OENyaUtWd1J2Z2xOYzZUNlEzTVpLcG54OWJrQlphRXdHb3R4MzN6RW1SZ3VFSzRjTWFjVWhpVEF5a3FyOTlya3BVaU8zbDZwQ2pRZUd5aTJLbU5FY0hNVmUyTDdB?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDFwRzZPRmhsb0UwQ2UyWjZ3ekpKQ0ZyR1k3MVF3N0xwM052N0VJMkZseFMza2tpNHl6OFVEUk9tLW5SOG1LUzM3cjNtVGVfUHdkWG42OENyaUtWd1J2Z2xOYzZUNlEzTVpLcG54OWJrQlphRXdHb3R4MzN6RW1SZ3VFSzRjTWFjVWhpVEF5a3FyOTlya3BVaU8zbDZwQ2pRZUd5aTJLbU5FY0hNVmUyTDdB?oc=5\" target=\"_blank\">Ukraine strikes may have hit 15% of Russian refinery capacity — NATO official</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Arab News PK</font>",
-          "source": "Arab News PK",
-          "publishedAt": "Sun, 06 Sep 2026 06:14:59 GMT",
-          "publishedMs": 1788675299000,
+          "title": "Russia launches huge drone attack on western Ukraine by NATO’s border, killing six - DD News",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSVE4RTA0S2puVUpPeXl2VHZPaTFoN21fOFEtdEVNNzM4X2lQMnVSM2d3Wm1qWFFuSmVPY1hZVTFEenc0X201SWxBZERuWXlZY3FsdlZsdG1Kd3ZKYmZXTm95WTBpeWZOdTlXM0FGcjIzN2dKQXBaM1lXRkJVZllFTEJETC1zMXppai1tQk9Vbm9hNnZtNXpsMTl4SEJabFZOc3N4NlR4X21adw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSVE4RTA0S2puVUpPeXl2VHZPaTFoN21fOFEtdEVNNzM4X2lQMnVSM2d3Wm1qWFFuSmVPY1hZVTFEenc0X201SWxBZERuWXlZY3FsdlZsdG1Kd3ZKYmZXTm95WTBpeWZOdTlXM0FGcjIzN2dKQXBaM1lXRkJVZllFTEJETC1zMXppai1tQk9Vbm9hNnZtNXpsMTl4SEJabFZOc3N4NlR4X21adw?oc=5\" target=\"_blank\">Russia launches huge drone attack on western Ukraine by NATO’s border, killing six</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DD News</font>",
+          "source": "DD News",
+          "publishedAt": "Sat, 05 Sep 2026 19:41:46 GMT",
+          "publishedMs": 1788637306000,
           "relevance": 3
         },
         {
-          "title": "A Drone Crosses Into Estonia as NATO Jets Scramble - MiGFlug",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQlNVSmN1TDFwZTZ5UW51ZExtdDZSN2I0OW1vZzBrRlFqOGdOS1hvYUdTNENLSW9NRmFzWXVubjBFZkJPem4tdXJld09NdWgybUd3ZEFZSUs0NWd0SjV0UUJZaTQ4X05RRVE1SUJ5ZWF0WXBoUnJveG9HcHhaZ1REQmRvcXZPNEN6R0NPLQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQQlNVSmN1TDFwZTZ5UW51ZExtdDZSN2I0OW1vZzBrRlFqOGdOS1hvYUdTNENLSW9NRmFzWXVubjBFZkJPem4tdXJld09NdWgybUd3ZEFZSUs0NWd0SjV0UUJZaTQ4X05RRVE1SUJ5ZWF0WXBoUnJveG9HcHhaZ1REQmRvcXZPNEN6R0NPLQ?oc=5\" target=\"_blank\">A Drone Crosses Into Estonia as NATO Jets Scramble</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MiGFlug</font>",
-          "source": "MiGFlug",
-          "publishedAt": "Sat, 05 Sep 2026 19:27:58 GMT",
-          "publishedMs": 1788636478000,
-          "relevance": 2
-        },
-        {
-          "title": "Des drones franchissent la ligne rouge et pénètrent dans l'OTAN. - MiGFlug",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TYVFCTnRtN2pLQVdfaVI4TG9TUkxwVFJ0dHNlTlllczlLZld0NTBqc3JmZnZadjk3QVU0aWVwdHNTMVpfUTcybEREdE1Hb19sTFpPZWYtemQ1amNsN21EM1lrNVJ0cnU3UC1rRElCd0JyTldPY25OMHVGTQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE1TYVFCTnRtN2pLQVdfaVI4TG9TUkxwVFJ0dHNlTlllczlLZld0NTBqc3JmZnZadjk3QVU0aWVwdHNTMVpfUTcybEREdE1Hb19sTFpPZWYtemQ1amNsN21EM1lrNVJ0cnU3UC1rRElCd0JyTldPY25OMHVGTQ?oc=5\" target=\"_blank\">Des drones franchissent la ligne rouge et pénètrent dans l'OTAN.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MiGFlug</font>",
-          "source": "MiGFlug",
-          "publishedAt": "Sat, 05 Sep 2026 15:05:08 GMT",
-          "publishedMs": 1788620708000,
-          "relevance": 1
-        },
-        {
-          "title": "Ukraine equips Magura MV11 unmanned vessel with vertical-launch Sting interceptors for mobile counter-drone defense over Black Sea - Defence Industry Europe",
-          "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaGN4em9UOWZKb3N5dWsySnlaai1zci1hTE9JV0paSVh1b2N1OXJZY21melU3NEZmeVNYMlpEOTNrcnprZ3dMS290UG5VeWtoeTVQM2EyUGZvbDdVODl6VU1kNXVZcUZYWkt2V3c4SUxFUU9kX2NiMGVnRFl0ckU4UWI0ZFpuSGV3ZnJmbUFBQWpPZGNQbmlSdlc4eDJya0k5WExQTy1SRHlyV000QnpmM3ZJTkU1TWF5dGI5ODBOZXBGck9SX2ZxVXJ1NF82U2ZpQmo0NUoyUWZJNVRKc2hFNnNFRElwR3dqeS04WGJGU2o?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxPaGN4em9UOWZKb3N5dWsySnlaai1zci1hTE9JV0paSVh1b2N1OXJZY21melU3NEZmeVNYMlpEOTNrcnprZ3dMS290UG5VeWtoeTVQM2EyUGZvbDdVODl6VU1kNXVZcUZYWkt2V3c4SUxFUU9kX2NiMGVnRFl0ckU4UWI0ZFpuSGV3ZnJmbUFBQWpPZGNQbmlSdlc4eDJya0k5WExQTy1SRHlyV000QnpmM3ZJTkU1TWF5dGI5ODBOZXBGck9SX2ZxVXJ1NF82U2ZpQmo0NUoyUWZJNVRKc2hFNnNFRElwR3dqeS04WGJGU2o?oc=5\" target=\"_blank\">Ukraine equips Magura MV11 unmanned vessel with vertical-launch Sting interceptors for mobile counter-drone defense over Black Sea</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Defence Industry Europe</font>",
-          "source": "Defence Industry Europe",
-          "publishedAt": "Sat, 05 Sep 2026 09:10:29 GMT",
-          "publishedMs": 1788599429000,
-          "relevance": 1
-        },
-        {
-          "title": "Drones Are Changing Warfare, but They Are Not Replacing Artillery: Lessons From Ukraine - townhall.com",
-          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQckt3SkZaeDJwU2Exazl5ZkkySi1KQ0h2Q1BscFo1bVdxYldFelR3eUJmNEc0UkZ2YlZsTlRsd3F6ZVJKUGFqdzF3b0FMUEtqaUZtVHJVdy1TbGptRE9ZY05LUG9zOEhGaWE2aUhmdW1xQV9Pd01QZnpqTkR3UTJnYm9PbTZwRnlKTDdqTUwtQ3BSS1ExcktlUV9LaHZLS2JyQmRIMElyYmJpbkxVaWZnX3BmMnhXVVZENGZleXdUcENHcUpnTzM2Z2NwbXhuTTU1cWprR0czbGw4ZGNGeTR0ZlBndl9HVDVFa1E?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxQckt3SkZaeDJwU2Exazl5ZkkySi1KQ0h2Q1BscFo1bVdxYldFelR3eUJmNEc0UkZ2YlZsTlRsd3F6ZVJKUGFqdzF3b0FMUEtqaUZtVHJVdy1TbGptRE9ZY05LUG9zOEhGaWE2aUhmdW1xQV9Pd01QZnpqTkR3UTJnYm9PbTZwRnlKTDdqTUwtQ3BSS1ExcktlUV9LaHZLS2JyQmRIMElyYmJpbkxVaWZnX3BmMnhXVVZENGZleXdUcENHcUpnTzM2Z2NwbXhuTTU1cWprR0czbGw4ZGNGeTR0ZlBndl9HVDVFa1E?oc=5\" target=\"_blank\">Drones Are Changing Warfare, but They Are Not Replacing Artillery: Lessons From Ukraine</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">townhall.com</font>",
-          "source": "townhall.com",
-          "publishedAt": "Sat, 05 Sep 2026 04:01:00 GMT",
-          "publishedMs": 1788580860000,
-          "relevance": 1
-        },
-        {
-          "title": "Russia’s air war exposes Ukraine’s winter defense gap - Straight Arrow",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvSldocm1tVTR2VmpIYWlWRGlfbEJqaUtXWVV1dmZWNE5ydkh0YWg1elp1OTRJV05qUU1LMWZuUzN5M1RwbFBNVW9fMTNjQ3laR2VKOENvcWFjYUJkZDIxRl9SR3ZLWjZJblc5dHhxdldoOHFZU05NUmFBOA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBvSldocm1tVTR2VmpIYWlWRGlfbEJqaUtXWVV1dmZWNE5ydkh0YWg1elp1OTRJV05qUU1LMWZuUzN5M1RwbFBNVW9fMTNjQ3laR2VKOENvcWFjYUJkZDIxRl9SR3ZLWjZJblc5dHhxdldoOHFZU05NUmFBOA?oc=5\" target=\"_blank\">Russia’s air war exposes Ukraine’s winter defense gap</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Straight Arrow</font>",
-          "source": "Straight Arrow",
-          "publishedAt": "Fri, 04 Sep 2026 16:41:16 GMT",
-          "publishedMs": 1788540076000,
-          "relevance": 2
-        },
-        {
-          "title": "NATO has confirmed that it will continue to supply weapons to Ukraine under the PURL program - UA.NEWS",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdTVVQnRHV2piR1pscUtPdFhqa3B0VUY4UE5JR2hQck1TcTIxVnZBSk9NdXQ1SU5EaEw1OVRJLUs4WkVjVVBqeVNxVldjbHE2am1wMm5UUi0zVDZQdGdmaXlfR2plR085Qzh4aUNxVWJ6akl0WkRTODUxN3ZqaVBHNGswS0R4dEhDNDg2cXFLak1pVlpCSFlj?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQdTVVQnRHV2piR1pscUtPdFhqa3B0VUY4UE5JR2hQck1TcTIxVnZBSk9NdXQ1SU5EaEw1OVRJLUs4WkVjVVBqeVNxVldjbHE2am1wMm5UUi0zVDZQdGdmaXlfR2plR085Qzh4aUNxVWJ6akl0WkRTODUxN3ZqaVBHNGswS0R4dEhDNDg2cXFLak1pVlpCSFlj?oc=5\" target=\"_blank\">NATO has confirmed that it will continue to supply weapons to Ukraine under the PURL program</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">UA.NEWS</font>",
-          "source": "UA.NEWS",
-          "publishedAt": "Fri, 04 Sep 2026 16:29:18 GMT",
-          "publishedMs": 1788539358000,
-          "relevance": 2
-        },
-        {
-          "title": "Kiev's attempts to get air defense systems and money from the West have failed — Politico - eadaily.com",
-          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd2NjaXNCbG9xVE5aY3NOVlNMTUpUSWVMYllyN3JIcThGb3MyVW01OE5rY1Y4SlZEOElCVzVuMWZOOWMwRS1BLXBnRlR2emFRZlhRMDE1R0ZnaHFsLVZUX3FiakNoRFBEcUpVY2k3OXA4dVJKQl9wdEtva3Z4MjB5N0M2d1VraG44Y3hoV1lPVkEtLTNmUzJqQmYySmxBbjU5dk16U2pPYWlvSlBkbDgySF94b3gtLUVCTlZidGNJVEpxWld1OG5KcnB3UWvSAcwBQVVfeXFMTXdjY2lzQmxvcVROWmNzTlZTTE1KVEllTGJZcjdySHE4Rm9zMlVtNThOa2NWOEpWRDhJQlc1bjFmTjljMEUtQS1wZ0ZUdnphUWZYUTAxNUdGZ2hxbC1WVF9xYmpDaERQRHFKVWNpNzlwOHVSSkJfcHRLb2t2eDIweTdDNndVa2huOGN4aFdZT1ZBLS0zZlMyakJmMkpsQW41OXZNelNqT2Fpb0pQZGw4MkhfeG94LS1FQk5WYnRjSVRKcVpXdThuSnJwd1Fr?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxNd2NjaXNCbG9xVE5aY3NOVlNMTUpUSWVMYllyN3JIcThGb3MyVW01OE5rY1Y4SlZEOElCVzVuMWZOOWMwRS1BLXBnRlR2emFRZlhRMDE1R0ZnaHFsLVZUX3FiakNoRFBEcUpVY2k3OXA4dVJKQl9wdEtva3Z4MjB5N0M2d1VraG44Y3hoV1lPVkEtLTNmUzJqQmYySmxBbjU5dk16U2pPYWlvSlBkbDgySF94b3gtLUVCTlZidGNJVEpxWld1OG5KcnB3UWvSAcwBQVVfeXFMTXdjY2lzQmxvcVROWmNzTlZTTE1KVEllTGJZcjdySHE4Rm9zMlVtNThOa2NWOEpWRDhJQlc1bjFmTjljMEUtQS1wZ0ZUdnphUWZYUTAxNUdGZ2hxbC1WVF9xYmpDaERQRHFKVWNpNzlwOHVSSkJfcHRLb2t2eDIweTdDNndVa2huOGN4aFdZT1ZBLS0zZlMyakJmMkpsQW41OXZNelNqT2Fpb0pQZGw4MkhfeG94LS1FQk5WYnRjSVRKcVpXdThuSnJwd1Fr?oc=5\" target=\"_blank\">Kiev's attempts to get air defense systems and money from the West have failed — Politico</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">eadaily.com</font>",
-          "source": "eadaily.com",
-          "publishedAt": "Fri, 04 Sep 2026 09:47:00 GMT",
-          "publishedMs": 1788515220000,
+          "title": "Zelensky airspace threats backfire as Shahed Tracker shows failing Ukrainian air defense - Bankingnews",
+          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRTY5b3I1WEtyX0xhNlYtWjFRTl9Xb3d6ZjJ1TE1ZbW56NUZnaUJWRGRwRVJYc2l2YmxYSklxNTZidnlLdWRxVXVsazJrbVdKenJXdGRlNE5Pa2IzVnoyQS1yZVZhaUxpSHJZbE1RMGlVb2Q1NzBHUzliTFhnZGpadFBERTBPcWZYLVNvdWdTQ1phbE9HLV96RlVzU2RCR2h5SzNUTEhPRXZkVGVKR2V3YkpMSmZUaWRITXlMTGxjamYwRVByOVM3X0tVbnE5MEUyZ3VtakVYMDdCeTZ4b0VObXE1dUE4RUNDNlFBVk5iMk4wUVpi?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi9AFBVV95cUxPRTY5b3I1WEtyX0xhNlYtWjFRTl9Xb3d6ZjJ1TE1ZbW56NUZnaUJWRGRwRVJYc2l2YmxYSklxNTZidnlLdWRxVXVsazJrbVdKenJXdGRlNE5Pa2IzVnoyQS1yZVZhaUxpSHJZbE1RMGlVb2Q1NzBHUzliTFhnZGpadFBERTBPcWZYLVNvdWdTQ1phbE9HLV96RlVzU2RCR2h5SzNUTEhPRXZkVGVKR2V3YkpMSmZUaWRITXlMTGxjamYwRVByOVM3X0tVbnE5MEUyZ3VtakVYMDdCeTZ4b0VObXE1dUE4RUNDNlFBVk5iMk4wUVpi?oc=5\" target=\"_blank\">Zelensky airspace threats backfire as Shahed Tracker shows failing Ukrainian air defense</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bankingnews</font>",
+          "source": "Bankingnews",
+          "publishedAt": "Sat, 05 Sep 2026 13:25:02 GMT",
+          "publishedMs": 1788614702000,
           "relevance": 1
         }
       ],
@@ -3287,7 +3287,7 @@
           "heat": 92
         },
         {
-          "t": "2026-09-06T13:46",
+          "t": "2026-09-07T13:47",
           "heat": 85
         }
       ]
@@ -3361,13 +3361,13 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-09-06T13:46:52.697Z",
+      "refreshedAt": "2026-09-07T13:47:08.092Z",
       "headlines": [
         {
-          "title": "Anti-Ballistic Missile System Depletion Strains Readiness - Legis1",
+          "title": "Anti-Ballistic Missile System Depletion Strains Readiness - legis1.com",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WandSUU5rOGtCWWNDcklTUzNCcEhoRmc1aXQ2ZVByNjdzLS1pbXVnSUtsOGtPbjFrRHA2WjVldDUzc2lXV3dKZm9hYlZKbDdhTl93Vm41Z3RzRnJBLVpzOG13Z242bnFIdThkTTVNNko0TWZFMnBxag?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE1WandSUU5rOGtCWWNDcklTUzNCcEhoRmc1aXQ2ZVByNjdzLS1pbXVnSUtsOGtPbjFrRHA2WjVldDUzc2lXV3dKZm9hYlZKbDdhTl93Vm41Z3RzRnJBLVpzOG13Z242bnFIdThkTTVNNko0TWZFMnBxag?oc=5\" target=\"_blank\">Anti-Ballistic Missile System Depletion Strains Readiness</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Legis1</font>",
-          "source": "Legis1",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE1WandSUU5rOGtCWWNDcklTUzNCcEhoRmc1aXQ2ZVByNjdzLS1pbXVnSUtsOGtPbjFrRHA2WjVldDUzc2lXV3dKZm9hYlZKbDdhTl93Vm41Z3RzRnJBLVpzOG13Z242bnFIdThkTTVNNko0TWZFMnBxag?oc=5\" target=\"_blank\">Anti-Ballistic Missile System Depletion Strains Readiness</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">legis1.com</font>",
+          "source": "legis1.com",
           "publishedAt": "Thu, 03 Sep 2026 19:56:35 GMT",
           "publishedMs": 1788465395000,
           "relevance": 2
@@ -3391,15 +3391,6 @@
           "relevance": 1
         },
         {
-          "title": "Pentagon Budget Docs Show Years-Long Wait to Rebuild US Munitions Stocks - Newsmax",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRXhxd00welUydWpNcWpXa0RGZF81dWlPMjVkY2hoWlNQY0NXb3F3aWhhVGFCMTF3cEhJLXNCTUlkRTV5Y3B1SDhLbllzT01rU0hHTzZwaWdJZjJadlFiRC1kTEZHT0x4Zmc5SDZRSTN0TmJ2QjMzLUU4RXpnQkRUY0E4aDlIV1N6SFRSSm9R?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNRXhxd00welUydWpNcWpXa0RGZF81dWlPMjVkY2hoWlNQY0NXb3F3aWhhVGFCMTF3cEhJLXNCTUlkRTV5Y3B1SDhLbllzT01rU0hHTzZwaWdJZjJadlFiRC1kTEZHT0x4Zmc5SDZRSTN0TmJ2QjMzLUU4RXpnQkRUY0E4aDlIV1N6SFRSSm9R?oc=5\" target=\"_blank\">Pentagon Budget Docs Show Years-Long Wait to Rebuild US Munitions Stocks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Newsmax</font>",
-          "source": "Newsmax",
-          "publishedAt": "Wed, 02 Sep 2026 12:56:00 GMT",
-          "publishedMs": 1788353760000,
-          "relevance": 1
-        },
-        {
           "title": "US signs 2 missile agreements to expand factories and speed deliveries - Interesting Engineering",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZDIwNy1ab1Y0Y28tUWhwTDlQejJDX2ZKaENnQXVHZ291UVp0SEU2LWFsRHdyeEQwQ3g3OWhueTNsWVpOaVpIcTVVbC0tLUdVYlRJWDV4Y0JtVVVNUXY5OWlwSWdiRDIxa3dJRGYxMDhEVGFHNDAzbDU2MG1fRjFtT0REblZicUFwajN0OUh0UDl3Ni1wS0ZwVzVrbS1qcTVmb016TkVkWW5NVzFjZnhFRG5vMWtvUHBQQy0zdjlscWMwdw?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZDIwNy1ab1Y0Y28tUWhwTDlQejJDX2ZKaENnQXVHZ291UVp0SEU2LWFsRHdyeEQwQ3g3OWhueTNsWVpOaVpIcTVVbC0tLUdVYlRJWDV4Y0JtVVVNUXY5OWlwSWdiRDIxa3dJRGYxMDhEVGFHNDAzbDU2MG1fRjFtT0REblZicUFwajN0OUh0UDl3Ni1wS0ZwVzVrbS1qcTVmb016TkVkWW5NVzFjZnhFRG5vMWtvUHBQQy0zdjlscWMwdw?oc=5\" target=\"_blank\">US signs 2 missile agreements to expand factories and speed deliveries</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Interesting Engineering</font>",
@@ -3407,6 +3398,15 @@
           "publishedAt": "Tue, 01 Sep 2026 12:47:00 GMT",
           "publishedMs": 1788266820000,
           "relevance": 2
+        },
+        {
+          "title": "The U.S. Is Low On Munitions. How Can It Replenish Its Stockpiles? - Forbes",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2RvRHVWczhwOWRMZVJGY00yYUh0SjE3bjFZZEJEc3FUbzE5V2dvZG1WSjhmLUV2eWE4ZnFIWXpOcVVObGVCUEJVNFF1VE8tMkpJdHQyeGtmNnJvT3A1Z3drcXhzcTZQa3FwWjgyVnlZQmh4LU9LMG03U2dfLWhkQm1RdEVKcmV1WHVkcjZkSVFxWmpHbnJiTkxHaHpVVlpRd2o1ZjlCdGVmQXc2NHNvUUpBX0VENGM?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2RvRHVWczhwOWRMZVJGY00yYUh0SjE3bjFZZEJEc3FUbzE5V2dvZG1WSjhmLUV2eWE4ZnFIWXpOcVVObGVCUEJVNFF1VE8tMkpJdHQyeGtmNnJvT3A1Z3drcXhzcTZQa3FwWjgyVnlZQmh4LU9LMG03U2dfLWhkQm1RdEVKcmV1WHVkcjZkSVFxWmpHbnJiTkxHaHpVVlpRd2o1ZjlCdGVmQXc2NHNvUUpBX0VENGM?oc=5\" target=\"_blank\">The U.S. Is Low On Munitions. How Can It Replenish Its Stockpiles?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Forbes</font>",
+          "source": "Forbes",
+          "publishedAt": "Tue, 01 Sep 2026 10:00:00 GMT",
+          "publishedMs": 1788256800000,
+          "relevance": 1
         },
         {
           "title": "U.S. to Triple Patriot and Quadruple THAAD Production After Iran War Stresses Missile Defenses - israeldefense.co.il",
@@ -3427,10 +3427,10 @@
           "relevance": 2
         },
         {
-          "title": "Pentagon to Increase Production of Patriot, THADD Interceptor Missiles - ntd.com",
+          "title": "Pentagon to Increase Production of Patriot, THADD Interceptor Missiles - NTD News",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWRFUkhEc010NTNidlZ3WHV1N1pVY0lOZm9zODZUUGJZSmpJbTdPS2J2TFhBZ3dLQW51TGFrYkE1enFndDd5Sm9pcGR5dkpfNTVYUlB6NFZBQjhxRENfSk9FeFFEZnJXdjhDdTZqZFlmX1RiMGpBaUdFb29jZDM1NXM2V0wyWEwzZzVVUldjaW1OSEFIX08wU0UtbGsxdnhnb3dZTg?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWRFUkhEc010NTNidlZ3WHV1N1pVY0lOZm9zODZUUGJZSmpJbTdPS2J2TFhBZ3dLQW51TGFrYkE1enFndDd5Sm9pcGR5dkpfNTVYUlB6NFZBQjhxRENfSk9FeFFEZnJXdjhDdTZqZFlmX1RiMGpBaUdFb29jZDM1NXM2V0wyWEwzZzVVUldjaW1OSEFIX08wU0UtbGsxdnhnb3dZTg?oc=5\" target=\"_blank\">Pentagon to Increase Production of Patriot, THADD Interceptor Missiles</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ntd.com</font>",
-          "source": "ntd.com",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNeWRFUkhEc010NTNidlZ3WHV1N1pVY0lOZm9zODZUUGJZSmpJbTdPS2J2TFhBZ3dLQW51TGFrYkE1enFndDd5Sm9pcGR5dkpfNTVYUlB6NFZBQjhxRENfSk9FeFFEZnJXdjhDdTZqZFlmX1RiMGpBaUdFb29jZDM1NXM2V0wyWEwzZzVVUldjaW1OSEFIX08wU0UtbGsxdnhnb3dZTg?oc=5\" target=\"_blank\">Pentagon to Increase Production of Patriot, THADD Interceptor Missiles</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NTD News</font>",
+          "source": "NTD News",
           "publishedAt": "Mon, 31 Aug 2026 20:11:58 GMT",
           "publishedMs": 1788207118000,
           "relevance": 2
@@ -3445,10 +3445,10 @@
           "relevance": 1
         },
         {
-          "title": "America faces a crisis in our military arsenal that Trump is racing to fix - wfmd.com",
+          "title": "America faces a crisis in our military arsenal that Trump is racing to fix - 930 WFMD Free Talk",
           "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNHdYSi10UE1jdEt1b2dsNzVHSHR6OHpFNm52T1ZRaFNsUmNEMlRDMzZmX210Qy1rTGhGdm44dFluejhGd0lSeUV0NmxTbkFjaEpMTFlBZmM0SHE1LXhwdlZLRms3OElBaGhLblRFcTladXE5dVpkUlZxTzNUeFg3RlRCczMtTW9vbEpBY0xsY21pbWgzcnpFN05BMTN4QU1fd1lodHpNSTdvNGc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNHdYSi10UE1jdEt1b2dsNzVHSHR6OHpFNm52T1ZRaFNsUmNEMlRDMzZmX210Qy1rTGhGdm44dFluejhGd0lSeUV0NmxTbkFjaEpMTFlBZmM0SHE1LXhwdlZLRms3OElBaGhLblRFcTladXE5dVpkUlZxTzNUeFg3RlRCczMtTW9vbEpBY0xsY21pbWgzcnpFN05BMTN4QU1fd1lodHpNSTdvNGc?oc=5\" target=\"_blank\">America faces a crisis in our military arsenal that Trump is racing to fix</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">wfmd.com</font>",
-          "source": "wfmd.com",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNHdYSi10UE1jdEt1b2dsNzVHSHR6OHpFNm52T1ZRaFNsUmNEMlRDMzZmX210Qy1rTGhGdm44dFluejhGd0lSeUV0NmxTbkFjaEpMTFlBZmM0SHE1LXhwdlZLRms3OElBaGhLblRFcTladXE5dVpkUlZxTzNUeFg3RlRCczMtTW9vbEpBY0xsY21pbWgzcnpFN05BMTN4QU1fd1lodHpNSTdvNGc?oc=5\" target=\"_blank\">America faces a crisis in our military arsenal that Trump is racing to fix</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">930 WFMD Free Talk</font>",
+          "source": "930 WFMD Free Talk",
           "publishedAt": "Fri, 28 Aug 2026 09:33:35 GMT",
           "publishedMs": 1787909615000,
           "relevance": 1
@@ -4286,7 +4286,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-09-06T13:46",
+          "t": "2026-09-07T13:47",
           "heat": 70
         }
       ]
