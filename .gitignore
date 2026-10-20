@@ -24,3 +24,6 @@ ui-dist/.vite/
 
 # FTP uploader state (hashes of the last successful upload)
 scripts/.upload-manifest.json
+
+# Claude Code machine-local settings (permission allowlist, absolute paths)
+.claude/settings.local.json
