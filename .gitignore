@@ -14,3 +14,13 @@ data/server.log
 .env
 .env.local
 
+
+# Build staging (build.js swaps these into dist/)
+dist.tmp/
+dist.old/
+
+# Vite build manifest (used by scripts/check-size.mjs only)
+ui-dist/.vite/
+
+# FTP uploader state (hashes of the last successful upload)
+scripts/.upload-manifest.json

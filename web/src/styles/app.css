@@ -1,0 +1,312 @@
+@import "tailwindcss";
+
+/* ---------- design tokens ---------- */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Chakra Petch", "Inter", ui-sans-serif, sans-serif;
+
+  --color-bg: #05070d;
+  --color-bg-2: #080b14;
+  --color-panel: rgb(12 16 26 / 0.62);
+  --color-panel-solid: rgb(8 11 18 / 0.9);
+  --color-raise: rgb(255 255 255 / 0.035);
+  --color-raise-2: rgb(255 255 255 / 0.06);
+  --color-line: rgb(148 163 184 / 0.11);
+  --color-line-2: rgb(148 163 184 / 0.2);
+  --color-text: #e7eaf1;
+  --color-dim: #a6aec0;
+  --color-muted: #6f7890;
+  --color-faint: #3f475a;
+
+  /* chrome + focus only */
+  --color-accent: #8b93ff;
+  --color-accent-soft: rgb(139 147 255 / 0.14);
+
+  /* direction / P&L */
+  --color-long: #34d399;
+  --color-long-soft: rgb(52 211 153 / 0.12);
+  --color-short: #f87171;
+  --color-short-soft: rgb(248 113 113 / 0.12);
+
+  /* heat ramp: the only color on the globe, gauge and heat bars */
+  --color-heat-low: #4fb3e8;
+  --color-heat-moderate: #f5d76e;
+  --color-heat-high: #ff9f43;
+  --color-heat-critical: #ff4757;
+
+  --radius-panel: 14px;
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- base ---------- */
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-faint) transparent;
+  }
+  body {
+    min-height: 100dvh;
+    background:
+      radial-gradient(1200px 600px at 12% -10%, rgb(99 102 241 / 0.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgb(255 71 87 / 0.05), transparent 60%),
+      var(--color-bg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: rgb(139 147 255 / 0.35);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  button {
+    cursor: pointer;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ---------- components ---------- */
+@layer components {
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .label {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Glass panel with a 1px gradient hairline. Never used over the live canvas (see .panel-solid). */
+  .panel {
+    position: relative;
+    border-radius: var(--radius-panel);
+    background: var(--color-panel);
+    backdrop-filter: blur(14px) saturate(1.2);
+    -webkit-backdrop-filter: blur(14px) saturate(1.2);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.04),
+      0 1px 0 rgb(0 0 0 / 0.4),
+      0 20px 40px -24px rgb(0 0 0 / 0.6);
+  }
+  .panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.03) 35%, rgb(255 255 255 / 0.02) 65%, rgb(139 147 255 / 0.12));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .panel-solid {
+    background: var(--color-panel-solid);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    color: var(--color-dim);
+    background: var(--color-raise);
+    border: 1px solid var(--color-line);
+    white-space: nowrap;
+  }
+
+  .seg {
+    display: inline-flex;
+    padding: 3px;
+    gap: 2px;
+    border-radius: 10px;
+    background: rgb(255 255 255 / 0.03);
+    border: 1px solid var(--color-line);
+  }
+  .seg > button {
+    height: 28px;
+    padding: 0 11px;
+    border-radius: 7px;
+    font-size: 12.5px;
+    color: var(--color-dim);
+    transition: color 0.15s, background-color 0.15s;
+  }
+  .seg > button:hover {
+    color: var(--color-text);
+  }
+  .seg > button[aria-pressed="true"],
+  .seg > button[aria-selected="true"] {
+    color: var(--color-text);
+    background: var(--color-raise-2);
+    box-shadow: inset 0 0 0 1px var(--color-line-2);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 34px;
+    padding: 0 14px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text);
+    background: var(--color-raise-2);
+    border: 1px solid var(--color-line-2);
+    transition: background-color 0.15s, border-color 0.15s, transform 0.15s;
+  }
+  .btn:hover {
+    background: rgb(255 255 255 / 0.09);
+    border-color: rgb(148 163 184 / 0.32);
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn-accent {
+    background: var(--color-accent-soft);
+    border-color: rgb(139 147 255 / 0.35);
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+  }
+  .data-table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 10px;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    background: var(--color-panel-solid);
+    border-bottom: 1px solid var(--color-line);
+    white-space: nowrap;
+  }
+  .data-table td {
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--color-line);
+    vertical-align: middle;
+  }
+  .data-table tbody tr {
+    transition: background-color 0.12s;
+  }
+  .data-table tbody tr[data-row]:hover {
+    background: rgb(255 255 255 / 0.03);
+  }
+  .data-table .r {
+    text-align: right;
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, rgb(255 255 255 / 0.04), rgb(255 255 255 / 0.08), rgb(255 255 255 / 0.04));
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+    border-radius: 6px;
+  }
+
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .scroll-thin {
+    scrollbar-width: thin;
+  }
+
+  .link-quiet {
+    color: var(--color-dim);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s var(--ease-out-quint), color 0.15s;
+  }
+  .link-quiet:hover {
+    color: var(--color-text);
+    background-size: 100% 1px;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes ring-out {
+  from {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}

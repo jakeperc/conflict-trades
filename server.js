@@ -8,28 +8,55 @@ const trader = require("./lib/trader");
 
 const PORT = process.env.PORT || 8787;
 const PUBLIC_DIR = path.join(__dirname, "public");
+// New UI preview (prebuilt by `npm run build:ui`), served at /next/ with live data.
+const NEXT_DIR = path.join(__dirname, "ui-dist");
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".js": "application/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
-  ".svg": "image/svg+xml"
+  ".svg": "image/svg+xml",
+  ".png": "image/png",
+  ".webp": "image/webp",
+  ".ico": "image/x-icon",
+  ".woff2": "font/woff2",
+  ".woff": "font/woff",
+  ".bin": "application/octet-stream"
 };
 
 function getJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
     "Content-Type": "application/json; charset=utf-8",
-    "Cache-Control": "no-store"
+    "Cache-Control": "no-store",
+    "X-CT-Source": "live"
   });
   res.end(JSON.stringify(payload, null, 2));
 }
 
 function serveStatic(req, res) {
-  const safePath = path.normalize(req.url === "/" ? "/index.html" : req.url).replace(/^(\.\.[/\\])+/, "");
-  const filePath = path.join(PUBLIC_DIR, safePath);
+  let urlPath;
+  try {
+    urlPath = decodeURIComponent(req.url.split("?")[0]);
+  } catch {
+    res.writeHead(400);
+    res.end("Bad request");
+    return;
+  }
+  let baseDir = PUBLIC_DIR;
+  if (urlPath === "/next") {
+    res.writeHead(301, { Location: "/next/" });
+    res.end();
+    return;
+  }
+  if (urlPath.startsWith("/next/")) {
+    baseDir = NEXT_DIR;
+    urlPath = urlPath.slice("/next".length);
+  }
+  const safePath = path.normalize(urlPath === "/" ? "/index.html" : urlPath).replace(/^(\.\.[/\\])+/, "");
+  const filePath = path.join(baseDir, safePath);
 
-  if (!filePath.startsWith(PUBLIC_DIR)) {
+  if (!filePath.startsWith(baseDir)) {
     res.writeHead(403);
     res.end("Forbidden");
     return;
@@ -57,6 +84,9 @@ const server = http.createServer(async (req, res) => {
     res.end("Bad request");
     return;
   }
+
+  // The /next/ preview fetches relative api/*.json; answer those live too.
+  if (req.url.startsWith("/next/api/")) req.url = req.url.slice("/next".length);
 
   if (req.url.startsWith("/api/refresh")) {
     try {

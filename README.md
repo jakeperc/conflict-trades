@@ -24,6 +24,25 @@ http://localhost:8899
 
 Or double-click `run-dashboard.bat`. The slash commands below will restart the server in the background after each autonomous update.
 
+The new UI (v2) is served by the same server at `http://localhost:8899/next/`, with live data.
+
+## UI v2 (web/ → ui-dist/)
+
+The v2 UI is React 19 + Vite + react-three-fiber, in `web/`. It is built **once per UI change** into `ui-dist/`, which is committed. `node build.js` only copies `ui-dist/` and freezes the API JSON, so the daily automation never needs `node_modules`.
+
+```powershell
+npm ci                 # once, or after package.json changes
+npm run dev            # Vite on :5173, proxies /api to server.js on :8899
+npm run build:ui       # web/ -> ui-dist/, then checks bundle budgets (initial <=160 KB, globe <=250 KB gzip)
+npm test               # vitest: baseline roll, derived metrics, drawer lookup, API contract
+node build.js          # dist/: legacy UI at /, v2 at /next/, frozen api/*.json in both
+```
+
+- **Data paths are relative.** The UI always fetches `api/<name>.json`. `server.js` answers those live (and tags them `X-CT-Source: live`, which turns the status pill to LIVE). On the static host they are the frozen snapshots (pill reads DAILY).
+- **Globe.** It shows on desktop only: fine pointer, motion allowed, WebGL2 and at least 4 GB of memory. Everyone else gets the flat SVG map. `?gl=1` / `?gl=0` or the 2D/3D button overrides this, and the choice is stored as `ct-gl`. Land dots are baked by `npm run bake:land` into `web/public/land.bin`.
+- **Theater geo.** Each scenario has a `geo` block in `data/config.json` and its template: `pos` [lng, lat], `label`, and `lanes[]` with `from`/`to`/`sectors`/`subScore`. A scenario without `geo` is listed as Unmapped and never placed on the map.
+- **Build safety.** `build.js` builds into `dist.tmp/`, contract-checks the payloads (`lib/contract.js`), and only then swaps the result into `dist/`. `scripts/upload_ftp.py` uploads by content hash, assets first and HTML last, and refuses an incomplete `dist/`. Use `--dry-run` to preview.
+
 ## What it does
 
 - Pulls live headlines from Google News RSS for each scenario
@@ -42,7 +61,9 @@ data/flows/                Per-command intel reports (Hormuz traffic, OPEC, etc)
 data/cache/                Raw API responses (gitignored).
 lib/                       Shared modules: fetcher, news, quotes, scenarios, intel, config.
 server.js                  Thin HTTP wrapper over lib/scenarios.js#buildPayload.
-public/                    Frontend (static HTML/CSS/JS).
+public/                    Legacy frontend (static HTML/CSS/JS), still the site root until cutover.
+web/                       v2 frontend source (React + Vite + R3F).
+ui-dist/                   v2 frontend build (committed; build.js copies it to dist/next/).
 .claude/commands/          Slash command definitions (one .md per command).
 .claude/scripts/           Node.js scripts invoked by commands.
 .claude/templates/         Scenario + intel-topic + commodity-track configs.
@@ -103,7 +124,7 @@ Each command pulls scenario-specific news, scores it against curated keyword wei
 
 ## Adding a new scenario
 
-1. Create `.claude/templates/scenarios/<key>.json` matching the shape of `korea.json` (key, title, subtitle, color, query, newsFallbackQueries, heatBase, summary, secondOrderEffects, indicatorBlueprints, trades[]).
+1. Create `.claude/templates/scenarios/<key>.json` matching the shape of `korea.json` (key, title, subtitle, color, geo, query, newsFallbackQueries, heatBase, summary, secondOrderEffects, indicatorBlueprints, trades[]). Use real coordinates for `geo`, or leave it out and the theater is listed as Unmapped.
 2. Optionally extend `computeSubScores()` in `lib/scenarios.js` with a scenario-specific sub-score map.
 3. Run `/add-scenario <key>`. The frontend tab strip auto-renders.
 
