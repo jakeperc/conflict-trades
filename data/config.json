@@ -5,6 +5,69 @@
       "title": "Iran / Hormuz / Yemen",
       "subtitle": "Hormuz freeze, tanker repricing, defense replenishment",
       "color": "#ff8a3d",
+      "geo": {
+        "pos": [
+          56.25,
+          26.57
+        ],
+        "label": "Strait of Hormuz",
+        "lanes": [
+          {
+            "id": "gulf-crude-asia",
+            "label": "Gulf crude to East Asia",
+            "from": [
+              56.25,
+              26.57
+            ],
+            "to": [
+              121.6,
+              29.9
+            ],
+            "sectors": [
+              "Energy",
+              "Oil ETF",
+              "Oil ETF (2x)",
+              "Oil services",
+              "Shipping"
+            ],
+            "subScore": "Shipping disruption"
+          },
+          {
+            "id": "red-sea",
+            "label": "Red Sea via Bab el-Mandeb",
+            "from": [
+              56.25,
+              26.57
+            ],
+            "to": [
+              43.4,
+              12.6
+            ],
+            "sectors": [
+              "Shipping",
+              "Brent ETF",
+              "Energy"
+            ],
+            "subScore": "Shipping disruption"
+          },
+          {
+            "id": "qatar-lng",
+            "label": "Qatar LNG to Asia",
+            "from": [
+              51.53,
+              25.9
+            ],
+            "to": [
+              139.8,
+              35.4
+            ],
+            "sectors": [
+              "Gas / LNG"
+            ],
+            "subScore": "Energy shock"
+          }
+        ]
+      },
       "query": "Iran Strait of Hormuz blockade Project Freedom mines tanker shipping oil CENTCOM Yemen Houthi",
       "newsFallbackQueries": [
         "Strait of Hormuz shipping Iran oil blockade",
@@ -212,6 +275,53 @@
       "title": "China / Taiwan",
       "subtitle": "Gray-zone pressure, customs blockade risk, Indo-Pacific defense bid",
       "color": "#5bc0ff",
+      "geo": {
+        "pos": [
+          119.6,
+          24.2
+        ],
+        "label": "Taiwan Strait",
+        "lanes": [
+          {
+            "id": "strait-transit",
+            "label": "Strait container transit",
+            "from": [
+              114.2,
+              22.3
+            ],
+            "to": [
+              121.8,
+              31.2
+            ],
+            "sectors": [
+              "Semiconductor manufacturing",
+              "Consumer hardware",
+              "Handsets",
+              "AI / Semis"
+            ],
+            "subScore": "Shipping disruption"
+          },
+          {
+            "id": "foundry-us",
+            "label": "Foundry output to US",
+            "from": [
+              120.97,
+              24.8
+            ],
+            "to": [
+              -118.26,
+              33.73
+            ],
+            "sectors": [
+              "Semiconductor manufacturing",
+              "Foundry alternatives",
+              "Semiconductor onshoring",
+              "AI / Semis"
+            ],
+            "subScore": "Semiconductor disruption"
+          }
+        ]
+      },
       "query": "China Taiwan Strait PLA ships aircraft drills customs blockade semiconductor supply chain US aid defense",
       "newsFallbackQueries": [
         "Taiwan China military drills Taiwan Strait",
@@ -419,6 +529,66 @@
       "title": "Russia / NATO / Western Europe",
       "subtitle": "Drone waves, Baltic intercepts, rearmament and LNG repricing",
       "color": "#c9ff66",
+      "geo": {
+        "pos": [
+          21,
+          57
+        ],
+        "label": "Baltic / eastern flank",
+        "lanes": [
+          {
+            "id": "us-lng-europe",
+            "label": "US LNG to Europe",
+            "from": [
+              -93.87,
+              29.73
+            ],
+            "to": [
+              4.05,
+              51.95
+            ],
+            "sectors": [
+              "Gas / LNG",
+              "Midstream",
+              "Natural gas",
+              "Gas ETF"
+            ],
+            "subScore": "Gas / power stress"
+          },
+          {
+            "id": "baltic-route",
+            "label": "Baltic shipping route",
+            "from": [
+              30.2,
+              59.9
+            ],
+            "to": [
+              10.9,
+              55.5
+            ],
+            "sectors": [
+              "Naval defense"
+            ],
+            "subScore": "Military escalation"
+          },
+          {
+            "id": "black-sea-grain",
+            "label": "Black Sea grain corridor",
+            "from": [
+              30.73,
+              46.48
+            ],
+            "to": [
+              29,
+              41.1
+            ],
+            "sectors": [
+              "Agriculture ETF"
+            ],
+            "subScore": "Military escalation"
+          }
+        ]
+      },
       "query": "Russia Ukraine NATO Baltic Sea intercept drones missile defense European rearmament Russian LNG ban",
       "newsFallbackQueries": [
         "Russia Ukraine NATO drones air defense",
@@ -638,6 +808,50 @@
       "title": "Korea / DPRK / Yellow Sea",
       "subtitle": "DPRK provocations, Korean memory knock-ons, Pacific defense pull",
       "color": "#b794f4",
+      "geo": {
+        "pos": [
+          126.9,
+          37.9
+        ],
+        "label": "Korean Peninsula",
+        "lanes": [
+          {
+            "id": "korea-chips-us",
+            "label": "Korean memory to US",
+            "from": [
+              129.04,
+              35.1
+            ],
+            "to": [
+              -118.26,
+              33.73
+            ],
+            "sectors": [
+              "AI / Semis",
+              "Consumer hardware",
+              "Korea equity"
+            ],
+            "subScore": "Semiconductor knock-on"
+          },
+          {
+            "id": "pacific-posture",
+            "label": "US Pacific posture (Guam)",
+            "from": [
+              144.8,
+              13.45
+            ],
+            "to": [
+              129.04,
+              35.1
+            ],
+            "sectors": [
+              "Defense",
+              "Drones / ISR"
+            ],
+            "subScore": "Allied posture"
+          }
+        ]
+      },
       "query": "North Korea DPRK Kim Jong Un ICBM missile test Yellow Sea provocation South Korea US defense alliance",
       "newsFallbackQueries": [
         "North Korea missile launch ICBM Pyongyang",

@@ -3,6 +3,14 @@
   "title": "Korea / DPRK / Yellow Sea",
   "subtitle": "DPRK provocations, Korean memory knock-ons, Pacific defense pull",
   "color": "#b794f4",
+  "geo": {
+    "pos": [126.9, 37.9],
+    "label": "Korean Peninsula",
+    "lanes": [
+      { "id": "korea-chips-us", "label": "Korean memory to US", "from": [129.04, 35.1], "to": [-118.26, 33.73], "sectors": ["AI / Semis", "Consumer hardware", "Korea equity"], "subScore": "Semiconductor knock-on" },
+      { "id": "pacific-posture", "label": "US Pacific posture (Guam)", "from": [144.8, 13.45], "to": [129.04, 35.1], "sectors": ["Defense", "Drones / ISR"], "subScore": "Allied posture" }
+    ]
+  },
   "query": "North Korea DPRK Kim Jong Un ICBM missile test Yellow Sea provocation South Korea US defense alliance",
   "newsFallbackQueries": [
     "North Korea missile launch ICBM Pyongyang",

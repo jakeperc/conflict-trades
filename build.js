@@ -1,12 +1,18 @@
-// Build a static `dist/` folder for FTP deployment to jakepercy.com.
+// Build a static `dist/` folder for FTP deployment to jakepercy.com/conflict-trades.
 //
-// The live site uses three dynamic endpoints (/api/refresh, /api/trader,
-// /api/config). On a static host we freeze each one into a JSON file under
-// dist/api/ and rewrite the frontend's fetch URLs to point at them.
+// The live site uses three dynamic endpoints (/api/refresh, /api/trader, /api/config).
+// On a static host each one is frozen into dist/api/*.json.
+//
+// Side-by-side phase: the legacy UI (public/) stays at the root and the new UI ships at next/.
+// The new UI is prebuilt into ui-dist/ by `npm run build:ui`, so this script needs no node_modules:
+// the daily automation keeps running it with plain Node.
+//
+// The build is atomic: everything lands in dist.tmp/, the snapshots are contract-checked, and only
+// then does dist.tmp/ replace dist/. A failed build leaves the previous dist/ untouched.
 //
 // Usage:
 //   node build.js            one-shot build
-//   node build.js --watch    rebuild on changes to public/ or data/
+//   node build.js --watch    rebuild on changes to public/, ui-dist/, data/ or lib/
 
 const fs = require("fs");
 const path = require("path");
@@ -14,11 +20,14 @@ const path = require("path");
 const { loadConfig } = require("./lib/config");
 const { buildPayload } = require("./lib/scenarios");
 const trader = require("./lib/trader");
+const { checkRefresh, checkTrader } = require("./lib/contract");
 
 const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, "public");
+const UI_DIR = path.join(ROOT, "ui-dist");
 const DIST_DIR = path.join(ROOT, "dist");
-const DIST_API_DIR = path.join(DIST_DIR, "api");
+const TMP_DIR = path.join(ROOT, "dist.tmp");
+const OLD_DIR = path.join(ROOT, "dist.old");
 
 function log(msg) {
   const ts = new Date().toISOString().slice(11, 19);
@@ -35,25 +44,15 @@ function copyFile(src, dst) {
   fs.copyFileSync(src, dst);
 }
 
-function copyDir(src, dst) {
+function copyDir(src, dst, skip = () => false) {
   fs.mkdirSync(dst, { recursive: true });
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    if (skip(entry.name)) continue;
     const s = path.join(src, entry.name);
     const d = path.join(dst, entry.name);
-    if (entry.isDirectory()) copyDir(s, d);
+    if (entry.isDirectory()) copyDir(s, d, skip);
     else copyFile(s, d);
   }
-}
-
-function rewriteAppJs() {
-  const srcPath = path.join(PUBLIC_DIR, "app.js");
-  const src = fs.readFileSync(srcPath, "utf-8");
-  // Point each API fetch at its static JSON snapshot.
-  const rewritten = src
-    .replace(/fetch\(\s*["']\/api\/refresh["']/g, 'fetch("api/refresh.json"')
-    .replace(/fetch\(\s*["']\/api\/trader["']/g, 'fetch("api/trader.json"')
-    .replace(/fetch\(\s*["']\/api\/config["']/g, 'fetch("api/config.json"');
-  fs.writeFileSync(path.join(DIST_DIR, "app.js"), rewritten, "utf-8");
 }
 
 function writeJson(file, payload) {
@@ -61,10 +60,34 @@ function writeJson(file, payload) {
   fs.writeFileSync(file, JSON.stringify(payload, null, 2), "utf-8");
 }
 
+// Legacy UI: point each API fetch at its static JSON snapshot.
+function copyLegacyUi(outDir) {
+  for (const entry of fs.readdirSync(PUBLIC_DIR, { withFileTypes: true })) {
+    if (entry.name === "app.js") continue;
+    const s = path.join(PUBLIC_DIR, entry.name);
+    const d = path.join(outDir, entry.name);
+    if (entry.isDirectory()) copyDir(s, d);
+    else copyFile(s, d);
+  }
+  const src = fs.readFileSync(path.join(PUBLIC_DIR, "app.js"), "utf-8");
+  const rewritten = src
+    .replace(/fetch\(\s*["']\/api\/refresh["']/g, 'fetch("api/refresh.json"')
+    .replace(/fetch\(\s*["']\/api\/trader["']/g, 'fetch("api/trader.json"')
+    .replace(/fetch\(\s*["']\/api\/config["']/g, 'fetch("api/config.json"');
+  fs.writeFileSync(path.join(outDir, "app.js"), rewritten, "utf-8");
+}
+
+// New UI: copy the prebuilt bundle (it already fetches relative api/*.json).
+function copyNewUi(outDir) {
+  if (!fs.existsSync(path.join(UI_DIR, "index.html"))) {
+    throw new Error("ui-dist/ is missing. Build the UI once with `npm ci && npm run build:ui`, then rerun node build.js.");
+  }
+  copyDir(UI_DIR, outDir, (name) => name === ".vite");
+}
+
 async function snapshotRefresh() {
   const { scenarios, fallbackQuotes } = loadConfig();
-  const payload = await buildPayload(scenarios, fallbackQuotes);
-  writeJson(path.join(DIST_API_DIR, "refresh.json"), payload);
+  return buildPayload(scenarios, fallbackQuotes);
 }
 
 async function snapshotTrader() {
@@ -91,7 +114,7 @@ async function snapshotTrader() {
     ? (liveEquity - state.startingCash) / state.startingCash
     : 0;
 
-  writeJson(path.join(DIST_API_DIR, "trader.json"), {
+  return {
     state,
     live: {
       equity: Number(liveEquity.toFixed(2)),
@@ -109,37 +132,54 @@ async function snapshotTrader() {
       tournamentMeta: calibration.tournamentMeta,
       applyBucketWeights: calibration.applyBucketWeights
     } : null
-  });
+  };
 }
 
-function snapshotConfig() {
-  writeJson(path.join(DIST_API_DIR, "config.json"), loadConfig());
+function swapIntoPlace() {
+  rmrf(OLD_DIR);
+  try {
+    if (fs.existsSync(DIST_DIR)) fs.renameSync(DIST_DIR, OLD_DIR);
+    fs.renameSync(TMP_DIR, DIST_DIR);
+    rmrf(OLD_DIR);
+  } catch (err) {
+    // A synced folder (OneDrive) can briefly lock a directory; fall back to copy.
+    log(`rename failed (${err.code}); copying instead`);
+    if (!fs.existsSync(DIST_DIR) && fs.existsSync(OLD_DIR)) fs.renameSync(OLD_DIR, DIST_DIR);
+    rmrf(DIST_DIR);
+    copyDir(TMP_DIR, DIST_DIR);
+    rmrf(TMP_DIR);
+    rmrf(OLD_DIR);
+  }
 }
 
 async function build() {
   const t0 = Date.now();
   log("Building dist/...");
+  rmrf(TMP_DIR);
+  fs.mkdirSync(TMP_DIR, { recursive: true });
 
-  rmrf(DIST_DIR);
-  fs.mkdirSync(DIST_DIR, { recursive: true });
+  try {
+    copyLegacyUi(TMP_DIR);
+    copyNewUi(path.join(TMP_DIR, "next"));
 
-  // 1. Copy static assets from public/ (everything except app.js, which we
-  //    rewrite below).
-  for (const entry of fs.readdirSync(PUBLIC_DIR, { withFileTypes: true })) {
-    if (entry.name === "app.js") continue;
-    const s = path.join(PUBLIC_DIR, entry.name);
-    const d = path.join(DIST_DIR, entry.name);
-    if (entry.isDirectory()) copyDir(s, d);
-    else copyFile(s, d);
+    const [refresh, traderPayload] = await Promise.all([snapshotRefresh(), snapshotTrader()]);
+    const problems = [...checkRefresh(refresh), ...checkTrader(traderPayload)];
+    if (problems.length) {
+      throw new Error(`API snapshot failed the contract check:\n  - ${problems.join("\n  - ")}`);
+    }
+    const config = loadConfig();
+    for (const dir of [path.join(TMP_DIR, "api"), path.join(TMP_DIR, "next", "api")]) {
+      writeJson(path.join(dir, "refresh.json"), refresh);
+      writeJson(path.join(dir, "trader.json"), traderPayload);
+      writeJson(path.join(dir, "config.json"), config);
+    }
+  } catch (err) {
+    rmrf(TMP_DIR);
+    throw err;
   }
-  rewriteAppJs();
 
-  // 2. Snapshot the API endpoints.
-  await snapshotRefresh();
-  await snapshotTrader();
-  snapshotConfig();
-
-  log(`Built in ${Date.now() - t0}ms -> ${path.relative(ROOT, DIST_DIR)}/`);
+  swapIntoPlace();
+  log(`Built in ${Date.now() - t0}ms -> ${path.relative(ROOT, DIST_DIR)}/ (legacy at /, new UI at /next/)`);
 }
 
 function watch() {
@@ -178,6 +218,7 @@ function watch() {
   };
 
   watchPath(PUBLIC_DIR, "public");
+  watchPath(UI_DIR, "ui-dist");
   watchPath(path.join(ROOT, "data"), "data");
   watchPath(path.join(ROOT, "lib"), "lib");
 
@@ -190,7 +231,7 @@ if (require.main === module) {
     watch();
   } else {
     build().catch((err) => {
-      console.error(err);
+      console.error(err.message || err);
       process.exit(1);
     });
   }

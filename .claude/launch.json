@@ -8,6 +8,12 @@
       "port": 8899
     },
     {
+      "name": "web-dev",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--config", "web/vite.config.mts"],
+      "port": 5173
+    },
+    {
       "name": "dist-preview",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
       "runtimeArgs": ["serve-dist.js"],

@@ -5,16 +5,26 @@ Service name: "conflict-trades-ftp". Stores username + password.
 Host and remote dir are configured below (no secrets, safe to commit).
 
 Tries FTPS first, falls back to plain FTP if the server doesn't support TLS.
-Mirrors local dist/ to remote dir: uploads new/changed files (by size),
-deletes remote files that no longer exist locally.
+Mirrors local dist/ to remote dir:
+  - uploads a file when its content hash differs from the last successful upload
+    (scripts/.upload-manifest.json) or its remote size differs. Size alone is not enough:
+    a rebuilt index.html can keep the same length while pointing at new hashed assets.
+  - upload order: hashed assets, then other files, then api/ JSON, then HTML pages last,
+    so a page never references an asset that isn't there yet.
+  - deletes remote files that no longer exist locally, only after every upload succeeded.
+  - refuses to run against an incomplete dist/ (a broken build would otherwise mirror-delete the site).
+
+Usage:
+  python scripts/upload_ftp.py            upload
+  python scripts/upload_ftp.py --dry-run  print the plan without connecting
 """
 
 import ftplib
+import hashlib
+import json
 import sys
 import time
 from pathlib import Path
-
-import keyring
 
 SERVICE = "conflict-trades-ftp"
 FTP_HOST = "ftp.jakepercy.com"
@@ -23,6 +33,9 @@ FTP_REMOTE_DIR = "/public_html/conflict-trades"
 ROOT = Path(__file__).resolve().parent.parent
 LOCAL_DIR = ROOT / "dist"
 LOG_FILE = ROOT / "scripts" / "upload_ftp.log"
+MANIFEST_FILE = ROOT / "scripts" / ".upload-manifest.json"
+REQUIRED = ["index.html", "api/refresh.json", "api/trader.json"]
+MIN_FILES = 6
 
 
 def log(msg):
@@ -39,6 +52,8 @@ def die(msg):
 
 
 def load_credentials():
+    import keyring
+
     cred = keyring.get_credential(SERVICE, None)
     if cred is None:
         die(
@@ -158,11 +173,69 @@ def delete_remote(ftp, remote_rel):
         ftp.cwd("..")
 
 
+def sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 16), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def upload_rank(rel):
+    """Assets first, pages last: a page must never point at an asset that isn't uploaded yet."""
+    name = rel.rsplit("/", 1)[-1]
+    if "/assets/" in f"/{rel}":
+        return 0
+    if rel.endswith(".html"):
+        # next/index.html before the root index.html
+        return 4 if name == rel else 3
+    if rel.startswith("api/") or "/api/" in rel:
+        return 2
+    return 1
+
+
+def local_inventory():
+    files = {}
+    for p in LOCAL_DIR.rglob("*"):
+        if p.is_file():
+            rel = p.relative_to(LOCAL_DIR).as_posix()
+            files[rel] = {"size": p.stat().st_size, "sha": sha256(p)}
+    return files
+
+
+def guard(local_files):
+    missing = [r for r in REQUIRED if r not in local_files]
+    if missing:
+        die(f"Refusing to upload: dist/ is missing {', '.join(missing)}. Run `node build.js` first.")
+    if len(local_files) < MIN_FILES:
+        die(f"Refusing to upload: dist/ has only {len(local_files)} files (expected at least {MIN_FILES}).")
+
+
+def load_manifest():
+    try:
+        return json.loads(MANIFEST_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
 def main():
+    dry_run = "--dry-run" in sys.argv
     if not LOCAL_DIR.exists():
         die(f"Local dir not found: {LOCAL_DIR}")
-    user, pw = load_credentials()
+    local_files = local_inventory()
+    guard(local_files)
+    manifest = load_manifest()
+    order = sorted(local_files, key=lambda r: (upload_rank(r), r))
 
+    if dry_run:
+        changed = [r for r in order if manifest.get(r) != local_files[r]["sha"]]
+        log(f"Dry run: {len(local_files)} local files, {len(changed)} changed since last upload (remote not checked)")
+        for rel in changed:
+            log(f"  would upload {rel} ({local_files[rel]['size']} bytes)")
+        log("  (remote files missing locally would be deleted after uploads)")
+        return
+
+    user, pw = load_credentials()
     log(f"Starting upload: {LOCAL_DIR} -> {FTP_HOST}{FTP_REMOTE_DIR}")
     ftp = connect(FTP_HOST, user, pw)
     try:
@@ -170,27 +243,25 @@ def main():
         remote_files = list_remote(ftp)
         log(f"Remote has {len(remote_files)} existing files")
 
-        local_files = {}
-        for p in LOCAL_DIR.rglob("*"):
-            if p.is_file():
-                rel = p.relative_to(LOCAL_DIR).as_posix()
-                local_files[rel] = p.stat().st_size
-
         uploaded = skipped = deleted = 0
-        for rel, size in local_files.items():
-            if remote_files.get(rel) == size:
+        for rel in order:
+            info = local_files[rel]
+            if remote_files.get(rel) == info["size"] and manifest.get(rel) == info["sha"]:
                 skipped += 1
                 continue
-            log(f"  upload {rel} ({size} bytes)")
+            log(f"  upload {rel} ({info['size']} bytes)")
             upload_file(ftp, LOCAL_DIR / rel, rel)
+            manifest[rel] = info["sha"]
             uploaded += 1
 
         for rel in remote_files:
             if rel not in local_files:
                 log(f"  delete {rel}")
                 delete_remote(ftp, rel)
+                manifest.pop(rel, None)
                 deleted += 1
 
+        MANIFEST_FILE.write_text(json.dumps({r: manifest[r] for r in local_files if r in manifest}, indent=0), encoding="utf-8")
         log(f"Done: {uploaded} uploaded, {skipped} unchanged, {deleted} deleted")
     finally:
         try:
