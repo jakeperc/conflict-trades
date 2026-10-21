@@ -7,10 +7,29 @@
  * - reset: wipe state + memory and start over.
  */
 const path = require("path");
+const { execSync } = require("child_process");
 const trader = require(path.join(__dirname, "..", "..", "lib", "trader"));
+
+const REPO = path.join(__dirname, "..", "..");
+
+// The bot commits and pushes master, and every push redeploys the public site. Refuse to run on
+// another branch or with uncommitted work outside data/ and dist/ (which the bot itself rewrites),
+// so work-in-progress UI or code can never be built and published by the daily run.
+function preflight() {
+  const git = (args) => execSync(`git ${args}`, { cwd: REPO, encoding: "utf8" }).trim();
+  const branch = git("rev-parse --abbrev-ref HEAD");
+  if (branch !== "master") {
+    throw new Error(`Preflight: on branch "${branch}", not master. Switch to master before the trader runs.`);
+  }
+  const dirty = git(`status --porcelain -- . ":(exclude)data" ":(exclude)dist"`);
+  if (dirty) {
+    throw new Error(`Preflight: uncommitted changes outside data/ and dist/. Commit or stash them first:\n${dirty}`);
+  }
+}
 
 async function main() {
   const cmd = (process.argv[2] || "run").toLowerCase();
+  if (cmd === "run" || cmd === "daily") preflight();
 
   if (cmd === "reset") {
     console.log(JSON.stringify(trader.resetAll(), null, 2));
@@ -143,8 +162,7 @@ async function main() {
 
   if (cmd === "daily") {
     const fs = require("fs");
-    const { execSync } = require("child_process");
-    const ROOT = path.join(__dirname, "..", "..");
+    const ROOT = REPO;
     const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 
     // Market-day check

@@ -114,9 +114,9 @@
         "stopMultAtEntry": 1,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:iran|sector:Shipping|direction:LONG",
-        "currentPrice": 95.81,
-        "unrealizedPnlDollar": -104.91,
-        "unrealizedPct": -0.0583,
+        "currentPrice": 95.78,
+        "unrealizedPnlDollar": -105.45,
+        "unrealizedPct": -0.0586,
         "lastKnownPrice": 94.03250122070312,
         "lastKnownDate": "2026-10-21",
         "currentPriceDate": "2026-10-21"
@@ -232,9 +232,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1.5,
         "calibrationBucketAtEntry": "scenario:taiwan|sector:Foundry alternatives|direction:LONG",
-        "currentPrice": 47.89,
-        "unrealizedPnlDollar": 8.69,
-        "unrealizedPct": 0.0048,
+        "currentPrice": 48,
+        "unrealizedPnlDollar": 12.84,
+        "unrealizedPct": 0.0071,
         "lastKnownPrice": 47.400001525878906,
         "lastKnownDate": "2026-10-21",
         "currentPriceDate": "2026-10-21"
@@ -350,9 +350,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:iran|sector:Brent ETF|direction:LONG",
-        "currentPrice": 66.81,
-        "unrealizedPnlDollar": 67.21,
-        "unrealizedPct": 0.028,
+        "currentPrice": 66.63,
+        "unrealizedPnlDollar": 60.56,
+        "unrealizedPct": 0.0252,
         "lastKnownPrice": 66.36000061035156,
         "lastKnownDate": "2026-10-21",
         "currentPriceDate": "2026-10-21"
@@ -468,9 +468,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
-        "currentPrice": 159.96,
-        "unrealizedPnlDollar": 14.34,
-        "unrealizedPct": 0.006,
+        "currentPrice": 159.01,
+        "unrealizedPnlDollar": 0.08,
+        "unrealizedPct": 0,
         "lastKnownPrice": 158.75999450683594,
         "lastKnownDate": "2026-10-21",
         "currentPriceDate": "2026-10-21"
@@ -4592,10 +4592,10 @@
     ]
   },
   "live": {
-    "equity": 10686.07,
-    "openMtM": 8385.32,
-    "pctReturn": 0.0686,
-    "fetchedAt": "2026-10-21T14:34:01.686Z"
+    "equity": 10668.78,
+    "openMtM": 8368.03,
+    "pctReturn": 0.0669,
+    "fetchedAt": "2026-10-21T16:15:52.638Z"
   },
   "memory": {
     "buckets": {

@@ -1,0 +1,28 @@
+# Fail loudly (GitHub emails the owner) if the daily trader has not published for 3+ days.
+# Catches a stopped scheduled task, a failing build, or a blocked push, any of which would
+# otherwise leave the public site quietly stale.
+name: Freshness check
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check last trader run
+        run: |
+          last=$(jq -r '.state.lastRunAt // empty' dist/api/trader.json)
+          if [ -z "$last" ]; then echo "::error::dist/api/trader.json has no state.lastRunAt"; exit 1; fi
+          age_days=$(( ( $(date -u +%s) - $(date -u -d "$last" +%s) ) / 86400 ))
+          echo "Last trader run: $last ($age_days days ago)"
+          if [ "$age_days" -ge 3 ]; then
+            echo "::error::The daily trader has not published for $age_days days (last run $last)."
+            exit 1
+          fi

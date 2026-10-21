@@ -1,5 +1,5 @@
-// Tiny static server for previewing dist/ exactly as it will behave when
-// uploaded via FTP. Not used in production — just for local verification.
+// Tiny static server for previewing dist/ exactly as GitHub Pages will serve it.
+// Not used in production — just for local verification.
 const http = require("http");
 const fs = require("fs");
 const path = require("path");

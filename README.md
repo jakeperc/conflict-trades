@@ -1,6 +1,8 @@
-# Conflict Scenario Market Dashboard
+# Conflict Trades
 
-Local scenario dashboard for:
+**Live: [conflict-trades.jakepercy.com](https://conflict-trades.jakepercy.com)**: rebuilt and redeployed every day.
+
+Geopolitical scenario desk and paper AI trader for:
 
 - Iran / Strait of Hormuz / Yemen chokepoints
 - China / Taiwan escalation
@@ -24,7 +26,23 @@ http://localhost:8899
 
 Or double-click `run-dashboard.bat`. The slash commands below will restart the server in the background after each autonomous update.
 
-The new UI (v2) is served by the same server at `http://localhost:8899/next/`, with live data.
+The server uses the same layout as the published site: the v2 UI at `/`, the legacy UI at `/classic/`.
+
+### Local config
+
+Machine-specific settings live in a gitignored `.env.local` at the repo root (never commit it):
+
+```text
+WW3_DASH_DIR=<path to the WW3-Dash-v2 data folder>
+```
+
+That folder feeds the Conflict Monitor heat tilt (`lib/ww3.js`). If it can't be found, every tilt is 0, a warning is printed, and `ww3Status` in `api/refresh.json` reads `available: false`.
+
+## Hosting
+
+GitHub Pages serves `dist/` at conflict-trades.jakepercy.com. The daily `/ai-trader` run commits a rebuilt `dist/` and pushes `master`; the push triggers `.github/workflows/pages.yml`, which redeploys the site. `.github/workflows/freshness.yml` fails (and GitHub emails the owner) if the trader hasn't published for 3 days.
+
+The daily run refuses to start on a branch other than `master` or with uncommitted work outside `data/` and `dist/`, so work in progress is never published. It also refuses to trade when more than 10% of quotes aren't live.
 
 ## UI v2 (web/ → ui-dist/)
 
@@ -35,13 +53,13 @@ npm ci                 # once, or after package.json changes
 npm run dev            # Vite on :5173, proxies /api to server.js on :8899
 npm run build:ui       # web/ -> ui-dist/, then checks bundle budgets (initial <=160 KB, globe <=250 KB gzip)
 npm test               # vitest: baseline roll, derived metrics, drawer lookup, API contract
-node build.js          # dist/: legacy UI at /, v2 at /next/, frozen api/*.json in both
+node build.js          # dist/: v2 at /, legacy at /classic/, /next/ redirect, frozen api/*.json
 ```
 
 - **Data paths are relative.** The UI always fetches `api/<name>.json`. `server.js` answers those live (and tags them `X-CT-Source: live`, which turns the status pill to LIVE). On the static host they are the frozen snapshots (pill reads DAILY).
 - **Globe.** It shows on desktop only: fine pointer, motion allowed, WebGL2 and at least 4 GB of memory. Everyone else gets the flat SVG map. `?gl=1` / `?gl=0` or the 2D/3D button overrides this, and the choice is stored as `ct-gl`. Land dots are baked by `npm run bake:land` into `web/public/land.bin`.
 - **Theater geo.** Each scenario has a `geo` block in `data/config.json` and its template: `pos` [lng, lat], `label`, and `lanes[]` with `from`/`to`/`sectors`/`subScore`. A scenario without `geo` is listed as Unmapped and never placed on the map.
-- **Build safety.** `build.js` builds into `dist.tmp/`, contract-checks the payloads (`lib/contract.js`), and only then swaps the result into `dist/`. `scripts/upload_ftp.py` uploads by content hash, assets first and HTML last, and refuses an incomplete `dist/`. Use `--dry-run` to preview.
+- **Build safety.** `build.js` builds into `dist.tmp/`, contract-checks the payloads (`lib/contract.js`), and only then swaps the result into `dist/`, so a failed build never replaces a good site.
 
 ## What it does
 

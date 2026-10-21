@@ -1,0 +1,5 @@
+# Build outputs are committed byte-for-byte (no line-ending conversion), so a rebuild with identical
+# content never shows up as a change, which would otherwise trip the daily run's clean-tree check.
+dist/** -text
+ui-dist/** -text
+*.bin binary

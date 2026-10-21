@@ -7,9 +7,9 @@ const { buildPayload } = require("./lib/scenarios");
 const trader = require("./lib/trader");
 
 const PORT = process.env.PORT || 8787;
-const PUBLIC_DIR = path.join(__dirname, "public");
-// New UI preview (prebuilt by `npm run build:ui`), served at /next/ with live data.
-const NEXT_DIR = path.join(__dirname, "ui-dist");
+// Same layout as the published site: v2 (prebuilt by `npm run build:ui`) at /, legacy at /classic/.
+const UI_DIR = path.join(__dirname, "ui-dist");
+const CLASSIC_DIR = path.join(__dirname, "public");
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -43,17 +43,23 @@ function serveStatic(req, res) {
     res.end("Bad request");
     return;
   }
-  let baseDir = PUBLIC_DIR;
-  if (urlPath === "/next") {
-    res.writeHead(301, { Location: "/next/" });
+  // /next/ was the v2 preview path; v2 is the root now.
+  if (urlPath === "/next" || urlPath.startsWith("/next/")) {
+    res.writeHead(301, { Location: "/" });
     res.end();
     return;
   }
-  if (urlPath.startsWith("/next/")) {
-    baseDir = NEXT_DIR;
-    urlPath = urlPath.slice("/next".length);
+  if (urlPath === "/classic") {
+    res.writeHead(301, { Location: "/classic/" });
+    res.end();
+    return;
   }
-  const safePath = path.normalize(urlPath === "/" ? "/index.html" : urlPath).replace(/^(\.\.[/\\])+/, "");
+  let baseDir = UI_DIR;
+  if (urlPath.startsWith("/classic/")) {
+    baseDir = CLASSIC_DIR;
+    urlPath = urlPath.slice("/classic".length);
+  }
+  const safePath = path.normalize(urlPath.endsWith("/") ? urlPath + "index.html" : urlPath).replace(/^(\.\.[/\\])+/, "");
   const filePath = path.join(baseDir, safePath);
 
   if (!filePath.startsWith(baseDir)) {
@@ -84,9 +90,6 @@ const server = http.createServer(async (req, res) => {
     res.end("Bad request");
     return;
   }
-
-  // The /next/ preview fetches relative api/*.json; answer those live too.
-  if (req.url.startsWith("/next/api/")) req.url = req.url.slice("/next".length);
 
   if (req.url.startsWith("/api/refresh")) {
     try {

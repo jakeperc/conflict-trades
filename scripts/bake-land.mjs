@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import { feature } from "topojson-client";
 
 const require = createRequire(import.meta.url);
@@ -53,7 +54,7 @@ for (let lat = -58; lat <= 82; lat += STEP) {
   }
 }
 
-const dest = path.join(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "..", "web", "public", "land.bin");
+const dest = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "web", "public", "land.bin");
 fs.mkdirSync(path.dirname(dest), { recursive: true });
 fs.writeFileSync(dest, Buffer.from(new Int16Array(out).buffer));
 console.log(`land.bin: ${out.length / 2} dots, ${(out.length * 2 / 1024).toFixed(1)} KB, step ${STEP} deg`);

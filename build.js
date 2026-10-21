@@ -1,11 +1,11 @@
-// Build a static `dist/` folder for FTP deployment to jakepercy.com/conflict-trades.
+// Build the static `dist/` folder that GitHub Pages serves at conflict-trades.jakepercy.com.
 //
-// The live site uses three dynamic endpoints (/api/refresh, /api/trader, /api/config).
-// On a static host each one is frozen into dist/api/*.json.
+// The local server has three dynamic endpoints (/api/refresh, /api/trader, /api/config).
+// On the static site each one is frozen into dist/api/*.json.
 //
-// Side-by-side phase: the legacy UI (public/) stays at the root and the new UI ships at next/.
-// The new UI is prebuilt into ui-dist/ by `npm run build:ui`, so this script needs no node_modules:
-// the daily automation keeps running it with plain Node.
+// Layout: the v2 UI (prebuilt into ui-dist/ by `npm run build:ui`) is the site root, the legacy UI
+// (public/) lives at classic/, and next/ redirects to the root for old links. This script needs no
+// node_modules, so the daily automation runs it with plain Node.
 //
 // The build is atomic: everything lands in dist.tmp/, the snapshots are contract-checked, and only
 // then does dist.tmp/ replace dist/. A failed build leaves the previous dist/ untouched.
@@ -60,8 +60,9 @@ function writeJson(file, payload) {
   fs.writeFileSync(file, JSON.stringify(payload, null, 2), "utf-8");
 }
 
-// Legacy UI: point each API fetch at its static JSON snapshot.
+// Legacy UI at classic/: point each API fetch at the shared snapshot one level up.
 function copyLegacyUi(outDir) {
+  fs.mkdirSync(outDir, { recursive: true });
   for (const entry of fs.readdirSync(PUBLIC_DIR, { withFileTypes: true })) {
     if (entry.name === "app.js") continue;
     const s = path.join(PUBLIC_DIR, entry.name);
@@ -71,10 +72,23 @@ function copyLegacyUi(outDir) {
   }
   const src = fs.readFileSync(path.join(PUBLIC_DIR, "app.js"), "utf-8");
   const rewritten = src
-    .replace(/fetch\(\s*["']\/api\/refresh["']/g, 'fetch("api/refresh.json"')
-    .replace(/fetch\(\s*["']\/api\/trader["']/g, 'fetch("api/trader.json"')
-    .replace(/fetch\(\s*["']\/api\/config["']/g, 'fetch("api/config.json"');
+    .replace(/fetch\(\s*["']\/api\/refresh["']/g, 'fetch("../api/refresh.json"')
+    .replace(/fetch\(\s*["']\/api\/trader["']/g, 'fetch("../api/trader.json"')
+    .replace(/fetch\(\s*["']\/api\/config["']/g, 'fetch("../api/config.json"');
   fs.writeFileSync(path.join(outDir, "app.js"), rewritten, "utf-8");
+}
+
+// next/ was the v2 preview path; keep old links working by sending them to the root (hash route kept).
+function writeNextRedirect(outDir) {
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(outDir, "index.html"),
+    '<!doctype html><meta charset="utf-8"><title>Conflict Trades</title>' +
+      '<meta http-equiv="refresh" content="0; url=../">' +
+      '<script>location.replace("../" + location.hash)</script>' +
+      '<a href="../">Conflict Trades has moved to the main page.</a>\n',
+    "utf-8"
+  );
 }
 
 // New UI: copy the prebuilt bundle (it already fetches relative api/*.json).
@@ -159,27 +173,26 @@ async function build() {
   fs.mkdirSync(TMP_DIR, { recursive: true });
 
   try {
-    copyLegacyUi(TMP_DIR);
-    copyNewUi(path.join(TMP_DIR, "next"));
+    copyNewUi(TMP_DIR);
+    copyLegacyUi(path.join(TMP_DIR, "classic"));
+    writeNextRedirect(path.join(TMP_DIR, "next"));
 
     const [refresh, traderPayload] = await Promise.all([snapshotRefresh(), snapshotTrader()]);
     const problems = [...checkRefresh(refresh), ...checkTrader(traderPayload)];
     if (problems.length) {
       throw new Error(`API snapshot failed the contract check:\n  - ${problems.join("\n  - ")}`);
     }
-    const config = loadConfig();
-    for (const dir of [path.join(TMP_DIR, "api"), path.join(TMP_DIR, "next", "api")]) {
-      writeJson(path.join(dir, "refresh.json"), refresh);
-      writeJson(path.join(dir, "trader.json"), traderPayload);
-      writeJson(path.join(dir, "config.json"), config);
-    }
+    const apiDir = path.join(TMP_DIR, "api");
+    writeJson(path.join(apiDir, "refresh.json"), refresh);
+    writeJson(path.join(apiDir, "trader.json"), traderPayload);
+    writeJson(path.join(apiDir, "config.json"), loadConfig());
   } catch (err) {
     rmrf(TMP_DIR);
     throw err;
   }
 
   swapIntoPlace();
-  log(`Built in ${Date.now() - t0}ms -> ${path.relative(ROOT, DIST_DIR)}/ (legacy at /, new UI at /next/)`);
+  log(`Built in ${Date.now() - t0}ms -> ${path.relative(ROOT, DIST_DIR)}/ (v2 at /, legacy at /classic/)`);
 }
 
 function watch() {
