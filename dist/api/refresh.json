@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-24T13:47:45.275Z",
+  "generatedAt": "2026-10-25T13:47:14.760Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
   "ww3Status": {
     "available": true,
     "source": "env",
-    "ageDays": 1.2,
+    "ageDays": 2.2,
     "reason": null
   },
   "scenarios": {
@@ -144,42 +144,87 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-10-24T13:47:41.540Z",
+      "refreshedAt": "2026-10-25T13:47:12.174Z",
       "headlines": [
         {
-          "title": "More Oil Is Now Coming Out of the Persian Gulf Than Before the Iran War - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQ25MSXRodmt6X1ZwZFZ1b01nR01ZTE1PWDU0SGVaWTRKMXJLdl9FbXVHSnZTMGxiV1pMbGtOZTVUMjZER01kVHQ1TmtIczlGZ3Z3X2djQng0b0RrOEQtZkk4REEtYTE2U1JxVlpLMzAtUnNycVhiQXVqV3BET09SZDZLbWtfZGp3NFl6eDZPakRzeDk4N3VydmJucDB6SlgwNmNNWVlrVTVRdGQ2RTVVOUpqTXBJa3RWaXc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOQ25MSXRodmt6X1ZwZFZ1b01nR01ZTE1PWDU0SGVaWTRKMXJLdl9FbXVHSnZTMGxiV1pMbGtOZTVUMjZER01kVHQ1TmtIczlGZ3Z3X2djQng0b0RrOEQtZkk4REEtYTE2U1JxVlpLMzAtUnNycVhiQXVqV3BET09SZDZLbWtfZGp3NFl6eDZPakRzeDk4N3VydmJucDB6SlgwNmNNWVlrVTVRdGQ2RTVVOUpqTXBJa3RWaXc?oc=5\" target=\"_blank\">More Oil Is Now Coming Out of the Persian Gulf Than Before the Iran War</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WSJ</font>",
-          "source": "WSJ",
-          "publishedAt": "Sat, 24 Oct 2026 12:57:18 GMT",
-          "publishedMs": 1792846638000,
-          "relevance": 1
-        },
-        {
-          "title": "Live Updates: Iran warns that U.S. military not allowed in Gulf \"under any circumstance\" - CBS News",
+          "title": "Live Updates: Iran says potential new U.S. strikes won't change Tehran's position - CBS News",
           "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5\" target=\"_blank\">Live Updates: Iran warns that U.S. military not allowed in Gulf \"under any circumstance\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CBS News</font>",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5\" target=\"_blank\">Live Updates: Iran says potential new U.S. strikes won't change Tehran's position</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CBS News</font>",
           "source": "CBS News",
-          "publishedAt": "Sat, 24 Oct 2026 12:34:00 GMT",
-          "publishedMs": 1792845240000,
+          "publishedAt": "Sun, 25 Oct 2026 12:32:51 GMT",
+          "publishedMs": 1792931571000,
           "relevance": 1
         },
         {
-          "title": "Netanyahu calls for US and Israel to overthrow Iran as Brent crude hits five-month high - Fox News",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTlk4OFFybXduNmdhc1dVNUQ3aVlWbTM5alJ0UUsyRndDSE9UZFFyOE14MWdLZlVPbEgyS2J4bUx6OEsxWEgxMENYMmtJcUtZQk53TjliVlFmMklmU3Y0MlYtc054NzRDVUlud3NFM1ZKMm5BZVlRdHhEWktCNUpnQVdSa2RGTTNrYVE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOTlk4OFFybXduNmdhc1dVNUQ3aVlWbTM5alJ0UUsyRndDSE9UZFFyOE14MWdLZlVPbEgyS2J4bUx6OEsxWEgxMENYMmtJcUtZQk53TjliVlFmMklmU3Y0MlYtc054NzRDVUlud3NFM1ZKMm5BZVlRdHhEWktCNUpnQVdSa2RGTTNrYVE?oc=5\" target=\"_blank\">Netanyahu calls for US and Israel to overthrow Iran as Brent crude hits five-month high</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox News</font>",
+          "title": "Shafaq News..Iran claims US drone downing, warns of Hormuz changes - شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPckoyZjVvdGI4eTdlb1FRM3VFR3RibGlKMzk2Q2ZmYlNyb3pHZzJnMXlJaFUwaF9tblNjU3hjQURyS29BN1YzenBjdnRPdmE2ZV9oWGZhT0tTc2NDcjFZYk9JdUVGNkM0MGhERXVZLTkzV0VjWW1yMjZoVW1qOThvcDg3WGNxY2VNQmFBVQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxPckoyZjVvdGI4eTdlb1FRM3VFR3RibGlKMzk2Q2ZmYlNyb3pHZzJnMXlJaFUwaF9tblNjU3hjQURyS29BN1YzenBjdnRPdmE2ZV9oWGZhT0tTc2NDcjFZYk9JdUVGNkM0MGhERXVZLTkzV0VjWW1yMjZoVW1qOThvcDg3WGNxY2VNQmFBVQ?oc=5\" target=\"_blank\">Shafaq News..Iran claims US drone downing, warns of Hormuz changes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">شفق نيوز</font>",
+          "source": "شفق نيوز",
+          "publishedAt": "Sun, 25 Oct 2026 09:02:22 GMT",
+          "publishedMs": 1792918942000,
+          "relevance": 3
+        },
+        {
+          "title": "Iran ready to open the Strait of Hormuz after the lifting of the U.S. blockade - AP - Українські Національні Новини (УНН)",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORGIxcjRyU0xvOXloVkwtYmhjR0Fld3FWcXlBLVFrTzdYaVY0X1loNXVZWG84cHBlZ21YNllNdmhLRkJIeTNlNGtEeExpWFdTbVNPdmxXUUlFbnBWbkV5OVpuLUhOQTVRbXZZTThIMmdNSXBOb0tJOC1EMkI3WDg5bW9ISGRPLUlhYkFIMkI5ck1pNXhuTExtN2dRUGFuQnRGalA4RtIBowFBVV95cUxPTkU4MWZuOExCVE84NExUQVVfUGJOUktWSUtTVnVtNVQwOGc1aVhUalV6UVBvb1ZSYWN6RFJsSDFGWlNZQXNpVEo1ODlJT05LOTFVX0EtNTlaVXBLcUIyTWUyVTUwUDFpYnFpTEk1aE5PdjY4NDRZMGZ3U1c3SHlsU1BYdXhvdzQxZDNLVEVjLXRyQWEyQUxjejR6QmVrWjlNN2Q0?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxORGIxcjRyU0xvOXloVkwtYmhjR0Fld3FWcXlBLVFrTzdYaVY0X1loNXVZWG84cHBlZ21YNllNdmhLRkJIeTNlNGtEeExpWFdTbVNPdmxXUUlFbnBWbkV5OVpuLUhOQTVRbXZZTThIMmdNSXBOb0tJOC1EMkI3WDg5bW9ISGRPLUlhYkFIMkI5ck1pNXhuTExtN2dRUGFuQnRGalA4RtIBowFBVV95cUxPTkU4MWZuOExCVE84NExUQVVfUGJOUktWSUtTVnVtNVQwOGc1aVhUalV6UVBvb1ZSYWN6RFJsSDFGWlNZQXNpVEo1ODlJT05LOTFVX0EtNTlaVXBLcUIyTWUyVTUwUDFpYnFpTEk1aE5PdjY4NDRZMGZ3U1c3SHlsU1BYdXhvdzQxZDNLVEVjLXRyQWEyQUxjejR6QmVrWjlNN2Q0?oc=5\" target=\"_blank\">Iran ready to open the Strait of Hormuz after the lifting of the U.S. blockade - AP</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Українські Національні Новини (УНН)</font>",
+          "source": "Українські Національні Новини (УНН)",
+          "publishedAt": "Sun, 25 Oct 2026 08:27:50 GMT",
+          "publishedMs": 1792916870000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran’s oil lifeline is drying up. The biggest pain may fall on ordinary citizens - Fox News",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWx3QTQxTzFwY1hWS1BkcWJSdFd4bG1jTlNFRnJJdFFTNlJ1ZUFnTURFaXBkbWlQUTJJR1lOQ3FHa2lmTGw2c3Q4TUExaXNvcU1ndXdlYk52NmthYUpWRlJSUERPWEdFblE5WExJM3o3MFdSektNazhLNXFYN2dMaEhoS1B2ZklaY1BNeVBicmZKMlE0WFhIX1hJUzNVczh5QTkw0gGoAUFVX3lxTE5QVUlwamdhOUVyZk1lVk9aRFA1c0xQM0VPTjBHYWZJTks1U0JBRlFsR3ZVdjZOYUpWUC1KVnhnMldBLVlPZzlGc2t6M0h1aHBHdE5DY3VwZVdpOF9DdHVOUHppNXRFSkkwZFhKSGdDMVc2ay1jY1lLdFIxeTgxT3BibTVMTFVsQzI4QkJtTnJBQV9GU21ieWo3bEZPOTZ0aUZtcnhWUFNHRA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWx3QTQxTzFwY1hWS1BkcWJSdFd4bG1jTlNFRnJJdFFTNlJ1ZUFnTURFaXBkbWlQUTJJR1lOQ3FHa2lmTGw2c3Q4TUExaXNvcU1ndXdlYk52NmthYUpWRlJSUERPWEdFblE5WExJM3o3MFdSektNazhLNXFYN2dMaEhoS1B2ZklaY1BNeVBicmZKMlE0WFhIX1hJUzNVczh5QTkw0gGoAUFVX3lxTE5QVUlwamdhOUVyZk1lVk9aRFA1c0xQM0VPTjBHYWZJTks1U0JBRlFsR3ZVdjZOYUpWUC1KVnhnMldBLVlPZzlGc2t6M0h1aHBHdE5DY3VwZVdpOF9DdHVOUHppNXRFSkkwZFhKSGdDMVc2ay1jY1lLdFIxeTgxT3BibTVMTFVsQzI4QkJtTnJBQV9GU21ieWo3bEZPOTZ0aUZtcnhWUFNHRA?oc=5\" target=\"_blank\">Iran’s oil lifeline is drying up. The biggest pain may fall on ordinary citizens</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox News</font>",
           "source": "Fox News",
-          "publishedAt": "Sat, 24 Oct 2026 01:36:34 GMT",
-          "publishedMs": 1792805794000,
+          "publishedAt": "Sun, 25 Oct 2026 08:00:09 GMT",
+          "publishedMs": 1792915209000,
           "relevance": 1
         },
         {
-          "title": "As oil edges higher, Trump floats letting Iran 'wither,' possibility of protracted war grows - Yahoo Finance",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOG9jTUNlcmZNR1lNN3RvN2hCcVRPOHo0ZXlMTE96ajV2WkJfTG5MWDBkaWpyZmo3ZkRjRGcxdVpHdlRhTVlxUW5neExjcHZPLU9ySjh6UUw5MklhY2lrWG10YXE1c0hRUEd6ek5VdnZKRkY3LS13MWM5eHRqUTNDNU12azJSbDhYTk9lelhudmFNVGtVZmZ4bVFiclZwdEF4ZzRkdVlLRTViajN1UlZ3Ul9IWjJ4TTdOZVRSSkRJbzhFNFctMVFRYUxnSGtqRXlvTWFRZ05kRkZRcHJu?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOG9jTUNlcmZNR1lNN3RvN2hCcVRPOHo0ZXlMTE96ajV2WkJfTG5MWDBkaWpyZmo3ZkRjRGcxdVpHdlRhTVlxUW5neExjcHZPLU9ySjh6UUw5MklhY2lrWG10YXE1c0hRUEd6ek5VdnZKRkY3LS13MWM5eHRqUTNDNU12azJSbDhYTk9lelhudmFNVGtVZmZ4bVFiclZwdEF4ZzRkdVlLRTViajN1UlZ3Ul9IWjJ4TTdOZVRSSkRJbzhFNFctMVFRYUxnSGtqRXlvTWFRZ05kRkZRcHJu?oc=5\" target=\"_blank\">As oil edges higher, Trump floats letting Iran 'wither,' possibility of protracted war grows</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance</font>",
-          "source": "Yahoo Finance",
-          "publishedAt": "Fri, 23 Oct 2026 16:54:15 GMT",
-          "publishedMs": 1792774455000,
+          "title": "Trump keeps Iran strike option open, says deal possible; Tehran accuses US of derailing talks - The New Indian Express",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWTVfQVZFYlFfQU9MT3lVOHRyczhHM2QxMG5kRldxWHNMaUVkVl8yVkhFNnlyb0o2SG9DckdqTEVPV1hqUWhZTEZXUnN2YTdQel9JZnB3V0dhb3RGZnBQdldod2ptcDZsU2VYcG1zMnZmYzRjR2NfZFk2WjFpWXpUcVhNbDhaUmEycTgwa2FmMlBGQ28yRnk2QnBsd0RVdDI3NExUMmZNSUxrUF8zLVZ0R2xHUVVwQXBYc0JNTmNUV3Q0MV9vTVRaTHA3Y0dBZ21zWTl3NGhXTUxpQdIB5wFBVV95cUxQNS1qa0xnbl9iSzRic0RvbG5VdFQ4ZzNVamd1LXRyc2ZKWVBjNzJDSGpmY3hQTjVSS1lNU1lPY24tN1M2THRfNkxPRHhoaEd4aGxHS2ZhWVN2ZlF1X045XzVlaHVvbVpLUVR6OENSVWdpLUI4Qkk3UExfaFo4WVRhbmswSTd2YWI0M0hHcF9jak1rQ1lGcS1sZ2pEVWtyQ29WaDRzSldpdnVYUDkwNWdud0pCYXZGZkNmS2t5Mm9HaHEzd0lCSUVoTTZDQXpqTXRZYmcyNXpmbE1rTjgzdXZFUWpoMkRqek0?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWTVfQVZFYlFfQU9MT3lVOHRyczhHM2QxMG5kRldxWHNMaUVkVl8yVkhFNnlyb0o2SG9DckdqTEVPV1hqUWhZTEZXUnN2YTdQel9JZnB3V0dhb3RGZnBQdldod2ptcDZsU2VYcG1zMnZmYzRjR2NfZFk2WjFpWXpUcVhNbDhaUmEycTgwa2FmMlBGQ28yRnk2QnBsd0RVdDI3NExUMmZNSUxrUF8zLVZ0R2xHUVVwQXBYc0JNTmNUV3Q0MV9vTVRaTHA3Y0dBZ21zWTl3NGhXTUxpQdIB5wFBVV95cUxQNS1qa0xnbl9iSzRic0RvbG5VdFQ4ZzNVamd1LXRyc2ZKWVBjNzJDSGpmY3hQTjVSS1lNU1lPY24tN1M2THRfNkxPRHhoaEd4aGxHS2ZhWVN2ZlF1X045XzVlaHVvbVpLUVR6OENSVWdpLUI4Qkk3UExfaFo4WVRhbmswSTd2YWI0M0hHcF9jak1rQ1lGcS1sZ2pEVWtyQ29WaDRzSldpdnVYUDkwNWdud0pCYXZGZkNmS2t5Mm9HaHEzd0lCSUVoTTZDQXpqTXRZYmcyNXpmbE1rTjgzdXZFUWpoMkRqek0?oc=5\" target=\"_blank\">Trump keeps Iran strike option open, says deal possible; Tehran accuses US of derailing talks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Indian Express</font>",
+          "source": "The New Indian Express",
+          "publishedAt": "Sun, 25 Oct 2026 03:11:52 GMT",
+          "publishedMs": 1792897912000,
+          "relevance": 1
+        },
+        {
+          "title": "Iran proposes reopening the Strait of Hormuz, in exchange for the US lifting the blockade - Laodong.vn",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaFlzODVOUHFpOWpiTVUyZm9LdDRPSlJvdXZFNEFNUE4zZXplUzhJTVFZLV9Ja2lLVk1fRS1Ya2JRVWhGN2IxS0g4bDBOMXdDWlJnODdudXVTaG9uTGtCWXJrd2dZcWJMSG8xdGZmWlk5QTJINnJVX1hlSWFHNVVnNWR4M1FOa2sxaHBMRzhKOUdveG1OQ3ZkLUI4bnRSeUc0UFFUektMUnJOZlNC?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQaFlzODVOUHFpOWpiTVUyZm9LdDRPSlJvdXZFNEFNUE4zZXplUzhJTVFZLV9Ja2lLVk1fRS1Ya2JRVWhGN2IxS0g4bDBOMXdDWlJnODdudXVTaG9uTGtCWXJrd2dZcWJMSG8xdGZmWlk5QTJINnJVX1hlSWFHNVVnNWR4M1FOa2sxaHBMRzhKOUdveG1OQ3ZkLUI4bnRSeUc0UFFUektMUnJOZlNC?oc=5\" target=\"_blank\">Iran proposes reopening the Strait of Hormuz, in exchange for the US lifting the blockade</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Laodong.vn</font>",
+          "source": "Laodong.vn",
+          "publishedAt": "Sun, 25 Oct 2026 02:14:40 GMT",
+          "publishedMs": 1792894480000,
+          "relevance": 4
+        },
+        {
+          "title": "Iran sends conflicting signals on US deal as Trump raises prospect of strikes - Iran International",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9reFd6eFdFdzZFLUg1dS1pd3BGYmtJMjBzZktXY1NSaXc5QkJwZE5xQ0FMMDVwQzl0OG1kcWtReEtlZjE0dFdzUUJ2LXgxTU1Pc1E?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE9reFd6eFdFdzZFLUg1dS1pd3BGYmtJMjBzZktXY1NSaXc5QkJwZE5xQ0FMMDVwQzl0OG1kcWtReEtlZjE0dFdzUUJ2LXgxTU1Pc1E?oc=5\" target=\"_blank\">Iran sends conflicting signals on US deal as Trump raises prospect of strikes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Iran International</font>",
+          "source": "Iran International",
+          "publishedAt": "Sun, 25 Oct 2026 01:35:00 GMT",
+          "publishedMs": 1792892100000,
+          "relevance": 1
+        },
+        {
+          "title": "Record Tanker Rates Cripple U.S. Crude Oil Flows to Asia - Crude Oil Prices Today | OilPrice.com",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxORUF5TG56V3NCLUlWZDEwR1d1Z3J4bEtUSFh2eThCWW9QOTREd3pqX21CN3p1cGNwZTNWVDU5NW52NU1XdkNSNWVBbVo4N2dOZUZGM1o3M0FUUWNNelg2ekNySlVtMHJPVkxTd1lEQ0hxc0RyaFV4NjFBUFpuZ3U1cXBlbkowclJsNkRmVEtGcTNjR3lfZTB0U1FlU0Vsd9IBowFBVV95cUxNdDZ3cW15VlNTc1lKcW5UTi0weUFWMFdESWN0Z3IzR3hJbnBGWFlpM09YZ20wT0NFUkJROWJjTG1aVnJvZV9ZY1kzRzc5WTdwWk9yREljeE9wX0wxSzRwajQ4bUN3NUdaSThzLTBTSzNaZmVNcHljRlB2eFhkcFhBMFlVc2ZKWHBEbE01Z3lOX1ZqNkZsTDZiQnFRSEZKVGlVa3pZ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxORUF5TG56V3NCLUlWZDEwR1d1Z3J4bEtUSFh2eThCWW9QOTREd3pqX21CN3p1cGNwZTNWVDU5NW52NU1XdkNSNWVBbVo4N2dOZUZGM1o3M0FUUWNNelg2ekNySlVtMHJPVkxTd1lEQ0hxc0RyaFV4NjFBUFpuZ3U1cXBlbkowclJsNkRmVEtGcTNjR3lfZTB0U1FlU0Vsd9IBowFBVV95cUxNdDZ3cW15VlNTc1lKcW5UTi0weUFWMFdESWN0Z3IzR3hJbnBGWFlpM09YZ20wT0NFUkJROWJjTG1aVnJvZV9ZY1kzRzc5WTdwWk9yREljeE9wX0wxSzRwajQ4bUN3NUdaSThzLTBTSzNaZmVNcHljRlB2eFhkcFhBMFlVc2ZKWHBEbE01Z3lOX1ZqNkZsTDZiQnFRSEZKVGlVa3pZ?oc=5\" target=\"_blank\">Record Tanker Rates Cripple U.S. Crude Oil Flows to Asia</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Crude Oil Prices Today | OilPrice.com</font>",
+          "source": "Crude Oil Prices Today | OilPrice.com",
+          "publishedAt": "Sat, 24 Oct 2026 23:00:00 GMT",
+          "publishedMs": 1792882800000,
+          "relevance": 1
+        },
+        {
+          "title": "Iran president says many struggling for food as war bites - Arab News",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd3ZsZDFmZVc1Sm5ORFNxUmpfZ3lKbjlsOU1maDljZUxqbm43cUs0eGxhUjB5SXRUT2VYNXhYektkeEtiWnNpZFh2anduamY1YS0yNU5LUXMyTVE0amZQSUhXdFVaNVliT2VkYVpkbWpMOXlrOU1JYXV3bndiLV9vemE0bnE5LXY4MEZzTG1xWFZRb0RYcnI5d2V3ekc0dWg3ellHTg?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPd3ZsZDFmZVc1Sm5ORFNxUmpfZ3lKbjlsOU1maDljZUxqbm43cUs0eGxhUjB5SXRUT2VYNXhYektkeEtiWnNpZFh2anduamY1YS0yNU5LUXMyTVE0amZQSUhXdFVaNVliT2VkYVpkbWpMOXlrOU1JYXV3bndiLV9vemE0bnE5LXY4MEZzTG1xWFZRb0RYcnI5d2V3ekc0dWg3ellHTg?oc=5\" target=\"_blank\">Iran president says many struggling for food as war bites</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Arab News</font>",
+          "source": "Arab News",
+          "publishedAt": "Sat, 24 Oct 2026 15:41:28 GMT",
+          "publishedMs": 1792856488000,
           "relevance": 1
         },
         {
@@ -190,51 +235,6 @@
           "publishedAt": "Fri, 23 Oct 2026 15:55:00 GMT",
           "publishedMs": 1792770900000,
           "relevance": 3
-        },
-        {
-          "title": "US says it can sustain Iran blockade for ‘foreseeable future’ - Iran International",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEMXEyY09IRXU4YnZ3SGVxcjBaTkZub1Rjc3JBSnFIWU16VDNhUlNmTlpFVXNYSC03QWFrUTE0VDZfWDBuRy1BTzhGMnhweDg3Z3c?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEMXEyY09IRXU4YnZ3SGVxcjBaTkZub1Rjc3JBSnFIWU16VDNhUlNmTlpFVXNYSC03QWFrUTE0VDZfWDBuRy1BTzhGMnhweDg3Z3c?oc=5\" target=\"_blank\">US says it can sustain Iran blockade for ‘foreseeable future’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Iran International</font>",
-          "source": "Iran International",
-          "publishedAt": "Fri, 23 Oct 2026 11:32:09 GMT",
-          "publishedMs": 1792755129000,
-          "relevance": 1
-        },
-        {
-          "title": "Iran Says 7 Oil Tankers Hit In One Night In Strait Of Hormuz As Fears Of Return To War Grow - Marine Insight",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZXlKaHZSV2xkaXFHTU5uWUJMTTVhSFA5VGNoYWtIZXRPOFBvaDdja2dPc1Q5TVl2OXhaNGFIblF4S0kyMTUyRElBZTh6Z3hGN29OcnRXMVNpM2NyalcxMDA1Q19DRzV1aFBDNjJQOTAwZXhTaUVubVE0QjQ0bFM3cXk1b2JHd2N6SmZ5SUh3cGZHU0xUU2g3dTFzSWhDNkVxekxOaExFdlg5MzhBY081bWpiTGVVWFVSLTIxeFlmYw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxQZXlKaHZSV2xkaXFHTU5uWUJMTTVhSFA5VGNoYWtIZXRPOFBvaDdja2dPc1Q5TVl2OXhaNGFIblF4S0kyMTUyRElBZTh6Z3hGN29OcnRXMVNpM2NyalcxMDA1Q19DRzV1aFBDNjJQOTAwZXhTaUVubVE0QjQ0bFM3cXk1b2JHd2N6SmZ5SUh3cGZHU0xUU2g3dTFzSWhDNkVxekxOaExFdlg5MzhBY081bWpiTGVVWFVSLTIxeFlmYw?oc=5\" target=\"_blank\">Iran Says 7 Oil Tankers Hit In One Night In Strait Of Hormuz As Fears Of Return To War Grow</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Marine Insight</font>",
-          "source": "Marine Insight",
-          "publishedAt": "Fri, 23 Oct 2026 11:24:17 GMT",
-          "publishedMs": 1792754657000,
-          "relevance": 4
-        },
-        {
-          "title": "Are global oil reserves sufficient to withstand renewed US-Iran war? - Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPanhMUG9fMjBOTDd6UGhPUnUzd1pPcTVseGNYeEY0SXZPZXpEZVlkREFUVFRUQkgwSEpXQkgwNVF4T29pdGlkWTFpYWhzamt4U1I3NVhUVmxGM3hnUzRCMkdPZm1zb3FjeWRYYXJLcTdaTFNNQTRwS21hbjlibzhoQWt3VG1oaU5tQ2tLRV9IazZqTVFabzBINmNKZ1BSY1lxN0NqVFVFU2ZJYktuTGfSAbMBQVVfeXFMUG1ncnBSWUd5S0F0LUx5c2RSVjk4QlFPbGlpUWEwZkhKSVRoYVhiU2FmS2lLWm5mdTR4LU8xMEJlRF9fU3Nua2psYmM3T1ROdDN4VUltMVc1YUc0OUFOMzI3UzB3ZGdWRHFiX0dEdlpiai1aOWR5eFoyaV9qbEVHQUZ6X3hMelBRVkg2STlzNm0zQ0wxTjhvb1p0R1o5clBGYVc0b3NaeFlHNkp3a3RmY1g2ZVU?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxPanhMUG9fMjBOTDd6UGhPUnUzd1pPcTVseGNYeEY0SXZPZXpEZVlkREFUVFRUQkgwSEpXQkgwNVF4T29pdGlkWTFpYWhzamt4U1I3NVhUVmxGM3hnUzRCMkdPZm1zb3FjeWRYYXJLcTdaTFNNQTRwS21hbjlibzhoQWt3VG1oaU5tQ2tLRV9IazZqTVFabzBINmNKZ1BSY1lxN0NqVFVFU2ZJYktuTGfSAbMBQVVfeXFMUG1ncnBSWUd5S0F0LUx5c2RSVjk4QlFPbGlpUWEwZkhKSVRoYVhiU2FmS2lLWm5mdTR4LU8xMEJlRF9fU3Nua2psYmM3T1ROdDN4VUltMVc1YUc0OUFOMzI3UzB3ZGdWRHFiX0dEdlpiai1aOWR5eFoyaV9qbEVHQUZ6X3hMelBRVkg2STlzNm0zQ0wxTjhvb1p0R1o5clBGYVc0b3NaeFlHNkp3a3RmY1g2ZVU?oc=5\" target=\"_blank\">Are global oil reserves sufficient to withstand renewed US-Iran war?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Jazeera</font>",
-          "source": "Al Jazeera",
-          "publishedAt": "Fri, 23 Oct 2026 07:42:08 GMT",
-          "publishedMs": 1792741328000,
-          "relevance": 1
-        },
-        {
-          "title": "US blockade enters 100th day as Iran accelerates vessel attacks - Logistics Middle East",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYnhkR3FpbjBwZVRKcEs4MzVBWkVoYUM1cFpDNjZYdzM2b3JSTWQwWHdmdFNkaFZ4TnNsZmNIdFoxWTBCMzVIenY5eXhWTkZxalE4ZnJBakZqRGVOWGlWaFRnS2RGbEdUcjFvT0M3STJZZEk1NGRzbm11YzIxT1lVM2xxbTFDU0JZOWg1eFVYMi1ZNjdwdlZHTWduaDlucENnR2JWVWZYaw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQYnhkR3FpbjBwZVRKcEs4MzVBWkVoYUM1cFpDNjZYdzM2b3JSTWQwWHdmdFNkaFZ4TnNsZmNIdFoxWTBCMzVIenY5eXhWTkZxalE4ZnJBakZqRGVOWGlWaFRnS2RGbEdUcjFvT0M3STJZZEk1NGRzbm11YzIxT1lVM2xxbTFDU0JZOWg1eFVYMi1ZNjdwdlZHTWduaDlucENnR2JWVWZYaw?oc=5\" target=\"_blank\">US blockade enters 100th day as Iran accelerates vessel attacks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Logistics Middle East</font>",
-          "source": "Logistics Middle East",
-          "publishedAt": "Fri, 23 Oct 2026 06:29:45 GMT",
-          "publishedMs": 1792736985000,
-          "relevance": 1
-        },
-        {
-          "title": "Trump says oil shipments through Strait of Hormuz surpass prewar levels with US escorts - Fox News",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wSVZIODgzZjZjX3VHSVpvWm9lVkZ3NnBvVkpkME44Y1RmaEhBTm93SVZHYmNUbUdvUlpVV1ZOY0dHY1VidXY1YldxTUlRWERZZ0lhaG1n?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wSVZIODgzZjZjX3VHSVpvWm9lVkZ3NnBvVkpkME44Y1RmaEhBTm93SVZHYmNUbUdvUlpVV1ZOY0dHY1VidXY1YldxTUlRWERZZ0lhaG1n?oc=5\" target=\"_blank\">Trump says oil shipments through Strait of Hormuz surpass prewar levels with US escorts</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fox News</font>",
-          "source": "Fox News",
-          "publishedAt": "Fri, 23 Oct 2026 01:43:57 GMT",
-          "publishedMs": 1792719837000,
-          "relevance": 4
         }
       ],
       "trades": [
@@ -1142,7 +1142,7 @@
           "heat": 96
         },
         {
-          "t": "2026-10-24T13:47",
+          "t": "2026-10-25T13:47",
           "heat": 95
         }
       ]
@@ -1263,8 +1263,17 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-10-24T13:47:44.328Z",
+      "refreshedAt": "2026-10-25T13:47:14.759Z",
       "headlines": [
+        {
+          "title": "Keen Sword 27: China shadows biggest Japan–US military drills near Taiwan - DD India",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaFZuMkxSX0NFWDlCRlhORWxNYmhIdTcxcld1WnJuZ1drczVnb1pMZ3d1azl5M0VGaF83aEtzR1VVY0o2OFRUaC1pOE1oZDViYUtxdzg0Y0hMZ2pkNmhUeTkzN3hHblBYZXpib3FBMDU0TGlTY0dTZzhXNzBvbFd1aXE3bXZ0ekFMTENTLTFtc0dXWndqbWdZT2tMTzJ1eFctVEFwYnln?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQaFZuMkxSX0NFWDlCRlhORWxNYmhIdTcxcld1WnJuZ1drczVnb1pMZ3d1azl5M0VGaF83aEtzR1VVY0o2OFRUaC1pOE1oZDViYUtxdzg0Y0hMZ2pkNmhUeTkzN3hHblBYZXpib3FBMDU0TGlTY0dTZzhXNzBvbFd1aXE3bXZ0ekFMTENTLTFtc0dXWndqbWdZT2tMTzJ1eFctVEFwYnln?oc=5\" target=\"_blank\">Keen Sword 27: China shadows biggest Japan–US military drills near Taiwan</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DD India</font>",
+          "source": "DD India",
+          "publishedAt": "Sun, 25 Oct 2026 05:46:38 GMT",
+          "publishedMs": 1792907198000,
+          "relevance": 3
+        },
         {
           "title": "US-Japan Keen Sword 27 Drills Focus on Taiwan Contingency; Taiwan Welcomes Regional Cooperation - Vision Times",
           "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVDEzRUJ2MlVQYVpoUFBfTVlZcDhhRnQwcWhQNTFtRnJFWW44cFN0Xzd3dDJlV1FTcUhJTE52LW9oMXBoWVdUUDJSU2plel9MckdXOUpXODE0Tm95elBabWdRRzNUTEF3bXRQbWVPalZwQU9NaG5FUVFBbFotYzZfcTVTa3V5R256X1N5eEk2NFBHWW5EUGd5ZUIxdkJObThwYkF1SHdpTUVHX1lCc29WaHJfUERtNUVoZWswV3B2cy1HLXB1YXdwRUpjUG9vYVZmVE1PRw?oc=5",
@@ -1284,13 +1293,13 @@
           "relevance": 1
         },
         {
-          "title": "Former US Pacific Commander Warns Taiwan That Chinese Drills Could Mask Surprise Attack - Vision Times",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQc201b0V4bGFaZTBPeGFMaDBST0tSRFNmRDRMT3BmYTdSMVlUUWtncHFRSUZTdHh1TlVsUzdjVzJVRzZaTkVXajA2ZmtBZmd1TnpTcEpfREdpZEx3WWg1aWRRSlNZQ2FqZldQdWdRVERrMEVwckg1NUdNMDJ5bGJVcllqM0hzRUJ4a0NIejVEbDk4ZmJtUjBWRE5JVmdmeWEzaml3UzA5dHZSaFF6NTV2S0JvaWRPQzBTa1kzMnpteGpRV3JqVEdtaURSYw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQc201b0V4bGFaZTBPeGFMaDBST0tSRFNmRDRMT3BmYTdSMVlUUWtncHFRSUZTdHh1TlVsUzdjVzJVRzZaTkVXajA2ZmtBZmd1TnpTcEpfREdpZEx3WWg1aWRRSlNZQ2FqZldQdWdRVERrMEVwckg1NUdNMDJ5bGJVcllqM0hzRUJ4a0NIejVEbDk4ZmJtUjBWRE5JVmdmeWEzaml3UzA5dHZSaFF6NTV2S0JvaWRPQzBTa1kzMnpteGpRV3JqVEdtaURSYw?oc=5\" target=\"_blank\">Former US Pacific Commander Warns Taiwan That Chinese Drills Could Mask Surprise Attack</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Vision Times</font>",
-          "source": "Vision Times",
-          "publishedAt": "Thu, 22 Oct 2026 22:27:53 GMT",
-          "publishedMs": 1792708073000,
-          "relevance": 3
+          "title": "Quemoy Island - Britannica",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0WUxVWDN2ZloyOGtnZnZpXy12TVNDQ21td1BBcTdZZXhNU0JCWkFRdUM4a3JRbEpOY202M0twYVB1ZEc0Vzh5ajBSSlY3a3BONEdxODZ3QzB5dw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0WUxVWDN2ZloyOGtnZnZpXy12TVNDQ21td1BBcTdZZXhNU0JCWkFRdUM4a3JRbEpOY202M0twYVB1ZEc0Vzh5ajBSSlY3a3BONEdxODZ3QzB5dw?oc=5\" target=\"_blank\">Quemoy Island</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Britannica</font>",
+          "source": "Britannica",
+          "publishedAt": "Fri, 23 Oct 2026 05:00:00 GMT",
+          "publishedMs": 1792731600000,
+          "relevance": 1
         },
         {
           "title": "China Coast Guard Patrols East of Taiwan ‘Highly Destabilizing,’ US Security Expert Warns - Vision Times",
@@ -1299,6 +1308,15 @@
           "source": "Vision Times",
           "publishedAt": "Thu, 22 Oct 2026 22:00:34 GMT",
           "publishedMs": 1792706434000,
+          "relevance": 3
+        },
+        {
+          "title": "China steps up ‘grey zone’ tactics to isolate Taiwan and punish its allies - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWWt0TzJYb293NlYtc1lTcW5nQXptdXlBSVVhQWxwM3NpVmQyZmVVZDlJZDQ0a3AwQWNZbjVkN1lrMTc0ZDByTW9fN3FoM2dHNHNpMDYyUmR5UkZSRkhXUm01ZmRkTWk3VVoycmNkcW12a2E2RnpwRmtiOXJQUTY3dnNFSkg?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOWWt0TzJYb293NlYtc1lTcW5nQXptdXlBSVVhQWxwM3NpVmQyZmVVZDlJZDQ0a3AwQWNZbjVkN1lrMTc0ZDByTW9fN3FoM2dHNHNpMDYyUmR5UkZSRkhXUm01ZmRkTWk3VVoycmNkcW12a2E2RnpwRmtiOXJQUTY3dnNFSkg?oc=5\" target=\"_blank\">China steps up ‘grey zone’ tactics to isolate Taiwan and punish its allies</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Financial Times</font>",
+          "source": "Financial Times",
+          "publishedAt": "Thu, 22 Oct 2026 12:16:02 GMT",
+          "publishedMs": 1792671362000,
           "relevance": 3
         },
         {
@@ -1311,21 +1329,21 @@
           "relevance": 1
         },
         {
+          "title": "China Compass | A tale of two National Days: China and Taiwan compete to be a model for the world - شبكة تواصل الإخبارية",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE84cTY3dVM4STg0RHNlX0hwSEJra2VpWU5BbDlCdkx5cTdZNmdscldnc0NReEVLUVY3cHYtMjQ2LXJsMzZVb0pJZWp2MDdLSENyOTdZ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE84cTY3dVM4STg0RHNlX0hwSEJra2VpWU5BbDlCdkx5cTdZNmdscldnc0NReEVLUVY3cHYtMjQ2LXJsMzZVb0pJZWp2MDdLSENyOTdZ?oc=5\" target=\"_blank\">China Compass | A tale of two National Days: China and Taiwan compete to be a model for the world</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">شبكة تواصل الإخبارية</font>",
+          "source": "شبكة تواصل الإخبارية",
+          "publishedAt": "Thu, 22 Oct 2026 07:29:03 GMT",
+          "publishedMs": 1792654143000,
+          "relevance": 3
+        },
+        {
           "title": "Taiwan’s resilience must be built before a crisis - The Japan Times",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOG15Sno3R3huOGl5WFllMTdFT3BfRi1VY0ZqOU5hdTVSTDlDYWtUMFVHcnhuYVlPLVU2c3VhUGRIWFNvS0ZmQlByMzhHR0trM2F2Mms1eEVHWjZtWF92aElOX3lwYmF4R2FtT0JDV2EtQUFQQ3dfWEtIVERIUXdiQXpsV0lJR040WVZkMw?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQOG15Sno3R3huOGl5WFllMTdFT3BfRi1VY0ZqOU5hdTVSTDlDYWtUMFVHcnhuYVlPLVU2c3VhUGRIWFNvS0ZmQlByMzhHR0trM2F2Mms1eEVHWjZtWF92aElOX3lwYmF4R2FtT0JDV2EtQUFQQ3dfWEtIVERIUXdiQXpsV0lJR040WVZkMw?oc=5\" target=\"_blank\">Taiwan’s resilience must be built before a crisis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Japan Times</font>",
           "source": "The Japan Times",
           "publishedAt": "Thu, 22 Oct 2026 07:03:00 GMT",
           "publishedMs": 1792652580000,
-          "relevance": 3
-        },
-        {
-          "title": "China steps up ‘grey zone’ tactics to isolate Taiwan and punish its allies - Financial Times",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWWt0TzJYb293NlYtc1lTcW5nQXptdXlBSVVhQWxwM3NpVmQyZmVVZDlJZDQ0a3AwQWNZbjVkN1lrMTc0ZDByTW9fN3FoM2dHNHNpMDYyUmR5UkZSRkhXUm01ZmRkTWk3VVoycmNkcW12a2E2RnpwRmtiOXJQUTY3dnNFSkg?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOWWt0TzJYb293NlYtc1lTcW5nQXptdXlBSVVhQWxwM3NpVmQyZmVVZDlJZDQ0a3AwQWNZbjVkN1lrMTc0ZDByTW9fN3FoM2dHNHNpMDYyUmR5UkZSRkhXUm01ZmRkTWk3VVoycmNkcW12a2E2RnpwRmtiOXJQUTY3dnNFSkg?oc=5\" target=\"_blank\">China steps up ‘grey zone’ tactics to isolate Taiwan and punish its allies</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Financial Times</font>",
-          "source": "Financial Times",
-          "publishedAt": "Thu, 22 Oct 2026 04:00:37 GMT",
-          "publishedMs": 1792641637000,
           "relevance": 3
         },
         {
@@ -1336,24 +1354,6 @@
           "publishedAt": "Wed, 21 Oct 2026 18:00:00 GMT",
           "publishedMs": 1792605600000,
           "relevance": 2
-        },
-        {
-          "title": "Taiwan Scholars Warn Chinese Election Interference Aims to Erode Trust in Democracy - Vision Times",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ3BBNHlhVHB2UjJ3aTFPTGtHMXpCS0s2N3FiR2NVQTJZSldvN0FGMWh5V0dONU9UYVFuV0JyVm01djhldWFvdTFWUkxmbDh4SUpoRW1IdkhsTmRqT0ttdElIbUJSbld3dXNWQ25BZXcyb3NHQ0JMbHRwdEkzeEV6UlZyVWllc1hCQXo1SDhTSFlFQ0JsT0JJSGhxSW41dXVZblMtdVBoZXJZa2ptcGhkQW1vdUlmeHF0aFBwM2FsWXlja0EtcUE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ3BBNHlhVHB2UjJ3aTFPTGtHMXpCS0s2N3FiR2NVQTJZSldvN0FGMWh5V0dONU9UYVFuV0JyVm01djhldWFvdTFWUkxmbDh4SUpoRW1IdkhsTmRqT0ttdElIbUJSbld3dXNWQ25BZXcyb3NHQ0JMbHRwdEkzeEV6UlZyVWllc1hCQXo1SDhTSFlFQ0JsT0JJSGhxSW41dXVZblMtdVBoZXJZa2ptcGhkQW1vdUlmeHF0aFBwM2FsWXlja0EtcUE?oc=5\" target=\"_blank\">Taiwan Scholars Warn Chinese Election Interference Aims to Erode Trust in Democracy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Vision Times</font>",
-          "source": "Vision Times",
-          "publishedAt": "Wed, 21 Oct 2026 17:18:49 GMT",
-          "publishedMs": 1792603129000,
-          "relevance": 3
-        },
-        {
-          "title": "China says it is 'safeguarding order' around Taiwan-controlled South China Sea atoll - The Korea Times",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPN0pQNUdXcC16VUM4bjNQZ3BGUXFqUXNGaENWeDZtWG00YjVfZ21zMU1ySVQzZEJwQkdmVS1tbW9qU0pwR3ppNVdLa1RUbGpocDNmb1cxdjJPM0lTNVdvWF93YlRSUmdhbkNJck91WDhBUmM1UWs0MDZuT010aEZSLXk0N2tMZng1OUJNa2pVRkVEdVdGRWtpTHBlN2QzV1hfR1h5bFZ2NDkzS296ekN0Q2JqTzNRa1Bwcks5d19meVNFdVdWYkJpSDVn0gHKAUFVX3lxTE83SlA1R1dwLXpVQzhuM1BncEZRcWpRc0ZoQ1Z4Nm1YbTRiNV9nbXMxTXJJVDNkQnBCR2ZVLW1tb2pTSnBHemk1V0trVFRsamhwM2ZvVzF2Mk8zSVM1V29YX3diVFJSZ2FuQ0lyT3VYOEFSYzVRazQwNm5PTXRoRlIteTQ3a0xmeDU5Qk1ralVGRUR1V0ZFa2lMcGU3ZDNXWF9HWHlsVnY0OTNLb3p6Q3RDYmpPM1FrUHBySzl3X2Z5U0V1V1ZiQmlINWc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxPN0pQNUdXcC16VUM4bjNQZ3BGUXFqUXNGaENWeDZtWG00YjVfZ21zMU1ySVQzZEJwQkdmVS1tbW9qU0pwR3ppNVdLa1RUbGpocDNmb1cxdjJPM0lTNVdvWF93YlRSUmdhbkNJck91WDhBUmM1UWs0MDZuT010aEZSLXk0N2tMZng1OUJNa2pVRkVEdVdGRWtpTHBlN2QzV1hfR1h5bFZ2NDkzS296ekN0Q2JqTzNRa1Bwcks5d19meVNFdVdWYkJpSDVn0gHKAUFVX3lxTE83SlA1R1dwLXpVQzhuM1BncEZRcWpRc0ZoQ1Z4Nm1YbTRiNV9nbXMxTXJJVDNkQnBCR2ZVLW1tb2pTSnBHemk1V0trVFRsamhwM2ZvVzF2Mk8zSVM1V29YX3diVFJSZ2FuQ0lyT3VYOEFSYzVRazQwNm5PTXRoRlIteTQ3a0xmeDU5Qk1ralVGRUR1V0ZFa2lMcGU3ZDNXWF9HWHlsVnY0OTNLb3p6Q3RDYmpPM1FrUHBySzl3X2Z5U0V1V1ZiQmlINWc?oc=5\" target=\"_blank\">China says it is 'safeguarding order' around Taiwan-controlled South China Sea atoll</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Korea Times</font>",
-          "source": "The Korea Times",
-          "publishedAt": "Wed, 21 Oct 2026 03:56:03 GMT",
-          "publishedMs": 1792554963000,
-          "relevance": 3
         }
       ],
       "trades": [
@@ -2261,7 +2261,7 @@
           "heat": 96
         },
         {
-          "t": "2026-10-24T13:47",
+          "t": "2026-10-25T13:47",
           "heat": 76
         }
       ]
@@ -2353,40 +2353,40 @@
         },
         {
           "label": "Defense replenishment",
-          "value": 95
+          "value": 89
         },
         {
           "label": "Travel drag",
-          "value": 88
+          "value": 80
         }
       ],
       "indicators": [
         {
           "label": "NATO procurement",
-          "value": 102.5,
+          "value": 102.3,
           "unit": "%",
-          "delta": 2.5,
+          "delta": 2.3,
           "tone": "up"
         },
         {
           "label": "European gas stress",
-          "value": 43.7,
+          "value": 43.5,
           "unit": "pts",
-          "delta": 2.7,
+          "delta": 2.5,
           "tone": "up"
         },
         {
           "label": "Transatlantic travel drag",
-          "value": 9.7,
+          "value": 9.6,
           "unit": "%",
-          "delta": 1.7,
+          "delta": 1.6,
           "tone": "up"
         },
         {
           "label": "Defense leadership",
-          "value": 101.8,
+          "value": 101.6,
           "unit": "%",
-          "delta": 1.8,
+          "delta": 1.6,
           "tone": "up"
         }
       ],
@@ -2396,43 +2396,61 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-10-24T13:47:44.032Z",
+      "refreshedAt": "2026-10-25T13:47:14.724Z",
       "headlines": [
         {
-          "title": "Ukraine and Russia eye new peace talks, but steep obstacles remain - MPR News",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSWJ5T3o4U0JTb1NjQTRvN3ZyMjhxaUh4ejRQNlRqTWRZbldPaTloZVl5aEJJZ3pha3FtVFBvWnBlZFRpaFhmTHhkcGxzeDBzMlFsVHhvNWc3aGk4Nm0zeUkzWlZKTUMwVUU1REZlTldTWGlhbjRnbUlwS0Y3UkZ6MWhkTW1PS0pXQW1rQ2V4eFZDdmZ6aU04VXBWNVhGbkxCd2N2T0pGbXBRQQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSWJ5T3o4U0JTb1NjQTRvN3ZyMjhxaUh4ejRQNlRqTWRZbldPaTloZVl5aEJJZ3pha3FtVFBvWnBlZFRpaFhmTHhkcGxzeDBzMlFsVHhvNWc3aGk4Nm0zeUkzWlZKTUMwVUU1REZlTldTWGlhbjRnbUlwS0Y3UkZ6MWhkTW1PS0pXQW1rQ2V4eFZDdmZ6aU04VXBWNVhGbkxCd2N2T0pGbXBRQQ?oc=5\" target=\"_blank\">Ukraine and Russia eye new peace talks, but steep obstacles remain</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MPR News</font>",
-          "source": "MPR News",
-          "publishedAt": "Sat, 24 Oct 2026 13:17:00 GMT",
-          "publishedMs": 1792847820000,
-          "relevance": 2
-        },
-        {
-          "title": "Zelensky Lays Out Ukraine’s Conditions for Lasting Peace - Kyiv Post",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0LVlTZzZEOTdnLXdjTG9rZEFoLTZKNkJLVEJXLXY4QzQwdlpXWmFzWWVsS2NfUnJ1SFZQZEFDX0ZWWUFhblVoOEljRQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0LVlTZzZEOTdnLXdjTG9rZEFoLTZKNkJLVEJXLXY4QzQwdlpXWmFzWWVsS2NfUnJ1SFZQZEFDX0ZWWUFhblVoOEljRQ?oc=5\" target=\"_blank\">Zelensky Lays Out Ukraine’s Conditions for Lasting Peace</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kyiv Post</font>",
-          "source": "Kyiv Post",
-          "publishedAt": "Sat, 24 Oct 2026 03:49:17 GMT",
-          "publishedMs": 1792813757000,
+          "title": "Ukraine using signal repeater drones to let operators fly mission drones further - Business Insider",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZTdXLTFxUWdLMDZJT3dJb0EzSUNiZ0VTMktJNEI0ZVhYWFp2ai14UkNkcXlPcUFDTXpDaGdRckloOXgzckdDdHRNUV81NllqN2RwQk5PcElYeW5qNE1zUmRnX2lURFN2UXJVRmFQSlh6LWotckp3Z0RDdjVjTzRRS2llQXc1eFY0VkVIemZmd2cyUnZ2VHYtd0tNMzRGZzJSempV?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOZTdXLTFxUWdLMDZJT3dJb0EzSUNiZ0VTMktJNEI0ZVhYWFp2ai14UkNkcXlPcUFDTXpDaGdRckloOXgzckdDdHRNUV81NllqN2RwQk5PcElYeW5qNE1zUmRnX2lURFN2UXJVRmFQSlh6LWotckp3Z0RDdjVjTzRRS2llQXc1eFY0VkVIemZmd2cyUnZ2VHYtd0tNMzRGZzJSempV?oc=5\" target=\"_blank\">Ukraine using signal repeater drones to let operators fly mission drones further</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Insider</font>",
+          "source": "Business Insider",
+          "publishedAt": "Sun, 25 Oct 2026 10:41:00 GMT",
+          "publishedMs": 1792924860000,
           "relevance": 1
         },
         {
-          "title": "Russian Offensive Campaign Assessment, October 23, 2026 - Institute for the Study of War",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSTRTXzBxWGxGUDF6ZExuUlZnQkctMjR4NEdZNmkwRTZ2amZXaDdwT1VWV3p0dUdjSTFzMkZmMnVqcklkME5qUjVlQ2liVmVQQkRXX0ZUSVR2Vl9LTDR3UEgxUDRFX3VvTkhhcFhBa0tDUFladlNPTUlqQTZUMjZzMEZlZHM0LWhsRXlDUnRqMXFMdXIwemxNOHBOUTY3OU9HMkdFdlRKUUdnTDA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSTRTXzBxWGxGUDF6ZExuUlZnQkctMjR4NEdZNmkwRTZ2amZXaDdwT1VWV3p0dUdjSTFzMkZmMnVqcklkME5qUjVlQ2liVmVQQkRXX0ZUSVR2Vl9LTDR3UEgxUDRFX3VvTkhhcFhBa0tDUFladlNPTUlqQTZUMjZzMEZlZHM0LWhsRXlDUnRqMXFMdXIwemxNOHBOUTY3OU9HMkdFdlRKUUdnTDA?oc=5\" target=\"_blank\">Russian Offensive Campaign Assessment, October 23, 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Institute for the Study of War</font>",
-          "source": "Institute for the Study of War",
-          "publishedAt": "Sat, 24 Oct 2026 03:20:02 GMT",
-          "publishedMs": 1792812002000,
+          "title": "\"We Don't Have 5 Years\": Celebrated American General Sounds Alarm On War - NDTV",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWmVZeHVQZ1Y4dnJDcF95TXNHc3ZoQ0RkbUJQM05SYm8xY3MwQUZ3NDZFenpnWXczd0JwVENVMmZtRG1aaGJLVWpMQWYwY0dqMi15cTlwV1pnTGVRbGd6RzJSRmllekdvR003NVB1OC12aTJackhlaE1BeGR0RDNZU093cVpBcWhWQmdQcVBfV3AzdWRJRkpfS0VCQ3ZiWkstVlBKcEd1ZFMxMmdxWEJqWjlrSWw1VEJkV3pYQ0pjYlNXb1ItVE5QTS1zalIxNmdORWdXMU1zX1YwRXdvWGg1SGh3dw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWmVZeHVQZ1Y4dnJDcF95TXNHc3ZoQ0RkbUJQM05SYm8xY3MwQUZ3NDZFenpnWXczd0JwVENVMmZtRG1aaGJLVWpMQWYwY0dqMi15cTlwV1pnTGVRbGd6RzJSRmllekdvR003NVB1OC12aTJackhlaE1BeGR0RDNZU093cVpBcWhWQmdQcVBfV3AzdWRJRkpfS0VCQ3ZiWkstVlBKcEd1ZFMxMmdxWEJqWjlrSWw1VEJkV3pYQ0pjYlNXb1ItVE5QTS1zalIxNmdORWdXMU1zX1YwRXdvWGg1SGh3dw?oc=5\" target=\"_blank\">\"We Don't Have 5 Years\": Celebrated American General Sounds Alarm On War</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NDTV</font>",
+          "source": "NDTV",
+          "publishedAt": "Sun, 25 Oct 2026 05:26:25 GMT",
+          "publishedMs": 1792905985000,
+          "relevance": 1
+        },
+        {
+          "title": "We cannot fight until the last Ukrainian – it’s time to call Putin’s bluff - The Independent",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNXJvUm1LN2oxWlV6T2FjelItakk1b3FBeDBYR19hMzlhd2c3UjZOcnk2bWt2c0U1aFdHTDg4WUIwT2twR29mb1B6eTBUazNrVmVuLV9mUDEtVDk5T3J0dmJ0VktKSThLQW1BMXhxcjRuT2xVWHJVNFhpbzZzR0c0UXE4ZDd5TUFWa0FDUS1mR0RwdHdpZm9sa3c2MVNNbUJrU3lKbEN3?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPNXJvUm1LN2oxWlV6T2FjelItakk1b3FBeDBYR19hMzlhd2c3UjZOcnk2bWt2c0U1aFdHTDg4WUIwT2twR29mb1B6eTBUazNrVmVuLV9mUDEtVDk5T3J0dmJ0VktKSThLQW1BMXhxcjRuT2xVWHJVNFhpbzZzR0c0UXE4ZDd5TUFWa0FDUS1mR0RwdHdpZm9sa3c2MVNNbUJrU3lKbEN3?oc=5\" target=\"_blank\">We cannot fight until the last Ukrainian – it’s time to call Putin’s bluff</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Independent</font>",
+          "source": "The Independent",
+          "publishedAt": "Sat, 24 Oct 2026 15:57:00 GMT",
+          "publishedMs": 1792857420000,
+          "relevance": 1
+        },
+        {
+          "title": "Total shock in Ukraine as Russian air doctrine and US pressure force a peace compromise - Bankingnews",
+          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRzRPLTZwYlZBSkFNUFdVV1NaOGFrUW9URXFJejBWblJnZzZydnZVNzc3OUVJYjRqby1sVEZ6UXpTblF4bGRsaEh6RGRjRk5OajlNOUZhRHA2VWgzY1Zpa0dHUFQ0RTlMa3I0SENvb0swWjBNNHVGUEhkN1lha0hHVFlkTlNSM2ZCZThJUmxNOFZjdTlRLUF5aTJfZWluWFpSWHlnNHFVa3ZubW9rTlVhZU15bmdjYzdibjBRQlk5bjluN05vZk1faTloVWJWeTdQTXMtNjFJZ0VVc1R4cUt5ZmY1ekN1bzREVXRwRHljb1MzYWM?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRzRPLTZwYlZBSkFNUFdVV1NaOGFrUW9URXFJejBWblJnZzZydnZVNzc3OUVJYjRqby1sVEZ6UXpTblF4bGRsaEh6RGRjRk5OajlNOUZhRHA2VWgzY1Zpa0dHUFQ0RTlMa3I0SENvb0swWjBNNHVGUEhkN1lha0hHVFlkTlNSM2ZCZThJUmxNOFZjdTlRLUF5aTJfZWluWFpSWHlnNHFVa3ZubW9rTlVhZU15bmdjYzdibjBRQlk5bjluN05vZk1faTloVWJWeTdQTXMtNjFJZ0VVc1R4cUt5ZmY1ekN1bzREVXRwRHljb1MzYWM?oc=5\" target=\"_blank\">Total shock in Ukraine as Russian air doctrine and US pressure force a peace compromise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bankingnews</font>",
+          "source": "Bankingnews",
+          "publishedAt": "Sat, 24 Oct 2026 13:09:03 GMT",
+          "publishedMs": 1792847343000,
           "relevance": 2
         },
         {
-          "title": "How Ukraine is targeting Russia's aviation and travel sectors with drone strikes on Moscow-area airports - DW.com",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdlE3TWQtWHpqNkRfZUVKUW5RVzdESHVoQ0dMaFNuTms5UU42X3hic1cwQ3d4S3hpcDBmaWNmZTF3LURROEhxZWJHa3ZackJlUmwyZjBiYjFnSDdjYVdWQWozUU9JeTdHVmpsaFFvSVVyTGpYUGFHbkZDV01JNzNFY3R2M1k2MVcxLVpyZXlWSkprdDZEX21mM2xkZWpHTHR4Y1HSAaIBQVVfeXFMUEdFdmx4WC1VYzJzUjJEWjlVN2tyU3dMR1VpX0JhTW9KTmhJbUZqWFl5Wkt5ZHJoM3k2UktnMGdYc3VWcC1nMVQtNkJkVmoweVpjQjdVWWpLMGdPai1CT1lFcEowb0hNVzZ4T0lsYW9QWjBjcHRVTUdpSE9oaEdKWnBjYVV2Y0pvNUotdG04YWx4VXpfT1lvQmtLeW15NVVtM0R3?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxOdlE3TWQtWHpqNkRfZUVKUW5RVzdESHVoQ0dMaFNuTms5UU42X3hic1cwQ3d4S3hpcDBmaWNmZTF3LURROEhxZWJHa3ZackJlUmwyZjBiYjFnSDdjYVdWQWozUU9JeTdHVmpsaFFvSVVyTGpYUGFHbkZDV01JNzNFY3R2M1k2MVcxLVpyZXlWSkprdDZEX21mM2xkZWpHTHR4Y1HSAaIBQVVfeXFMUEdFdmx4WC1VYzJzUjJEWjlVN2tyU3dMR1VpX0JhTW9KTmhJbUZqWFl5Wkt5ZHJoM3k2UktnMGdYc3VWcC1nMVQtNkJkVmoweVpjQjdVWWpLMGdPai1CT1lFcEowb0hNVzZ4T0lsYW9QWjBjcHRVTUdpSE9oaEdKWnBjYVV2Y0pvNUotdG04YWx4VXpfT1lvQmtLeW15NVVtM0R3?oc=5\" target=\"_blank\">How Ukraine is targeting Russia's aviation and travel sectors with drone strikes on Moscow-area airports</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DW.com</font>",
-          "source": "DW.com",
-          "publishedAt": "Sat, 24 Oct 2026 00:44:42 GMT",
-          "publishedMs": 1792802682000,
-          "relevance": 2
+          "title": "Starlink returns to working order in Ukraine, the private power behind a modern war - The Jerusalem Post",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaOG5JcldsQXVvcmt1SFZVNXlia0gybHEwYTF5aVZfOFItOWgxUWN0c25Wd2VUZjVicGhJb3ljd0xYaW9Zd3ZKTHhRc1VmRjBuTjREeGtNM1NSblAtY0FV?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaOG5JcldsQXVvcmt1SFZVNXlia0gybHEwYTF5aVZfOFItOWgxUWN0c25Wd2VUZjVicGhJb3ljd0xYaW9Zd3ZKTHhRc1VmRjBuTjREeGtNM1NSblAtY0FV?oc=5\" target=\"_blank\">Starlink returns to working order in Ukraine, the private power behind a modern war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Jerusalem Post</font>",
+          "source": "The Jerusalem Post",
+          "publishedAt": "Sat, 24 Oct 2026 09:54:23 GMT",
+          "publishedMs": 1792835663000,
+          "relevance": 1
+        },
+        {
+          "title": "How reliant is Ukraine on US support – and could Kyiv carry on without it? - CNN",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSTl0UUtZbWpxSE1IM3N1cnc1c0RsQzYtdnBTeWFaMHZpMjJWZUg5NG13UFhpYlprMHdYN2VVSjl1bFZHeUFmQUJ6YUF2UlFqX0ZRZHpfbDNtMW9pNkI3RE14X2RUbzFIV0UzWjRtSHh1ZVNtOWF0WjBZd2xPVm03VUNsSjJCS2NieWo1c3lzYw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxNSTl0UUtZbWpxSE1IM3N1cnc1c0RsQzYtdnBTeWFaMHZpMjJWZUg5NG13UFhpYlprMHdYN2VVSjl1bFZHeUFmQUJ6YUF2UlFqX0ZRZHpfbDNtMW9pNkI3RE14X2RUbzFIV0UzWjRtSHh1ZVNtOWF0WjBZd2xPVm03VUNsSjJCS2NieWo1c3lzYw?oc=5\" target=\"_blank\">How reliant is Ukraine on US support – and could Kyiv carry on without it?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNN</font>",
+          "source": "CNN",
+          "publishedAt": "Sat, 24 Oct 2026 08:00:03 GMT",
+          "publishedMs": 1792828803000,
+          "relevance": 1
         },
         {
           "title": "US military needs ‘urgent revolutionary institutional change’ to prepare for modern war, Petraeus says - Defense News",
@@ -2444,6 +2462,15 @@
           "relevance": 1
         },
         {
+          "title": "NATO member 'activates air defence system' as Russia launches huge new attack - AOL.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOXkwN3hFZGFVM05jZ1NWekd3X1R2clEzRXNFT1h6V2FVUXE4eVdNQlIyTTVSVVN2dDRmSWgxdjNDeVFCdU1ZRy1nQUdyb2piTnlGQUJfeTBWNzgwRV9KRzA2QkJ2NTB2NVFFVnlHWmhFZ3ZWdzBiOXo2NnlHRmtYd0RKNA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxNOXkwN3hFZGFVM05jZ1NWekd3X1R2clEzRXNFT1h6V2FVUXE4eVdNQlIyTTVSVVN2dDRmSWgxdjNDeVFCdU1ZRy1nQUdyb2piTnlGQUJfeTBWNzgwRV9KRzA2QkJ2NTB2NVFFVnlHWmhFZ3ZWdzBiOXo2NnlHRmtYd0RKNA?oc=5\" target=\"_blank\">NATO member 'activates air defence system' as Russia launches huge new attack</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+          "source": "AOL.com",
+          "publishedAt": "Fri, 23 Oct 2026 16:37:52 GMT",
+          "publishedMs": 1792773472000,
+          "relevance": 3
+        },
+        {
           "title": "Poland closes airports and 'air defence system activated' as Russia launches attack - Daily Mirror",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd3VzbnJrcm5RSU1oUklaX2hPbDdDWlp6cVFXQUxDWURSOG5MYmtsRlRpZmxhajMxNzdZWDE2N1lVYkg0U1I3d1BIbkplN29YaWp2TXBMcERyazVZV0N6alc3N3Y0czh5NlgtMUFxUS1ZM0JkVDE4TTVDZUM3ZWZxLThIenQzOWNnYWVPadIBkgFBVV95cUxOcTdsemxEaDhySllUWFZLd1hOS09EandZd1dFdE1aVDVIUEMzTlh1dm91bU5valM2THpqMldncEhjdGtUMHhzVWlDVHFqU21pM3Z1V0oxMEl1YzZoMWs0UXJsR2RldG1zT1J4SG85dnM3ZGNEcXlaN0o2QVpUeEdCQXVGSXFxVWN0VWRlaWxSZWdKUQ?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQd3VzbnJrcm5RSU1oUklaX2hPbDdDWlp6cVFXQUxDWURSOG5MYmtsRlRpZmxhajMxNzdZWDE2N1lVYkg0U1I3d1BIbkplN29YaWp2TXBMcERyazVZV0N6alc3N3Y0czh5NlgtMUFxUS1ZM0JkVDE4TTVDZUM3ZWZxLThIenQzOWNnYWVPadIBkgFBVV95cUxOcTdsemxEaDhySllUWFZLd1hOS09EandZd1dFdE1aVDVIUEMzTlh1dm91bU5valM2THpqMldncEhjdGtUMHhzVWlDVHFqU21pM3Z1V0oxMEl1YzZoMWs0UXJsR2RldG1zT1J4SG85dnM3ZGNEcXlaN0o2QVpUeEdCQXVGSXFxVWN0VWRlaWxSZWdKUQ?oc=5\" target=\"_blank\">Poland closes airports and 'air defence system activated' as Russia launches attack</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Mirror</font>",
@@ -2453,39 +2480,12 @@
           "relevance": 2
         },
         {
-          "title": "The New Energy Stalemate in Ukraine - Foreign Affairs",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1uU29TVmVUMExweTVTTlZ6bU9EcnNtSVhxbzlzLVI0THI5YVN5V2U0SXRjck81Z19sZWp5NTkxdWk3YmFMMURNSURUZHR2R1NCYkpjYlRCTUh5NjhiRzB0RFZsZXpZeVZsdS16OVl5TTJxZk5kLXc?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE1uU29TVmVUMExweTVTTlZ6bU9EcnNtSVhxbzlzLVI0THI5YVN5V2U0SXRjck81Z19sZWp5NTkxdWk3YmFMMURNSURUZHR2R1NCYkpjYlRCTUh5NjhiRzB0RFZsZXpZeVZsdS16OVl5TTJxZk5kLXc?oc=5\" target=\"_blank\">The New Energy Stalemate in Ukraine</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Foreign Affairs</font>",
-          "source": "Foreign Affairs",
-          "publishedAt": "Fri, 23 Oct 2026 12:33:00 GMT",
-          "publishedMs": 1792758780000,
-          "relevance": 2
-        },
-        {
-          "title": "NATO member 'activates air defence system' as Russia launches huge new attack - Daily Express",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZnJlZHQwQ3M3Z2FwRUE0M3pNeUJNSHlQakJMSU5zY3lsSjdZLUxQYXBDS01BbmN6Mk50cnhKczZTQlRkYXgydGRoaVMtU0JzVlI0cEFkWXdfM1hnc3NhWjJMMTN5SFBIMmRvUTQyS25BelVHWEwzLWM5NTFTZ2t4LWFVS29iZ9IBiwFBVV95cUxPRHVCdEJ0QXpka25McEtXME1nNTZSLW1qUzBYOVg0YUcwNlpYQTF4S3RwOWJJNFJLdF9LV0wtdzVMYUV0U0ZpX3dRMTY3N1BCNzhBanZIbzJobFFJQ05jT0lRbUR3bXVZV1pGZm80VHJTVDI2ZFdjU0cxVzJRcHNJU3Z4QUtyejVmUHUw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQZnJlZHQwQ3M3Z2FwRUE0M3pNeUJNSHlQakJMSU5zY3lsSjdZLUxQYXBDS01BbmN6Mk50cnhKczZTQlRkYXgydGRoaVMtU0JzVlI0cEFkWXdfM1hnc3NhWjJMMTN5SFBIMmRvUTQyS25BelVHWEwzLWM5NTFTZ2t4LWFVS29iZ9IBiwFBVV95cUxPRHVCdEJ0QXpka25McEtXME1nNTZSLW1qUzBYOVg0YUcwNlpYQTF4S3RwOWJJNFJLdF9LV0wtdzVMYUV0U0ZpX3dRMTY3N1BCNzhBanZIbzJobFFJQ05jT0lRbUR3bXVZV1pGZm80VHJTVDI2ZFdjU0cxVzJRcHNJU3Z4QUtyejVmUHUw?oc=5\" target=\"_blank\">NATO member 'activates air defence system' as Russia launches huge new attack</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Express</font>",
-          "source": "Daily Express",
-          "publishedAt": "Fri, 23 Oct 2026 11:41:00 GMT",
-          "publishedMs": 1792755660000,
-          "relevance": 3
-        },
-        {
-          "title": "Every second Russian drone is jet-powered - how many destroyed by air defense overnight - Українські Національні Новини (УНН)",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZF9aT1ZlcWxCYUJWenE4VUVaUUFkZGp3c1NLS2cxWFdDQlhIbzNZOWxFV3hYcEdxOUpiS2pPVHYxTzFaMWZKSkE1NWtWVktnemFIS1JHT19keG0wV0Y2bkFIWWVWQ2RqUUtCSnlYUTA4M1R1RnlFaXo5eFJrYnFORHVuU0t5QmZSVG1SU0ZqZFA4eUowUHExb3lTSUNJb2JkaklmcENjX0FJOG1GdG13V1paQdIBsgFBVV95cUxNUmdQZEladDIxYzZuQjJtVU1MWW1Eb2lySzBFOEhENm9nMEdxR1YtWXIzVVFPb19paXR3NGJuU1pNMV9RdzRvMW9jZ3ZGQS1LdWJoWDY1bHdYbVVyamNYWHhLQnpJTmQwUmhnOWxOenBNYy1yV1ZweWd0WDY0VmZHNFNFTkF5cXY4ZTlDUmwxSk1kWm51M0J6RnMxeWJFRDVraXV2ckdBSDhpeW5IanJpdFRB?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOZF9aT1ZlcWxCYUJWenE4VUVaUUFkZGp3c1NLS2cxWFdDQlhIbzNZOWxFV3hYcEdxOUpiS2pPVHYxTzFaMWZKSkE1NWtWVktnemFIS1JHT19keG0wV0Y2bkFIWWVWQ2RqUUtCSnlYUTA4M1R1RnlFaXo5eFJrYnFORHVuU0t5QmZSVG1SU0ZqZFA4eUowUHExb3lTSUNJb2JkaklmcENjX0FJOG1GdG13V1paQdIBsgFBVV95cUxNUmdQZEladDIxYzZuQjJtVU1MWW1Eb2lySzBFOEhENm9nMEdxR1YtWXIzVVFPb19paXR3NGJuU1pNMV9RdzRvMW9jZ3ZGQS1LdWJoWDY1bHdYbVVyamNYWHhLQnpJTmQwUmhnOWxOenBNYy1yV1ZweWd0WDY0VmZHNFNFTkF5cXY4ZTlDUmwxSk1kWm51M0J6RnMxeWJFRDVraXV2ckdBSDhpeW5IanJpdFRB?oc=5\" target=\"_blank\">Every second Russian drone is jet-powered - how many destroyed by air defense overnight</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Українські Національні Новини (УНН)</font>",
-          "source": "Українські Національні Новини (УНН)",
-          "publishedAt": "Fri, 23 Oct 2026 05:19:21 GMT",
-          "publishedMs": 1792732761000,
-          "relevance": 2
-        },
-        {
-          "title": "Inside the race to build Patriot missiles as stocks run low - PBS",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1RMYjNGVndLYWFVNkhPaWl1Z0JqLTVFQmJFSXpheUFJMFdfQzFXMjlWd0gyTUVjeGdENnVTdXJESzU4NFNkbzJyQW9SRnMtM2R4S1BVdUxTNmJESWtra05RMFhJLTdQNWROTzJJREd5MTZpcG9YbUZHX1lGRGxxeWJqaVprZkRHOGh6aXp6NjN3Y1AycTluNQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1RMYjNGVndLYWFVNkhPaWl1Z0JqLTVFQmJFSXpheUFJMFdfQzFXMjlWd0gyTUVjeGdENnVTdXJESzU4NFNkbzJyQW9SRnMtM2R4S1BVdUxTNmJESWtra05RMFhJLTdQNWROTzJJREd5MTZpcG9YbUZHX1lGRGxxeWJqaVprZkRHOGh6aXp6NjN3Y1AycTluNQ?oc=5\" target=\"_blank\">Inside the race to build Patriot missiles as stocks run low</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PBS</font>",
-          "source": "PBS",
-          "publishedAt": "Thu, 22 Oct 2026 22:40:53 GMT",
-          "publishedMs": 1792708853000,
+          "title": "Ukrainian Drone Attacks Hit Russian Airfield, Explosives Plant, Tax Data Center Near Perm - Kyiv Post",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1YZV9aUFlzTWpJVjFHYVZhTTV6blNQOUNUU0E3ZFd3QU5XLV9odVFlck0tQ1Y5VENMYk9qb0RGLVQxc25ydmFfZHdIQQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1YZV9aUFlzTWpJVjFHYVZhTTV6blNQOUNUU0E3ZFd3QU5XLV9odVFlck0tQ1Y5VENMYk9qb0RGLVQxc25ydmFfZHdIQQ?oc=5\" target=\"_blank\">Ukrainian Drone Attacks Hit Russian Airfield, Explosives Plant, Tax Data Center Near Perm</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kyiv Post</font>",
+          "source": "Kyiv Post",
+          "publishedAt": "Fri, 23 Oct 2026 12:45:44 GMT",
+          "publishedMs": 1792759544000,
           "relevance": 2
         }
       ],
@@ -3463,7 +3463,7 @@
           "heat": 92
         },
         {
-          "t": "2026-10-24T13:47",
+          "t": "2026-10-25T13:47",
           "heat": 83
         }
       ]
@@ -3581,16 +3581,16 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-10-24T13:47:45.273Z",
+      "refreshedAt": "2026-10-25T13:47:14.754Z",
       "headlines": [
         {
-          "title": "North Korea's Military Power Surpasses Iran's Tenfold - 조선일보",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOU18xWkFCdUxkZ2R5QWVPSnRTcWJXMkUtYlh4ZDlEM083VTJ5dXVSZWdZdUM2bmE3YmRpWlhCZTJsMF9hZUk1aHFSNG85YlFBODFVMVVEcUlPQ1cxVFBVaTUwVEFWY0Y3aUU2NUdZLWxJWUNZTlJqVldiS3lQNUhwQjhEdHU1MUU?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxOU18xWkFCdUxkZ2R5QWVPSnRTcWJXMkUtYlh4ZDlEM083VTJ5dXVSZWdZdUM2bmE3YmRpWlhCZTJsMF9hZUk1aHFSNG85YlFBODFVMVVEcUlPQ1cxVFBVaTUwVEFWY0Y3aUU2NUdZLWxJWUNZTlJqVldiS3lQNUhwQjhEdHU1MUU?oc=5\" target=\"_blank\">North Korea's Military Power Surpasses Iran's Tenfold</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">조선일보</font>",
-          "source": "조선일보",
-          "publishedAt": "Mon, 19 Oct 2026 04:51:14 GMT",
-          "publishedMs": 1792385474000,
-          "relevance": 2
+          "title": "DW News. . Pyongyang is threatening to reactivate propaganda loudspeakers at the border with South Korea as tensions flare over an explosion in the Demilitarized Zone in September. The North denies involvement in the landmine blasts which injured three - Facebook",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOai1DLVpfS280R2pVU2gzNjM3RUU3eHVHZlRpa3pvaG9QbDZWdFdWUU9nVHI2SjF6ak5adHVEYlJrcXNyWmp5ekVabXBoaVRzUXdpUG1QTFJyQTAzZ1JVcW1LbWJRaDNVVElISGwydkF2b01OLTZZQXAwSml1MjdZdjZQTUxLbTByUUhvZkk5RGprVEVJS0xkd0ExbEI0alVPVjJWbEdEV1Vva09pMmgxUUNuNUg3OU9FRzR3bFR2MWpsYl8yWERCNVZ6dWlhT3BOaFZtTzZvTHVwZnMzaVcwcUpB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxOai1DLVpfS280R2pVU2gzNjM3RUU3eHVHZlRpa3pvaG9QbDZWdFdWUU9nVHI2SjF6ak5adHVEYlJrcXNyWmp5ekVabXBoaVRzUXdpUG1QTFJyQTAzZ1JVcW1LbWJRaDNVVElISGwydkF2b01OLTZZQXAwSml1MjdZdjZQTUxLbTByUUhvZkk5RGprVEVJS0xkd0ExbEI0alVPVjJWbEdEV1Vva09pMmgxUUNuNUg3OU9FRzR3bFR2MWpsYl8yWERCNVZ6dWlhT3BOaFZtTzZvTHVwZnMzaVcwcUpB?oc=5\" target=\"_blank\">DW News. . Pyongyang is threatening to reactivate propaganda loudspeakers at the border with South Korea as tensions flare over an explosion in the Demilitarized Zone in September. The North denies involvement in the landmine blasts which injured three</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Facebook</font>",
+          "source": "Facebook",
+          "publishedAt": "Sat, 24 Oct 2026 06:36:04 GMT",
+          "publishedMs": 1792823764000,
+          "relevance": 3
         },
         {
           "title": "South Korea readies solid-fuel rocket launch as rivalry with North intensifies - Korea JoongAng Daily",
@@ -3638,15 +3638,6 @@
           "relevance": 1
         },
         {
-          "title": "Trump teases prospect of summit with Kim Jong Un as soon as next month - inkl",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbEw1ZjExNklfUnNHRmlHRkpvVTZXTUczZTByYlpBd001bmVXSG9MMnUwOUR3cEdHVzNQNWVTLTBPZkZDWUhkeWlXazVWLVBncnoyWFY5cmxjRkg3QV9SU3JwZU5qLU1ZLTM2WFNDOU9Wb3dMcWh4YXoxWDMzRUNvR0lxYzFWN1doWHQtQzFQRXA4R1l0U1VfUl9CUF8?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNbEw1ZjExNklfUnNHRmlHRkpvVTZXTUczZTByYlpBd001bmVXSG9MMnUwOUR3cEdHVzNQNWVTLTBPZkZDWUhkeWlXazVWLVBncnoyWFY5cmxjRkg3QV9SU3JwZU5qLU1ZLTM2WFNDOU9Wb3dMcWh4YXoxWDMzRUNvR0lxYzFWN1doWHQtQzFQRXA4R1l0U1VfUl9CUF8?oc=5\" target=\"_blank\">Trump teases prospect of summit with Kim Jong Un as soon as next month</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">inkl</font>",
-          "source": "inkl",
-          "publishedAt": "Tue, 13 Oct 2026 08:23:54 GMT",
-          "publishedMs": 1791879834000,
-          "relevance": 1
-        },
-        {
           "title": "North Korea’s Kim visits new defense museum as Trump floats meeting - The Japan Times",
           "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUnJ3VmEtMEtiX1N3SExmSmtFTUF4c3dOZVNETnV0WjRhMmJoOER3YXd1cDVhQzFuS1pOaUhDVGlsNDZXNzA4ZjRRVzdxU29aUmpHSWxCTTA1dlI4VnJqOGhHZGtFMnlSem1vY3MxRWJOcmxSV2NtbDdLRUdyMDBPSE9yZjZRcWtVQ2EwOXEyWUY?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPUnJ3VmEtMEtiX1N3SExmSmtFTUF4c3dOZVNETnV0WjRhMmJoOER3YXd1cDVhQzFuS1pOaUhDVGlsNDZXNzA4ZjRRVzdxU29aUmpHSWxCTTA1dlI4VnJqOGhHZGtFMnlSem1vY3MxRWJOcmxSV2NtbDdLRUdyMDBPSE9yZjZRcWtVQ2EwOXEyWUY?oc=5\" target=\"_blank\">North Korea’s Kim visits new defense museum as Trump floats meeting</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Japan Times</font>",
@@ -3669,6 +3660,15 @@
           "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMUJIRVBfZnVzQmxJcVVyaWxhaERMSjRSZVVsSDg2TXBuY08xaFVucEhyaThIMDZTSFl5V2VJV3dfa1RXZTFZX3Z1SFI4a0FVamtxeHVkM3ZFSTZVTGdsamc3VWdDUTlwUG12Z3hLRDRSNFpQRFlqcENOMlJCNWIzX244TGlfRVd5MEtlYnRPeHVDOUZxRkU1VHdhdnY4V0t3?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQMUJIRVBfZnVzQmxJcVVyaWxhaERMSjRSZVVsSDg2TXBuY08xaFVucEhyaThIMDZTSFl5V2VJV3dfa1RXZTFZX3Z1SFI4a0FVamtxeHVkM3ZFSTZVTGdsamc3VWdDUTlwUG12Z3hLRDRSNFpQRFlqcENOMlJCNWIzX244TGlfRVd5MEtlYnRPeHVDOUZxRkU1VHdhdnY4V0t3?oc=5\" target=\"_blank\">North Korea Hails Tactical Ballistic Missile Test; Seoul Says It Flew Over 900 km, Expert Estimates 2.5-Ton Warhead</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Seoul Economic Daily</font>",
           "source": "Seoul Economic Daily",
+          "publishedAt": "Tue, 13 Oct 2026 07:00:00 GMT",
+          "publishedMs": 1791874800000,
+          "relevance": 2
+        },
+        {
+          "title": "Kim Jong Un showcases missile arsenal capable of striking US ahead of Trump visit - The Times of India",
+          "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOeVA0OFNSckVaXzBKNzF5eERBbkhncnhNYWJ3SE9MY3ByYjhqOHVYbTg5aUpWS3VfTm1VZGJ4YTVlV2wwNTVIcWJEMzBnaXFaWkVTdzJJX3F3X3R0M3l2ZV9wVlJIMTA3Tld0dkd6V1FxOWhzMmt0VXRrdlZCLVJGQWY5Vk5ldlFZNjBCTTlvd1VMVUVVRzJBcDNSWjU1Mm9RUVhsaGNXRHlBUHZWY2lhWUc0cDVuTURwNnFJemVPQXQxUGpZRk52MVpOSHNOOU10UnkxMllaTjhIQ2ZyTGJEem41Q2h0NmhkV2xURDBMVjVVVEhyRWNPNdIB_gFBVV95cUxOaUVOMTE0dHRCNVZDWnFoZ1E5NmRHVzVURDQwbGN0RzZLRkQ5Skhib3Z3MFdONUZnMU1qLWEzanJORlFVTUVLMXZva0ttYjdTdlFYd0xhTkZUbWNjSUszSG5OVmpoMnZnZEIyMXFUbFBUdmRsNEU0YjQ2MXRHTDRiSVRYTEtYZUhaRl9qZDQtS2NkSVBTemVITi0xckw5VVlCZWczcUl1dzRySzk2b0lVWEZYMUhwQ1VlNlduYXJPc3RSOUhhNVhfYXVsMEd5MjJZbjBPc3dUWTJSMHNfbTJOU19wZlZZU2RXY0xibWMtZ1NvSFlFNlNMUDY2U1NPdw?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi-AFBVV95cUxOeVA0OFNSckVaXzBKNzF5eERBbkhncnhNYWJ3SE9MY3ByYjhqOHVYbTg5aUpWS3VfTm1VZGJ4YTVlV2wwNTVIcWJEMzBnaXFaWkVTdzJJX3F3X3R0M3l2ZV9wVlJIMTA3Tld0dkd6V1FxOWhzMmt0VXRrdlZCLVJGQWY5Vk5ldlFZNjBCTTlvd1VMVUVVRzJBcDNSWjU1Mm9RUVhsaGNXRHlBUHZWY2lhWUc0cDVuTURwNnFJemVPQXQxUGpZRk52MVpOSHNOOU10UnkxMllaTjhIQ2ZyTGJEem41Q2h0NmhkV2xURDBMVjVVVEhyRWNPNdIB_gFBVV95cUxOaUVOMTE0dHRCNVZDWnFoZ1E5NmRHVzVURDQwbGN0RzZLRkQ5Skhib3Z3MFdONUZnMU1qLWEzanJORlFVTUVLMXZva0ttYjdTdlFYd0xhTkZUbWNjSUszSG5OVmpoMnZnZEIyMXFUbFBUdmRsNEU0YjQ2MXRHTDRiSVRYTEtYZUhaRl9qZDQtS2NkSVBTemVITi0xckw5VVlCZWczcUl1dzRySzk2b0lVWEZYMUhwQ1VlNlduYXJPc3RSOUhhNVhfYXVsMEd5MjJZbjBPc3dUWTJSMHNfbTJOU19wZlZZU2RXY0xibWMtZ1NvSFlFNlNMUDY2U1NPdw?oc=5\" target=\"_blank\">Kim Jong Un showcases missile arsenal capable of striking US ahead of Trump visit</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Times of India</font>",
+          "source": "The Times of India",
           "publishedAt": "Tue, 13 Oct 2026 07:00:00 GMT",
           "publishedMs": 1791874800000,
           "relevance": 2
@@ -4506,7 +4506,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-10-24T13:47",
+          "t": "2026-10-25T13:47",
           "heat": 74
         }
       ]
