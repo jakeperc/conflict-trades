@@ -20,3 +20,17 @@ export async function getJson<T>(name: Endpoint, signal?: AbortSignal): Promise<
   const data = (await res.json()) as T;
   return { data, source };
 }
+
+/** Live quote proxy (worker/quotes.js); VITE_QUOTES_URL overrides it, empty disables live marks. */
+export const QUOTES_URL: string = import.meta.env.VITE_QUOTES_URL ?? "https://conflict-trades-quotes.jakepercy.workers.dev/";
+
+export interface QuotesResponse {
+  fetchedAt: string;
+  quotes: Record<string, { price: number; prevClose: number | null; time: string | null } | null>;
+}
+
+export async function getQuotes(symbols: string[], signal?: AbortSignal): Promise<QuotesResponse> {
+  const res = await fetch(`${QUOTES_URL}?symbols=${encodeURIComponent(symbols.join(","))}`, { signal });
+  if (!res.ok) throw new Error(`quotes returned HTTP ${res.status}`);
+  return (await res.json()) as QuotesResponse;
+}

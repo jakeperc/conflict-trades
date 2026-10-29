@@ -142,7 +142,33 @@ export function traderKpis(state: TraderState, live?: { equity: number; pctRetur
   };
 }
 
-export type Found = { kind: "open"; item: Position } | { kind: "closed"; item: ClosedTrade };
+export type LivePrices = Record<string, { price: number } | null | undefined>;
+
+/**
+ * Re-mark open positions at live prices, same math as the server's markToMarketLive:
+ * equity = cash + sum(allocatedCash + unrealized P&L). Positions without a quote keep their last mark.
+ */
+export function markToMarket(state: TraderState, prices: LivePrices, fetchedAt: string) {
+  let openMtM = 0;
+  const openPositions = state.openPositions.map((p) => {
+    const px = prices[p.ticker]?.price;
+    if (!finite(px)) {
+      openMtM += p.allocatedCash + (p.unrealizedPnlDollar ?? 0);
+      return p;
+    }
+    const sign = p.direction === "SHORT" ? -1 : 1;
+    const pnl = sign * (px - p.entryPrice) * p.shares;
+    openMtM += p.allocatedCash + pnl;
+    return { ...p, currentPrice: px, unrealizedPnlDollar: pnl, unrealizedPct: (sign * (px - p.entryPrice)) / p.entryPrice };
+  });
+  const equity = state.cash + openMtM;
+  return {
+    state: { ...state, openPositions },
+    live: { equity, openMtM, pctReturn: state.startingCash ? equity / state.startingCash - 1 : 0, fetchedAt }
+  };
+}
+
+export type Found ={ kind: "open"; item: Position } | { kind: "closed"; item: ClosedTrade };
 
 /** Drawer lookup: open first, then closed (ids move to closed on exit), else null. */
 export function findPosition(state: TraderState | null | undefined, id: string | undefined): Found | null {

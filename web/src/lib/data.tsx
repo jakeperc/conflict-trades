@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { RefreshPayload, Source, TraderPayload } from "../types";
-import { getJson } from "./api";
+import { QUOTES_URL, getJson, getQuotes } from "./api";
 import { parseStored, readLocal, roll, sessionId, writeLocal, type Rolled } from "./baseline";
-import { traderKpis, traderSnapshot, type TraderSnapshot } from "./derive";
+import { markToMarket, traderKpis, traderSnapshot, type TraderSnapshot } from "./derive";
 
 const REFRESH_KEY = "conflict-dashboard-last-payload";
 const TRADER_KEY = "ct-trader-baseline";
@@ -33,6 +33,8 @@ interface DataCtx {
   baseline: RefreshPayload | null;
   traderBaseline: TraderSnapshot | null;
   source: Source | null;
+  /** When open positions were last re-marked from the live quote proxy (static host only). */
+  quotesAt: number | null;
   reload: () => void;
   reloadTrader: () => void;
 }
@@ -41,6 +43,20 @@ const Ctx = createContext<DataCtx | null>(null);
 
 const POLL_LIVE = 60_000;
 const POLL_SNAPSHOT = 10 * 60_000;
+const POLL_QUOTES = 30_000;
+
+/** Re-mark a snapshot payload at live prices; resolves to null if the proxy is down. */
+async function markLive(data: TraderPayload, signal?: AbortSignal): Promise<TraderPayload | null> {
+  const open = data.state?.openPositions ?? [];
+  if (!QUOTES_URL || !open.length) return null;
+  try {
+    const q = await getQuotes([...new Set(open.map((p) => p.ticker))], signal);
+    const m = markToMarket(data.state, q.quotes, q.fetchedAt);
+    return { ...data, state: m.state, live: m.live };
+  } catch {
+    return null;
+  }
+}
 
 export function DataProvider({ children }: { children: ReactNode }) {
   const [refresh, setRefresh] = useState<Slot<RefreshPayload>>(() => ({
@@ -54,6 +70,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [trader, setTrader] = useState<Slot<TraderPayload>>({ data: null, status: "loading", error: null, fromCache: false, receivedAt: null });
   const [traderBaseline, setTraderBaseline] = useState<TraderSnapshot | null>(traderStore.baseline);
   const [source, setSource] = useState<Source | null>(null);
+  const [quotesAt, setQuotesAt] = useState<number | null>(null);
+  // Last trader payload as served, before any live re-mark, so each quote tick marks from the source.
+  const rawTrader = useRef<TraderPayload | null>(null);
   const refreshAbort = useRef<AbortController | null>(null);
   const traderAbort = useRef<AbortController | null>(null);
 
@@ -80,7 +99,13 @@ export function DataProvider({ children }: { children: ReactNode }) {
     const ac = new AbortController();
     traderAbort.current = ac;
     try {
-      const { data, source: src } = await getJson<TraderPayload>("trader", ac.signal);
+      const { data: served, source: src } = await getJson<TraderPayload>("trader", ac.signal);
+      rawTrader.current = served;
+      // The live server marks positions itself; the static snapshot gets marked here.
+      const marked = src === "snapshot" ? await markLive(served, ac.signal) : null;
+      if (ac.signal.aborted) return;
+      const data = marked ?? served;
+      setQuotesAt(marked ? Date.now() : null);
       if (data?.state) {
         const k = traderKpis(data.state, data.live);
         traderStore = roll(traderStore, traderSnapshot(data.state, k.equity), (s) => `${s.lastRunAt}|${s.cycles}`, SESSION);
@@ -136,14 +161,52 @@ export function DataProvider({ children }: { children: ReactNode }) {
     };
   }, [source, loadTrader, loadRefresh]);
 
+  // Static host: re-mark open positions from the quote proxy every 30s while the tab is visible.
+  useEffect(() => {
+    if (source !== "snapshot" || !QUOTES_URL) return;
+    let timer: number | null = null;
+    let ac: AbortController | null = null;
+    const tick = async () => {
+      const served = rawTrader.current;
+      if (!served) return;
+      ac?.abort();
+      ac = new AbortController();
+      const marked = await markLive(served, ac.signal);
+      if (!marked || rawTrader.current !== served) return;
+      setQuotesAt(Date.now());
+      setTrader((s) => ({ ...s, data: marked }));
+    };
+    const start = () => {
+      if (timer == null) timer = window.setInterval(tick, POLL_QUOTES);
+    };
+    const stop = () => {
+      if (timer != null) window.clearInterval(timer);
+      timer = null;
+      ac?.abort();
+    };
+    const onVis = () => {
+      if (document.hidden) stop();
+      else {
+        tick();
+        start();
+      }
+    };
+    if (!document.hidden) start();
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", onVis);
+    };
+  }, [source]);
+
   const reload = useCallback(() => {
     loadRefresh();
     loadTrader();
   }, [loadRefresh, loadTrader]);
 
   const value = useMemo<DataCtx>(
-    () => ({ refresh, trader, baseline, traderBaseline, source, reload, reloadTrader: loadTrader }),
-    [refresh, trader, baseline, traderBaseline, source, reload, loadTrader]
+    () => ({ refresh, trader, baseline, traderBaseline, source, quotesAt, reload, reloadTrader: loadTrader }),
+    [refresh, trader, baseline, traderBaseline, source, quotesAt, reload, loadTrader]
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

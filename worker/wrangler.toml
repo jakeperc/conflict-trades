@@ -1,0 +1,5 @@
+# Live quote proxy for the static site. Deploy from this folder: npx wrangler deploy
+# If the workers.dev URL changes, update QUOTES_URL in web/src/lib/api.ts and rebuild the UI.
+name = "conflict-trades-quotes"
+main = "quotes.js"
+compatibility_date = "2026-10-01"

@@ -8,6 +8,7 @@ import {
   heldIndex,
   heldKey,
   ladderProgress,
+  markToMarket,
   maxDrawdown,
   profitFactor,
   scenarioDeltas,
@@ -202,6 +203,26 @@ describe("trader", () => {
     const s = ladderProgress(pos({ direction: "SHORT", entryPrice: 100, stopPrice: 110, targetPrice: 80, currentPrice: 90 }));
     expect(s.entry).toBeCloseTo(20 / 30);
     expect(s.mark).toBeCloseTo(10 / 30);
+  });
+
+  it("re-marks open positions at live prices", () => {
+    const state = {
+      cash: 500,
+      startingCash: 2000,
+      openPositions: [
+        pos({ id: "l", ticker: "USO", entryPrice: 100, shares: 10, allocatedCash: 1000 }),
+        pos({ id: "s", ticker: "SPY", direction: "SHORT", entryPrice: 50, shares: 4, allocatedCash: 200 }),
+        pos({ id: "q", ticker: "HAL", allocatedCash: 300, unrealizedPnlDollar: 15 })
+      ]
+    } as unknown as TraderState;
+    const m = markToMarket(state, { USO: { price: 110 }, SPY: { price: 45 }, HAL: null }, "t");
+    expect(m.state.openPositions[0].unrealizedPnlDollar).toBeCloseTo(100);
+    expect(m.state.openPositions[1].unrealizedPnlDollar).toBeCloseTo(20);
+    expect(m.state.openPositions[1].unrealizedPct).toBeCloseTo(0.1);
+    expect(m.state.openPositions[2]).toBe(state.openPositions[2]);
+    expect(m.live.openMtM).toBeCloseTo(1100 + 220 + 315);
+    expect(m.live.equity).toBeCloseTo(2135);
+    expect(m.live.pctReturn).toBeCloseTo(0.0675);
   });
 
   it("trader since-last counts entries and exits", () => {

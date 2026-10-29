@@ -11,7 +11,7 @@ import { PositionDrawer } from "./PositionDrawer";
 import { SimulationLab } from "./SimulationLab";
 
 export function TraderPage() {
-  const { trader, refresh, source, reloadTrader } = useData();
+  const { trader, refresh, source, quotesAt, reloadTrader } = useData();
   const route = useRoute();
   const data = trader.data;
 
@@ -38,7 +38,7 @@ export function TraderPage() {
 
   return (
     <>
-      <TraderBody data={data} scenarios={refresh.data?.scenarios} live={source === "live"} />
+      <TraderBody data={data} scenarios={refresh.data?.scenarios} live={source === "live" || quotesAt != null} />
       {route.positionId && <PositionDrawer id={route.positionId} state={data.state} />}
     </>
   );
@@ -48,7 +48,7 @@ function TraderBody({ data, scenarios, live }: { data: TraderPayload; scenarios:
   const { state, memory, simulation, calibration } = data;
   const k = traderKpis(state, data.live);
   const slices = useMemo(() => allocationSlices(state.openPositions, state.cash, scenarios), [state.openPositions, state.cash, scenarios]);
-  const recentClosed = useMemo(() => [...state.closedTrades].reverse().slice(0, 12), [state.closedTrades]);
+  const recentClosed = useMemo(() => [...state.closedTrades].reverse(), [state.closedTrades]);
   const up = k.pctVsStart >= 0;
   const asOf = live && data.live?.fetchedAt ? `marked ${dateTime(data.live.fetchedAt)}` : state.lastRunAt ? `as of cycle ${state.cycles}, ${dateTime(state.lastRunAt)}` : "waiting for first cycle";
 
@@ -230,7 +230,7 @@ function TraderBody({ data, scenarios, live }: { data: TraderPayload; scenarios:
           {recentClosed.length === 0 ? (
             <p className="px-5 py-8 text-center text-[13px] text-muted">No closed trades yet; memory fills as positions exit.</p>
           ) : (
-            <div className="scroll-thin overflow-x-auto">
+            <div className="scroll-thin max-h-[520px] overflow-auto overscroll-contain" tabIndex={0} aria-label="Closed trades, scrollable">
               <table className="data-table min-w-[640px]">
                 <thead>
                   <tr>
