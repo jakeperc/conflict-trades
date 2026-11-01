@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-31T13:47:40.126Z",
+  "generatedAt": "2026-11-01T14:46:53.506Z",
   "appVersion": "2026-05-current-automated",
   "disclaimer": "Scenario dashboard only. Not personalized investment advice. Use as a research workflow and validate every trade independently.",
   "methodology": "Upside and downside are scenario-based risk bands derived from conviction score, live headline heat, and sqrt-compressed trailing realized volatility from recent Stooq or Yahoo Finance price history. Vol is sqrt-scaled so high-vol tickers do not saturate the ceiling.",
   "ww3Status": {
     "available": true,
     "source": "env",
-    "ageDays": 2.2,
+    "ageDays": 0.2,
     "reason": null
   },
   "scenarios": {
@@ -144,22 +144,85 @@
         "Airline and consumer discretionary names can lag after oil peaks if fuel hedges reset higher."
       ],
       "topPairTrade": "Long XOM / Short UAL",
-      "refreshedAt": "2026-10-31T13:47:40.122Z",
+      "refreshedAt": "2026-11-01T14:46:50.880Z",
       "headlines": [
         {
-          "title": "Live Updates: War returns to Iran with Israel, US strikes - Dawn",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wWU1XcTJjVkhydDJ6REhTa1RGZHp5eHJhYXVpQlRoNndhUjBOamFNWlRERkdMYk53LWc4LVhDbktnSXZ3RkJyWmtEMEgycjRFNmJN?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wWU1XcTJjVkhydDJ6REhTa1RGZHp5eHJhYXVpQlRoNndhUjBOamFNWlRERkdMYk53LWc4LVhDbktnSXZ3RkJyWmtEMEgycjRFNmJN?oc=5\" target=\"_blank\">Live Updates: War returns to Iran with Israel, US strikes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Dawn</font>",
-          "source": "Dawn",
-          "publishedAt": "Sat, 31 Oct 2026 11:06:43 GMT",
-          "publishedMs": 1793444803000,
+          "title": "Live Updates: Trump suggests more attacks on Iran after Ayatollah warns against resuming war - CBS News",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU84MUlJV2w4ZEtpaS1ndkJieWpObTZJUzloRl8yUV9DSE54RFkyTklLUm1RSzVwUVNzMWQtNWRMc0RpLTZJQVRieS1qbVNLRGpRbnpYa3NxLUczeDdYdzBQUEtJTVg0NUlEbHZOaGJfQ2plTHFvTmZ0d2ZkMFo2aXNGWXY4SzNVRncxYUMwWVk?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU84MUlJV2w4ZEtpaS1ndkJieWpObTZJUzloRl8yUV9DSE54RFkyTklLUm1RSzVwUVNzMWQtNWRMc0RpLTZJQVRieS1qbVNLRGpRbnpYa3NxLUczeDdYdzBQUEtJTVg0NUlEbHZOaGJfQ2plTHFvTmZ0d2ZkMFo2aXNGWXY4SzNVRncxYUMwWVk?oc=5\" target=\"_blank\">Live Updates: Trump suggests more attacks on Iran after Ayatollah warns against resuming war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CBS News</font>",
+          "source": "CBS News",
+          "publishedAt": "Sun, 01 Nov 2026 13:50:00 GMT",
+          "publishedMs": 1793541000000,
           "relevance": 1
         },
         {
-          "title": "Shipping Strikes In Hormuz Leave Both Sides With Economic Pain - Bloomberg",
+          "title": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf - Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSU1Fc3JpWUM4REFIanVUZEJBRUZyQmxQbW82TTJ2TlB5bWp2bVNQV25pWlhGcmY5T19mWUV5M0xvekFGODFoLVkzMnR3a25wSVhIUWpHM2xkcS10OGtwVXFTZHY1ZGVqNGl1dTdMa19yWllzUmVqc2ZWOEtINDBJaDJ5d241UE1rTFFuMTFwcEVrUDdBb2tIQmdVc05ld9IBowFBVV95cUxNZEtDQS12eTRKS0NESXZxRVgyLVB4QXhRRmVsR2I4UEJxSG5yUzVjS1gtZUs3Z28yUXlTcHhiUEVvY2JVXy1KYjNveHZvS0ZHZVk2a1d5aXlBSUlNSHgwNWFCUWg3dzBPajF6UkZrVDFHTWJUdU9DYmhyRTlnTjVuV0ZRNVBVTC1XSFVPT3dBbDNfV2xFWXV6WC14LXZQbnM2eTRJ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQSU1Fc3JpWUM4REFIanVUZEJBRUZyQmxQbW82TTJ2TlB5bWp2bVNQV25pWlhGcmY5T19mWUV5M0xvekFGODFoLVkzMnR3a25wSVhIUWpHM2xkcS10OGtwVXFTZHY1ZGVqNGl1dTdMa19yWllzUmVqc2ZWOEtINDBJaDJ5d241UE1rTFFuMTFwcEVrUDdBb2tIQmdVc05ld9IBowFBVV95cUxNZEtDQS12eTRKS0NESXZxRVgyLVB4QXhRRmVsR2I4UEJxSG5yUzVjS1gtZUs3Z28yUXlTcHhiUEVvY2JVXy1KYjNveHZvS0ZHZVk2a1d5aXlBSUlNSHgwNWFCUWg3dzBPajF6UkZrVDFHTWJUdU9DYmhyRTlnTjVuV0ZRNVBVTC1XSFVPT3dBbDNfV2xFWXV6WC14LXZQbnM2eTRJ?oc=5\" target=\"_blank\">Qatar LNG carrier struck by ‘unidentified objects’ in Gulf</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Jazeera</font>",
+          "source": "Al Jazeera",
+          "publishedAt": "Sun, 01 Nov 2026 13:09:56 GMT",
+          "publishedMs": 1793538596000,
+          "relevance": 1
+        },
+        {
+          "title": "Trump Renews Iran Threat, Says US Still Needs To 'Take Care' Of 1 Or 2 Targets - Radio Free Europe/Radio Liberty",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9OeTc1VE5lcEx0QzNhVlh6TnBVZUhfdi1MR0xZQnJOLWo2U3dHb09ucVhPNXctSTFXNTF6R3EwZEJXSl96SF9zS2FPUWFwcHpHeFVMaGtUckZiaGIydHc1SFMwT3U1R1h5WnMtY2RGUkdtYm1jV2VUMWFB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE9OeTc1VE5lcEx0QzNhVlh6TnBVZUhfdi1MR0xZQnJOLWo2U3dHb09ucVhPNXctSTFXNTF6R3EwZEJXSl96SF9zS2FPUWFwcHpHeFVMaGtUckZiaGIydHc1SFMwT3U1R1h5WnMtY2RGUkdtYm1jV2VUMWFB?oc=5\" target=\"_blank\">Trump Renews Iran Threat, Says US Still Needs To 'Take Care' Of 1 Or 2 Targets</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Radio Free Europe/Radio Liberty</font>",
+          "source": "Radio Free Europe/Radio Liberty",
+          "publishedAt": "Sun, 01 Nov 2026 08:07:39 GMT",
+          "publishedMs": 1793520459000,
+          "relevance": 1
+        },
+        {
+          "title": "Iran says US tone shifts but demands still block talks - Iran International",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ranBZcU15cDN5WFFEdWJyUXRrdkh3amFndDNwQ0hJRnZFQm9ucHZQX2traWtwMm9Fc0ptUl9VV0JKcVNabTVXV28zU1dTeEtIZnc?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ranBZcU15cDN5WFFEdWJyUXRrdkh3amFndDNwQ0hJRnZFQm9ucHZQX2traWtwMm9Fc0ptUl9VV0JKcVNabTVXV28zU1dTeEtIZnc?oc=5\" target=\"_blank\">Iran says US tone shifts but demands still block talks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Iran International</font>",
+          "source": "Iran International",
+          "publishedAt": "Sat, 31 Oct 2026 23:26:13 GMT",
+          "publishedMs": 1793489173000,
+          "relevance": 1
+        },
+        {
+          "title": "Iran war live: Trump has not decided on renewed Iran military action: Rubio - Arabian Business",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeGVzSjhrbUhOTTctX0ViTkJTRnFEZnkwNTJQR3gySTJRQlk3aXNwenJ2Qk1DejVYcF84dmF4WDFPd2xKRzEwazEtOEdOb05OOFhJaXZQVTd3R2lDRHdGbTgtM1JSSEMxeFN5OTlLc0tLNE55MHlHRDZNU3lOVFBDaTJwQQ?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxNeGVzSjhrbUhOTTctX0ViTkJTRnFEZnkwNTJQR3gySTJRQlk3aXNwenJ2Qk1DejVYcF84dmF4WDFPd2xKRzEwazEtOEdOb05OOFhJaXZQVTd3R2lDRHdGbTgtM1JSSEMxeFN5OTlLc0tLNE55MHlHRDZNU3lOVFBDaTJwQQ?oc=5\" target=\"_blank\">Iran war live: Trump has not decided on renewed Iran military action: Rubio</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Arabian Business</font>",
+          "source": "Arabian Business",
+          "publishedAt": "Sat, 31 Oct 2026 23:09:05 GMT",
+          "publishedMs": 1793488145000,
+          "relevance": 1
+        },
+        {
+          "title": "Iran Says Draft Deal with US Would Reopen Hormuz Shipping, End Naval Blockade - EnergyNow.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc2pnYzI5TUFHRXpTNVNfMTQyRFBEWDAtREhxcXpUY0pMalNkS1o4SDAwQ1BPXzZoMGZETVNMeG5BQlVVRUpxMnM4Sl9CZnRRTGFyZ2hfQ3N0ZHBoYzl4eVJURnhBb25lcFhEY0ZudWhZMEdZVEpuRmh1Tm5FT0xKM3RtWWlaelBnM1BrMVBFWmFIQ1JlU3JhYWF1YjhGUHFOVmE5UVNVRGc4dEU?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc2pnYzI5TUFHRXpTNVNfMTQyRFBEWDAtREhxcXpUY0pMalNkS1o4SDAwQ1BPXzZoMGZETVNMeG5BQlVVRUpxMnM4Sl9CZnRRTGFyZ2hfQ3N0ZHBoYzl4eVJURnhBb25lcFhEY0ZudWhZMEdZVEpuRmh1Tm5FT0xKM3RtWWlaelBnM1BrMVBFWmFIQ1JlU3JhYWF1YjhGUHFOVmE5UVNVRGc4dEU?oc=5\" target=\"_blank\">Iran Says Draft Deal with US Would Reopen Hormuz Shipping, End Naval Blockade</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">EnergyNow.com</font>",
+          "source": "EnergyNow.com",
+          "publishedAt": "Sat, 31 Oct 2026 22:20:48 GMT",
+          "publishedMs": 1793485248000,
+          "relevance": 4
+        },
+        {
+          "title": "Tankers Pass Strait of Hormuz on First Day of US Blockade, Data Shows - EnergyNow.com",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDhQN2x1THE4VEhycTZKbWQ3RE9qeXVHZE9oVkkwWGhTeUNUZ1JxQ3ZtMTZFa3o5RW1HS2VUWGg0d0hrSFZQVjRTOUVrX004MWJKQkN5U0Q1SVZWM3NPVUl5N1pYYmNiYVdrRkFVRVFRYjZQQVZuSmwzOS1DNWk1U2pEc1R3dExFbW5CYVVlQURYY1ZhV0JOalNhYUUyZkZY?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDhQN2x1THE4VEhycTZKbWQ3RE9qeXVHZE9oVkkwWGhTeUNUZ1JxQ3ZtMTZFa3o5RW1HS2VUWGg0d0hrSFZQVjRTOUVrX004MWJKQkN5U0Q1SVZWM3NPVUl5N1pYYmNiYVdrRkFVRVFRYjZQQVZuSmwzOS1DNWk1U2pEc1R3dExFbW5CYVVlQURYY1ZhV0JOalNhYUUyZkZY?oc=5\" target=\"_blank\">Tankers Pass Strait of Hormuz on First Day of US Blockade, Data Shows</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">EnergyNow.com</font>",
+          "source": "EnergyNow.com",
+          "publishedAt": "Sat, 31 Oct 2026 21:50:52 GMT",
+          "publishedMs": 1793483452000,
+          "relevance": 4
+        },
+        {
+          "title": "US Intercepts Three Iranian Oil Tankers in Asian Waters, Sources Say - EnergyNow.com",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMHBYdmNMSkVWaXpHdEFNMU5aZnp2MFRtSkwwWXRpalk1SUg5RHlRcV9nSGxyaG5iY3ZpN0cyVzR0Z0ZfbS05V1VYZ3loaGQyTVl4bEJFdWhCemQ3OEcwME9vaDQ0REJKM01kN01xT3ZIRWUwMUVyaG82YmdYOXVmdEpxUEZGRWFtMVZzTkdCbXhOMmxMbWpLdDBTU3lualk?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNMHBYdmNMSkVWaXpHdEFNMU5aZnp2MFRtSkwwWXRpalk1SUg5RHlRcV9nSGxyaG5iY3ZpN0cyVzR0Z0ZfbS05V1VYZ3loaGQyTVl4bEJFdWhCemQ3OEcwME9vaDQ0REJKM01kN01xT3ZIRWUwMUVyaG82YmdYOXVmdEpxUEZGRWFtMVZzTkdCbXhOMmxMbWpLdDBTU3lualk?oc=5\" target=\"_blank\">US Intercepts Three Iranian Oil Tankers in Asian Waters, Sources Say</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">EnergyNow.com</font>",
+          "source": "EnergyNow.com",
+          "publishedAt": "Sat, 31 Oct 2026 21:39:22 GMT",
+          "publishedMs": 1793482762000,
+          "relevance": 2
+        },
+        {
+          "title": "Shipping Strikes In Hormuz Leave Both Sides With Economic Pain - Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOHg3X0Rkemo5N2drTE8zV2lha0RVSm1MQ2FUWFVHRTZBQ3BHVVJ3aEZVSy1IZmJvQUYwaFI1ZGR5RmFOcTc3NTFqQTBfc1hQSkJUcTZRSGIzVUJrM3RuX2NLZGtZM2RLVjhDSEJTRHlIVUkxTlVyZWxMTExzd2p3V0U5WTd3aV9BQ0wzbHBjNDdqTVA2STA3TURNMDRXWFhSYk9wYnVZNjJOLWRmWDJuN2htMA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPOHg3X0Rkemo5N2drTE8zV2lha0RVSm1MQ2FUWFVHRTZBQ3BHVVJ3aEZVSy1IZmJvQUYwaFI1ZGR5RmFOcTc3NTFqQTBfc1hQSkJUcTZRSGIzVUJrM3RuX2NLZGtZM2RLVjhDSEJTRHlIVUkxTlVyZWxMTExzd2p3V0U5WTd3aV9BQ0wzbHBjNDdqTVA2STA3TURNMDRXWFhSYk9wYnVZNjJOLWRmWDJuN2htMA?oc=5\" target=\"_blank\">Shipping Strikes In Hormuz Leave Both Sides With Economic Pain</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg</font>",
-          "source": "Bloomberg",
+          "description": "<ol><li><a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPOHg3X0Rkemo5N2drTE8zV2lha0RVSm1MQ2FUWFVHRTZBQ3BHVVJ3aEZVSy1IZmJvQUYwaFI1ZGR5RmFOcTc3NTFqQTBfc1hQSkJUcTZRSGIzVUJrM3RuX2NLZGtZM2RLVjhDSEJTRHlIVUkxTlVyZWxMTExzd2p3V0U5WTd3aV9BQ0wzbHBjNDdqTVA2STA3TURNMDRXWFhSYk9wYnVZNjJOLWRmWDJuN2htMA?oc=5\" target=\"_blank\">Shipping Strikes In Hormuz Leave Both Sides With Economic Pain</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg.com</font></li><li><a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZMUhKdzZpUlk1T1d3d0tKckIxb055TmdyTFk3ckZtdFVZOGVYYWFGMXZ4U1VaWXNuUm0yVEEzX1ZXYzBNMFZGUWFaTE5PekJjVEpqRnEyaEx5YlJhY2xGLWVVOGlvVHZYV01aUnQ3SWI2TEJGbURBSG1hVdIBgAFBVV95cUxNTzJSUUREZC0xSTk0R1ltcGR2a2VfRzlaZGhYaWxjZG5qMnppMlJGYlZ0MXhDdmlSS3dmOGRkYkt0WktJQnNjVmJuTGtHRjE0RFB0U0dMN1ZES2NFMVU4dW9xanl3aFdMZUlERzU5RDQ0aGh3ZEtOTzl0Y0FMb3ZlNQ?oc=5\" target=\"_blank\">Iran claims four tankers struck mines in Hormuz as strike fears grow after U.S. midterms</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font></li><li><a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCR1d5elI1eGxoSWpDbTRBcDYzU2wydnpkZ3RrWEt5cm1qakJ3N0ViY0lIWWZGNEI0NjdnNWh2X1NSX0JZMkYzZTkyRUNXOWYzMklzVGRR?oc=5\" target=\"_blank\">Explosions in Hormuz as Trump says Iran ‘wants to talk’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ynetnews</font></li></ol>",
+          "source": "Bloomberg.com",
           "publishedAt": "Sat, 31 Oct 2026 10:30:00 GMT",
           "publishedMs": 1793442600000,
           "relevance": 4
@@ -171,69 +234,6 @@
           "source": "Ratopati",
           "publishedAt": "Sat, 31 Oct 2026 07:46:48 GMT",
           "publishedMs": 1793432808000,
-          "relevance": 4
-        },
-        {
-          "title": "Oman rescues 25 from burning ship, Iran says it halts tankers - Al Arabiya English",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVVqcC1ORlVob2g2MmNXRC1sZURwQWRsck1EblJJZ3R0TG16VjZUZldQVWdoSXdUeTNPTXlTVEhwMTVLWUtRM29RaS1NSkRUbUVtd2V2b2lYSTRLdlhOcERWNXlpY1hmYmR1ZU9CWEd1eXRwaUpkc2RtWWNKVGphdlZZRWlscGxnM09GSmlfMWhTX2Q4SFJyNWtOYzdDSTZlZC1WemR0d1hZekt1ZUJaTFJaUFFIZ9IBtgFBVV95cUxQSVVqcC1ORlVob2g2MmNXRC1sZURwQWRsck1EblJJZ3R0TG16VjZUZldQVWdoSXdUeTNPTXlTVEhwMTVLWUtRM29RaS1NSkRUbUVtd2V2b2lYSTRLdlhOcERWNXlpY1hmYmR1ZU9CWEd1eXRwaUpkc2RtWWNKVGphdlZZRWlscGxnM09GSmlfMWhTX2Q4SFJyNWtOYzdDSTZlZC1WemR0d1hZekt1ZUJaTFJaUFFIZw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQSVVqcC1ORlVob2g2MmNXRC1sZURwQWRsck1EblJJZ3R0TG16VjZUZldQVWdoSXdUeTNPTXlTVEhwMTVLWUtRM29RaS1NSkRUbUVtd2V2b2lYSTRLdlhOcERWNXlpY1hmYmR1ZU9CWEd1eXRwaUpkc2RtWWNKVGphdlZZRWlscGxnM09GSmlfMWhTX2Q4SFJyNWtOYzdDSTZlZC1WemR0d1hZekt1ZUJaTFJaUFFIZ9IBtgFBVV95cUxQSVVqcC1ORlVob2g2MmNXRC1sZURwQWRsck1EblJJZ3R0TG16VjZUZldQVWdoSXdUeTNPTXlTVEhwMTVLWUtRM29RaS1NSkRUbUVtd2V2b2lYSTRLdlhOcERWNXlpY1hmYmR1ZU9CWEd1eXRwaUpkc2RtWWNKVGphdlZZRWlscGxnM09GSmlfMWhTX2Q4SFJyNWtOYzdDSTZlZC1WemR0d1hZekt1ZUJaTFJaUFFIZw?oc=5\" target=\"_blank\">Oman rescues 25 from burning ship, Iran says it halts tankers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Al Arabiya English</font>",
-          "source": "Al Arabiya English",
-          "publishedAt": "Sat, 31 Oct 2026 05:05:00 GMT",
-          "publishedMs": 1793423100000,
-          "relevance": 1
-        },
-        {
-          "title": "Oman rescues 25 sailors from burning ship as Iran says tankers halted in Hormuz - Kuwait Times",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRmw5ZG9WWXRnQnlBcUlSX2JYWVg5cUpFQ2htLVFhM3VETFF3dGJtTlVtd2F6YW1PUlJOY1NPb1lIRzZ0NnhfNWtBdXhPbzZOUWtKeFF4TFZRS3hQS2NYZFhyc3IzT1BmSkIxUFRkSlFoV2tkbTV6RlIzXzU5bnlMNVdEUExIS0dQVDVnSVVNQzZ3S1FnbmtVTEVFSkx5VHZqNDdxWklyZ0k5WkIyMWdRNmR5NmFHMGg0S093bFJzV0c2QdIBxgFBVV95cUxQdnZJYmoydVozQWtCWTYxU0MwM0lNLWlzY1ktLVRabDk5dWw2eGpBa3NxT1RKV2Y3SU1zNi0xb0lVd3BvTjBsX04yUU1BV1pYVTNhTGlaVFpSMWdMN0laa3lCWXlVWVVGY09GNkZvYlhNN3hzaXNrTzNGTHI0bFRuM3lFQUpKWHozWW53ZHRyN3RCemVTcjN5b3RhVEI0UnVLVDZFT2MwZU8yNldXZFIzZndGYTJ1SUlhdEpKQ0FxbHp6ZFMyYVE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRmw5ZG9WWXRnQnlBcUlSX2JYWVg5cUpFQ2htLVFhM3VETFF3dGJtTlVtd2F6YW1PUlJOY1NPb1lIRzZ0NnhfNWtBdXhPbzZOUWtKeFF4TFZRS3hQS2NYZFhyc3IzT1BmSkIxUFRkSlFoV2tkbTV6RlIzXzU5bnlMNVdEUExIS0dQVDVnSVVNQzZ3S1FnbmtVTEVFSkx5VHZqNDdxWklyZ0k5WkIyMWdRNmR5NmFHMGg0S093bFJzV0c2QdIBxgFBVV95cUxQdnZJYmoydVozQWtCWTYxU0MwM0lNLWlzY1ktLVRabDk5dWw2eGpBa3NxT1RKV2Y3SU1zNi0xb0lVd3BvTjBsX04yUU1BV1pYVTNhTGlaVFpSMWdMN0laa3lCWXlVWVVGY09GNkZvYlhNN3hzaXNrTzNGTHI0bFRuM3lFQUpKWHozWW53ZHRyN3RCemVTcjN5b3RhVEI0UnVLVDZFT2MwZU8yNldXZFIzZndGYTJ1SUlhdEpKQ0FxbHp6ZFMyYVE?oc=5\" target=\"_blank\">Oman rescues 25 sailors from burning ship as Iran says tankers halted in Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kuwait Times</font>",
-          "source": "Kuwait Times",
-          "publishedAt": "Sat, 31 Oct 2026 05:02:36 GMT",
-          "publishedMs": 1793422956000,
-          "relevance": 3
-        },
-        {
-          "title": "Live Updates: LIVE: Iran-US war - Business Recorder",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aSHl0eU1BSjNISDdIZVRJOEJuaHlycEtBbzJPQlpPZnVTdV9lcDh3M2xfeHp6eWxmTWlBcEpPb0o5dG5oUmR2eHFtZFVRUGR6ZGhJMTR1RDZWZw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aSHl0eU1BSjNISDdIZVRJOEJuaHlycEtBbzJPQlpPZnVTdV9lcDh3M2xfeHp6eWxmTWlBcEpPb0o5dG5oUmR2eHFtZFVRUGR6ZGhJMTR1RDZWZw?oc=5\" target=\"_blank\">Live Updates: LIVE: Iran-US war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Recorder</font>",
-          "source": "Business Recorder",
-          "publishedAt": "Sat, 31 Oct 2026 04:37:12 GMT",
-          "publishedMs": 1793421432000,
-          "relevance": 1
-        },
-        {
-          "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTjZlVnBjQWc3TU0zdGE1QmhZOVdvZzhYSzZyci1hZE1scFJyY3hnaGUzSlpIZG1CcG5JVXhLQWxWaDRVS05UTUNYRkxSVEhGSW11SmhlMHBmM3FyZHhPWkJkeDJqS0ZDS2VsWWpRa3p6RFkyUTl5a0ZJYk90d1FvcVFsRdIBiAFBVV95cUxPV0ZFNlB2SnBqR1NCRWVlRTRmWkR0Z2ZyRmR6cUpPMjRtREFsb2RkRnBaTnRWVkVBRDM5QUJJa0lybXpRUzZQVFBnS3htaXdiTko3SzZJLUlUWDZacEpiSEJpdXlrVENkcjd5YVJZMTMwY05jR3BIbjROS00xMjVHQnh6Vmp4T0xG?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxOTjZlVnBjQWc3TU0zdGE1QmhZOVdvZzhYSzZyci1hZE1scFJyY3hnaGUzSlpIZG1CcG5JVXhLQWxWaDRVS05UTUNYRkxSVEhGSW11SmhlMHBmM3FyZHhPWkJkeDJqS0ZDS2VsWWpRa3p6RFkyUTl5a0ZJYk90d1FvcVFsRdIBiAFBVV95cUxPV0ZFNlB2SnBqR1NCRWVlRTRmWkR0Z2ZyRmR6cUpPMjRtREFsb2RkRnBaTnRWVkVBRDM5QUJJa0lybXpRUzZQVFBnS3htaXdiTko3SzZJLUlUWDZacEpiSEJpdXlrVENkcjd5YVJZMTMwY05jR3BIbjROS00xMjVHQnh6Vmp4T0xG?oc=5\" target=\"_blank\">Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-          "source": "CNBC",
-          "publishedAt": "Fri, 30 Oct 2026 17:21:47 GMT",
-          "publishedMs": 1793380907000,
-          "relevance": 4
-        },
-        {
-          "title": "Strait of Hormuz shipping routes cleared of Iranian sea mines, vessels transiting freely: CENTCOM chief - Kalinga TV",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVkFuXzVscFN6cFlNZDhTVjBFN3hGLWlHS0tUY0JyN2tCUUZDR0FWVENqNmo4VktkajFqNzFHM01qTnRLdTJhU1E4dklxLV8wT050ME41NjlNQnBMRU5UTEFVaElYWEg1UW5DZ1pxVEZMUEx5SkZaSkpNVTFfR0M5emYzYmJGZ3NRVGUzT2JGdF9fXy1NeVVyMmt2bmExM1RPRXdFelMwc3JjRkJWc1FGdDR2alJiUHVPUFk5S2lDMmx6b01Well5SmtR?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxNVkFuXzVscFN6cFlNZDhTVjBFN3hGLWlHS0tUY0JyN2tCUUZDR0FWVENqNmo4VktkajFqNzFHM01qTnRLdTJhU1E4dklxLV8wT050ME41NjlNQnBMRU5UTEFVaElYWEg1UW5DZ1pxVEZMUEx5SkZaSkpNVTFfR0M5emYzYmJGZ3NRVGUzT2JGdF9fXy1NeVVyMmt2bmExM1RPRXdFelMwc3JjRkJWc1FGdDR2alJiUHVPUFk5S2lDMmx6b01Well5SmtR?oc=5\" target=\"_blank\">Strait of Hormuz shipping routes cleared of Iranian sea mines, vessels transiting freely: CENTCOM chief</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kalinga TV</font>",
-          "source": "Kalinga TV",
-          "publishedAt": "Fri, 30 Oct 2026 15:53:38 GMT",
-          "publishedMs": 1793375618000,
-          "relevance": 5
-        },
-        {
-          "title": "Oman rescues 25 from burning ship, Iran halts tankers - Naharnet",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVmthMXRkSFpqZVdTaVFhS1QxVHZHOGpxS0ZiaGZhc2Iyd0tuc3RidGJOcXh3Z1pEM1ZITVlxa0JwOWlxMENKRGFSUFg0bkRtT2RiRThoV01aV2Frdm1LekZORG9YTDA2QXpGSGNONVNCRXFmaExDOVRLU0RwcHF2RUxDUVlfb3MyS1lHdGpodXh1LTM3dUNDTkxzZw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxNVmthMXRkSFpqZVdTaVFhS1QxVHZHOGpxS0ZiaGZhc2Iyd0tuc3RidGJOcXh3Z1pEM1ZITVlxa0JwOWlxMENKRGFSUFg0bkRtT2RiRThoV01aV2Frdm1LekZORG9YTDA2QXpGSGNONVNCRXFmaExDOVRLU0RwcHF2RUxDUVlfb3MyS1lHdGpodXh1LTM3dUNDTkxzZw?oc=5\" target=\"_blank\">Oman rescues 25 from burning ship, Iran halts tankers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Naharnet</font>",
-          "source": "Naharnet",
-          "publishedAt": "Fri, 30 Oct 2026 15:17:00 GMT",
-          "publishedMs": 1793373420000,
-          "relevance": 1
-        },
-        {
-          "title": "Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general - CBS News",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaldzakpwdnNPdVBvcUw2WmlXOGFPU0hSaktBa0RtLUFscVVkZGV1QmtNbDZXQks3UGVQNWlxTmQ1VFJqNUlCT2tZeHpMTGxOemgxN1J2M3JJWTJnUTFZUURrNEpjTGJ2Q1JoMmVPVUVkSE1Qb0NIRlhqMWFVbFpmVlhtXzBsa1o5UlctX2U0Y18yemFBWUROQmNWV2g?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNaldzakpwdnNPdVBvcUw2WmlXOGFPU0hSaktBa0RtLUFscVVkZGV1QmtNbDZXQks3UGVQNWlxTmQ1VFJqNUlCT2tZeHpMTGxOemgxN1J2M3JJWTJnUTFZUURrNEpjTGJ2Q1JoMmVPVUVkSE1Qb0NIRlhqMWFVbFpmVlhtXzBsa1o5UlctX2U0Y18yemFBWUROQmNWV2g?oc=5\" target=\"_blank\">Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CBS News</font>",
-          "source": "CBS News",
-          "publishedAt": "Fri, 30 Oct 2026 07:18:00 GMT",
-          "publishedMs": 1793344680000,
           "relevance": 4
         }
       ],
@@ -1142,7 +1142,7 @@
           "heat": 96
         },
         {
-          "t": "2026-10-31T13:47",
+          "t": "2026-11-01T14:46",
           "heat": 96
         }
       ]
@@ -1200,7 +1200,7 @@
         ]
       },
       "summary": "Updated for persistent PLA activity around Taiwan and blockade-risk headlines: semiconductor disruption, consumer hardware downside, and defense / onshoring beneficiaries.",
-      "heat": 76,
+      "heat": 77,
       "ww3Tilt": 1,
       "ww3Signal": {
         "tilt": 1,
@@ -1212,48 +1212,48 @@
       "subScores": [
         {
           "label": "Military escalation",
-          "value": 83
+          "value": 84
         },
         {
           "label": "Semiconductor disruption",
-          "value": 76
+          "value": 77
         },
         {
           "label": "Shipping disruption",
-          "value": 85
+          "value": 92
         },
         {
           "label": "Onshoring tailwind",
-          "value": 72
+          "value": 73
         }
       ],
       "indicators": [
         {
           "label": "Semiconductor stress",
-          "value": 102.8,
+          "value": 103,
           "unit": "%",
-          "delta": 2.8,
+          "delta": 3,
           "tone": "up"
         },
         {
           "label": "Defense bid",
-          "value": 101.4,
+          "value": 101.5,
           "unit": "%",
-          "delta": 1.4,
+          "delta": 1.5,
           "tone": "up"
         },
         {
           "label": "Asia shipping risk",
-          "value": 40.4,
+          "value": 40.6,
           "unit": "pts",
-          "delta": 2.4,
+          "delta": 2.6,
           "tone": "up"
         },
         {
           "label": "Consumer hardware drawdown",
-          "value": 10.4,
+          "value": 10.6,
           "unit": "%",
-          "delta": 1.4,
+          "delta": 1.6,
           "tone": "up"
         }
       ],
@@ -1263,8 +1263,26 @@
         "Alternative foundry, packaging, and U.S.-based fab capacity can rerate on resilience demand before orders shift."
       ],
       "topPairTrade": "Long LMT / Short AAPL",
-      "refreshedAt": "2026-10-31T13:47:40.085Z",
+      "refreshedAt": "2026-11-01T14:46:53.491Z",
       "headlines": [
+        {
+          "title": "Taiwan Says China Harassing Shipping With East Coast Patrol - gCaptain",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbHdPRF85Q2RSajlHelY5NkoxM082SDBwQjhzdkV0QlJxNkFFbWdtMlVGem5PRTFTM21XeW1wYXBzMXNYblVrbkdUQzJJZjJWZ05HWThPZGhBenBwSnF1VXRfdnVrRmJQQ1NQWW5pMHZiOTdhTURLQmpfQ0RVMFlHMGJkcEQzTU9H?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbHdPRF85Q2RSajlHelY5NkoxM082SDBwQjhzdkV0QlJxNkFFbWdtMlVGem5PRTFTM21XeW1wYXBzMXNYblVrbkdUQzJJZjJWZ05HWThPZGhBenBwSnF1VXRfdnVrRmJQQ1NQWW5pMHZiOTdhTURLQmpfQ0RVMFlHMGJkcEQzTU9H?oc=5\" target=\"_blank\">Taiwan Says China Harassing Shipping With East Coast Patrol</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">gCaptain</font>",
+          "source": "gCaptain",
+          "publishedAt": "Sun, 01 Nov 2026 02:36:33 GMT",
+          "publishedMs": 1793500593000,
+          "relevance": 4
+        },
+        {
+          "title": "Is Beijing’s 2027 military milestone now a US readiness deadline over Taiwan? - South China Morning Post",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdktHM0NIX1U3RGFqcVNEN3lVX3R5Um1kZGdrUFJxVU1uTEFHME9jWDl4V2haanlDTUFuS2pheWNaQVJoaHZMbkUteExSaTZEWUU4WjFLWUJVejNieTlYc0tJNkE2bEUzNko0UlVuUS0td1FZckpyZDVZOW9pSGhHaXZ2dTVjbjFoQ09ROXhQZWtYTnNxb29Fd2RTVVdxenpReG1TY2tHUloxQXdtS0ZkLVpfT2FxaVEyQUxRM3dIYlVZUGRkNmfSAcYBQVVfeXFMTnZLRzNDSF9VN0RhanFTRDd5VV90eVJtZGRna1BScVVNbkxBRzBPY1g5eFdoWmp5Q01BbktqYXljWkFSaGh2TG5FLXhMUmk2RFlFOFoxS1lCVXozYnk5WHNLSTZBNmxFMzZKNFJVblEtLXdRWXJKcmQ1WTlvaUhoR2l2dnU1Y24xaENPUTl4UGVrWE5zcW9vRXdkU1VXcXp6UXhtU2NrR1JaMUF3bUtGZC1aX09hcWlRMkFMUTN3SGJVWVBkZDZn?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOdktHM0NIX1U3RGFqcVNEN3lVX3R5Um1kZGdrUFJxVU1uTEFHME9jWDl4V2haanlDTUFuS2pheWNaQVJoaHZMbkUteExSaTZEWUU4WjFLWUJVejNieTlYc0tJNkE2bEUzNko0UlVuUS0td1FZckpyZDVZOW9pSGhHaXZ2dTVjbjFoQ09ROXhQZWtYTnNxb29Fd2RTVVdxenpReG1TY2tHUloxQXdtS0ZkLVpfT2FxaVEyQUxRM3dIYlVZUGRkNmfSAcYBQVVfeXFMTnZLRzNDSF9VN0RhanFTRDd5VV90eVJtZGRna1BScVVNbkxBRzBPY1g5eFdoWmp5Q01BbktqYXljWkFSaGh2TG5FLXhMUmk2RFlFOFoxS1lCVXozYnk5WHNLSTZBNmxFMzZKNFJVblEtLXdRWXJKcmQ1WTlvaUhoR2l2dnU1Y24xaENPUTl4UGVrWE5zcW9vRXdkU1VXcXp6UXhtU2NrR1JaMUF3bUtGZC1aX09hcWlRMkFMUTN3SGJVWVBkZDZn?oc=5\" target=\"_blank\">Is Beijing’s 2027 military milestone now a US readiness deadline over Taiwan?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">South China Morning Post</font>",
+          "source": "South China Morning Post",
+          "publishedAt": "Sat, 31 Oct 2026 12:00:09 GMT",
+          "publishedMs": 1793448009000,
+          "relevance": 3
+        },
         {
           "title": "UK historian says Taiwan can learn from Ukraine to defend itself against China - Taiwan News",
           "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YbEVsVEZHN1JlZU5sd2lWUGhYd3ZzbUt4alFTc0lkRXpHZ1E1aHdTNUwxS3I2Z2EzeU9sR3VwX2dpNzdmdmNWazRET3h6ZXVzRGY1UA?oc=5",
@@ -1282,15 +1300,6 @@
           "publishedAt": "Sat, 31 Oct 2026 03:22:48 GMT",
           "publishedMs": 1793416968000,
           "relevance": 3
-        },
-        {
-          "title": "China and US expand military drone flights near Japan and the South China Sea - South China Morning Post",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYlVJQ0ZwRGtFaVlZekxHMmZHQjVxMXVBMkpPbkNrVTk4T1pVS2xpNWNjZkJxYXpnd05kX2NNaDJlVHZpdkhtU1M0OVU5cmxPWFFQTHFRTEl4SVM4YW1LbUNMYVZhR0VuSlRtZWlxaXhWR19MNFI5aFNMZWtDdHZHaVdOVE40RWwzWjJCNXJydHF1OUd0QjFOMmF4eTVja0o4Z2hIaloyc2lHMWlIWW1UbURvQ0U4cXNzN2hzQXp1MTh4ZUxjc09VN1VB0gHKAUFVX3lxTE1vOHdrUGdTQWxfUGx6M3pEbFBZZm93ZmM5MHpsOS1SUFVJZDBWZVdOd3VObk1mQkliX3U2TWtEWWYxU3d0Y1docHZOSUJFd2M3cUx0NWFqdGUtTGxYTUVoNGZHRWxfWVA2ZE9Ma1Yyd1lSMVFHU2tqSkRha0NEd0RmbExrYWhPeHZnWlZiTkpnakl1WGdkMDJ2XzJYRVdUdHhFSXNpZEhSN2N5RVBCUDRZRUU1WEtMUmFEdkhfcmFKZzczTXlWNXdrakE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxQYlVJQ0ZwRGtFaVlZekxHMmZHQjVxMXVBMkpPbkNrVTk4T1pVS2xpNWNjZkJxYXpnd05kX2NNaDJlVHZpdkhtU1M0OVU5cmxPWFFQTHFRTEl4SVM4YW1LbUNMYVZhR0VuSlRtZWlxaXhWR19MNFI5aFNMZWtDdHZHaVdOVE40RWwzWjJCNXJydHF1OUd0QjFOMmF4eTVja0o4Z2hIaloyc2lHMWlIWW1UbURvQ0U4cXNzN2hzQXp1MTh4ZUxjc09VN1VB0gHKAUFVX3lxTE1vOHdrUGdTQWxfUGx6M3pEbFBZZm93ZmM5MHpsOS1SUFVJZDBWZVdOd3VObk1mQkliX3U2TWtEWWYxU3d0Y1docHZOSUJFd2M3cUx0NWFqdGUtTGxYTUVoNGZHRWxfWVA2ZE9Ma1Yyd1lSMVFHU2tqSkRha0NEd0RmbExrYWhPeHZnWlZiTkpnakl1WGdkMDJ2XzJYRVdUdHhFSXNpZEhSN2N5RVBCUDRZRUU1WEtMUmFEdkhfcmFKZzczTXlWNXdrakE?oc=5\" target=\"_blank\">China and US expand military drone flights near Japan and the South China Sea</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">South China Morning Post</font>",
-          "source": "South China Morning Post",
-          "publishedAt": "Fri, 30 Oct 2026 13:54:47 GMT",
-          "publishedMs": 1793368487000,
-          "relevance": 1
         },
         {
           "title": "No US carriers in sight, yet Beijing waits - ThinkChina",
@@ -1324,8 +1333,8 @@
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZGxscUlhLVdyOUpVWmYyRmJFV2lYNXVjbzVCYjRIX0c5SmtCN0JWRzhuYWhmU182WDJMVmlYa09kdkRFWGU4YUJzUEdJSVF5QmZ0d2hhSDFfVEFsaXlRTVFPb2tGSm1vNk9JM0JLQjNheFhDaHdUUDdmem5ESjROeA?oc=5",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQZGxscUlhLVdyOUpVWmYyRmJFV2lYNXVjbzVCYjRIX0c5SmtCN0JWRzhuYWhmU182WDJMVmlYa09kdkRFWGU4YUJzUEdJSVF5QmZ0d2hhSDFfVEFsaXlRTVFPb2tGSm1vNk9JM0JLQjNheFhDaHdUUDdmem5ESjROeA?oc=5\" target=\"_blank\">Six Chinese Aircraft and Seven Ships Detected Around Taiwan; Five Aircraft Enter ADIZ</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Мілітарний</font>",
           "source": "Мілітарний",
-          "publishedAt": "Thu, 29 Oct 2026 21:31:53 GMT",
-          "publishedMs": 1793309513000,
+          "publishedAt": "Thu, 29 Oct 2026 21:29:53 GMT",
+          "publishedMs": 1793309393000,
           "relevance": 3
         },
         {
@@ -1338,21 +1347,12 @@
           "relevance": 1
         },
         {
-          "title": "Taiwan Flags ‘Obvious’ Threat From 50 Chinese Vessels in Wide Sweep of Waters - gCaptain",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOU19RMW9aVFdZN0Y5Sm1JNlk4TUZQaDdhNkJ3MEtnR1MyMlpZaUJ2Yl9zOXY3elFvbDdFQXNxaEtLYlQ2dDBpUjg0SVNvaXByTWR0WkN3RDJyaVN0dHpGTmtIVlY2T0YwY2lYTUdOZ2hZNWlUaVZ2V2JfbzlCeGxqMDl0V3RkZlYybnRPTU1VcmtTNnZpVHdfSDhwS3ZGZw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOU19RMW9aVFdZN0Y5Sm1JNlk4TUZQaDdhNkJ3MEtnR1MyMlpZaUJ2Yl9zOXY3elFvbDdFQXNxaEtLYlQ2dDBpUjg0SVNvaXByTWR0WkN3RDJyaVN0dHpGTmtIVlY2T0YwY2lYTUdOZ2hZNWlUaVZ2V2JfbzlCeGxqMDl0V3RkZlYybnRPTU1VcmtTNnZpVHdfSDhwS3ZGZw?oc=5\" target=\"_blank\">Taiwan Flags ‘Obvious’ Threat From 50 Chinese Vessels in Wide Sweep of Waters</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">gCaptain</font>",
-          "source": "gCaptain",
-          "publishedAt": "Thu, 29 Oct 2026 11:19:32 GMT",
-          "publishedMs": 1793272772000,
-          "relevance": 3
-        },
-        {
-          "title": "Chinese warships and aircraft operate around Taiwan overnight - The Defence Blog",
-          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcjlWNDB5Q3pjeENjaEZDYVd4ZzFiMmRmbGlEemFNVFVCdFlmVjJLUmZnM3JaX01hdmRFa2UwMXdRZDJOQnlkTGVWZ0pxcndwdUwtTml3THM5NkxRRmtGbE1qMWZZUnI5VWZheHpZdXdPMDkwNzd2cXZYOXF2QUMxZFF5TklmS0d1Q0c2U3Zqak7SAZYBQVVfeXFMTUpKcW5LcFJveGFQTEVicm5FcWRMUS05bGh5NUZTYzY2T0pETHRwX0pWaDRnZUJETFdJLWpyT3BmZlhRazd2a3NaMmRnUWFHUThwQVFSMG1UMzNxbjJ4QW5WYUxzcVBJT3VycjR2NEJtU1JFVEhFV2RiRk1qVEJWcUdicFQ2MTROUDBtQmVkU1Z1OVhUc3Zn?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNcjlWNDB5Q3pjeENjaEZDYVd4ZzFiMmRmbGlEemFNVFVCdFlmVjJLUmZnM3JaX01hdmRFa2UwMXdRZDJOQnlkTGVWZ0pxcndwdUwtTml3THM5NkxRRmtGbE1qMWZZUnI5VWZheHpZdXdPMDkwNzd2cXZYOXF2QUMxZFF5TklmS0d1Q0c2U3Zqak7SAZYBQVVfeXFMTUpKcW5LcFJveGFQTEVicm5FcWRMUS05bGh5NUZTYzY2T0pETHRwX0pWaDRnZUJETFdJLWpyT3BmZlhRazd2a3NaMmRnUWFHUThwQVFSMG1UMzNxbjJ4QW5WYUxzcVBJT3VycjR2NEJtU1JFVEhFV2RiRk1qVEJWcUdicFQ2MTROUDBtQmVkU1Z1OVhUc3Zn?oc=5\" target=\"_blank\">Chinese warships and aircraft operate around Taiwan overnight</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Defence Blog</font>",
-          "source": "The Defence Blog",
-          "publishedAt": "Thu, 29 Oct 2026 06:51:39 GMT",
-          "publishedMs": 1793256699000,
+          "title": "Taiwan flags 'obvious' threat from 50 Chinese vessels in wide sweep of waters - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNelRKZ21DWjJBX09xRTJyZnBicWsyLWJTQk1CcmVoVFJYLXBIcWt6LWpwdDRyeGhzbFpNaUFmV0ZhM0NuWmNVRXpKd2s2QnY3bTdwTUFJSFBoUEVUNjlWbThFLXpxN0dkRklMYy1JQVZhWW5abUNtQlZYc21la2htWWVzUWVBMjhTMHc5OF80V3EzLWVPQmFhZnFyOExtWEVfeFhsMnVOYzdfakc1NHdIMjN3?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNelRKZ21DWjJBX09xRTJyZnBicWsyLWJTQk1CcmVoVFJYLXBIcWt6LWpwdDRyeGhzbFpNaUFmV0ZhM0NuWmNVRXpKd2s2QnY3bTdwTUFJSFBoUEVUNjlWbThFLXpxN0dkRklMYy1JQVZhWW5abUNtQlZYc21la2htWWVzUWVBMjhTMHc5OF80V3EzLWVPQmFhZnFyOExtWEVfeFhsMnVOYzdfakc1NHdIMjN3?oc=5\" target=\"_blank\">Taiwan flags 'obvious' threat from 50 Chinese vessels in wide sweep of waters</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Reuters</font>",
+          "source": "Reuters",
+          "publishedAt": "Thu, 29 Oct 2026 13:32:04 GMT",
+          "publishedMs": 1793280724000,
           "relevance": 3
         }
       ],
@@ -1370,11 +1370,11 @@
           "thesis": "High-end missiles, interceptors, and deterrence spending rise in Indo-Pacific stress.",
           "price": 636.9500122070312,
           "annualizedVol": 0.3313017164612678,
-          "upsidePct": 0.2791850128186096,
+          "upsidePct": 0.2800941037277005,
           "downsidePct": 0.13082645927875663,
-          "targetPrice": 814.7769095298647,
+          "targetPrice": 815.3559549955075,
           "stopPrice": 553.6200973724245,
-          "rewardToRisk": 2.13,
+          "rewardToRisk": 2.14,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.1506506859415947,
           "pctVsMa50": 0.1706462079998091,
@@ -1439,9 +1439,9 @@
           "thesis": "Air and missile defense systems benefit from regional rearmament.",
           "price": 199.8000030517578,
           "annualizedVol": 0.24224546881696704,
-          "upsidePct": 0.2658404106875183,
+          "upsidePct": 0.2667495015966092,
           "downsidePct": 0.11998397004724498,
-          "targetPrice": 252.9149179184045,
+          "targetPrice": 253.09655428481523,
           "stopPrice": 175.82720547015626,
           "rewardToRisk": 2.22,
           "lastQuoteDate": "2026-10-30",
@@ -1508,11 +1508,11 @@
           "thesis": "Missile, radar, and space programs fit a higher-alert Pacific posture.",
           "price": 557.5399780273438,
           "annualizedVol": 0.2685404410296141,
-          "upsidePct": 0.270004329538736,
+          "upsidePct": 0.2709134204478269,
           "downsidePct": 0.12336715411385936,
-          "targetPrice": 708.0781859856583,
+          "targetPrice": 708.5850405111378,
           "stopPrice": 488.7578576334067,
-          "rewardToRisk": 2.19,
+          "rewardToRisk": 2.2,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.08389339892305635,
           "pctVsMa50": 0.07149826691828053,
@@ -1577,9 +1577,9 @@
           "thesis": "Domestic fab narrative improves if Taiwan concentration becomes a bigger market risk.",
           "price": 65.76000213623047,
           "annualizedVol": 0.903746777230262,
-          "upsidePct": 0.31719586462193283,
+          "upsidePct": 0.31810495553102375,
           "downsidePct": 0.17058527636895676,
-          "targetPrice": 86.61880287137224,
+          "targetPrice": 86.6785846914961,
           "stopPrice": 54.5423139977984,
           "rewardToRisk": 1.86,
           "lastQuoteDate": "2026-10-30",
@@ -1646,11 +1646,11 @@
           "thesis": "Alternative foundry capacity gets revalued on supply-chain resilience demand.",
           "price": 41.900001525878906,
           "annualizedVol": 0.5687310105197689,
-          "upsidePct": 0.2857537197216336,
+          "upsidePct": 0.2866628106307245,
           "downsidePct": 0.14503853363746366,
-          "targetPrice": 53.873082818240924,
+          "targetPrice": 53.911173728719,
           "stopPrice": 35.82288674515794,
-          "rewardToRisk": 1.97,
+          "rewardToRisk": 1.98,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.10960422579448345,
           "pctVsMa50": -0.09844774388227133,
@@ -1715,9 +1715,9 @@
           "thesis": "ISR and drone demand often re-rates in contested-maritime scenarios.",
           "price": 126.11000061035156,
           "annualizedVol": 0.5746033832246362,
-          "upsidePct": 0.2863750655605432,
+          "upsidePct": 0.2872841564696341,
           "downsidePct": 0.14554337713157772,
-          "targetPrice": 162.22476030298114,
+          "targetPrice": 162.33940575808148,
           "stopPrice": 107.75552523145566,
           "rewardToRisk": 1.97,
           "lastQuoteDate": "2026-10-30",
@@ -1784,11 +1784,11 @@
           "thesis": "Assembly concentration and consumer hardware exposure make it a direct shock absorber.",
           "price": 344.6300048828125,
           "annualizedVol": 0.24975840087176024,
-          "upsidePct": 0.2670522438866531,
+          "upsidePct": 0.267961334795744,
           "downsidePct": 0.12096858452154201,
-          "targetPrice": 252.59578876818918,
+          "targetPrice": 252.28248876375028,
           "stopPrice": 386.31940875713843,
-          "rewardToRisk": 2.21,
+          "rewardToRisk": 2.22,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.010149653750997861,
           "pctVsMa50": 0.03479815108051751,
@@ -1853,11 +1853,11 @@
           "thesis": "AI supply chains and premium multiple create downside if hardware flow is impaired.",
           "price": 204.63999938964844,
           "annualizedVol": 0.37007619082609866,
-          "upsidePct": 0.26242512961559467,
+          "upsidePct": 0.2633342205246856,
           "downsidePct": 0.12608405417630703,
-          "targetPrice": 150.93732102528475,
+          "targetPrice": 150.75128466220323,
           "stopPrice": 230.44184015933232,
-          "rewardToRisk": 2.08,
+          "rewardToRisk": 2.09,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.08008174121401955,
           "pctVsMa50": -0.07715314243273896,
@@ -1922,11 +1922,11 @@
           "thesis": "Handset and Asia supply-chain dependence leave earnings sensitive to disruption.",
           "price": 164.7899932861328,
           "annualizedVol": 0.4779553969063886,
-          "upsidePct": 0.2757058183970399,
+          "upsidePct": 0.27661490930613086,
           "downsidePct": 0.13687461381123128,
-          "targetPrice": 119.35643332353686,
+          "targetPrice": 119.20662423873127,
           "stopPrice": 187.34555997712764,
-          "rewardToRisk": 2.01,
+          "rewardToRisk": 2.02,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.07153671478911527,
           "pctVsMa50": -0.07335455017897166,
@@ -1991,9 +1991,9 @@
           "thesis": "Direct center-of-gravity risk in any severe cross-strait escalation.",
           "price": 406.1300048828125,
           "annualizedVol": 0.3541919288246545,
-          "upsidePct": 0.3043133506575437,
+          "upsidePct": 0.3052224415666347,
           "downsidePct": 0.14236823377289068,
-          "targetPrice": 282.53922229435926,
+          "targetPrice": 282.1700131990112,
           "stopPrice": 463.950016360154,
           "rewardToRisk": 2.14,
           "lastQuoteDate": "2026-10-30",
@@ -2060,11 +2060,11 @@
           "thesis": "Copper miners get a strategic-stockpile bid when supply chain resilience becomes a national priority.",
           "price": 71.95999908447266,
           "annualizedVol": 0.4152673469121298,
-          "upsidePct": 0.26819689379087946,
+          "upsidePct": 0.2691059846999704,
           "downsidePct": 0.1307736125687259,
-          "targetPrice": 91.25944731612275,
+          "targetPrice": 91.32486549710863,
           "stopPrice": 62.54953004375396,
-          "rewardToRisk": 2.05,
+          "rewardToRisk": 2.06,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.10208666931738766,
           "pctVsMa50": -0.1587305782235566,
@@ -2129,9 +2129,9 @@
           "thesis": "China REE export controls force a rerating of ex-China producers as defense and EV inputs.",
           "price": 49.9900016784668,
           "annualizedVol": 0.3931783675818763,
-          "upsidePct": 0.2654172077871933,
+          "upsidePct": 0.2663262986962842,
           "downsidePct": 0.1285151176907309,
-          "targetPrice": 63.25820834124256,
+          "targetPrice": 63.30365379731389,
           "stopPrice": 43.5655307293988,
           "rewardToRisk": 2.07,
           "lastQuoteDate": "2026-10-30",
@@ -2198,11 +2198,11 @@
           "thesis": "Uranium gets both an energy-security and an AI-power-demand bid in any Asia tension scenario.",
           "price": 33.72999954223633,
           "annualizedVol": 0.44725008566541724,
-          "upsidePct": 0.272093723040051,
+          "upsidePct": 0.27300281394914194,
           "downsidePct": 0.1339397863336778,
-          "targetPrice": 42.90772069582263,
+          "targetPrice": 42.93838433177011,
           "stopPrice": 29.212210610514145,
-          "rewardToRisk": 2.03,
+          "rewardToRisk": 2.04,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.08542343945621982,
           "pctVsMa50": -0.1740293197141033,
@@ -2261,8 +2261,8 @@
           "heat": 96
         },
         {
-          "t": "2026-10-31T13:47",
-          "heat": 76
+          "t": "2026-11-01T14:46",
+          "heat": 77
         }
       ]
     },
@@ -2332,7 +2332,7 @@
         ]
       },
       "summary": "Updated for renewed Russian drone waves, Baltic air-policing intercepts, European air-defense urgency, and the EU's staged Russian LNG exit.",
-      "heat": 84,
+      "heat": 83,
       "ww3Tilt": 2,
       "ww3Signal": {
         "tilt": 2,
@@ -2349,23 +2349,23 @@
         },
         {
           "label": "Gas / power stress",
-          "value": 84
+          "value": 83
         },
         {
           "label": "Defense replenishment",
-          "value": 96
+          "value": 95
         },
         {
           "label": "Travel drag",
-          "value": 81
+          "value": 80
         }
       ],
       "indicators": [
         {
           "label": "NATO procurement",
-          "value": 102.5,
+          "value": 102.4,
           "unit": "%",
-          "delta": 2.5,
+          "delta": 2.4,
           "tone": "up"
         },
         {
@@ -2377,9 +2377,9 @@
         },
         {
           "label": "Transatlantic travel drag",
-          "value": 9.7,
+          "value": 9.6,
           "unit": "%",
-          "delta": 1.7,
+          "delta": 1.6,
           "tone": "up"
         },
         {
@@ -2396,15 +2396,87 @@
         "Travel weakness often shows up through bookings and sentiment before official traffic data."
       ],
       "topPairTrade": "Long RTX / Short UAL",
-      "refreshedAt": "2026-10-31T13:47:40.124Z",
+      "refreshedAt": "2026-11-01T14:46:53.505Z",
       "headlines": [
         {
-          "title": "Zelenskyy thanks US over deal for 500 Patriot missiles but warns delivery could take years - Euronews.com",
+          "title": "Ukraine Can't Wait Years for Air Defense Systems – Zelenskyy - LIGA.net",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMFpLNzVOX1JSZkgxUzRXTlVNUXo0emRGcGMxbFBnQnY0NVJTY1JaYzdTMHBRUl9zcU01SVZ2WW1rWDJvaTJsLTUxY1BNSUg1UzdWV3VIUmhEdy0xRWFRbTNHMHEzanB2SExPUmhTQkc1TXZFRFZ2MGZ1U2xNUk1JTUllbVZSN3MyWm5kT1AzLWZCWm0zZ1HSAZsBQVVfeXFMTlg4eFcybjU4Z3FpOFJwTm5paFN4OUF3T1JlSVlWZUhkcW1TSHdGOWtWWGN2YnItMzhYbWFtaDBlY3RHbDYwWHFfS01jbnB4SFAwRVBrUUhDT3pwSVZkS01CcW13WldCaURWVk5VaWVwNHcyTlU1cE5Bb2dnR3JWLUhVcldVQXNBdElQY3d1NGdqM3JSNzNYMzRsaWM?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxPMFpLNzVOX1JSZkgxUzRXTlVNUXo0emRGcGMxbFBnQnY0NVJTY1JaYzdTMHBRUl9zcU01SVZ2WW1rWDJvaTJsLTUxY1BNSUg1UzdWV3VIUmhEdy0xRWFRbTNHMHEzanB2SExPUmhTQkc1TXZFRFZ2MGZ1U2xNUk1JTUllbVZSN3MyWm5kT1AzLWZCWm0zZ1HSAZsBQVVfeXFMTlg4eFcybjU4Z3FpOFJwTm5paFN4OUF3T1JlSVlWZUhkcW1TSHdGOWtWWGN2YnItMzhYbWFtaDBlY3RHbDYwWHFfS01jbnB4SFAwRVBrUUhDT3pwSVZkS01CcW13WldCaURWVk5VaWVwNHcyTlU1cE5Bb2dnR3JWLUhVcldVQXNBdElQY3d1NGdqM3JSNzNYMzRsaWM?oc=5\" target=\"_blank\">Ukraine Can't Wait Years for Air Defense Systems – Zelenskyy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">LIGA.net</font>",
+          "source": "LIGA.net",
+          "publishedAt": "Sun, 01 Nov 2026 11:26:00 GMT",
+          "publishedMs": 1793532360000,
+          "relevance": 1
+        },
+        {
+          "title": "Drones Strike Lukoil Refinery and Power Plant in Kstovo - Kyiv Post",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iOXJKRFRzMUIyWlV4SHZLN3BnUl9SRnptMFNjTUY4WXBpYlR1VkJobGdTVXJXNVg2enlXSUJ3VVR5YlJoemdUUW5YNA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iOXJKRFRzMUIyWlV4SHZLN3BnUl9SRnptMFNjTUY4WXBpYlR1VkJobGdTVXJXNVg2enlXSUJ3VVR5YlJoemdUUW5YNA?oc=5\" target=\"_blank\">Drones Strike Lukoil Refinery and Power Plant in Kstovo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kyiv Post</font>",
+          "source": "Kyiv Post",
+          "publishedAt": "Sun, 01 Nov 2026 08:26:01 GMT",
+          "publishedMs": 1793521561000,
+          "relevance": 1
+        },
+        {
+          "title": "Russian Offensive Campaign Assessment, October 31, 2026 - Institute for the Study of War",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN0xCTUNMNnRUYXgweHl6TWQtVXJMTy1icFhWbEUyVERoLU1yYnhWZkhleGdSNFd2TzdtSXpxVjlSWldUWDQySHdlSXE3bllTZFlYbGQ2OEZoNlUyRzktNno4SmpLR3ZjS1NTUXdFX2Q3ZVJTRm1QQXROU05lTHJzVENJSWZOREVXYkhCZklwZGctTWlKaHM0Slljemd1U1pZS044WTlLSE9STTA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN0xCTUNMNnRUYXgweHl6TWQtVXJMTy1icFhWbEUyVERoLU1yYnhWZkhleGdSNFd2TzdtSXpxVjlSWldUWDQySHdlSXE3bllTZFlYbGQ2OEZoNlUyRzktNno4SmpLR3ZjS1NTUXdFX2Q3ZVJTRm1QQXROU05lTHJzVENJSWZOREVXYkhCZklwZGctTWlKaHM0Slljemd1U1pZS044WTlLSE9STTA?oc=5\" target=\"_blank\">Russian Offensive Campaign Assessment, October 31, 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Institute for the Study of War</font>",
+          "source": "Institute for the Study of War",
+          "publishedAt": "Sun, 01 Nov 2026 01:29:05 GMT",
+          "publishedMs": 1793496545000,
+          "relevance": 2
+        },
+        {
+          "title": "Russia’s Shadow Fleet Turns to Nets and Rubber Tires for Makeshift Drone Armor - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNmtxM1NKZjFSUWFCMC1QYmV1SUVPa28zbHMzV1RCWDVhaks5RDZfTWR6Y1FTQW5yMXpVenFUZF90eUhwdFZ6OVV0ek9JREtzSnktbTdoZGljNG81LW5fTXNJNDc3NXk1dlJVbkVDelh6cXBmZWNFRUY5RExmcVpETWJYbTU2WEJYUzRXdGwtSFVqd25tclp0TWEtLVVBMWNQMW1DbjBRUXNqcEJqbEVQdE1B?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQNmtxM1NKZjFSUWFCMC1QYmV1SUVPa28zbHMzV1RCWDVhaks5RDZfTWR6Y1FTQW5yMXpVenFUZF90eUhwdFZ6OVV0ek9JREtzSnktbTdoZGljNG81LW5fTXNJNDc3NXk1dlJVbkVDelh6cXBmZWNFRUY5RExmcVpETWJYbTU2WEJYUzRXdGwtSFVqd25tclp0TWEtLVVBMWNQMW1DbjBRUXNqcEJqbEVQdE1B?oc=5\" target=\"_blank\">Russia’s Shadow Fleet Turns to Nets and Rubber Tires for Makeshift Drone Armor</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WSJ</font>",
+          "source": "WSJ",
+          "publishedAt": "Sat, 31 Oct 2026 23:00:00 GMT",
+          "publishedMs": 1793487600000,
+          "relevance": 2
+        },
+        {
+          "title": "US forces in Europe are bracing for 'Ukraine's worst day.' AI could help them fight an overwhelming flood of missiles and drones. - Yahoo",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNalMtOUpUMW1tamoycFotN21WdElUbGtWU2ZKX0I2VmFuTXNCSEtGaEFZSXlDRkpCOTNWU05Bc0lhd0RYTUlJTUI2U196NUM5dEF0TGxUd2hMT2xUd19rT1J5SmpTakd0V2lGcGFVVEx2ejZpamppZDZ1a0hncUEzejdFajdvbWswVnRrWUF6ZG0?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNalMtOUpUMW1tamoycFotN21WdElUbGtWU2ZKX0I2VmFuTXNCSEtGaEFZSXlDRkpCOTNWU05Bc0lhd0RYTUlJTUI2U196NUM5dEF0TGxUd2hMT2xUd19rT1J5SmpTakd0V2lGcGFVVEx2ejZpamppZDZ1a0hncUEzejdFajdvbWswVnRrWUF6ZG0?oc=5\" target=\"_blank\">US forces in Europe are bracing for 'Ukraine's worst day.' AI could help them fight an overwhelming flood of missiles and drones.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo</font>",
+          "source": "Yahoo",
+          "publishedAt": "Sat, 31 Oct 2026 13:27:01 GMT",
+          "publishedMs": 1793453221000,
+          "relevance": 2
+        },
+        {
+          "title": "Ukraine's war robots keep soldiers out of danger, but humans still risk their lives to keep them running - Business Insider",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOHp6dTNQVHhzTGhwYmZsZnlFOVQ2ZC1XYXZXOTByTmhnVU9aTU5ZWEpiSGpNbU1UWndsUWN4a1psME5qZE9nbjUwVExNdlZmYm95TVVUcGFqWDJESDRCdnlVdEJqcTYtUkFlZUJ3TkFTeHFfTS1RRTJHMWljLU9HeUJJWDRVeGkyN3Y2bkpUaFFNWnZIMHQtQ21tZEFjaFBnUFh5Z205VlAzazA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOHp6dTNQVHhzTGhwYmZsZnlFOVQ2ZC1XYXZXOTByTmhnVU9aTU5ZWEpiSGpNbU1UWndsUWN4a1psME5qZE9nbjUwVExNdlZmYm95TVVUcGFqWDJESDRCdnlVdEJqcTYtUkFlZUJ3TkFTeHFfTS1RRTJHMWljLU9HeUJJWDRVeGkyN3Y2bkpUaFFNWnZIMHQtQ21tZEFjaFBnUFh5Z205VlAzazA?oc=5\" target=\"_blank\">Ukraine's war robots keep soldiers out of danger, but humans still risk their lives to keep them running</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Insider</font>",
+          "source": "Business Insider",
+          "publishedAt": "Sat, 31 Oct 2026 11:13:00 GMT",
+          "publishedMs": 1793445180000,
+          "relevance": 1
+        },
+        {
+          "title": "US approves $2.1 billion Patriot missile sale to Ukraine as Zelensky warns of years-long wait for deliveries - The Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdktYRnVUUmUwX0ExQllWVHFRR3dtSTVMREZETkRxMFl4WHVxQ0lHYVQ4ejJOTW5EcWFWR1lvTENLcTlSOXpMQUJtcWVROUtaSHQzMlJkZ0V6bEpmOVJIUHZBNnc4SVlic3BTRUJhZEs2cEVFaFNMbFplVVZNU2tGWXF6YXBxMmpYM2ZsUjIyRzRIa2djV2FrS0V2UkRnVDhUNGM3eGtiTHMtR0lIMUtkNE43S292RVFBeUxZNEN5Rjd6RGlPa1Z4YVRB?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxOdktYRnVUUmUwX0ExQllWVHFRR3dtSTVMREZETkRxMFl4WHVxQ0lHYVQ4ejJOTW5EcWFWR1lvTENLcTlSOXpMQUJtcWVROUtaSHQzMlJkZ0V6bEpmOVJIUHZBNnc4SVlic3BTRUJhZEs2cEVFaFNMbFplVVZNU2tGWXF6YXBxMmpYM2ZsUjIyRzRIa2djV2FrS0V2UkRnVDhUNGM3eGtiTHMtR0lIMUtkNE43S292RVFBeUxZNEN5Rjd6RGlPa1Z4YVRB?oc=5\" target=\"_blank\">US approves $2.1 billion Patriot missile sale to Ukraine as Zelensky warns of years-long wait for deliveries</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Kyiv Independent</font>",
+          "source": "The Kyiv Independent",
+          "publishedAt": "Sat, 31 Oct 2026 08:58:23 GMT",
+          "publishedMs": 1793437103000,
+          "relevance": 2
+        },
+        {
+          "title": "Zelenskyy warns delivery of US Patriots package could take years - Euronews.com",
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFJLMjJnYnFQSjZOcVBPVUdrOTRoQW5KZkl0eHRVWEZQMzBQd1o0RHhwZS1GSExaQUNKaHlxd2tnWGo2eUt0V29zUDNQejVCLTFUVFBIblY4ZDNrbC14bThrLTNHYWx4eW90WVJ1NXRMS1hzQWF3QldnZWtqVW5JSVFzQ0tRclZGdDJwaEtrRjlwT3czcVJ0VFE4eEg1NjZJbWJfcE1IamlQb3B3aUtZTFEyWlNWOUlmWFhkejFXNU1WbE5k?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFJLMjJnYnFQSjZOcVBPVUdrOTRoQW5KZkl0eHRVWEZQMzBQd1o0RHhwZS1GSExaQUNKaHlxd2tnWGo2eUt0V29zUDNQejVCLTFUVFBIblY4ZDNrbC14bThrLTNHYWx4eW90WVJ1NXRMS1hzQWF3QldnZWtqVW5JSVFzQ0tRclZGdDJwaEtrRjlwT3czcVJ0VFE4eEg1NjZJbWJfcE1IamlQb3B3aUtZTFEyWlNWOUlmWFhkejFXNU1WbE5k?oc=5\" target=\"_blank\">Zelenskyy thanks US over deal for 500 Patriot missiles but warns delivery could take years</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Euronews.com</font>",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFJLMjJnYnFQSjZOcVBPVUdrOTRoQW5KZkl0eHRVWEZQMzBQd1o0RHhwZS1GSExaQUNKaHlxd2tnWGo2eUt0V29zUDNQejVCLTFUVFBIblY4ZDNrbC14bThrLTNHYWx4eW90WVJ1NXRMS1hzQWF3QldnZWtqVW5JSVFzQ0tRclZGdDJwaEtrRjlwT3czcVJ0VFE4eEg1NjZJbWJfcE1IamlQb3B3aUtZTFEyWlNWOUlmWFhkejFXNU1WbE5k?oc=5\" target=\"_blank\">Zelenskyy warns delivery of US Patriots package could take years</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Euronews.com</font>",
           "source": "Euronews.com",
           "publishedAt": "Sat, 31 Oct 2026 07:46:21 GMT",
           "publishedMs": 1793432781000,
+          "relevance": 1
+        },
+        {
+          "title": "Ukraine outshoots Russia in cross-border drone war for 1st time, March data suggests - ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRVdvZHNQTkx1QWcyXzJicW9TMXA1aXJ0d2FGblJ5RTVCNUdDSmlicTNMVWk5MTR1dkxfZmdnbFQtN0N5UlVoTllwaXoxZ25OVHJGS0oxcGoxQkpMM0EwbE9TU25QY2pGdktkY1BZT0VDaEg5STdqeU9KVFN2UTBlNS16MEpNZGNFdVFrWURnZlZRYnUyemRkQ1lQZlJqQlpYZWFSZXdDY9IBrAFBVV95cUxOeDNvQUhTNGpnbFQzR1ZONi1kcGJ5VDJGV0tEVWpHUFFDSDJHcUwwejRHSG5JUnMxOGw2X3VEWFdqUUhpLVEyeENvR3VvNkdfbUJVcFpiM0puT19PbmNkSEVaalUwUGpkT0VpRUJIdkY3NWdDVU1kZGJVaXpTOFB6UTdvWXZFLTNqa3JPcy1KeDRZZTBoMXgtR204Q2phSlBESm94SFRXZ2xJbG9I?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxNRVdvZHNQTkx1QWcyXzJicW9TMXA1aXJ0d2FGblJ5RTVCNUdDSmlicTNMVWk5MTR1dkxfZmdnbFQtN0N5UlVoTllwaXoxZ25OVHJGS0oxcGoxQkpMM0EwbE9TU25QY2pGdktkY1BZT0VDaEg5STdqeU9KVFN2UTBlNS16MEpNZGNFdVFrWURnZlZRYnUyemRkQ1lQZlJqQlpYZWFSZXdDY9IBrAFBVV95cUxOeDNvQUhTNGpnbFQzR1ZONi1kcGJ5VDJGV0tEVWpHUFFDSDJHcUwwejRHSG5JUnMxOGw2X3VEWFdqUUhpLVEyeENvR3VvNkdfbUJVcFpiM0puT19PbmNkSEVaalUwUGpkT0VpRUJIdkY3NWdDVU1kZGJVaXpTOFB6UTdvWXZFLTNqa3JPcy1KeDRZZTBoMXgtR204Q2phSlBESm94SFRXZ2xJbG9I?oc=5\" target=\"_blank\">Ukraine outshoots Russia in cross-border drone war for 1st time, March data suggests</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC News - Breaking News, Latest News and Videos</font>",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "publishedAt": "Sat, 31 Oct 2026 05:51:57 GMT",
+          "publishedMs": 1793425917000,
           "relevance": 2
         },
         {
@@ -2414,78 +2486,6 @@
           "source": "Военное дело",
           "publishedAt": "Sat, 31 Oct 2026 02:58:38 GMT",
           "publishedMs": 1793415518000,
-          "relevance": 3
-        },
-        {
-          "title": "US Approves $2.1 Billion in Patriot Missiles For Ukraine - Bloomberg",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWGR5bkNzajM4SEJxMEkyenhVY1pHejFPYk5zTHBCN25NZHRXeGF4MUVoMGNCOG5ZcDlYM0s2MEJub2xFZjg0TFZuZGpRWnB4emZWN2VTLXZGNGF6eU9YLS1mMDU1bGhnaFNUQTVEN3A1aDRaYzk4UUE5MDVrS3g5VzNFRXNYa1c3WGdzOENEa180REY0czBZNW14QzAwbVdRT2xRamtMdkd3dw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWGR5bkNzajM4SEJxMEkyenhVY1pHejFPYk5zTHBCN25NZHRXeGF4MUVoMGNCOG5ZcDlYM0s2MEJub2xFZjg0TFZuZGpRWnB4emZWN2VTLXZGNGF6eU9YLS1mMDU1bGhnaFNUQTVEN3A1aDRaYzk4UUE5MDVrS3g5VzNFRXNYa1c3WGdzOENEa180REY0czBZNW14QzAwbVdRT2xRamtMdkd3dw?oc=5\" target=\"_blank\">US Approves $2.1 Billion in Patriot Missiles For Ukraine</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg</font>",
-          "source": "Bloomberg",
-          "publishedAt": "Fri, 30 Oct 2026 23:32:25 GMT",
-          "publishedMs": 1793403145000,
-          "relevance": 2
-        },
-        {
-          "title": "Ukraine completes work on new missile defense system, awaits European partner components - Defense News",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTRBdlVYdXRQa2g5eXNqVGJqek1YbWNUNlJreUpHRTVHT01sOTN0enBzUU5zbHlBMTNTMWlXczZzblNmZGt2YkdvUU1ocXI4VkxwQ2R4R3F5dGVqM19rUDVTcm45S0h5U2FTMjF0ZGFvdG5lNURZRlRhM2M2RHdDR255d1JGWHpzdVJkNjJsYlBzMXBDb1ktVGp4WnlRcnp6cHNJUjIzT3JnOWYyajhUcGZhU2tORDBWNGpBRGVzamFEMno1UGVtbk9tcG9QOXJKdW53a1NfZU4?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMTRBdlVYdXRQa2g5eXNqVGJqek1YbWNUNlJreUpHRTVHT01sOTN0enBzUU5zbHlBMTNTMWlXczZzblNmZGt2YkdvUU1ocXI4VkxwQ2R4R3F5dGVqM19rUDVTcm45S0h5U2FTMjF0ZGFvdG5lNURZRlRhM2M2RHdDR255d1JGWHpzdVJkNjJsYlBzMXBDb1ktVGp4WnlRcnp6cHNJUjIzT3JnOWYyajhUcGZhU2tORDBWNGpBRGVzamFEMno1UGVtbk9tcG9QOXJKdW53a1NfZU4?oc=5\" target=\"_blank\">Ukraine completes work on new missile defense system, awaits European partner components</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Defense News</font>",
-          "source": "Defense News",
-          "publishedAt": "Fri, 30 Oct 2026 14:56:47 GMT",
-          "publishedMs": 1793372207000,
-          "relevance": 2
-        },
-        {
-          "title": "Dozens of Russian drones fell to gun turrets over Kyiv in a month, Ukraine’s Defense Ministry says - Euromaidan Press",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNekZua3VNRnVLRnh0RTVuUWlDY1R1QnZpWnhyZS1McXZVN3d6cGRvczdCUXh4RFZBSGFrbDA1anNKMzl5blBaM2RCREMwMThmNHJaWTA5ajk5aXM4enBmLWYwUWpqb1p0S3dIMTg3VlFDUVVZNTlNQmhZUzB0dm83MGFTdERvTHVTRXN0bkN6RTJ2UkJQZWVobXVWajRxN2t4Y0VqMzBFTm5BUXVVcUtBV1FtSG9ybTktTDNRQzZlRGdfUEhGUkVoLV82QWd1dEtzNEE?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNekZua3VNRnVLRnh0RTVuUWlDY1R1QnZpWnhyZS1McXZVN3d6cGRvczdCUXh4RFZBSGFrbDA1anNKMzl5blBaM2RCREMwMThmNHJaWTA5ajk5aXM4enBmLWYwUWpqb1p0S3dIMTg3VlFDUVVZNTlNQmhZUzB0dm83MGFTdERvTHVTRXN0bkN6RTJ2UkJQZWVobXVWajRxN2t4Y0VqMzBFTm5BUXVVcUtBV1FtSG9ybTktTDNRQzZlRGdfUEhGUkVoLV82QWd1dEtzNEE?oc=5\" target=\"_blank\">Dozens of Russian drones fell to gun turrets over Kyiv in a month, Ukraine’s Defense Ministry says</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Euromaidan Press</font>",
-          "source": "Euromaidan Press",
-          "publishedAt": "Fri, 30 Oct 2026 13:57:52 GMT",
-          "publishedMs": 1793368672000,
-          "relevance": 2
-        },
-        {
-          "title": "Russian strikes plunge Ukrainian city into blackout as Zelenskyy warns of more missile attacks - CNBC",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdjdQMjVXV0ZPMXZKM3QxeVpOcWNaZEhUa04ySUd2dmd6Q3NVUnR6LVEyVWRib21LLVlOLUo3MF9ock5mRUVxNmZaQmNDd1JVcEhHckxMd0puaHlHT1luWTUyUE96czJvWF9hcDcxR0Q2NlBMbVo5MUtPN2t6VF92bnFNQTd4TWlVdWfSAY8BQVVfeXFMTzh2MVJFNHF1R2E5WFhBVDZWSGt5RjZhTjFWV1p5MENLOW0wLUx1RXNLUnQ5VUM3cHZ2aTdnYVJJdElzYlBObEtHSzVNZlVqTHBRTVBtNmFLdnRqYk0xR1FmLWxxWV9iZG02VmpBV21wRDJSSDJHNnhPOHBhUUdFelNEN0NUaGJzQUZNMlFVS2M?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPdjdQMjVXV0ZPMXZKM3QxeVpOcWNaZEhUa04ySUd2dmd6Q3NVUnR6LVEyVWRib21LLVlOLUo3MF9ock5mRUVxNmZaQmNDd1JVcEhHckxMd0puaHlHT1luWTUyUE96czJvWF9hcDcxR0Q2NlBMbVo5MUtPN2t6VF92bnFNQTd4TWlVdWfSAY8BQVVfeXFMTzh2MVJFNHF1R2E5WFhBVDZWSGt5RjZhTjFWV1p5MENLOW0wLUx1RXNLUnQ5VUM3cHZ2aTdnYVJJdElzYlBObEtHSzVNZlVqTHBRTVBtNmFLdnRqYk0xR1FmLWxxWV9iZG02VmpBV21wRDJSSDJHNnhPOHBhUUdFelNEN0NUaGJzQUZNMlFVS2M?oc=5\" target=\"_blank\">Russian strikes plunge Ukrainian city into blackout as Zelenskyy warns of more missile attacks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-          "source": "CNBC",
-          "publishedAt": "Fri, 30 Oct 2026 11:29:59 GMT",
-          "publishedMs": 1793359799000,
-          "relevance": 3
-        },
-        {
-          "title": "Russian Zircon missiles flatten 3 Ukrainian drone factories - 10,000 deserters per month - Shock US intervention in NATO - bankingnews.gr",
-          "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQOEcyWHhQN1R6dUxSTlRZTHVTam9YV18xZVpOeUlxckVqOExYNUF4S1I1el9qNjgtVjYyMVE5Zk5IRXZLWG5PMHdpd3IyeWJkTFRIX0t2dkpMU3RYclBnNDBvdkRmX0tna1QzTG95NWtqZDlwNElCXy1PYjJ6YTZVZXVHcFBIelJUSzVUTGMydjN4NlVielMtT19qeHpIMFBKZzc2aVA1SG9oTm96dkphTjd0SGpYWnpPNl9HRjRQd0tmeXNWeEtfVVBFOWVSUnZ0X3RqZ2VQbVQ2dmRTSGNJdzN4cnJ5MHVVaGk1cUNNSWc0ak9ocE5Wb0JrQQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi-wFBVV95cUxQOEcyWHhQN1R6dUxSTlRZTHVTam9YV18xZVpOeUlxckVqOExYNUF4S1I1el9qNjgtVjYyMVE5Zk5IRXZLWG5PMHdpd3IyeWJkTFRIX0t2dkpMU3RYclBnNDBvdkRmX0tna1QzTG95NWtqZDlwNElCXy1PYjJ6YTZVZXVHcFBIelJUSzVUTGMydjN4NlVielMtT19qeHpIMFBKZzc2aVA1SG9oTm96dkphTjd0SGpYWnpPNl9HRjRQd0tmeXNWeEtfVVBFOWVSUnZ0X3RqZ2VQbVQ2dmRTSGNJdzN4cnJ5MHVVaGk1cUNNSWc0ak9ocE5Wb0JrQQ?oc=5\" target=\"_blank\">Russian Zircon missiles flatten 3 Ukrainian drone factories - 10,000 deserters per month - Shock US intervention in NATO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">bankingnews.gr</font>",
-          "source": "bankingnews.gr",
-          "publishedAt": "Fri, 30 Oct 2026 09:22:41 GMT",
-          "publishedMs": 1793352161000,
-          "relevance": 4
-        },
-        {
-          "title": "Ukraine leans on private companies to help plug air defense gaps - The New Voice of Ukraine",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGZReTk3QTFReUUyYTRYM0xTTEF2Tk9uSmV1dkw0czRvdjhFMXpsLU9YVk9JVlBSRi1QVmhfVkt5a2pyNW5lR3JNME9GemdqUzFwZjEzM2lNc3NvX2xhR0djZUVyZ1Z6N1ZBSlhKaVdjZWRycExRdUt3c253N3AtaGZmaDBya0R1VXBtckswOGhILUJPV3k4UmpRaW1sT0VOOHBZU3JOWdIBpwFBVV95cUxQZGZReTk3QTFReUUyYTRYM0xTTEF2Tk9uSmV1dkw0czRvdjhFMXpsLU9YVk9JVlBSRi1QVmhfVkt5a2pyNW5lR3JNME9GemdqUzFwZjEzM2lNc3NvX2xhR0djZUVyZ1Z6N1ZBSlhKaVdjZWRycExRdUt3c253N3AtaGZmaDBya0R1VXBtckswOGhILUJPV3k4UmpRaW1sT0VOOHBZU3JOWQ?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxQZGZReTk3QTFReUUyYTRYM0xTTEF2Tk9uSmV1dkw0czRvdjhFMXpsLU9YVk9JVlBSRi1QVmhfVkt5a2pyNW5lR3JNME9GemdqUzFwZjEzM2lNc3NvX2xhR0djZUVyZ1Z6N1ZBSlhKaVdjZWRycExRdUt3c253N3AtaGZmaDBya0R1VXBtckswOGhILUJPV3k4UmpRaW1sT0VOOHBZU3JOWdIBpwFBVV95cUxQZGZReTk3QTFReUUyYTRYM0xTTEF2Tk9uSmV1dkw0czRvdjhFMXpsLU9YVk9JVlBSRi1QVmhfVkt5a2pyNW5lR3JNME9GemdqUzFwZjEzM2lNc3NvX2xhR0djZUVyZ1Z6N1ZBSlhKaVdjZWRycExRdUt3c253N3AtaGZmaDBya0R1VXBtckswOGhILUJPV3k4UmpRaW1sT0VOOHBZU3JOWQ?oc=5\" target=\"_blank\">Ukraine leans on private companies to help plug air defense gaps</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Voice of Ukraine</font>",
-          "source": "The New Voice of Ukraine",
-          "publishedAt": "Fri, 30 Oct 2026 00:50:00 GMT",
-          "publishedMs": 1793321400000,
-          "relevance": 1
-        },
-        {
-          "title": "Russian Offensive Campaign Assessment, October 29, 2026 - Institute for the Study of War",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUm12TUZIbmZKMHNWZFFvZDBaUndxeTB0UFFoN3phRG5oNkRVaDd0Q3RpMGVqeklrcWVuRDZaUnBpdVI5TEZ2Zkhiekg5cWQ5U0o2MzNQWk1SM3hranl1bnQ0cmVtZ1dseDBOcHpGUVNJRmNGUFp3OUw0UVJVYjdGR2VSWnVuaXVvU1FNUGdIenJTVFVvNnI2RldsemdTN05PbU9LcENFVGNFZTA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUm12TUZIbmZKMHNWZFFvZDBaUndxeTB0UFFoN3phRG5oNkRVaDd0Q3RpMGVqeklrcWVuRDZaUnBpdVI5TEZ2Zkhiekg5cWQ5U0o2MzNQWk1SM3hranl1bnQ0cmVtZ1dseDBOcHpGUVNJRmNGUFp3OUw0UVJVYjdGR2VSWnVuaXVvU1FNUGdIenJTVFVvNnI2RldsemdTN05PbU9LcENFVGNFZTA?oc=5\" target=\"_blank\">Russian Offensive Campaign Assessment, October 29, 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Institute for the Study of War</font>",
-          "source": "Institute for the Study of War",
-          "publishedAt": "Fri, 30 Oct 2026 00:05:48 GMT",
-          "publishedMs": 1793318748000,
-          "relevance": 2
-        },
-        {
-          "title": "infoBRICS: Why Russia's Weapons Strategy Worries NATO - Военное дело",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNGhiOG5OcmJ6QmFvMGc0RlRFU3NnVlRrYWI4MThNRkplZkZ1VGtzV2ZzQnNkV2hmNGdVci1IWmRESXJobHNiWE5XaG5kOXNlMUxhYTZDUDhsWWtDdHJZSktWY08wMm9PbVJKYWo0U0ZoN3dOX1NMZ1BlS2RWX19XdHNKMnJuUUhYSlM3SXhxV1Z3S1IxQ1dXTA?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNNGhiOG5OcmJ6QmFvMGc0RlRFU3NnVlRrYWI4MThNRkplZkZ1VGtzV2ZzQnNkV2hmNGdVci1IWmRESXJobHNiWE5XaG5kOXNlMUxhYTZDUDhsWWtDdHJZSktWY08wMm9PbVJKYWo0U0ZoN3dOX1NMZ1BlS2RWX19XdHNKMnJuUUhYSlM3SXhxV1Z3S1IxQ1dXTA?oc=5\" target=\"_blank\">infoBRICS: Why Russia's Weapons Strategy Worries NATO</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Военное дело</font>",
-          "source": "Военное дело",
-          "publishedAt": "Thu, 29 Oct 2026 22:39:02 GMT",
-          "publishedMs": 1793313542000,
           "relevance": 3
         }
       ],
@@ -2503,11 +2503,11 @@
           "thesis": "European air-defense demand and replenishment programs remain the cleanest expression.",
           "price": 199.8000030517578,
           "annualizedVol": 0.24224546881696704,
-          "upsidePct": 0.2951131379602456,
+          "upsidePct": 0.29420404705115466,
           "downsidePct": 0.128983970047245,
-          "targetPrice": 258.76360891682873,
+          "targetPrice": 258.581972550418,
           "stopPrice": 174.02900544269042,
-          "rewardToRisk": 2.29,
+          "rewardToRisk": 2.28,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.05289634607562486,
           "pctVsMa50": 0.025698961094181457,
@@ -2572,11 +2572,11 @@
           "thesis": "Broad NATO procurement and missile demand support backlog expansion.",
           "price": 636.9500122070312,
           "annualizedVol": 0.3313017164612678,
-          "upsidePct": 0.28645774009133684,
+          "upsidePct": 0.28554864918224593,
           "downsidePct": 0.13082645927875663,
-          "targetPrice": 819.4092732550068,
+          "targetPrice": 818.830227789364,
           "stopPrice": 553.6200973724245,
-          "rewardToRisk": 2.19,
+          "rewardToRisk": 2.18,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.1506506859415947,
           "pctVsMa50": 0.1706462079998091,
@@ -2641,11 +2641,11 @@
           "thesis": "Command, radar, and interceptors fit higher European readiness spending.",
           "price": 557.5399780273438,
           "annualizedVol": 0.2685404410296141,
-          "upsidePct": 0.27727705681146325,
+          "upsidePct": 0.27636796590237234,
           "downsidePct": 0.12336715411385936,
-          "targetPrice": 712.1330221894935,
+          "targetPrice": 711.6261676640141,
           "stopPrice": 488.7578576334067,
-          "rewardToRisk": 2.25,
+          "rewardToRisk": 2.24,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.08389339892305635,
           "pctVsMa50": 0.07149826691828053,
@@ -2710,11 +2710,11 @@
           "thesis": "Ammunition, armored systems, and defense electronics benefit from rearmament.",
           "price": 372.5899963378906,
           "annualizedVol": 0.1915024921227671,
-          "upsidePct": 0.26438123271157477,
+          "upsidePct": 0.26347214180248385,
           "downsidePct": 0.11288929703269995,
-          "targetPrice": 471.0957988657032,
+          "targetPrice": 470.7570806872143,
           "stopPrice": 330.5285735698899,
-          "rewardToRisk": 2.34,
+          "rewardToRisk": 2.33,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.0874383665067414,
           "pctVsMa50": 0.06031491675984911,
@@ -2779,11 +2779,11 @@
           "thesis": "Naval emphasis rises when the Atlantic and northern flank look less secure.",
           "price": 316.8800048828125,
           "annualizedVol": 0.4236936734329881,
-          "upsidePct": 0.2765104463958428,
+          "upsidePct": 0.2756013554867519,
           "downsidePct": 0.13161928315116772,
-          "targetPrice": 404.5006364868758,
+          "targetPrice": 404.21256375516424,
           "stopPrice": 275.17248579519816,
-          "rewardToRisk": 2.1,
+          "rewardToRisk": 2.09,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.15559727163182477,
           "pctVsMa50": 0.13972165570985828,
@@ -2848,11 +2848,11 @@
           "thesis": "Europe often leans harder on LNG when pipeline and security risk rises.",
           "price": 330.32000732421875,
           "annualizedVol": 0.322400599410696,
-          "upsidePct": 0.2852121660430639,
+          "upsidePct": 0.2843030751339729,
           "downsidePct": 0.12981443036453483,
-          "targetPrice": 424.53129210051986,
+          "targetPrice": 424.23100118477055,
           "stopPrice": 287.43970373541634,
-          "rewardToRisk": 2.2,
+          "rewardToRisk": 2.19,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.14881382477944305,
           "pctVsMa50": 0.17083271098166222,
@@ -2917,11 +2917,11 @@
           "thesis": "US gas infrastructure gains if LNG feedgas demand persists.",
           "price": 33.869998931884766,
           "annualizedVol": 0.2242857256592409,
-          "upsidePct": 0.2481377386471776,
+          "upsidePct": 0.2472286477380867,
           "downsidePct": 0.10856645810537724,
-          "targetPrice": 42.274423874824976,
+          "targetPrice": 42.24363296670508,
           "stopPrice": 30.192853111817126,
-          "rewardToRisk": 2.29,
+          "rewardToRisk": 2.28,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.02512102885105424,
           "pctVsMa50": 0.05670051318773782,
@@ -2986,11 +2986,11 @@
           "thesis": "Appalachian gas names can re-rate if Europe drives another gas bid.",
           "price": 55.380001068115234,
           "annualizedVol": 0.2904845378474336,
-          "upsidePct": 0.2585982243715483,
+          "upsidePct": 0.25768913346245736,
           "downsidePct": 0.11706560275642841,
-          "targetPrice": 69.70117101002428,
+          "targetPrice": 69.65082555450782,
           "stopPrice": 48.896907862424676,
-          "rewardToRisk": 2.21,
+          "rewardToRisk": 2.2,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.03255224603649331,
           "pctVsMa50": 0.04107530761702215,
@@ -3055,9 +3055,9 @@
           "thesis": "Transatlantic travel demand and costs get hit in a Europe security shock.",
           "price": 104.23999786376953,
           "annualizedVol": 0.39039056528681154,
-          "upsidePct": 0.2723336242167035,
+          "upsidePct": 0.2714245333076125,
           "downsidePct": 0.12822561513061698,
-          "targetPrice": 75.85194145718775,
+          "targetPrice": 75.94670509160936,
           "stopPrice": 117.60623571106558,
           "rewardToRisk": 2.12,
           "lastQuoteDate": "2026-10-30",
@@ -3124,11 +3124,11 @@
           "thesis": "Travel-discretionary exposure is vulnerable to European headline risk.",
           "price": 28.829999923706055,
           "annualizedVol": 0.39832618720569674,
-          "upsidePct": 0.2733445771023017,
+          "upsidePct": 0.2724354861932108,
           "downsidePct": 0.12904701435016558,
-          "targetPrice": 20.949475786701232,
+          "targetPrice": 20.975684877540967,
           "stopPrice": 32.550425337575824,
-          "rewardToRisk": 2.12,
+          "rewardToRisk": 2.11,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": 0.07964662566836221,
           "pctVsMa50": 0.16009560907212422,
@@ -3193,9 +3193,9 @@
           "thesis": "US Henry Hub gas tightens when Europe leans harder on US LNG cargoes.",
           "price": 9.079999923706055,
           "annualizedVol": 0.3500960422368303,
-          "upsidePct": 0.2890338992832187,
+          "upsidePct": 0.2881248083741278,
           "downsidePct": 0.1329195886221607,
-          "targetPrice": 11.704427707146143,
+          "targetPrice": 11.696173161760958,
           "stopPrice": 7.873090069157795,
           "rewardToRisk": 2.17,
           "lastQuoteDate": "2026-10-30",
@@ -3262,11 +3262,11 @@
           "thesis": "European nuclear restart and Rosatom decoupling support uranium supply tightness.",
           "price": 33.72999954223633,
           "annualizedVol": 0.44725008566541724,
-          "upsidePct": 0.30136645031277826,
+          "upsidePct": 0.30045735940368734,
           "downsidePct": 0.14293978633367782,
-          "targetPrice": 43.895089773331726,
+          "targetPrice": 43.86442613738424,
           "stopPrice": 28.908640614634013,
-          "rewardToRisk": 2.11,
+          "rewardToRisk": 2.1,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.08542343945621982,
           "pctVsMa50": -0.1740293197141033,
@@ -3331,9 +3331,9 @@
           "thesis": "Gold absorbs the geopolitical risk bid that doesn't make it into specific defense names.",
           "price": 355.7799987792969,
           "annualizedVol": 0.24159029334260754,
-          "upsidePct": 0.251006573170261,
+          "upsidePct": 0.25009748226117007,
           "downsidePct": 0.1108973861553825,
-          "targetPrice": 445.08311707540776,
+          "targetPrice": 444.7596807128812,
           "stopPrice": 316.32492686830767,
           "rewardToRisk": 2.26,
           "lastQuoteDate": "2026-10-30",
@@ -3400,11 +3400,11 @@
           "thesis": "Ag prices typically retighten when Black Sea grain corridor faces escalating attacks.",
           "price": 26.889999389648438,
           "annualizedVol": 0.12381110808322644,
-          "upsidePct": 0.22866252060596037,
+          "upsidePct": 0.22775342969686946,
           "downsidePct": 0.09274284344688824,
-          "targetPrice": 33.03873442917819,
+          "targetPrice": 33.0142889751876,
           "stopPrice": 24.396144385967354,
-          "rewardToRisk": 2.47,
+          "rewardToRisk": 2.46,
           "lastQuoteDate": "2026-10-30",
           "pctVsMa22": -0.04104395346244962,
           "pctVsMa50": -0.0541947660815229,
@@ -3463,8 +3463,8 @@
           "heat": 92
         },
         {
-          "t": "2026-10-31T13:47",
-          "heat": 84
+          "t": "2026-11-01T14:46",
+          "heat": 83
         }
       ]
     },
@@ -3581,16 +3581,16 @@
         "Risk-off flows into USD and away from KRW often outlast the immediate headline cycle, lifting dollar-strength expressions even after launch news fades."
       ],
       "topPairTrade": "Long LMT / Short EWY",
-      "refreshedAt": "2026-10-31T13:47:40.003Z",
+      "refreshedAt": "2026-11-01T14:46:53.491Z",
       "headlines": [
         {
-          "title": "North Korea launches another missile salvo as tensions rise along the inter-Korean border - Latin Times",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5CdC1ycjJla1JYTkRIalJNS3pYOW5YeHV0Z1RwazdmcHBHLVllUC1nZUJaR0g4U0FYVnVEQ1VQNU9PdTMwLURwQlNZSFZvYklWTTRpeEJjSWc2Sl9JY21JYUV1OWx6cEpVWlhYc3E2enZwVnY4WkFCdGhn?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE5CdC1ycjJla1JYTkRIalJNS3pYOW5YeHV0Z1RwazdmcHBHLVllUC1nZUJaR0g4U0FYVnVEQ1VQNU9PdTMwLURwQlNZSFZvYklWTTRpeEJjSWc2Sl9JY21JYUV1OWx6cEpVWlhYc3E2enZwVnY4WkFCdGhn?oc=5\" target=\"_blank\">North Korea launches another missile salvo as tensions rise along the inter-Korean border</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Latin Times</font>",
-          "source": "Latin Times",
-          "publishedAt": "Thu, 29 Oct 2026 20:07:14 GMT",
-          "publishedMs": 1793304434000,
-          "relevance": 2
+          "title": "The US is jumping into the race for low-cost UAVs, starting almost from scratch. - Vietnam.vn",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV3h6eDJFUFRFQU9yS2J6REhjRy1mX2tpVnRJbUdvMXF0N0lJcFZNd1E3MGs5UjB6T2pONjZCc3c5aWtFZExHdjFCem93VW9OQzFJRzRVRUVnZXo1R3Awa3MxQVpPSGRBeVp6TXFvci1wS0hteWd0NER4NmI2VjhyYUFXNW5fX0E?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQV3h6eDJFUFRFQU9yS2J6REhjRy1mX2tpVnRJbUdvMXF0N0lJcFZNd1E3MGs5UjB6T2pONjZCc3c5aWtFZExHdjFCem93VW9OQzFJRzRVRUVnZXo1R3Awa3MxQVpPSGRBeVp6TXFvci1wS0hteWd0NER4NmI2VjhyYUFXNW5fX0E?oc=5\" target=\"_blank\">The US is jumping into the race for low-cost UAVs, starting almost from scratch.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Vietnam.vn</font>",
+          "source": "Vietnam.vn",
+          "publishedAt": "Sun, 01 Nov 2026 11:20:33 GMT",
+          "publishedMs": 1793532033000,
+          "relevance": 1
         },
         {
           "title": "Saying It With Pictures: North Korea Flashes Its Latest ICBM, Old “New” SLBMs, and “Tactical Nuclear Attack” Sub - 38 North",
@@ -3611,21 +3611,12 @@
           "relevance": 2
         },
         {
-          "title": "North Korea fires missile barrage toward the sea as tensions with South rise - WPXI",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY0VtVVk1cGRyMjFPME5GaUpkYV9nbm91ckFPcGxiUnRWcWxqSFNLU3Q2NlpCLV9EaW1yV3FyUWxQQ3Y0UDhpaHpwZnVYZkxhcG1Xc0xmaWd0NXF0akZxSzBWbi1xYVN0YlNLRzdXbnZMLUNsSVZWQThNaUZ2OGxIRzhn0gGWAUFVX3lxTE03Q09XUjNFQUVzMkRsOHU5XzZCdS02MU1VU0JCVmtqaVhsaG0yamVzUExjYzZCYnVlQm5YdTV5aTRWMndEd0U0TnNHUTdzSXJiYUpqQUZBNldhLWpQOE5tSThMTzdqaE5Ea0E5Y3BSd21fLTdidlpoUjl1RTJsMy1CcHlHVVBSaHJHN0tPaFktS3hjR3BHZw?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPY0VtVVk1cGRyMjFPME5GaUpkYV9nbm91ckFPcGxiUnRWcWxqSFNLU3Q2NlpCLV9EaW1yV3FyUWxQQ3Y0UDhpaHpwZnVYZkxhcG1Xc0xmaWd0NXF0akZxSzBWbi1xYVN0YlNLRzdXbnZMLUNsSVZWQThNaUZ2OGxIRzhn0gGWAUFVX3lxTE03Q09XUjNFQUVzMkRsOHU5XzZCdS02MU1VU0JCVmtqaVhsaG0yamVzUExjYzZCYnVlQm5YdTV5aTRWMndEd0U0TnNHUTdzSXJiYUpqQUZBNldhLWpQOE5tSThMTzdqaE5Ea0E5Y3BSd21fLTdidlpoUjl1RTJsMy1CcHlHVVBSaHJHN0tPaFktS3hjR3BHZw?oc=5\" target=\"_blank\">North Korea fires missile barrage toward the sea as tensions with South rise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WPXI</font>",
-          "source": "WPXI",
+          "title": "North Korea fires missile barrage toward the sea as tensions with South rise - KWKT - FOX 44",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUnlRZG83dXo3eWtKalpRNFFpNDhEdjFmWEh6bjhha19tTmNDeG1BdXB6TUdPSFh0VE90cnZtTDVlLUdxOXM5QU16cy1LYVUyd1BpRlpObjNPRVZuMm9QY1phREJCMjNOQXAyUW04dHdxQlJfN21SR0tXa3hjT1U3MHg5Rkx5cUVBWjNSM1QtbkVhNVJKVEFkR21xUF9jX0M2R1NjbGEwdm5nM0FFSHNRei1ya3B3RTlONTgwUXc3RTJnYVZDVzF0NEFwbnNHYlFrTUFsdjZpNNIB3AFBVV95cUxPaFFJSHR1M0VjSjJ3VDMxc253MUtRZTRGTGowSHZjN0dSWkVESnhFV0wxQUVObDN0NmZ0WG5ZR0g1Zml6YWF1LUpZTDlMX1B1djBQT1BYdUFaanZkM2dGQ0NvcUMyb1gzYkpVYmFvU21sQW9VSVY1SjNNVmhwRGtNOXB6MEJSZ0FkYmxvLUdCZlhyUmRQX0ttdVctTGRQbGU1cmdqcGMzUnJVR0JBaE1oa0NaQngzLXZ2RWFURVo0VWdDT0FTWk5yQW1zRVROM2tDeVA0Sm4xLUhDNGVr?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUnlRZG83dXo3eWtKalpRNFFpNDhEdjFmWEh6bjhha19tTmNDeG1BdXB6TUdPSFh0VE90cnZtTDVlLUdxOXM5QU16cy1LYVUyd1BpRlpObjNPRVZuMm9QY1phREJCMjNOQXAyUW04dHdxQlJfN21SR0tXa3hjT1U3MHg5Rkx5cUVBWjNSM1QtbkVhNVJKVEFkR21xUF9jX0M2R1NjbGEwdm5nM0FFSHNRei1ya3B3RTlONTgwUXc3RTJnYVZDVzF0NEFwbnNHYlFrTUFsdjZpNNIB3AFBVV95cUxPaFFJSHR1M0VjSjJ3VDMxc253MUtRZTRGTGowSHZjN0dSWkVESnhFV0wxQUVObDN0NmZ0WG5ZR0g1Zml6YWF1LUpZTDlMX1B1djBQT1BYdUFaanZkM2dGQ0NvcUMyb1gzYkpVYmFvU21sQW9VSVY1SjNNVmhwRGtNOXB6MEJSZ0FkYmxvLUdCZlhyUmRQX0ttdVctTGRQbGU1cmdqcGMzUnJVR0JBaE1oa0NaQngzLXZ2RWFURVo0VWdDT0FTWk5yQW1zRVROM2tDeVA0Sm4xLUhDNGVr?oc=5\" target=\"_blank\">North Korea fires missile barrage toward the sea as tensions with South rise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">KWKT - FOX 44</font>",
+          "source": "KWKT - FOX 44",
           "publishedAt": "Thu, 29 Oct 2026 06:35:06 GMT",
           "publishedMs": 1793255706000,
-          "relevance": 2
-        },
-        {
-          "title": "North Korea fires around a dozen ballistic missiles toward East Sea - Operativ Məlumat Mərkəzi",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTFp1QlN1WEpVekhZSU4xQkhsSFo3aE5lRWt6NVZUczZfRnF2Ym5DQ3JqLUFnMWxmZU9IUkxQYzZmaW80V0duWmxZMVM1LXFBQnZFaG5ob0duN0NYeHlvR0trZzhEelJROWFYTU9janV4WXdaMHZmbE5qM0ZMLVd5VnI3eWRDcFhPSktDYTlYNXUyQTBTbFMyNjVPQUZPNFE1Zk1kNUtR?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOTFp1QlN1WEpVekhZSU4xQkhsSFo3aE5lRWt6NVZUczZfRnF2Ym5DQ3JqLUFnMWxmZU9IUkxQYzZmaW80V0duWmxZMVM1LXFBQnZFaG5ob0duN0NYeHlvR0trZzhEelJROWFYTU9janV4WXdaMHZmbE5qM0ZMLVd5VnI3eWRDcFhPSktDYTlYNXUyQTBTbFMyNjVPQUZPNFE1Zk1kNUtR?oc=5\" target=\"_blank\">North Korea fires around a dozen ballistic missiles toward East Sea</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Operativ Məlumat Mərkəzi</font>",
-          "source": "Operativ Məlumat Mərkəzi",
-          "publishedAt": "Thu, 29 Oct 2026 05:53:18 GMT",
-          "publishedMs": 1793253198000,
           "relevance": 2
         },
         {
@@ -3638,13 +3629,13 @@
           "relevance": 2
         },
         {
-          "title": "DW News. . Pyongyang is threatening to reactivate propaganda loudspeakers at the border with South Korea as tensions flare over an explosion in the Demilitarized Zone in September. The North denies involvement in the landmine blasts which injured three - Facebook",
-          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOai1DLVpfS280R2pVU2gzNjM3RUU3eHVHZlRpa3pvaG9QbDZWdFdWUU9nVHI2SjF6ak5adHVEYlJrcXNyWmp5ekVabXBoaVRzUXdpUG1QTFJyQTAzZ1JVcW1LbWJRaDNVVElISGwydkF2b01OLTZZQXAwSml1MjdZdjZQTUxLbTByUUhvZkk5RGprVEVJS0xkd0ExbEI0alVPVjJWbEdEV1Vva09pMmgxUUNuNUg3OU9FRzR3bFR2MWpsYl8yWERCNVZ6dWlhT3BOaFZtTzZvTHVwZnMzaVcwcUpB?oc=5",
-          "description": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxOai1DLVpfS280R2pVU2gzNjM3RUU3eHVHZlRpa3pvaG9QbDZWdFdWUU9nVHI2SjF6ak5adHVEYlJrcXNyWmp5ekVabXBoaVRzUXdpUG1QTFJyQTAzZ1JVcW1LbWJRaDNVVElISGwydkF2b01OLTZZQXAwSml1MjdZdjZQTUxLbTByUUhvZkk5RGprVEVJS0xkd0ExbEI0alVPVjJWbEdEV1Vva09pMmgxUUNuNUg3OU9FRzR3bFR2MWpsYl8yWERCNVZ6dWlhT3BOaFZtTzZvTHVwZnMzaVcwcUpB?oc=5\" target=\"_blank\">DW News. . Pyongyang is threatening to reactivate propaganda loudspeakers at the border with South Korea as tensions flare over an explosion in the Demilitarized Zone in September. The North denies involvement in the landmine blasts which injured three</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Facebook</font>",
-          "source": "Facebook",
-          "publishedAt": "Sat, 24 Oct 2026 06:36:04 GMT",
-          "publishedMs": 1792823764000,
-          "relevance": 3
+          "title": "U.S. Army Activates New Guam Air Defence Battalion as China and North Korea Bolster Missile Forces - Military Watch Magazine",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUVVIOGY1TXRRY3NqaldTRTMzSDNWajE1LW9aY0lGY1gyLUcwMEZsbjNxQ1l5WmVnenBZSjV5VEowRXhnTlI1eFVTYzEtd2Y3MjdySnNuaXVvVS11ZU5mT3ZrYTlqazVDRDhON0JLdTRNYk5PallnT0JTUFpXUXowTzN0MDl0dVhBOG1ZQlpUNDhVZGRNSDRoZA?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNUVVIOGY1TXRRY3NqaldTRTMzSDNWajE1LW9aY0lGY1gyLUcwMEZsbjNxQ1l5WmVnenBZSjV5VEowRXhnTlI1eFVTYzEtd2Y3MjdySnNuaXVvVS11ZU5mT3ZrYTlqazVDRDhON0JLdTRNYk5PallnT0JTUFpXUXowTzN0MDl0dVhBOG1ZQlpUNDhVZGRNSDRoZA?oc=5\" target=\"_blank\">U.S. Army Activates New Guam Air Defence Battalion as China and North Korea Bolster Missile Forces</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Military Watch Magazine</font>",
+          "source": "Military Watch Magazine",
+          "publishedAt": "Tue, 27 Oct 2026 06:18:00 GMT",
+          "publishedMs": 1793081880000,
+          "relevance": 2
         },
         {
           "title": "US Experts: Less Than 10% Chance of North Korea-US Summit on Margins of China APEC Next Month - news.sbs.co.kr",
@@ -3662,6 +3653,15 @@
           "source": "헤럴드경제",
           "publishedAt": "Thu, 22 Oct 2026 20:49:52 GMT",
           "publishedMs": 1792702192000,
+          "relevance": 1
+        },
+        {
+          "title": "Cheaper U.S. Interceptors Will Not Immediately Solve Air Defense Shortfalls or Stop Allies From Diversifying - RANE Worldview",
+          "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNbTF1bnBoQUY3X1prTkRCWmlQSW1xLTVJMTZYNzZoT1RRQlV4cXZuZjFoS2lGbm9tU016dDc4OUZpWDhxOHBJcmFrQndIS18xTjF4SEJnMUZsN0pNUC04RVdYbXBzUW9uT21JUGdackRMdWlXU0N5cHdHbmdXQ1lJdWZPdUkxeTBZanpDaHBHZEZBc1NXODFDYVFScDFCajVibk0xSUJFTXlZNFlvN0R5b2ltMXRXX1MtVXUyOTE3MkFzN1BuTDZsRkh5MkNFS3RmbFpaNldTUzR1a0RVZXI1cWxTOWdySkw2QkVxZ3ZvOVVUME02aXR4T1lLYVVuV3psX1ptcWRxOUpLMjhzaEhjc2pWVlM?oc=5",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMilAJBVV95cUxNbTF1bnBoQUY3X1prTkRCWmlQSW1xLTVJMTZYNzZoT1RRQlV4cXZuZjFoS2lGbm9tU016dDc4OUZpWDhxOHBJcmFrQndIS18xTjF4SEJnMUZsN0pNUC04RVdYbXBzUW9uT21JUGdackRMdWlXU0N5cHdHbmdXQ1lJdWZPdUkxeTBZanpDaHBHZEZBc1NXODFDYVFScDFCajVibk0xSUJFTXlZNFlvN0R5b2ltMXRXX1MtVXUyOTE3MkFzN1BuTDZsRkh5MkNFS3RmbFpaNldTUzR1a0RVZXI1cWxTOWdySkw2QkVxZ3ZvOVVUME02aXR4T1lLYVVuV3psX1ptcWRxOUpLMjhzaEhjc2pWVlM?oc=5\" target=\"_blank\">Cheaper U.S. Interceptors Will Not Immediately Solve Air Defense Shortfalls or Stop Allies From Diversifying</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">RANE Worldview</font>",
+          "source": "RANE Worldview",
+          "publishedAt": "Wed, 21 Oct 2026 17:37:00 GMT",
+          "publishedMs": 1792604220000,
           "relevance": 1
         },
         {
@@ -4506,7 +4506,7 @@
       ],
       "heatHistory": [
         {
-          "t": "2026-10-31T13:47",
+          "t": "2026-11-01T14:46",
           "heat": 74
         }
       ]
