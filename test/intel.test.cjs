@@ -64,3 +64,31 @@ test("source credibility reads the publisher's host, without www", () => {
   // Google News links carry Google's host, so credibility never applies to them
   assert.equal(sourceCredibilityMultiplier("https://news.google.com/rss/articles/CBMi"), 1.0);
 });
+
+// ---- the keyword lists the intel commands ship with -------------------
+
+const fs = require("fs");
+const path = require("path");
+const { mentions } = require("../lib/keywords.js");
+const TEMPLATES = path.join(__dirname, "..", ".claude", "templates", "intel");
+
+test("every intel template keyword matches its own words", () => {
+  // catches a keyword the matcher can never find (stray punctuation, a
+  // malformed stem). It cannot tell an unmarked stem from a word: a
+  // deliberate stem must be written with a trailing "*", as "de-escalat*" is
+  for (const f of fs.readdirSync(TEMPLATES)) {
+    const cfg = JSON.parse(fs.readFileSync(path.join(TEMPLATES, f), "utf8"));
+    for (const [k] of cfg.weights) {
+      const sample = k.endsWith("*") ? `${k.slice(0, -1)}ion talks` : `reports of ${k} today`;
+      assert.equal(mentions(sample, k), true, `${f}: ${k}`);
+    }
+  }
+});
+
+test("stems and short plurals used by the templates still match", () => {
+  assert.equal(mentions("de-escalation in the strait", "de-escalat*"), true);
+  assert.equal(mentions("de-escalating", "de-escalat*"), true);
+  assert.equal(mentions("two UAVs downed", "uav"), true);
+  assert.equal(mentions("OPEC+ agrees cut", "opec+"), true);
+  assert.equal(mentions("USS Carney", "us"), false);
+});
