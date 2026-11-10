@@ -94,3 +94,15 @@ test("buildTrade keeps upside within 7-40% and downside within 4-18%, which the 
     }
   }
 });
+
+test("description HTML and URLs are not scored, only the visible text", () => {
+  const item = {
+    title: "Quiet day",
+    description: '<a href="https://news.google.com/rss/articles/CBMi-xi_pla-lng?oc=5" target="_blank">Quiet day</a>&nbsp;&nbsp;<font color="#6f6f6f">Reuters</font>',
+  };
+  const text = headlineText(item);
+  assert.equal(text.includes("news.google"), false);
+  assert.equal(text.includes("href"), false);
+  for (const k of ["xi", "pla", "lng"]) assert.equal(mentions(text, k), false, k);
+  assert.match(text, /reuters/);
+});
