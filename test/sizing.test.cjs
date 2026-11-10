@@ -76,3 +76,12 @@ test("flattenScenarioTrades drops unpriced trades and carries the scenario's hea
   const out = flattenScenarioTrades({ iran: { title: "Iran", heat: 77, trades: [{ ticker: "A", price: 10 }, { ticker: "B", price: null }] } });
   assert.deepEqual(out.map((t) => [t.ticker, t.scenario, t.heat]), [["A", "iran", 77]]);
 });
+
+test("a boosted pick that does not fit the reserve is bought at the base size, not skipped", () => {
+  // $3,000: $2,400 would leave $600 (< $1,000 reserve); $1,800 leaves $1,200
+  const lmt = strong({ ticker: "LMT", sector: "Defense", scenario: "iran" });
+  const xom = strong({ ticker: "XOM", sector: "Energy", scenario: "hormuz" });
+  const proven = { buckets: { "ticker:LMT": { n: 20, wins: 18, totalPnlPct: 2.0 }, "sector:Defense": { n: 20, wins: 18, totalPnlPct: 2.0 } } };
+  const { picks } = pick({ candidates: [lmt, xom], cash: 3000, memory: proven });
+  assert.deepEqual(picks.map((p) => [p.ticker, p.allocatedCash]), [["LMT", 1800]]);
+});
