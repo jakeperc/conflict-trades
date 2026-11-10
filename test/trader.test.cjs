@@ -48,15 +48,39 @@ test("weekends are not market days", () => {
   assert.equal(isUsMarketDay("2026-11-16"), true); // Monday
 });
 
-test("NYSE holidays are not market days", () => {
-  for (const d of ["2026-11-26", "2026-12-25", "2027-01-01", "2027-04-02", "2027-07-05", "2027-12-24"]) {
-    assert.equal(isUsMarketDay(d), false, d);
+// NYSE's published table (nyse.com/markets/hours-calendars, read 2026-11-10)
+const NYSE = {
+  2026: ["01-01", "01-19", "02-16", "04-03", "05-25", "06-19", "07-03", "09-07", "11-26", "12-25"],
+  2027: ["01-01", "01-18", "02-15", "03-26", "05-31", "06-18", "07-05", "09-06", "11-25", "12-24"],
+  2028: ["01-17", "02-21", "04-14", "05-29", "06-19", "07-04", "09-04", "11-23", "12-25"],
+};
+
+test("every NYSE full-day holiday in the published table is closed", () => {
+  for (const [y, days] of Object.entries(NYSE)) {
+    for (const d of days) assert.equal(isUsMarketDay(`${y}-${d}`), false, `${y}-${d}`);
+  }
+});
+
+test("Good Friday 2027 is March 26, and April 2, 2027 is a trading day", () => {
+  // the list once carried 2027-04-02, a week late
+  assert.equal(isUsMarketDay("2027-03-26"), false);
+  assert.equal(isUsMarketDay("2027-04-02"), true);
+});
+
+test("New Year's Day 2028 is a Saturday and no weekday is closed in its place", () => {
+  assert.equal(isUsMarketDay("2027-12-31"), true);
+  assert.equal(isUsMarketDay("2028-01-03"), true);
+});
+
+test("early-close days are trading days", () => {
+  for (const d of ["2026-11-27", "2026-12-24", "2027-11-26", "2028-07-03", "2028-11-24"]) {
+    assert.equal(isUsMarketDay(d), true, d);
   }
 });
 
 test("the holiday calendar reaches past the end of next year's first quarter", () => {
   // Tripwire, not a behaviour test: the holiday list is typed by hand and
-  // ends at 2027-12-24. Without a newer year, every 2028 holiday would read as
+  // ends with the last year NYSE has published. Without a newer year, every holiday after it would read as
   // a trading day. This fails from October of the last listed year, giving a
   // quarter's notice to add the next NYSE schedule.
   const src = require("fs").readFileSync(require.resolve("../lib/trader.js"), "utf8");
