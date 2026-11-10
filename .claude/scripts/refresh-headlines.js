@@ -12,6 +12,7 @@ const path = require("path");
 const fs = require("fs");
 const { fetchGoogleNews, dedupeHeadlines } = require(path.join(__dirname, "..", "..", "lib", "news"));
 const { loadConfig, updateScenarioField } = require(path.join(__dirname, "..", "..", "lib", "config"));
+const { headlineText, mentions } = require(path.join(__dirname, "..", "..", "lib", "keywords"));
 
 const SCENARIO_KEYWORDS = {
   iran: [
@@ -39,11 +40,11 @@ const SCENARIO_KEYWORDS = {
 function scoreHeadlines(headlines, scenarioKey) {
   const weights = SCENARIO_KEYWORDS[scenarioKey] || [];
   return headlines.reduce((score, item) => {
-    const text = `${item.title} ${item.description || ""} ${item.link}`.toLowerCase();
+    const text = headlineText(item);
     return (
       score +
       weights.reduce(
-        (sum, [keyword, weight]) => sum + (text.includes(keyword) ? weight : 0),
+        (sum, [keyword, weight]) => sum + (mentions(text, keyword) ? weight : 0),
         0
       )
     );
@@ -77,9 +78,9 @@ const SEVERITY_TERMS = [
 
 function countSeverityHits(headlines) {
   return headlines.reduce((acc, item) => {
-    const text = `${item.title} ${item.description || ""} ${item.link}`.toLowerCase();
+    const text = headlineText(item);
     return (
-      acc + SEVERITY_TERMS.reduce((s, term) => s + (text.includes(term) ? 1 : 0), 0)
+      acc + SEVERITY_TERMS.reduce((s, term) => s + (mentions(text, term) ? 1 : 0), 0)
     );
   }, 0);
 }
