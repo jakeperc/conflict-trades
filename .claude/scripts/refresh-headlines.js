@@ -169,7 +169,13 @@ async function main() {
   console.log(JSON.stringify({ timestamp: new Date().toISOString(), results }, null, 2));
 }
 
-main().catch((error) => {
-  console.error(JSON.stringify({ error: error.message, stack: error.stack }, null, 2));
-  process.exit(1);
-});
+// Run only when invoked as a script, so the scorers can be tested without
+// fetching news or writing data/config.json.
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(JSON.stringify({ error: error.message, stack: error.stack }, null, 2));
+    process.exit(1);
+  });
+}
+
+module.exports = { SCENARIO_KEYWORDS, SEVERITY_TERMS, scoreHeadlines, countSeverityHits };
