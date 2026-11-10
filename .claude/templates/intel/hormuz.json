@@ -33,7 +33,7 @@
     ["negotiations", -3, "diplomatic"],
     ["agreement", -4, "diplomatic"],
     ["ceasefire", -5, "diplomatic"],
-    ["de-escalat", -4, "diplomatic"],
+    ["de-escalat*", -4, "diplomatic"],
     ["nuclear deal", -5, "diplomatic"]
   ],
   "bands": {

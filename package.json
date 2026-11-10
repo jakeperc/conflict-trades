@@ -12,7 +12,8 @@
     "bake:land": "node scripts/bake-land.mjs",
     "typecheck": "tsc --noEmit -p web/tsconfig.json",
     "test": "vitest run --config web/vite.config.mts",
-    "build": "node build.js"
+    "build": "node build.js",
+    "test:lib": "node --test \"test/*.test.cjs\""
   },
   "dependencies": {
     "@fontsource/chakra-petch": "5.3.0",

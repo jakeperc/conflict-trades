@@ -146,6 +146,22 @@ Each command pulls scenario-specific news, scores it against curated keyword wei
 2. Optionally extend `computeSubScores()` in `lib/scenarios.js` with a scenario-specific sub-score map.
 3. Run `/add-scenario <key>`. The frontend tab strip auto-renders.
 
+## Tests
+
+```bash
+npm run test:lib    # trader decision logic, position sizing, headline keyword scoring (node --test, no network)
+npm test            # UI unit tests (vitest)
+npm run typecheck
+```
+
+`.github/workflows/ci.yml` runs all of them, plus the UI build and its size budget, on every pull request. It is read-only and does not gate the daily trader push.
+
+Four things the tests pin down on purpose:
+- **Position sizing.** `pickNewPositions` buys at most the free slots, never a ticker already held, nothing under a 55 score, $1,800 per pick ($2,400 with a 72+ score and a 1.15+ memory edge), always leaving $1,000 (10%) in cash. A boosted pick that would breach the reserve is bought at $1,800 rather than skipped.
+- **Headline keywords match words, never letters in a URL.** `lib/keywords.js` matches title and description only, at a word start, with plural, tense and demonym endings (`russia` matches "Russian"; `nato` no longer matches "senator", nor `xi` letters inside a Google News article token). Both `lib/scenarios.js` and `.claude/scripts/refresh-headlines.js` use it.
+- **The holiday calendar is typed by hand** (`US_MARKET_HOLIDAYS` in `lib/trader.js`). A tripwire test fails from 1 October of the last listed year, so the next NYSE schedule gets added before it is needed.
+- **`scoreRiskReward` has no lower bound.** It relies on `lib/scenarios.js` clamping `upsidePct` to 7–40% (or null). A caller passing a negative upside would get a component far below 0; the tests stay inside the scenario domain.
+
 ## Notes
 
 - This is a research dashboard, not personalized investment advice.
