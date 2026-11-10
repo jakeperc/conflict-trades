@@ -1,0 +1,31 @@
+# Tests and builds every pull request. Read-only: it never pushes, deploys
+# or touches data/. The daily trader run pushes master directly and is not
+# gated by this workflow.
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Trader logic (node --test)
+        run: npm run test:lib
+      - name: UI unit tests (vitest)
+        run: npm test
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Build the UI and check its size budget
+        run: npm run build:ui

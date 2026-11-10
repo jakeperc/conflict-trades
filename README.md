@@ -146,6 +146,20 @@ Each command pulls scenario-specific news, scores it against curated keyword wei
 2. Optionally extend `computeSubScores()` in `lib/scenarios.js` with a scenario-specific sub-score map.
 3. Run `/add-scenario <key>`. The frontend tab strip auto-renders.
 
+## Tests
+
+```bash
+npm run test:lib    # the trader's decision logic: market calendar, quote-health gate, scoring, memory, tournament gate (node --test, no network)
+npm test            # UI unit tests (vitest)
+npm run typecheck
+```
+
+`.github/workflows/ci.yml` runs all of them, plus the UI build and its size budget, on every pull request. It is read-only and does not gate the daily trader push.
+
+Two things the tests pin down on purpose:
+- **The holiday calendar is typed by hand** (`US_MARKET_HOLIDAYS` in `lib/trader.js`). A tripwire test fails from 1 October of the last listed year, so the next NYSE schedule gets added before it is needed.
+- **`scoreRiskReward` has no lower bound.** It relies on `lib/scenarios.js` clamping `upsidePct` to 7–40% (or null). A caller passing a negative upside would get a component far below 0; the tests stay inside the scenario domain.
+
 ## Notes
 
 - This is a research dashboard, not personalized investment advice.
