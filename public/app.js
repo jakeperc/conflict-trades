@@ -157,10 +157,15 @@ const REL_KEYWORDS = [
   ["pyongyang", 2], ["semiconductor", 2], ["chip", 1], ["blockade", 3]
 ];
 
+// Fallback only: the server sets headline.relevance (lib/scenarios.js). Same
+// rule as lib/keywords.js, title only: a keyword counts at a word start, not
+// inside another word ("oil" in "turmoil") or in the description's HTML/link.
+const REL_PATTERNS = REL_KEYWORDS.map(([k, w]) => [new RegExp("(?:^|[^a-z0-9])" + k), w]);
+
 function clientRelevance(headline) {
-  const text = `${headline.title} ${headline.description || ""}`.toLowerCase();
+  const text = String(headline.title || "").toLowerCase();
   let s = 0;
-  REL_KEYWORDS.forEach(([k, w]) => { if (text.includes(k)) s += w; });
+  REL_PATTERNS.forEach(([re, w]) => { if (re.test(text)) s += w; });
   return Math.max(1, Math.min(5, Math.round(s / 2) || 1));
 }
 
