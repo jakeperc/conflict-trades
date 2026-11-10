@@ -92,3 +92,54 @@ test("stems and short plurals used by the templates still match", () => {
   assert.equal(mentions("OPEC+ agrees cut", "opec+"), true);
   assert.equal(mentions("USS Carney", "us"), false);
 });
+
+// ---- independent review, 2026-11-10 -----------------------------------
+
+test("a word cut by the 60-character window edge is not read as a negation", () => {
+  // the tail of "increased", "cannot", "weekend" sits right at the edge
+  for (const t of [
+    "Oil prices increased zzzzzzzzzzzzz and markets watched closely as a tanker seized",
+    "Traders cannot zzzzzzzzzzzzzzz and markets watched closely as a tanker seized",
+    "Ships spend a long weekend  and markets watched closely as a tanker seized",
+  ]) {
+    assert.equal(scoreText(t, SEIZE), 10, t);
+  }
+  // a whole negation word at the edge still counts
+  assert.equal(scoreText("Iran denies zzzzzzzzzz and markets watched closely as a tanker seized", SEIZE), -10);
+});
+
+test("longer negation forms count", () => {
+  assert.equal(scoreText("Cancellation of the report: tanker seized", SEIZE), -10);
+  assert.equal(scoreText("Falsely reported that a tanker was seized", SEIZE), -10);
+});
+
+test("intel scores the visible description, never its href", () => {
+  const { headlineText } = require("../lib/keywords.js");
+  const text = headlineText({ title: "Quiet", description: '<a href="https://news.google.com/rss/articles/CBMi-uav_fms-sdn">Quiet</a>' });
+  assert.equal(scoreText(text, [["uav", 3], ["fms", 3], ["sdn", 3]]), 0);
+});
+
+test("variants, demonyms and agent nouns the templates rely on", () => {
+  const yes = [
+    ["F-35A sale approved", "f-35"],
+    ["Taiwanese navy", "taiwan"],
+    ["Japanese destroyer", "japan"],
+    ["Israeli request", "israel"],
+    ["Yemeni coast", "yemen"],
+    ["Iraqi output", "iraq"],
+    ["interceptors launched", "intercept"],
+    ["interception confirmed", "intercept"],
+    ["troop withdrawal", "withdraw"],
+    ["defense contractor wins", "contract"],
+    ["top LNG exporter", "lng export"],
+    ["chipmakers slide", "chip"],
+    ["greenhouse gases", "gas"],
+    ["U.S., Japan and South Korea hold drills", "us"],
+    ["U.S.-led patrol", "us"],
+  ];
+  for (const [t, k] of yes) assert.equal(mentions(t, k), true, `${k} in "${t}"`);
+  // and the earlier false positives stay out
+  for (const [t, k] of [["the senator", "nato"], ["a plan", "pla"], ["the miner", "mine"], ["F-350 truck", "f-35"], ["USS Carney", "us"]]) {
+    assert.equal(mentions(t, k), false, `${k} in "${t}"`);
+  }
+});

@@ -106,3 +106,16 @@ test("description HTML and URLs are not scored, only the visible text", () => {
   for (const k of ["xi", "pla", "lng"]) assert.equal(mentions(text, k), false, k);
   assert.match(text, /reuters/);
 });
+
+test("scenario scorers read the title only, as before the matcher change", () => {
+  const item = { title: "Markets steady", description: "Related: Missile strikes Hormuz shipping" };
+  assert.equal(scoreHeadline(item), 0);
+  const gas = (s) => s.find((x) => x.label === "Gas / power stress").value;
+  assert.equal(gas(computeSubScores({ key: "europe" }, [{ title: "Quiet", description: "LNG gas" }], 50)), 50);
+});
+
+test("Korea's allied-posture score counts a U.S. mention", () => {
+  const ally = (h) => computeSubScores({ key: "korea" }, h, 50).find((x) => x.label === "Allied posture").value;
+  assert.equal(ally([{ title: "U.S. and allies meet" }]), 54);
+  assert.equal(ally([{ title: "Markets steady" }]), 50);
+});
