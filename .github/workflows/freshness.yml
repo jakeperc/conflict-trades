@@ -26,3 +26,15 @@ jobs:
             echo "::error::The daily trader has not published for $age_days days (last run $last)."
             exit 1
           fi
+      - name: Check the Conflict Monitor feed
+        # The WW3 tilts read the Conflict Monitor's data folder. If that folder cannot be read, every
+        # tilt is 0 and nothing on the site says so; dist/api/refresh.json records whether it was read.
+        run: |
+          avail=$(jq -r '.ww3Status.available // empty' dist/api/refresh.json)
+          src=$(jq -r '.ww3Status.source // empty' dist/api/refresh.json)
+          reason=$(jq -r '.ww3Status.reason // empty' dist/api/refresh.json)
+          echo "Conflict Monitor feed: available=${avail:-missing} source=${src:-missing}${reason:+ reason=$reason}"
+          if [ "$avail" != "true" ]; then
+            echo "::error::The trader could not read the Conflict Monitor data (available=${avail:-missing}${reason:+: $reason}), so its WW3 tilts are 0."
+            exit 1
+          fi
