@@ -18,10 +18,13 @@ jobs:
       - uses: actions/checkout@v7
       - name: Check last trader run
         run: |
-          last=$(jq -r '.state.lastRunAt // empty' dist/api/trader.json)
+          # The trader skips weekends and NYSE holidays but records the skip as lastCheckedAt, so the
+          # newer of the two timestamps is the last time the job ran. Without it, every Monday would
+          # read as 3 days stale (Friday's cycle to Monday's check).
+          last=$(jq -r '[.state.lastRunAt, .state.lastCheckedAt] | map(select(. != null)) | max // empty' dist/api/trader.json)
           if [ -z "$last" ]; then echo "::error::dist/api/trader.json has no state.lastRunAt"; exit 1; fi
           age_days=$(( ( $(date -u +%s) - $(date -u -d "$last" +%s) ) / 86400 ))
-          echo "Last trader run: $last ($age_days days ago)"
+          echo "Last trader run or market-day check: $last ($age_days days ago)"
           if [ "$age_days" -ge 3 ]; then
             echo "::error::The daily trader has not published for $age_days days (last run $last)."
             exit 1
