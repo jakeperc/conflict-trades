@@ -121,7 +121,11 @@ async function snapshotTrader() {
       liveFetchedAt = live.fetchedAt;
       liveEquity = state.cash + liveOpenMtM;
     } catch (e) {
+      // Fall back to the marks saved by the last cycle, not to cash alone, which would drop every
+      // open position from equity. liveFetchedAt stays null, so the page does not call them fresh.
       liveFetchedAt = null;
+      liveOpenMtM = trader.markWithQuotes(state.openPositions, {}).openMtM;
+      liveEquity = state.cash + liveOpenMtM;
     }
   }
   const livePctReturn = state.startingCash

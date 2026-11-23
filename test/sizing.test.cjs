@@ -73,8 +73,17 @@ test("each pick is re-scored against the picks before it, so concentration costs
 });
 
 test("flattenScenarioTrades drops unpriced trades and carries the scenario's heat", () => {
-  const out = flattenScenarioTrades({ iran: { title: "Iran", heat: 77, trades: [{ ticker: "A", price: 10 }, { ticker: "B", price: null }] } });
+  const out = flattenScenarioTrades({ iran: { title: "Iran", heat: 77, trades: [{ ticker: "A", price: 10, priceSource: "Live quote" }, { ticker: "B", price: null }] } });
   assert.deepEqual(out.map((t) => [t.ticker, t.scenario, t.heat]), [["A", "iran", 77]]);
+});
+
+test("flattenScenarioTrades drops fallback-priced trades, which can be months old", () => {
+  const out = flattenScenarioTrades({ iran: { title: "Iran", heat: 77, trades: [
+    { ticker: "A", price: 10, priceSource: "Live quote" },
+    { ticker: "B", price: 20, priceSource: "Fallback baseline" },
+    { ticker: "C", price: 30 }
+  ] } });
+  assert.deepEqual(out.map((t) => t.ticker), ["A"]);
 });
 
 test("a boosted pick that does not fit the reserve is bought at the base size, not skipped", () => {

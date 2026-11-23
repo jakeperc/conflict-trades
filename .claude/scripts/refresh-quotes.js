@@ -32,9 +32,13 @@ async function main() {
 
   const before = loadConfig().fallbackQuotes;
   bulkUpdateFallbackQuotes(updates);
-  const cfg = loadConfig();
-  cfg.lastRefreshAt = new Date().toISOString();
-  saveConfig(cfg);
+  // Stamp the refresh only when at least one ticker actually updated; stamping a total failure
+  // would make the 4-hour staleness warning in `daily` read stale prices as fresh.
+  if (Object.keys(updates).length > 0) {
+    const cfg = loadConfig();
+    cfg.lastRefreshAt = new Date().toISOString();
+    saveConfig(cfg);
+  }
 
   const summary = {
     timestamp: new Date().toISOString(),
@@ -60,6 +64,10 @@ async function main() {
   };
 
   console.log(JSON.stringify(summary, null, 2));
+  if (tickers.length && !Object.keys(updates).length) {
+    console.error(`refresh-quotes: all ${tickers.length} tickers failed; fallback prices unchanged`);
+    process.exit(1);
+  }
 }
 
 main().catch((error) => {

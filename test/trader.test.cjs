@@ -237,3 +237,38 @@ test("a clear average gain with only a small window loss passes the headline gat
   assert.equal(r.gateReason, "headline_avg_gate");
   assert.equal(r.winner.label, "solid");
 });
+
+// ---- marking open positions (issue #2) ----------------------------------
+
+const pos = (over = {}) => ({ ticker: "AAA", direction: "LONG", entryPrice: 100, shares: 10, allocatedCash: 1000, unrealizedPnlDollar: 50, ...over });
+
+test("a position whose quote is missing keeps its last mark and still counts toward equity", () => {
+  const { openMtM, positions } = trader.markWithQuotes([pos(), pos({ ticker: "BBB", unrealizedPnlDollar: -20 })], { AAA: { price: 110, date: "2026-11-20" } });
+  // AAA re-marked: 1000 + (110-100)*10 = 1100. BBB has no quote: 1000 - 20 = 980 (not 0).
+  assert.equal(openMtM, 2080);
+  assert.equal(positions[1].unrealizedPnlDollar, -20);
+});
+
+test("with no quotes at all, equity is cash plus the saved marks, never cash alone", () => {
+  assert.equal(trader.markWithQuotes([pos(), pos({ ticker: "BBB" })], {}).openMtM, 2100);
+});
+
+test("a short position is marked the other way", () => {
+  const { openMtM } = trader.markWithQuotes([pos({ direction: "SHORT" })], { AAA: { price: 90, date: "d" } });
+  assert.equal(openMtM, 1100);
+});
+
+test("only live-quoted trades can mark positions", () => {
+  const prices = trader.liveQuotePrices({ a: { trades: [
+    { ticker: "A", price: 10, priceSource: "Live quote" },
+    { ticker: "B", price: 20, priceSource: "Fallback baseline" },
+    { ticker: "C", price: null, priceSource: "Live quote" }
+  ] } });
+  assert.deepEqual(prices, { A: 10 });
+});
+
+test("the trading date is New York's, not UTC's", () => {
+  // 02:00 UTC on Saturday 2026-11-21 is still Friday evening in New York
+  assert.equal(trader.newYorkDate(new Date("2026-11-21T02:00:00Z")), "2026-11-20");
+  assert.equal(trader.newYorkDate(new Date("2026-11-21T14:47:00Z")), "2026-11-21");
+});

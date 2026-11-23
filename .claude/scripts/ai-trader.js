@@ -61,8 +61,27 @@ async function main() {
   }
 
   if (cmd === "run") {
+    // The scheduled job calls `run`, so it refreshes the inputs `daily` refreshes: fallback quotes
+    // and the headline-derived heatBase in data/config.json. Both are non-fatal here. Trading is
+    // already guarded by runCycle's market-day check, the quote-health gate and the live-quote-only
+    // rule, and an unrefreshed heatBase is reported in `warnings` rather than passed off as current.
+    // Refreshes are skipped when runCycle would skip anyway, so a weekend run changes only lastCheckedAt.
+    const warnings = [];
+    const todayET = trader.newYorkDate();
+    const state = trader.loadState();
+    const willTrade = trader.isUsMarketDay(todayET) && !(state.lastRunAt && state.lastRunAt.slice(0, 10) === todayET);
+    if (willTrade) {
+      for (const script of ["refresh-quotes.js", "refresh-headlines.js"]) {
+        try {
+          execSync(`node "${path.join(REPO, ".claude", "scripts", script)}"`, { cwd: REPO, stdio: "pipe" });
+        } catch (e) {
+          const detail = (e.stderr?.toString().trim() || e.message).split("\n").slice(-1)[0];
+          warnings.push(`${script} failed: ${detail}`);
+        }
+      }
+    }
     const result = await trader.runCycle({ note: process.argv[3] || null });
-    console.log(JSON.stringify(result, null, 2));
+    console.log(JSON.stringify(warnings.length ? { ...result, warnings } : result, null, 2));
     return;
   }
 
