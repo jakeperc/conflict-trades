@@ -114,9 +114,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:iran|sector:Brent ETF|direction:LONG",
-        "currentPrice": 58.65,
-        "unrealizedPnlDollar": -234.31,
-        "unrealizedPct": -0.0976,
+        "currentPrice": 59.4,
+        "unrealizedPnlDollar": -206.43,
+        "unrealizedPct": -0.086,
         "lastKnownPrice": 58.64500045776367,
         "lastKnownDate": "2026-11-25",
         "currentPriceDate": "2026-11-25"
@@ -232,9 +232,9 @@
         "stopMultAtEntry": 1,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:taiwan|sector:Semiconductor manufacturing|direction:SHORT",
-        "currentPrice": 325.88,
-        "unrealizedPnlDollar": 229.77,
-        "unrealizedPct": 0.1277,
+        "currentPrice": 342.34,
+        "unrealizedPnlDollar": 150.43,
+        "unrealizedPct": 0.0836,
         "lastKnownPrice": 325.5799865722656,
         "lastKnownDate": "2026-11-25",
         "currentPriceDate": "2026-11-25"
@@ -350,9 +350,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1,
         "calibrationBucketAtEntry": "scenario:iran|sector:Oil ETF|direction:LONG",
-        "currentPrice": 137.93,
-        "unrealizedPnlDollar": -56.32,
-        "unrealizedPct": -0.0313,
+        "currentPrice": 139.89,
+        "unrealizedPnlDollar": -31.6,
+        "unrealizedPct": -0.0176,
         "lastKnownPrice": 138.0399932861328,
         "lastKnownDate": "2026-11-25",
         "currentPriceDate": "2026-11-25"
@@ -468,9 +468,9 @@
         "stopMultAtEntry": 1.3,
         "targetMultAtEntry": 1.5,
         "calibrationBucketAtEntry": "scenario:korea|sector:Foundry alternatives|direction:LONG",
-        "currentPrice": 34.37,
-        "unrealizedPnlDollar": -60.24,
-        "unrealizedPct": -0.0335,
+        "currentPrice": 36.2,
+        "unrealizedPnlDollar": 32.4,
+        "unrealizedPct": 0.018,
         "lastKnownPrice": 34.349998474121094,
         "lastKnownDate": "2026-11-25",
         "currentPriceDate": "2026-11-25"
@@ -5349,13 +5349,14 @@
         "memoryMult": 0.3,
         "held": false
       }
-    ]
+    ],
+    "lastCheckedAt": "2026-11-26T14:46:42.265Z"
   },
   "live": {
-    "equity": 9698.57,
-    "openMtM": 7678.9,
-    "pctReturn": -0.0301,
-    "fetchedAt": "2026-11-25T14:47:30.307Z"
+    "equity": 9764.46,
+    "openMtM": 7744.79,
+    "pctReturn": -0.0236,
+    "fetchedAt": "2026-11-26T14:46:54.958Z"
   },
   "memory": {
     "buckets": {
